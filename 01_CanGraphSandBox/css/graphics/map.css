@@ -1,0 +1,39 @@
+	
+	path.country{
+		stroke: #000 ; 
+		stroke-width: 0.4;
+	}
+
+	img#iarc{
+		position: absolute;
+		bottom: 50px ; 
+		left: 50px ;
+		height: 65px ; 
+	}
+
+	img#who{
+		position: absolute;
+		bottom: 50px ; 
+		right: 50px ;
+		width: 70px ; 
+	}
+
+	div#copyright-footer-map{
+		position: absolute;
+	    bottom: 60px;
+	    width: 200px;
+	    right: 950px;
+	    font-size: 0.8em;
+	    text-align: justify;
+	    line-height: 14px;
+	}
+
+	div#txt-footer-map{
+		position: absolute;
+	    bottom: 50px;
+	    width: 760px;
+	    right: 150px;
+	    font-size: 0.8em;
+	    text-align: justify;
+	    line-height: 14px;
+	}
