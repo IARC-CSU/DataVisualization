@@ -58,6 +58,10 @@
 
             var oMap = new CanChart( dataviz_conf ).render() ;
 
+            /*var mapGroup = document.getElementById('mapGroup')
+            panzoom(mapGroup) ;*/
+
+
         });
         
 	},500);

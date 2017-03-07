@@ -184,8 +184,8 @@ CanMapGraph.prototype = {
             .attr("stroke","none")
             .attr("id", "sphere")
             .attr("d", CanGraphMapPath)
-            .attr("fill", CanMapConf.chart.background_globe )
-
+            .attr("fill", "transparent" )
+            .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
             .call(
 
                 d3.behavior.drag()
@@ -222,28 +222,24 @@ CanMapGraph.prototype = {
         ;
 
         // the background
-        if ( CanMapConf.chart.show_background == true )
+        /*if ( CanMapConf.chart.show_background == true )
         {
             var Sphere = CanMapSvg.append("use")
                 .attr("class", "stroke")
                 .attr("xlink:href", "#sphere")
                 .attr('fill','transparent')
                 .style('fill','transparent')
+                .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
             ;
 
             var fillSphere = CanMapSvg.append("use")
                 .attr("class", "fill")
                 .attr("xlink:href", "#sphere")
                 .style('fill', CanMapConf.chart.background )
+                .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
             ;
-        }
+        }*/
 
-        if ( CanMapConf.chart.projection == 'globe' )
-        {
-            // Sphere.attr("transform", "translate(0,"+CanMapConf.chart.globe_translate.y+")") ; 
-            // fillSphere.attr("transform", "translate(0,"+CanMapConf.chart.globe_translate.y+")") ; 
-        }
-        
 
         // if ( CanMapConf.chart.graticule )
             CanMapSvg.append("path")
@@ -279,11 +275,10 @@ CanMapGraph.prototype = {
         CanMapTooltip = d3.select(CanMapConf.container)            
           .append('div')                             
           .attr('class', 'canTooltip');                 
-        CanMapTooltipLabel = CanMapTooltip.append('div')                        
-          .attr('class', 'label')
-          .append('p')
-          .attr('class','desc')
-        ;       
+        
+        CanMapTooltip.append('div').attr('class', 'tooltip-line')
+        CanMapTooltip.append('h2')
+       
 
 
         /* CanGraphRadiusBubble = d3.scale.sqrt()
@@ -1016,7 +1011,7 @@ function drawMap( world ) {
             // console.log( d ) ;
             // execute callback
 
-            if ( CanMapConf.chart.callback_click != undefined ) window[CanMapConf.chart.callback_click](d,this) ; 
+            // if ( CanMapConf.chart.callback_click != undefined ) window[CanMapConf.chart.callback_click](d,this) ; 
 
         })
 

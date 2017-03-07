@@ -256,15 +256,17 @@ CanMapGraph.prototype = {
         if ( CanMapConf.chart.projection == 'globe' )
         {
             CanMapGroup = CanMapSvg.append("g")
-                 .attr('class','mapGroup')
-                 // .attr("transform", "translate(0,"+CanMapConf.chart.globe_translate.y+")")
+                .attr("id","mapGroup")
+                .attr('class','mapGroup')
+                // .attr("transform", "translate(0,"+CanMapConf.chart.globe_translate.y+")")
             ;
         }
         else
         {
             CanMapGroup = CanMapSvg.append("g")
-                 .attr('class','mapGroup')
-                 .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+                .attr("id","mapGroup")
+                .attr('class','mapGroup')
+                .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
             ;
         }
         
@@ -1214,11 +1216,14 @@ function drawMap( world ) {
         
         // draw layer 2 & 3 borders + lines for very small countries
         g_lines = CanMapSvg.append("g")
+            .attr("id","mapLines")
             .attr('class','line') 
             .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
         ;
         // polygone for lakes mostly
-        g_poly = CanMapSvg.append("g").attr('class','poly') 
+        g_poly = CanMapSvg.append("g")
+            .attr("id","mapLakes")
+            .attr('class','poly') 
             .attr("d", CanGraphMapPath)
             .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
         ;
