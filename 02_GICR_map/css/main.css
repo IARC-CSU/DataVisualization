@@ -149,6 +149,7 @@ div.line{
     position: absolute;
     width: 100% ; 
     height: 7px ; 
+    z-index: 10;
 }
 div.line.top{
    top: 0px; 
@@ -210,6 +211,9 @@ a.circle{
     margin: 0;
     z-index: 1;
     position: relative;
+    background: #fff;
+    height: 30px;
+    padding: 30px 0 ;
 }
 
 header,footer{
@@ -345,6 +349,7 @@ h2{
 
 select{
     margin: 0 5px ; 
+    font-size: 0.8em;
 }
 
 .main header{
@@ -637,12 +642,13 @@ img.loader{
 
 form.filters{
     color: #000 ;
-    position: absolute ;
-    top: 0px ;
-    left: 0px ;
-    padding: 50px 0 20px 50px ;
-    background: #fff ;
-    width: 100% ;
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    margin-left: -190px;
+    background: #fff;
+    width: 100%;
+    z-index: 22;
 }
 
 form .filter{
@@ -654,7 +660,7 @@ form .filter-function{
 }
 
 form .filter-function select,form .filter-geography select{
-    width: 300px ; 
+    width: 200px; ; 
 }
 
 form .filter select[name="geography"] option.hub-country{

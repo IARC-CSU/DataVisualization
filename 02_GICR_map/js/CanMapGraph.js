@@ -115,7 +115,7 @@ var CanMapGraph = function( object ){
 };
 
 var CanMapSvg, CanMapGroup , CanCircleGroup , 
-    CanMapWidth , CanMapHeight , CanMapGraphProjection, CanMapBubblesData , CanMapText , 
+    CanMapWidth , CanMapHeight , CanMapGraphProjection, CanMapBubblesData , CanMapText , CanGraphRegistries , 
     CanGraphMapColor , CanGraphMapColorQuantile,  CanGraphMapPath , CanGraphGeometries , CanGraphCountries , CanGraphCurrentKey = 'asr', CanGraphMapFeatures ,
     CanMapTooltip, CanMapCurrentType = 0, CanGraphMapZoom, CanGraphMapCentered , CanGraphMapLegend, CanMapGraphNbColors = 5,
     CanMapUniqueValues , 
@@ -314,10 +314,12 @@ CanMapGraph.prototype = {
         queue()     
             .defer(d3.json, "data/world-hd.json.geojson" ) // our geometries
             .defer(d3.csv, "data/countries.csv")  // our data specific
-            .await(function( error , geometries , countries ){ 
+            .defer(d3.json, "data/registries.geojson")
+            .await(function( error , geometries , countries , registries ){ 
 
                 CanGraphGeometries = geometries ; 
                 CanGraphCountries = countries ;
+                CanGraphRegistries = registries ; 
                 // call the "filtering" data function 
 
                 jsonUrl = CanMapConf.data.url ;
@@ -1015,9 +1017,40 @@ function drawMap( world ) {
 
         })
 
-    
+    /*CanMapSvg.append("path")
+        .datum( CanGraphRegistries.features )
+        .attr("d", CanGraphMapPath )
+        .attr("class", "place") ;*/
 
-    
+    var CanPlacesCircles = CanMapSvg.append('g')
+        .attr('class','place-circles-group')
+        .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+    ;
+
+    CanPlacesCircles.selectAll(".place-circle")
+        .data( CanGraphRegistries.features )
+        .enter().append("circle")
+        .attr("class", function(d){ return "place-circle code-"+ d.properties.Un_code ; })
+        .attr("transform", function(d) { return "translate(" + CanMapGraphProjection(d.geometry.coordinates) + ")"; })
+        .attr("r", 0.25 )
+        .attr("stroke","#000")
+        .attr("stroke-width",'0px')
+        .attr("fill","#000")
+    ;
+
+    var CanPlaces = CanMapSvg.append('g')
+        .attr('class','place-label-group')
+        .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+    ;
+
+    CanPlaces.selectAll(".place-label")
+        .data( CanGraphRegistries.features )
+        .enter().append("text")
+        .attr("class", function(d){ return "place-label code-"+ d.properties.Un_code ; })
+        .attr("transform", function(d) { return "translate(" + CanMapGraphProjection(d.geometry.coordinates) + ")"; })
+        .attr("dy", ".35em")
+        .attr("dx", ".5em")
+        .text(function(d) { return d.properties.Name; });
     
     if ( CanMapConf.chart.projection != 'globe' ) 
     {

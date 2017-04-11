@@ -52,7 +52,17 @@
 	svg#legend{
 	    position: absolute;
 	    left: 450px ; 
-	    bottom: -25px ;
+	    bottom: -40px ;
+	}
+
+	svg#legend_bubble{
+		position: absolute;
+	    left: 650px;
+	    bottom: -40px;
+	}
+
+	svg#legend .for_bubble{
+		display: none ; 
 	}
 
 	.unit-label {
@@ -92,7 +102,7 @@
 	    background-color: #fff ; 
 	    padding: 0 25px ; 
 	    width: 600px ; 
-	    height: 650px ; 
+	    height: 500px ; 
 	    overflow-y: auto ;
 	}
 
@@ -309,4 +319,13 @@
 	    height: 10px;
 	    display: inline-block;
 	    margin-right: 5px;
+	}
+
+	.place-label{
+		font-size: 0.07em ;
+		display: none ; 
+	}
+
+	.place-label.show{
+		display: block ; 
 	}
