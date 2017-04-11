@@ -37,9 +37,9 @@
             'src'    : [{ 'label' : 'Test' , 'value' : 10 },{ 'label' : 'Test' , 'value' : 10 }]
         },
         'chart' : {
-            'scale' : 320 , 
+            'scale' : 250 , 
             'key_data_value' : 'value' , 
-            'globe_translate' : { 'x' : -50 , 'y' : 200 } , 
+            'globe_translate' : { 'x' : -30 , 'y' : 100 } , 
             'projection' : 'natural-earth' , 
             'legend_suffix' : '' , 
             'color_scale' : 'quantile' ,
