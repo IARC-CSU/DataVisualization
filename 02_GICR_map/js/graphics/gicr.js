@@ -10,6 +10,17 @@
         6 : { 'id' : 6 , 'name' : 'LatAm' , 'label' : 'Latin America',  'color' : '#FDCC00', 'plot_name' : 'PER' , 'plot_translate' : { 'x' : 200 , 'y' : -280 }}
     } ; 
 
+    var dataActions = [
+      {date: new Date(2013,9,13), name: 'Basic Site Visit' , place : 'Lubumbashi' , hub_id : 1 },
+      {date: new Date(2014,5,16), name: 'Training CanReg5' , place : 'Namibia' , hub_id : 1 },
+      {date: new Date(2014,7,11), name: 'Basic Training Course in French'  , place : 'Abidjan' , hub_id : 1 },
+      {date: new Date(2014,7,31), name: 'Cancer Registration + CanReg5 + PAF'  , place : 'Cairo' , hub_id : 1 }, 
+      {date: new Date(2015,8,2), name: 'Cancer Registration + CanReg5 Course in Russian'  , place : 'Astana' , hub_id : 2 }, 
+      {date: new Date(2015,8,26), name: 'GICR presentation at RINC Annual Meeting'  , place : 'Bogotà' , hub_id : 6 },
+      {date: new Date(2015,9,15), name: 'IARC Short Course (Cancer registration + CanReg)'  , place : 'San Salvador' , hub_id : 6 },
+      {date: new Date(2016,6,19), name: 'National Strategiec planning workshop'  , place : 'San Salvador' , hub_id : 6 }
+    ];
+
     var title = 'Global Initiative for Cancer Registries' ;
 
     var hubs_per_name = [] ; 
@@ -80,6 +91,8 @@
             $(tab).fadeIn();
         });
 
+        buildTimeline() ; 
+
     }) ;
 
     var setFunctionView = function( item )
@@ -112,62 +125,84 @@
 
         d3.selectAll('.circleGroup').remove();
 
-        if ( view == 1 )
+        switch ( view )
         {
-            $('.filter-function').hide(); 
-            $('.filter-geography').show(); 
-            $(".unit-label").fadeIn() ;
-            
-            $('#title-map').text( title + ': geographic view') ;
-            $('select [name="geography"]').val( 'global' );
-            $('.for_bubble').hide();
-            $('svg#legend_bubble').html(' ');
-        } 
-        else
-        {
-            $('.filter-function').show(); 
-            $('.filter-geography').hide(); 
-            $(".unit-label").fadeOut() ;
-            $('#title-map').text( title + ': site visit(s)') ;
-            $('#hubPanel,#countryPanel').removeClass('show') ;
-            $('.for_bubble').show();
-            buildCircleLegend();
-            if ( level != 0 ) zoomRegion( undefined ) ; 
-
-            setTimeout(function(){
+            case 1 : 
+                $('.filter-function').hide(); 
+                $('.filter-geography').show(); 
+                $(".unit-label").fadeIn() ;
                 
-                CanCircleGroup = CanMapSvg.append("g")
-                    .attr('class','circleGroup')
-                    .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
-                ;
+                $('#title-map').text( title + ': geographic view') ;
+                $('select [name="geography"]').val( 'global' );
+                $('.for_bubble').hide();
+                $('svg#legend_bubble').html(' ');
 
-                CanGraphRadiusBubble = d3.scale.sqrt()
-                    .domain([ 0, 10 ])
-                    .range([ 0, 15 ]);
+                $('#timeline').removeClass('open');
 
-                CanCircleGroup.append("g")
-                    .selectAll("circle")
-                    .data( CanGraphGeometries.features )
-                    .enter().append("circle")
-                    .attr("class","bubble")
-                    .style('fill', function(d){ 
-                        if ( d.properties.NAME == null && d.properties.values != undefined)
-                        {
-                            return d.properties.values.color ; 
-                        }
-                    } )
-                    .style('fill-opacity', 0.7)
-                    .style('stroke','#ffffff')
-                    .style('stroke-width','.5px')
-                    .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
-                    .attr("r",0)
-                    .on('mouseover', function(d){ hoverFunction(d) })
-                    .on("mouseout", function(d){ outFunction(d) })
-                ;
+                break ; 
+            
+            case 2 : 
+                $('.filter-function').show(); 
+                $('.filter-geography').hide(); 
+                $(".unit-label").fadeOut() ;
+                $('#title-map').text( title + ': site visit(s)') ;
+                $('#hubPanel,#countryPanel').removeClass('show') ;
+                $('.for_bubble').show();
+                buildCircleLegend();
+                if ( level != 0 ) zoomRegion( undefined ) ; 
 
-                setFunctionView( undefined );
+                $('#timeline').removeClass('open');
 
-            },500);
+                setTimeout(function(){
+                    
+                    CanCircleGroup = CanMapSvg.append("g")
+                        .attr('class','circleGroup')
+                        .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+                    ;
+
+                    CanGraphRadiusBubble = d3.scale.sqrt()
+                        .domain([ 0, 10 ])
+                        .range([ 0, 15 ]);
+
+                    CanCircleGroup.append("g")
+                        .selectAll("circle")
+                        .data( CanGraphGeometries.features )
+                        .enter().append("circle")
+                        .attr("class","bubble")
+                        .style('fill', function(d){ 
+                            if ( d.properties.NAME == null && d.properties.values != undefined)
+                            {
+                                return d.properties.values.color ; 
+                            }
+                        } )
+                        .style('fill-opacity', 0.7)
+                        .style('stroke','#ffffff')
+                        .style('stroke-width','.5px')
+                        .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
+                        .attr("r",0)
+                        .on('mouseover', function(d){ hoverFunction(d) })
+                        .on("mouseout", function(d){ outFunction(d) })
+                    ;
+
+                    setFunctionView( undefined );
+
+                },500);
+                break ; 
+
+            case 3 : 
+                $('.filter-function').hide(); 
+                $('.filter-geography').hide(); 
+                $(".unit-label").fadeIn() ;
+                
+                $('#title-map').text( title + ': all actions since 2013') ;
+                $('select [name="geography"]').val( 'global' );
+                $('.for_bubble').hide();
+                $('svg#legend_bubble').html(' ');
+
+                //
+                $('#timeline').addClass('open');
+
+                break ; 
         }
 
         updateGeographyFilling(); 
@@ -193,6 +228,143 @@
     var outFunction = function(){
         $('.canTooltip').hide();
     }
+
+    
+
+    var colorScale = d3.scale.category10();
+    var formatDate = d3.time.format('%e %b %Y');
+
+    var calculateMaxTextLength = function(d){ 
+        var line1 = formatDate(d.date) + ' ('+d.place+')' ;
+        var line2 = d.name ; 
+
+        // return the longest line
+        return ( line1.length > line2.length ) ? line1 : line2 ;  
+    }
+    var dummyText , innerWidth ;
+    var timeScale ;
+
+    var buildTimeline = function(){
+
+        var options =   {
+          margin: {left: 20, right: 20, top: 20, bottom: 20},
+          initialWidth: $(window).width() - ( ( 50 + 20 ) * 2 ) ,
+          initialHeight: 150
+        };
+
+        innerWidth =  options.initialWidth - options.margin.left - options.margin.right;
+        var innerHeight = options.initialHeight - options.margin.top - options.margin.bottom;
+        
+    
+        var vis = d3.select('#timeline')
+            .append('svg')
+            .attr('width',  options.initialWidth)
+            .attr('height', options.initialHeight)
+            .append('g')
+            .attr('transform', 'translate('+options.margin.left+','+options.margin.top+')');
+
+        dummyText = vis.append("text") ; 
+
+        timeScale = d3.time.scale()
+          .domain(d3.extent(dataActions, function(d){return d.date;}))
+          .range([0, innerWidth])
+          .nice(); 
+
+        var nodes = dataActions.map(function(action){
+            var bbox = dummyText.text(calculateMaxTextLength(action))[0][0].getBBox();
+            action.h = bbox.height;
+            action.w = bbox.width;
+            return new labella.Node(timeScale(action.date), action.w + 9, action);
+        });
+
+        dummyText.remove();
+
+        var force = new labella.Force({ minPos: -10, maxPos: innerWidth })
+          .nodes(nodes)
+          .compute();
+
+        var renderer = new labella.Renderer({
+          layerGap: 30,
+          nodeHeight: nodes[0].data.h,
+          direction: 'bottom'
+        });
+
+        vis.append('line')
+          .classed('timeline', true)
+          .attr('x2', innerWidth);
+
+        var linkLayer = vis.append('g');
+        var labelLayer = vis.append('g');
+        var dotLayer = vis.append('g');
+
+        dotLayer.selectAll('circle.dot')
+          .data(nodes)
+          .enter().append('circle')
+          .classed('dot', true)
+          .attr('r', 3)
+          .attr('cx', function(d){return d.getRoot().idealPos; });
+
+
+        drawTimelines( { 
+            'renderer' : renderer , 
+            'nodes' : force.nodes() ,
+            'labelLayer' : labelLayer , 
+            'linkLayer' : linkLayer , 
+            'dotLayer' : dotLayer 
+        } );
+
+    }
+
+    var colorTimeline = function(d,i){
+        return colorScale(i); 
+    }
+
+    var drawTimelines = function drawTimelines( params )
+    {
+      // Add x,y,dx,dy to node
+      params.renderer.layout( params.nodes );
+
+      // Draw label rectangles
+      var sEnter = params.labelLayer.selectAll('rect.flag')
+        .data(params.nodes)
+        .enter().append('g')
+        .attr('transform', function(d){return 'translate('+(d.x-d.width/2)+','+(d.y)+')';});
+
+      sEnter
+        .append('rect')
+        .classed('flag', true)
+        .attr('width', function(d){ return d.data.w + 9; })
+        .attr('height', function(d){ return 30 + 4; })
+        .attr('rx', 2)
+        .attr('ry', 2)
+        .style('fill', function(d){ return hubs[d.data.hub_id].color ;} );
+
+     sEnter.append('text')
+        .attr('class','date')
+        .attr('x', 4)
+        .attr('y', 15)
+        .style('fill', '#fff')
+        .text(function(d){return formatDate(d.data.date) + ' ('+d.data.place+')' ;});
+
+      sEnter.append('text')
+        .attr('class','event')
+        .attr('x', 4)
+        .attr('y', 30)
+        .style('fill', '#fff')
+        .text(function(d){return d.data.name ;});
+
+      // Draw path from point on the timeline to the label rectangle
+      params.linkLayer.selectAll('path.link')
+        .data( params.nodes )
+        .enter().append('path')
+        .classed('link', true)
+        .attr('d', function(d){ return params.renderer.generatePath(d); })
+        .style('stroke', function(d){ return hubs[d.data.hub_id].color ;} )
+        .style('stroke-width',2)
+        .style('opacity', 0.6)
+        .style('fill', 'none');
+    }
+
 
     /**
     *

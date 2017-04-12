@@ -354,10 +354,10 @@ select{
 
 .main header{
     -webkit-transition: min-height 1s; 
-  -moz-transition: min-height 1s; 
-  -ms-transition: min-height 1s; 
-  -o-transition: min-height 1s; 
-  transition: min-height 1s;  
+    -moz-transition: min-height 1s; 
+    -ms-transition: min-height 1s; 
+    -o-transition: min-height 1s; 
+    transition: min-height 1s;  
     min-height: 500px ;
     padding-top: 200px; 
 }
@@ -668,7 +668,40 @@ form .filter select[name="geography"] option.hub-country{
 }
 
 
+#timeline{
+    -webkit-transition: all 1s; 
+    -moz-transition: all 1s; 
+    -ms-transition: all 1s; 
+    -o-transition: all 1s; 
+    transition: all 1s;  
+    width: 100%  ; 
+    height: 110px ; 
+    background-color: #fff ; 
+    position: absolute ; 
+    top: -100px ; 
+    padding: 20px 50px ; 
+}
 
+#timeline.open{
+    top: 75px; 
+}
+
+#timeline line.timeline{
+  stroke-width: 2px;
+  stroke: #222;
+}
+
+#timeline circle.dot{
+  fill: #222;
+}
+
+#timeline text {
+    font-size: 0.8em;
+}
+
+#timeline text.event{
+    font-size: 0.6em;  
+}
  
 
 /* ==========================================================================
