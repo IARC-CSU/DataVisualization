@@ -28,7 +28,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title" id="title-map">Global Initiative for Cancer Registries </h1>
+                <h1 class="title" id="title-map">Global Initiative for Cancer Registries: geographic view </h1>
             </header>
         </div>
 
@@ -47,19 +47,100 @@
                 <div class="filter filter-geography">
                     <label>Geography</label>
                     <select name="geography" onchange="zoomView(this)">
-                        <option value="">Global view</option>
+                        <option value="" class="global">Global view</option>
                     </select>
                 </div>
 
                 <div class="filter filter-function">
                     <label>Function</label>
-                    <select name="function">
-                        <option value="1">Site visit(s)</option>
-                        <option value="2">Training(s)</option>
-                        <option value="3">Agreement(s)</option>
+                    <select name="function" onchange="setFunctionView(this)">
+                        <option value="visit">Site visit(s)</option>
+                        <option value="training">Training(s)</option>
+                        <option value="agreement">Agreement(s)</option>
                     </select>
                 </div>
+
+
             </form>
+
+            <div class="line top">
+            </div>
+
+            <div id="hubPanel">
+                <div class="hub-line top"></div>
+                <h2 class="hub-name"></h2>
+                <h3>Regional hub center:</h3>
+                <h3>Hub PI:</h3>
+                <h3>Canreg "experts":</h3>
+                <h3>Recent/planned activities:</h3>
+                <h3>Countries:</h3>
+                <p>
+                    <ul class="hubCountries"></ul>
+                </p>   
+                <div class="hub-line bottom"></div>     
+            </div>  
+
+             <div id="countryPanel" class="">
+                <div class="hub-line top"></div>
+                <h2 id="country-name" class="country-name"></h2>
+                <div id="tabs-container">
+                    <ul class="tabs-menu">
+                        <li class="current"><a href="#tab-1">At a glance</a></li>
+                        <li><a href="#tab-2">The need</a></li>
+                        <li><a href="#tab-3">The solution</a></li>
+                        <li><a href="#tab-4">Impact</a></li>
+                        <li><a href="#tab-5">The plan of action</a></li>
+                        <li><a href="#tab-6">Collabortators</a></li>
+                    </ul>
+                    <div class="tab">
+                        <div id="tab-1" class="tab-content">
+                            <div id="intro"></div>
+                            <table>
+                                <tr>
+                                    <td>Population </td><td id="population"></td>
+                                </tr>
+                                <tr>
+                                    <td>Human Development Index</td><td id="hdi"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Estimated Cancer Burden, 20123</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Incidence</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of cases</td><td id="incidence_cases"></td>
+                                </tr>
+                                <tr>
+                                    <td>Cumulative risk, 0-74(%)</td><td id="incidence_cum_risk"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Mortality</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of deaths</td><td id="mortality_deaths"></td>
+                                </tr>
+                                <tr>
+                                    <td>Cumulative risk, 0-74(%)</td><td id="mortality_cum_risk"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" id="description"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                        </div>
+                        <div id="tab-3" class="tab-content">
+                        </div>
+                        <div id="tab-4" class="tab-content">
+                        </div>
+                        <div id="tab-5" class="tab-content">
+                        </div>
+                        <div id="tab-6" class="tab-content">
+                        </div>
+                    </div>
+                </div>
+            </div> 
 
             <div class="main wrapper clearfix" id="map-container">
 
@@ -72,6 +153,10 @@
             <div class="footer-map">
             <img src="img/logo-iarc.jpg" title="IARC" id="iarc">
 
+            <svg id="legend" width="150" height="50"></svg>
+            
+            <svg id="legend_bubble" width="150" height="50"></svg>
+
 
             <div id="txt-footer-map">The boundaries and names shown and the designations used on this map do not imply the expression of any opinion whatsoever on the part of the World Health Organization concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Dotted and dashed lines on maps represent approximate border lines for which there may not yet be full agreement.
             ©WHO 2017. All rights reserved
@@ -82,11 +167,14 @@
         </div> <!-- #main-container -->
 
         <div class="footer-container">
+            <div class="line bottom">
+            </div>
             <footer class="wrapper">IARC, 150 Cours Albert Thomas, 69372 Lyon CEDEX 08, France - Tel: +33 (0)4 72 73 84 85 - Fax: +33 (0)4 72 73 85 75 - Privacy Policy  © IARC 2017 - All Rights Reserved.
             </footer>
         </div>
 
         <!-- libs -->
+        <script src="js/vendor/x2js.js"></script>
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/d3.min.js"></script>
         <script src="js/vendor/topojson.js"></script>

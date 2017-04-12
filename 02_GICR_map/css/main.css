@@ -4,6 +4,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    background-color: #fff ;
 }
 
 ::-moz-selection {
@@ -144,6 +145,25 @@ div#countryPanel #chart{
     height: 250px ; 
 }
 
+div.line{
+    position: absolute;
+    width: 100% ; 
+    height: 7px ; 
+    z-index: 10;
+}
+div.line.top{
+   top: 0px; 
+}
+div.line.bottom{
+   bottom: 30px; 
+}
+
+div.line-hub{
+    width: 16.6% ;
+    height: 100% ; 
+    float: left ; 
+}
+
 .nvd3 text{
     font-family: 'Cabin', sans-serif, Arial ; 
 }
@@ -191,6 +211,9 @@ a.circle{
     margin: 0;
     z-index: 1;
     position: relative;
+    background: #fff;
+    height: 30px;
+    padding: 30px 0 ;
 }
 
 header,footer{
@@ -218,9 +241,10 @@ footer{
 }
 
 h1{
-    margin: 0.2em 0 ; 
+    margin: 0 ; 
     text-align: center ; 
-    padding-top: 20px ;
+    padding-top: 0px ;
+    padding-left: 20px ; 
 }
 
 h2 span.square{
@@ -325,6 +349,7 @@ h2{
 
 select{
     margin: 0 5px ; 
+    font-size: 0.8em;
 }
 
 .main header{
@@ -366,10 +391,7 @@ h4{
     text-align: center ; 
 }
 
-ul.hubCountries li{
-    float: left ; 
-    width: 33% ; 
-}
+
 
 .dataviz{
     min-height: 140px ; 
@@ -620,12 +642,13 @@ img.loader{
 
 form.filters{
     color: #000 ;
-    position: absolute ;
-    top: 0px ;
-    left: 0px ;
-    padding: 50px 0 20px 50px ;
-    background: #fff ;
-    width: 100% ;
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    margin-left: -190px;
+    background: #fff;
+    width: 100%;
+    z-index: 22;
 }
 
 form .filter{
@@ -636,39 +659,16 @@ form .filter-function{
     display: none ; 
 }
 
+form .filter-function select,form .filter-geography select{
+    width: 200px; ; 
+}
+
 form .filter select[name="geography"] option.hub-country{
     padding-left: 15px ; 
 }
 
-ul.hubs-list{
-    margin: auto;
-    position: absolute ; 
-    padding-left: 0px;
-    bottom: 150px;
-    left: 50px;
-    width: 275px ;
-}
 
-ul.hubs-list li{
-    list-style-type:  none ; 
-    display: inline-block ;
-    float: left ;  
-    width: 100%;
-    height: 20px;
-    vertical-align: top;
-    margin-top: 0px;
-}
 
-ul.hubs-list li a{
-    font-size: 0.8em ;
-}
-
-ul.hubs-list li span{
-    width: 30px;
-    height: 10px;
-    display: inline-block;
-    margin-right: 5px;
-}
  
 
 /* ==========================================================================
