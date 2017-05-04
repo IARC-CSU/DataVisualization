@@ -754,7 +754,7 @@ function grabValues( CanGraphGeometries,CanGraphCountries,predictions ){
     
     // if ( CanGraphCountries == undefined ) return ; 
 
-    // console.info( predictions.data ) ;
+    console.info( CanGraphCountries ) ;
 
     // first init to 0
     for (var index = 0; index < CanGraphCountries.length; index++ ) {
@@ -779,7 +779,7 @@ function grabValues( CanGraphGeometries,CanGraphCountries,predictions ){
 
                     if ( predictions.data[j].COUNTRY == CanGraphCountries[index].globocan_id 
                         ||  predictions.data[j].globocan_id == Math.abs(CanGraphCountries[index].globocan_id )
-                        //||  predictions.data[j].country_id == Math.abs(CanGraphCountries[index].globocan_id )
+                        ||  predictions.data[j].ISO_2_CODE == CanGraphCountries[index].ISO_2_CODE
                     ) {
 
                         CanGraphGeometries.objects['general'].geometries[geo].properties.country_data = predictions.data[j].country_data ; 
@@ -1047,7 +1047,7 @@ function drawMap( world ) {
         /*.attr('ng-click', function(d) {
             return "clickPathMap('" + d + "')";
         })*/
-        .on("mouseover", function(d){
+        /*.on("mouseover", function(d){
             if ( d.properties.values.no_data != undefined && d.properties.values.no_data == true ) 
             {
                 // document.body.style.cursor = 'wait';
@@ -1145,7 +1145,7 @@ function drawMap( world ) {
 
             if ( CanMapConf.chart.callback_mouseout != undefined ) 
                 window[CanMapConf.chart.callback_mouseout](d,this) ;
-        })     
+        })  */   
 
         .call(
 
@@ -1496,11 +1496,11 @@ function manageLegends()
                         var format = d3.format("0."+CanMapConf.chart.legend_decimal+"f") ;
 
                         if ( i == 0 && CanMapConf.chart.color_scale == 'quantile' )
-                            return '≥ '+ roundProportion( extent[0] )+CanMapConf.chart.legend_suffix ; 
+                            return '≥ '+ Math.round( extent[0] )+CanMapConf.chart.legend_suffix ; 
                         else if (i == (CanMapGraphNbColors-1) && CanMapConf.chart.color_scale == 'quantile' )
-                            return '< ' + roundProportion(extent[1])+CanMapConf.chart.legend_suffix ; 
+                            return '< ' + Math.round(extent[1])+CanMapConf.chart.legend_suffix ; 
                         else
-                            return roundProportion(+extent[0]) + "–" + roundProportion(+extent[1])+CanMapConf.chart.legend_suffix;
+                            return Math.round(+extent[0]) + "–" + Math.round(+extent[1])+CanMapConf.chart.legend_suffix;
                     }
                 })
                 .on("click", function( color_clicked ){

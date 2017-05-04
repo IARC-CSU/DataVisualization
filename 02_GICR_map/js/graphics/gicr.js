@@ -18,7 +18,7 @@
       {date: new Date(2015,8,2), name: 'Cancer Registration + CanReg5 Course in Russian'  , place : 'Astana' , hub_id : 2 }, 
       {date: new Date(2015,8,26), name: 'GICR presentation at RINC Annual Meeting'  , place : 'Bogotà' , hub_id : 6 },
       {date: new Date(2015,9,15), name: 'IARC Short Course (Cancer registration + CanReg)'  , place : 'San Salvador' , hub_id : 6 },
-      {date: new Date(2016,6,19), name: 'National Strategiec planning workshop'  , place : 'San Salvador' , hub_id : 6 }
+      {date: new Date(2016,6,19), name: 'National Strategic planning workshop'  , place : 'San Salvador' , hub_id : 6 }
     ];
 
     var title = 'Global Initiative for Cancer Registries' ;
@@ -59,9 +59,9 @@
             'scale' : 250 , 
             'key_data_value' : 'value' , 
             'globe_translate' : { 'x' : -30 , 'y' : 100 } , 
-            'scale' : ( $(window).width() > 1280 ) ? 240 : 250 , 
+            'scale' : ( $(window).width() > 1280 ) ? 350 : 250 , 
             'key_data_value' : 'value' , 
-            'globe_translate' : { 'x' : 0 , 'y' : ( $(window).width() > 1280 ) ? 80 : 150 } , 
+            'globe_translate' : { 'x' : 0 , 'y' : ( $(window).width() > 1280 ) ? 150 : 150 } , 
             'projection' : 'natural-earth' , 
             'legend_suffix' : '' , 
             'color_scale' : 'quantile' ,
