@@ -884,7 +884,8 @@ function processUpdateData( predictions ) {
 
                 return "country type"+CanMapCurrentType +' '+class_no_data ; 
             })
-            .attr('fill',  t.url() ) 
+            // .attr('fill',  t.url() ) 
+            .attr('fill',  '#cccccc' ) 
     }
 
     // update legends
@@ -934,13 +935,12 @@ function drawMap( world ) {
         .attr("class", function(d){ 
             return "country type"+CanMapCurrentType ; 
         }) // give them a class for styling and access later
-        // .attr('fill' , t1.url() )
         .attr("fill", function(d) { 
             return "#ccc" ; 
         })
         // .attr("opacity",0)
-        .attr('stroke', 'none' )
-        .attr('stroke-width','0.1px')
+        .attr('stroke', '#727070' )
+        .attr('stroke-width',0.2)
         .attr("id", function(d) { return "code_" + d.properties.ISO_3_CODE ; }, true) // give each a unique id (check with graph global conf)
         .attr("d", CanGraphMapPath) // create them using the svg path generator defined above
         // ng click
@@ -951,11 +951,13 @@ function drawMap( world ) {
 
         })
         .on("mousemove", function(d){
-
+            var p = d.properties ;
+            // console.info(p.SOVEREIGN,p.WHO_REGION,p.UN_CODE,p.ISO_3_CODE) ; 
+            $(this).attr('fill-opacity',0.5) ; 
         })
         // mouseout function            
         .on("mouseout", function(d){
-
+            $(this).attr('fill-opacity',1) ; 
         })     
 
         .call(
@@ -1076,50 +1078,6 @@ function drawMap( world ) {
         g_lines = CanMapSvg.append("g").attr('class','line').attr("d", CanGraphMapPath) ;
         g_poly = CanMapSvg.append("g").attr('class','poly').attr("d", CanGraphMapPath) ;
     }
-
-    /*g_lines.selectAll("path")
-        .data( topojson.feature( CanGraphGeometries , CanGraphGeometries.objects.maskline_general ).features )
-        .enter()
-        .append("path")
-        .attr("d", CanGraphMapPath )
-        .attr('class',function(d){ return 'line line-'+d.properties.ID+' '+d.properties.class;})
-        // fill : none ; stroke : #92919D ;        stroke-width: #92919D ;
-        .style('fill','none')
-        .style('stroke','#000000')
-        .style('stroke-width','0.5px')
-        .append("title").text(function(d){ return d.properties.COUNTRY ; })
-
-    g_lines.selectAll('.line-1,.line-4,.line-5,.line-7,.line-8')
-        .style('fill','none')
-        .style('stroke','#ffffff')
-        .style('stroke-dasharray', Default.dash_array_border  +','+Default.dash_array_border )  
-        .style('stroke-width', Default.dash_border ) ; 
-
-
-    g_poly.selectAll("path")
-        .data( topojson.feature( CanGraphGeometries , CanGraphGeometries.objects.maskpoly_general ).features )
-        .enter()
-        .append("path")
-        .attr("d", CanGraphMapPath )
-        .attr('class', function(d){ 
-            return 'poly' ;
-        })
-        .style('fill',function(d){
-            if ( d.properties.AREA == Jammu )
-                return Default.color_not_applicable ; 
-            else
-                return CanMapConf.chart.background_globe ; 
-        })
-        .style('stroke','#000000')  
-        .style('stroke-dasharray',function(d){
-            if ( d.properties.AREA == Jammu )
-                return 1 ; 
-            else
-                return 0 ; 
-        })  
-        .style('stroke-width', Default.dash_border )
-        .append("title").text(function(d){ return d.properties.AREA ; }) ; */
-
 
     d3.select('g.poly path:last-child').style('fill','rgb(125, 125, 125)');
 

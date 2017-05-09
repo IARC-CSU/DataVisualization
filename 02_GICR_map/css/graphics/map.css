@@ -133,8 +133,8 @@
 	div#hubPanel h3,div#countryPanel h3{
 	    font-size: 14px;
 	    color: #000 ; 
-	    background: #ccc ;
-	    padding: 5px 10px ; 
+	    padding: 5px 0px ; 
+	    border-bottom: solid 2px white ; 
 	}
 
 	div#countryPanel p{
@@ -156,7 +156,7 @@
 
 	ul.hubCountries li{
 	    float: left ; 
-	    width: 25% ;
+	    width: auto ; 
 	    margin: 0 0 10px 0;
 	}
 
@@ -168,6 +168,7 @@
 	    line-height: 14px ;
 	    transition: all .1s ease-in-out;
 	    text-decoration: none ; 
+	    color: #fff ; 
 	}
 
 	ul.hubCountries li a:hover{

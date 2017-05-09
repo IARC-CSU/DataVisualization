@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/nv.d3.min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-treeview.css">
         <link rel="stylesheet" href="css/graphics/map.css">
 
         <link rel="icon" type="image/png" href="favicon.ico" />
@@ -44,8 +45,8 @@
                         <option value="2">Function</option>
                         <option value="3">Action</option>
                     </select>-->
-                    <a class="button active" onclick="setViewPer(1,this)"> Geography </a>
-                    <a class="button" onclick="setViewPer(2,this)"> Activities </a>
+                    <a class="button view active" onclick="setViewPer(1,this)"> Geography </a>
+                    <a class="button view" onclick="setViewPer(2,this)"> Activities </a>
                     <!--<a class="button" onclick="setViewPer(3,this)"> Actions </a>-->
                     
                 </div>
@@ -59,15 +60,15 @@
 
                 <div class="filter filter-function">
                     <label>Function</label>
-                    <select name="function" onchange="setFunctionView(this)">
+                    <!--<select name="function" onchange="setFunctionView(this)">
                         <option value="visit">Site visit(s)</option>
                         <option value="training">Training(s)</option>
                         <option value="agreement">Agreement(s)</option>
-                    </select>
+                    </select>-->
 
-                    <!--<a class="button active" onclick="setFunctionView('visit')"> Site visit(s) </a>
-                    <a class="button" onclick="setViewPer(2,this)"> Training(s) </a>
-                    <a class="button" onclick="setViewPer(3,this)"> Agreement(s) </a>-->
+                    <a class="button function active" onclick="setFunctionView('visit',this)"> Site visit(s) </a>
+                    <a class="button function" onclick="setFunctionView('training',this)"> Training(s) </a>
+                    <a class="button function" onclick="setFunctionView('agreement',this)"> Agreement(s) </a>
                 </div>
 
 
@@ -82,15 +83,18 @@
             <div id="hubPanel">
                 <div class="hub-line top"></div>
                 <h2 class="hub-name"></h2>
-                <h3>Regional hub center:</h3>
-                <h3>Hub PI:</h3>
-                <h3>Canreg "experts":</h3>
-                <h3>Recent/planned activities:</h3>
+                <h3>Regional hub center</h3>
+                <div id="hub_centers"></div>
+                <h3>Hub PI</h3>
+                <div id="hub_pi"></div>
+                <h3>Canreg "experts"</h3>
+                <div id="canreg_experts"></div>
+                <h3>Recent/planned activities</h3>
+                <div id="planned_activities"></div>
                 <h3>Countries:</h3>
                 <p>
                     <ul class="hubCountries"></ul>
                 </p>   
-                <div class="hub-line bottom"></div>     
             </div>  
 
              <div id="countryPanel" class="">
@@ -197,6 +201,7 @@
         <script src="js/vendor/queue.min.js"></script>
         <script src="js/vendor/colorbrewer.js"></script>
         <script src="js/vendor/labella-extra.min.js"></script>
+        <script src="js/vendor/bootstrap-treeview.js"></script>
 
         <!-- cangraph -->
         <script src="js/CanGraph.js"></script>

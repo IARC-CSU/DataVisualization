@@ -40,9 +40,9 @@ var CanMapGraph = function( object ){
             'key_data'      : 'id',
             'mode'          : 'heat' , // heat or bubble
             'show_background' : true , 
-            'background_globe' : '#EDF9FC',
+            'background_globe' : '#ffffff',
             'projection'    : 'natural-earth',
-            'background'    : 'transparent',
+            'background'    : '#ffffff',
             'graticule'     : false , 
             'callback_click'      : undefined , 
             'callback_mousehover' : undefined , 
@@ -55,6 +55,7 @@ var CanMapGraph = function( object ){
                 'y' : 0 
             } ,
             'default_color' : 'Blues', 
+            'custom_ranges' : undefined , 
             'legend_decimal' : 1 , 
             'legend_suffix' : '',
             'fill_color'    : undefined , 
@@ -179,7 +180,7 @@ CanMapGraph.prototype = {
             // .on("mousedown", mapMouseDown )
         ;
 
-        CanMapSvg.append("path")
+        /*CanMapSvg.append("path")
             .datum({type: "Sphere"})
             .attr("stroke","none")
             .attr("id", "sphere")
@@ -219,7 +220,7 @@ CanMapGraph.prototype = {
                     })
             )
 
-        ;
+        ;*/
 
         // the background
         if ( CanMapConf.chart.show_background == true )
@@ -227,8 +228,8 @@ CanMapGraph.prototype = {
             var Sphere = CanMapSvg.append("use")
                 .attr("class", "stroke")
                 .attr("xlink:href", "#sphere")
-                .attr('fill','transparent')
-                .style('fill','transparent')
+                .attr('fill','#ffffff')
+                .style('fill','ffffff')
             ;
 
             var fillSphere = CanMapSvg.append("use")
@@ -353,9 +354,6 @@ CanMapGraph.prototype = {
         CanMapCurrentType   = settings.type ; 
 
         CanMapConf.chart.color_scale = settings.color_scale ;
-
-        var label = ( settings.key == 'cum0_74') ? 'Cum. risk' : settings.key.toUpperCase() ;
-        CanMapConf.chart.key_label_value = label ; 
 
         setMapColor( settings.color );
 
@@ -553,10 +551,10 @@ function setMapColor( key_color )
     CanMapGraphNbColors ; 
 
     // console.info( unique_values ) ; 
-
     if ( !colorbrewer[ key_color ] )
     {
-        range_colors = CanColors.bootstrap_colors ; 
+        range_colors = key_color ; 
+        range_colors.reverse() ; 
     }
     else
     {
@@ -754,7 +752,7 @@ function grabValues( CanGraphGeometries,CanGraphCountries,predictions ){
     
     // if ( CanGraphCountries == undefined ) return ; 
 
-    console.info( CanGraphCountries ) ;
+    // console.info( CanGraphCountries ) ;
 
     // first init to 0
     for (var index = 0; index < CanGraphCountries.length; index++ ) {
@@ -1040,7 +1038,8 @@ function drawMap( world ) {
             }
 
         })
-        .attr('stroke', 'none' )
+        .attr('stroke', '#000000' )
+        .attr('stroke-width',0.4)
         .attr("id", function(d) { return "code_" + d.id ; }, true) // give each a unique id (check with graph global conf)
         .attr("d", CanGraphMapPath) // create them using the svg path generator defined above
         // ng click

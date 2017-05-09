@@ -59,9 +59,9 @@
             'scale' : 250 , 
             'key_data_value' : 'value' , 
             'globe_translate' : { 'x' : -30 , 'y' : 100 } , 
-            'scale' : ( $(window).width() > 1280 ) ? 350 : 250 , 
+            'scale' : ( $(window).width() > 1280 ) ? 320 : 250 , 
             'key_data_value' : 'value' , 
-            'globe_translate' : { 'x' : 0 , 'y' : ( $(window).width() > 1280 ) ? 150 : 150 } , 
+            'globe_translate' : { 'x' : 0 , 'y' : ( $(window).width() > 1280 ) ? 200 : 150 } , 
             'projection' : 'natural-earth' , 
             'legend_suffix' : '' , 
             'color_scale' : 'quantile' ,
@@ -121,7 +121,7 @@
     */
     var setViewPer = function( view , item ){
 
-        $( 'a.button' ).removeClass( 'active' );
+        $( 'a.view.button' ).removeClass( 'active' );
         $( item ).addClass('active'); 
 
         d3.selectAll('.circleGroup').remove() ;
@@ -380,9 +380,12 @@
             $('ul.hubs-list').append( li ) ; 
         }
 
+        $('ul.hubs-list').append( '<li attr-iso="0"><a href="javascript:void(0)"><span class="hub" style="background-color:'+GICR.default_color+';"></span>Not applicable</a></li>' ) ;
+
         // hover function
         $('ul.hubs-list li').hover( function(){
             var attr_hub = $(this).attr('attr-iso'); 
+            if ( attr_hub == '0' || attr_hub == 0) return ; 
             $('path.country[attr-hub="'+attr_hub+'"]').addClass('hover') ; 
         }, function(){
             $('path.country').removeClass('hover') ; 
@@ -406,6 +409,8 @@
 
             for ( var s in select_geo )
             {
+                if ( select_geo[s].NActive == '1' || select_geo[s].key == 'undefined' ) continue ;
+
                 var label       = ' - ' + hubs_per_name[ select_geo[s].key ].label ; 
                 var value       = select_geo[s].key ; 
 
@@ -415,6 +420,7 @@
                 {
                     var item        = select_geo[s].values[v] ; 
                     if ( item.Country == '' ) continue ; 
+                    if ( item.NActive == 1 || item.NActive == '1' ) continue ; 
 
                     item.color      = hubs_per_name[ select_geo[s].key ].color ; 
                     countries[ item.UN_Code ] = item ; 
@@ -438,6 +444,8 @@
 
             for ( var g in gicr_csv )
             {
+                if ( gicr_csv[g].HUB == 'undefined' || hubs_per_name[ gicr_csv[g].HUB ] == undefined) continue ; 
+
                 if( c.ISO_3_CODE == gicr_csv[g].UN_Code )
                 {
                     c.values        = gicr_csv[g] ; 
@@ -523,7 +531,7 @@
 
     var updateGeographyFilling = function(){
 
-        switch( level )
+        /*switch( level )
         {
             case 0 :
                 var  t = textures.lines().size(6).strokeWidth(1) ; 
@@ -538,7 +546,7 @@
                 break  ; 
         }
         
-        CanMapSvg.call(t);
+        CanMapSvg.call(t);*/
 
         // 
         d3.selectAll(".country")
@@ -557,7 +565,7 @@
                     // all countries
                     case null :
                         if ( d.properties.values == undefined )
-                            return t.url() ; 
+                            return GICR.default_color ; 
                         else if ( view == 2 )
                         {
                             return GICR.default_color ;  
@@ -744,6 +752,27 @@
                 // zoom on region 
                 zoomRegion( codeCountry , scale , translateX , translateY , hub_id ) ; 
                 $('text.subunit-label').removeClass('zoomed selected');
+
+                // get extra data 
+                $.ajax({
+                    type: "GET",
+                    url: "data/hubs/"+hub.name+".xml",
+                    dataType: "xml",
+                    success: function(xml) { 
+                        var xmlString = (new XMLSerializer()).serializeToString(xml);
+                        var x2js      = new X2JS();
+                        var json  = x2js.xml_str2json( xmlString );
+                        var data  = json.country ;
+
+                        $('#hub_centers').html( data.hub_centers.toString() ); 
+                        $('#hub_pi').html( data.hub_pi.toString() ); 
+                        $('#canreg_experts').html( data.canreg_experts ); 
+                        $('#planned_activities').html( data.planned_activities ); 
+                    }
+                });
+
+                $('#hubPanel ul.hubCountries li').css('background-color', hub.color ) ; 
+                $('#hubPanel h3').css('border-color', hub.color ) ; 
 
                 $('ul.hubCountries li a').hover(function(){
                     $(this).css('border-color', $(this).attr('hover-color') ) ; 

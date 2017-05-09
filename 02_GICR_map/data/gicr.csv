@@ -1,4 +1,4 @@
-"key","UN_Code","Globocan_ID","Country","Collaborators","Description","Visits","Training","Agreements","Research","Reports","Publications","HUB"
+"key","UN_Code","Globocan_ID","Country","Collaborators","Description","Visits","Training","Agreements","Research","Reports","Publications","HUB","NActive"
 "1","AGO","24","Angola","Dr Fernando Miguel, National
 Cancer Centre","Consultancy and discussions in
 developing a PBCR1 in a suitable area.","X","","","","","","SS-Africa"
@@ -235,3 +235,43 @@ Ministry of Health","Site visited conduced in 2015; recommendations provided to 
 Health","Site visit to Fiji 2016. Recommendations underway.","X","","","","","","Pacific"
 "102","GUM","316","Guam","Dr Annette David, Ministry of
 Health","Review of tobacco tax policy to support cancer registry conducted as a case study.","X","","","X","","","Pacific"
+"103","NIC","558","Nicaragua","","","X","","","X","","","LatAm",1
+"104","GUY","328","Guyane","","","X","","","X","","","LatAm",1
+
+"106","GNB","624","Guinea-Bissau","","","X","","","X","","","SS-Africa",1
+"107","SLE","694","Sierra Leone","","","X","","","X","","","SS-Africa",1
+"108","GNQ","226","Equatorial Guinea","","","X","","","X","","","SS-Africa",1
+"109","COD","180","Democratic Republic of the Congo","","","X","","","X","","","SS-Africa",1
+"110","TCD","148","Chad","","","X","","","X","","","SS-Africa",1
+"111","CAF","140","Central African Republic","","","X","","","X","","","SS-Africa",1
+"112","SSD","999","South Sudan","","","X","","","X","","","SS-Africa",1
+"113","BFA","854","Burkina Faso","","","X","","","X","","","SS-Africa",1
+"114","SOM","706","Somalia","","","X","","","X","","","SS-Africa",1
+"115","BUR","108","Burundi AFRO","","","X","","","X","","","SS-Africa",1
+"116","REU","638","France Reunion","","","X","","","X","","","SS-Africa",1
+"117","MDG","450","Madagascar","","","X","","","X","","","SS-Africa",1
+
+"118","SDN","729","Sudan","","","X","","","X","","","NA,C-Africa, W.Asia",1
+"119","TKM","795","Turkmenistan","","","X","","","X","","","NA,C-Africa, W.Asia",1
+"120","SAU","682","Saudi Arabia","","","X","","","X","","","NA,C-Africa, W.Asia",1
+"121","YEM","887","Yemen","","","X","","","X","","","NA,C-Africa, W.Asia",1
+
+"122","ERI","232","Eritrea","","","X","","","X","","","SS-Africa",1
+
+"123","SYR","760","Syrian Arab Republic","","","X","","","X","","","NA,C-Africa, W.Asia",1
+"124","AFG","4","Afghanistan","","","X","","","X","","","NA,C-Africa, W.Asia",1
+
+"124","PRK","408","Democratic People's Republic of Korea","","","X","","","X","","","S,E,SE Asia",1
+"105","NPL","524","Nepal","","","X","","","X","","","S,E,SE Asia",1
+
+"124","NCL","540","France - Nouvelle Caledonie","","","X","","","X","","","Pacific",1
+"125","PNG","598","Papua New Guinea","","","X","","","X","","","Pacific",1
+"126","SLB","90","Solomon Islands","","","X","","","X","","","Pacific",1
+"127","VUT","548","Vanuatu","","","X","","","X","","","Pacific",1
+
+"128","DOM","214","Dominican Republic","","","X","","","X","","","LatAm",1
+"129","DMA","212","Dominica","","","X","","","X","","","Carribean",1
+"130","GLP","312","France - Guadeloupe","","","X","","","X","","","Carribean",1
+"131","VCT","670","Saint Vincent and the Grenadines","","","X","","","X","","","Carribean",1
+"132","ATG","28","Antigua and Barbuda","","","X","","","X","","","Carribean",1
+"133","KNA","659","Saint Kitts and Nevis","","","X","","","X","","","Carribean",1

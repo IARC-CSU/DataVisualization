@@ -1,22 +1,41 @@
     
     var PROJECT             = 'map' ; 
 
+    var gradients           = ['#d95f0e','#f2903a','#ffecd1','#fcf7f2' ] ; 
+    
+    var width = $(window).width()  ; 
+    var height = $(window).height() - 150  ; 
+
+    if ( width > 1480 )
+    {
+        var scale = 320 ; 
+        var map_translate = { 'x' : -50 , 'y' : 200 }  ; 
+        var legend_translate = { 'x' : -250  , 'y' : 650 } ; 
+    }
+    else
+    {
+        var scale = 220 ; 
+        var map_translate = { 'x' : -50 , 'y' : 80 }  ; 
+        var legend_translate = { 'x' : -150  , 'y' : 450 } ; 
+    }
+
     var dataviz_conf = {
         'type'      : 'map' , 
         'title'     : false , 
-        'width'     : $(window).width()  , 
-        'height'    : $(window).height() - 150  , 
+        'width'     : width  , 
+        'height'    : height  , 
         'container' : '#map-container',
         'id'        : 'map-graph' , 
         'data'      : { 'src' : [] },
         'chart' : {
-            'scale' : 320 , 
-            'globe_translate' : { 'x' : -50 , 'y' : 200 } , 
+            'scale' : scale , 
+            'globe_translate' : map_translate , 
             'color_scale' : 'quantile' ,
             'background_globe' : '#fff', 
             'copyright' : false , 
             'default_color' : 'OrRd' , 
-            'legend_translate' : { 'x' : -250  , 'y' : 650 }
+            'colors' : gradients , 
+            'legend_translate' : legend_translate
         }, 
         'downloads' : false 
      } ;
@@ -47,8 +66,7 @@
             CanMapGraphNbColors = 4 ;
             var oMap = new CanChart( dataviz_conf ).render() ;
 
-            /*var mapGroup = document.getElementById('mapGroup')
-            panzoom(mapGroup) ;*/
+            // oMap.vizInstance.reload( dataset , { color : 'Reds' } ) ; 
 
 
         });
