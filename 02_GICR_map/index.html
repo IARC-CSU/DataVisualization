@@ -28,6 +28,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
+                <img src="img/website-logo.gif" title="GICR" id="main-logo">
                 <h1 class="title" id="title-map">Global Initiative for Cancer Registries: geographic view </h1>
             </header>
         </div>
@@ -38,11 +39,15 @@
                 
                 <div class="filter">
                     <label>View per</label>
-                    <select name="view" onchange="setViewPer(this)">
+                    <!--<select name="view" onchange="setViewPer(this)">
                         <option value="1">Geography</option>
                         <option value="2">Function</option>
                         <option value="3">Action</option>
-                    </select>
+                    </select>-->
+                    <a class="button active" onclick="setViewPer(1,this)"> Geography </a>
+                    <a class="button" onclick="setViewPer(2,this)"> Activities </a>
+                    <!--<a class="button" onclick="setViewPer(3,this)"> Actions </a>-->
+                    
                 </div>
 
                 <div class="filter filter-geography">
@@ -59,6 +64,10 @@
                         <option value="training">Training(s)</option>
                         <option value="agreement">Agreement(s)</option>
                     </select>
+
+                    <!--<a class="button active" onclick="setFunctionView('visit')"> Site visit(s) </a>
+                    <a class="button" onclick="setViewPer(2,this)"> Training(s) </a>
+                    <a class="button" onclick="setViewPer(3,this)"> Agreement(s) </a>-->
                 </div>
 
 
@@ -67,9 +76,8 @@
             <div class="line top">
             </div>
 
-            <div id="timeline">
-
-            </div>
+            <!--<div id="timeline">
+            </div>-->
 
             <div id="hubPanel">
                 <div class="hub-line top"></div>

@@ -91,7 +91,7 @@
             $(tab).fadeIn();
         });
 
-        buildTimeline() ; 
+        // buildTimeline() ; 
 
     }) ;
 
@@ -119,11 +119,12 @@
     *
     *
     */
-    var setViewPer = function( item ){
+    var setViewPer = function( view , item ){
 
-        view = Math.abs( item.value ) ; 
+        $( 'a.button' ).removeClass( 'active' );
+        $( item ).addClass('active'); 
 
-        d3.selectAll('.circleGroup').remove();
+        d3.selectAll('.circleGroup').remove() ;
 
         switch ( view )
         {
@@ -845,28 +846,6 @@
 
         var  t = textures.lines().size(6).strokeWidth(1) ; 
         CanMapSvg.call(t);
-
-        d3.select("svg#legend")
-            .append('rect')
-            .attr('class','rect_Legend')
-            .attr("x", 0 ) 
-            .attr("y", 0 )
-            .attr("width", 35 )
-            .attr("height", 15 )
-            .style("stroke","#cccccc")
-            .style("stroke-width", "0.5px")
-            .style("fill",  t.url() )
-
-        // No data 
-        d3.select("svg#legend")
-            .append('text')
-            .attr('class','text_Legend')
-            .attr("x", 50 )  // leave 5 pixel space after the <rect>
-            .attr("y", 0 )  // + (CanMapHeight - 200);})
-            .style('font-size','12px')
-            .attr("dy", "0.9em") // place text one line *below* the x,y point
-            .text("Non GICR countries") ;
-
 
         d3.select("svg#legend")
             .append('rect')

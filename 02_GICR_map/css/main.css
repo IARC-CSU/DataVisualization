@@ -506,6 +506,30 @@ ol.legend li{
     }
 }
 
+a.button{
+    background-color: #ccc ; 
+    padding: 3px 15px ; 
+    color: #fff ; 
+    margin-right: 10px; 
+    cursor: pointer ;
+    font-size: 0.8em ;
+    border-radius: 3px ;  
+}
+
+a.button:hover,a.button.active{
+    background-color: #e8e1e1 ; 
+    color: #443f3f ; 
+    text-decoration: none ; 
+}
+
+#main-logo{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 2;
+}
+
+
 @media only screen and (min-width: 768px) {
 
 /* ====================
@@ -645,7 +669,7 @@ form.filters{
     position: absolute;
     top: 62px;
     left: 50%;
-    margin-left: -190px;
+    margin-left: -320px;
     background: #fff;
     width: 100%;
     z-index: 22;
