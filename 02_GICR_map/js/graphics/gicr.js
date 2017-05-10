@@ -44,6 +44,26 @@
     var countries   = [] ;
     var metric      = 'visit' ; 
 
+
+    var scale = 0 ; 
+    var translate = {} ; 
+
+    if ( $(window).width() > 1480 )
+    {
+        scale = 320 ; 
+        translate = { 'x' : 0 , 'y' : 200 } ; 
+    }
+    else if ( $(window).width() > 1280 )
+    {
+        scale = 230 ;
+        translate = { 'x' : 0 , 'y' : 80 } ; 
+    }
+    else
+    {
+        scale = 250 ; 
+        translate = { 'x' : 0 , 'y' : 150 } ; 
+    }
+
 	var dataviz_conf = {
         'type'      : 'map' , 
         'title'     : false , 
@@ -58,10 +78,9 @@
         'chart' : {
             'scale' : 250 , 
             'key_data_value' : 'value' , 
-            'globe_translate' : { 'x' : -30 , 'y' : 100 } , 
-            'scale' : ( $(window).width() > 1280 ) ? 320 : 250 , 
+            'scale' : scale , 
             'key_data_value' : 'value' , 
-            'globe_translate' : { 'x' : 0 , 'y' : ( $(window).width() > 1280 ) ? 200 : 150 } , 
+            'globe_translate' : translate , 
             'projection' : 'natural-earth' , 
             'legend_suffix' : '' , 
             'color_scale' : 'quantile' ,
@@ -93,6 +112,9 @@
 
         // buildTimeline() ; 
 
+        setTimeout(function(){
+            $('.intro').fadeOut({ 'duration' : 1000 }) ; 
+        },500) ; 
     }) ;
 
     var setFunctionView = function( item )
@@ -407,14 +429,19 @@
                 .key(function(d){ return d.HUB })
                 .entries( gicr_csv ) ;
 
+
+            $('#list-hubs').append( '<a class="button view active" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
+
             for ( var s in select_geo )
             {
                 if ( select_geo[s].NActive == '1' || select_geo[s].key == 'undefined' ) continue ;
 
-                var label       = ' - ' + hubs_per_name[ select_geo[s].key ].label ; 
+                var label       = hubs_per_name[ select_geo[s].key ].label ; 
                 var value       = select_geo[s].key ; 
 
-                $('select[name="geography"]').append( '<option value="'+hubs_per_name[ select_geo[s].key ].id+'" class="hub">'+label+'</option>' ) ; 
+                $('#list-hubs').append( '<a class="button view" onclick="zoomView(\''+hubs_per_name[ select_geo[s].key ].id+'\',\'hub\')"> '+label+' </a>' ) ; 
+
+                /*$('select[name="geography"]').append( '<option value="'+hubs_per_name[ select_geo[s].key ].id+'" class="hub">'+label+'</option>' ) ; 
 
                 for ( var v in select_geo[s].values )
                 {
@@ -426,7 +453,7 @@
                     countries[ item.UN_Code ] = item ; 
 
                     $('select[name="geography"]').append( '<option value="'+item.UN_Code+'" class="hub-country"> &nbsp;&nbsp; - '+item.Country+'</option>' ) ; 
-                }
+                }*/
             }
             
         }); 
@@ -579,7 +606,7 @@
                                     break ; 
 
                                 case 1 : 
-                                    if ( hubs[ current_hub ].name == d.properties.values.HUB ) 
+                                    if ( hubs[ current_hub ] != undefined && hubs[ current_hub ].name == d.properties.values.HUB ) 
                                         return d.properties.values.color ; 
                                     else
                                         return GICR.default_color ;                                    
@@ -634,7 +661,7 @@
         }
         else
         {
-            current_hub = hub_id ; 
+            current_hub = Math.abs(hub_id) ; 
 
             var centroid = CanGraphMapPath.centroid( focusedCountry ) ;
             var x = centroid[0] ;
@@ -658,13 +685,19 @@
         
     }
 
-    var zoomView = function( item )
+    /**
+    *
+    * @type global | hub | hub-country
+    **/
+    var zoomView = function( item , type )
     {
-        var option = $('select[name="geography"] :selected').attr('class') ; 
-        
+        // var option = $('select[name="geography"] :selected').attr('class') ; 
         var scale = 2 ;
+        // var hub_id = Math.round( item.value ) ; 
 
-        var hub_id = Math.round( item.value ) ; 
+        var option = type ; 
+        var hub_id = Math.abs(item) ; 
+
         current_country = item.value ; 
 
         switch( option ) 

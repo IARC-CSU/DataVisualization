@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>GICR Map</title>
+        <title>Global Initiative for Cancer Registries</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,6 +26,15 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="intro">
+        
+            <div id="baseline">
+                <img src="img/website-logo.gif" title="GICR">
+                <h1> Global Initiative for Cancer Registries </h1>
+                <h2> Cancer incidence and mortality are rising rapidly worldwide, particularly in low- and middle-income countries. There is an overwhelming need for countries to adopt and implement cancer control actions </h2>
+            </div>
+        </div>
 
         <div class="header-container">
             <header class="wrapper clearfix">
@@ -52,14 +61,15 @@
                 </div>
 
                 <div class="filter filter-geography">
-                    <label>Geography</label>
-                    <select name="geography" onchange="zoomView(this)">
+                    <label>Choose a hub</label>
+                    <!--<select name="geography" onchange="zoomView(this)">
                         <option value="" class="global">Global view</option>
-                    </select>
+                    </select>-->
+                    <div id="list-hubs"></div>
                 </div>
 
                 <div class="filter filter-function">
-                    <label>Function</label>
+                    <label>Activities</label>
                     <!--<select name="function" onchange="setFunctionView(this)">
                         <option value="visit">Site visit(s)</option>
                         <option value="training">Training(s)</option>
@@ -83,6 +93,8 @@
             <div id="hubPanel">
                 <div class="hub-line top"></div>
                 <h2 class="hub-name"></h2>
+                <h3 class="countries-hub-list-title">Countries:</h3>
+                <ul class="hubCountries"></ul>
                 <h3>Regional hub center</h3>
                 <div id="hub_centers"></div>
                 <h3>Hub PI</h3>
@@ -91,10 +103,6 @@
                 <div id="canreg_experts"></div>
                 <h3>Recent/planned activities</h3>
                 <div id="planned_activities"></div>
-                <h3>Countries:</h3>
-                <p>
-                    <ul class="hubCountries"></ul>
-                </p>   
             </div>  
 
              <div id="countryPanel" class="">

@@ -71,6 +71,32 @@ body {
     margin: 0 5%;
 }
 
+.intro{
+    position: fixed ;
+    width: 100% ; 
+    top: 0 ; 
+    height: 100% ; 
+    text-align: center ; 
+    z-index: 99 ; 
+    background: #fff ;
+}
+
+#baseline{
+    width: 60% ; 
+    margin: auto ; 
+    margin-top: 10% ; 
+    text-align: center ; 
+}
+
+#baseline h1{
+    margin-top: 20px ; 
+}
+#baseline h2{
+    font-weight: 400 ; 
+    font-style: italic ; 
+}
+
+
 /* ===================
     ALL: Orange Theme
    =================== */
@@ -125,7 +151,7 @@ div#hubPanel,div#countryPanel{
     right: -700px ; 
     transition: all .7s ease-in-out;
     background-color: #fff ; 
-    padding: 0 25px ; 
+    padding: 0 25px 25px 25px ; 
     width: 600px ; 
     height: 650px ; 
     overflow-y: auto ;
@@ -530,7 +556,7 @@ a.button:hover,a.button.active{
 }
 
 #hubPanel p,#hubPanel div{
-    font-size: 0.8em ; 
+    font-size: 0.9em ; 
     line-height: 14px;
     text-align: justify ; 
 }
@@ -674,19 +700,29 @@ form.filters{
     color: #000 ;
     position: absolute;
     top: 62px;
-    left: 50%;
+    left: 30%;
     margin-left: -320px;
     background: #fff;
     width: 100%;
     z-index: 22;
 }
 
+form .filter label{
+    float: left ; 
+    width: 100px ; 
+}
+
 form .filter{
     float: left ; 
+    width: 100% ; 
 }
 
 form .filter-function{
     display: none ; 
+}
+
+.filter-geography label{
+    float: left ; 
 }
 
 form .filter-function select,form .filter-geography select{
