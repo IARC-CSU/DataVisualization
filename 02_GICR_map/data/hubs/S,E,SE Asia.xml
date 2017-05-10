@@ -2,7 +2,7 @@
 <country>
 
 	<hub_centers>
-    <![CDATA[Mumbai:
+    <![CDATA[
 <p> Mumbai was inaugurated at the Tata Memorial Centre (TMC) in Mumbai, India in 2012 as the first Regional Hub for Cancer Registration established under the GICR. TMC is a national comprehensive cancer centre, the largest cancer hospital in Asia, with more than 40,000 new patient visits annually from all over India and neighboring countries. On average, 1,500 patients visit every day and every year, about 25,000 new cancer patients are registered with the hospital.</p>
 
 <p> TMC has a longstanding history as a recognized training centre. TMC also serves as a post-graduate teaching centre, affiliated with the Homi Bhabha National Institute (HBNI) (Deemed University) offering post-graduate degrees. </p>
@@ -21,13 +21,13 @@ Tel: +91 022 24177123 Fax: 91 022 24146937 <br/>
 Email: tataiarc@gmail.com <br/>
 http://tmcepi.gov.in </p>]]></hub_centers>
 	<hub_pi>
-    <![CDATA[Principal Investigator
+    <![CDATA[ <p> Principal Investigator
 Dr. Rajesh Dikshit
 Head, Epidemiology, Tata Memorial Hospital 
-[Insert short bio]]]></hub_pi>
+[Insert short bio] </p> ]]></hub_pi>
 	<canreg_experts>
     Nikhil B. Dethe (India), Kyu-Won Jung (S. Korea), Victoria Medina (Philippines), Dr Anupong Sirirungreung (Thailand)..</canreg_experts>
-	<planned_activities><![CDATA[Two (2) IARC Collaborating Centres will be launched in May and June to further suppor tthe delivery of GICR hub functions.  Updates and further information will soon be announced on the IARC and GICR websites </p> 
+	<planned_activities><![CDATA[ <p> Two (2) IARC Collaborating Centres will be launched in May and June to further suppor tthe delivery of GICR hub functions.  Updates and further information will soon be announced on the IARC and GICR websites </p> 
 	]]></planned_activities>
 	
 </country>

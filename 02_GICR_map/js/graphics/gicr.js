@@ -30,7 +30,9 @@
         $('.line').append('<div class="line-hub" style="background-color:'+hubs[h].color+';"></div>')
     }
     var GICR = {
-        'default_color' : '#e3e3e3'
+        'default_color'     : '#e3e3e3' , 
+        'visits_color'      : '#9C0063' , 
+        'trainings_color'   : '#FF0080 '
     }
 
     var map_width   = $(window).width(); 
@@ -44,6 +46,8 @@
     var countries   = [] ;
     var metric      = 'visit' ; 
 
+    var rectangle_area ; 
+    var rectangles_activities ; 
 
     var scale = 0 ; 
     var translate = {} ; 
@@ -114,7 +118,7 @@
 
         setTimeout(function(){
             $('.intro').fadeOut({ 'duration' : 1000 }) ; 
-        },500) ; 
+        }, 5000) ; 
     }) ;
 
     var setFunctionView = function( item )
@@ -126,14 +130,29 @@
         else
             metric = $('select[name="function"] :selected').val() ; 
 
-        d3.selectAll('.bubble').transition()
+        d3.selectAll('.visits').transition()
             .duration( 750 )
-            .attr('r',function(d){
+            .attr('height',function(d){
                 if ( d.properties.NAME == null && d.properties.values != undefined )
-                    return CanGraphRadiusBubble( Math.floor((Math.random() * 10) + 1) ) ; 
+                {
+                    // return CanGraphRadiusBubble( Math.floor((Math.random() * 10) + 1) ) ; 
+                    return rectangle_area( Math.floor((Math.random() * 10) + 1) ) ; 
+                }
             })
             .delay( 750 )
         ; 
+
+        d3.selectAll('.trainings').transition()
+            .duration( 750 )
+            .attr('height',function(d){
+                if ( d.properties.NAME == null && d.properties.values != undefined )
+                {
+                    return rectangle_area( Math.floor((Math.random() * 10) + 1) ) ; 
+                }
+            })
+            .delay( 750 )
+        ; 
+
 
     }
 
@@ -141,12 +160,14 @@
     *
     *
     */
-    var setViewPer = function( view , item ){
+    var setViewPer = function( view_p , item ){
+
+        view = view_p ; 
 
         $( 'a.view.button' ).removeClass( 'active' );
         $( item ).addClass('active'); 
 
-        d3.selectAll('.circleGroup').remove() ;
+        d3.selectAll('.activities').remove() ;
 
         switch ( view )
         {
@@ -158,6 +179,8 @@
                 $('#title-map').text( title + ': geographic view') ;
                 $('select [name="geography"]').val( 'global' );
                 $('.for_bubble').hide();
+                $('ul.hubs-list').show();
+                $('ul.activities-list').hide();
                 $('svg#legend_bubble').html(' ');
 
                 $('#timeline').removeClass('open');
@@ -170,16 +193,18 @@
                 $(".unit-label").fadeOut() ;
                 $('#title-map').text( title + ': site visit(s)') ;
                 $('#hubPanel,#countryPanel').removeClass('show') ;
+                $('ul.hubs-list').hide();
+                $('ul.activities-list').show();
                 $('.for_bubble').show();
                 buildCircleLegend();
                 if ( level != 0 ) zoomRegion( undefined ) ; 
 
-                $('#timeline').removeClass('open');
+                // $('#timeline').removeClass('open');
 
                 setTimeout(function(){
                     
-                    CanCircleGroup = CanMapSvg.append("g")
-                        .attr('class','circleGroup')
+                    rectangles_activities = CanMapSvg.append("g")
+                        .attr('class','activities')
                         .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
                     ;
 
@@ -187,24 +212,75 @@
                         .domain([ 0, 10 ])
                         .range([ 0, 15 ]);
 
-                    CanCircleGroup.append("g")
-                        .selectAll("circle")
+                    rectangle_area = d3.scale.sqrt()
+                        .domain([ 0, 10 ])
+                        .range([ 0, 25 ]);
+
+                    // build sit visits
+                    rectangles_activities.append("g")
+                        .selectAll("rect")
                         .data( CanGraphGeometries.features )
-                        .enter().append("circle")
-                        .attr("class","bubble")
+                        .enter()
+                        .append('rect')
+                        .attr('width', 8 )
+                        //.attr('height',0)
+                        .attr("class","visits")
                         .style('fill', function(d){ 
-                            if ( d.properties.NAME == null && d.properties.values != undefined)
-                            {
-                                return d.properties.values.color ; 
-                            }
+                            if ( d.properties.NAME == null && d.properties.values != undefined) return GICR.visits_color ;
                         } )
-                        .style('fill-opacity', 0.7)
+                        .style('fill-opacity', 0.7 )
                         .style('stroke','#ffffff')
                         .style('stroke-width','.5px')
-                        .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
-                        .attr("r",0)
-                        .on('mouseover', function(d){ hoverFunction(d) })
+                        .attr("transform", function(d) { 
+                            var centroid = CanGraphMapPath.centroid(d) ; 
+                            return "translate(" + ( centroid[0] - 8 ) + "," + centroid[1]+ ")"; 
+                        })
+                        .on('mouseover', function(d){ hoverFunction(d,$(this).attr('class')) })
                         .on("mouseout", function(d){ outFunction(d) })
+                    ;
+
+                    // build trainings
+                    rectangles_activities.append("g")
+                        .selectAll("rect")
+                        .data( CanGraphGeometries.features )
+                        .enter()
+                        .append('rect')
+                        .attr('width', 8 )
+                        .attr('height',0)
+                        .attr("class","trainings")
+                        .style('fill', function(d){ 
+                            if ( d.properties.NAME == null && d.properties.values != undefined) return GICR.trainings_color ;
+                        } )
+                        .style('fill-opacity', 0.7 )
+                        .style('stroke','#ffffff')
+                        .style('stroke-width','.5px')
+                        .attr("transform", function(d) { 
+                            var centroid = CanGraphMapPath.centroid(d) ; 
+                            return "translate(" + ( centroid[0]  ) + "," + centroid[1]+ ")"; 
+                        })
+                        .on('mouseover', function(d){ hoverFunction(d,$(this).attr('class')) })
+                        .on("mouseout", function(d){ outFunction(d) })
+                    ;
+
+                    rectangles_activities.append("g")
+                        .selectAll("image.agreement")
+                        .data( CanGraphGeometries.features )
+                        .enter()
+                        .append('image')
+                        .attr('class','agreement')
+                        .attr('xlink:href', function(d){
+                            if ( d.properties.NAME == null && d.properties.values != undefined) 
+                            {
+                                var randomNumber = Math.random() >= 0.5;
+                                return ( randomNumber == true ) ? 'img/agreement.png' : '' ; 
+                            }
+                        })
+                        .attr('width', 20 )
+                        .attr('height',20 )
+                        .attr("transform", function(d) { 
+                            var centroid = CanGraphMapPath.centroid(d) ; 
+                            return "translate(" + ( centroid[0] - 10  ) + "," + (centroid[1] - 15) + ")"; 
+                        })
                     ;
 
                     setFunctionView( undefined );
@@ -232,7 +308,7 @@
     }
 
 
-    var hoverFunction = function( item ){
+    var hoverFunction = function( item , class_name ){
 
         $('.canTooltip').show(); 
 
@@ -244,8 +320,9 @@
             .style('top', (mouse[1] - 60 ) + 'px')
             .style('left', (mouse[0] - 80 ) + 'px');
 
-        $('.canTooltip div.tooltip-line').css('background-color', item.properties.values.color )
-        $('.canTooltip h2').html( item.properties.CNTRY_TERR + '<span>'+Math.floor((Math.random() * 10) + 1) +' '+metric+'(s)</span>' ) ; 
+
+        $('.canTooltip div.tooltip-line').css('background-color', ( class_name == 'visits') ? GICR.visits_color : GICR.trainings_color )
+        $('.canTooltip h2').html( item.properties.CNTRY_TERR + '<span>'+Math.floor((Math.random() * 10) + 1) +' '+class_name+'(s)</span>' ) ; 
     }
 
     var outFunction = function(){
@@ -398,8 +475,8 @@
         for ( var h in hubs )
         {
             var span_a = '<span class="hub" style="background-color:'+hubs[h].color+';"></span>'+hubs[h].label ; 
-            var li = '<li attr-iso="'+hubs[h].name+'" ><a href="javascript:void(0)">'+span_a+'</a></li>' ; 
-            $('ul.hubs-list').append( li ) ; 
+            var li = '<li attr-iso="'+hubs[h].name+'" ><a href="javascript:void(0)" onclick="zoomView(\''+hubs[h].id+'\',\'hub\')">'+span_a+'</a></li>' ; 
+            $('ul.hubs-list').append( li ); 
         }
 
         $('ul.hubs-list').append( '<li attr-iso="0"><a href="javascript:void(0)"><span class="hub" style="background-color:'+GICR.default_color+';"></span>Not applicable</a></li>' ) ;
@@ -412,6 +489,12 @@
         }, function(){
             $('path.country').removeClass('hover') ; 
         }) ; 
+
+        // build activities legend
+        $('ul.activities-list').append( '<li ><a href="javascript:void(0)"><span class="hub" style="background-color:'+GICR.visits_color+';"></span>Site visit(s)</a></li>' ) ;
+        $('ul.activities-list').append( '<li ><a href="javascript:void(0)"><span class="hub" style="background-color:'+GICR.trainings_color+';"></span>Training(s)</a></li>' ) ;
+        $('ul.activities-list').append( '<li ><a href="javascript:void(0)"><span class="hub"><img src="img/agreement.png" width="20" height="20"></span> Agreement </a></li>' ) ;
+
     }
 
     /**
@@ -430,7 +513,7 @@
                 .entries( gicr_csv ) ;
 
 
-            $('#list-hubs').append( '<a class="button view active" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
+            $('#list-hubs').append( '<a class="button view active" attr-hub="0" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
 
             for ( var s in select_geo )
             {
@@ -439,21 +522,7 @@
                 var label       = hubs_per_name[ select_geo[s].key ].label ; 
                 var value       = select_geo[s].key ; 
 
-                $('#list-hubs').append( '<a class="button view" onclick="zoomView(\''+hubs_per_name[ select_geo[s].key ].id+'\',\'hub\')"> '+label+' </a>' ) ; 
-
-                /*$('select[name="geography"]').append( '<option value="'+hubs_per_name[ select_geo[s].key ].id+'" class="hub">'+label+'</option>' ) ; 
-
-                for ( var v in select_geo[s].values )
-                {
-                    var item        = select_geo[s].values[v] ; 
-                    if ( item.Country == '' ) continue ; 
-                    if ( item.NActive == 1 || item.NActive == '1' ) continue ; 
-
-                    item.color      = hubs_per_name[ select_geo[s].key ].color ; 
-                    countries[ item.UN_Code ] = item ; 
-
-                    $('select[name="geography"]').append( '<option value="'+item.UN_Code+'" class="hub-country"> &nbsp;&nbsp; - '+item.Country+'</option>' ) ; 
-                }*/
+                $('#list-hubs').append( '<a class="button view" attr-hub="'+hubs_per_name[ select_geo[s].key ].id+'" onclick="zoomView('+hubs_per_name[ select_geo[s].key ].id+',\'hub\')"> '+label+' </a>' ) ; 
             }
             
         }); 
@@ -592,7 +661,9 @@
                     // all countries
                     case null :
                         if ( d.properties.values == undefined )
+                        {
                             return GICR.default_color ; 
+                        }
                         else if ( view == 2 )
                         {
                             return GICR.default_color ;  
@@ -697,6 +768,9 @@
 
         var option = type ; 
         var hub_id = Math.abs(item) ; 
+
+        $('#list-hubs a').removeClass('active') ; 
+        $('#list-hubs a[attr-hub="'+hub_id+'"]').addClass('active') ; 
 
         current_country = item.value ; 
 
@@ -904,7 +978,8 @@
 
     var buildLegend = function(){
 
-        d3.select("svg#legend").html(' ') ; 
+        return ; 
+        /*d3.select("svg#legend").html(' ') ; 
 
         var  t = textures.lines().size(6).strokeWidth(1) ; 
         CanMapSvg.call(t);
@@ -928,12 +1003,14 @@
             .attr("y", 20 )  // + (CanMapHeight - 200);})
             .style('font-size','12px')
             .attr("dy", "0.9em") // place text one line *below* the x,y point
-            .text("GICR countries") ;
+            .text("GICR countries") ;*/
 
     }
 
     var buildCircleLegend = function(){
         
+        return ; 
+
         var svg_legend = d3.select("svg#legend_bubble")
           .append("g")
           .attr("id","bubbles-legend")  
