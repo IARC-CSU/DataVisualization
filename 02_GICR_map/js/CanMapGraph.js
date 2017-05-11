@@ -906,30 +906,9 @@ var t1,t2,t3 ;
 */ 
 function drawMap( world ) {
     
-    // console.info( world ) ; 
     
     CanGraphMapFeatures = CanMapGroup.selectAll(".country")   // select country objects (which don't exist yet)
-        //.data( topojson.feature( world, world.geometries ).features ) ; // bind data to these non-existent objects
         .data( world.features ) ;
-    // console.info( topojson.object( world, world.objects['general']).geometries , CanGraphMapFeatures ) ; 
-
-    /*t1 = textures.lines().orientation("3/8", "7/8").stroke("blue"); 
-    
-    /*t2 = textures.lines()
-        .orientation("vertical", "horizontal")
-        .size(4)
-        .strokeWidth(1)
-        .shapeRendering("crispEdges")
-        .stroke("darkorange"); 
-    
-    t3 = textures.lines()
-        .size(8)
-        .strokeWidth(2)
-        .stroke("#5d0578"); 
-
-    CanMapSvg.call(t1) ; 
-    CanMapSvg.call(t2) ; 
-    CanMapSvg.call(t3) ; */
 
     CanGraphMapFeatures.enter().append("path") // prepare data to be appended to paths
         .attr("class", function(d){ 
@@ -948,16 +927,36 @@ function drawMap( world ) {
             return "clickPathMap('" + d + "')";
         })*/
         .on("mouseover", function(d){
-
+            d3.select(this).style('fill-opacity',0.5) ; 
         })
         .on("mousemove", function(d){
             var p = d.properties ;
+
             // console.info(p.SOVEREIGN,p.WHO_REGION,p.UN_CODE,p.ISO_3_CODE) ; 
-            $(this).attr('fill-opacity',0.5) ; 
+
+            if ( d.properties.values == undefined || view == 2 ) return ; 
+
+            $('.canTooltip').show(); 
+
+            var mouse = d3.mouse( CanMapSvg.node()).map(function(d) {
+                return parseInt(d);
+            });
+
+            CanMapTooltip
+                .style('top', (mouse[1] - 60 ) + 'px')
+                .style('left', (mouse[0] - 80 ) + 'px');
+
+            $('.canTooltip div.tooltip-line').css('background-color', d.properties.values.color )
+            $('.canTooltip h2').html( d.properties.CNTRY_TERR  ) ; 
+
+
+            d3.select(this).style('fill-opacity',0.5) ; 
         })
         // mouseout function            
         .on("mouseout", function(d){
-            $(this).attr('fill-opacity',1) ; 
+            d3.select(this).style('fill-opacity', 1) ; 
+
+            $('.canTooltip').hide();
         })     
 
         .call(
@@ -1008,14 +1007,9 @@ function drawMap( world ) {
 
             if ( country_code == undefined || country_code == "GRL" || country_code == "ESH" ) return ;
 
-            if ( d.properties.values[ CanMapConf.chart.key_data_value] == 0 ) return 
+            if ( d.properties.values[ CanMapConf.chart.key_data_value ] == 0 ) return 
 
-            // return ; 
-            jumpToCountryGlobe( d.properties.ISO_3_CODE );
-            // console.log( d ) ;
-            // execute callback
-
-            // if ( CanMapConf.chart.callback_click != undefined ) window[CanMapConf.chart.callback_click](d,this) ; 
+            zoomCountry( country_code );
 
         })
 

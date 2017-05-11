@@ -2,12 +2,12 @@
 	var PROJECT 			= 'map' ; 
 
     var hubs = {
-        1 : { 'id' : 1 , 'name' : 'SS-Africa' , 'label' : 'Sub saharian Africa', 'color' : '#71C8E3' , 'plot_name' : 'ZAF' , 'plot_translate' : { 'x' : 150 , 'y' : -250 } } , 
-        2 : { 'id' : 2 , 'name' : 'NA,C-Africa, W.Asia' , 'label' : 'North Africa, Center Africa & Western Asia', 'color' : '#724A98' , 'plot_name' : 'MAR' , 'plot_translate' : { 'x' : 320 , 'y' : -180 } } , 
-        3 : { 'id' : 3 , 'name' : 'S,E,SE Asia' , 'label' : 'South, East & Southern East Asia',  'color' : '#2EAF81' , 'plot_name' : 'CHN' , 'plot_translate' : { 'x' :  300 , 'y' : -400 }} , 
-        4 : { 'id' : 4 , 'name' : 'Pacific' , 'label' : 'Pacific islands',  'color' : '#ff6600' , 'plot_name' : 'FJI' , 'plot_translate' : { 'x' : 90 , 'y' : -160 } } , 
-        5 : { 'id' : 5 , 'name' : 'Carribean' , 'label' : 'The carribean',  'color' : '#b21c01' , 'plot_name' : 'SUR' , 'plot_translate' : { 'x' : 100 , 'y' : -150 } } ,
-        6 : { 'id' : 6 , 'name' : 'LatAm' , 'label' : 'Latin America',  'color' : '#FDCC00', 'plot_name' : 'PER' , 'plot_translate' : { 'x' : 200 , 'y' : -280 }}
+        1 : { 'id' : 1 , 'code' : 'AFCRN' , 'name' : 'SS-Africa' , 'label' : 'Sub saharian Africa', 'color' : '#71C8E3' , 'plot_name' : 'ZAF' , 'plot_translate' : { 'x' : 150 , 'y' : -250 } } , 
+        2 : { 'id' : 2 , 'code' : 'IZMIR' , 'name' : 'NA,C-Africa, W.Asia' , 'label' : 'North Africa, Center Africa & Western Asia', 'color' : '#724A98' , 'plot_name' : 'MAR' , 'plot_translate' : { 'x' : 320 , 'y' : -180 } } , 
+        3 : { 'id' : 3 , 'code' : 'MUMB' , 'name' : 'S,E,SE Asia' , 'label' : 'South, East & Southern East Asia',  'color' : '#2EAF81' , 'plot_name' : 'CHN' , 'plot_translate' : { 'x' :  300 , 'y' : -400 }} , 
+        4 : { 'id' : 4 , 'code' : 'PI' , 'name' : 'Pacific' , 'label' : 'Pacific islands',  'color' : '#ff6600' , 'plot_name' : 'FJI' , 'plot_translate' : { 'x' : 90 , 'y' : -160 } } , 
+        5 : { 'id' : 5 , 'code' : 'CARIB' , 'name' : 'Carribean' , 'label' : 'The carribean',  'color' : '#b21c01' , 'plot_name' : 'SUR' , 'plot_translate' : { 'x' : 100 , 'y' : -150 } } ,
+        6 : { 'id' : 6 , 'code' : 'LA' , 'name' : 'LatAm' , 'label' : 'Latin America',  'color' : '#FDCC00', 'plot_name' : 'PER' , 'plot_translate' : { 'x' : 200 , 'y' : -280 }}
     } ; 
 
     var dataActions = [
@@ -23,10 +23,12 @@
 
     var title = 'Global Initiative for Cancer Registries' ;
 
-    var hubs_per_name = [] ; 
+    var hubs_per_name = [] ;
+    var hubs_per_code = [] ;  
     for ( var h in hubs ) 
     {
         hubs_per_name[ hubs[h].name ] = hubs[h] ; 
+        hubs_per_code[ hubs[h].code ] = hubs[h] ; 
         $('.line').append('<div class="line-hub" style="background-color:'+hubs[h].color+';"></div>')
     }
     var GICR = {
@@ -45,6 +47,11 @@
     var level       = 0 ; 
     var countries   = [] ;
     var metric      = 'visit' ; 
+    var site_visits = [] ; 
+    var trainings   = [] ; 
+
+    var site_visits_per_country = [] ; 
+    var trainings_per_country = [] ; 
 
     var rectangle_area ; 
     var rectangles_activities ; 
@@ -118,8 +125,13 @@
 
         setTimeout(function(){
             $('.intro').fadeOut({ 'duration' : 1000 }) ; 
-        }, 5000) ; 
+        }, 5000 ) ; 
     }) ;
+
+
+    var goToTheMap = function(){
+        $('.intro').fadeOut(); 
+    }
 
     var setFunctionView = function( item )
     {   
@@ -135,8 +147,9 @@
             .attr('height',function(d){
                 if ( d.properties.NAME == null && d.properties.values != undefined )
                 {
+                    if ( d.properties.site_visits != undefined ) return rectangle_area( d.properties.site_visits ) ; 
                     // return CanGraphRadiusBubble( Math.floor((Math.random() * 10) + 1) ) ; 
-                    return rectangle_area( Math.floor((Math.random() * 10) + 1) ) ; 
+                    return 0 ; 
                 }
             })
             .delay( 750 )
@@ -147,7 +160,9 @@
             .attr('height',function(d){
                 if ( d.properties.NAME == null && d.properties.values != undefined )
                 {
-                    return rectangle_area( Math.floor((Math.random() * 10) + 1) ) ; 
+                    if ( d.properties.trainings != undefined ) return rectangle_area( d.properties.trainings ) ; 
+                    // return CanGraphRadiusBubble( Math.floor((Math.random() * 10) + 1) ) ; 
+                    return 0 ; 
                 }
             })
             .delay( 750 )
@@ -181,6 +196,7 @@
                 $('.for_bubble').hide();
                 $('ul.hubs-list').show();
                 $('ul.activities-list').hide();
+                $('table#global_indicators').hide(); 
                 $('svg#legend_bubble').html(' ');
 
                 $('#timeline').removeClass('open');
@@ -195,6 +211,7 @@
                 $('#hubPanel,#countryPanel').removeClass('show') ;
                 $('ul.hubs-list').hide();
                 $('ul.activities-list').show();
+                $('table#global_indicators').show(); 
                 $('.for_bubble').show();
                 buildCircleLegend();
                 if ( level != 0 ) zoomRegion( undefined ) ; 
@@ -214,7 +231,7 @@
 
                     rectangle_area = d3.scale.sqrt()
                         .domain([ 0, 10 ])
-                        .range([ 0, 25 ]);
+                        .range([ 0, 50 ]);
 
                     // build sit visits
                     rectangles_activities.append("g")
@@ -228,7 +245,7 @@
                         .style('fill', function(d){ 
                             if ( d.properties.NAME == null && d.properties.values != undefined) return GICR.visits_color ;
                         } )
-                        .style('fill-opacity', 0.7 )
+                        .style('fill-opacity', 1 )
                         .style('stroke','#ffffff')
                         .style('stroke-width','.5px')
                         .attr("transform", function(d) { 
@@ -249,9 +266,9 @@
                         .attr('height',0)
                         .attr("class","trainings")
                         .style('fill', function(d){ 
-                            if ( d.properties.NAME == null && d.properties.values != undefined) return GICR.trainings_color ;
+                            if ( d.properties.NAME == null ) return GICR.trainings_color ;
                         } )
-                        .style('fill-opacity', 0.7 )
+                        .style('fill-opacity', 1 )
                         .style('stroke','#ffffff')
                         .style('stroke-width','.5px')
                         .attr("transform", function(d) { 
@@ -262,7 +279,7 @@
                         .on("mouseout", function(d){ outFunction(d) })
                     ;
 
-                    rectangles_activities.append("g")
+                    /*rectangles_activities.append("g")
                         .selectAll("image.agreement")
                         .data( CanGraphGeometries.features )
                         .enter()
@@ -281,7 +298,7 @@
                             var centroid = CanGraphMapPath.centroid(d) ; 
                             return "translate(" + ( centroid[0] - 10  ) + "," + (centroid[1] - 15) + ")"; 
                         })
-                    ;
+                    ;*/
 
                     setFunctionView( undefined );
 
@@ -307,6 +324,10 @@
         updateGeographyFilling(); 
     }
 
+    var countryTooltip = function( item ){
+
+    }
+
 
     var hoverFunction = function( item , class_name ){
 
@@ -322,149 +343,12 @@
 
 
         $('.canTooltip div.tooltip-line').css('background-color', ( class_name == 'visits') ? GICR.visits_color : GICR.trainings_color )
-        $('.canTooltip h2').html( item.properties.CNTRY_TERR + '<span>'+Math.floor((Math.random() * 10) + 1) +' '+class_name+'(s)</span>' ) ; 
+        $('.canTooltip h2').html( item.properties.CNTRY_TERR + '<span>'+ ( ( class_name == 'visits') ? item.properties.site_visits : item.properties.trainings ) +' '+class_name+'(s)</span>' ) ; 
     }
 
     var outFunction = function(){
         $('.canTooltip').hide();
     }
-
-    
-
-    var colorScale = d3.scale.category10();
-    var formatDate = d3.time.format('%e %b %Y');
-
-    var calculateMaxTextLength = function(d){ 
-        var line1 = formatDate(d.date) + ' ('+d.place+')' ;
-        var line2 = d.name ; 
-
-        // return the longest line
-        return ( line1.length > line2.length ) ? line1 : line2 ;  
-    }
-    var dummyText , innerWidth ;
-    var timeScale ;
-
-    var buildTimeline = function(){
-
-        var options =   {
-          margin: {left: 20, right: 20, top: 20, bottom: 20},
-          initialWidth: $(window).width() - ( ( 50 + 20 ) * 2 ) ,
-          initialHeight: 150
-        };
-
-        innerWidth =  options.initialWidth - options.margin.left - options.margin.right;
-        var innerHeight = options.initialHeight - options.margin.top - options.margin.bottom;
-        
-    
-        var vis = d3.select('#timeline')
-            .append('svg')
-            .attr('width',  options.initialWidth)
-            .attr('height', options.initialHeight)
-            .append('g')
-            .attr('transform', 'translate('+options.margin.left+','+options.margin.top+')');
-
-        dummyText = vis.append("text") ; 
-
-        timeScale = d3.time.scale()
-          .domain(d3.extent(dataActions, function(d){return d.date;}))
-          .range([0, innerWidth])
-          .nice(); 
-
-        var nodes = dataActions.map(function(action){
-            var bbox = dummyText.text(calculateMaxTextLength(action))[0][0].getBBox();
-            action.h = bbox.height;
-            action.w = bbox.width;
-            return new labella.Node(timeScale(action.date), action.w + 9, action);
-        });
-
-        dummyText.remove();
-
-        var force = new labella.Force({ minPos: -10, maxPos: innerWidth })
-          .nodes(nodes)
-          .compute();
-
-        var renderer = new labella.Renderer({
-          layerGap: 30,
-          nodeHeight: nodes[0].data.h,
-          direction: 'bottom'
-        });
-
-        vis.append('line')
-          .classed('timeline', true)
-          .attr('x2', innerWidth);
-
-        var linkLayer = vis.append('g');
-        var labelLayer = vis.append('g');
-        var dotLayer = vis.append('g');
-
-        dotLayer.selectAll('circle.dot')
-          .data(nodes)
-          .enter().append('circle')
-          .classed('dot', true)
-          .attr('r', 3)
-          .attr('cx', function(d){return d.getRoot().idealPos; });
-
-
-        drawTimelines( { 
-            'renderer' : renderer , 
-            'nodes' : force.nodes() ,
-            'labelLayer' : labelLayer , 
-            'linkLayer' : linkLayer , 
-            'dotLayer' : dotLayer 
-        } );
-
-    }
-
-    var colorTimeline = function(d,i){
-        return colorScale(i); 
-    }
-
-    var drawTimelines = function drawTimelines( params )
-    {
-      // Add x,y,dx,dy to node
-      params.renderer.layout( params.nodes );
-
-      // Draw label rectangles
-      var sEnter = params.labelLayer.selectAll('rect.flag')
-        .data(params.nodes)
-        .enter().append('g')
-        .attr('transform', function(d){return 'translate('+(d.x-d.width/2)+','+(d.y)+')';});
-
-      sEnter
-        .append('rect')
-        .classed('flag', true)
-        .attr('width', function(d){ return d.data.w + 9; })
-        .attr('height', function(d){ return 30 + 4; })
-        .attr('rx', 2)
-        .attr('ry', 2)
-        .style('fill', function(d){ return hubs[d.data.hub_id].color ;} );
-
-     sEnter.append('text')
-        .attr('class','date')
-        .attr('x', 4)
-        .attr('y', 15)
-        .style('fill', '#fff')
-        .text(function(d){return formatDate(d.data.date) + ' ('+d.data.place+')' ;});
-
-      sEnter.append('text')
-        .attr('class','event')
-        .attr('x', 4)
-        .attr('y', 30)
-        .style('fill', '#fff')
-        .text(function(d){return d.data.name ;});
-
-      // Draw path from point on the timeline to the label rectangle
-      params.linkLayer.selectAll('path.link')
-        .data( params.nodes )
-        .enter().append('path')
-        .classed('link', true)
-        .attr('d', function(d){ return params.renderer.generatePath(d); })
-        .style('stroke', function(d){ return hubs[d.data.hub_id].color ;} )
-        .style('stroke-width',2)
-        .style('opacity', 0.6)
-        .style('fill', 'none');
-    }
-
 
     /**
     *
@@ -503,30 +387,141 @@
     var loadGircData = function(){
 
         // loading gicr map
-        d3.csv( "data/gicr.csv" , function( data ){
+        // d3.csv( "data/gicr.csv" , function( data ){
 
-            gicr_csv = data ; 
+        var q = queue()
+            .defer( d3.csv , "data/gicr.csv" )
+            .defer( d3.csv , "data/site-visits.csv" )
+            .defer( d3.csv , "data/trainings.csv" )
+            .awaitAll( function( error, results ) {
 
-            // build selectbox for geography region 
-            var select_geo = d3.nest()
-                .key(function(d){ return d.HUB })
-                .entries( gicr_csv ) ;
+                gicr_csv = results[0] ; 
 
+                // build selectbox for geography region / data gicr
+                var select_geo = d3.nest()
+                    .key(function(d){ return d.HUB })
+                    .entries( gicr_csv ) ;
 
-            $('#list-hubs').append( '<a class="button view active" attr-hub="0" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
+                $('#list-hubs').append( '<a class="button view active" attr-hub="0" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
 
-            for ( var s in select_geo )
+                for ( var s in select_geo )
+                {
+                    if ( select_geo[s].NActive == '1' || select_geo[s].key == 'undefined' ) continue ;
+
+                    var label       = hubs_per_name[ select_geo[s].key ].label ; 
+                    var value       = select_geo[s].key ; 
+
+                    $('#list-hubs').append( '<a class="button view" attr-hub="'+hubs_per_name[ select_geo[s].key ].id+'" onclick="zoomView('+hubs_per_name[ select_geo[s].key ].id+',\'hub\')"> '+label+' </a>' ) ; 
+                    
+                    for ( var v in select_geo[s].values )
+                    {
+                        var item        = select_geo[s].values[v] ; 
+                        if ( item.Country == '' ) continue ; 
+                        if ( item.NActive == 1 || item.NActive == '1' ) continue ; 
+
+                        item.color      = hubs_per_name[ select_geo[s].key ].color ; 
+                        countries[ item.UN_Code ] = item ; 
+
+                    } // end for 
+                } // end for 
+
+                // site vistis
+                site_visits = results[1] ; 
+                trainings = results[2] ; 
+
+                buildGlobalIndicators({ 'site_visits' : site_visits , 'trainings' : trainings }) ; 
+
+            })
+        ;
+
+    } // end function 
+
+    var buildGlobalIndicators = function( data )
+    {
+        var site_visits_per_hubs = d3.nest()
+            .key( function(d){ return d.hub_code ; })
+            .rollup(function( hub ) { 
+                return {  
+                    "total": hub.length , 
+                    "data" : d3.nest()
+                        .key( function(i){ return i.status ; })
+                        .entries( hub )
+                } 
+            })
+            .entries( data.site_visits ) ;
+
+        var trainings_per_hubs = d3.nest()
+            .key( function(d){ return d.hub_code ; })
+            .rollup(function( hub ) { 
+                return {  
+                    "total": hub.length , 
+                    "data" : d3.nest()
+                        .key( function(i){ return i.status ; })
+                        .entries( hub )
+                } 
+            })
+            .entries( data.trainings ) ;
+
+        var tot_vists = 0 ; 
+        var tot_trainings = 0 ; 
+
+        for ( var h in site_visits_per_hubs )
+        {
+            var completed_visits = [] ; 
+            for ( var d in site_visits_per_hubs[h].values.data )
             {
-                if ( select_geo[s].NActive == '1' || select_geo[s].key == 'undefined' ) continue ;
-
-                var label       = hubs_per_name[ select_geo[s].key ].label ; 
-                var value       = select_geo[s].key ; 
-
-                $('#list-hubs').append( '<a class="button view" attr-hub="'+hubs_per_name[ select_geo[s].key ].id+'" onclick="zoomView('+hubs_per_name[ select_geo[s].key ].id+',\'hub\')"> '+label+' </a>' ) ; 
+                if ( site_visits_per_hubs[h].values.data[d].key == 'Completed' )
+                {
+                    completed_visits = site_visits_per_hubs[h].values.data[d].values ; 
+                    break ;    
+                }
+                 
             }
-            
-        }); 
+            var completed_trainings = [] ; 
+            for ( var d in trainings_per_hubs[h].values.data )
+            {
+                if ( trainings_per_hubs[h].values.data[d].key == 'Completed' )
+                {
+                    completed_trainings = trainings_per_hubs[h].values.data[d].values ; 
+                    break ;    
+                }
+                 
+            }
 
+            var html = '<tr>' ; 
+            html += '<td><strong>'+site_visits_per_hubs[h].key+'</strong></td>' ; 
+            html += '<td class="value">'+(completed_visits.length)+'</td>' ; 
+            html += ' <td class="value">'+(completed_trainings.length)+'</td>' ; 
+            html += '</tr>'; 
+
+            tot_vists += Math.abs( completed_visits.length ) ; 
+            tot_trainings += Math.abs( completed_trainings.length ) ; 
+
+
+            $('table#global_indicators').append( html )
+        }
+        
+        var total_html = '<tr>' ; 
+        total_html += '<td><strong>Totals</strong></td>' ; 
+        total_html += '<td class="value">'+(tot_vists)+'</td>' ; 
+        total_html += ' <td class="value">'+(tot_trainings)+'</td>' ; 
+        total_html += '</tr>'; 
+
+
+        $('table#global_indicators').append( total_html ) ; 
+
+
+        // building data per countries
+        site_visits_per_country = d3.nest()
+            .key( function( d ){ return d.country ;  })
+            .rollup(function( country ) { return {  "total": country.length } })
+            .entries( data.site_visits  ) ; 
+
+        // console.info( site_visits_per_country ) ; 
+        trainings_per_country = d3.nest()
+            .key( function( d ){ return d.country ;  })
+            .rollup(function( country ) { return {  "total": country.length } })
+            .entries( data.trainings  ) ; 
     }
 
     /**
@@ -553,6 +548,27 @@
                 } 
                 
             } // end for 
+
+            // site visits
+            for ( var g in site_visits_per_country )
+            {
+
+                if ( c.CNTRY_TERR == site_visits_per_country[g].key )
+                {
+                    c.site_visits = site_visits_per_country[g].values.total ; 
+                    break ; 
+                }
+            }
+
+            for ( var g in trainings_per_country )
+            {
+                if ( c.CNTRY_TERR == trainings_per_country[g].key )
+                {
+                    c.trainings = trainings_per_country[g].values.total ; 
+                    break ; 
+                }
+                
+            }
            
         } // end for 
 
@@ -626,23 +642,6 @@
     }
 
     var updateGeographyFilling = function(){
-
-        /*switch( level )
-        {
-            case 0 :
-                var  t = textures.lines().size(6).strokeWidth(1) ; 
-                break  ; 
-
-            case 1 : 
-                var  t = textures.lines().size(3).strokeWidth(0.5) ; 
-                break  ; 
-
-            case 2 : 
-                var  t = textures.lines().size(1).strokeWidth(0.1) ; 
-                break  ; 
-        }
-        
-        CanMapSvg.call(t);*/
 
         // 
         d3.selectAll(".country")
@@ -863,7 +862,7 @@
                 // get extra data 
                 $.ajax({
                     type: "GET",
-                    url: "data/hubs/"+hub.name+".xml",
+                    url: "data/hubs/"+hub.code+".xml",
                     dataType: "xml",
                     success: function(xml) { 
                         var xmlString = (new XMLSerializer()).serializeToString(xml);
@@ -920,6 +919,7 @@
         $(".unit-label").hide(); 
 
         $('#hubPanel').removeClass('show') ;
+        $('text.subunit-label.selected').removeClass('selected');
         $('text.subunit-label').addClass('zoomed');
         $('text#label-'+ codeCountry ).addClass('selected');
         $('text.place-label.code-'+codeCountry).addClass('show');
@@ -954,22 +954,11 @@
                     var json  = x2js.xml_str2json( xmlString );
                     var data  = json.country ;
 
-                    $('#intro').text( data.intro ); 
-
-                    $('#population').text( data.population ); 
-                    $('#hdi').text( data.hdi ); 
-
-                    $('#incidence_cases').text( data.incidence.cases ); 
-                    $('#incidence_cum_risk').text( data.incidence.cum_risk ); 
-                    $('#mortality_deaths').text( data.mortality.deaths ); 
-                    $('#mortality_cum_risk').text( data.mortality.cum_risk ); 
-
-                    $('#description').html( data.description ); 
                     $('#tab-2').html( data.need ); 
                     $('#tab-3').html( data.solution ); 
                     $('#tab-4').html( data.impact ); 
                     $('#tab-5').html( data.action ); 
-                    $('#tab-5').html( data.action ); 
+                    $('#tab-6').html( data.collaborators.toString() ); 
                 }
             });
         }   

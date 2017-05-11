@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/nv.d3.min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap-treeview.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/graphics/map.css">
 
         <link rel="icon" type="image/png" href="favicon.ico" />
@@ -33,6 +33,8 @@
                 <img src="img/website-logo.gif" title="GICR">
                 <h1> Global Initiative for Cancer Registries </h1>
                 <h2> Cancer incidence and mortality are rising rapidly worldwide, particularly in low- and middle-income countries. There is an overwhelming need for countries to adopt and implement cancer control actions </h2>
+                <br/>
+                <a href="#" onclick="goToTheMap();"> Go to the map </a>
             </div>
         </div>
 
@@ -109,50 +111,14 @@
                 <h2 id="country-name" class="country-name"></h2>
                 <div id="tabs-container">
                     <ul class="tabs-menu">
-                        <li class="current"><a href="#tab-1">At a glance</a></li>
-                        <li><a href="#tab-2">The need</a></li>
+                        <li class="current"><a href="#tab-2">The need</a></li>
                         <li><a href="#tab-3">The solution</a></li>
                         <li><a href="#tab-4">Impact</a></li>
                         <li><a href="#tab-5">The plan of action</a></li>
-                        <li><a href="#tab-6">Collabortators</a></li>
+                        <li><a href="#tab-6">Collaborators</a></li>
                     </ul>
                     <div class="tab">
-                        <div id="tab-1" class="tab-content">
-                            <div id="intro"></div>
-                            <table>
-                                <tr>
-                                    <td>Population </td><td id="population"></td>
-                                </tr>
-                                <tr>
-                                    <td>Human Development Index</td><td id="hdi"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Estimated Cancer Burden, 20123</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Incidence</td>
-                                </tr>
-                                <tr>
-                                    <td>Number of cases</td><td id="incidence_cases"></td>
-                                </tr>
-                                <tr>
-                                    <td>Cumulative risk, 0-74(%)</td><td id="incidence_cum_risk"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Mortality</td>
-                                </tr>
-                                <tr>
-                                    <td>Number of deaths</td><td id="mortality_deaths"></td>
-                                </tr>
-                                <tr>
-                                    <td>Cumulative risk, 0-74(%)</td><td id="mortality_cum_risk"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" id="description"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="tab-2" class="tab-content">
+                        <div id="tab-2" class="tab-content" style="display: block;      ">
                         </div>
                         <div id="tab-3" class="tab-content">
                         </div>
@@ -174,6 +140,11 @@
             <ul class="hubs-list legend">
             </ul>
 
+            <table id="global_indicators" cellspacing="2" cellpadding="2">
+                <thead>
+                    <th></th><th>Site visits</th><th>Trainings</th>
+                </thead>
+            </table>
             <ul class="activities-list legend">
             </ul>
 
@@ -211,7 +182,7 @@
         <script src="js/vendor/queue.min.js"></script>
         <script src="js/vendor/colorbrewer.js"></script>
         <script src="js/vendor/labella-extra.min.js"></script>
-        <script src="js/vendor/bootstrap-treeview.js"></script>
+        <script src="js/vendor/jquery.fancybox.js"></script>
 
         <!-- cangraph -->
         <script src="js/CanGraph.js"></script>

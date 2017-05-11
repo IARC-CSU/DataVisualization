@@ -2,7 +2,7 @@
 	path.country{
 		stroke: rgba(0,0,0,0.5) ; 
 		stroke-width: 0.1;
-		fill-opacity: 0.7 ;
+		fill-opacity: 1 ;
 	}
 
 	path.country.hover{
@@ -99,7 +99,7 @@
 	    top: 20%; 
 	    right: -700px ; 
 	    transition: all .7s ease-in-out;
-	    background-color: #fff ; 
+	    background-color: #f7f7f7 ; 
 	    padding: 0 25px ; 
 	    width: 600px ; 
 	    height: 500px ; 
@@ -108,6 +108,20 @@
 
 	div#hubPanel.show,div#countryPanel.show{
 	    right: 0px ; 
+	}
+
+	div#hubPanel p img{
+		margin-bottom: 10px ; 
+	}
+
+	div#hubPanel p img[align="left"]{
+		margin-right: 10px ;
+		margin-bottom: 0px ; 
+	}
+
+	div#hubPanel p img[align="right"]{
+		margin-left: 10px ;
+		margin-bottom: 0px ; 
 	}
 
 	div.hub-line{
@@ -142,7 +156,26 @@
 	}
 
 	div#countryPanel p{
-		padding-left: 5px ; 
+		padding-left: 5px ;
+		font-size: 0.8em;
+	    line-height: 14px;
+	    text-align: justify; 
+	}
+
+	div#countryPanel .tab-content ul{
+		width: 100% ; 
+		font-size: 0.8em;
+	    line-height: 14px;
+	}
+
+	div#countryPanel ul li{
+	    max-width: 90%;
+	}
+
+	div#countryPanel p img{
+		max-width: 50% ; 
+		height: auto ; 
+		margin: 0 15px 5px 0;
 	}
 
 	div#countryPanel #chart{
@@ -152,6 +185,7 @@
 
 	div#countryPanel .tab-content ul li{
 		list-style-type: disc ; 
+
 	}
 
 	ul.hubCountries{
@@ -204,7 +238,7 @@
 	.canTooltip h2{
 		padding: 0 ; 
 		margin: 0 ;
-		color: #fff ; 
+		color: #3d3a3a ; 
 		font-size : 13px ; 
 		text-align: center ; 
 		line-height: 14px ; 
@@ -374,4 +408,31 @@
 
 	.place-label.show{
 		display: block ; 
+	}
+
+	table#global_indicators{
+		position: absolute;
+	    bottom: 215px;
+	    left: 50px;
+	    border: solid 1px #ccc;
+	    font-size: 0.8em ; 
+	    display: none ; 
+	}
+
+	table#global_indicators th{
+		background: #037AB3; 
+		color: #fff ;
+	}
+
+	table#global_indicators th,table#global_indicators td{
+		border: solid 1px #ccc;
+		padding: 1px 5px ; 
+	}
+
+	table#global_indicators td.value{
+		text-align: right; 
+	}
+
+	a[data-fancybox="gallery"].hidden{
+		display: none ; 
 	}
