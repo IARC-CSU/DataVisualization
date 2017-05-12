@@ -33,8 +33,8 @@
     }
     var GICR = {
         'default_color'     : '#e3e3e3' , 
-        'visits_color'      : '#9C0063' , 
-        'trainings_color'   : '#FF0080 '
+        'visits_color'      : '#a50026' , 
+        'trainings_color'   : '#006837 '
     }
 
     var map_width   = $(window).width(); 
@@ -52,6 +52,7 @@
 
     var site_visits_per_country = [] ; 
     var trainings_per_country = [] ; 
+    var trainings_per_place ; 
 
     var rectangle_area ; 
     var rectangles_activities ; 
@@ -144,31 +145,22 @@
 
         d3.selectAll('.visits').transition()
             .duration( 750 )
-            .attr('height',function(d){
-                if ( d.properties.NAME == null && d.properties.values != undefined )
-                {
-                    if ( d.properties.site_visits != undefined ) return rectangle_area( d.properties.site_visits ) ; 
-                    // return CanGraphRadiusBubble( Math.floor((Math.random() * 10) + 1) ) ; 
-                    return 0 ; 
-                }
-            })
+            .attr('r', function(d){
+                if ( d.properties.site_visits != undefined ) return CanGraphRadiusBubble(d.properties.site_visits); 
+            } )
             .delay( 750 )
         ; 
 
-        d3.selectAll('.trainings').transition()
+        d3.selectAll('.training-circle')
+            .data( CanGraphTrainings.features )
+            .transition()
             .duration( 750 )
-            .attr('height',function(d){
-                if ( d.properties.NAME == null && d.properties.values != undefined )
-                {
-                    if ( d.properties.trainings != undefined ) return rectangle_area( d.properties.trainings ) ; 
-                    // return CanGraphRadiusBubble( Math.floor((Math.random() * 10) + 1) ) ; 
-                    return 0 ; 
-                }
+            .attr('r',function(d){
+                return CanGraphRadiusBubble( d.properties.total ) ; 
             })
+            .attr('fill', GICR.trainings_color )
             .delay( 750 )
         ; 
-
-
     }
 
     /**
@@ -235,74 +227,26 @@
 
                     // build sit visits
                     rectangles_activities.append("g")
-                        .selectAll("rect")
+                        .selectAll("circle")
                         .data( CanGraphGeometries.features )
                         .enter()
-                        .append('rect')
-                        .attr('width', 8 )
-                        //.attr('height',0)
+                        .append('circle')
                         .attr("class","visits")
-                        .style('fill', function(d){ 
-                            if ( d.properties.NAME == null && d.properties.values != undefined) return GICR.visits_color ;
-                        } )
+                        .style('fill', function(d){  return GICR.visits_color ; })
                         .style('fill-opacity', 1 )
                         .style('stroke','#ffffff')
                         .style('stroke-width','.5px')
                         .attr("transform", function(d) { 
                             var centroid = CanGraphMapPath.centroid(d) ; 
-                            return "translate(" + ( centroid[0] - 8 ) + "," + centroid[1]+ ")"; 
+                            return "translate(" + ( centroid[0] ) + "," + centroid[1]+ ")"; 
                         })
                         .on('mouseover', function(d){ hoverFunction(d,$(this).attr('class')) })
                         .on("mouseout", function(d){ outFunction(d) })
                     ;
-
-                    // build trainings
-                    rectangles_activities.append("g")
-                        .selectAll("rect")
-                        .data( CanGraphGeometries.features )
-                        .enter()
-                        .append('rect')
-                        .attr('width', 8 )
-                        .attr('height',0)
-                        .attr("class","trainings")
-                        .style('fill', function(d){ 
-                            if ( d.properties.NAME == null ) return GICR.trainings_color ;
-                        } )
-                        .style('fill-opacity', 1 )
-                        .style('stroke','#ffffff')
-                        .style('stroke-width','.5px')
-                        .attr("transform", function(d) { 
-                            var centroid = CanGraphMapPath.centroid(d) ; 
-                            return "translate(" + ( centroid[0]  ) + "," + centroid[1]+ ")"; 
-                        })
-                        .on('mouseover', function(d){ hoverFunction(d,$(this).attr('class')) })
-                        .on("mouseout", function(d){ outFunction(d) })
-                    ;
-
-                    /*rectangles_activities.append("g")
-                        .selectAll("image.agreement")
-                        .data( CanGraphGeometries.features )
-                        .enter()
-                        .append('image')
-                        .attr('class','agreement')
-                        .attr('xlink:href', function(d){
-                            if ( d.properties.NAME == null && d.properties.values != undefined) 
-                            {
-                                var randomNumber = Math.random() >= 0.5;
-                                return ( randomNumber == true ) ? 'img/agreement.png' : '' ; 
-                            }
-                        })
-                        .attr('width', 20 )
-                        .attr('height',20 )
-                        .attr("transform", function(d) { 
-                            var centroid = CanGraphMapPath.centroid(d) ; 
-                            return "translate(" + ( centroid[0] - 10  ) + "," + (centroid[1] - 15) + ")"; 
-                        })
-                    ;*/
 
                     setFunctionView( undefined );
 
-                },500);
+                }, 500 );
                 break ; 
 
             case 3 : 
@@ -344,6 +288,7 @@
 
         $('.canTooltip div.tooltip-line').css('background-color', ( class_name == 'visits') ? GICR.visits_color : GICR.trainings_color )
         $('.canTooltip h2').html( item.properties.CNTRY_TERR + '<span>'+ ( ( class_name == 'visits') ? item.properties.site_visits : item.properties.trainings ) +' '+class_name+'(s)</span>' ) ; 
+        $('.canTooltip p').html(' ') ; 
     }
 
     var outFunction = function(){
@@ -375,9 +320,15 @@
         }) ; 
 
         // build activities legend
-        $('ul.activities-list').append( '<li ><a href="javascript:void(0)"><span class="hub" style="background-color:'+GICR.visits_color+';"></span>Site visit(s)</a></li>' ) ;
-        $('ul.activities-list').append( '<li ><a href="javascript:void(0)"><span class="hub" style="background-color:'+GICR.trainings_color+';"></span>Training(s)</a></li>' ) ;
-        $('ul.activities-list').append( '<li ><a href="javascript:void(0)"><span class="hub"><img src="img/agreement.png" width="20" height="20"></span> Agreement </a></li>' ) ;
+        var ul_act = 'ul.activities-list' ; 
+
+        var r_c = 6.5 ; 
+        var c_w = 30 ;
+        var c_h = 20 ; 
+
+        $(ul_act).append( '<li ><a href="javascript:void(0)"><svg width="'+c_w+'" height="'+c_h+'"><circle transform="translate(15,10)" r="'+r_c+'" fill-opacity="0.7" fill="'+GICR.visits_color+'"></svg>Site visit(s)</a></li>' ) ;
+        $(ul_act).append( '<li ><a href="javascript:void(0)"><svg width="'+c_w+'" height="'+c_h+'"><circle transform="translate(15,10)" r="'+r_c+'" fill-opacity="0.7" fill="'+GICR.trainings_color+'"></svg>Training(s)</a></li>' ) ;
+        $(ul_act).append( '<li ><a href="javascript:void(0)"><span class="hub"><img src="img/agreement.png" width="20" height="20"></span> Agreement </a></li>' ) ;
 
     }
 
@@ -438,6 +389,8 @@
 
     var buildGlobalIndicators = function( data )
     {
+        
+
         var site_visits_per_hubs = d3.nest()
             .key( function(d){ return d.hub_code ; })
             .rollup(function( hub ) { 
@@ -489,7 +442,7 @@
             }
 
             var html = '<tr>' ; 
-            html += '<td><strong>'+site_visits_per_hubs[h].key+'</strong></td>' ; 
+            html += '<td>'+site_visits_per_hubs[h].key+'</td>' ; 
             html += '<td class="value">'+(completed_visits.length)+'</td>' ; 
             html += ' <td class="value">'+(completed_trainings.length)+'</td>' ; 
             html += '</tr>'; 
@@ -502,7 +455,7 @@
         }
         
         var total_html = '<tr>' ; 
-        total_html += '<td><strong>Totals</strong></td>' ; 
+        total_html += '<td><strong><u>Totals</u></strong></td>' ; 
         total_html += '<td class="value">'+(tot_vists)+'</td>' ; 
         total_html += ' <td class="value">'+(tot_trainings)+'</td>' ; 
         total_html += '</tr>'; 
@@ -522,6 +475,30 @@
             .key( function( d ){ return d.country ;  })
             .rollup(function( country ) { return {  "total": country.length } })
             .entries( data.trainings  ) ; 
+
+        trainings_per_place = d3.nest()
+            .key( function( d ){ return d.place ;  })
+            .rollup(function( place ) { return {  
+                "total": place.length , 
+                "gps_x" : place[0].gps_x , 
+                "gps_y" : place[0].gps_y , 
+                "status" : place[0].status , 
+                "data" : place
+            } })
+            .entries( data.trainings  ) ; 
+
+        /*for ( var t in trainings_per_place )
+        {
+            var p = trainings_per_place[t] ; 
+            
+            if ( p.values.status == 'Completed' )
+            {
+                console.info('{ "type": "Feature", "properties": { "Name": "'+p.key+'", "Latitude": '+p.values.gps_x+', "Longitude":'+p.values.gps_y+' }, "geometry": { "type": "Point", "coordinates": [ '+p.values.gps_x+', '+p.values.gps_y+' ] } },') ; 
+            }
+        }*/
+
+
+
     }
 
     /**
@@ -571,6 +548,24 @@
             }
            
         } // end for 
+
+        // grab trainings to bubbles
+        for ( var g in CanGraphTrainings.features )
+        {
+            var path = CanGraphTrainings.features[g] ; 
+            
+            for ( var p in trainings_per_place )
+            {
+                var place = trainings_per_place[p] ; 
+
+                if ( place.key == path.properties.Name && place.values.status == "Completed")
+                {
+                    path.properties.total = place.values.total ; 
+                    path.properties.data = place.values.data ; 
+                    break ; 
+                }
+            }
+        }
 
         updateGeographyFilling() ; 
 
@@ -959,6 +954,8 @@
                     $('#tab-4').html( data.impact ); 
                     $('#tab-5').html( data.action ); 
                     $('#tab-6').html( data.collaborators.toString() ); 
+
+
                 }
             });
         }   

@@ -2,14 +2,14 @@
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "Registries" } },
 "features": [
-{ "type": "Feature", "properties": { "Name": "Hanoi", "Latitude": 21.023921, "Longitude": 105.845225, "UN_Code": "VIE", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 105.845225, 21.023921 ] } },
-{ "type": "Feature", "properties": { "Name": "Hai Phong", "Latitude": 20.844911, "Longitude": 106.688084, "UN_Code": "VIE", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 106.688084, 20.844911 ] } },
-{ "type": "Feature", "properties": { "Name": "Thai Nguyen", "Latitude": 21.567156, "Longitude": 105.825204, "UN_Code": "VIE", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 105.825204, 21.567156 ] } },
-{ "type": "Feature", "properties": { "Name": "Thanh Hoa", "Latitude": 19.806692, "Longitude": 105.785182, "UN_Code": "VIE", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 105.785182, 19.806692 ] } },
-{ "type": "Feature", "properties": { "Name": "Thua Thien Hue", "Latitude": 16.467397, "Longitude": 107.590533, "UN_Code": "VIE", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 107.590533, 16.467397 ] } },
-{ "type": "Feature", "properties": { "Name": "Danang", "Latitude": 16.054407, "Longitude": 108.202167, "UN_Code": "VIE", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 108.202167, 16.054407 ] } },
-{ "type": "Feature", "properties": { "Name": "Ho Chi Minh City", "Latitude": 10.823099, "Longitude": 106.629664, "UN_Code": "VIE", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 106.629664, 10.823099 ] } },
-{ "type": "Feature", "properties": { "Name": "Can Tho", "Latitude": 10.045162, "Longitude": 105.746854, "UN_Code": "VIE", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 105.746854, 10.045162 ] } },
-{ "type": "Feature", "properties": { "Name": "Kien Giang", "Latitude": 9.824959, "Longitude": 105.125896, "UN_Code": "VIE", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 105.125896, 9.824959 ] } }
+{ "type": "Feature", "properties": { "Name": "Hanoi", "Latitude": 21.023921, "Longitude": 105.845225, "UN_Code": "VNM", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 105.845225, 21.023921 ] } },
+{ "type": "Feature", "properties": { "Name": "Hai Phong", "Latitude": 20.844911, "Longitude": 106.688084, "UN_Code": "VNM", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 106.688084, 20.844911 ] } },
+{ "type": "Feature", "properties": { "Name": "Thai Nguyen", "Latitude": 21.567156, "Longitude": 105.825204, "UN_Code": "VNM", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 105.825204, 21.567156 ] } },
+{ "type": "Feature", "properties": { "Name": "Thanh Hoa", "Latitude": 19.806692, "Longitude": 105.785182, "UN_Code": "VNM", "pop": 1 }, "geometry": { "type": "Point", "coordinates": [ 105.785182, 19.806692 ] } },
+{ "type": "Feature", "properties": { "Name": "Thua Thien Hue", "Latitude": 16.467397, "Longitude": 107.590533, "UN_Code": "VNM", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 107.590533, 16.467397 ] } },
+{ "type": "Feature", "properties": { "Name": "Danang", "Latitude": 16.054407, "Longitude": 108.202167, "UN_Code": "VNM", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 108.202167, 16.054407 ] } },
+{ "type": "Feature", "properties": { "Name": "Ho Chi Minh City", "Latitude": 10.823099, "Longitude": 106.629664, "UN_Code": "VNM", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 106.629664, 10.823099 ] } },
+{ "type": "Feature", "properties": { "Name": "Can Tho", "Latitude": 10.045162, "Longitude": 105.746854, "UN_Code": "VNM", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 105.746854, 10.045162 ] } },
+{ "type": "Feature", "properties": { "Name": "Kien Giang", "Latitude": 9.824959, "Longitude": 105.125896, "UN_Code": "VNM", "pop": 0 }, "geometry": { "type": "Point", "coordinates": [ 105.125896, 9.824959 ] } }
 ]
 }

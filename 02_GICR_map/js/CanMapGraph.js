@@ -115,7 +115,7 @@ var CanMapGraph = function( object ){
 };
 
 var CanMapSvg, CanMapGroup , CanCircleGroup , 
-    CanMapWidth , CanMapHeight , CanMapGraphProjection, CanMapBubblesData , CanMapText , CanGraphRegistries , 
+    CanMapWidth , CanMapHeight , CanMapGraphProjection, CanMapBubblesData , CanMapText , CanGraphRegistries , CanGraphTrainings , 
     CanGraphMapColor , CanGraphMapColorQuantile,  CanGraphMapPath , CanGraphGeometries , CanGraphCountries , CanGraphCurrentKey = 'asr', CanGraphMapFeatures ,
     CanMapTooltip, CanMapCurrentType = 0, CanGraphMapZoom, CanGraphMapCentered , CanGraphMapLegend, CanMapGraphNbColors = 5,
     CanMapUniqueValues , 
@@ -277,7 +277,8 @@ CanMapGraph.prototype = {
           .attr('class', 'canTooltip');                 
         
         CanMapTooltip.append('div').attr('class', 'tooltip-line')
-        CanMapTooltip.append('h2')
+        CanMapTooltip.append('h2') ;
+        CanMapTooltip.append('p') ;
        
 
 
@@ -315,11 +316,13 @@ CanMapGraph.prototype = {
             .defer(d3.json, "data/world-hd.json.geojson" ) // our geometries
             .defer(d3.csv, "data/countries.csv")  // our data specific
             .defer(d3.json, "data/registries.geojson")
-            .await(function( error , geometries , countries , registries ){ 
+            .defer(d3.json, "data/trainings.geojson")
+            .await(function( error , geometries , countries , registries , trainings ){ 
 
                 CanGraphGeometries = geometries ; 
                 CanGraphCountries = countries ;
                 CanGraphRegistries = registries ; 
+                CanGraphTrainings = trainings ; 
                 // call the "filtering" data function 
 
                 jsonUrl = CanMapConf.data.url ;
@@ -1013,11 +1016,7 @@ function drawMap( world ) {
 
         })
 
-    /*CanMapSvg.append("path")
-        .datum( CanGraphRegistries.features )
-        .attr("d", CanGraphMapPath )
-        .attr("class", "place") ;*/
-
+    // --------------------------------------------------------------------------------------------------------------
     var CanPlacesCircles = CanMapSvg.append('g')
         .attr('class','place-circles-group')
         .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
@@ -1026,7 +1025,7 @@ function drawMap( world ) {
     CanPlacesCircles.selectAll(".place-circle")
         .data( CanGraphRegistries.features )
         .enter().append("circle")
-        .attr("class", function(d){ return "place-circle code-"+ d.properties.Un_code ; })
+        .attr("class", function(d){ return "place-circle code-"+ d.properties.UN_Code ; })
         .attr("transform", function(d) { return "translate(" + CanMapGraphProjection(d.geometry.coordinates) + ")"; })
         .attr("r", 0.25 )
         .attr("stroke","#000")
@@ -1042,12 +1041,60 @@ function drawMap( world ) {
     CanPlaces.selectAll(".place-label")
         .data( CanGraphRegistries.features )
         .enter().append("text")
-        .attr("class", function(d){ return "place-label code-"+ d.properties.Un_code ; })
+        .attr("class", function(d){ return "place-label code-"+ d.properties.UN_Code ; })
         .attr("transform", function(d) { return "translate(" + CanMapGraphProjection(d.geometry.coordinates) + ")"; })
         .attr("dy", ".35em")
         .attr("dx", ".5em")
         .text(function(d) { return d.properties.Name; });
-    
+
+
+    // --------------------------------------- places trainings centers ---------------------------------------
+    var CanTrainingsCircles = CanMapSvg.append('g')
+        .attr('class','training-circles-group')
+        .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+    ;
+
+    CanTrainingsCircles.selectAll(".training-circle")
+        .data( CanGraphTrainings.features )
+        .enter().append("circle")
+        .attr("class", function(d){ return "training-circle" ; })
+        .attr("transform", function(d) { return "translate(" + CanMapGraphProjection(d.geometry.coordinates) + ")"; })
+        .attr("r", 0 )
+        .attr("stroke","#000")
+        .attr("stroke-width",'0px')
+        .attr("fill", GICR.trainings_color )
+        .attr("fill-opacity",0.7)
+        .on("mousemove", function(d){
+            var p = d.properties ;
+
+            $('.canTooltip').show(); 
+
+            var mouse = d3.mouse( CanMapSvg.node()).map(function(d) {
+                return parseInt(d);
+            });
+
+            CanMapTooltip
+                .style('top', (mouse[1] - 0 ) + 'px')
+                .style('left', (mouse[0] - 200 ) + 'px');
+
+            $('.canTooltip div.tooltip-line').css('background-color', GICR.trainings_color )
+            $('.canTooltip h2').html( p.Name + ' (' +p.data[0].country+')' ) ;
+
+            var p_html = '' ; 
+            p_html += '<u> Dates:</u> '+ p.data[0].dates+' '+p.data[0].period ; 
+            p_html += '<br><u> Course type:</u> '+ p.data[0].type ; 
+
+            $('.canTooltip p').html( p_html ) ; 
+
+            d3.select(this).style('fill-opacity',1) ; 
+        })
+        // mouseout function            
+        .on("mouseout", function(d){
+            d3.select(this).style('fill-opacity',0.7) ; 
+            $('.canTooltip').hide();
+        })   
+    ;
+
     if ( CanMapConf.chart.projection != 'globe' ) 
     {
         

@@ -1,4 +1,4 @@
-hub_code,period,time,dates,place,country,type,course,status,comments,gps_x,gps_y
+hub_code,period,time,dates,place,country,type,course,status,comments,gps_y,gps_x
 AFCRN,2017,Q1: Jan - Mar,7 - 16 Feb,Liberville,Gabon,Basic,,Completed,Methods and CanReg focus. 20 particpants,0.4161976,9.4672676
 AFCRN,2017,Q4: Oct - Dec,,?,Basic,,Planned,Essential TNM study stage 2 training + two sites-trial A + B w/ training inbetween (TBD)
 AFCRN,2017,Q4: Oct - Dec,,,Basic,,Planned,?Repeat TNM in french if effective
@@ -40,7 +40,7 @@ IZMIR,2014,Q3: Jul - Sep,31 Aug?4 Sept ,Cairo,Egypt,Basic,Cancer Registration an
 IZMIR,2013,Q3: Jul - Sep,30 Sept - 4 October,Izmir,Turkey,Basic,Cancer Registration Course,Completed,In conjunction with the Middle East Cancer Consortium (MECC)-the National Cancer Institute-the University of California (Irvine) and the European Network of Cancer Registries,38.423734,27.142826
 LA,2017,Q2: Apr - Jun,29 May - 2 June,Quito,Ecuador,Intermediate,,Planned,,-0.1806532,-78.4678382
 LA,2015,Q4: Oct - Dec,24 - 27 November ,Panama City,Panama,Intermediate,Quality Control and Basic Analysis,Completed,With PAHO,30.1588129,-85.6602058
-LA,2014,Q4: Oct - Dec,15-17 October,San Salvador,El Salvador,Basic,Cancer Registration Course,Completed,The course was organized in collaboration with the Ministry of Health in El Salvador-the US National Cancer Institute (NCI) and Vanderbilt University.,San Salvador,13.6929403,-89.2181911
+LA,2014,Q4: Oct - Dec,15-17 October,San Salvador,El Salvador,Basic,Cancer Registration Course,Completed,The course was organized in collaboration with the Ministry of Health in El Salvador-the US National Cancer Institute (NCI) and Vanderbilt University.,13.6929403,-89.2181911
 LA,2014,Q3: Jul - Sep,8-11 July ,Santiago,Chile,Basic,Cancer Coding Course in Spanish ,Completed,The Health Ministry of Chile-with coordination from the Epidemiology Office ? National Coordination of the Population Cancer Registries-invited the Latin America Hub to participate in a course on coding for population and hospital based cancer registries.,-33.4488897,-70.6692655
 LA,2014,Q2: Apr - Jun,28-juin,Ottawa,Canada,Intermediate,Cancer System Performance Measurement and Evaluation Course in Spanish ,Completed,The workshop was given in collaboration with Canadian Partnership Against Cancer and the National Cancer Institute in Argentina.,45.4215296,-75.69719309999999
 MUMB,2017,Q3: Jul - Sep,August,Tokyo,Japan,Basic,,Planned,With NCC Japan
