@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <country>
 
+	<hub_name>Carribean hub</hub_name>
+
 	<hub_centers><![CDATA[ ]]></hub_centers>
 	<hub_pi><![CDATA[ ]]></hub_pi>
 	<canreg_experts></canreg_experts>

@@ -62,7 +62,8 @@ li{
    ========================================================================== */
 
 body {
-    font: 16px/26px 'Cabin', sans-serif, Arial;
+    font: 16px/26px 'Raleway', sans-serif, Arial;
+    font-weight: 500 ; 
     overflow-x: hidden;
 }
 
@@ -535,7 +536,7 @@ ol.legend li{
 a.button{
     background-color: #ccc ; 
     padding: 3px 15px ; 
-    color: #fff ; 
+    color: #5b5a5a ; 
     margin-right: 10px; 
     cursor: pointer ;
     font-size: 0.8em ;
@@ -555,11 +556,6 @@ a.button:hover,a.button.active{
     z-index: 2;
 }
 
-#hubPanel p,#hubPanel div{
-    font-size: 0.9em ; 
-    line-height: 14px;
-    text-align: justify ; 
-}
 
 
 @media only screen and (min-width: 768px) {
@@ -698,13 +694,44 @@ img.loader{
 
 form.filters{
     color: #000 ;
+    background: #fff;
+    z-index: 22;
     position: absolute;
     top: 62px;
-    left: 30%;
-    margin-left: -320px;
-    background: #fff;
-    width: 100%;
-    z-index: 22;
+    left: 50% ; 
+    margin-left: -585px;
+    width: 1130px;
+}
+
+form .filter.filter-view{
+    width: 170px;
+    float: none;
+    margin: auto;
+}
+
+form .filter-view a.button{
+    background-color: #ccc ; 
+    padding: 3px 15px ; 
+    color: #fff ; 
+    margin-right: 0px; 
+    cursor: pointer ;
+    font-size: 0.8em ;
+    border-radius: 0px ;  
+    width: 95px ; 
+    text-align: center ; 
+}
+
+form .filter-view a.button:hover,form .filter-view a.button.active{
+    background-color: #037AB3;
+    color: #fff;
+}
+
+form .filter-view a.button.geo{
+    border-radius: 3px 0 0 3px ;
+}
+
+form .filter-view a.button.act{
+    border-radius: 0 3px 3px 0 ;
 }
 
 form .filter label{
@@ -731,6 +758,19 @@ form .filter-function select,form .filter-geography select{
 
 form .filter select[name="geography"] option.hub-country{
     padding-left: 15px ; 
+}
+
+.filter-years{
+    display: none ; 
+}
+
+#list-years{
+    width: 325px ; 
+    margin: auto ; 
+}
+
+#list-years a{
+    width: 60px ; 
 }
 
 

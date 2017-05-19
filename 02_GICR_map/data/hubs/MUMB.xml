@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <country>
 
+	<hub_name>Mumbai hub</hub_name>
 	<hub_centers>
     <![CDATA[
 <p> <a data-fancybox="gallery" href="data/hubs/MUMB/Innuguration.JPG"> <img src="data/hubs/MUMB/Innuguration.JPG" align="left" width="50%"></a> Mumbai was inaugurated at the Tata Memorial Centre (TMC) in Mumbai, India in 2012 as the first Regional Hub for Cancer Registration established under the GICR. TMC is a national comprehensive cancer centre, the largest cancer hospital in Asia, with more than 40,000 new patient visits annually from all over India and neighboring countries. On average, 1,500 patients visit every day and every year, about 25,000 new cancer patients are registered with the hospital.</p>

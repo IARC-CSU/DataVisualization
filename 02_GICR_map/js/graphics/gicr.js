@@ -1,27 +1,16 @@
 	
 	var PROJECT 			= 'map' ; 
 
-    var hubs = {
-        1 : { 'id' : 1 , 'code' : 'AFCRN' , 'name' : 'SS-Africa' , 'label' : 'Sub saharian Africa', 'color' : '#71C8E3' , 'plot_name' : 'ZAF' , 'plot_translate' : { 'x' : 150 , 'y' : -250 } } , 
-        2 : { 'id' : 2 , 'code' : 'IZMIR' , 'name' : 'NA,C-Africa, W.Asia' , 'label' : 'North Africa, Center Africa & Western Asia', 'color' : '#724A98' , 'plot_name' : 'MAR' , 'plot_translate' : { 'x' : 320 , 'y' : -180 } } , 
-        3 : { 'id' : 3 , 'code' : 'MUMB' , 'name' : 'S,E,SE Asia' , 'label' : 'South, East & Southern East Asia',  'color' : '#2EAF81' , 'plot_name' : 'CHN' , 'plot_translate' : { 'x' :  300 , 'y' : -400 }} , 
-        4 : { 'id' : 4 , 'code' : 'PI' , 'name' : 'Pacific' , 'label' : 'Pacific islands',  'color' : '#ff6600' , 'plot_name' : 'FJI' , 'plot_translate' : { 'x' : 90 , 'y' : -160 } } , 
-        5 : { 'id' : 5 , 'code' : 'CARIB' , 'name' : 'Carribean' , 'label' : 'The carribean',  'color' : '#b21c01' , 'plot_name' : 'SUR' , 'plot_translate' : { 'x' : 100 , 'y' : -150 } } ,
-        6 : { 'id' : 6 , 'code' : 'LA' , 'name' : 'LatAm' , 'label' : 'Latin America',  'color' : '#FDCC00', 'plot_name' : 'PER' , 'plot_translate' : { 'x' : 200 , 'y' : -280 }}
-    } ; 
+    var hubs = [
+        { 'id' : 1 , 'code' : 'AFCRN' , 'name' : 'SS-Africa' , 'label' : 'Sub-Saharian Africa', 'color' : '#71C8E3' , 'plot_name' : 'ZAF' , 'plot_translate' : { 'x' : 150 , 'y' : -250 } } , 
+        { 'id' : 2 , 'code' : 'IZMIR' , 'name' : 'NA,C-Africa, W.Asia' , 'label' : 'Northern Africa, Central and Western Asian', 'color' : '#724A98' , 'plot_name' : 'MAR' , 'plot_translate' : { 'x' : 250 , 'y' : -180 } } , 
+        { 'id' : 3 , 'code' : 'MUMB' , 'name' : 'S,E,SE Asia' , 'label' : 'South, Eastern and South-Eastern Asia',  'color' : '#2EAF81' , 'plot_name' : 'CHN' , 'plot_translate' : { 'x' :  250 , 'y' : -350 }} , 
+        { 'id' : 4 , 'code' : 'PI' , 'name' : 'Pacific' , 'label' : 'Pacific Islands',  'color' : '#ff6600' , 'plot_name' : 'FJI' , 'plot_translate' : { 'x' : 90 , 'y' : -160 } } , 
+        { 'id' : 5 , 'code' : 'CARIB' , 'name' : 'Carribean' , 'label' : 'Carribean',  'color' : '#b21c01' , 'plot_name' : 'SUR' , 'plot_translate' : { 'x' : 100 , 'y' : -150 } } ,
+        { 'id' : 6 , 'code' : 'LA' , 'name' : 'LatAm' , 'label' : 'Latin America',  'color' : '#cca300', 'plot_name' : 'PER' , 'plot_translate' : { 'x' : 100 , 'y' : -280 }}
+    ] ; 
 
-    var dataActions = [
-      {date: new Date(2013,9,13), name: 'Basic Site Visit' , place : 'Lubumbashi' , hub_id : 1 },
-      {date: new Date(2014,5,16), name: 'Training CanReg5' , place : 'Namibia' , hub_id : 1 },
-      {date: new Date(2014,7,11), name: 'Basic Training Course in French'  , place : 'Abidjan' , hub_id : 1 },
-      {date: new Date(2014,7,31), name: 'Cancer Registration + CanReg5 + PAF'  , place : 'Cairo' , hub_id : 1 }, 
-      {date: new Date(2015,8,2), name: 'Cancer Registration + CanReg5 Course in Russian'  , place : 'Astana' , hub_id : 2 }, 
-      {date: new Date(2015,8,26), name: 'GICR presentation at RINC Annual Meeting'  , place : 'Bogotà' , hub_id : 6 },
-      {date: new Date(2015,9,15), name: 'IARC Short Course (Cancer registration + CanReg)'  , place : 'San Salvador' , hub_id : 6 },
-      {date: new Date(2016,6,19), name: 'National Strategic planning workshop'  , place : 'San Salvador' , hub_id : 6 }
-    ];
-
-    var title = 'Global Initiative for Cancer Registries' ;
+    hubs.sort( function(a, b){ return a.key > b.key; } );
 
     var hubs_per_name = [] ;
     var hubs_per_code = [] ;  
@@ -31,11 +20,15 @@
         hubs_per_code[ hubs[h].code ] = hubs[h] ; 
         $('.line').append('<div class="line-hub" style="background-color:'+hubs[h].color+';"></div>')
     }
+
     var GICR = {
         'default_color'     : '#e3e3e3' , 
-        'visits_color'      : '#a50026' , 
+        'visits_color'      : '#000066' , 
         'trainings_color'   : '#006837 '
     }
+
+    var brewer_color = 'RdPu'; 
+    var brewer_nb    = 4 ; 
 
     var map_width   = $(window).width(); 
     var map_height  = $(window).height() - 120 ;
@@ -53,9 +46,14 @@
     var site_visits_per_country = [] ; 
     var trainings_per_country = [] ; 
     var trainings_per_place ; 
+    var agreements ; 
+    var hubs_totals_training = [] ; 
+    var hubs_totals_values = [] ; 
 
     var rectangle_area ; 
     var rectangles_activities ; 
+
+    var color_training ; 
 
     var scale = 0 ; 
     var translate = {} ; 
@@ -136,7 +134,7 @@
 
     var setFunctionView = function( item )
     {   
-        $('#title-map').text( title + ': '+ $('select[name="function"] :selected').text() ) ; 
+        // $('#title-map').text( title + ': '+ $('select[name="function"] :selected').text() ) ; 
 
         if ( item == undefined )
             metric = 'visit' ; 
@@ -151,7 +149,7 @@
             .delay( 750 )
         ; 
 
-        d3.selectAll('.training-circle')
+        /*d3.selectAll('.training-circle')
             .data( CanGraphTrainings.features )
             .transition()
             .duration( 750 )
@@ -160,7 +158,10 @@
             })
             .attr('fill', GICR.trainings_color )
             .delay( 750 )
-        ; 
+        ; */
+
+
+
     }
 
     /**
@@ -179,33 +180,34 @@
         switch ( view )
         {
             case 1 : 
-                $('.filter-function').hide(); 
+                $('.filter-years').hide(); 
                 $('.filter-geography').show(); 
                 $(".unit-label").fadeIn() ;
-                
-                $('#title-map').text( title + ': geographic view') ;
                 $('select [name="geography"]').val( 'global' );
                 $('.for_bubble').hide();
                 $('ul.hubs-list').show();
-                $('ul.activities-list').hide();
+                $('ul.activities-list,.training-circles-group').hide();
                 $('table#global_indicators').hide(); 
                 $('svg#legend_bubble').html(' ');
 
                 $('#timeline').removeClass('open');
 
+                setFunctionView( undefined );
+
                 break ; 
             
             case 2 : 
-                $('.filter-function').show(); 
+                $('.filter-years').show(); 
                 $('.filter-geography').hide(); 
                 $(".unit-label").fadeOut() ;
-                $('#title-map').text( title + ': site visit(s)') ;
                 $('#hubPanel,#countryPanel').removeClass('show') ;
                 $('ul.hubs-list').hide();
-                $('ul.activities-list').show();
+                $('ul.activities-list,.training-circles-group').show();
                 $('table#global_indicators').show(); 
                 $('.for_bubble').show();
+
                 buildCircleLegend();
+
                 if ( level != 0 ) zoomRegion( undefined ) ; 
 
                 // $('#timeline').removeClass('open');
@@ -227,6 +229,7 @@
 
                     // build sit visits
                     rectangles_activities.append("g")
+                        .attr("class","groupe_circles")
                         .selectAll("circle")
                         .data( CanGraphGeometries.features )
                         .enter()
@@ -244,17 +247,43 @@
                         .on("mouseout", function(d){ outFunction(d) })
                     ;
 
+                    var agreements_points = rectangles_activities.append("g")
+                        .attr("class","groupe_agreement")
+                        .selectAll("img")
+                        .data( CanGraphGeometries.features )
+                        .enter()
+                        .append("svg:image")
+                        .attr("class","agree")
+                        .attr("xlink:href","img/agreement.png")
+                        .attr("width",function(d){ if( d.properties.agreement == true ) return 20 ; return 0 ;})
+                        .attr("height",function(d){ if( d.properties.agreement == true ) return 20 ; return 0 ; })
+                        .attr("x", function(d) { 
+                            if( d.properties.agreement == true )
+                            {
+                                var centroid = CanGraphMapPath.centroid(d) ; 
+                                return centroid[0] ; 
+                            }
+                        })
+                        .attr("y", function(d) { 
+                            if( d.properties.agreement == true )
+                            {
+                                var centroid = CanGraphMapPath.centroid(d) ; 
+                                return centroid[1]; 
+                            }
+                        })
+                        .on('mouseover', function(d){ hoverAgreeFunction(d,$(this).attr('class')) })
+                        .on("mouseout", function(d){ outFunction(d) })
+
                     setFunctionView( undefined );
 
                 }, 500 );
                 break ; 
 
-            case 3 : 
+            /* case 3 : 
                 $('.filter-function').hide(); 
                 $('.filter-geography').hide(); 
                 $(".unit-label").fadeIn() ;
                 
-                $('#title-map').text( title + ': all actions since 2013') ;
                 $('select [name="geography"]').val( 'global' );
                 $('.for_bubble').hide();
                 $('svg#legend_bubble').html(' ');
@@ -262,7 +291,7 @@
                 //
                 $('#timeline').addClass('open');
 
-                break ; 
+                break ; */
         }
 
         updateGeographyFilling(); 
@@ -285,9 +314,27 @@
             .style('top', (mouse[1] - 60 ) + 'px')
             .style('left', (mouse[0] - 80 ) + 'px');
 
-
-        $('.canTooltip div.tooltip-line').css('background-color', ( class_name == 'visits') ? GICR.visits_color : GICR.trainings_color )
+        // $('.canTooltip div.tooltip-line').css('background-color', ( class_name == 'visits') ? GICR.visits_color : item.properties.values.color ) ; 
+        $('.canTooltip div.tooltip-line').css('background-color', item.properties.values.color ) ; 
         $('.canTooltip h2').html( item.properties.CNTRY_TERR + '<span>'+ ( ( class_name == 'visits') ? item.properties.site_visits : item.properties.trainings ) +' '+class_name+'(s)</span>' ) ; 
+        $('.canTooltip p').html(' ') ; 
+    }
+
+    var hoverAgreeFunction  = function( item , class_name ){
+
+        $('.canTooltip').show(); 
+
+        var mouse = d3.mouse( CanMapSvg.node()).map(function(d) {
+            return parseInt(d);
+        });
+
+        CanMapTooltip
+            .style('top', (mouse[1] - 60 ) + 'px')
+            .style('left', (mouse[0] - 80 ) + 'px');
+
+
+        $('.canTooltip div.tooltip-line').css('background-color', '#fcbd00' )
+        $('.canTooltip h2').html( item.properties.CNTRY_TERR + ' <br><span> Collaborative Research Agreement in 201X </span>' ) ; 
         $('.canTooltip p').html(' ') ; 
     }
 
@@ -301,6 +348,8 @@
     var buildGeoLegend = function(){
 
         // build legend 
+        hubs.sort( function(a, b){ return a.label > b.label ; } );
+
         for ( var h in hubs )
         {
             var span_a = '<span class="hub" style="background-color:'+hubs[h].color+';"></span>'+hubs[h].label ; 
@@ -326,10 +375,36 @@
         var c_w = 30 ;
         var c_h = 20 ; 
 
-        $(ul_act).append( '<li ><a href="javascript:void(0)"><svg width="'+c_w+'" height="'+c_h+'"><circle transform="translate(15,10)" r="'+r_c+'" fill-opacity="0.7" fill="'+GICR.visits_color+'"></svg>Site visit(s)</a></li>' ) ;
-        $(ul_act).append( '<li ><a href="javascript:void(0)"><svg width="'+c_w+'" height="'+c_h+'"><circle transform="translate(15,10)" r="'+r_c+'" fill-opacity="0.7" fill="'+GICR.trainings_color+'"></svg>Training(s)</a></li>' ) ;
-        $(ul_act).append( '<li ><a href="javascript:void(0)"><span class="hub"><img src="img/agreement.png" width="20" height="20"></span> Agreement </a></li>' ) ;
+        var legend_colors = Array.prototype.slice.call( colorbrewer[ brewer_color ][ brewer_nb ] ) ; 
+        legend_colors.reverse();    
 
+        // Remove the gradient legend (number of courses) for now
+        /* $(ul_act).append( '<li>Number of course(s) per hub:</li>');
+
+        for ( var l in legend_colors )
+        {
+            var extent = color_training.invertExtent(legend_colors[l]) ; 
+            
+            var suffix = '' ;
+            if ( l == 0 )
+                suffix = '≥ '+ format(extent[0])  ; 
+            else if (l == (legend_colors.length - 1))
+                suffix =  '< ' + format(extent[1]) ; 
+            else
+                suffix =  format(extent[0]) +'-'+ format(extent[1]) ;
+
+            $(ul_act).append( '<li ><a href="javascript:void(0)"><span class="hub" style="background-color:'+legend_colors[l]+';"></span>'+suffix+'</a></li>' ) ;
+        }
+        */ 
+
+        $(ul_act).append( '<li style="margin-top:20px;"><a href="javascript:void(0)"><svg width="'+c_w+'" height="'+c_h+'"><circle transform="translate(15,10)" r="'+r_c+'" fill-opacity="0.7" fill="'+GICR.visits_color+'"></svg>Site visit(s)</a></li>' ) ;
+        // $(ul_act).append( '<li ><a href="javascript:void(0)"><svg width="'+c_w+'" height="'+c_h+'"><circle transform="translate(15,10)" r="'+r_c+'" fill-opacity="0.7" fill="'+GICR.trainings_color+'"></svg>Training(s)</a></li>' ) ;
+        $(ul_act).append( '<li ><a href="javascript:void(0)"><span class="hub"><img src="img/agreement.png" width="20" height="20"></span> Agreement with IARC</a></li>' ) ;
+        
+    }
+
+    var format = function( d ){
+        return Math.round( d );
     }
 
     /**
@@ -344,16 +419,54 @@
             .defer( d3.csv , "data/gicr.csv" )
             .defer( d3.csv , "data/site-visits.csv" )
             .defer( d3.csv , "data/trainings.csv" )
+            .defer( d3.csv , "data/agreements.csv" )
             .awaitAll( function( error, results ) {
 
                 gicr_csv = results[0] ; 
+
+                gicr_csv.sort( function(a, b){ return a.Country > b.Country ; } );
 
                 // build selectbox for geography region / data gicr
                 var select_geo = d3.nest()
                     .key(function(d){ return d.HUB })
                     .entries( gicr_csv ) ;
 
+                gicr_csv.sort( function(a, b){ return a.key > b.key ; } );
+
+                /*for ( var g in gicr_csv )
+                {
+                    if ( gicr_csv[g].Country != undefined && gicr_csv[g].Globocan_ID != '' )
+                    {
+                        switch( gicr_csv[g].HUB )
+                        {
+                            case 'SS-Africa' : 
+                                var hub_id = 2
+                                break ; 
+                            case 'S,E,SE Asia' : 
+                                var hub_id = 4
+                                break ; 
+                            case 'Pacific' : 
+                                var hub_id = 5
+                                break ; 
+                            case 'NA,C-Africa, W.Asia' : 
+                                var hub_id = 3
+                                break ; 
+                            case 'Carribean' : 
+                                var hub_id = 6
+                                break ; 
+                            case 'LatAm' : 
+                                var hub_id = 7
+                                break ; 
+                        }
+
+                        console.info( "$data = array(  'name' => '"+gicr_csv[g].Country+"', 'hub' => "+hub_id+" , 'author' => 1 , 'iso_3_code' => '"+gicr_csv[g].UN_Code+"' , 'globocan_id' => "+gicr_csv[g].Globocan_ID+" ); $pod->add( $data ); ") ; 
+                    }
+                }*/
+
+
                 $('#list-hubs').append( '<a class="button view active" attr-hub="0" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
+
+                select_geo.sort( function(a, b){ return a.key > b.key ; } );
 
                 for ( var s in select_geo )
                 {
@@ -380,7 +493,10 @@
                 site_visits = results[1] ; 
                 trainings = results[2] ; 
 
-                buildGlobalIndicators({ 'site_visits' : site_visits , 'trainings' : trainings }) ; 
+                buildGlobalIndicators({ 'site_visits' : site_visits , 'trainings' : trainings , 'agreements' : results[3] }) ; 
+
+                // map nb trainings -> map 
+
 
             })
         ;
@@ -389,7 +505,7 @@
 
     var buildGlobalIndicators = function( data )
     {
-        
+        agreements = data.agreements ; 
 
         var site_visits_per_hubs = d3.nest()
             .key( function(d){ return d.hub_code ; })
@@ -402,6 +518,9 @@
                 } 
             })
             .entries( data.site_visits ) ;
+
+        for ( var v in site_visits_per_hubs ) site_visits_per_hubs[v].label = hubs_per_code[ site_visits_per_hubs[v].key ].label ; 
+        site_visits_per_hubs.sort( function(a, b){ return a.label > b.label ; } );
 
         var trainings_per_hubs = d3.nest()
             .key( function(d){ return d.hub_code ; })
@@ -417,6 +536,8 @@
 
         var tot_vists = 0 ; 
         var tot_trainings = 0 ; 
+
+        
 
         for ( var h in site_visits_per_hubs )
         {
@@ -442,10 +563,16 @@
             }
 
             var html = '<tr>' ; 
-            html += '<td>'+site_visits_per_hubs[h].key+'</td>' ; 
+            html += '<td>'+ hubs_per_code[ site_visits_per_hubs[h].key ].label+'</td>' ; 
             html += '<td class="value">'+(completed_visits.length)+'</td>' ; 
             html += ' <td class="value">'+(completed_trainings.length)+'</td>' ; 
             html += '</tr>'; 
+
+            hubs_totals_training.push({ 
+                'key' : site_visits_per_hubs[h].key , 
+                'hub' : hubs_per_code[ site_visits_per_hubs[h].key ] , 
+                'total' : completed_trainings.length 
+            }) ; 
 
             tot_vists += Math.abs( completed_visits.length ) ; 
             tot_trainings += Math.abs( completed_trainings.length ) ; 
@@ -455,7 +582,7 @@
         }
         
         var total_html = '<tr>' ; 
-        total_html += '<td><strong><u>Totals</u></strong></td>' ; 
+        total_html += '<td class="value"><strong><u>Total</u></strong></td>' ; 
         total_html += '<td class="value">'+(tot_vists)+'</td>' ; 
         total_html += ' <td class="value">'+(tot_trainings)+'</td>' ; 
         total_html += '</tr>'; 
@@ -463,14 +590,15 @@
 
         $('table#global_indicators').append( total_html ) ; 
 
+        // grab data to hub map 
+
 
         // building data per countries
         site_visits_per_country = d3.nest()
             .key( function( d ){ return d.country ;  })
-            .rollup(function( country ) { return {  "total": country.length } })
+            .rollup(function( country ) { return {  "total": 1} })
             .entries( data.site_visits  ) ; 
 
-        // console.info( site_visits_per_country ) ; 
         trainings_per_country = d3.nest()
             .key( function( d ){ return d.country ;  })
             .rollup(function( country ) { return {  "total": country.length } })
@@ -486,18 +614,6 @@
                 "data" : place
             } })
             .entries( data.trainings  ) ; 
-
-        /*for ( var t in trainings_per_place )
-        {
-            var p = trainings_per_place[t] ; 
-            
-            if ( p.values.status == 'Completed' )
-            {
-                console.info('{ "type": "Feature", "properties": { "Name": "'+p.key+'", "Latitude": '+p.values.gps_x+', "Longitude":'+p.values.gps_y+' }, "geometry": { "type": "Point", "coordinates": [ '+p.values.gps_x+', '+p.values.gps_y+' ] } },') ; 
-            }
-        }*/
-
-
 
     }
 
@@ -537,6 +653,7 @@
                 }
             }
 
+            // training per country 
             for ( var g in trainings_per_country )
             {
                 if ( c.CNTRY_TERR == trainings_per_country[g].key )
@@ -546,6 +663,31 @@
                 }
                 
             }
+
+            // training per hub
+            for ( var gt in hubs_totals_training )
+            {
+                if ( c.values != undefined && c.values.HUB == hubs_totals_training[gt].hub.name )
+                {
+                    c.hub_total_trainings = hubs_totals_training[gt].total ; 
+                    hubs_totals_values.push( hubs_totals_training[gt].total ) ; 
+                    break ;
+                }
+                
+            }
+
+            // agreements
+            for ( var a in agreements )
+            {
+                if ( c.values != undefined && c.values.Country == agreements[a].country )
+                {
+                    c.agreement = true ; 
+                    break ;
+                }
+
+                c.agreement = false ; 
+            }
+
            
         } // end for 
 
@@ -576,6 +718,7 @@
         buildLegend();
 
         buildGeoLegend();
+
     }
 
     var populateCountryNames = function(){
@@ -639,6 +782,8 @@
     var updateGeographyFilling = function(){
 
         // 
+        color_training = d3.scale.quantile().domain( [ d3.min( hubs_totals_values ) , d3.max(  hubs_totals_values ) ] ).range( colorbrewer[ brewer_color ][ brewer_nb ] ) ; 
+
         d3.selectAll(".country")
             .data( CanGraphGeometries.features ) 
             .transition()
@@ -658,10 +803,11 @@
                         {
                             return GICR.default_color ; 
                         }
-                        else if ( view == 2 )
+                        /* else if ( view == 2 )
                         {
-                            return GICR.default_color ;  
-                        }
+                            // console.info( d.properties.values.Country , d.properties.values.HUB , d.properties.hub_total_trainings ) ; 
+                            return color_training( d.properties.hub_total_trainings ) ; 
+                        } */
                         else
                         {
                             switch ( level )
@@ -671,7 +817,10 @@
                                     break ; 
 
                                 case 1 : 
-                                    if ( hubs[ current_hub ] != undefined && hubs[ current_hub ].name == d.properties.values.HUB ) 
+
+                                    var hub = getHubById( current_hub ) ; 
+
+                                    if ( hub != undefined && hub.name == d.properties.values.HUB ) 
                                         return d.properties.values.color ; 
                                     else
                                         return GICR.default_color ;                                    
@@ -700,6 +849,22 @@
                 return '' ;  
             })
         ; 
+    }
+
+    var getHubById = function( hub_id )
+    {
+        var hub ; 
+
+        for ( var h in hubs )
+        {
+            if ( hubs[h].id == hub_id )
+            {
+                hub = hubs[ h ] ; 
+                break ; 
+            }
+        }
+
+        return hub ; 
     }
 
     var zoomRegion = function( codeCountry , scale , translateX , translateY , hub_id )
@@ -793,7 +958,12 @@
                 $('.hubs-list').addClass('hidden');
                 $('#hubPanel').addClass('show') ;
                 $('#countryPanel').removeClass('show') ;
-                var hub = hubs[ hub_id ] ; 
+
+                var hub = getHubById( hub_id ) ; 
+
+                // calculate the number of the height sscroll view panel 
+                var height_panel = $(window).height() - (  120 + 50 + 25 + 45 ) ;  
+                $('div#hubPanel,div#countryPanel').css( { 'height' : height_panel } ) ;  
                 $('ul.hubCountries').html(' ') ; 
                 $('.hub-name').css('color' , hub.color ).text( hub.label ) ; 
                 $('.hub-line').css('background-color' , hub.color ) ; 
@@ -819,34 +989,34 @@
 
                     case 2 : // northern africa + south east asia
                         var codeCountry = "MAR" ; 
-                        scale = 2.5 ; 
-                        var translateX = map_width / 10 ; 
+                        scale = 1.5 ; 
+                        var translateX = map_width / 12 ; 
                         break ; 
 
                     case 6 : // latin america
                         var codeCountry = "PER" ; 
-                        scale = 1.8 ; 
-                        var translateX = map_width / 3.5 ; 
-                        var translateY = map_height / 2.5 ; 
+                        scale = 1.5 ; 
+                        var translateX = map_width / 4 ; 
+                        var translateY = map_height / 2.7 ; 
                         break ; 
 
                     case 3 : // south east southern asia
                         var codeCountry = "VNM" ; 
-                        var translateX = map_width / 2.8 ;
-                        scale = 1.8 ;  
+                        var translateX = map_width / 3.2 ;
+                        scale = 1.3 ;  
                         break ; 
 
                     case 5 : // carribean
                         var codeCountry = "LCA" ; 
-                        scale = 5 ;
+                        scale = 3.5 ;
                         var translateX = map_width / 3.5 ; 
                         var translateY = map_height / 3 ; 
              
                         break ; 
-                    case 4 : 
+                    case 4 : // pacific island
                         var codeCountry = "FJI" ; 
-                        scale = 10 ; 
-                        var translateX = map_width / 40 ; 
+                        scale = 3.5 ; 
+                        var translateX = map_width / 10 ; 
                         break ; 
                 }
 
@@ -865,6 +1035,7 @@
                         var json  = x2js.xml_str2json( xmlString );
                         var data  = json.country ;
 
+                        $('#regional_hub_center').text( data.hub_name +' overview' ) ; 
                         $('#hub_centers').html( data.hub_centers.toString() ); 
                         $('#hub_pi').html( data.hub_pi.toString() ); 
                         $('#canreg_experts').html( data.canreg_experts ); 
@@ -892,7 +1063,7 @@
                 
                 level = 2 ; 
                 $(".unit-label").hide(); 
-                zoomRegion( item.value , 10 ) ; 
+                zoomRegion( item.value , 6 ) ; 
                 $('text.subunit-label').addClass('zoomed');
                 $('text#label-'+ item.value ).addClass('selected');
                 $('text.place-label.code-'+codeCountry).addClass('show');
@@ -919,7 +1090,7 @@
         $('text#label-'+ codeCountry ).addClass('selected');
         $('text.place-label.code-'+codeCountry).addClass('show');
 
-        zoomRegion( codeCountry , 10 ) ; 
+        zoomRegion( codeCountry , 6 ) ; 
 
         setCountryPanel( codeCountry ) ; 
 

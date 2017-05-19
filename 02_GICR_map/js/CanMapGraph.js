@@ -915,7 +915,7 @@ function drawMap( world ) {
 
     CanGraphMapFeatures.enter().append("path") // prepare data to be appended to paths
         .attr("class", function(d){ 
-            return "country type"+CanMapCurrentType ; 
+            return "country type"+CanMapCurrentType  ; 
         }) // give them a class for styling and access later
         .attr("fill", function(d) { 
             return "#ccc" ; 
@@ -925,10 +925,10 @@ function drawMap( world ) {
         .attr('stroke-width',0.2)
         .attr("id", function(d) { return "code_" + d.properties.ISO_3_CODE ; }, true) // give each a unique id (check with graph global conf)
         .attr("d", CanGraphMapPath) // create them using the svg path generator defined above
-        // ng click
-        /*.attr('ng-click', function(d) {
-            return "clickPathMap('" + d + "')";
-        })*/
+        .attr("hub-key",function(d){
+            // if ( d.properties.values == undefined ) return ; 
+            console.info(  ) ; 
+        })
         .on("mouseover", function(d){
             d3.select(this).style('fill-opacity',0.5) ; 
         })
@@ -937,7 +937,7 @@ function drawMap( world ) {
 
             // console.info(p.SOVEREIGN,p.WHO_REGION,p.UN_CODE,p.ISO_3_CODE) ; 
 
-            if ( d.properties.values == undefined || view == 2 ) return ; 
+            if ( d.properties.values == undefined ) return ; 
 
             $('.canTooltip').show(); 
 
@@ -949,17 +949,48 @@ function drawMap( world ) {
                 .style('top', (mouse[1] - 60 ) + 'px')
                 .style('left', (mouse[0] - 80 ) + 'px');
 
-            $('.canTooltip div.tooltip-line').css('background-color', d.properties.values.color )
-            $('.canTooltip h2').html( d.properties.CNTRY_TERR  ) ; 
+            if ( view == 2 )
+            {
+                var label = hubs_per_name[ d.properties.values.HUB ].label ;  
+                label += '<br><span class="nb_courses">Number of courses: <strong>'+d.properties.hub_total_trainings+'</strong></span>'; 
+                // var bg_color = color_training( d.properties.hub_total_trainings ) ; 
+                var bg_color = d.properties.values.color  ;
+                var hover_hub = d.properties.values.HUB ; 
+
+                // hover all countries with 
+                for( var f in CanGraphGeometries.features ) 
+                {
+                    var values = CanGraphGeometries.features[f].properties.values ; 
+                    if ( values == undefined ) continue ; 
+
+                    if ( values.HUB == hover_hub )
+                    {
+                        var path = CanGraphMapFeatures[0][f] ; 
+                        $( path ).css('fill-opacity',0.5) ; 
+                    }
+                }
+
+            }
+            else
+            {
+                var label = d.properties.CNTRY_TERR  ; 
+                var bg_color = d.properties.values.color ; 
+            }
+
+            $('.canTooltip div.tooltip-line').css('background-color', bg_color )
+            $('.canTooltip h2').html( label  ) ; 
 
 
             d3.select(this).style('fill-opacity',0.5) ; 
+
+            $('body').css('cursor','pointer') ; 
+
         })
         // mouseout function            
         .on("mouseout", function(d){
-            d3.select(this).style('fill-opacity', 1) ; 
-
+            $('path.country').css('fill-opacity', 1) ; 
             $('.canTooltip').hide();
+            $('body').css('cursor','default') ; 
         })     
 
         .call(
@@ -1095,6 +1126,7 @@ function drawMap( world ) {
         })   
     ;
 
+
     if ( CanMapConf.chart.projection != 'globe' ) 
     {
         
@@ -1111,6 +1143,78 @@ function drawMap( world ) {
             .attr("d", CanGraphMapPath)
             .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
         ;
+
+        // after happening poly + lines, set zoom mode
+        CanGraphMapZoom = d3.behavior.zoom()
+            .on("zoom",function() {
+
+                var translate_x = d3.event.translate[0] + CanMapConf.chart.globe_translate.x ; 
+                var translate_y = d3.event.translate[1] + CanMapConf.chart.globe_translate.y ; 
+                // map
+                CanMapGroup.attr("transform","translate("+translate_x+","+translate_y+")scale("+d3.event.scale+")") ; 
+                // poly (lakes ... )
+                g_poly.attr("transform","translate("+translate_x+","+translate_y+")scale("+d3.event.scale+")") ; 
+                // lines
+                g_lines.attr("transform","translate("+translate_x+","+translate_y+")scale("+d3.event.scale+")") ; 
+                // text 
+                CanMapText.attr("transform","translate("+translate_x+","+translate_y+")scale("+d3.event.scale+")") ; 
+                // registries centers
+                CanPlacesCircles.attr("transform","translate("+translate_x+","+translate_y+")scale("+d3.event.scale+")") ; 
+                CanPlaces.attr("transform","translate("+translate_x+","+translate_y+")scale("+d3.event.scale+")") ; 
+            });
+
+        CanMapSvg.call( CanGraphMapZoom ).call( CanGraphMapZoom.event ) ;
+
+        // $( CanMapConf.container ).append( '<button value="+" class="btn_zoom zoom_in">+</button>' ) ; 
+        // $( CanMapConf.container ).append( '<button value="-" class="btn_zoom zoom_out">-</button>' ) ; 
+
+        d3.selectAll('button.btn_zoom').on('click', function(){
+
+            var scale = CanGraphMapZoom.scale(),
+                extent = CanGraphMapZoom.scaleExtent(),
+                translate = CanGraphMapZoom.translate(),
+                x = translate[0], y = translate[1],
+                factor = (this.value === '+') ? 1.2 : 1/1.2,
+                target_scale = scale * factor;
+            // If we're already at an extent, done
+            if (target_scale === extent[0] || target_scale === extent[1]) { return false; }
+
+            // If the factor is too much, scale it down to reach the extent exactly
+            var clamped_target_scale = Math.max(extent[0], Math.min(extent[1], target_scale));
+            if (clamped_target_scale != target_scale){
+                target_scale = clamped_target_scale;
+                factor = target_scale / scale;
+            }
+
+            var center = [ CanMapConf.width / 2 , CanMapConf.height / 2 ];
+
+            // Center each vector, stretch, then put back
+            x = (x - center[0]) * factor + center[0] ;
+            y = (y - center[1]) * factor + center[1] ;
+
+            // Transition to the new view over 350ms
+            d3.transition().duration(350).tween("zoom", function () {
+                var interpolate_scale = d3.interpolate(scale, target_scale),
+                    interpolate_trans = d3.interpolate(translate, [x,y]) ;
+                return function (t) {
+                    CanGraphMapZoom.scale(interpolate_scale(t))
+                        .translate(interpolate_trans(t));
+                    
+                    var translate_val = CanGraphMapZoom.translate() ; 
+
+                    var translate_x = translate_val[0] + CanMapConf.chart.globe_translate.x ; 
+                    var translate_y = translate_val[1] + CanMapConf.chart.globe_translate.y ; 
+
+                    // map
+                    CanMapGroup.attr("transform","translate("+translate_x+","+translate_y+")scale(" + CanGraphMapZoom.scale() + ")");
+                    // poly (lakes ... )
+                    g_poly.attr("transform","translate("+translate_x+","+translate_y+")scale(" + CanGraphMapZoom.scale() + ")");
+                    // lines
+                    g_lines.attr("transform","translate("+translate_x+","+translate_y+")scale(" + CanGraphMapZoom.scale() + ")");
+
+                };
+            });
+        });
         
     }
     else

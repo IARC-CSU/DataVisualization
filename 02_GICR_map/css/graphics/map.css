@@ -96,14 +96,20 @@
 	div#hubPanel,div#countryPanel{
 	    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3); 
 	    position: absolute;
-	    top: 20%; 
-	    right: -700px ; 
+	    top: 120px ; 
+	    right: -53% ; 
 	    transition: all .7s ease-in-out;
 	    background-color: #f7f7f7 ; 
 	    padding: 0 25px ; 
-	    width: 600px ; 
-	    height: 500px ; 
+	    width: 50% ; 
+	    height: 65% ; 
 	    overflow-y: auto ;
+	}
+
+	#hubPanel p,#hubPanel div{
+	    line-height: 17px ;
+	    text-align: justify ; 
+	    float: left ; 
 	}
 
 	div#hubPanel.show,div#countryPanel.show{
@@ -149,6 +155,8 @@
 	    color: #000 ; 
 	    padding: 5px 0px ; 
 	    border-bottom: solid 2px white ; 
+	    float: left;
+    	width: 100%;
 	}
 
 	h3.countries-hub-list-title{
@@ -188,6 +196,10 @@
 
 	}
 
+	button.btn_zoom{
+		position: absolute;
+	}
+
 	ul.hubCountries{
 		padding-left: 0px ; 
 		display: block ; 
@@ -225,6 +237,7 @@
 		position: absolute;
 		top: 95px;
 		display: none ; 
+		z-index: 10 ; 
 	}
 
 	.canTooltip .tooltip-line{
@@ -340,7 +353,7 @@
 	    padding-left: 0px;
 	    bottom: 150px;
 	    left: 50px;
-	    width: 275px ;
+	    width: 300px ;
 	}
 
 	ul.hubs-list.hidden{
@@ -373,10 +386,11 @@
 	    margin: auto;
 	    position: absolute ; 
 	    padding-left: 0px;
-	    bottom: 150px;
+	    bottom: 350px;
 	    left: 50px;
 	    width: 275px ;
 	    display: none ; 
+	    font-size: 0.9em;
 	}
 
 	ul.activities-list.hidden{
@@ -391,10 +405,10 @@
 	    height: 20px;
 	    vertical-align: top;
 	    margin-top: 0px;
+	    font-size: 0.8em;
 	}
 
 	ul.activities-list li a{
-	    font-size: 0.8em ;
 	    text-decoration: none ; 
 	}
 
@@ -406,6 +420,10 @@
 	    text-align: center ; 
 	}
 
+	ul.activities-list li svg{
+		margin-right: 5px ; 
+	}
+
 	.place-label{
 		font-size: 0.07em ;
 		display: none ; 
@@ -415,13 +433,25 @@
 		display: block ; 
 	}
 
+	span.nb_courses{
+		font-size: 0.8em ; 
+	}
+
+	table caption{
+	    text-align: left;
+	    font-weight: bold ; 
+	}
+
 	table#global_indicators{
 		position: absolute;
-	    bottom: 215px;
+	    bottom: 130px ;
 	    left: 50px;
 	    border: solid 1px #ccc;
-	    font-size: 0.8em ; 
-	    display: none ; 
+	    font-size: 1em;
+	    display: none;
+	    width: 25%;
+		background: #fff ; 
+
 	}
 
 	table#global_indicators th{
@@ -429,9 +459,15 @@
 		color: #fff ;
 	}
 
+	table#global_indicators th:first{
+		width: 120px ; 
+	}
+
 	table#global_indicators th,table#global_indicators td{
 		border: solid 1px #ccc;
 		padding: 1px 5px ; 
+		font-size: 0.9em;
+		line-height: 15px;
 	}
 
 	table#global_indicators td.value{

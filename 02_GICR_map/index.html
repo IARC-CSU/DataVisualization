@@ -19,7 +19,7 @@
         <link rel="icon" type="image/png" href="favicon.ico" />
 
 
-        <link href='https://fonts.googleapis.com/css?family=Cabin:400,600,700,500' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         
     </head>
     <body>
@@ -31,7 +31,7 @@
         
             <div id="baseline">
                 <img src="img/website-logo.gif" title="GICR">
-                <h1> Global Initiative for Cancer Registries </h1>
+                <h1> Global Initiative for Cancer Registration</h1>
                 <h2> Cancer incidence and mortality are rising rapidly worldwide, particularly in low- and middle-income countries. There is an overwhelming need for countries to adopt and implement cancer control actions </h2>
                 <br/>
                 <a href="#" onclick="goToTheMap();"> Go to the map </a>
@@ -41,7 +41,7 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <img src="img/website-logo.gif" title="GICR" id="main-logo">
-                <h1 class="title" id="title-map">Global Initiative for Cancer Registries: geographic view </h1>
+                <h1 class="title" id="title-map">Global Initiative for Cancer Registration</h1>
             </header>
         </div>
 
@@ -49,26 +49,38 @@
             
             <form class="filters">
                 
-                <div class="filter">
-                    <label>View per</label>
-                    <!--<select name="view" onchange="setViewPer(this)">
+                <div class="filter filter-view">
+                    <!--<label>View per</label>
+                    <select name="view" onchange="setViewPer(this)">
                         <option value="1">Geography</option>
                         <option value="2">Function</option>
                         <option value="3">Action</option>
                     </select>-->
-                    <a class="button view active" onclick="setViewPer(1,this)"> Geography </a>
-                    <a class="button view" onclick="setViewPer(2,this)"> Activities </a>
+                    <a class="button geo view active" onclick="setViewPer(1,this)"> Geography </a>
+                    <a class="button act view" onclick="setViewPer(2,this)"> Activities </a>
                     <!--<a class="button" onclick="setViewPer(3,this)"> Actions </a>-->
                     
                 </div>
 
                 <div class="filter filter-geography">
-                    <label>Choose a hub</label>
-                    <!--<select name="geography" onchange="zoomView(this)">
+                    <!--<label>Choose a hub</label>
+                    <select name="geography" onchange="zoomView(this)">
                         <option value="" class="global">Global view</option>
                     </select>-->
                     <div id="list-hubs"></div>
                 </div>
+
+                <!--<div class="filter filter-years">
+                    <div id="list-years">
+                        
+                        <a class="button" onclick="setViewPer(1,this)"> 2012 </a>
+                        <a class="button" onclick="setViewPer(1,this)"> 2013 </a>
+                        <a class="button" onclick="setViewPer(1,this)"> 2014 </a>
+                        <a class="button" onclick="setViewPer(1,this)"> 2015 </a>
+                        <a class="button" onclick="setViewPer(1,this)"> 2016 </a>
+
+                    </div>
+                </div>-->
 
                 <!--<div class="filter filter-function">
                     <label>Activities</label>
@@ -96,7 +108,7 @@
                 <div class="hub-line top"></div>
                 <h2 class="hub-name"></h2>
                 <ul class="hubCountries"></ul>
-                <h3>Regional hub center</h3>
+                <h3 id="regional_hub_center">Regional hub center</h3>
                 <div id="hub_centers"></div>
                 <h3>Hub PI</h3>
                 <div id="hub_pi"></div>
@@ -141,8 +153,9 @@
             </ul>
 
             <table id="global_indicators" cellspacing="2" cellpadding="2">
+                <caption>Global indicators</caption>
                 <thead>
-                    <th></th><th>Site visits</th><th>Trainings</th>
+                    <th>Hub region</th><th>Site visits</th><th>Training</th>
                 </thead>
             </table>
             <ul class="activities-list legend">
