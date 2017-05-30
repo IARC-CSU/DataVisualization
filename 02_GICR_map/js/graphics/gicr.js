@@ -194,6 +194,7 @@
 
                 setFunctionView( undefined );
 
+
                 break ; 
             
             case 2 : 
@@ -295,6 +296,9 @@
         }
 
         updateGeographyFilling(); 
+
+        // reset global view
+        zoomView('','global') ;
     }
 
     var countryTooltip = function( item ){
@@ -906,11 +910,27 @@
             
         }
 
-        d3.selectAll("g")
+        d3.selectAll("g#mapGroup")
             .transition()
             .duration( 1500 )
             .attr("transform", translate + "scale(" + scale + ")translate(" + -x + "," + -y + ")")
         ;
+
+        if ( view == 2 && level == 1 )
+        {
+            d3.selectAll("g.activities")
+                .transition()
+                .duration( 1500 )
+                .attr("transform", translate + "scale(" + scale + ")translate(" + -x + "," + -y + ")")
+        }
+        else if ( view == 1 && level == 2)
+        {
+            d3.selectAll("g.place-circles-group,g.mapText,g.place-label-group")
+                .transition()
+                .duration( 1500 )
+                .attr("transform", translate + "scale(" + scale + ")translate(" + -x + "," + -y + ")"); 
+
+        }
 
         
     }
@@ -933,12 +953,15 @@
 
         current_country = item.value ; 
 
+        // console.info( option ) ; 
+
         switch( option ) 
         {
             case "global" :
 
                 $('#hubPanel').removeClass('show') ;
                 $('#countryPanel').removeClass('show') ;
+                $('#hubActvities').removeClass('show') ;
 
                 zoomRegion( undefined ) ; 
                 setTimeout(function(){
@@ -952,31 +975,74 @@
 
 
             case "hub" : 
-                level = 1 ; 
-
-                $(".unit-label").hide() ; 
-                $('.hubs-list').addClass('hidden');
-                $('#hubPanel').addClass('show') ;
-                $('#countryPanel').removeClass('show') ;
-
-                var hub = getHubById( hub_id ) ; 
-
-                // calculate the number of the height sscroll view panel 
-                var height_panel = $(window).height() - (  120 + 50 + 25 + 45 ) ;  
-                $('div#hubPanel,div#countryPanel').css( { 'height' : height_panel } ) ;  
-                $('ul.hubCountries').html(' ') ; 
-                $('.hub-name').css('color' , hub.color ).text( hub.label ) ; 
-                $('.hub-line').css('background-color' , hub.color ) ; 
-                $('text.place-label').removeClass('show');
                 
-                for ( var g in gicr_csv )
+                level = 1 ; 
+                var hub = getHubById( hub_id ) ; 
+                var height_panel = $(window).height() - (  120 + 50 + 25 + 45 ) ;  
+
+                if ( view == 1 ) // view per geography 
                 {
-                    if( gicr_csv[g].HUB == hub.name ) 
+                    $(".unit-label").hide() ; 
+                    $('.hubs-list').addClass('hidden');
+                    $('#hubPanel').addClass('show') ;
+                    $('#countryPanel').removeClass('show') ;
+
+                    // calculate the number of the height sscroll view panel 
+                    $('div#hubPanel,div#countryPanel').css( { 'height' : height_panel } ) ;  
+                    $('ul.hubCountries').html(' ') ; 
+                    $('.hub-name').css('color' , hub.color ).text( hub.label ) ; 
+                    $('.hub-line,div#hubPanel a.close').css('background-color' , hub.color ) ; 
+                    $('text.place-label').removeClass('show');
+                    
+                    gicr_csv.sort( function(a, b){ return a.Country > b.Country ; } );
+                    
+                    for ( var g in gicr_csv )
                     {
-                        if ( gicr_csv[g].Country == '' ) continue ; 
-                        $('ul.hubCountries').append('<li><a href="#" onclick="zoomCountry(\''+gicr_csv[g].UN_Code+'\')" hover-color="'+hub.color+'" iso-code="'+gicr_csv[g].UN_Code+'">'+gicr_csv[g].Country+'</a></li>') ; 
+                        if( gicr_csv[g].HUB == hub.name ) 
+                        {
+                            if ( gicr_csv[g].Country == '' ) continue ; 
+                            $('ul.hubCountries').append('<li><a href="#" onclick="zoomCountry(\''+gicr_csv[g].UN_Code+'\')" hover-color="'+hub.color+'" iso-code="'+gicr_csv[g].UN_Code+'">'+gicr_csv[g].Country+'</a></li>') ; 
+                        }
                     }
                 }
+                else if ( view == 2 ) // view per activites 
+                {   
+                    // list on the left visits and on the right courses
+                    
+                    $(".unit-label").hide() ; 
+                    $('#hubPanel').removeClass('show') ;
+
+                    $('.hubs-list').addClass('hidden');
+                    $('#hubActvities').addClass('show') ;
+                    $('div#hubActvities').css( { 'height' : height_panel } ) ;  
+                    $('.hub-name').css('color' , hub.color ).text( hub.label ) ; 
+                    $('.hub-line,div#hubActvities a.close').css('background-color' , hub.color ) ; 
+
+                    $('.list_visits').html(' ');
+                    $('.list_visits').append('<h3>Site visits:</h3>');
+                    // get list of visists + countries
+                    for ( var h in site_visits )
+                    {
+                        if ( hub.code == site_visits[h].hub_code && site_visits[h].status == 'Completed' )
+                        {
+                            $('.list_visits').append('<li><a href="#">'+site_visits[h].period+' - '+site_visits[h].country+': '+site_visits[h].comments+'</a></li>') ; 
+                        }
+                    }
+
+                    $('.list_courses').html(' ');
+                    $('.list_courses').append('<h3>Courses:</h3>');
+                    for ( var h in trainings )
+                    {
+                        if ( hub.code == trainings[h].hub_code && trainings[h].status == 'Completed' )
+                        {
+                            var the_date = ( trainings[h].dates == undefined ) ? trainings[h].period : trainings[h].dates ; 
+                            $('.list_courses').append('<li><a href="#">'+trainings[h].period+' - '+trainings[h].place+', '+trainings[h].country+' ('+the_date+')</a></li>') ; 
+                        }
+                    }
+
+                    // console.info( trainings ) ;
+                }
+
 
                 switch( hub_id )
                 {
@@ -1023,6 +1089,8 @@
                 // zoom on region 
                 zoomRegion( codeCountry , scale , translateX , translateY , hub_id ) ; 
                 $('text.subunit-label').removeClass('zoomed selected');
+
+                if ( view == 2 ) return ; 
 
                 // get extra data 
                 $.ajax({
@@ -1077,24 +1145,41 @@
         updateGeographyFilling(); 
     }
 
-    var zoomCountry = function( codeCountry )
+    var zoomCountry = function( codeCountry , p_level )
     {
         current_country = codeCountry ; 
 
-        level = 2 ; 
-        $(".unit-label").hide(); 
+        if( p_level == undefined )
+        {
+            level = 2 ;  
 
-        $('#hubPanel').removeClass('show') ;
-        $('text.subunit-label.selected').removeClass('selected');
-        $('text.subunit-label').addClass('zoomed');
-        $('text#label-'+ codeCountry ).addClass('selected');
-        $('text.place-label.code-'+codeCountry).addClass('show');
+            $(".unit-label").hide(); 
 
-        zoomRegion( codeCountry , 6 ) ; 
+            $('#hubPanel').removeClass('show') ;
+            $('text.subunit-label.selected').removeClass('selected');
+            $('text.subunit-label').addClass('zoomed');
+            $('text#label-'+ codeCountry ).addClass('selected');
+            $('text.place-label.code-'+codeCountry).addClass('show');
 
-        setCountryPanel( codeCountry ) ; 
+            zoomRegion( codeCountry , 6 ) ; 
+            setCountryPanel( codeCountry ) ; 
+            updateGeographyFilling();
+        }
+        else
+        {
+            // special level 
+            level = p_level ; 
+            $(".unit-label").hide(); 
 
-        updateGeographyFilling();
+            var country_clicked = countries[ codeCountry ] ; 
+            var hub_label = country_clicked.HUB ; // label 
+            var hub = hubs_per_name[ hub_label ] ; 
+
+            // zoom to view
+            zoomView( hub.id ,'hub') ; 
+
+        }
+
     }
 
     var setCountryPanel = function( codeCountry )
@@ -1103,6 +1188,7 @@
         $('#countryPanel').addClass('show') ;
 
         $('#country-name').css('color' , countries[codeCountry].color ).text( countries[codeCountry].Country );
+        $('#countryPanel a.close').css('background-color', countries[codeCountry].color);
         $('.hub-line').css('background-color' , countries[codeCountry].color ) ; 
 
         

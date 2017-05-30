@@ -82,7 +82,7 @@
 
 	.subunit-label.selected {
 	    fill: #000 ; 
-	    font-size: 4px ; 
+	    font-size: 6px ; 
 	}
 
 	.subunit-label.shown{
@@ -93,7 +93,7 @@
 		fill-opacity: 0.6 ; 
 	}
 
-	div#hubPanel,div#countryPanel{
+	div#hubPanel,div#countryPanel,div#hubActvities{
 	    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3); 
 	    position: absolute;
 	    top: 120px ; 
@@ -106,17 +106,47 @@
 	    overflow-y: auto ;
 	}
 
-	#hubPanel p,#hubPanel div{
+	div#hubPanel a.close,div#countryPanel a.close,div#hubActvities a.close{
+	    display: block;
+	    width: 25px;
+	    height: 25px;
+	    position: absolute;
+	    right: 20px;
+	    top: 20px;
+	    text-align: center;
+	    color: #fff;
+	    font-weight: 900;
+	    background: #fff ;
+	    border-radius: 15px ;
+	    cursor: pointer ; 
+	}
+
+	div#hubPanel a.close:hover,div#countryPanel a.close:hover,div#hubActvities a.close:hover{
+		text-decoration: none; 
+		opacity: 0.7 ;
+	}
+
+	ul.list_visits,ul.list_courses{
+		width: 40% ; 
+		float: left ;
+	}
+
+	ul.list_visits li,ul.list_courses li{
+		float: left ;
+		width: 100% ; 
+	}
+
+	#hubPanel p,#hubPanel div,{
 	    line-height: 17px ;
 	    text-align: justify ; 
 	    float: left ; 
 	}
 
-	div#hubPanel.show,div#countryPanel.show{
+	div#hubPanel.show,div#countryPanel.show,div#hubActvities.show{
 	    right: 0px ; 
 	}
 
-	div#hubPanel p img{
+	div#hubPanel p img,div#hubActvities p img{
 		margin-bottom: 10px ; 
 	}
 
@@ -425,7 +455,7 @@
 	}
 
 	.place-label{
-		font-size: 0.07em ;
+		font-size: 0.1em ;
 		display: none ; 
 	}
 

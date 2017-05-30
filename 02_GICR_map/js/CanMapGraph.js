@@ -1043,7 +1043,7 @@ function drawMap( world ) {
 
             if ( d.properties.values[ CanMapConf.chart.key_data_value ] == 0 ) return 
 
-            zoomCountry( country_code );
+            zoomCountry( country_code , ( view == 2) ?  1 : undefined );
 
         })
 
@@ -1145,7 +1145,7 @@ function drawMap( world ) {
         ;
 
         // after happening poly + lines, set zoom mode
-        CanGraphMapZoom = d3.behavior.zoom()
+        /* CanGraphMapZoom = d3.behavior.zoom()
             .on("zoom",function() {
 
                 var translate_x = d3.event.translate[0] + CanMapConf.chart.globe_translate.x ; 
@@ -1214,7 +1214,7 @@ function drawMap( world ) {
 
                 };
             });
-        });
+        });*/
         
     }
     else
