@@ -323,6 +323,9 @@ CanMapGraph.prototype = {
                 CanGraphCountries = countries ;
                 CanGraphRegistries = registries ; 
                 CanGraphTrainings = trainings ; 
+
+                // console.info( registries , trainings ) ; 
+
                 // call the "filtering" data function 
 
                 jsonUrl = CanMapConf.data.url ;
@@ -921,8 +924,8 @@ function drawMap( world ) {
             return "#ccc" ; 
         })
         // .attr("opacity",0)
-        .attr('stroke', '#727070' )
-        .attr('stroke-width',0.2)
+        .attr('stroke', '#ffffff' )
+        .attr('stroke-width', 0.4 )
         .attr("id", function(d) { return "code_" + d.properties.ISO_3_CODE ; }, true) // give each a unique id (check with graph global conf)
         .attr("d", CanGraphMapPath) // create them using the svg path generator defined above
         .attr("hub-key",function(d){
@@ -950,12 +953,12 @@ function drawMap( world ) {
                 .style('left', (mouse[0] - 80 ) + 'px');
 
             if ( view == 2 )
-            {
-                var label = hubs_per_name[ d.properties.values.HUB ].label ;  
+            {   
+                var label = hubs_per_name[ d.properties.values.hub[0].name ].name ;  
                 label += '<br><span class="nb_courses">Number of courses: <strong>'+d.properties.hub_total_trainings+'</strong></span>'; 
                 // var bg_color = color_training( d.properties.hub_total_trainings ) ; 
                 var bg_color = d.properties.values.color  ;
-                var hover_hub = d.properties.values.HUB ; 
+                var hover_hub = d.properties.values.hub[0].name ; 
 
                 // hover all countries with 
                 for( var f in CanGraphGeometries.features ) 
@@ -963,7 +966,7 @@ function drawMap( world ) {
                     var values = CanGraphGeometries.features[f].properties.values ; 
                     if ( values == undefined ) continue ; 
 
-                    if ( values.HUB == hover_hub )
+                    if ( values.hub[0].name == hover_hub )
                     {
                         var path = CanGraphMapFeatures[0][f] ; 
                         $( path ).css('fill-opacity',0.5) ; 
@@ -1037,7 +1040,7 @@ function drawMap( world ) {
 
             var country_code = d.properties.ISO_3_CODE; 
 
-            if ( d.properties.values.no_data == true ) return ; 
+            if ( d.properties.values == undefined || d.properties.values.no_data == true ) return ; 
 
             if ( country_code == undefined || country_code == "GRL" || country_code == "ESH" ) return ;
 
@@ -1226,7 +1229,7 @@ function drawMap( world ) {
 
     d3.select('g.poly path:last-child').style('fill','rgb(125, 125, 125)');
 
-    grabGicrValues();
+    // grabGicrValues();
 
     return CanGraphGeometries ; 
 }

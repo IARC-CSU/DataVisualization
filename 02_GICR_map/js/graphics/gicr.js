@@ -1,7 +1,9 @@
 	
 	var PROJECT 			= 'map' ; 
 
-    var hubs = [
+    var host_api = "http://gicrdev.iarc.lan/cms/wp-json/wp/v2/" ; 
+
+    /*var hubs = [
         { 'id' : 1 , 'code' : 'AFCRN' , 'name' : 'SS-Africa' , 'label' : 'Sub-Saharian Africa', 'color' : '#71C8E3' , 'plot_name' : 'ZAF' , 'plot_translate' : { 'x' : 150 , 'y' : -250 } } , 
         { 'id' : 2 , 'code' : 'IZMIR' , 'name' : 'NA,C-Africa, W.Asia' , 'label' : 'Northern Africa, Central and Western Asian', 'color' : '#724A98' , 'plot_name' : 'MAR' , 'plot_translate' : { 'x' : 250 , 'y' : -180 } } , 
         { 'id' : 3 , 'code' : 'MUMB' , 'name' : 'S,E,SE Asia' , 'label' : 'South, Eastern and South-Eastern Asia',  'color' : '#2EAF81' , 'plot_name' : 'CHN' , 'plot_translate' : { 'x' :  250 , 'y' : -350 }} , 
@@ -10,16 +12,18 @@
         { 'id' : 6 , 'code' : 'LA' , 'name' : 'LatAm' , 'label' : 'Latin America',  'color' : '#cca300', 'plot_name' : 'PER' , 'plot_translate' : { 'x' : 100 , 'y' : -280 }}
     ] ; 
 
-    hubs.sort( function(a, b){ return a.key > b.key; } );
+    hubs.sort( function(a, b){ return a.key > b.key; } );*/
+
+    var hubs = [] ; 
 
     var hubs_per_name = [] ;
     var hubs_per_code = [] ;  
-    for ( var h in hubs ) 
+    /*for ( var h in hubs ) 
     {
         hubs_per_name[ hubs[h].name ] = hubs[h] ; 
         hubs_per_code[ hubs[h].code ] = hubs[h] ; 
         $('.line').append('<div class="line-hub" style="background-color:'+hubs[h].color+';"></div>')
-    }
+    }*/
 
     var GICR = {
         'default_color'     : '#e3e3e3' , 
@@ -356,7 +360,7 @@
 
         for ( var h in hubs )
         {
-            var span_a = '<span class="hub" style="background-color:'+hubs[h].color+';"></span>'+hubs[h].label ; 
+            var span_a = '<span class="hub" style="background-color:'+hubs[h].color+';"></span>'+hubs[h].name ; 
             var li = '<li attr-iso="'+hubs[h].name+'" ><a href="javascript:void(0)" onclick="zoomView(\''+hubs[h].id+'\',\'hub\')">'+span_a+'</a></li>' ; 
             $('ul.hubs-list').append( li ); 
         }
@@ -419,100 +423,103 @@
         // loading gicr map
         // d3.csv( "data/gicr.csv" , function( data ){
 
-        var q = queue()
-            .defer( d3.csv , "data/gicr.csv" )
-            .defer( d3.csv , "data/site-visits.csv" )
+        var per_page = '?per_page=100&post_status=any' ; 
+
+        var json = queue()
+            .defer( d3.json  , host_api + "hubs" + per_page )
+            
+            // .defer( d3.json  , "/data/countries.json" )
+            .defer( d3.json  , host_api + "courses" + per_page  )
+
+            .defer( d3.json  , host_api + "visits?per_page=50&page=1" )
+            .defer( d3.json  , host_api + "visits?per_page=50&page=2" )
+            .defer( d3.json  , host_api + "visits?per_page=50&page=3" )
+            /*.defer( d3.csv , "data/site-visits.csv" )
             .defer( d3.csv , "data/trainings.csv" )
+            */
+
+            .defer( d3.json  , host_api + "countries" + per_page + "&page=1" )
+            .defer( d3.json  , host_api + "countries" + per_page + "&page=2" )
+            .defer( d3.json  , host_api + "countries" + per_page + "&page=3" )
+
             .defer( d3.csv , "data/agreements.csv" )
-            .awaitAll( function( error, results ) {
+            
+            .awaitAll( function( error , results ){
 
-                gicr_csv = results[0] ; 
-
-                gicr_csv.sort( function(a, b){ return a.Country > b.Country ; } );
-
-                // build selectbox for geography region / data gicr
-                var select_geo = d3.nest()
-                    .key(function(d){ return d.HUB })
-                    .entries( gicr_csv ) ;
-
-                gicr_csv.sort( function(a, b){ return a.key > b.key ; } );
-
-                /*for ( var g in gicr_csv )
-                {
-                    if ( gicr_csv[g].Country != undefined && gicr_csv[g].Globocan_ID != '' )
-                    {
-                        switch( gicr_csv[g].HUB )
-                        {
-                            case 'SS-Africa' : 
-                                var hub_id = 2
-                                break ; 
-                            case 'S,E,SE Asia' : 
-                                var hub_id = 4
-                                break ; 
-                            case 'Pacific' : 
-                                var hub_id = 5
-                                break ; 
-                            case 'NA,C-Africa, W.Asia' : 
-                                var hub_id = 3
-                                break ; 
-                            case 'Carribean' : 
-                                var hub_id = 6
-                                break ; 
-                            case 'LatAm' : 
-                                var hub_id = 7
-                                break ; 
-                        }
-
-                        console.info( "$data = array(  'name' => '"+gicr_csv[g].Country+"', 'hub' => "+hub_id+" , 'author' => 1 , 'iso_3_code' => '"+gicr_csv[g].UN_Code+"' , 'globocan_id' => "+gicr_csv[g].Globocan_ID+" ); $pod->add( $data ); ") ; 
-                    }
-                }*/
-
-
+                var hubs_tmp        = results[0] ; 
+                // var countries_tmp   = results[1] ; 
+                
                 $('#list-hubs').append( '<a class="button view active" attr-hub="0" onclick="zoomView(\'\',\'global\')"> Global </a>' ) ; 
 
-                select_geo.sort( function(a, b){ return a.key > b.key ; } );
-
-                for ( var s in select_geo )
+                for ( var s in hubs_tmp )
                 {
-                    if ( select_geo[s].NActive == '1' || select_geo[s].key == 'undefined' ) continue ;
-
-                    var label       = hubs_per_name[ select_geo[s].key ].label ; 
-                    var value       = select_geo[s].key ; 
-
-                    $('#list-hubs').append( '<a class="button view" attr-hub="'+hubs_per_name[ select_geo[s].key ].id+'" onclick="zoomView('+hubs_per_name[ select_geo[s].key ].id+',\'hub\')"> '+label+' </a>' ) ; 
+                    var label       = hubs_tmp[ s ].name ; 
+                    hubs.push( hubs_tmp[s] ) ; 
+                    hubs_per_name[ hubs[s].name ] = hubs[s] ; 
+                    hubs_per_code[ hubs[s].code ] = hubs[s] ; 
+                    $('#list-hubs').append( '<a class="button view" attr-hub="'+hubs_tmp[ s ].id+'" onclick="zoomView('+hubs_tmp[ s ].id+',\'hub\')"> '+label+' </a>' ) ; 
                     
-                    for ( var v in select_geo[s].values )
-                    {
-                        var item        = select_geo[s].values[v] ; 
-                        if ( item.Country == '' ) continue ; 
-                        if ( item.NActive == 1 || item.NActive == '1' ) continue ; 
-
-                        item.color      = hubs_per_name[ select_geo[s].key ].color ; 
-                        countries[ item.UN_Code ] = item ; 
-
-                    } // end for 
                 } // end for 
 
-                // site vistis
-                site_visits = results[1] ; 
-                trainings = results[2] ; 
-
-                buildGlobalIndicators({ 'site_visits' : site_visits , 'trainings' : trainings , 'agreements' : results[3] }) ; 
-
-                // map nb trainings -> map 
+                hubs.sort( function(a, b){ return a.key > b.key; } );
 
 
+                // merge countries 
+                var countries_tmp = results[5].concat( results[6] , results[7] ) ; 
+                // console.info( countries_tmp ) ; 
+
+                for ( var c in countries_tmp )
+                {
+                    if ( countries_tmp[c].hub != false && countries_tmp[c].iso != "" )
+                    {
+                        countries.push( countries_tmp[c] ); 
+                    }
+                }
+
+                trainings   = results[1] ; 
+
+                var visits_tmp = results[2].concat( results[3] , results[4] ) ; 
+                for ( var c in visits_tmp )
+                {
+                    if ( visits_tmp[c].hub != false && visits_tmp[c].iso != "" )
+                    {
+                        site_visits.push( visits_tmp[c] ); 
+                    }
+                }
+
+                buildGlobalIndicators({ 'site_visits' : site_visits , 'trainings' : trainings , 'agreements' : results[8] }) ; 
+
+                grabGicrValues(); 
             })
         ;
 
     } // end function 
+
+
+    var getCountryHub = function( country )
+    {
+        var hub = {} ; 
+        if ( country[0] == undefined ) return ; 
+
+        var hub_rel = country[0].hub ;
+        for ( var h in hub_rel ) {
+            hub = hub_rel[h] ; 
+            break ; 
+        }
+
+        return hub ; 
+    }
 
     var buildGlobalIndicators = function( data )
     {
         agreements = data.agreements ; 
 
         var site_visits_per_hubs = d3.nest()
-            .key( function(d){ return d.hub_code ; })
+            .key( function(d){ 
+                var hub = getCountryHub( d.country ) ; 
+                
+                return hub.code ; 
+            })
             .rollup(function( hub ) { 
                 return {  
                     "total": hub.length , 
@@ -523,12 +530,20 @@
             })
             .entries( data.site_visits ) ;
 
-        for ( var v in site_visits_per_hubs ) site_visits_per_hubs[v].label = hubs_per_code[ site_visits_per_hubs[v].key ].label ; 
-        site_visits_per_hubs.sort( function(a, b){ return a.label > b.label ; } );
+        // for ( var v in site_visits_per_hubs ) site_visits_per_hubs[v].label = hubs_per_code[ site_visits_per_hubs[v].key ].name ; 
+        site_visits_per_hubs.sort( function(a, b){ return hubs_per_code[a.key].name > hubs_per_code[b.key].name ; } );
 
         var trainings_per_hubs = d3.nest()
-            .key( function(d){ return d.hub_code ; })
-            .rollup(function( hub ) { 
+            .key( function(d){ 
+                var hub = {} ; 
+                var hub_rel = d.country[0].hub ;
+                for ( var h in hub_rel ) {
+                    hub = hub_rel[h] ; 
+                    break ; 
+                }
+                return hub.code ; 
+            })
+            .rollup( function( hub ) { 
                 return {  
                     "total": hub.length , 
                     "data" : d3.nest()
@@ -541,50 +556,51 @@
         var tot_vists = 0 ; 
         var tot_trainings = 0 ; 
 
-        
+        // console.info( trainings_per_hubs , site_visits_per_hubs ) ; 
 
         for ( var h in site_visits_per_hubs )
         {
-            var completed_visits = [] ; 
-            for ( var d in site_visits_per_hubs[h].values.data )
+            var completed_visits = 0 ; 
+
+            if( site_visits_per_hubs[h].key == 'undefined' ) continue ;  
+
+            for ( var d in site_visits_per_hubs[h].values.data[0].values )
             {
-                if ( site_visits_per_hubs[h].values.data[d].key == 'Completed' )
+                if ( site_visits_per_hubs[h].values.data[0].values[d].visit_status[0] == 'completed' )
                 {
-                    completed_visits = site_visits_per_hubs[h].values.data[d].values ; 
-                    break ;    
+                    completed_visits++ ; 
                 }
                  
             }
-            var completed_trainings = [] ; 
-            for ( var d in trainings_per_hubs[h].values.data )
+            var completed_trainings = 0 ; 
+            for ( var d in trainings_per_hubs[h].values.data[0].values )
             {
-                if ( trainings_per_hubs[h].values.data[d].key == 'Completed' )
+                if ( trainings_per_hubs[h].values.data[0].values[d].course_status[0] == 'completed' )
                 {
-                    completed_trainings = trainings_per_hubs[h].values.data[d].values ; 
-                    break ;    
+                    completed_trainings++ ; 
                 }
                  
             }
 
             var html = '<tr>' ; 
-            html += '<td>'+ hubs_per_code[ site_visits_per_hubs[h].key ].label+'</td>' ; 
-            html += '<td class="value">'+(completed_visits.length)+'</td>' ; 
-            html += ' <td class="value">'+(completed_trainings.length)+'</td>' ; 
+
+            html += '<td>'+ hubs_per_code[ site_visits_per_hubs[h].key ].name+'</td>' ; 
+            html += '<td class="value">'+completed_visits+'</td>' ; 
+            html += '<td class="value">'+completed_trainings+'</td>' ; 
             html += '</tr>'; 
 
             hubs_totals_training.push({ 
-                'key' : site_visits_per_hubs[h].key , 
-                'hub' : hubs_per_code[ site_visits_per_hubs[h].key ] , 
-                'total' : completed_trainings.length 
+                'key'   : site_visits_per_hubs[h].key , 
+                'total' : completed_trainings 
             }) ; 
 
-            tot_vists += Math.abs( completed_visits.length ) ; 
-            tot_trainings += Math.abs( completed_trainings.length ) ; 
+            tot_vists += Math.abs( completed_visits ) ; 
+            tot_trainings += Math.abs( completed_trainings ) ; 
 
 
             $('table#global_indicators').append( html )
         }
-        
+         
         var total_html = '<tr>' ; 
         total_html += '<td class="value"><strong><u>Total</u></strong></td>' ; 
         total_html += '<td class="value">'+(tot_vists)+'</td>' ; 
@@ -599,16 +615,18 @@
 
         // building data per countries
         site_visits_per_country = d3.nest()
-            .key( function( d ){ return d.country ;  })
+            .key( function( d ){ 
+                return d.country[0].iso ;  
+            })
             .rollup(function( country ) { return {  "total": 1} })
             .entries( data.site_visits  ) ; 
 
         trainings_per_country = d3.nest()
-            .key( function( d ){ return d.country ;  })
+            .key( function( d ){ return d.country[0].iso ;  })
             .rollup(function( country ) { return {  "total": country.length } })
             .entries( data.trainings  ) ; 
 
-        trainings_per_place = d3.nest()
+        /*trainings_per_place = d3.nest()
             .key( function( d ){ return d.place ;  })
             .rollup(function( place ) { return {  
                 "total": place.length , 
@@ -617,7 +635,7 @@
                 "status" : place[0].status , 
                 "data" : place
             } })
-            .entries( data.trainings  ) ; 
+            .entries( data.trainings  ) ; */
 
     }
 
@@ -626,31 +644,29 @@
     */
     var grabGicrValues = function(){
 
+        // for ( var ss in countries ) console.info( countries[ss] ) ; 
+
         for( var f in CanGraphGeometries.features ) 
         {
             var c = CanGraphGeometries.features[f].properties  ;
 
-            for ( var g in gicr_csv )
+            for ( var g in countries )
             {
-                if ( gicr_csv[g].HUB == 'undefined' || hubs_per_name[ gicr_csv[g].HUB ] == undefined) continue ; 
+                // console.info( c.ISO_3_CODE , countries[g].iso  ) ; 
 
-                if( c.ISO_3_CODE == gicr_csv[g].UN_Code )
+                if ( c.ISO_3_CODE == countries[g].iso )
                 {
-                    c.values        = gicr_csv[g] ; 
-                    c.values.color  = hubs_per_name[ gicr_csv[g].HUB ].color ; 
-
-                    // console.info( c.CNTRY_TERR , c.values.color ) ;
-                    // find hub
+                    c.values        = countries[g] ; 
+                    c.values.color  = countries[g].hub[0].color ;
                     break ; 
-                } 
-                
-            } // end for 
+                }
+            }
 
             // site visits
             for ( var g in site_visits_per_country )
             {
 
-                if ( c.CNTRY_TERR == site_visits_per_country[g].key )
+                if ( c.ISO_3_CODE == site_visits_per_country[g].key )
                 {
                     c.site_visits = site_visits_per_country[g].values.total ; 
                     break ; 
@@ -671,7 +687,7 @@
             // training per hub
             for ( var gt in hubs_totals_training )
             {
-                if ( c.values != undefined && c.values.HUB == hubs_totals_training[gt].hub.name )
+                if ( c.values != undefined && c.values.hub[0].code == hubs_totals_training[gt].key )
                 {
                     c.hub_total_trainings = hubs_totals_training[gt].total ; 
                     hubs_totals_values.push( hubs_totals_training[gt].total ) ; 
@@ -683,7 +699,7 @@
             // agreements
             for ( var a in agreements )
             {
-                if ( c.values != undefined && c.values.Country == agreements[a].country )
+                if ( c.values != undefined && c.values.iso == agreements[a].iso )
                 {
                     c.agreement = true ; 
                     break ;
@@ -823,8 +839,8 @@
                                 case 1 : 
 
                                     var hub = getHubById( current_hub ) ; 
-
-                                    if ( hub != undefined && hub.name == d.properties.values.HUB ) 
+                                    
+                                    if ( hub != undefined && hub.code == d.properties.values.hub[0].code ) 
                                         return d.properties.values.color ; 
                                     else
                                         return GICR.default_color ;                                    
@@ -871,6 +887,22 @@
         return hub ; 
     }
 
+    var getCountryByIso = function( iso )
+    {
+        var country ; 
+
+        for ( var i in countries )
+        {
+            if ( countries[i].iso == iso )
+            {
+                country = countries[ i ] ; 
+                break ; 
+            }
+        }
+
+        return country ; 
+    }
+
     var zoomRegion = function( codeCountry , scale , translateX , translateY , hub_id )
     {
         var CanGraphMapFeatures = d3.selectAll(".country") ; 
@@ -895,7 +927,7 @@
         }
         else
         {
-            current_hub = Math.abs(hub_id) ; 
+            current_hub = Math.abs( hub_id ) ; 
 
             var centroid = CanGraphMapPath.centroid( focusedCountry ) ;
             var x = centroid[0] ;
@@ -921,18 +953,22 @@
             d3.selectAll("g.activities")
                 .transition()
                 .duration( 1500 )
-                .attr("transform", translate + "scale(" + scale + ")translate(" + -x + "," + -y + ")")
+                .attr("transform", translate + "scale(" + scale + ")translate(" + -x + "," + -y + ")") ; 
         }
-        else if ( view == 1 && level == 2)
+        else if ( view == 1 && level == 2 ) // Geography view & 
         {
+            $('.place-circles-group').show() ;
             d3.selectAll("g.place-circles-group,g.mapText,g.place-label-group")
                 .transition()
                 .duration( 1500 )
                 .attr("transform", translate + "scale(" + scale + ")translate(" + -x + "," + -y + ")"); 
 
         }
-
-        
+        else
+        {
+            // always hide
+            $('.place-circles-group').hide();
+        }
     }
 
     /**
@@ -941,12 +977,11 @@
     **/
     var zoomView = function( item , type )
     {
-        // var option = $('select[name="geography"] :selected').attr('class') ; 
         var scale = 2 ;
-        // var hub_id = Math.round( item.value ) ; 
 
         var option = type ; 
-        var hub_id = Math.abs(item) ; 
+        var hub_id = Math.abs( item ) ; 
+
 
         $('#list-hubs a').removeClass('active') ; 
         $('#list-hubs a[attr-hub="'+hub_id+'"]').addClass('active') ; 
@@ -990,18 +1025,25 @@
                     // calculate the number of the height sscroll view panel 
                     $('div#hubPanel,div#countryPanel').css( { 'height' : height_panel } ) ;  
                     $('ul.hubCountries').html(' ') ; 
-                    $('.hub-name').css('color' , hub.color ).text( hub.label ) ; 
+                    $('.hub-name').css('color' , hub.color ).text( hub.name ) ; 
                     $('.hub-line,div#hubPanel a.close').css('background-color' , hub.color ) ; 
                     $('text.place-label').removeClass('show');
                     
-                    gicr_csv.sort( function(a, b){ return a.Country > b.Country ; } );
+                    // gicr_csv.sort( function(a, b){ return a.Country > b.Country ; } );
                     
-                    for ( var g in gicr_csv )
+                    // apply pictures 
+                    $('#gallery_hub').html(' ') ; 
+                    for ( var h in hub.photos_hubs )
                     {
-                        if( gicr_csv[g].HUB == hub.name ) 
+                        var url = hub.photos_hubs[h].guid ; 
+                        $('#gallery_hub').append('<li><a data-fancybox="gallery" href="'+url+'"><img class="gallery" src="'+url+'"></li>')
+                    } 
+
+                    for ( var g in countries )
+                    {
+                        if( countries[g].hub[0].id == hub.id ) 
                         {
-                            if ( gicr_csv[g].Country == '' ) continue ; 
-                            $('ul.hubCountries').append('<li><a href="#" onclick="zoomCountry(\''+gicr_csv[g].UN_Code+'\')" hover-color="'+hub.color+'" iso-code="'+gicr_csv[g].UN_Code+'">'+gicr_csv[g].Country+'</a></li>') ; 
+                            $('ul.hubCountries').append('<li><a href="#" onclick="zoomCountry(\''+countries[g].iso+'\')" hover-color="'+hub.color+'" iso-code="'+countries[g].iso+'">'+countries[g].name+'</a></li>') ; 
                         }
                     }
                 }
@@ -1015,17 +1057,20 @@
                     $('.hubs-list').addClass('hidden');
                     $('#hubActvities').addClass('show') ;
                     $('div#hubActvities').css( { 'height' : height_panel } ) ;  
-                    $('.hub-name').css('color' , hub.color ).text( hub.label ) ; 
+                    $('.hub-name').css('color' , hub.color ).text( hub.name ) ; 
                     $('.hub-line,div#hubActvities a.close').css('background-color' , hub.color ) ; 
 
                     $('.list_visits').html(' ');
                     $('.list_visits').append('<h3>Site visits:</h3>');
+
+                    // console.info( site_visits ) ; 
                     // get list of visists + countries
                     for ( var h in site_visits )
                     {
-                        if ( hub.code == site_visits[h].hub_code && site_visits[h].status == 'Completed' )
+                        var c_hub = getCountryHub( site_visits[h].country )  ; 
+                        if ( hub.code == c_hub.code && site_visits[h].visit_status[0] == 'completed' )
                         {
-                            $('.list_visits').append('<li><a href="#">'+site_visits[h].period+' - '+site_visits[h].country+': '+site_visits[h].comments+'</a></li>') ; 
+                            $('.list_visits').append('<li><a href="#">'+site_visits[h].year+' - '+site_visits[h].country[0].name+'</a></li>') ; 
                         }
                     }
 
@@ -1033,10 +1078,11 @@
                     $('.list_courses').append('<h3>Courses:</h3>');
                     for ( var h in trainings )
                     {
-                        if ( hub.code == trainings[h].hub_code && trainings[h].status == 'Completed' )
+                        var c_hub = getCountryHub( trainings[h].country )  ; 
+                        if ( hub.code == c_hub.code && trainings[h].course_status[0] == 'completed' )
                         {
-                            var the_date = ( trainings[h].dates == undefined ) ? trainings[h].period : trainings[h].dates ; 
-                            $('.list_courses').append('<li><a href="#">'+trainings[h].period+' - '+trainings[h].place+', '+trainings[h].country+' ('+the_date+')</a></li>') ; 
+                            // var the_date = ( trainings[h].dates == undefined ) ? trainings[h].period : trainings[h].dates ; 
+                            $('.list_courses').append('<li><a href="#">'+trainings[h].year+' - '+trainings[h].location+', '+trainings[h].country[0].name+' </a></li>') ; 
                         }
                     }
 
@@ -1047,39 +1093,39 @@
                 switch( hub_id )
                 {
                 
-                    case 1 : // sub saharian africa
+                    case 2 : // sub saharian africa
                         var codeCountry = "CMR" ; 
                         var translateX = map_width / 4 ; 
                         var translateY = map_height / 2.5 ; 
                         break ; 
 
-                    case 2 : // northern africa + south east asia
+                    case 3 : // northern africa + south east asia
                         var codeCountry = "MAR" ; 
                         scale = 1.5 ; 
                         var translateX = map_width / 12 ; 
                         break ; 
 
-                    case 6 : // latin america
+                    case 7 : // latin america
                         var codeCountry = "PER" ; 
                         scale = 1.5 ; 
                         var translateX = map_width / 4 ; 
                         var translateY = map_height / 2.7 ; 
                         break ; 
 
-                    case 3 : // south east southern asia
+                    case 4 : // south east southern asia
                         var codeCountry = "VNM" ; 
                         var translateX = map_width / 3.2 ;
                         scale = 1.3 ;  
                         break ; 
 
-                    case 5 : // carribean
+                    case 6 : // carribean
                         var codeCountry = "LCA" ; 
                         scale = 3.5 ;
                         var translateX = map_width / 3.5 ; 
                         var translateY = map_height / 3 ; 
              
                         break ; 
-                    case 4 : // pacific island
+                    case 5 : // pacific island
                         var codeCountry = "FJI" ; 
                         scale = 3.5 ; 
                         var translateX = map_width / 10 ; 
@@ -1092,24 +1138,11 @@
 
                 if ( view == 2 ) return ; 
 
-                // get extra data 
-                $.ajax({
-                    type: "GET",
-                    url: "data/hubs/"+hub.code+".xml",
-                    dataType: "xml",
-                    success: function(xml) { 
-                        var xmlString = (new XMLSerializer()).serializeToString(xml);
-                        var x2js      = new X2JS();
-                        var json  = x2js.xml_str2json( xmlString );
-                        var data  = json.country ;
-
-                        $('#regional_hub_center').text( data.hub_name +' overview' ) ; 
-                        $('#hub_centers').html( data.hub_centers.toString() ); 
-                        $('#hub_pi').html( data.hub_pi.toString() ); 
-                        $('#canreg_experts').html( data.canreg_experts ); 
-                        $('#planned_activities').html( data.planned_activities ); 
-                    }
-                });
+                $('#regional_hub_center').text( hub.regional_hub_center +' overview' ) ; 
+                $('#hub_centers').html( nl2br( hub.overview ) ); 
+                $('#hub_pi').html( nl2br( hub.pi ) ); 
+                $('#canreg_experts').html( nl2br( hub.canreg_experts ) ); 
+                $('#planned_activities').html( nl2br( hub.planned_activities ) ); 
 
                 $('#hubPanel ul.hubCountries li').css('background-color', hub.color ) ; 
                 $('#hubPanel h3').css('border-color', hub.color ) ; 
@@ -1171,9 +1204,8 @@
             level = p_level ; 
             $(".unit-label").hide(); 
 
-            var country_clicked = countries[ codeCountry ] ; 
-            var hub_label = country_clicked.HUB ; // label 
-            var hub = hubs_per_name[ hub_label ] ; 
+            var country_clicked = getCountryByIso( codeCountry ) ; // countries[ codeCountry ] ; 
+            var hub = country_clicked.hub[0] ; 
 
             // zoom to view
             zoomView( hub.id ,'hub') ; 
@@ -1184,39 +1216,20 @@
 
     var setCountryPanel = function( codeCountry )
     {
+        var country = getCountryByIso( codeCountry ) ; 
+
         $('#countryPanel').removeClass('show') ;
         $('#countryPanel').addClass('show') ;
 
-        $('#country-name').css('color' , countries[codeCountry].color ).text( countries[codeCountry].Country );
-        $('#countryPanel a.close').css('background-color', countries[codeCountry].color);
-        $('.hub-line').css('background-color' , countries[codeCountry].color ) ; 
+        $('#country-name').css('color' , country.color ).text( country.name );
+        $('#countryPanel a.close').css('background-color', country.color);
+        $('.hub-line').css('background-color' , country.color ) ; 
 
-        
-
-        // load xml of country
-        if ( codeCountry == 'VNM')
-        {
-            $.ajax({
-                type: "GET",
-                url: "data/countries/VNM.xml",
-                dataType: "xml",
-                success: function(xml) { 
-                    var xmlString = (new XMLSerializer()).serializeToString(xml);
-                    var x2js      = new X2JS();
-                    var json  = x2js.xml_str2json( xmlString );
-                    var data  = json.country ;
-
-                    $('#tab-2').html( data.need ); 
-                    $('#tab-3').html( data.solution ); 
-                    $('#tab-4').html( data.impact ); 
-                    $('#tab-5').html( data.action ); 
-                    $('#tab-6').html( data.collaborators.toString() ); 
-
-
-                }
-            });
-        }   
-
+        $('#tab-2').html( nl2br( country.the_need )); 
+        $('#tab-3').html( nl2br( country.solution )); 
+        $('#tab-4').html( nl2br( country.impact )); 
+        $('#tab-5').html( nl2br( country.the_plan_of_action )); 
+        $('#tab-6').html( nl2br( country.collaborators )); 
     }
 
     var buildLegend = function(){
@@ -1298,4 +1311,9 @@
             return d ; 
         });
 
+    }
+
+    var nl2br = function  (str, is_xhtml) {   
+        var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';    
+        return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
     }

@@ -1,33 +1,31 @@
 	
 	path.country{
-		stroke: rgba(0,0,0,0.5) ; 
-		stroke-width: 0.1;
+		stroke: #ffffff ; 
+		stroke-width: 0.3;
 		fill-opacity: 1 ;
 	}
 
 	path.country.hover{
-		stroke: rgba(0,0,0,0.9);
-		stroke-width: 0.5 ;
-		fill-opacity: 1 ;
+		fill-opacity: 0.7 !important;
 	}
 
 	img#iarc{
 		position: absolute;
-		bottom: -30px;
+		bottom: -55px;
 		left: 50px ;
 		height: 30px ; 
 	}
 
 	img#who{
 		position: absolute;
-		bottom: -30px;
+		bottom: -55px;
 		right: 50px ;
 		width: 45px ; 
 	}
 
 	div#copyright-footer-map{
 		position: absolute;
-	    bottom: -30px;
+	    bottom: -55px;
 	    width: 200px;
 	    right: 950px;
 	    font-size: 0.8em;
@@ -37,8 +35,8 @@
 
 	div#txt-footer-map{
 		position: absolute;
-	    bottom: -25px;
-    	width: 75%;
+	    bottom: -55px; 
+    	width: 80%;
     	left: 200px;
 	    font-size: 0.6em;
 	    text-align: center ;
@@ -100,10 +98,11 @@
 	    right: -53% ; 
 	    transition: all .7s ease-in-out;
 	    background-color: #f7f7f7 ; 
-	    padding: 0 25px ; 
+	    padding: 25px ; 
 	    width: 50% ; 
 	    height: 65% ; 
 	    overflow-y: auto ;
+	    z-index: 2;
 	}
 
 	div#hubPanel a.close,div#countryPanel a.close,div#hubActvities a.close{
@@ -124,6 +123,63 @@
 	div#hubPanel a.close:hover,div#countryPanel a.close:hover,div#hubActvities a.close:hover{
 		text-decoration: none; 
 		opacity: 0.7 ;
+	}
+
+
+	div#hubPanel.show,div#countryPanel.show{
+	    right: 0px ; 
+	}
+
+	div#hubPanel h2{
+	    color: #1e4273 ;
+	    width: 100% ; 
+	}
+
+	div#hubPanel div{
+	    text-align: justify ; 
+	    font-size: 0.9em ; 
+	    line-height: 15px ; 
+	}
+
+	div#hubPanel #gallery_hub{
+	    float: left ; 
+	    width: 100% ; 
+	    padding-left: 0px ; 
+	    margin-bottom: 0px ; 
+	}
+
+	div#hubPanel #gallery_hub li{
+	    float: left ; 
+	    margin-right: 10px ; 
+	    position: relative ; 
+	}
+
+	div#hubPanel #gallery_hub li img.zoom{
+	    position: absolute ; 
+	    display: block ; 
+	    transition: all .7s ease-in-out ;
+	    width: 30px;
+	    left: 50%;
+	    margin-left: -15px ;
+	    margin-top: 35px ;
+	    display: block ;
+	}
+
+	div#hubPanel #gallery_hub li img.zoom.show{
+	    display: none ; 
+	}
+
+	div#hubPanel #gallery_hub li img.gallery{
+	    height: 100px ;
+	    opacity: 0.7; 
+	}
+
+	div#hubPanel #gallery_hub li img.gallery:hover{
+	    opacity: 1 ; 
+	}
+
+	div#hubPanel #gallery_hub li img.gallery:hover + img.zoom{
+	    display: block ; 
 	}
 
 	ul.list_visits,ul.list_courses{
@@ -202,8 +258,8 @@
 
 	div#countryPanel .tab-content ul{
 		width: 100% ; 
-		font-size: 0.8em;
-	    line-height: 14px;
+		line-height: 16px;
+   		margin-top: 0px;
 	}
 
 	div#countryPanel ul li{
@@ -348,7 +404,7 @@
 	    width: 95%;
     	padding: 10px;
 	    display: none;
-	    font-size: 1em ; 
+	    font-size: 0.9em;
 	}
 
 	.tab-content table{
