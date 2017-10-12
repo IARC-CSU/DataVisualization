@@ -1,0 +1,145 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for 
+   you to simply add your own. This is a basic template 
+   after all.
+   ---------------------------------------------------------*/
+    body {
+   		font-family: 'Lora', serif;
+    }
+    /* Default link styling */
+    a:link { color:#498076; }
+    a:visited { color:#c75052; }
+    a:hover, a:focus { color:#ffa347; }
+    a:active { color:#ffa347; }
+    
+    
+    
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+    body {
+		padding: 0 20px ;  
+		background: #fff ;
+		color: #498076 ;   
+    }
+    h1{
+    	text-align: center ;
+    	color: #165559 ; 
+    	margin-bottom: 0px;
+    }
+    h2{
+    	text-align: center ; 
+    	color: #103c40 ; 
+    }
+    h4{
+    	font-style: italic ;
+    	color: #c75259 ; 
+    }
+    h4 i{
+    	margin: 0 5px 0 0;
+    	font-size: 0.8em ;
+    	color: #c75259 ; 
+    }
+    a#right-button{
+    	position: absolute;
+    	right: 20px;
+    	top: 20px ;
+    	font-size: 2em ;
+    	color: #000 ;
+    }
+    a#left-button{
+    	position: absolute;
+    	left: 20px;
+    	top: 20px ;
+    	font-size: 2em ;
+    	color: #000 ;
+    }
+
+    .nvd3 text,.nvtooltip{
+    	font-family: 'Lora', serif;
+    	font-size: 10px ;
+    	font-style: italic ;
+    }
+    #map svg{
+    	display: block;
+    	margin: auto ; 
+    }
+   	#map path{
+    	/*fill: #91ccbb ;*/
+    	stroke: #000000 ;
+    	stroke-width: 0.5px ; 
+    }
+
+    
+
+    path#TXT_RU{
+    	fill: transparent ;
+    }
+
+    path#CODE_undefined{
+        stroke-dasharray : 2,2;
+    }
+
+    path.swe_counties,path.belgium_regions,path.portugal_regions{
+        stroke: none!important ; 
+    }
+
+    #map path.country.360e11{
+    	stroke: #ffffff !important;
+    }
+
+
+	.tooltip{
+		position: relative;
+	}
+	
+    
+    #filters{
+        width: 440px ; 
+        margin: auto ; 
+        margin-top: 15px ; 
+        margin-bottom: 15px ; 
+    }
+
+	.tooltip:hover:after{
+		background: rgba(230,232,183,1);
+		border-radius: 4px;
+		bottom: 26px;
+		color: #003030 ; 
+		content: attr(title);
+		left: 20%;
+		padding: 5px 15px;
+		position: absolute;
+		z-index: 98;
+		font-size: 11px; 
+		min-width: 120px; 
+	}
+	
+	.tooltip:hover:before{
+		border: solid;
+		border-color: rgba(230,232,183,1) transparent;
+		border-width: 6px 6px 0 6px;
+		bottom: 20px;
+		content: "";
+		left: 50%;
+		position: absolute;
+		z-index: 99;
+	}
+
+    path#CODE_MT{
+        transform:translate(-2530px,-3250px)scale(5);
+        stroke-width: .1px;
+    }  
+    path.portugal_regions.region_1{
+        transform:translate(-500px,-1750px)scale(3);
+    }
+    path.portugal_regions.region_2{
+        transform:translate(-140px,-1600px)scale(3);
+        stroke: #cccccc!important;
+        stroke-width: 0.2px!important;
+    }
+
+    select[name="crc_mode"]{
+        display: none ; 
+    }

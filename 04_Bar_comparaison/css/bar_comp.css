@@ -1,0 +1,179 @@
+
+
+body { 
+	padding:0px;
+	max-width:1500px;
+	margin: 0 auto;
+	font-family:Source Sans Pro, sans-serif;
+	font-size:100%;
+	}
+	
+#header{ 
+	background:#fff;
+	width:100%;
+	display:inline-block;
+	position:relative;
+	margin-top:10px;
+	}
+	
+#header div {
+	float: left;
+	padding-bottom: 10px;
+	width:100%;
+	}
+	
+#header div h1{
+	margin-bottom:0px;
+	}
+	
+#header div h1 a{
+	display:block;
+	text-align:center;
+	color:#000;
+	text-decoration:none;
+	outline: none;
+	}
+	
+#header div.desc{
+	text-align:center;
+	font-size:1em;
+	}
+	
+.div_centered {
+	text-align: center;
+    margin: 0px 10px 10px 10px;
+	}
+	
+.play-button-outer {
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+  background-color: rgba(0, 0, 0, .25);
+  cursor: pointer;
+  opacity:1;
+}
+
+.play-button {
+  margin: 0 auto;
+  top: 25%;
+  position: relative;  
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.50em 0 0.50em 1em;
+  border-color: transparent transparent transparent #000;
+  opacity: .75; 
+}
+
+.play-button-outer:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.play-button-outer:hover .play-button {
+  opacity: 1;
+}
+	
+
+	
+form {
+	display:inline-block;
+	max-width:350px;
+	}
+	
+#countryList {
+	text-align-last:center;
+	font-size:20px;
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 1.5px;
+    border-bottom-color: black;
+}
+
+	
+form h4{
+	text-align:center;
+	margin: 5px;
+}
+		
+.custom-radio{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 3px;
+    }
+	
+.custom-radio input[type="radio"]{
+	margin: 1px;
+	position: absolute;
+	z-index: 2;            
+	cursor: pointer;
+	outline: none;
+	opacity: 0;
+	/* CSS hacks for older browsers */
+	_noFocusLine: expression(this.hideFocus=true); 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+	
+	  
+  text.mono {
+	font-size: 9pt;
+	font-family:  sans-serif;
+	fill: #000000;
+	shape-rendering: crispEdges;
+  }
+
+  text.axis-workweek {
+	fill: #000;
+  }
+
+  text.axis-worktime {
+	fill: #000;
+  }
+  
+    text.bar_title {
+	font-size: 20px;
+  }
+  
+ line {
+	stroke-width: 1;
+}
+	  
+ 	line.tick_major  {
+			opacity: 0.8;
+	} 
+
+ 	line.tick_minor  {
+			opacity: 0.6;
+	}  	
+	
+	  .xaxis path,
+	  .xaxis line {
+			fill: none;
+			stroke: black;
+			opacity:0.8
+		}
+		
+	
+
+	.xaxis text {
+		font-family: sans-serif;
+	}
+	
+	  .xaxis_minor path,
+	  .xaxis_minor line {
+			fill: none;
+			stroke: black;
+			opacity:0.6;
+		}
+		
+	
+
+	
+
+	

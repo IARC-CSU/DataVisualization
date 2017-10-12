@@ -1,0 +1,65 @@
+{
+  "nodes":[
+    { "id" : 0 ,  "name":"CSU","group":1},
+      
+    { "id" : 1 , "name":"Indicators","group":2},
+    { "id" : 2 , "name":"Research","group":2},
+    { "id" : 3 , "name":"Registry support","group":2},
+    
+    { "id" : 4 , "name":"Freddie","group":3},
+    { "id" : 5 , "name":"Jacques","group":3},
+    { "id" : 6 , "name":"Morten","group":3},
+    { "id" : 7 , "name":"Les","group":3},
+    { "id" : 8 , "name":"Eva","group":3},
+    { "id" : 9 , "name":"Melina","group":3},
+    { "id" : 10 , "name":"Isabelle","group":3},
+      
+    { "id" : 11 , "name":"Ariana","group":4},
+    { "id" : 12 , "name":"Marion","group":4},
+      
+    { "id" : 13 , "name":"Marzieh","group":4},    
+    { "id" : 14 , "name":"Bochen","group":4},
+    { "id" : 15 , "name":"Tuvshin","group":4},
+    { "id" : 16 , "name":"Solomon","group":4},
+    { "id" : 17 , "name":"Miranda","group":4},
+    { "id" : 18 , "name":"Ivana","group":4},
+    { "id" : 19 , "name":"Claire","group":4},
+    { "id" : 20 , "name":"Kevin","group":4},
+      
+    { "id" : 21 , "name":"Frederic","group":4},
+    { "id" : 22 , "name":"Eric","group":4},
+    { "id" : 23 , "name":"Murielle","group":4},
+    { "id" : 24 , "name":"Anastasia","group":4},
+    { "id" : 25 , "name":"Jerome","group":4},   
+      
+    { "id" : 26 , "name":"Chelle","group":4} 
+  ],
+  "links":[
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":1},
+    {"source":3,"target":0,"value":1},
+      
+    {"source":5,"target":1,"value":1},
+    {"source":8,"target":1,"value":1},
+      
+    {"source":4,"target":2,"value":2},
+    {"source":9,"target":2,"value":2},
+    {"source":10,"target":2,"value":2},
+      
+    {"source":6,"target":3,"value":1},
+    {"source":7,"target":3,"value":1},
+    
+    {"source":21,"target":6,"value":1},
+    {"source":22,"target":6,"value":1},
+    {"source":25,"target":6,"value":1},
+    {"source":25,"target":10,"value":1},
+      
+    {"source":23,"target":8,"value":1},
+    {"source":24,"target":8,"value":1}, 
+      
+    {"source":24,"target":7,"value":1},
+    {"source":24,"target":7,"value":1},
+    {"source":24,"target":7,"value":1},
+    {"source":24,"target":7,"value":1}
+  ]
+}

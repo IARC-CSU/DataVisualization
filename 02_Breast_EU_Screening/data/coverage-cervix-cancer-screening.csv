@@ -1,0 +1,50 @@
+POPULATION,CODE,REGION,PERCENT_I,PERCENT_T,CODE_REGION
+Austria,AT,0,0,0
+Belgium,BE,0,0,0
+Belgium Brussels,BE,1,0,0,1
+Belgium Flanders,BE,1,0,7.4,0
+Belgium Wallonia,BE,1,0,0,2
+Bulgaria,BG,0,0,0
+Croatia,HR,0,0,10.8
+Cyprus All,CY,0,0,0
+Czech Republic,CZ,0,0.0,0
+Denmark,DK,0,0,47.5
+Estonia,EE,0,0,44.4
+Finland,FI,0,0,66
+France,FR,0,0,1.6
+Germany,DE,0,0,0
+Greece,GR,0,0.0,0.0
+Hungary,HU,0,0,4.5
+Ireland,IE,0,0,0
+Italy,IT,0,0,27.7
+Latvia,LV,0,0,32.9
+Lithuania,LT,0,0,37.5
+Luxembourg,LU,0,0,0
+Malta,MT,0,0,0
+Netherlands,NL,0,0,63.2
+Poland,PL,0,0,17.8
+Portugal,PT,0,0,11.7
+Portugal Alentejo,PT,1,0,48.7,3
+Portugal Algarve,PT,1,0,7,0
+Portugal Azores,PT,1,0,0,1
+Portugal Centre,PT,1,0,55.3,5
+Portugal Lisboa,PT,1,0,0,6
+Portugal Norte,PT,1,0,28.9,4
+Portugal Madeira,PT,1,0,0,2
+Romania,RO,0,0,9.2
+Slovakia,SK,0,0,0,0
+Slovenia,SI,0,0,0
+Spain,ES,0,0,0
+Sweden,SE,0,0,69.7
+Sweden Norra,SE,1,0,69.7,0
+Sweden Södra,SE,1,0,69.7,5
+Sweden Stockholm Gotland,SE,1,0,69.7,2
+Sweden Sydöstra,SE,1,0,69.7,3
+Sweden Uppsala Örebro,SE,1,0,69.7,1
+Sweden Västra Götalands,SE,1,0,69.7,4
+United Kinkgdom,GB,0,0,0
+England,GB,1,0,0,ENG
+Northern Ireland,GB,1,0,44,NIR
+Scotland,GB,1,0,0,SCT
+Wales,GB,1,0,63.5,WLS
+EIRE,GB,0,0,0,IRL
