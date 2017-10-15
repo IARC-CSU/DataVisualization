@@ -37,7 +37,8 @@
 	
 	var var_width = 20* XgridSize
 	
-	var transition_time = 1500
+	var transition_time = 1500 // 750 for slide
+	
 	
 	
 	var yScale = d3.scale.linear()
@@ -112,8 +113,10 @@
 		<label><input type="radio" id="radio_sex_female" name="sex"   onChange="combo_sex('Women')"> Female</label>
 		</div>
 		
-		<div class="play-button-outer">
-		  <div class="play-button" onClick="update_bar_new()"></div>
+		<div class = "div_centered">
+		<a class="play-button-round up" id="button_U1" name="go" onClick="update_bar('U1')"></a>
+		<a class="play-button-round equal" id="button_U0" name="go" onClick="update_bar('U0')"></a>
+		<a class="play-button-round down" id="button_U-1" name="go" onClick="update_bar('U-1')"></a>
 		</div>
 
 		<div id="chart"></div>
