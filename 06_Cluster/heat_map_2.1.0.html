@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  
+	
+	<title> Cancer and HDI </title>
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/heat_map.css" type="text/css">
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/heat_map.js"></script>
+	
+	
+		<script type="text/javascript">
+		
+		// variable general
+		
+		var nb_country = 173;
+				
+		var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 50, left_page: 400 },
+			width = 1500 - margin.left - margin.right,
+			height = 800 - margin.top - margin.bottom,
+			XgridSize = Math.floor(width / nb_country),
+			YgridSize = Math.floor(height / 28);
+			
+		var element_display = true;
+		var Flag_selected_country = false;	
+		var hdi_label = ["Low HDI", "Medium HDI", "High HDI", "Very high HDI"];
+		var area_label = ["Africa", "Latin America & the Carribean", "North America", "Asia", "Europe", "Oceania"];
+		
+		var color_hdi = ["#E8EEFE",  "#A9C3FF", "#2E75D1", "#00329F"]; // 
+		var color_area = ["#D62702","#D62702","#D62702","#D62702","#D62702" // Africa: East, middle, Northenr, south, western
+						 ,"#AC0EAF","#AC0EAF","#AC0EAF" // Caribbean, Central America, South America
+						 ,"#462E94" // north America
+						,"#E4D901","#E4D901","#E4D901", "#E4D901" // Asia: east, south east, south, western
+								,"#01ACE9","#01ACE9","#01ACE9", "#01ACE9" //Europe: east, north, south, west
+								,"#05AD18","#05AD18","#05AD18", "#05AD18"];
+		var color_area_legend = ["#D62702",  "#AC0EAF", "#462E94", "#E4D901", "#01ACE9", "#05AD18"]; // 
+		
+		var color_cancer = {};
+		color_cancer["Bladder"]                = "#278D29";
+		color_cancer["Brain, nervous system"]  = "#D5BED2";
+		color_cancer["Breast"]                 = "#FF68BC";
+		color_cancer["Cervix uteri"]           = "#FF7500";
+		color_cancer["Colorectum"]             = "#FFD803";
+		color_cancer["Corpus uteri"]           = "#9FE72D";
+		color_cancer["Gallbladder"]            = "#006158";
+		color_cancer["Hodgkin lymphoma"]       = "#97d5b4";
+		color_cancer["Kaposi sarcoma"]         = "#FFC2CA";
+		color_cancer["Kidney"]                 = "#040186";
+		color_cancer["Larynx"]                 = "#aec80d";
+		color_cancer["Leukaemia"]              = "#FFFFA6";
+		color_cancer["Lip, oral cavity"]       = "#AE563E";
+		color_cancer["Liver"]                  = "#F3A654";
+		color_cancer["Lung"]                   = "#1E90FF";
+		color_cancer["Melanoma of skin"]       = "#cd100a";
+		color_cancer["Multiple myeloma"]       = "#333333";
+		color_cancer["Nasopharynx"]            = "#2A4950";
+		color_cancer["Non-Hodgkin lymphoma"]   = "#2231D0";
+		color_cancer["Oesophagus"]             = "#DC1341";
+		color_cancer["Other pharynx"]          = "#6D8A6D";
+		color_cancer["Ovary"]                  = "#00F5B6";
+		color_cancer["Pancreas"]               = "#940009";
+		color_cancer["Prostate"]               = "#34A76E";
+		color_cancer["Stomach"]                = "#4682B4";
+		color_cancer["Testis"]                 = "#3a1ad1";
+		color_cancer["Thyroid"]                = "#ADD9E4";
+		
+
+		var heatMap; // not sure it need to be initialize ?
+		var bool_cluster = false;
+		var sex_select = "Women";	
+		var nb_site_max = 25;  
+		var transitionTime = 1500;
+		var label_padding = -3; // label of the cancer site distance from heatmaps
+		
+		 var xScale = d3.scale.linear()
+		.domain([1, nb_country])
+		.range([0  ,(nb_country-1)* XgridSize ]);
+		
+					
+		var yScale = d3.scale.linear()
+		.domain([1, nb_site_max])
+		.range([0  ,(nb_site_max-1)* YgridSize ]);
+		
+		var yScale2 = d3.scale.linear()
+			.domain([0, 1])
+			.range([(nb_site_max)* YgridSize   ,0]);
+			
+		rev_yScale2 = function(v) {
+		
+			return yScale2(0) - yScale2(v);
+		
+		}
+		
+												  
+	
+	 window.onload = function()
+		{
+			Heatmap_gen()
+		};
+		
+		function doc_keyUp(e) {
+
+		// add jeyboard shortcut for s + ctrl
+		if (e.keyCode == 83) {
+			// call your function to do the thing
+			sortBars(true);
+			document.getElementById('radio_cluster_on').checked = true;
+			document.getElementById('radio_cluster_off').checked = false;
+
+		}
+			}
+			// register the handler 
+		document.addEventListener('keyup', doc_keyUp, false);
+			
+	</script>
+	
+	 
+	</head>
+  	
+	<body>
+
+	<div class="">
+
+	</div>
+	
+	<div id="header" >
+		<div>
+			<h1><a href="#"> Cancer and HDI heatmap</a></h1>
+			<div class="desc">
+				Profiling The Diversity Of Cancer According To Human Development
+			</div>
+		</div>		
+	
+	</div>
+	
+	<div id="option">
+	
+	<form>
+    <h4>Sex</h4>
+    <label><input type="radio" id="radio_sex_female" name="sex" checked="checked"  onChange="combo_sex('Women')"> Female</label>
+    <label><input type="radio" id="radio_sex_male"  name="sex" onChange="combo_sex('Men')"> Male</label>
+	</form>
+	
+	<form>
+    <h4>Clustering</h4>
+    <label><input type="radio" id="radio_cluster_off"  name="cluster" checked="checked"   onChange="sortBars(false)"> Off</label>
+    <label><input type="radio" id="radio_cluster_on"   name="cluster" onChange="sortBars(true)"> On</label>
+	</form>
+	
+	<form>
+    <h4>Color</h4>
+    <label><input type="radio" id="radio_color_hdi"  name="color" checked="checked" value="hdi" onChange="color_rect('hdi')"> HDI</label>
+    <label><input type="radio" id="radio_color_area" name="color" value="area" onChange="color_rect('area')"> Area</label>
+	</form>
+	
+	<form class="comboCountry">
+	
+	<h4>Country</h4>
+	<select name="country_select" id="countryList" onChange="combo_country(this)">
+	 <option value=0>All countries</option>
+	</select> 
+	</form>
+	
+	</div>
+	
+	<div id="chart"></div>
+
+</body>
+ 
+</html>
+	

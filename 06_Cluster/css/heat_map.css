@@ -1,0 +1,155 @@
+
+
+body { 
+	padding:0px;
+	max-width:1500px;
+	margin: 0 auto;
+	font-family:Source Sans Pro, sans-serif;
+	font-size:100%;
+	}
+	
+#header{ 
+	background:#fff;
+	width:100%;
+	display:inline-block;
+	position:relative;
+	margin-top:10px;
+	}
+	
+#header div {
+	float: left;
+	padding-bottom: 10px;
+	width:100%;
+	}
+	
+#header div h1{
+	margin-bottom:0px;
+	}
+	
+#header div h1 a{
+	display:block;
+	text-align:center;
+	color:#000;
+	text-decoration:none;
+	outline: none;
+	}
+	
+#header div.desc{
+	text-align:center;
+	font-size:1em;
+	}
+	
+#option {
+	text-align: center;
+    margin: 10px auto;
+	}
+	
+form {
+	display:inline-block;
+	max-width:350px;
+	margin-right:50px;
+	}
+	
+
+	
+form h4{
+	text-align:center;
+	margin: 5px;
+}
+		
+.custom-radio{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 3px;
+    }
+	
+.custom-radio input[type="radio"]{
+	margin: 1px;
+	position: absolute;
+	z-index: 2;            
+	cursor: pointer;
+	outline: none;
+	opacity: 0;
+	/* CSS hacks for older browsers */
+	_noFocusLine: expression(this.hideFocus=true); 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+	
+  rect.bordered   {
+	stroke: #303030;
+	stroke-width:0.5px;   
+  }
+	  
+  rect.highlighted {
+	stroke: #F00;
+	stroke-width:1px;
+  }
+	  
+  text.mono {
+	font-size: 9pt;
+	font-family:  sans-serif;
+	fill: #000000;
+	shape-rendering: crispEdges;
+  }
+
+  text.axis-workweek {
+	fill: #000;
+  }
+
+  text.axis-worktime {
+	fill: #000;
+  }
+  
+  text.text-highlight_green {
+	fill: #1b7415;
+  }
+  
+  text.text-highlight_orange {
+	fill: #f23407;
+  }
+  
+  text.text-highlight_blue {
+	fill: #0041DB;
+  }
+	  
+	  
+.axis path, .axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.axis2 path, .axis2 line {
+		fill: none;
+		stroke: black;
+		shape-rendering: crispEdges;
+	}
+
+.axis2 text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 100px;                  
+  height: 60px;                 
+  padding: 2px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
