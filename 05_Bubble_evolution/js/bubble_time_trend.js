@@ -16,13 +16,22 @@
 				cause : d.cause,
 				hdi: +d.hdi,
 				risk: +d.risk,
+				year: +d.year,
+				select: +d.select,
 
 				};	
 			},		
 			function(data) {
+				
+				//filter data 
+				var data_temp = data.filter(function(d){
+					return (d.cause == "Cancer" || d.select <= 5)
+				});
 
-				// Keep men , very high HDI 
-				var data_temp = data
+				// nested data by year 
+				var data_nest=d3.nest()
+						.key(function(d) {return d.year;})
+						.entries(data_temp)
 				
 				// create graph
 										
@@ -46,7 +55,7 @@
 				
 
 				add_axis_title(bar_graph,data_temp,true);
-				add_bar_text_line(bar_graph,data_temp, true);
+				//add_bar_text_line(bar_graph,data_temp, true);
 				add_legend(graph_legend);
 				
 				
@@ -79,14 +88,14 @@
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2012")
+			.text("2000")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2035")
+			.text("2015")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
 
@@ -101,13 +110,8 @@
 		
 		
 
-		var y_max1 = d3.max(data, function(d) {return d.rate1})
-		var y_max2 = d3.max(data, function(d) {return d.rate2})
-		var y_max = d3.max([y_max1,y_max2])
-		
-		var y_min1 = d3.min(data, function(d) {return d.rate1})
-		var y_min2 = d3.min(data, function(d) {return d.rate2})
-		var y_min = d3.min([y_min1,y_min2])
+		var y_max = d3.max(data, function(d) {return d.risk})
+		var y_min = d3.min(data, function(d) {return d.risk})
 		
 		var tick_list = tick_generator(y_max, 0, false) // diff log scale
 		
