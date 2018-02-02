@@ -25,7 +25,7 @@
 				
 				//filter data 
 				var data_temp = data.filter(function(d){
-					return (d.cause == "Cancer" || d.select <= 5)
+					return (d.cause == "Cancer" && d.select <= 5)
 				});
 
 				// nested data by year 
@@ -55,7 +55,7 @@
 				
 
 				add_axis_title(bar_graph,data_temp,true);
-				//add_bar_text_line(bar_graph,data_temp, true);
+				add_bar_text_line(bar_graph,data_temp, true);
 				add_legend(graph_legend);
 				
 				
@@ -205,7 +205,9 @@
 
 			
 		graph_select = graph
-		var data_temp = data
+		var data_temp = data.filter(function(d){
+				return (d.year == 2000)
+		});
 
 		
 		var nodes = graph_select.append("g")
@@ -235,12 +237,12 @@
 		 nodes.append("circle")
 			.attr("class","circle1")
 			.attr("r", 20)
-			.style("stroke", function(d,i) {return color_cancer[d.cancer_label];})   // set the line colour
+			.style("stroke", function(d,i) {return color_cancer[d.country_label];})   // set the line colour
 			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
+			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
 			.attr("fill", "none");
 			
-	   nodes.append("svg:path")
+/* 	   nodes.append("svg:path")
 		.attr("class","arrow_link")
 		.attr("fill", function(d,i) {return color_cancer[d.cancer_label];})
 		.attr("d", function(d,i) {
@@ -256,11 +258,11 @@
 				var update_range = yScale(d.rate2)- yScale(d.rate1)
 				var offset = Math.sign(update_range)*14
 				return ( "translate(0," + ( offset + yScale(d.rate1))+ ")");
-		})
+		})*/
 
 		
 				
-	  nodes.append("line")
+/*		nodes.append("line")
 			.attr("class","line_link")
 	  		.style("stroke", function(d,i) {return color_cancer[d.cancer_label];}) 
 			.style("stroke-width", 2)				
@@ -271,7 +273,7 @@
 			.attr("y2", function(d,i) {
 				var update_range = yScale(d.rate2)- yScale(d.rate1)
 				return (Math.sign(update_range)*20) + yScale(d.rate1)
-			});
+			});*/
 			
 		graph_select.append("line") // add line for x = 0
 		.style("stroke", "black")  
@@ -282,40 +284,40 @@
 
 			
 
-		nodes.append("circle")
+/* 		nodes.append("circle")
 			.attr("class","circle2")
 			.attr("r", 20)
-			.style("stroke", function(d,i) {return color_cancer[d.cancer_label];})    // set the line colour
+			.style("stroke", function(d,i) {return color_cancer[d.country_label];})    // set the line colour
 			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
-			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});
+			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
+			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});*/
 		   
 		nodes.append("text")
 			.attr("class","text1")
 			.attr("text-anchor", "middle")
-			.text(function(d,i) {return d.rate1})
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
+			.text(function(d,i) {return d.risk})
+			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
 			.attr("dy", "0.25em")
-			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});    // set the line colour
+			//.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});    // set the line colour
 			
-		nodes.append("text")
+/* 		nodes.append("text")
 		    .attr("class","text2")
 			.attr("text-anchor", "middle")
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
-			.text(function(d,i) {return d.rate1})
+			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
+			.text(function(d,i) {return d.risk})
 			.attr("dy", "0.25em")
-			.attr("fill", "#000000");    // set the line colour
+			.attr("fill", "#000000");    // set the line colour*/
 			
 	   nodes.append("text")
 			.attr("class","cancer_label")
 			.attr("text-anchor", "middle")
 			.attr("y", function(d, i) {return  var_height + 25 })
-			.text(function(d,i) {return d.cancer_label})
+			.text(function(d,i) {return d.country_label})
 			.attr("dy", "0.25em")
 			.attr("fill", "#000000");    // set the line colour
 			
 
-		nodes.append("text")
+		/* nodes.append("text")
 			.attr("class", "text_percent")
 			.attr("text-anchor", "left")
 			.attr("x",function(d,i) {
@@ -334,7 +336,7 @@
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("dy", "0.25em")
 			.attr("fill", "#000000")
-			.style("opacity",0); 
+			.style("opacity",0); */
 			
 		
 	}
