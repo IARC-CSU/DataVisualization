@@ -15,9 +15,9 @@
 		
 	// variable general
 	
-	var margin = { top: 50, right: 200, bottom: 100, left: 300, top_page: 20, left_page: 350 },
+	var margin = { top: 50, right: 200, bottom: 100, left: 300, top_page: 20, left_page: 50 },
 	width = 1500 - margin.left - margin.right,
-	height = 800 - margin.top - margin.bottom,
+	height = 1000 - margin.top - margin.bottom,
 	
 	XgridSize = 30 // 20*Xgrid for the range of the bar 
 
@@ -31,14 +31,12 @@
 	var transition_time = 1500
 	
 	var bar_space = 2	// Space between bar 
-	var nb_cancer = 10  // nb of cancer shows (here top 10)
+	var nb_cancer = 14  // nb of cancer shows (here top 10)
 	var label_wrap = 19 // size max of a label on one line
 	
-	var var_height = 550
+	var var_height = 800	
 	
-	var graph_separation = 40
-
-	
+	var line_offset = 250
 	
 	var xScale = d3.scale.linear()
 		.domain([1, nb_cancer])  // 

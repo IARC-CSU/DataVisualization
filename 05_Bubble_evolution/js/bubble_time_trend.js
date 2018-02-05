@@ -14,7 +14,8 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				select: +d.select,
+				rank: +d.rank,
+				select: +d.select
 
 				};	
 			},		
@@ -22,7 +23,7 @@
 				
 				//filter data 
 				var data_temp = data.filter(function(d){
-					return (d.cause == "Cancer" && d.select <= 5)
+					return (d.cause == "Cancer")
 				});
 
 				var data_nest=d3.nest()
@@ -226,7 +227,8 @@
 			.enter()
 			.append("g")
 			.attr("transform", function(d, i) {
-				return "translate(" + xScale((i+1)*(bar_space+1)) + ",0)";
+				pos = (d.values[0].values[0].rank)
+				return "translate(" + xScale((pos)*(bar_space+1)) + ",0)";
 				})
 				
 
@@ -239,10 +241,16 @@
 			.attr("stroke", "steelblue")
 			.attr("stroke-width", 2)
 			.attr("fill", "none")
-			.attr("stroke-dasharray", 120 + " " + 120)
-			.attr("stroke-dashoffset", 120);
-			
-		var totalLength = path.node().getTotalLength();
+		
+		path
+			.attr("stroke-dasharray", function(d,i) {
+				length = path[0][i].getTotalLength();
+				return length + " " + length
+			})
+			.attr("stroke-dashoffset", function(d,i) {
+				length = path[0][i].getTotalLength();
+				return length;
+			})
 
 		nodes.append("circle")
 			.attr("class","circle1")
@@ -267,41 +275,6 @@
 
 
 			
-
-			
-/* 	   nodes.append("svg:path")
-		.attr("class","arrow_link")
-		.attr("fill", function(d,i) {return color_cancer[d.cancer_label];})
-		.attr("d", function(d,i) {
-			var update_range = yScale(d.rate2)- yScale(d.rate1)
-			if (update_range > 0) {
-				return (d3.svg.symbol().type("triangle-down")(10,1))
-			} 
-			else {
-				return (d3.svg.symbol().type("triangle-up")(10,1))
-			}
-		})
-		.attr("transform",  function(d,i) {
-				var update_range = yScale(d.rate2)- yScale(d.rate1)
-				var offset = Math.sign(update_range)*14
-				return ( "translate(0," + ( offset + yScale(d.rate1))+ ")");
-		})*/
-
-		
-				
-/*		nodes.append("line")
-			.attr("class","line_link")
-	  		.style("stroke", function(d,i) {return color_cancer[d.cancer_label];}) 
-			.style("stroke-width", 2)				
-			.attr("y1", function(d,i) {
-				var update_range = yScale(d.rate2)- yScale(d.rate1)
-				return (Math.sign(update_range)*20) + yScale(d.rate1)
-			})
-			.attr("y2", function(d,i) {
-				var update_range = yScale(d.rate2)- yScale(d.rate1)
-				return (Math.sign(update_range)*20) + yScale(d.rate1)
-			});*/
-			
 		graph_select.append("line") // add line for x = 0
 		.style("stroke", "black")  
 		.attr("x1", 0)
@@ -309,32 +282,7 @@
 		.attr("x2", 0)
 		.attr("y2", 0);
 
-			
-
-/* 		nodes.append("circle")
-			.attr("class","circle2")
-			.attr("r", 20)
-			.style("stroke", function(d,i) {return color_cancer[d.country_label];})    // set the line colour
-			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
-			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});*/
-		   
-/* 		nodes.append("text")
-			.attr("class","text1")
-			.attr("text-anchor", "middle")
-			.text(function(d,i) {return d.risk})
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
-			.attr("dy", "0.25em")*/
-			//.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});    // set the line colour
-			
-/* 		nodes.append("text")
-		    .attr("class","text2")
-			.attr("text-anchor", "middle")
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.risk)) + ")";}) 
-			.text(function(d,i) {return d.risk})
-			.attr("dy", "0.25em")
-			.attr("fill", "#000000");    // set the line colour*/
-			
+	
 	   nodes.append("text")
 			.attr("class","cancer_label")
 			.attr("text-anchor", "middle")
@@ -344,28 +292,6 @@
 			.attr("fill", "#000000");    // set the line colour
 			
 
-		/* nodes.append("text")
-			.attr("class", "text_percent")
-			.attr("text-anchor", "left")
-			.attr("x",function(d,i) {
-				var update_range = yScale(d.rate2)- yScale(d.rate1)
-				if (update_range  > 50 || update_range  < -50 ) {
-					return 8;
-				}
-				else {
-					return 22;
-				}
-			})
-			.text(function(d,i) {
-				return 0 ; 
-				// return d3.format("+.0%")((d.rate2-d.rate1)/d.rate1)
-			})
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
-			.attr("dy", "0.25em")
-			.attr("fill", "#000000")
-			.style("opacity",0); */
-			
-		
 	}
 	
 	function update(bool) {
@@ -431,7 +357,7 @@
 				
 			path
 				.transition()
-				.duration(transition_time+(transition_time/4))
+				.duration(transition_time)
 				.ease(ease_effect)
 				.attr("stroke-dashoffset", 0);
 		
@@ -446,7 +372,10 @@
 				.transition()
 				.duration(transition_time)
 				.ease(ease_effect)
-				.attr("stroke-dashoffset", 120);
+				.attr("stroke-dashoffset", function(d,i) {
+					length = path[0][i].getTotalLength();
+					return length;
+				})
 		}
 			
 			
