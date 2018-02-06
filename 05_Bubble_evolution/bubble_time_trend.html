@@ -5,7 +5,7 @@
   
   	<title> Bubble chart NCD's risk</title>
 	<!--link rel="icon" href="favicon.ico" /-->
-	<link rel="stylesheet" href="css/bubble_evolution.css" type="text/css">
+	<link rel="stylesheet" href="css/bubble_time_trend.css" type="text/css">
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
 	<script type="text/javascript" src="js/bubble_time_trend.js"></script>
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
@@ -15,29 +15,29 @@
 		
 	// variable general
 	
-	var margin = { top: 50, right: 200, bottom: 100, left: 300, top_page: 20, left_page: 50 },
-	width = 1500 - margin.left - margin.right,
-	height = 1000 - margin.top - margin.bottom,
+	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 15, left_page: 75 },
+	width = 1350 - margin.left - margin.right,
+	height = 750 - margin.top - margin.bottom,
 	
-	XgridSize = 30 // 20*Xgrid for the range of the bar 
+	XgridSize = 20 // 20*Xgrid for the range of the bar 
 
 	var color_cancer = {};
-	color_cancer["Low HDI"]                = "#D7191C";
-	color_cancer["Medium HDI"]  = "#E66101";
-	color_cancer["High HDI"]                 = "#ABD9E9";
-	color_cancer["Very High HDI"]           = "#2C7BB6";
+	//color_cancer["Low HDI"] = "#D7191C";
+	//color_cancer["Very High HDI"]           = "#2C7BB6";
+	color_cancer[1]  = "#E66101"; // low and medium 
+	color_cancer[2]  = "#2C7BB6"; // high hdi
+	//color_cancer[2]  = "#ABD9E9"; // high hdi
+
 
 	var ease_effect = "linear"
-	var transition_time = 1500
+	var transition_time = 1000
 	
-	var bar_space = 2	// Space between bar 
-	var nb_cancer = 14  // nb of cancer shows (here top 10)
-	var label_wrap = 19 // size max of a label on one line
+	var bar_space = 1.5	// Space between bar 
+	var nb_cancer = 20  // nb of cancer shows (here top 10)
+	var label_wrap = 10 // size max of a label on one line
 	
-	var var_height = 800	
-	
-	var line_offset = 250
-	
+	var var_height = 500	
+
 	var xScale = d3.scale.linear()
 		.domain([1, nb_cancer])  // 
 		.range([0  ,(nb_cancer-1)* XgridSize ]);
@@ -54,6 +54,12 @@
 	var yScale = d3.scale.linear() 
 		.domain([0, 100]) 
 		.range([var_height  ,0]);
+		
+	var lineFunction = d3.svg.line()
+		.x(function(d,i){ return 0+ (xScale(i+1)*0.1); })
+		.y(function(d,i)  { 
+			return yScale(d.values[0].risk); })
+		.interpolate("basis");
 		
 		
 	
@@ -77,9 +83,9 @@
 	
 	<div id="header" >
 		<div>
-			<h1><a href="#"> change in risk<br/>2000 to 2015</a></h1>
+			<h1><a href="#"> Change in risk<br/>2000 to 2015</a></h1>
 			<div class="desc">
-				NCD's
+				Cancer
 			</div>
 		</div>		
 	
@@ -89,18 +95,23 @@
 		<div id="chart"></div>
 		
 		<div class = "div_left">
+		
 		<form>
+		<label><input type="radio" id="radio_cause1"  name="hdi"  checked="checked" onChange="update_data('cause_num','1')"> Cancer</label>
+		<br/>
+		<label><input type="radio" id="radio_cause2" name="hdi"   onChange="update_data('cause_num','2')"> Cardiovascular Disease</label>
+		<br/>
+		<label><input type="radio" id="radio_cause2" name="hdi"   onChange="update_data('cause_num','0')"> Major NCDs</label>
+		<!--br/>
+		<br/>
+		<label><input type="checkbox" id="check_axis"  name="axis_update"  checked="checked"> Update axis</label-->
+		<br/><br/>
 		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2000</label>
 		<br/>
 		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2015</label>
 		</form>
 		
-		
-		<div>
-		<form>
-		<label><input type="checkbox" id="check_scale"  name="scale_update" onChange="update_scale()">Log scale</label>
-		</form>
-		</div>
+
 		
 		</div>
 		
