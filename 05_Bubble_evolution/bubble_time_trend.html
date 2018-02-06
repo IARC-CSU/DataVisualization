@@ -36,7 +36,9 @@
 	var nb_cancer = 20  // nb of cancer shows (here top 10)
 	var label_wrap = 11 // size max of a label on one line
 	
-	var var_height = 500	
+	
+	var var_height = 500
+	
 
 	var xScale = d3.scale.linear()
 		.domain([1, nb_cancer])  // 
@@ -44,7 +46,7 @@
 		
 	// width of the bar graphs
 
-	var graph_width = xScale(((nb_cancer+1)*bar_space)+nb_cancer)
+	var graph_width = xScale(((nb_cancer+1+0.5)*bar_space)+nb_cancer+0.5)
 
 	
 	// I define xScale and Xaxis's here because I want them as general variable 

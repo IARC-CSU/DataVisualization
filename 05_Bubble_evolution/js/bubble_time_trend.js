@@ -213,13 +213,13 @@
 		graph_select.append("text") // add x axis subtitle
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
-			.attr("transform", "translate("+xScale(6*(bar_space+1))+"," +(var_height +150) + ")")
+			.attr("transform", "translate("+xScale(5.5*(bar_space+1))+"," +(var_height +150) + ")")
 			.text("Medium / High HDI")
 			
 		graph_select.append("text") // add x axis subtitle
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
-			.attr("transform", "translate("+xScale(15*(bar_space+1))+"," +(var_height +150) + ")")
+			.attr("transform", "translate("+xScale(16*(bar_space+1))+"," +(var_height +150) + ")")
 			.text("Very High HDI")
 	
 
@@ -243,8 +243,9 @@
 			.append("g")
 			.attr("class", "circle_holder")
 			.attr("transform", function(d, i) {
+				shift = (d.values[0].values[0].hdi-1)/2
 				pos = (d.values[0].values[0].rank)
-				return "translate(" + xScale((pos)*(bar_space+1)) + ",0)";
+				return "translate(" + xScale((pos+shift)*(bar_space+1)) + ",0)";
 				})
 				
 
@@ -290,8 +291,9 @@
 			.append("g")
 			.attr("class","cancer_label_holder")
 			.attr("transform", function(d, i) {
+				shift = (d.values[0].values[0].hdi-1)/2
 				pos = (d.values[0].values[0].rank)
-				return "translate(" + (xScale((pos)*(bar_space+1))-10) + "," + (var_height +30)+ ")";
+				return "translate(" + (xScale((pos+shift)*(bar_space+1))-10) + "," + (var_height +30)+ ")";
 				})
 			
 		node_label
@@ -318,10 +320,18 @@
 			.append("line")
 			.style("stroke", "black")  
 			.attr("x1",  function(d, i) {
-				return xScale((i+1)*(bar_space+1))
+				pos = (i+1)
+				if (i > 9) {
+					pos = pos +0.5
+				}
+				return xScale((pos)*(bar_space+1))
 			})
 			.attr("x2",  function(d, i) {
-				return xScale((i+1)*(bar_space+1))
+				pos = (i+1)
+				if (i > 9) {
+					pos = pos +0.5
+				}
+				return xScale((pos)*(bar_space+1))
 			})
 			.attr("y1", var_height) 
 			.attr("y2", 0) 
@@ -334,10 +344,18 @@
 			.append("line")
 			.style("stroke", "black")  
 			.attr("x1",  function(d, i) {
-				return xScale((i+1)*(bar_space+1))
+				pos = (i+1)
+				if (i > 9) {
+					pos = pos +0.5
+				}
+				return xScale((pos)*(bar_space+1))
 			})
 			.attr("x2",  function(d, i) {
-				return xScale((i+1)*(bar_space+1))
+				pos = (i+1)
+				if (i > 9) {
+					pos = pos +0.5
+				}
+				return xScale((pos)*(bar_space+1))
 			})
 			.attr("y1", var_height + 10)  
 			.attr("y2", var_height) 
@@ -626,8 +644,9 @@
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
 			.attr("transform", function(d, i) {
+				shift = (d.values[0].values[0].hdi-1)/2
 				pos = (d.values[0].values[0].rank)
-				return "translate(" + xScale((pos)*(bar_space+1)) + ",0)";
+				return "translate(" + xScale((pos+shift)*(bar_space+1)) + ",0)";
 				})
 				
 
@@ -668,8 +687,9 @@
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
 			.attr("transform", function(d, i) {
+				shift = (d.values[0].values[0].hdi-1)/2
 				pos = (d.values[0].values[0].rank)
-				return "translate(" + xScale((pos)*(bar_space+1)) + "," + (var_height +30)+ ")";
+				return "translate(" + xScale((pos+shift)*(bar_space+1)) + "," + (var_height +30)+ ")";
 				})
 			
 			
