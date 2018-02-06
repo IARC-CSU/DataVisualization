@@ -16,7 +16,6 @@
 				risk: +d.risk,
 				year: +d.year,
 				rank: +d.rank,
-				select: +d.select
 
 				};	
 			},		
@@ -68,53 +67,74 @@
 	
 	function add_legend(graph) {
 		
+		var line_legend = [ 
+		  { "x": 0,   "y": 0},  
+		  { "x": 5,  "y": 20},
+		  { "x": 10,  "y": 30},
+		  { "x": 15,  "y": 52},		  
+		  { "x": 20,  "y": 66},
+		  { "x": 25,  "y": 76},
+		  { "x": 30,  "y": 81},
+		  { "x": 35,  "y": 83},
+		  { "x": 40,  "y": 85},
+		];
+		
 		graph_select = graph
+		
+		var path_legend = graph_select.append("path")
+			.attr("class","path_legend")
+			.style("stroke", "#b7b7b7")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("d", function(d, i){
+				return lineFunction_legend(line_legend)
+				})
+			.attr("fill", "none");
+			
+		path_legend
+			.attr("stroke-dasharray", function(d,i) {
+
+				length = path_legend.node().getTotalLength();
+				return length + " " + length
+			})
+			.attr("stroke-dashoffset", function(d,i) {
+				length = path_legend.node().getTotalLength();
+				return length;
+			})
 		
 		 graph_select.append("circle")
 			.attr("class","circle_legend1")
-			.attr("r", 20)
-			.style("stroke", "#b7b7b7")   // set the line colour
-			.style("stroke-width", 2)
-			.attr("fill", "none");
-			
-		graph_select.append("circle")
-			.attr("class","circle_legend2")
-			.attr("r", 20)
-			.style("stroke", "#b7b7b7")   // set the line colour
-			//.attr("cy", function(d, i) {return yScale(d.rate2)- yScale(d.rate1)})
+			.attr("r", 10)
+			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("fill", "#b7b7b7");
 			
 		graph_select.append("text")
-			.attr("class","text_legend1")
+			.attr("class","text_legend_base")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
+			.attr("transform","translate(-10,3)")
 			.text("2000")
-			.attr("dy", "0.25em")
+			.attr("dy", "0.15em")
 			
 		graph_select.append("text")
-			.attr("class","text_legend2")
+			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
+			.attr("transform","translate(-10,3)")
 			.attr("x", 25)
-			.text("2015")
-			.style("opacity",0)
-			.attr("dy", "0.25em")
-
-		
+			.text("2000")
+			.attr("dy", "0.15em")
+			
 	}
 	
 	function add_axis_title(graph,data) { 
-	// Add axis, title and x-title to the graph
-		// graph to add axis and title 
-		// data 
-		// boolean: True:left graph, False: Right bar graph
-		
-		
 
-		var y_max = d3.max(data, function(d) {return d.risk})
-		var y_min = d3.min(data, function(d) {return d.risk})
-		
-		var tick_list = tick_generator(40, 0, false) // diff log scale
+
+		var tick_list = new Object();  
+		tick_list.major = [0,2,4,6,8,10,12];
+		tick_list.minor = [1,3,5,7,9,11];
+		tick_list.value_top = 12; 
+		tick_list.value_bottom = 0; 
+
 		
 		yScale.domain([0, tick_list.value_top]) 
 
@@ -130,7 +150,7 @@
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
-			.tickFormat(d3.format(".1f"));
+			.tickFormat(d3.format(".0f"));
 			
 					
 	    var yAxis_minor = d3.svg.axis() 
@@ -141,10 +161,7 @@
 			.tickValues(tick_list.minor)	
 			.tickFormat("")	;
 			
-
-		
 		graph_select = graph
-		
 		
 		graph_select.append("g") // draw axis major
 			.attr("class", "yaxis")
@@ -156,7 +173,6 @@
 			.attr("transform", "translate(" + (axis_x)+ "," +(0) + ")")
 			.call(yAxis_minor);
 				
-	
 		graph_select.selectAll(".yaxis") // add Big tick
 			.data(tick_list.major, function(d) { return d; })
 			.enter()
@@ -192,6 +208,20 @@
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
 				.text("Risk of dying (%)")
+				
+	
+		graph_select.append("text") // add x axis subtitle
+			.attr("class", "y_title")
+			.attr("text-anchor", "middle")
+			.attr("transform", "translate("+xScale(6*(bar_space+1))+"," +(var_height +150) + ")")
+			.text("Medium / High HDI")
+			
+		graph_select.append("text") // add x axis subtitle
+			.attr("class", "y_title")
+			.attr("text-anchor", "middle")
+			.attr("transform", "translate("+xScale(15*(bar_space+1))+"," +(var_height +150) + ")")
+			.text("Very High HDI")
+	
 
 		
 
@@ -244,7 +274,7 @@
 
 		nodes.append("circle")
 			.attr("class","circle1")
-			.attr("r",15)
+			.attr("r",10)
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {
@@ -261,7 +291,7 @@
 			.attr("class","cancer_label_holder")
 			.attr("transform", function(d, i) {
 				pos = (d.values[0].values[0].rank)
-				return "translate(" + xScale((pos)*(bar_space+1)) + "," + (var_height +30)+ ")";
+				return "translate(" + (xScale((pos)*(bar_space+1))-10) + "," + (var_height +30)+ ")";
 				})
 			
 		node_label
@@ -281,14 +311,34 @@
 			
 			
 
-		nodes.append("line") // add line for each group
+		graph_select.append("g") // add line for each group
+			.selectAll()
+			.data(data_temp)
+			.enter()
+			.append("line")
 			.style("stroke", "black")  
+			.attr("x1",  function(d, i) {
+				return xScale((i+1)*(bar_space+1))
+			})
+			.attr("x2",  function(d, i) {
+				return xScale((i+1)*(bar_space+1))
+			})
 			.attr("y1", var_height) 
 			.attr("y2", 0) 
 			.style("opacity", 0.1);
 			
-		nodes.append("line") // add tick for each group
+		graph_select.append("g") // add line for each group
+			.selectAll()
+			.data(data_temp)
+			.enter()
+			.append("line")
 			.style("stroke", "black")  
+			.attr("x1",  function(d, i) {
+				return xScale((i+1)*(bar_space+1))
+			})
+			.attr("x2",  function(d, i) {
+				return xScale((i+1)*(bar_space+1))
+			})
 			.attr("y1", var_height + 10)  
 			.attr("y2", var_height) 
 			.style("opacity", 1);
@@ -317,35 +367,52 @@
 	
 	function update_legend(bool) {
 		
-		d3.select("#chart").select(".graph_legend").selectAll(".circle_legend2")
+		var path_legend = d3.select("#chart").select(".path_legend")
+		console.log(path_legend.node())
+		
+		if (bool) {
+			d3.select("#chart").select(".graph_legend").selectAll(".circle_legend1")
 			.transition().duration(transition_time).ease(ease_effect)
-						.attr("transform",function(d,i) {
-				if (bool) {
-					return "translate(0,50)";
-				}
-				else {
-					return "translate(0,0)";
-				}
-			})
+			.attrTween("transform",translateAlong_legend(path_legend.node())); 
 			
-		d3.select("#chart").select(".graph_legend").selectAll(".text_legend2")
+			path_legend
+				.transition()
+				.duration(transition_time)
+				.ease(ease_effect)
+				.attr("stroke-dashoffset", 0);
+				
+		} else {
+			d3.select("#chart").select(".graph_legend").selectAll(".circle_legend1")
+			.transition().duration(transition_time).ease(ease_effect)
+			.attr("transform", "translate(0,0)")
+			
+			path_legend
+				.transition()
+				.duration(transition_time)
+				.ease(ease_effect)
+				.attr("stroke-dashoffset", path_legend.node().getTotalLength());
+			
+		}
+			
+		d3.select("#chart").select(".graph_legend").selectAll(".text_legend1")
 			.transition().duration(transition_time).ease(ease_effect)
 			.attr("transform",function(d,i) {
 				if (bool) {
-					return "translate(0,50)";
+					return "translate(30,88)";
 				}
 				else {
-					return "translate(0,0)";
+					return "translate(-10,3)";
 				}
 			})
-			.style("opacity",function() {
-				if (bool) {
-					return 1;
-				}
-				else {
-					return 0;
-				}
-			})
+			.tween("text", function(d) {
+				if(bool)
+		      		var i = d3.interpolate(  2000 , 2015 );
+		      	else
+		      		var i = d3.interpolate(  2015 , 2000 );
+		      	return function(t) {
+		        	d3.select(this).text( roundNumber(i(t), 1) );
+		      	};
+		    })
 			.each("end", function() {
 				document.getElementById('radio_old').disabled = false;
 				document.getElementById('radio_new').disabled = false;
@@ -419,7 +486,6 @@
 				risk: +d.risk,
 				year: +d.year,
 				rank: +d.rank,
-				select: +d.select
 
 				};	
 			},		
@@ -439,12 +505,110 @@
 					.entries(data_temp)
 
 				var bar_graph=d3.select("#chart").select(".bar_graph1")
-
+				
+				update_axis(bar_graph,data_temp);
 				update_data_circle(bar_graph,data_nest);
-				update_legend( false);
+
 			}
 		)
 	}
+	
+	function update_axis(graph,data) {
+		
+		var y_max = d3.max(data, function(d) {return d.risk})
+		var tick_list = tick_generator(y_max, 0, false) // diff log scale
+		
+		
+		if (document.getElementById('radio_cause1').checked) {
+			tick_list.major = [0,2,4,6,8,10,12];
+			tick_list.minor = [1,3,5,7,9,11];
+			tick_list.value_top = 12; // Will change according to the last tick
+			tick_list.value_bottom = 0; // Will change according to the first tick
+		} 
+		else if (document.getElementById('radio_cause2').checked) {
+			tick_list.major = [0,5,10,15,20,25,30];
+			tick_list.minor = [2.5,7.5,12.5,17.5,22.5,27.5];
+			tick_list.value_top = 30; // Will change according to the last tick
+			tick_list.value_bottom = 0; // Will change according to the first tick
+		}
+
+		
+		yScale.domain([0, tick_list.value_top]) 
+
+		axis_orient = "left"
+		axis_x = 0
+		axis_tick1 = 10
+		axis_tick2 = 0
+		
+		var yAxis = d3.svg.axis() 
+			.scale(yScale)
+			.orient(axis_orient)
+			.tickSize(-graph_width, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_list.major)	
+			.tickFormat(d3.format(".0f"));
+			
+					
+	    var yAxis_minor = d3.svg.axis() 
+			.scale(yScale)  
+			.orient(axis_orient)
+			.tickSize(-graph_width, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_list.minor)	
+			.tickFormat("")	;
+			
+		graph_select = graph	
+		
+		graph_select  //  grid Major transition
+		   .selectAll(".yaxis")
+           .transition().duration(transition_time).ease(ease_effect)  
+           .call(yAxis); 
+
+		graph_select //  grid Minor transition
+			.selectAll(".yaxis_minor")
+			.transition().duration(transition_time).ease(ease_effect)
+			.call(yAxis_minor);  
+		
+
+		// update tick position major
+		 var xgrid_major=graph_select.selectAll(".tick_major")
+			.data(tick_list.major, function(d) { return d; })
+			
+		xgrid_major.transition().duration(transition_time).ease(ease_effect)
+			.attr("y1", function(d) {return yScale(d); })
+			.attr("y2", function(d) {return yScale(d); })
+					
+		xgrid_major.exit().remove()
+			
+		xgrid_major.enter()
+			.append("line")
+			.attr("class", "tick_major")
+			.attr("stroke", "black")
+			.attr("x2",  axis_tick2 )
+		    .attr("x1", -axis_tick1)
+			.attr("y1", function(d) { return yScale(d); })
+			.attr("y2", function(d) { return yScale(d); })
+			
+		var xgrid_minor=graph_select.selectAll(".tick_minor")
+			.data(tick_list.minor, function(d) { return d; })		
+			
+		 xgrid_minor.transition().duration(transition_time).ease(ease_effect)
+			.attr("y1", function(d) { return yScale(d); })
+			.attr("y2", function(d) { return yScale(d); })
+		
+		xgrid_minor.exit().remove()
+					
+		xgrid_minor.enter()
+			.append("line")
+			.attr("class", "tick_minor")
+			.attr("stroke", "black")
+			.attr("x2",  axis_tick2)
+			.attr("x1", -axis_tick1)
+			.attr("y2", function(d) { return yScale(d); })
+			.attr("y1", function(d) { return yScale(d); })
+		
+	
+	}	
 	
 	function update_data_circle(graph, data) {
 
@@ -750,6 +914,16 @@
 	return (tick_list)
 	}
 
+	function translateAlong_legend(path) {
+	return function(d,i) {
+		var l = path.getTotalLength();
+		return function(t) {
+			var p =  path.getPointAtLength(t * l);
+			return "translate(" + p.x + "," + p.y + ")";//Move marker
+			}
+		}
+	}
+	
 	function translateAlong(path) {
 	return function(d,i) {
 		var temp = path[0][i]
@@ -771,7 +945,7 @@
 		return lines
 	}
 	
-	function roundNumber( value ){
-		var val =  Math.round( value * 10) / 10 ; 
+	function roundNumber( value, digit ){
+		var val =  Math.round( value * digit) / digit ; 
 		return val ; 
 	}
