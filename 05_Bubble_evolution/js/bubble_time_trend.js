@@ -103,7 +103,7 @@
 		
 		 graph_select.append("circle")
 			.attr("class","circle_legend1")
-			.attr("r", 10)
+			.attr("r", 7)
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("fill", "#b7b7b7");
@@ -275,13 +275,13 @@
 
 		nodes.append("circle")
 			.attr("class","circle1")
-			.attr("r",10)
+			.attr("r",7)
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {
 				return "translate(0," + (yScale(d.values[0].values[0].risk)) + ")";}) 
 			.attr("fill", function(d, i) {
-				return color_cancer[d.values[0].values[0].hdi]
+				return color_cancer[d.values[0].values[0].hdi] 
 			});
 		
 		var node_label = graph_select
