@@ -15,7 +15,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank,
+				rank: +d.rank2,
 
 				};	
 			},		
@@ -293,7 +293,7 @@
 			.attr("transform", function(d, i) {
 				shift = (d.values[0].values[0].hdi-1)/2
 				pos = (d.values[0].values[0].rank)
-				return "translate(" + (xScale((pos+shift)*(bar_space+1))-10) + "," + (var_height +30)+ ")";
+				return "translate(" + (xScale((pos+shift)*(bar_space+1))) + "," + (var_height +30)+ ")";
 				})
 			
 		node_label
@@ -510,7 +510,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank,
+				rank: +d.rank2,
 
 				};	
 			},		

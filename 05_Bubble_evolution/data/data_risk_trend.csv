@@ -1,961 +1,961 @@
-country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,select,rank
-"Costa Rica",1,"CVD",2000,2,188,7,"Central America",6.5278673,1,1
-"Colombia",1,"CVD",2000,2,170,8,"South America",8.6685772,1,2
-"Mexico",1,"CVD",2000,2,484,7,"Central America",6.2216768,1,3
-"Brazil",1,"CVD",2000,2,76,8,"South America",10.573636,1,4
-"Mauritius",1,"CVD",2000,2,480,1,"Eastern Africa",20.26078,1,5
-"Kazakhstan",1,"CVD",2000,2,398,12,"Southern Asia",26.956541,1,6
-"Philippines",1,"CVD",2000,2,608,11,"South-Eastern Asia",13.903239,1,7
-"Bulgaria",1,"CVD",2000,2,100,14,"Eastern Europe",19.576309,1,8
-"Ukraine",1,"CVD",2000,2,804,14,"Eastern Europe",23.55271,1,9
-"Uzbekistan",1,"CVD",2000,2,860,12,"Southern Asia",23.159161,1,10
-"France",2,"CVD",2000,2,250,17,"Western Europe",3.9225061,1,11
-"Australia",2,"CVD",2000,2,36,18,"Australia/New Zealand",4.6044908,1,12
-"Norway",2,"CVD",2000,2,578,15,"Northern Europe",5.4251451,1,13
-"Japan",2,"CVD",2000,2,392,10,"Eastern Asia",3.8849962,1,14
-"Italy",2,"CVD",2000,2,380,16,"Southern Europe",4.9162488,1,15
-"New Zealand",2,"CVD",2000,2,554,18,"Australia/New Zealand",6.3879819,1,16
-"United Kingdom",2,"CVD",2000,2,826,15,"Northern Europe",7.1075692,1,17
-"Chile",2,"CVD",2000,2,152,8,"South America",6.1399679,1,18
-"USA",2,"CVD",2000,2,840,9,"Northern America",7.7744498,1,19
-"Slovakia",2,"CVD",2000,2,703,14,"Eastern Europe",14.497818,1,20
-"Mexico",1,"Cancer",2000,1,484,7,"Central America",5.0024629,1,1
-"Uzbekistan",1,"Cancer",2000,1,860,12,"Southern Asia",4.9822612,1,2
-"Colombia",1,"Cancer",2000,1,170,8,"South America",6.3135805,1,3
-"Costa Rica",1,"Cancer",2000,1,188,7,"Central America",5.8422918,1,4
-"Mauritius",1,"Cancer",2000,1,480,1,"Eastern Africa",5.093215,1,5
-"Philippines",1,"Cancer",2000,1,608,11,"South-Eastern Asia",6.0841141,1,6
-"Brazil",1,"Cancer",2000,1,76,8,"South America",6.087153,1,7
-"Kazakhstan",1,"Cancer",2000,1,398,12,"Southern Asia",11.189437,1,8
-"Ukraine",1,"Cancer",2000,1,804,14,"Eastern Europe",10.47517,1,9
-"Bulgaria",1,"Cancer",2000,1,100,14,"Eastern Europe",8.6776171,1,10
-"Japan",2,"Cancer",2000,1,392,10,"Eastern Asia",7.2292948,1,11
-"Norway",2,"Cancer",2000,1,578,15,"Northern Europe",7.8953981,1,12
-"Australia",2,"Cancer",2000,1,36,18,"Australia/New Zealand",7.5054922,1,13
-"Chile",2,"Cancer",2000,1,152,8,"South America",7.5448861,1,14
-"Italy",2,"Cancer",2000,1,380,16,"Southern Europe",8.1999741,1,15
-"New Zealand",2,"Cancer",2000,1,554,18,"Australia/New Zealand",8.6965218,1,16
-"USA",2,"Cancer",2000,1,840,9,"Northern America",8.4499817,1,17
-"United Kingdom",2,"Cancer",2000,1,826,15,"Northern Europe",8.5433397,1,18
-"France",2,"Cancer",2000,1,250,17,"Western Europe",9.1532679,1,19
-"Slovakia",2,"Cancer",2000,1,703,14,"Eastern Europe",11.704638,1,20
-"Costa Rica",1,"Major NCDs",2000,0,188,7,"Central America",14.090753,1,1
-"Colombia",1,"Major NCDs",2000,0,170,8,"South America",17.15904,1,2
-"Mexico",1,"Major NCDs",2000,0,484,7,"Central America",16.3724,1,3
-"Brazil",1,"Major NCDs",2000,0,76,8,"South America",19.0672,1,4
-"Philippines",1,"Major NCDs",2000,0,608,11,"South-Eastern Asia",22.793829,1,5
-"Kazakhstan",1,"Major NCDs",2000,0,398,12,"Southern Asia",35.665241,1,6
-"Mauritius",1,"Major NCDs",2000,0,480,1,"Eastern Africa",28.034609,1,7
-"Bulgaria",1,"Major NCDs",2000,0,100,14,"Eastern Europe",27.690691,1,8
-"Uzbekistan",1,"Major NCDs",2000,0,860,12,"Southern Asia",28.508209,1,9
-"Ukraine",1,"Major NCDs",2000,0,804,14,"Eastern Europe",32.071678,1,10
-"Japan",2,"Major NCDs",2000,0,392,10,"Eastern Asia",11.445832,1,11
-"Norway",2,"Major NCDs",2000,0,578,15,"Northern Europe",13.939801,1,12
-"Australia",2,"Major NCDs",2000,0,36,18,"Australia/New Zealand",12.99395,1,13
-"Italy",2,"Major NCDs",2000,0,380,16,"Southern Europe",13.574398,1,14
-"France",2,"Major NCDs",2000,0,250,17,"Western Europe",13.492664,1,15
-"New Zealand",2,"Major NCDs",2000,0,554,18,"Australia/New Zealand",16.221691,1,16
-"United Kingdom",2,"Major NCDs",2000,0,826,15,"Northern Europe",16.348099,1,17
-"Chile",2,"Major NCDs",2000,0,152,8,"South America",14.896929,1,18
-"USA",2,"Major NCDs",2000,0,840,9,"Northern America",17.607821,1,19
-"Slovakia",2,"Major NCDs",2000,0,703,14,"Eastern Europe",25.54529,1,20
-"Costa Rica",1,"CVD",2001,2,188,7,"Central America",6.3534646,1,1
-"Colombia",1,"CVD",2001,2,170,8,"South America",8.4173145,1,2
-"Mexico",1,"CVD",2001,2,484,7,"Central America",6.1013622,1,3
-"Brazil",1,"CVD",2001,2,76,8,"South America",10.304596,1,4
-"Mauritius",1,"CVD",2001,2,480,1,"Eastern Africa",20.129412,1,5
-"Kazakhstan",1,"CVD",2001,2,398,12,"Southern Asia",27.125681,1,6
-"Philippines",1,"CVD",2001,2,608,11,"South-Eastern Asia",14.082471,1,7
-"Bulgaria",1,"CVD",2001,2,100,14,"Eastern Europe",19.339449,1,8
-"Ukraine",1,"CVD",2001,2,804,14,"Eastern Europe",23.800131,1,9
-"Uzbekistan",1,"CVD",2001,2,860,12,"Southern Asia",23.00746,1,10
-"France",2,"CVD",2001,2,250,17,"Western Europe",3.7704251,1,11
-"Australia",2,"CVD",2001,2,36,18,"Australia/New Zealand",4.3160257,1,12
-"Norway",2,"CVD",2001,2,578,15,"Northern Europe",5.0633349,1,13
-"Japan",2,"CVD",2001,2,392,10,"Eastern Asia",3.797441,1,14
-"Italy",2,"CVD",2001,2,380,16,"Southern Europe",4.6360192,1,15
-"New Zealand",2,"CVD",2001,2,554,18,"Australia/New Zealand",6.0439968,1,16
-"United Kingdom",2,"CVD",2001,2,826,15,"Northern Europe",7.1075692,1,17
-"Chile",2,"CVD",2001,2,152,8,"South America",6.0097532,1,18
-"USA",2,"CVD",2001,2,840,9,"Northern America",7.5309267,1,19
-"Slovakia",2,"CVD",2001,2,703,14,"Eastern Europe",13.931209,1,20
-"Mexico",1,"Cancer",2001,1,484,7,"Central America",4.9607501,1,1
-"Uzbekistan",1,"Cancer",2001,1,860,12,"Southern Asia",4.8595862,1,2
-"Colombia",1,"Cancer",2001,1,170,8,"South America",6.2990108,1,3
-"Costa Rica",1,"Cancer",2001,1,188,7,"Central America",5.7188029,1,4
-"Mauritius",1,"Cancer",2001,1,480,1,"Eastern Africa",5.1891818,1,5
-"Philippines",1,"Cancer",2001,1,608,11,"South-Eastern Asia",6.131237,1,6
-"Brazil",1,"Cancer",2001,1,76,8,"South America",6.0933328,1,7
-"Kazakhstan",1,"Cancer",2001,1,398,12,"Southern Asia",10.955499,1,8
-"Ukraine",1,"Cancer",2001,1,804,14,"Eastern Europe",10.308233,1,9
-"Bulgaria",1,"Cancer",2001,1,100,14,"Eastern Europe",8.618598,1,10
-"Japan",2,"Cancer",2001,1,392,10,"Eastern Asia",7.055644,1,11
-"Norway",2,"Cancer",2001,1,578,15,"Northern Europe",7.7748494,1,12
-"Australia",2,"Cancer",2001,1,36,18,"Australia/New Zealand",7.339848,1,13
-"Chile",2,"Cancer",2001,1,152,8,"South America",7.466887,1,14
-"Italy",2,"Cancer",2001,1,380,16,"Southern Europe",8.0345516,1,15
-"New Zealand",2,"Cancer",2001,1,554,18,"Australia/New Zealand",8.4714441,1,16
-"USA",2,"Cancer",2001,1,840,9,"Northern America",8.3130579,1,17
-"United Kingdom",2,"Cancer",2001,1,826,15,"Northern Europe",8.5433397,1,18
-"France",2,"Cancer",2001,1,250,17,"Western Europe",8.9893522,1,19
-"Slovakia",2,"Cancer",2001,1,703,14,"Eastern Europe",11.449417,1,20
-"Costa Rica",1,"Major NCDs",2001,0,188,7,"Central America",13.81035,1,1
-"Colombia",1,"Major NCDs",2001,0,170,8,"South America",16.89595,1,2
-"Mexico",1,"Major NCDs",2001,0,484,7,"Central America",16.362589,1,3
-"Brazil",1,"Major NCDs",2001,0,76,8,"South America",18.77932,1,4
-"Philippines",1,"Major NCDs",2001,0,608,11,"South-Eastern Asia",23.089661,1,5
-"Kazakhstan",1,"Major NCDs",2001,0,398,12,"Southern Asia",35.635628,1,6
-"Mauritius",1,"Major NCDs",2001,0,480,1,"Eastern Africa",28.122021,1,7
-"Bulgaria",1,"Major NCDs",2001,0,100,14,"Eastern Europe",27.389898,1,8
-"Uzbekistan",1,"Major NCDs",2001,0,860,12,"Southern Asia",28.252941,1,9
-"Ukraine",1,"Major NCDs",2001,0,804,14,"Eastern Europe",32.158649,1,10
-"Japan",2,"Major NCDs",2001,0,392,10,"Eastern Asia",11.179812,1,11
-"Norway",2,"Major NCDs",2001,0,578,15,"Northern Europe",13.478097,1,12
-"Australia",2,"Major NCDs",2001,0,36,18,"Australia/New Zealand",12.52452,1,13
-"Italy",2,"Major NCDs",2001,0,380,16,"Southern Europe",13.137733,1,14
-"France",2,"Major NCDs",2001,0,250,17,"Western Europe",13.181072,1,15
-"New Zealand",2,"Major NCDs",2001,0,554,18,"Australia/New Zealand",15.67831,1,16
-"United Kingdom",2,"Major NCDs",2001,0,826,15,"Northern Europe",16.348099,1,17
-"Chile",2,"Major NCDs",2001,0,152,8,"South America",14.70175,1,18
-"USA",2,"Major NCDs",2001,0,840,9,"Northern America",17.275181,1,19
-"Slovakia",2,"Major NCDs",2001,0,703,14,"Eastern Europe",24.823549,1,20
-"Costa Rica",1,"CVD",2002,2,188,7,"Central America",6.1193109,1,1
-"Colombia",1,"CVD",2002,2,170,8,"South America",8.0891247,1,2
-"Mexico",1,"CVD",2002,2,484,7,"Central America",5.9631009,1,3
-"Brazil",1,"CVD",2002,2,76,8,"South America",10.087742,1,4
-"Mauritius",1,"CVD",2002,2,480,1,"Eastern Africa",19.967464,1,5
-"Kazakhstan",1,"CVD",2002,2,398,12,"Southern Asia",27.25724,1,6
-"Philippines",1,"CVD",2002,2,608,11,"South-Eastern Asia",14.33855,1,7
-"Bulgaria",1,"CVD",2002,2,100,14,"Eastern Europe",19.26264,1,8
-"Ukraine",1,"CVD",2002,2,804,14,"Eastern Europe",24.02459,1,9
-"Uzbekistan",1,"CVD",2002,2,860,12,"Southern Asia",22.931349,1,10
-"France",2,"CVD",2002,2,250,17,"Western Europe",3.5884309,1,11
-"Australia",2,"CVD",2002,2,36,18,"Australia/New Zealand",4.0726562,1,12
-"Norway",2,"CVD",2002,2,578,15,"Northern Europe",4.6982608,1,13
-"Japan",2,"CVD",2002,2,392,10,"Eastern Asia",3.6903138,1,14
-"Italy",2,"CVD",2002,2,380,16,"Southern Europe",4.3529282,1,15
-"New Zealand",2,"CVD",2002,2,554,18,"Australia/New Zealand",5.6746941,1,16
-"United Kingdom",2,"CVD",2002,2,826,15,"Northern Europe",6.6201849,1,17
-"Chile",2,"CVD",2002,2,152,8,"South America",5.8453617,1,18
-"USA",2,"CVD",2002,2,840,9,"Northern America",7.2756319,1,19
-"Slovakia",2,"CVD",2002,2,703,14,"Eastern Europe",13.440694,1,20
-"Mexico",1,"Cancer",2002,1,484,7,"Central America",4.9066653,1,1
-"Uzbekistan",1,"Cancer",2002,1,860,12,"Southern Asia",4.7893171,1,2
-"Colombia",1,"Cancer",2002,1,170,8,"South America",6.2105088,1,3
-"Costa Rica",1,"Cancer",2002,1,188,7,"Central America",5.69173,1,4
-"Mauritius",1,"Cancer",2002,1,480,1,"Eastern Africa",5.3350062,1,5
-"Philippines",1,"Cancer",2002,1,608,11,"South-Eastern Asia",6.1315713,1,6
-"Brazil",1,"Cancer",2002,1,76,8,"South America",6.1056681,1,7
-"Kazakhstan",1,"Cancer",2002,1,398,12,"Southern Asia",10.754025,1,8
-"Ukraine",1,"Cancer",2002,1,804,14,"Eastern Europe",10.142809,1,9
-"Bulgaria",1,"Cancer",2002,1,100,14,"Eastern Europe",8.5790892,1,10
-"Japan",2,"Cancer",2002,1,392,10,"Eastern Asia",6.9165697,1,11
-"Norway",2,"Cancer",2002,1,578,15,"Northern Europe",7.6260157,1,12
-"Australia",2,"Cancer",2002,1,36,18,"Australia/New Zealand",7.2139301,1,13
-"Chile",2,"Cancer",2002,1,152,8,"South America",7.3647356,1,14
-"Italy",2,"Cancer",2002,1,380,16,"Southern Europe",7.8955994,1,15
-"New Zealand",2,"Cancer",2002,1,554,18,"Australia/New Zealand",8.290801,1,16
-"USA",2,"Cancer",2002,1,840,9,"Northern America",8.1519413,1,17
-"United Kingdom",2,"Cancer",2002,1,826,15,"Northern Europe",8.3545942,1,18
-"France",2,"Cancer",2002,1,250,17,"Western Europe",8.8295259,1,19
-"Slovakia",2,"Cancer",2002,1,703,14,"Eastern Europe",11.216391,1,20
-"Costa Rica",1,"Major NCDs",2002,0,188,7,"Central America",13.527184,1,1
-"Colombia",1,"Major NCDs",2002,0,170,8,"South America",16.382959,1,2
-"Mexico",1,"Major NCDs",2002,0,484,7,"Central America",16.26898,1,3
-"Brazil",1,"Major NCDs",2002,0,76,8,"South America",18.54237,1,4
-"Philippines",1,"Major NCDs",2002,0,608,11,"South-Eastern Asia",23.5611,1,5
-"Kazakhstan",1,"Major NCDs",2002,0,398,12,"Southern Asia",35.886932,1,6
-"Mauritius",1,"Major NCDs",2002,0,480,1,"Eastern Africa",28.075951,1,7
-"Bulgaria",1,"Major NCDs",2002,0,100,14,"Eastern Europe",27.24667,1,8
-"Uzbekistan",1,"Major NCDs",2002,0,860,12,"Southern Asia",28.287979,1,9
-"Ukraine",1,"Major NCDs",2002,0,804,14,"Eastern Europe",32.225372,1,10
-"Japan",2,"Major NCDs",2002,0,392,10,"Eastern Asia",10.921783,1,11
-"Norway",2,"Major NCDs",2002,0,578,15,"Northern Europe",12.974152,1,12
-"Australia",2,"Major NCDs",2002,0,36,18,"Australia/New Zealand",12.13914,1,13
-"Italy",2,"Major NCDs",2002,0,380,16,"Southern Europe",12.707578,1,14
-"France",2,"Major NCDs",2002,0,250,17,"Western Europe",12.832578,1,15
-"New Zealand",2,"Major NCDs",2002,0,554,18,"Australia/New Zealand",15.10235,1,16
-"United Kingdom",2,"Major NCDs",2002,0,826,15,"Northern Europe",15.70771,1,17
-"Chile",2,"Major NCDs",2002,0,152,8,"South America",14.45646,1,18
-"USA",2,"Major NCDs",2002,0,840,9,"Northern America",16.86977,1,19
-"Slovakia",2,"Major NCDs",2002,0,703,14,"Eastern Europe",24.165089,1,20
-"Costa Rica",1,"CVD",2003,2,188,7,"Central America",5.829917,1,1
-"Colombia",1,"CVD",2003,2,170,8,"South America",7.790102,1,2
-"Mexico",1,"CVD",2003,2,484,7,"Central America",5.8679128,1,3
-"Brazil",1,"CVD",2003,2,76,8,"South America",9.8252268,1,4
-"Mauritius",1,"CVD",2003,2,480,1,"Eastern Africa",18.39299,1,5
-"Kazakhstan",1,"CVD",2003,2,398,12,"Southern Asia",27.324459,1,6
-"Philippines",1,"CVD",2003,2,608,11,"South-Eastern Asia",14.55058,1,7
-"Bulgaria",1,"CVD",2003,2,100,14,"Eastern Europe",18.86867,1,8
-"Ukraine",1,"CVD",2003,2,804,14,"Eastern Europe",24.343849,1,9
-"Uzbekistan",1,"CVD",2003,2,860,12,"Southern Asia",22.992701,1,10
-"France",2,"CVD",2003,2,250,17,"Western Europe",3.4421279,1,11
-"Australia",2,"CVD",2003,2,36,18,"Australia/New Zealand",3.8187861,1,12
-"Norway",2,"CVD",2003,2,578,15,"Northern Europe",4.4192181,1,13
-"Japan",2,"CVD",2003,2,392,10,"Eastern Asia",3.6352899,1,14
-"Italy",2,"CVD",2003,2,380,16,"Southern Europe",4.1192279,1,15
-"New Zealand",2,"CVD",2003,2,554,18,"Australia/New Zealand",5.3557501,1,16
-"United Kingdom",2,"CVD",2003,2,826,15,"Northern Europe",6.1671519,1,17
-"Chile",2,"CVD",2003,2,152,8,"South America",5.7303119,1,18
-"USA",2,"CVD",2003,2,840,9,"Northern America",7.038322,1,19
-"Slovakia",2,"CVD",2003,2,703,14,"Eastern Europe",13.086195,1,20
-"Mexico",1,"Cancer",2003,1,484,7,"Central America",4.8587341,1,1
-"Uzbekistan",1,"Cancer",2003,1,860,12,"Southern Asia",4.745399,1,2
-"Colombia",1,"Cancer",2003,1,170,8,"South America",6.091351,1,3
-"Costa Rica",1,"Cancer",2003,1,188,7,"Central America",5.622992,1,4
-"Mauritius",1,"Cancer",2003,1,480,1,"Eastern Africa",5.3526173,1,5
-"Philippines",1,"Cancer",2003,1,608,11,"South-Eastern Asia",6.0801721,1,6
-"Brazil",1,"Cancer",2003,1,76,8,"South America",6.1147509,1,7
-"Kazakhstan",1,"Cancer",2003,1,398,12,"Southern Asia",10.556209,1,8
-"Ukraine",1,"Cancer",2003,1,804,14,"Eastern Europe",10.015729,1,9
-"Bulgaria",1,"Cancer",2003,1,100,14,"Eastern Europe",8.7771845,1,10
-"Japan",2,"Cancer",2003,1,392,10,"Eastern Asia",6.7592301,1,11
-"Norway",2,"Cancer",2003,1,578,15,"Northern Europe",7.5113401,1,12
-"Australia",2,"Cancer",2003,1,36,18,"Australia/New Zealand",7.0332012,1,13
-"Chile",2,"Cancer",2003,1,152,8,"South America",7.2605767,1,14
-"Italy",2,"Cancer",2003,1,380,16,"Southern Europe",7.747519,1,15
-"New Zealand",2,"Cancer",2003,1,554,18,"Australia/New Zealand",8.0978937,1,16
-"USA",2,"Cancer",2003,1,840,9,"Northern America",7.9931021,1,17
-"United Kingdom",2,"Cancer",2003,1,826,15,"Northern Europe",8.1890469,1,18
-"France",2,"Cancer",2003,1,250,17,"Western Europe",8.6863165,1,19
-"Slovakia",2,"Cancer",2003,1,703,14,"Eastern Europe",11.022689,1,20
-"Costa Rica",1,"Major NCDs",2003,0,188,7,"Central America",13.114463,1,1
-"Colombia",1,"Major NCDs",2003,0,170,8,"South America",15.92768,1,2
-"Mexico",1,"Major NCDs",2003,0,484,7,"Central America",16.283461,1,3
-"Brazil",1,"Major NCDs",2003,0,76,8,"South America",18.222191,1,4
-"Philippines",1,"Major NCDs",2003,0,608,11,"South-Eastern Asia",23.886379,1,5
-"Kazakhstan",1,"Major NCDs",2003,0,398,12,"Southern Asia",36.085423,1,6
-"Mauritius",1,"Major NCDs",2003,0,480,1,"Eastern Africa",27.815601,1,7
-"Bulgaria",1,"Major NCDs",2003,0,100,14,"Eastern Europe",27.049759,1,8
-"Uzbekistan",1,"Major NCDs",2003,0,860,12,"Southern Asia",28.47842,1,9
-"Ukraine",1,"Major NCDs",2003,0,804,14,"Eastern Europe",32.585968,1,10
-"Japan",2,"Major NCDs",2003,0,392,10,"Eastern Asia",10.705869,1,11
-"Norway",2,"Major NCDs",2003,0,578,15,"Northern Europe",12.589389,1,12
-"Australia",2,"Major NCDs",2003,0,36,18,"Australia/New Zealand",11.661334,1,13
-"Italy",2,"Major NCDs",2003,0,380,16,"Southern Europe",12.335422,1,14
-"France",2,"Major NCDs",2003,0,250,17,"Western Europe",12.539562,1,15
-"New Zealand",2,"Major NCDs",2003,0,554,18,"Australia/New Zealand",14.578449,1,16
-"United Kingdom",2,"Major NCDs",2003,0,826,15,"Northern Europe",15.10026,1,17
-"Chile",2,"Major NCDs",2003,0,152,8,"South America",14.283679,1,18
-"USA",2,"Major NCDs",2003,0,840,9,"Northern America",16.500019,1,19
-"Slovakia",2,"Major NCDs",2003,0,703,14,"Eastern Europe",23.670561,1,20
-"Costa Rica",1,"CVD",2004,2,188,7,"Central America",5.549758,1,1
-"Colombia",1,"CVD",2004,2,170,8,"South America",7.5815902,1,2
-"Mexico",1,"CVD",2004,2,484,7,"Central America",5.7639508,1,3
-"Brazil",1,"CVD",2004,2,76,8,"South America",9.6448927,1,4
-"Mauritius",1,"CVD",2004,2,480,1,"Eastern Africa",16.832607,1,5
-"Kazakhstan",1,"CVD",2004,2,398,12,"Southern Asia",27.38702,1,6
-"Philippines",1,"CVD",2004,2,608,11,"South-Eastern Asia",14.591974,1,7
-"Bulgaria",1,"CVD",2004,2,100,14,"Eastern Europe",18.52746,1,8
-"Ukraine",1,"CVD",2004,2,804,14,"Eastern Europe",24.61834,1,9
-"Uzbekistan",1,"CVD",2004,2,860,12,"Southern Asia",22.681601,1,10
-"France",2,"CVD",2004,2,250,17,"Western Europe",3.2987752,1,11
-"Australia",2,"CVD",2004,2,36,18,"Australia/New Zealand",3.5891018,1,12
-"Norway",2,"CVD",2004,2,578,15,"Northern Europe",4.1494379,1,13
-"Japan",2,"CVD",2004,2,392,10,"Eastern Asia",3.5607901,1,14
-"Italy",2,"CVD",2004,2,380,16,"Southern Europe",3.8865991,1,15
-"New Zealand",2,"CVD",2004,2,554,18,"Australia/New Zealand",5.0488319,1,16
-"United Kingdom",2,"CVD",2004,2,826,15,"Northern Europe",5.8207283,1,17
-"Chile",2,"CVD",2004,2,152,8,"South America",5.559154,1,18
-"USA",2,"CVD",2004,2,840,9,"Northern America",6.8115034,1,19
-"Slovakia",2,"CVD",2004,2,703,14,"Eastern Europe",12.757331,1,20
-"Mexico",1,"Cancer",2004,1,484,7,"Central America",4.8251433,1,1
-"Uzbekistan",1,"Cancer",2004,1,860,12,"Southern Asia",4.6698647,1,2
-"Colombia",1,"Cancer",2004,1,170,8,"South America",5.9928832,1,3
-"Costa Rica",1,"Cancer",2004,1,188,7,"Central America",5.5677729,1,4
-"Mauritius",1,"Cancer",2004,1,480,1,"Eastern Africa",5.2792091,1,5
-"Philippines",1,"Cancer",2004,1,608,11,"South-Eastern Asia",6.066617,1,6
-"Brazil",1,"Cancer",2004,1,76,8,"South America",6.1376476,1,7
-"Kazakhstan",1,"Cancer",2004,1,398,12,"Southern Asia",10.326834,1,8
-"Ukraine",1,"Cancer",2004,1,804,14,"Eastern Europe",9.9364481,1,9
-"Bulgaria",1,"Cancer",2004,1,100,14,"Eastern Europe",8.9410763,1,10
-"Japan",2,"Cancer",2004,1,392,10,"Eastern Asia",6.6025453,1,11
-"Norway",2,"Cancer",2004,1,578,15,"Northern Europe",7.3812852,1,12
-"Australia",2,"Cancer",2004,1,36,18,"Australia/New Zealand",6.8849669,1,13
-"Chile",2,"Cancer",2004,1,152,8,"South America",7.1291938,1,14
-"Italy",2,"Cancer",2004,1,380,16,"Southern Europe",7.6194549,1,15
-"New Zealand",2,"Cancer",2004,1,554,18,"Australia/New Zealand",7.8997478,1,16
-"USA",2,"Cancer",2004,1,840,9,"Northern America",7.8368859,1,17
-"United Kingdom",2,"Cancer",2004,1,826,15,"Northern Europe",8.0692739,1,18
-"France",2,"Cancer",2004,1,250,17,"Western Europe",8.5578613,1,19
-"Slovakia",2,"Cancer",2004,1,703,14,"Eastern Europe",10.785677,1,20
-"Costa Rica",1,"Major NCDs",2004,0,188,7,"Central America",12.724945,1,1
-"Colombia",1,"Major NCDs",2004,0,170,8,"South America",15.561821,1,2
-"Mexico",1,"Major NCDs",2004,0,484,7,"Central America",16.258881,1,3
-"Brazil",1,"Major NCDs",2004,0,76,8,"South America",18.01733,1,4
-"Philippines",1,"Major NCDs",2004,0,608,11,"South-Eastern Asia",23.958612,1,5
-"Kazakhstan",1,"Major NCDs",2004,0,398,12,"Southern Asia",36.225937,1,6
-"Mauritius",1,"Major NCDs",2004,0,480,1,"Eastern Africa",27.518351,1,7
-"Bulgaria",1,"Major NCDs",2004,0,100,14,"Eastern Europe",26.88909,1,8
-"Uzbekistan",1,"Major NCDs",2004,0,860,12,"Southern Asia",28.281408,1,9
-"Ukraine",1,"Major NCDs",2004,0,804,14,"Eastern Europe",32.920738,1,10
-"Japan",2,"Major NCDs",2004,0,392,10,"Eastern Asia",10.469664,1,11
-"Norway",2,"Major NCDs",2004,0,578,15,"Northern Europe",12.218896,1,12
-"Australia",2,"Major NCDs",2004,0,36,18,"Australia/New Zealand",11.271313,1,13
-"Italy",2,"Major NCDs",2004,0,380,16,"Southern Europe",11.982846,1,14
-"France",2,"Major NCDs",2004,0,250,17,"Western Europe",12.262549,1,15
-"New Zealand",2,"Major NCDs",2004,0,554,18,"Australia/New Zealand",14.062341,1,16
-"United Kingdom",2,"Major NCDs",2004,0,826,15,"Northern Europe",14.654679,1,17
-"Chile",2,"Major NCDs",2004,0,152,8,"South America",13.97167,1,18
-"USA",2,"Major NCDs",2004,0,840,9,"Northern America",16.121889,1,19
-"Slovakia",2,"Major NCDs",2004,0,703,14,"Eastern Europe",23.13867,1,20
-"Costa Rica",1,"CVD",2005,2,188,7,"Central America",5.3256721,1,1
-"Colombia",1,"CVD",2005,2,170,8,"South America",7.3469748,1,2
-"Mexico",1,"CVD",2005,2,484,7,"Central America",5.6587119,1,3
-"Brazil",1,"CVD",2005,2,76,8,"South America",9.5054436,1,4
-"Mauritius",1,"CVD",2005,2,480,1,"Eastern Africa",14.968912,1,5
-"Kazakhstan",1,"CVD",2005,2,398,12,"Southern Asia",27.351231,1,6
-"Philippines",1,"CVD",2005,2,608,11,"South-Eastern Asia",14.633367,1,7
-"Bulgaria",1,"CVD",2005,2,100,14,"Eastern Europe",18.058041,1,8
-"Ukraine",1,"CVD",2005,2,804,14,"Eastern Europe",24.771801,1,9
-"Uzbekistan",1,"CVD",2005,2,860,12,"Southern Asia",22.22014,1,10
-"France",2,"CVD",2005,2,250,17,"Western Europe",3.1649671,1,11
-"Australia",2,"CVD",2005,2,36,18,"Australia/New Zealand",3.4936939,1,12
-"Norway",2,"CVD",2005,2,578,15,"Northern Europe",3.909611,1,13
-"Japan",2,"CVD",2005,2,392,10,"Eastern Asia",3.4746509,1,14
-"Italy",2,"CVD",2005,2,380,16,"Southern Europe",3.6831691,1,15
-"New Zealand",2,"CVD",2005,2,554,18,"Australia/New Zealand",4.7873182,1,16
-"United Kingdom",2,"CVD",2005,2,826,15,"Northern Europe",5.4839201,1,17
-"Chile",2,"CVD",2005,2,152,8,"South America",5.4660802,1,18
-"USA",2,"CVD",2005,2,840,9,"Northern America",6.5633616,1,19
-"Slovakia",2,"CVD",2005,2,703,14,"Eastern Europe",12.534886,1,20
-"Mexico",1,"Cancer",2005,1,484,7,"Central America",4.7390051,1,1
-"Uzbekistan",1,"Cancer",2005,1,860,12,"Southern Asia",4.5885992,1,2
-"Colombia",1,"Cancer",2005,1,170,8,"South America",5.8614674,1,3
-"Costa Rica",1,"Cancer",2005,1,188,7,"Central America",5.4730501,1,4
-"Mauritius",1,"Cancer",2005,1,480,1,"Eastern Africa",5.2301021,1,5
-"Philippines",1,"Cancer",2005,1,608,11,"South-Eastern Asia",6.053062,1,6
-"Brazil",1,"Cancer",2005,1,76,8,"South America",6.1573377,1,7
-"Kazakhstan",1,"Cancer",2005,1,398,12,"Southern Asia",10.125909,1,8
-"Ukraine",1,"Cancer",2005,1,804,14,"Eastern Europe",9.8787699,1,9
-"Bulgaria",1,"Cancer",2005,1,100,14,"Eastern Europe",9.0491505,1,10
-"Japan",2,"Cancer",2005,1,392,10,"Eastern Asia",6.4830928,1,11
-"Norway",2,"Cancer",2005,1,578,15,"Northern Europe",7.2469802,1,12
-"Australia",2,"Cancer",2005,1,36,18,"Australia/New Zealand",6.8088002,1,13
-"Chile",2,"Cancer",2005,1,152,8,"South America",6.9629526,1,14
-"Italy",2,"Cancer",2005,1,380,16,"Southern Europe",7.5128226,1,15
-"New Zealand",2,"Cancer",2005,1,554,18,"Australia/New Zealand",7.8043923,1,16
-"USA",2,"Cancer",2005,1,840,9,"Northern America",7.6793151,1,17
-"United Kingdom",2,"Cancer",2005,1,826,15,"Northern Europe",7.9425735,1,18
-"France",2,"Cancer",2005,1,250,17,"Western Europe",8.4201231,1,19
-"Slovakia",2,"Cancer",2005,1,703,14,"Eastern Europe",10.667047,1,20
-"Costa Rica",1,"Major NCDs",2005,0,188,7,"Central America",12.359639,1,1
-"Colombia",1,"Major NCDs",2005,0,170,8,"South America",15.12187,1,2
-"Mexico",1,"Major NCDs",2005,0,484,7,"Central America",16.09383,1,3
-"Brazil",1,"Major NCDs",2005,0,76,8,"South America",17.850361,1,4
-"Philippines",1,"Major NCDs",2005,0,608,11,"South-Eastern Asia",24.030846,1,5
-"Kazakhstan",1,"Major NCDs",2005,0,398,12,"Southern Asia",36.29298,1,6
-"Mauritius",1,"Major NCDs",2005,0,480,1,"Eastern Africa",26.86227,1,7
-"Bulgaria",1,"Major NCDs",2005,0,100,14,"Eastern Europe",26.581991,1,8
-"Uzbekistan",1,"Major NCDs",2005,0,860,12,"Southern Asia",27.900291,1,9
-"Ukraine",1,"Major NCDs",2005,0,804,14,"Eastern Europe",33.15176,1,10
-"Japan",2,"Major NCDs",2005,0,392,10,"Eastern Asia",10.260807,1,11
-"Norway",2,"Major NCDs",2005,0,578,15,"Northern Europe",11.856099,1,12
-"Australia",2,"Major NCDs",2005,0,36,18,"Australia/New Zealand",11.089499,1,13
-"Italy",2,"Major NCDs",2005,0,380,16,"Southern Europe",11.682222,1,14
-"France",2,"Major NCDs",2005,0,250,17,"Western Europe",11.992461,1,15
-"New Zealand",2,"Major NCDs",2005,0,554,18,"Australia/New Zealand",13.67096,1,16
-"United Kingdom",2,"Major NCDs",2005,0,826,15,"Northern Europe",14.211949,1,17
-"Chile",2,"Major NCDs",2005,0,152,8,"South America",13.73792,1,18
-"USA",2,"Major NCDs",2005,0,840,9,"Northern America",15.723769,1,19
-"Slovakia",2,"Major NCDs",2005,0,703,14,"Eastern Europe",22.827511,1,20
-"Costa Rica",1,"CVD",2006,2,188,7,"Central America",5.129034,1,1
-"Colombia",1,"CVD",2006,2,170,8,"South America",7.0983844,1,2
-"Mexico",1,"CVD",2006,2,484,7,"Central America",5.5900078,1,3
-"Brazil",1,"CVD",2006,2,76,8,"South America",9.3852158,1,4
-"Mauritius",1,"CVD",2006,2,480,1,"Eastern Africa",13.076927,1,5
-"Kazakhstan",1,"CVD",2006,2,398,12,"Southern Asia",26.7512,1,6
-"Philippines",1,"CVD",2006,2,608,11,"South-Eastern Asia",14.674761,1,7
-"Bulgaria",1,"CVD",2006,2,100,14,"Eastern Europe",17.375191,1,8
-"Ukraine",1,"CVD",2006,2,804,14,"Eastern Europe",24.760801,1,9
-"Uzbekistan",1,"CVD",2006,2,860,12,"Southern Asia",22.11187,1,10
-"France",2,"CVD",2006,2,250,17,"Western Europe",3.0353711,1,11
-"Australia",2,"CVD",2006,2,36,18,"Australia/New Zealand",3.3982861,1,12
-"Norway",2,"CVD",2006,2,578,15,"Northern Europe",3.7402992,1,13
-"Japan",2,"CVD",2006,2,392,10,"Eastern Asia",3.3844287,1,14
-"Italy",2,"CVD",2006,2,380,16,"Southern Europe",3.5071731,1,15
-"New Zealand",2,"CVD",2006,2,554,18,"Australia/New Zealand",4.5643573,1,16
-"United Kingdom",2,"CVD",2006,2,826,15,"Northern Europe",5.1607652,1,17
-"Chile",2,"CVD",2006,2,152,8,"South America",5.268074,1,18
-"USA",2,"CVD",2006,2,840,9,"Northern America",6.3369436,1,19
-"Slovakia",2,"CVD",2006,2,703,14,"Eastern Europe",12.211991,1,20
-"Mexico",1,"Cancer",2006,1,484,7,"Central America",4.6662641,1,1
-"Uzbekistan",1,"Cancer",2006,1,860,12,"Southern Asia",4.5756346,1,2
-"Colombia",1,"Cancer",2006,1,170,8,"South America",5.6951828,1,3
-"Costa Rica",1,"Cancer",2006,1,188,7,"Central America",5.3173771,1,4
-"Mauritius",1,"Cancer",2006,1,480,1,"Eastern Africa",5.1650038,1,5
-"Philippines",1,"Cancer",2006,1,608,11,"South-Eastern Asia",6.0395069,1,6
-"Brazil",1,"Cancer",2006,1,76,8,"South America",6.195467,1,7
-"Kazakhstan",1,"Cancer",2006,1,398,12,"Southern Asia",9.9437695,1,8
-"Ukraine",1,"Cancer",2006,1,804,14,"Eastern Europe",9.8242579,1,9
-"Bulgaria",1,"Cancer",2006,1,100,14,"Eastern Europe",9.2068367,1,10
-"Japan",2,"Cancer",2006,1,392,10,"Eastern Asia",6.3759675,1,11
-"Norway",2,"Cancer",2006,1,578,15,"Northern Europe",7.1253114,1,12
-"Australia",2,"Cancer",2006,1,36,18,"Australia/New Zealand",6.7326336,1,13
-"Chile",2,"Cancer",2006,1,152,8,"South America",6.7906647,1,14
-"Italy",2,"Cancer",2006,1,380,16,"Southern Europe",7.3887119,1,15
-"New Zealand",2,"Cancer",2006,1,554,18,"Australia/New Zealand",7.6846333,1,16
-"USA",2,"Cancer",2006,1,840,9,"Northern America",7.5299559,1,17
-"United Kingdom",2,"Cancer",2006,1,826,15,"Northern Europe",7.8302751,1,18
-"France",2,"Cancer",2006,1,250,17,"Western Europe",8.2947273,1,19
-"Slovakia",2,"Cancer",2006,1,703,14,"Eastern Europe",10.488709,1,20
-"Costa Rica",1,"Major NCDs",2006,0,188,7,"Central America",11.85565,1,1
-"Colombia",1,"Major NCDs",2006,0,170,8,"South America",14.612741,1,2
-"Mexico",1,"Major NCDs",2006,0,484,7,"Central America",15.9653,1,3
-"Brazil",1,"Major NCDs",2006,0,76,8,"South America",17.72772,1,4
-"Philippines",1,"Major NCDs",2006,0,608,11,"South-Eastern Asia",24.103079,1,5
-"Kazakhstan",1,"Major NCDs",2006,0,398,12,"Southern Asia",35.85368,1,6
-"Mauritius",1,"Major NCDs",2006,0,480,1,"Eastern Africa",26.08588,1,7
-"Bulgaria",1,"Major NCDs",2006,0,100,14,"Eastern Europe",26.12055,1,8
-"Uzbekistan",1,"Major NCDs",2006,0,860,12,"Southern Asia",27.813233,1,9
-"Ukraine",1,"Major NCDs",2006,0,804,14,"Eastern Europe",33.218239,1,10
-"Japan",2,"Major NCDs",2006,0,392,10,"Eastern Asia",10.056449,1,11
-"Norway",2,"Major NCDs",2006,0,578,15,"Northern Europe",11.575949,1,12
-"Australia",2,"Major NCDs",2006,0,36,18,"Australia/New Zealand",10.907685,1,13
-"Italy",2,"Major NCDs",2006,0,380,16,"Southern Europe",11.37525,1,14
-"France",2,"Major NCDs",2006,0,250,17,"Western Europe",11.732094,1,15
-"New Zealand",2,"Major NCDs",2006,0,554,18,"Australia/New Zealand",13.33068,1,16
-"United Kingdom",2,"Major NCDs",2006,0,826,15,"Northern Europe",13.779479,1,17
-"Chile",2,"Major NCDs",2006,0,152,8,"South America",13.36088,1,18
-"USA",2,"Major NCDs",2006,0,840,9,"Northern America",15.35644,1,19
-"Slovakia",2,"Major NCDs",2006,0,703,14,"Eastern Europe",22.35302,1,20
-"Costa Rica",1,"CVD",2007,2,188,7,"Central America",4.9330211,1,1
-"Colombia",1,"CVD",2007,2,170,8,"South America",6.7979469,1,2
-"Mexico",1,"CVD",2007,2,484,7,"Central America",5.556385,1,3
-"Brazil",1,"CVD",2007,2,76,8,"South America",9.2048883,1,4
-"Mauritius",1,"CVD",2007,2,480,1,"Eastern Africa",11.383542,1,5
-"Kazakhstan",1,"CVD",2007,2,398,12,"Southern Asia",25.857311,1,6
-"Philippines",1,"CVD",2007,2,608,11,"South-Eastern Asia",14.931069,1,7
-"Bulgaria",1,"CVD",2007,2,100,14,"Eastern Europe",16.904659,1,8
-"Ukraine",1,"CVD",2007,2,804,14,"Eastern Europe",24.19783,1,9
-"Uzbekistan",1,"CVD",2007,2,860,12,"Southern Asia",22.0036,1,10
-"France",2,"CVD",2007,2,250,17,"Western Europe",2.9516768,1,11
-"Australia",2,"CVD",2007,2,36,18,"Australia/New Zealand",3.2095189,1,12
-"Norway",2,"CVD",2007,2,578,15,"Northern Europe",3.5701308,1,13
-"Japan",2,"CVD",2007,2,392,10,"Eastern Asia",3.3011689,1,14
-"Italy",2,"CVD",2007,2,380,16,"Southern Europe",3.3918409,1,15
-"New Zealand",2,"CVD",2007,2,554,18,"Australia/New Zealand",4.3711181,1,16
-"United Kingdom",2,"CVD",2007,2,826,15,"Northern Europe",4.874804,1,17
-"Chile",2,"CVD",2007,2,152,8,"South America",5.1292872,1,18
-"USA",2,"CVD",2007,2,840,9,"Northern America",6.149868,1,19
-"Slovakia",2,"CVD",2007,2,703,14,"Eastern Europe",11.903701,1,20
-"Mexico",1,"Cancer",2007,1,484,7,"Central America",4.5849438,1,1
-"Uzbekistan",1,"Cancer",2007,1,860,12,"Southern Asia",4.56267,1,2
-"Colombia",1,"Cancer",2007,1,170,8,"South America",5.5416059,1,3
-"Costa Rica",1,"Cancer",2007,1,188,7,"Central America",5.0971923,1,4
-"Mauritius",1,"Cancer",2007,1,480,1,"Eastern Africa",5.025403,1,5
-"Philippines",1,"Cancer",2007,1,608,11,"South-Eastern Asia",5.9955387,1,6
-"Brazil",1,"Cancer",2007,1,76,8,"South America",6.2050748,1,7
-"Kazakhstan",1,"Cancer",2007,1,398,12,"Southern Asia",9.7454491,1,8
-"Ukraine",1,"Cancer",2007,1,804,14,"Eastern Europe",9.7653275,1,9
-"Bulgaria",1,"Cancer",2007,1,100,14,"Eastern Europe",9.2445154,1,10
-"Japan",2,"Cancer",2007,1,392,10,"Eastern Asia",6.2402596,1,11
-"Norway",2,"Cancer",2007,1,578,15,"Northern Europe",6.9987288,1,12
-"Australia",2,"Cancer",2007,1,36,18,"Australia/New Zealand",6.5757842,1,13
-"Chile",2,"Cancer",2007,1,152,8,"South America",6.7211471,1,14
-"Italy",2,"Cancer",2007,1,380,16,"Southern Europe",7.2848873,1,15
-"New Zealand",2,"Cancer",2007,1,554,18,"Australia/New Zealand",7.4760666,1,16
-"USA",2,"Cancer",2007,1,840,9,"Northern America",7.3930359,1,17
-"United Kingdom",2,"Cancer",2007,1,826,15,"Northern Europe",7.711874,1,18
-"France",2,"Cancer",2007,1,250,17,"Western Europe",8.1967783,1,19
-"Slovakia",2,"Cancer",2007,1,703,14,"Eastern Europe",10.35778,1,20
-"Costa Rica",1,"Major NCDs",2007,0,188,7,"Central America",11.308343,1,1
-"Colombia",1,"Major NCDs",2007,0,170,8,"South America",14.049419,1,2
-"Mexico",1,"Major NCDs",2007,0,484,7,"Central America",15.834909,1,3
-"Brazil",1,"Major NCDs",2007,0,76,8,"South America",17.522058,1,4
-"Philippines",1,"Major NCDs",2007,0,608,11,"South-Eastern Asia",24.35294,1,5
-"Kazakhstan",1,"Major NCDs",2007,0,398,12,"Southern Asia",34.863327,1,6
-"Mauritius",1,"Major NCDs",2007,0,480,1,"Eastern Africa",25.51099,1,7
-"Bulgaria",1,"Major NCDs",2007,0,100,14,"Eastern Europe",25.765471,1,8
-"Uzbekistan",1,"Major NCDs",2007,0,860,12,"Southern Asia",27.726175,1,9
-"Ukraine",1,"Major NCDs",2007,0,804,14,"Eastern Europe",32.76693,1,10
-"Japan",2,"Major NCDs",2007,0,392,10,"Eastern Asia",9.8344965,1,11
-"Norway",2,"Major NCDs",2007,0,578,15,"Northern Europe",11.30462,1,12
-"Australia",2,"Major NCDs",2007,0,36,18,"Australia/New Zealand",10.558929,1,13
-"Italy",2,"Major NCDs",2007,0,380,16,"Southern Europe",11.164186,1,14
-"France",2,"Major NCDs",2007,0,250,17,"Western Europe",11.548101,1,15
-"New Zealand",2,"Major NCDs",2007,0,554,18,"Australia/New Zealand",12.93766,1,16
-"United Kingdom",2,"Major NCDs",2007,0,826,15,"Northern Europe",13.38023,1,17
-"Chile",2,"Major NCDs",2007,0,152,8,"South America",13.121469,1,18
-"USA",2,"Major NCDs",2007,0,840,9,"Northern America",15.042541,1,19
-"Slovakia",2,"Major NCDs",2007,0,703,14,"Eastern Europe",21.929001,1,20
-"Costa Rica",1,"CVD",2008,2,188,7,"Central America",4.9014711,1,1
-"Colombia",1,"CVD",2008,2,170,8,"South America",6.5026565,1,2
-"Mexico",1,"CVD",2008,2,484,7,"Central America",5.5159593,1,3
-"Brazil",1,"CVD",2008,2,76,8,"South America",9.0784178,1,4
-"Mauritius",1,"CVD",2008,2,480,1,"Eastern Africa",10.946194,1,5
-"Kazakhstan",1,"CVD",2008,2,398,12,"Southern Asia",24.73213,1,6
-"Philippines",1,"CVD",2008,2,608,11,"South-Eastern Asia",15.23797,1,7
-"Bulgaria",1,"CVD",2008,2,100,14,"Eastern Europe",16.566799,1,8
-"Ukraine",1,"CVD",2008,2,804,14,"Eastern Europe",23.284691,1,9
-"Uzbekistan",1,"CVD",2008,2,860,12,"Southern Asia",21.89533,1,10
-"France",2,"CVD",2008,2,250,17,"Western Europe",2.8482502,1,11
-"Australia",2,"CVD",2008,2,36,18,"Australia/New Zealand",3.045161,1,12
-"Norway",2,"CVD",2008,2,578,15,"Northern Europe",3.4173999,1,13
-"Japan",2,"CVD",2008,2,392,10,"Eastern Asia",3.2025223,1,14
-"Italy",2,"CVD",2008,2,380,16,"Southern Europe",3.252399,1,15
-"New Zealand",2,"CVD",2008,2,554,18,"Australia/New Zealand",4.1981997,1,16
-"United Kingdom",2,"CVD",2008,2,826,15,"Northern Europe",4.6391978,1,17
-"Chile",2,"CVD",2008,2,152,8,"South America",5.0173907,1,18
-"USA",2,"CVD",2008,2,840,9,"Northern America",5.970233,1,19
-"Slovakia",2,"CVD",2008,2,703,14,"Eastern Europe",11.506165,1,20
-"Mexico",1,"Cancer",2008,1,484,7,"Central America",4.4980483,1,1
-"Uzbekistan",1,"Cancer",2008,1,860,12,"Southern Asia",4.5497054,1,2
-"Colombia",1,"Cancer",2008,1,170,8,"South America",5.397284,1,3
-"Costa Rica",1,"Cancer",2008,1,188,7,"Central America",5.1427102,1,4
-"Mauritius",1,"Cancer",2008,1,480,1,"Eastern Africa",4.991416,1,5
-"Philippines",1,"Cancer",2008,1,608,11,"South-Eastern Asia",5.9872608,1,6
-"Brazil",1,"Cancer",2008,1,76,8,"South America",6.2264962,1,7
-"Kazakhstan",1,"Cancer",2008,1,398,12,"Southern Asia",9.4968271,1,8
-"Ukraine",1,"Cancer",2008,1,804,14,"Eastern Europe",9.7019854,1,9
-"Bulgaria",1,"Cancer",2008,1,100,14,"Eastern Europe",9.0747395,1,10
-"Japan",2,"Cancer",2008,1,392,10,"Eastern Asia",6.1424928,1,11
-"Norway",2,"Cancer",2008,1,578,15,"Northern Europe",6.9182763,1,12
-"Australia",2,"Cancer",2008,1,36,18,"Australia/New Zealand",6.4340591,1,13
-"Chile",2,"Cancer",2008,1,152,8,"South America",6.6208591,1,14
-"Italy",2,"Cancer",2008,1,380,16,"Southern Europe",7.1792631,1,15
-"New Zealand",2,"Cancer",2008,1,554,18,"Australia/New Zealand",7.3683023,1,16
-"USA",2,"Cancer",2008,1,840,9,"Northern America",7.2670684,1,17
-"United Kingdom",2,"Cancer",2008,1,826,15,"Northern Europe",7.5876026,1,18
-"France",2,"Cancer",2008,1,250,17,"Western Europe",8.0809784,1,19
-"Slovakia",2,"Cancer",2008,1,703,14,"Eastern Europe",10.173319,1,20
-"Costa Rica",1,"Major NCDs",2008,0,188,7,"Central America",11.27792,1,1
-"Colombia",1,"Major NCDs",2008,0,170,8,"South America",13.51651,1,2
-"Mexico",1,"Major NCDs",2008,0,484,7,"Central America",15.678041,1,3
-"Brazil",1,"Major NCDs",2008,0,76,8,"South America",17.406731,1,4
-"Philippines",1,"Major NCDs",2008,0,608,11,"South-Eastern Asia",24.65843,1,5
-"Kazakhstan",1,"Major NCDs",2008,0,398,12,"Southern Asia",33.620171,1,6
-"Mauritius",1,"Major NCDs",2008,0,480,1,"Eastern Africa",24.875151,1,7
-"Bulgaria",1,"Major NCDs",2008,0,100,14,"Eastern Europe",25.309071,1,8
-"Uzbekistan",1,"Major NCDs",2008,0,860,12,"Southern Asia",27.639117,1,9
-"Ukraine",1,"Major NCDs",2008,0,804,14,"Eastern Europe",31.802931,1,10
-"Japan",2,"Major NCDs",2008,0,392,10,"Eastern Asia",9.6338491,1,11
-"Norway",2,"Major NCDs",2008,0,578,15,"Northern Europe",11.072684,1,12
-"Australia",2,"Major NCDs",2008,0,36,18,"Australia/New Zealand",10.244868,1,13
-"Italy",2,"Major NCDs",2008,0,380,16,"Southern Europe",10.91078,1,14
-"France",2,"Major NCDs",2008,0,250,17,"Western Europe",11.322762,1,15
-"New Zealand",2,"Major NCDs",2008,0,554,18,"Australia/New Zealand",12.64402,1,16
-"United Kingdom",2,"Major NCDs",2008,0,826,15,"Northern Europe",13.02148,1,17
-"Chile",2,"Major NCDs",2008,0,152,8,"South America",12.90849,1,18
-"USA",2,"Major NCDs",2008,0,840,9,"Northern America",14.72788,1,19
-"Slovakia",2,"Major NCDs",2008,0,703,14,"Eastern Europe",21.40419,1,20
-"Costa Rica",1,"CVD",2009,2,188,7,"Central America",4.8352189,1,1
-"Colombia",1,"CVD",2009,2,170,8,"South America",6.1425729,1,2
-"Mexico",1,"CVD",2009,2,484,7,"Central America",5.491868,1,3
-"Brazil",1,"CVD",2009,2,76,8,"South America",8.9234858,1,4
-"Mauritius",1,"CVD",2009,2,480,1,"Eastern Africa",10.484548,1,5
-"Kazakhstan",1,"CVD",2009,2,398,12,"Southern Asia",23.12072,1,6
-"Philippines",1,"CVD",2009,2,608,11,"South-Eastern Asia",15.01873,1,7
-"Bulgaria",1,"CVD",2009,2,100,14,"Eastern Europe",16.204271,1,8
-"Ukraine",1,"CVD",2009,2,804,14,"Eastern Europe",22.27729,1,9
-"Uzbekistan",1,"CVD",2009,2,860,12,"Southern Asia",21.78706,1,10
-"France",2,"CVD",2009,2,250,17,"Western Europe",2.7461021,1,11
-"Australia",2,"CVD",2009,2,36,18,"Australia/New Zealand",2.946054,1,12
-"Norway",2,"CVD",2009,2,578,15,"Northern Europe",3.278955,1,13
-"Japan",2,"CVD",2009,2,392,10,"Eastern Asia",3.1345313,1,14
-"Italy",2,"CVD",2009,2,380,16,"Southern Europe",3.154042,1,15
-"New Zealand",2,"CVD",2009,2,554,18,"Australia/New Zealand",4.0447202,1,16
-"United Kingdom",2,"CVD",2009,2,826,15,"Northern Europe",4.3869653,1,17
-"Chile",2,"CVD",2009,2,152,8,"South America",4.9075308,1,18
-"USA",2,"CVD",2009,2,840,9,"Northern America",5.8203263,1,19
-"Slovakia",2,"CVD",2009,2,703,14,"Eastern Europe",10.771679,1,20
-"Mexico",1,"Cancer",2009,1,484,7,"Central America",4.4184799,1,1
-"Uzbekistan",1,"Cancer",2009,1,860,12,"Southern Asia",4.5367408,1,2
-"Colombia",1,"Cancer",2009,1,170,8,"South America",5.221993,1,3
-"Costa Rica",1,"Cancer",2009,1,188,7,"Central America",5.0339079,1,4
-"Mauritius",1,"Cancer",2009,1,480,1,"Eastern Africa",4.8531089,1,5
-"Philippines",1,"Cancer",2009,1,608,11,"South-Eastern Asia",5.8033471,1,6
-"Brazil",1,"Cancer",2009,1,76,8,"South America",6.2229819,1,7
-"Kazakhstan",1,"Cancer",2009,1,398,12,"Southern Asia",9.2471714,1,8
-"Ukraine",1,"Cancer",2009,1,804,14,"Eastern Europe",9.6231022,1,9
-"Bulgaria",1,"Cancer",2009,1,100,14,"Eastern Europe",8.9451618,1,10
-"Japan",2,"Cancer",2009,1,392,10,"Eastern Asia",6.0646544,1,11
-"Norway",2,"Cancer",2009,1,578,15,"Northern Europe",6.8106985,1,12
-"Australia",2,"Cancer",2009,1,36,18,"Australia/New Zealand",6.3527322,1,13
-"Chile",2,"Cancer",2009,1,152,8,"South America",6.5374217,1,14
-"Italy",2,"Cancer",2009,1,380,16,"Southern Europe",7.058146,1,15
-"New Zealand",2,"Cancer",2009,1,554,18,"Australia/New Zealand",7.2805395,1,16
-"USA",2,"Cancer",2009,1,840,9,"Northern America",7.1401825,1,17
-"United Kingdom",2,"Cancer",2009,1,826,15,"Northern Europe",7.468996,1,18
-"France",2,"Cancer",2009,1,250,17,"Western Europe",7.9518847,1,19
-"Slovakia",2,"Cancer",2009,1,703,14,"Eastern Europe",10.041528,1,20
-"Costa Rica",1,"Major NCDs",2009,0,188,7,"Central America",11.042361,1,1
-"Colombia",1,"Major NCDs",2009,0,170,8,"South America",12.877131,1,2
-"Mexico",1,"Major NCDs",2009,0,484,7,"Central America",15.48838,1,3
-"Brazil",1,"Major NCDs",2009,0,76,8,"South America",17.24617,1,4
-"Philippines",1,"Major NCDs",2009,0,608,11,"South-Eastern Asia",24.09919,1,5
-"Kazakhstan",1,"Major NCDs",2009,0,398,12,"Southern Asia",32.072411,1,6
-"Mauritius",1,"Major NCDs",2009,0,480,1,"Eastern Africa",24.205599,1,7
-"Bulgaria",1,"Major NCDs",2009,0,100,14,"Eastern Europe",24.857021,1,8
-"Uzbekistan",1,"Major NCDs",2009,0,860,12,"Southern Asia",27.552059,1,9
-"Ukraine",1,"Major NCDs",2009,0,804,14,"Eastern Europe",30.75189,1,10
-"Japan",2,"Major NCDs",2009,0,392,10,"Eastern Asia",9.4893904,1,11
-"Norway",2,"Major NCDs",2009,0,578,15,"Northern Europe",10.817635,1,12
-"Australia",2,"Major NCDs",2009,0,36,18,"Australia/New Zealand",10.07508,1,13
-"Italy",2,"Major NCDs",2009,0,380,16,"Southern Europe",10.699793,1,14
-"France",2,"Major NCDs",2009,0,250,17,"Western Europe",11.103625,1,15
-"New Zealand",2,"Major NCDs",2009,0,554,18,"Australia/New Zealand",12.376161,1,16
-"United Kingdom",2,"Major NCDs",2009,0,826,15,"Northern Europe",12.66338,1,17
-"Chile",2,"Major NCDs",2009,0,152,8,"South America",12.710521,1,18
-"USA",2,"Major NCDs",2009,0,840,9,"Northern America",14.46557,1,19
-"Slovakia",2,"Major NCDs",2009,0,703,14,"Eastern Europe",20.6532,1,20
-"Costa Rica",1,"CVD",2010,2,188,7,"Central America",4.8643398,1,1
-"Colombia",1,"CVD",2010,2,170,8,"South America",5.8271022,1,2
-"Mexico",1,"CVD",2010,2,484,7,"Central America",5.4633231,1,3
-"Brazil",1,"CVD",2010,2,76,8,"South America",8.7295218,1,4
-"Mauritius",1,"CVD",2010,2,480,1,"Eastern Africa",9.8837004,1,5
-"Kazakhstan",1,"CVD",2010,2,398,12,"Southern Asia",21.141949,1,6
-"Philippines",1,"CVD",2010,2,608,11,"South-Eastern Asia",15.027259,1,7
-"Bulgaria",1,"CVD",2010,2,100,14,"Eastern Europe",15.86766,1,8
-"Ukraine",1,"CVD",2010,2,804,14,"Eastern Europe",21.18701,1,9
-"Uzbekistan",1,"CVD",2010,2,860,12,"Southern Asia",21.397621,1,10
-"France",2,"CVD",2010,2,250,17,"Western Europe",2.647805,1,11
-"Australia",2,"CVD",2010,2,36,18,"Australia/New Zealand",2.819526,1,12
-"Norway",2,"CVD",2010,2,578,15,"Northern Europe",3.1615801,1,13
-"Japan",2,"CVD",2010,2,392,10,"Eastern Asia",3.068711,1,14
-"Italy",2,"CVD",2010,2,380,16,"Southern Europe",3.0660539,1,15
-"New Zealand",2,"CVD",2010,2,554,18,"Australia/New Zealand",3.8567979,1,16
-"United Kingdom",2,"CVD",2010,2,826,15,"Northern Europe",4.1630311,1,17
-"Chile",2,"CVD",2010,2,152,8,"South America",4.7679758,1,18
-"USA",2,"CVD",2010,2,840,9,"Northern America",5.7093601,1,19
-"Slovakia",2,"CVD",2010,2,703,14,"Eastern Europe",10.056208,1,20
-"Mexico",1,"Cancer",2010,1,484,7,"Central America",4.3680091,1,1
-"Uzbekistan",1,"Cancer",2010,1,860,12,"Southern Asia",4.469492,1,2
-"Colombia",1,"Cancer",2010,1,170,8,"South America",5.0692401,1,3
-"Costa Rica",1,"Cancer",2010,1,188,7,"Central America",5.0429969,1,4
-"Mauritius",1,"Cancer",2010,1,480,1,"Eastern Africa",4.8224916,1,5
-"Philippines",1,"Cancer",2010,1,608,11,"South-Eastern Asia",5.7726431,1,6
-"Brazil",1,"Cancer",2010,1,76,8,"South America",6.2237129,1,7
-"Kazakhstan",1,"Cancer",2010,1,398,12,"Southern Asia",9.0259981,1,8
-"Ukraine",1,"Cancer",2010,1,804,14,"Eastern Europe",9.592371,1,9
-"Bulgaria",1,"Cancer",2010,1,100,14,"Eastern Europe",8.9270639,1,10
-"Japan",2,"Cancer",2010,1,392,10,"Eastern Asia",5.97013,1,11
-"Norway",2,"Cancer",2010,1,578,15,"Northern Europe",6.6537595,1,12
-"Australia",2,"Cancer",2010,1,36,18,"Australia/New Zealand",6.2204199,1,13
-"Chile",2,"Cancer",2010,1,152,8,"South America",6.4890189,1,14
-"Italy",2,"Cancer",2010,1,380,16,"Southern Europe",6.9278216,1,15
-"New Zealand",2,"Cancer",2010,1,554,18,"Australia/New Zealand",7.1081171,1,16
-"USA",2,"Cancer",2010,1,840,9,"Northern America",7.0225186,1,17
-"United Kingdom",2,"Cancer",2010,1,826,15,"Northern Europe",7.3515029,1,18
-"France",2,"Cancer",2010,1,250,17,"Western Europe",7.8194509,1,19
-"Slovakia",2,"Cancer",2010,1,703,14,"Eastern Europe",9.9249363,1,20
-"Costa Rica",1,"Major NCDs",2010,0,188,7,"Central America",11.02604,1,1
-"Colombia",1,"Major NCDs",2010,0,170,8,"South America",12.338341,1,2
-"Mexico",1,"Major NCDs",2010,0,484,7,"Central America",15.374949,1,3
-"Brazil",1,"Major NCDs",2010,0,76,8,"South America",17.03105,1,4
-"Philippines",1,"Major NCDs",2010,0,608,11,"South-Eastern Asia",24.023161,1,5
-"Kazakhstan",1,"Major NCDs",2010,0,398,12,"Southern Asia",30.26248,1,6
-"Mauritius",1,"Major NCDs",2010,0,480,1,"Eastern Africa",23.7568,1,7
-"Bulgaria",1,"Major NCDs",2010,0,100,14,"Eastern Europe",24.49482,1,8
-"Uzbekistan",1,"Major NCDs",2010,0,860,12,"Southern Asia",27.107922,1,9
-"Ukraine",1,"Major NCDs",2010,0,804,14,"Eastern Europe",29.654831,1,10
-"Japan",2,"Major NCDs",2010,0,392,10,"Eastern Asia",9.3283672,1,11
-"Norway",2,"Major NCDs",2010,0,578,15,"Northern Europe",10.567777,1,12
-"Australia",2,"Major NCDs",2010,0,36,18,"Australia/New Zealand",9.807188,1,13
-"Italy",2,"Major NCDs",2010,0,380,16,"Southern Europe",10.481062,1,14
-"France",2,"Major NCDs",2010,0,250,17,"Western Europe",10.883312,1,15
-"New Zealand",2,"Major NCDs",2010,0,554,18,"Australia/New Zealand",12.00129,1,16
-"United Kingdom",2,"Major NCDs",2010,0,826,15,"Northern Europe",12.33435,1,17
-"Chile",2,"Major NCDs",2010,0,152,8,"South America",12.51217,1,18
-"USA",2,"Major NCDs",2010,0,840,9,"Northern America",14.249579,1,19
-"Slovakia",2,"Major NCDs",2010,0,703,14,"Eastern Europe",19.889269,1,20
-"Costa Rica",1,"CVD",2011,2,188,7,"Central America",4.826694,1,1
-"Colombia",1,"CVD",2011,2,170,8,"South America",5.4619012,1,2
-"Mexico",1,"CVD",2011,2,484,7,"Central America",5.4035673,1,3
-"Brazil",1,"CVD",2011,2,76,8,"South America",8.4982281,1,4
-"Mauritius",1,"CVD",2011,2,480,1,"Eastern Africa",9.3847733,1,5
-"Kazakhstan",1,"CVD",2011,2,398,12,"Southern Asia",18.913481,1,6
-"Philippines",1,"CVD",2011,2,608,11,"South-Eastern Asia",14.745267,1,7
-"Bulgaria",1,"CVD",2011,2,100,14,"Eastern Europe",15.67578,1,8
-"Ukraine",1,"CVD",2011,2,804,14,"Eastern Europe",20.17503,1,9
-"Uzbekistan",1,"CVD",2011,2,860,12,"Southern Asia",20.631529,1,10
-"France",2,"CVD",2011,2,250,17,"Western Europe",2.543294,1,11
-"Australia",2,"CVD",2011,2,36,18,"Australia/New Zealand",2.7047429,1,12
-"Norway",2,"CVD",2011,2,578,15,"Northern Europe",3.013588,1,13
-"Japan",2,"CVD",2011,2,392,10,"Eastern Asia",2.9909329,1,14
-"Italy",2,"CVD",2011,2,380,16,"Southern Europe",2.9699271,1,15
-"New Zealand",2,"CVD",2011,2,554,18,"Australia/New Zealand",3.6475372,1,16
-"United Kingdom",2,"CVD",2011,2,826,15,"Northern Europe",3.9732521,1,17
-"Chile",2,"CVD",2011,2,152,8,"South America",4.7165818,1,18
-"USA",2,"CVD",2011,2,840,9,"Northern America",5.6188111,1,19
-"Slovakia",2,"CVD",2011,2,703,14,"Eastern Europe",9.7063236,1,20
-"Mexico",1,"Cancer",2011,1,484,7,"Central America",4.2934079,1,1
-"Uzbekistan",1,"Cancer",2011,1,860,12,"Southern Asia",4.3808417,1,2
-"Colombia",1,"Cancer",2011,1,170,8,"South America",4.8866553,1,3
-"Costa Rica",1,"Cancer",2011,1,188,7,"Central America",5.084981,1,4
-"Mauritius",1,"Cancer",2011,1,480,1,"Eastern Africa",4.824008,1,5
-"Philippines",1,"Cancer",2011,1,608,11,"South-Eastern Asia",5.6362123,1,6
-"Brazil",1,"Cancer",2011,1,76,8,"South America",6.2058349,1,7
-"Kazakhstan",1,"Cancer",2011,1,398,12,"Southern Asia",8.6983795,1,8
-"Ukraine",1,"Cancer",2011,1,804,14,"Eastern Europe",9.4709768,1,9
-"Bulgaria",1,"Cancer",2011,1,100,14,"Eastern Europe",8.8699455,1,10
-"Japan",2,"Cancer",2011,1,392,10,"Eastern Asia",5.8815312,1,11
-"Norway",2,"Cancer",2011,1,578,15,"Northern Europe",6.5413251,1,12
-"Australia",2,"Cancer",2011,1,36,18,"Australia/New Zealand",6.1075578,1,13
-"Chile",2,"Cancer",2011,1,152,8,"South America",6.4502277,1,14
-"Italy",2,"Cancer",2011,1,380,16,"Southern Europe",6.7821064,1,15
-"New Zealand",2,"Cancer",2011,1,554,18,"Australia/New Zealand",6.9023666,1,16
-"USA",2,"Cancer",2011,1,840,9,"Northern America",6.8946629,1,17
-"United Kingdom",2,"Cancer",2011,1,826,15,"Northern Europe",7.2325411,1,18
-"France",2,"Cancer",2011,1,250,17,"Western Europe",7.666832,1,19
-"Slovakia",2,"Cancer",2011,1,703,14,"Eastern Europe",9.8581815,1,20
-"Costa Rica",1,"Major NCDs",2011,0,188,7,"Central America",10.97542,1,1
-"Colombia",1,"Major NCDs",2011,0,170,8,"South America",11.68613,1,2
-"Mexico",1,"Major NCDs",2011,0,484,7,"Central America",15.137289,1,3
-"Brazil",1,"Major NCDs",2011,0,76,8,"South America",16.765381,1,4
-"Philippines",1,"Major NCDs",2011,0,608,11,"South-Eastern Asia",23.525615,1,5
-"Kazakhstan",1,"Major NCDs",2011,0,398,12,"Southern Asia",28.21706,1,6
-"Mauritius",1,"Major NCDs",2011,0,480,1,"Eastern Africa",23.217819,1,7
-"Bulgaria",1,"Major NCDs",2011,0,100,14,"Eastern Europe",24.21755,1,8
-"Uzbekistan",1,"Major NCDs",2011,0,860,12,"Southern Asia",26.269638,1,9
-"Ukraine",1,"Major NCDs",2011,0,804,14,"Eastern Europe",28.558939,1,10
-"Japan",2,"Major NCDs",2011,0,392,10,"Eastern Asia",9.164052,1,11
-"Norway",2,"Major NCDs",2011,0,578,15,"Northern Europe",10.306882,1,12
-"Australia",2,"Major NCDs",2011,0,36,18,"Australia/New Zealand",9.5743914,1,13
-"Italy",2,"Major NCDs",2011,0,380,16,"Southern Europe",10.239183,1,14
-"France",2,"Major NCDs",2011,0,250,17,"Western Europe",10.632153,1,15
-"New Zealand",2,"Major NCDs",2011,0,554,18,"Australia/New Zealand",11.54434,1,16
-"United Kingdom",2,"Major NCDs",2011,0,826,15,"Northern Europe",12.035,1,17
-"Chile",2,"Major NCDs",2011,0,152,8,"South America",12.40495,1,18
-"USA",2,"Major NCDs",2011,0,840,9,"Northern America",14.03629,1,19
-"Slovakia",2,"Major NCDs",2011,0,703,14,"Eastern Europe",19.51489,1,20
-"Costa Rica",1,"CVD",2012,2,188,7,"Central America",4.7402229,1,1
-"Colombia",1,"CVD",2012,2,170,8,"South America",5.317368,1,2
-"Mexico",1,"CVD",2012,2,484,7,"Central America",5.3756628,1,3
-"Brazil",1,"CVD",2012,2,76,8,"South America",8.2719717,1,4
-"Mauritius",1,"CVD",2012,2,480,1,"Eastern Africa",8.8900957,1,5
-"Kazakhstan",1,"CVD",2012,2,398,12,"Southern Asia",16.804609,1,6
-"Philippines",1,"CVD",2012,2,608,11,"South-Eastern Asia",14.463275,1,7
-"Bulgaria",1,"CVD",2012,2,100,14,"Eastern Europe",15.56738,1,8
-"Ukraine",1,"CVD",2012,2,804,14,"Eastern Europe",19.471361,1,9
-"Uzbekistan",1,"CVD",2012,2,860,12,"Southern Asia",20.183741,1,10
-"France",2,"CVD",2012,2,250,17,"Western Europe",2.4357781,1,11
-"Australia",2,"CVD",2012,2,36,18,"Australia/New Zealand",2.6415071,1,12
-"Norway",2,"CVD",2012,2,578,15,"Northern Europe",2.8677409,1,13
-"Japan",2,"CVD",2012,2,392,10,"Eastern Asia",2.9170048,1,14
-"Italy",2,"CVD",2012,2,380,16,"Southern Europe",2.8736119,1,15
-"New Zealand",2,"CVD",2012,2,554,18,"Australia/New Zealand",3.5398688,1,16
-"United Kingdom",2,"CVD",2012,2,826,15,"Northern Europe",3.8244359,1,17
-"Chile",2,"CVD",2012,2,152,8,"South America",4.6545901,1,18
-"USA",2,"CVD",2012,2,840,9,"Northern America",5.563302,1,19
-"Slovakia",2,"CVD",2012,2,703,14,"Eastern Europe",9.3564396,1,20
-"Mexico",1,"Cancer",2012,1,484,7,"Central America",4.2640591,1,1
-"Uzbekistan",1,"Cancer",2012,1,860,12,"Southern Asia",4.3660989,1,2
-"Colombia",1,"Cancer",2012,1,170,8,"South America",4.792397,1,3
-"Costa Rica",1,"Cancer",2012,1,188,7,"Central America",5.0514989,1,4
-"Mauritius",1,"Cancer",2012,1,480,1,"Eastern Africa",4.7865119,1,5
-"Philippines",1,"Cancer",2012,1,608,11,"South-Eastern Asia",5.4997814,1,6
-"Brazil",1,"Cancer",2012,1,76,8,"South America",6.1873541,1,7
-"Kazakhstan",1,"Cancer",2012,1,398,12,"Southern Asia",8.3503933,1,8
-"Ukraine",1,"Cancer",2012,1,804,14,"Eastern Europe",9.2960358,1,9
-"Bulgaria",1,"Cancer",2012,1,100,14,"Eastern Europe",8.9057665,1,10
-"Japan",2,"Cancer",2012,1,392,10,"Eastern Asia",5.797801,1,11
-"Norway",2,"Cancer",2012,1,578,15,"Northern Europe",6.4200878,1,12
-"Australia",2,"Cancer",2012,1,36,18,"Australia/New Zealand",5.993238,1,13
-"Chile",2,"Cancer",2012,1,152,8,"South America",6.3272223,1,14
-"Italy",2,"Cancer",2012,1,380,16,"Southern Europe",6.6307268,1,15
-"New Zealand",2,"Cancer",2012,1,554,18,"Australia/New Zealand",6.8524656,1,16
-"USA",2,"Cancer",2012,1,840,9,"Northern America",6.7744875,1,17
-"United Kingdom",2,"Cancer",2012,1,826,15,"Northern Europe",7.1126528,1,18
-"France",2,"Cancer",2012,1,250,17,"Western Europe",7.5021753,1,19
-"Slovakia",2,"Cancer",2012,1,703,14,"Eastern Europe",9.7914267,1,20
-"Costa Rica",1,"Major NCDs",2012,0,188,7,"Central America",10.806025,1,1
-"Colombia",1,"Major NCDs",2012,0,170,8,"South America",11.41977,1,2
-"Mexico",1,"Major NCDs",2012,0,484,7,"Central America",15.05683,1,3
-"Brazil",1,"Major NCDs",2012,0,76,8,"South America",16.47876,1,4
-"Philippines",1,"Major NCDs",2012,0,608,11,"South-Eastern Asia",23.028068,1,5
-"Kazakhstan",1,"Major NCDs",2012,0,398,12,"Southern Asia",26.296869,1,6
-"Mauritius",1,"Major NCDs",2012,0,480,1,"Eastern Africa",22.77729,1,7
-"Bulgaria",1,"Major NCDs",2012,0,100,14,"Eastern Europe",24.12068,1,8
-"Uzbekistan",1,"Major NCDs",2012,0,860,12,"Southern Asia",25.80887,1,9
-"Ukraine",1,"Major NCDs",2012,0,804,14,"Eastern Europe",27.71666,1,10
-"Japan",2,"Major NCDs",2012,0,392,10,"Eastern Asia",9.0072031,1,11
-"Norway",2,"Major NCDs",2012,0,578,15,"Northern Europe",10.030484,1,12
-"Australia",2,"Major NCDs",2012,0,36,18,"Australia/New Zealand",9.4009867,1,13
-"Italy",2,"Major NCDs",2012,0,380,16,"Southern Europe",9.983654,1,14
-"France",2,"Major NCDs",2012,0,250,17,"Western Europe",10.363581,1,15
-"New Zealand",2,"Major NCDs",2012,0,554,18,"Australia/New Zealand",11.35021,1,16
-"United Kingdom",2,"Major NCDs",2012,0,826,15,"Northern Europe",11.77456,1,17
-"Chile",2,"Major NCDs",2012,0,152,8,"South America",12.205319,1,18
-"USA",2,"Major NCDs",2012,0,840,9,"Northern America",13.87106,1,19
-"Slovakia",2,"Major NCDs",2012,0,703,14,"Eastern Europe",19.140511,1,20
-"Costa Rica",1,"CVD",2013,2,188,7,"Central America",4.616107,1,1
-"Colombia",1,"CVD",2013,2,170,8,"South America",5.1044726,1,2
-"Mexico",1,"CVD",2013,2,484,7,"Central America",5.3702669,1,3
-"Brazil",1,"CVD",2013,2,76,8,"South America",8.0656872,1,4
-"Mauritius",1,"CVD",2013,2,480,1,"Eastern Africa",8.7288494,1,5
-"Kazakhstan",1,"CVD",2013,2,398,12,"Southern Asia",14.58171,1,6
-"Philippines",1,"CVD",2013,2,608,11,"South-Eastern Asia",14.181283,1,7
-"Bulgaria",1,"CVD",2013,2,100,14,"Eastern Europe",15.38784,1,8
-"Ukraine",1,"CVD",2013,2,804,14,"Eastern Europe",19.271471,1,9
-"Uzbekistan",1,"CVD",2013,2,860,12,"Southern Asia",19.93358,1,10
-"France",2,"CVD",2013,2,250,17,"Western Europe",2.383142,1,11
-"Australia",2,"CVD",2013,2,36,18,"Australia/New Zealand",2.566344,1,12
-"Norway",2,"CVD",2013,2,578,15,"Northern Europe",2.7449419,1,13
-"Japan",2,"CVD",2013,2,392,10,"Eastern Asia",2.8427391,1,14
-"Italy",2,"CVD",2013,2,380,16,"Southern Europe",2.8465011,1,15
-"New Zealand",2,"CVD",2013,2,554,18,"Australia/New Zealand",3.4036439,1,16
-"United Kingdom",2,"CVD",2013,2,826,15,"Northern Europe",3.7005849,1,17
-"Chile",2,"CVD",2013,2,152,8,"South America",4.5487571,1,18
-"USA",2,"CVD",2013,2,840,9,"Northern America",5.5496492,1,19
-"Slovakia",2,"CVD",2013,2,703,14,"Eastern Europe",8.9307861,1,20
-"Mexico",1,"Cancer",2013,1,484,7,"Central America",4.2558336,1,1
-"Uzbekistan",1,"Cancer",2013,1,860,12,"Southern Asia",4.387825,1,2
-"Colombia",1,"Cancer",2013,1,170,8,"South America",4.6674323,1,3
-"Costa Rica",1,"Cancer",2013,1,188,7,"Central America",4.9235239,1,4
-"Mauritius",1,"Cancer",2013,1,480,1,"Eastern Africa",4.861259,1,5
-"Philippines",1,"Cancer",2013,1,608,11,"South-Eastern Asia",5.3633506,1,6
-"Brazil",1,"Cancer",2013,1,76,8,"South America",6.1644979,1,7
-"Kazakhstan",1,"Cancer",2013,1,398,12,"Southern Asia",8.0441074,1,8
-"Ukraine",1,"Cancer",2013,1,804,14,"Eastern Europe",9.2521853,1,9
-"Bulgaria",1,"Cancer",2013,1,100,14,"Eastern Europe",8.9858122,1,10
-"Japan",2,"Cancer",2013,1,392,10,"Eastern Asia",5.7022562,1,11
-"Norway",2,"Cancer",2013,1,578,15,"Northern Europe",6.1918712,1,12
-"Australia",2,"Cancer",2013,1,36,18,"Australia/New Zealand",5.9079409,1,13
-"Chile",2,"Cancer",2013,1,152,8,"South America",6.247335,1,14
-"Italy",2,"Cancer",2013,1,380,16,"Southern Europe",6.5702872,1,15
-"New Zealand",2,"Cancer",2013,1,554,18,"Australia/New Zealand",6.7106697,1,16
-"USA",2,"Cancer",2013,1,840,9,"Northern America",6.6608958,1,17
-"United Kingdom",2,"Cancer",2013,1,826,15,"Northern Europe",7.0113831,1,18
-"France",2,"Cancer",2013,1,250,17,"Western Europe",7.4179201,1,19
-"Slovakia",2,"Cancer",2013,1,703,14,"Eastern Europe",9.7291832,1,20
-"Costa Rica",1,"Major NCDs",2013,0,188,7,"Central America",10.502254,1,1
-"Colombia",1,"Major NCDs",2013,0,170,8,"South America",11.034887,1,2
-"Mexico",1,"Major NCDs",2013,0,484,7,"Central America",15.000529,1,3
-"Brazil",1,"Major NCDs",2013,0,76,8,"South America",16.21488,1,4
-"Philippines",1,"Major NCDs",2013,0,608,11,"South-Eastern Asia",22.530522,1,5
-"Kazakhstan",1,"Major NCDs",2013,0,398,12,"Southern Asia",24.436041,1,6
-"Mauritius",1,"Major NCDs",2013,0,480,1,"Eastern Africa",22.60239,1,7
-"Bulgaria",1,"Major NCDs",2013,0,100,14,"Eastern Europe",23.99542,1,8
-"Uzbekistan",1,"Major NCDs",2013,0,860,12,"Southern Asia",25.585529,1,9
-"Ukraine",1,"Major NCDs",2013,0,804,14,"Eastern Europe",27.48336,1,10
-"Japan",2,"Major NCDs",2013,0,392,10,"Eastern Asia",8.8386145,1,11
-"Norway",2,"Major NCDs",2013,0,578,15,"Northern Europe",9.6849499,1,12
-"Australia",2,"Major NCDs",2013,0,36,18,"Australia/New Zealand",9.2531977,1,13
-"Italy",2,"Major NCDs",2013,0,380,16,"Southern Europe",9.8958378,1,14
-"France",2,"Major NCDs",2013,0,250,17,"Western Europe",10.236019,1,15
-"New Zealand",2,"Major NCDs",2013,0,554,18,"Australia/New Zealand",11.06376,1,16
-"United Kingdom",2,"Major NCDs",2013,0,826,15,"Northern Europe",11.56635,1,17
-"Chile",2,"Major NCDs",2013,0,152,8,"South America",11.98997,1,18
-"USA",2,"Major NCDs",2013,0,840,9,"Northern America",13.77061,1,19
-"Slovakia",2,"Major NCDs",2013,0,703,14,"Eastern Europe",18.707899,1,20
-"Costa Rica",1,"CVD",2014,2,188,7,"Central America",4.4219403,1,1
-"Colombia",1,"CVD",2014,2,170,8,"South America",4.8915772,1,2
-"Mexico",1,"CVD",2014,2,484,7,"Central America",5.3781261,1,3
-"Brazil",1,"CVD",2014,2,76,8,"South America",7.9309611,1,4
-"Mauritius",1,"CVD",2014,2,480,1,"Eastern Africa",8.5685148,1,5
-"Kazakhstan",1,"CVD",2014,2,398,12,"Southern Asia",13.41793,1,6
-"Philippines",1,"CVD",2014,2,608,11,"South-Eastern Asia",13.899291,1,7
-"Bulgaria",1,"CVD",2014,2,100,14,"Eastern Europe",15.536205,1,8
-"Ukraine",1,"CVD",2014,2,804,14,"Eastern Europe",19.071581,1,9
-"Uzbekistan",1,"CVD",2014,2,860,12,"Southern Asia",19.388635,1,10
-"France",2,"CVD",2014,2,250,17,"Western Europe",2.31428,1,11
-"Australia",2,"CVD",2014,2,36,18,"Australia/New Zealand",2.5336092,1,12
-"Norway",2,"CVD",2014,2,578,15,"Northern Europe",2.6860871,1,13
-"Japan",2,"CVD",2014,2,392,10,"Eastern Asia",2.798089,1,14
-"Italy",2,"CVD",2014,2,380,16,"Southern Europe",2.777366,1,15
-"New Zealand",2,"CVD",2014,2,554,18,"Australia/New Zealand",3.267419,1,16
-"United Kingdom",2,"CVD",2014,2,826,15,"Northern Europe",3.6668081,1,17
-"Chile",2,"CVD",2014,2,152,8,"South America",4.5264449,1,18
-"USA",2,"CVD",2014,2,840,9,"Northern America",5.5465069,1,19
-"Slovakia",2,"CVD",2014,2,703,14,"Eastern Europe",8.414979,1,20
-"Mexico",1,"Cancer",2014,1,484,7,"Central America",4.2461772,1,1
-"Uzbekistan",1,"Cancer",2014,1,860,12,"Southern Asia",4.3668656,1,2
-"Colombia",1,"Cancer",2014,1,170,8,"South America",4.5424676,1,3
-"Costa Rica",1,"Cancer",2014,1,188,7,"Central America",4.741941,1,4
-"Mauritius",1,"Cancer",2014,1,480,1,"Eastern Africa",4.9802661,1,5
-"Philippines",1,"Cancer",2014,1,608,11,"South-Eastern Asia",5.2269197,1,6
-"Brazil",1,"Cancer",2014,1,76,8,"South America",6.1554203,1,7
-"Kazakhstan",1,"Cancer",2014,1,398,12,"Southern Asia",7.9262285,1,8
-"Ukraine",1,"Cancer",2014,1,804,14,"Eastern Europe",9.2083349,1,9
-"Bulgaria",1,"Cancer",2014,1,100,14,"Eastern Europe",9.0343223,1,10
-"Japan",2,"Cancer",2014,1,392,10,"Eastern Asia",5.649693,1,11
-"Norway",2,"Cancer",2014,1,578,15,"Northern Europe",6.1072021,1,12
-"Australia",2,"Cancer",2014,1,36,18,"Australia/New Zealand",5.8477521,1,13
-"Chile",2,"Cancer",2014,1,152,8,"South America",6.192668,1,14
-"Italy",2,"Cancer",2014,1,380,16,"Southern Europe",6.4645019,1,15
-"New Zealand",2,"Cancer",2014,1,554,18,"Australia/New Zealand",6.5688737,1,16
-"USA",2,"Cancer",2014,1,840,9,"Northern America",6.6081276,1,17
-"United Kingdom",2,"Cancer",2014,1,826,15,"Northern Europe",6.9546022,1,18
-"France",2,"Cancer",2014,1,250,17,"Western Europe",7.3102076,1,19
-"Slovakia",2,"Cancer",2014,1,703,14,"Eastern Europe",9.6059322,1,20
-"Costa Rica",1,"Major NCDs",2014,0,188,7,"Central America",10.079813,1,1
-"Colombia",1,"Major NCDs",2014,0,170,8,"South America",10.650004,1,2
-"Mexico",1,"Major NCDs",2014,0,484,7,"Central America",15.025049,1,3
-"Brazil",1,"Major NCDs",2014,0,76,8,"South America",16.03537,1,4
-"Philippines",1,"Major NCDs",2014,0,608,11,"South-Eastern Asia",22.032975,1,5
-"Kazakhstan",1,"Major NCDs",2014,0,398,12,"Southern Asia",23.43792,1,6
-"Mauritius",1,"Major NCDs",2014,0,480,1,"Eastern Africa",22.50086,1,7
-"Bulgaria",1,"Major NCDs",2014,0,100,14,"Eastern Europe",24.18836,1,8
-"Uzbekistan",1,"Major NCDs",2014,0,860,12,"Southern Asia",25.005635,1,9
-"Ukraine",1,"Major NCDs",2014,0,804,14,"Eastern Europe",27.250061,1,10
-"Japan",2,"Major NCDs",2014,0,392,10,"Eastern Asia",8.7400351,1,11
-"Norway",2,"Major NCDs",2014,0,578,15,"Northern Europe",9.5520573,1,12
-"Australia",2,"Major NCDs",2014,0,36,18,"Australia/New Zealand",9.1605692,1,13
-"Italy",2,"Major NCDs",2014,0,380,16,"Southern Europe",9.7111082,1,14
-"France",2,"Major NCDs",2014,0,250,17,"Western Europe",10.048256,1,15
-"New Zealand",2,"Major NCDs",2014,0,554,18,"Australia/New Zealand",10.77731,1,16
-"United Kingdom",2,"Major NCDs",2014,0,826,15,"Northern Europe",11.48209,1,17
-"Chile",2,"Major NCDs",2014,0,152,8,"South America",11.89391,1,18
-"USA",2,"Major NCDs",2014,0,840,9,"Northern America",13.71945,1,19
-"Slovakia",2,"Major NCDs",2014,0,703,14,"Eastern Europe",18.109425,1,20
-"Costa Rica",1,"CVD",2015,2,188,7,"Central America",4.2277737,1,1
-"Colombia",1,"CVD",2015,2,170,8,"South America",4.6786819,1,2
-"Mexico",1,"CVD",2015,2,484,7,"Central America",5.4469061,1,3
-"Brazil",1,"CVD",2015,2,76,8,"South America",7.6682849,1,4
-"Mauritius",1,"CVD",2015,2,480,1,"Eastern Africa",9.0041075,1,5
-"Kazakhstan",1,"CVD",2015,2,398,12,"Southern Asia",11.17315,1,6
-"Philippines",1,"CVD",2015,2,608,11,"South-Eastern Asia",13.617299,1,7
-"Bulgaria",1,"CVD",2015,2,100,14,"Eastern Europe",15.68457,1,8
-"Ukraine",1,"CVD",2015,2,804,14,"Eastern Europe",18.484739,1,9
-"Uzbekistan",1,"CVD",2015,2,860,12,"Southern Asia",18.843689,1,10
-"France",2,"CVD",2015,2,250,17,"Western Europe",2.2454181,1,11
-"Australia",2,"CVD",2015,2,36,18,"Australia/New Zealand",2.4542379,1,12
-"Norway",2,"CVD",2015,2,578,15,"Northern Europe",2.4729002,1,13
-"Japan",2,"CVD",2015,2,392,10,"Eastern Asia",2.7030931,1,14
-"Italy",2,"CVD",2015,2,380,16,"Southern Europe",2.708231,1,15
-"New Zealand",2,"CVD",2015,2,554,18,"Australia/New Zealand",3.1311941,1,16
-"United Kingdom",2,"CVD",2015,2,826,15,"Northern Europe",3.6380908,1,17
-"Chile",2,"CVD",2015,2,152,8,"South America",4.348011,1,18
-"USA",2,"CVD",2015,2,840,9,"Northern America",5.5959606,1,19
-"Slovakia",2,"CVD",2015,2,703,14,"Eastern Europe",7.8991718,1,20
-"Mexico",1,"Cancer",2015,1,484,7,"Central America",4.279778,1,1
-"Uzbekistan",1,"Cancer",2015,1,860,12,"Southern Asia",4.3459063,1,2
-"Colombia",1,"Cancer",2015,1,170,8,"South America",4.4175029,1,3
-"Costa Rica",1,"Cancer",2015,1,188,7,"Central America",4.560358,1,4
-"Mauritius",1,"Cancer",2015,1,480,1,"Eastern Africa",5.0539432,1,5
-"Philippines",1,"Cancer",2015,1,608,11,"South-Eastern Asia",5.0904889,1,6
-"Brazil",1,"Cancer",2015,1,76,8,"South America",6.1395788,1,7
-"Kazakhstan",1,"Cancer",2015,1,398,12,"Southern Asia",7.5482569,1,8
-"Ukraine",1,"Cancer",2015,1,804,14,"Eastern Europe",8.7686777,1,9
-"Bulgaria",1,"Cancer",2015,1,100,14,"Eastern Europe",9.0828323,1,10
-"Japan",2,"Cancer",2015,1,392,10,"Eastern Asia",5.5291152,1,11
-"Norway",2,"Cancer",2015,1,578,15,"Northern Europe",5.7307863,1,12
-"Australia",2,"Cancer",2015,1,36,18,"Australia/New Zealand",5.7985482,1,13
-"Chile",2,"Cancer",2015,1,152,8,"South America",6.0637221,1,14
-"Italy",2,"Cancer",2015,1,380,16,"Southern Europe",6.3587165,1,15
-"New Zealand",2,"Cancer",2015,1,554,18,"Australia/New Zealand",6.4270778,1,16
-"USA",2,"Cancer",2015,1,840,9,"Northern America",6.4650116,1,17
-"United Kingdom",2,"Cancer",2015,1,826,15,"Northern Europe",6.7833514,1,18
-"France",2,"Cancer",2015,1,250,17,"Western Europe",7.2024951,1,19
-"Slovakia",2,"Cancer",2015,1,703,14,"Eastern Europe",9.4826813,1,20
-"Costa Rica",1,"Major NCDs",2015,0,188,7,"Central America",9.6573715,1,1
-"Colombia",1,"Major NCDs",2015,0,170,8,"South America",10.265121,1,2
-"Mexico",1,"Major NCDs",2015,0,484,7,"Central America",15.20673,1,3
-"Brazil",1,"Major NCDs",2015,0,76,8,"South America",15.71108,1,4
-"Philippines",1,"Major NCDs",2015,0,608,11,"South-Eastern Asia",21.535429,1,5
-"Kazakhstan",1,"Major NCDs",2015,0,398,12,"Southern Asia",21.731911,1,6
-"Mauritius",1,"Major NCDs",2015,0,480,1,"Eastern Africa",22.49864,1,7
-"Bulgaria",1,"Major NCDs",2015,0,100,14,"Eastern Europe",24.3813,1,8
-"Uzbekistan",1,"Major NCDs",2015,0,860,12,"Southern Asia",24.425741,1,9
-"Ukraine",1,"Major NCDs",2015,0,804,14,"Eastern Europe",26.28273,1,10
-"Japan",2,"Major NCDs",2015,0,392,10,"Eastern Asia",8.5280399,1,11
-"Norway",2,"Major NCDs",2015,0,578,15,"Northern Europe",8.9270067,1,12
-"Australia",2,"Major NCDs",2015,0,36,18,"Australia/New Zealand",9.0727901,1,13
-"Italy",2,"Major NCDs",2015,0,380,16,"Southern Europe",9.5263786,1,14
-"France",2,"Major NCDs",2015,0,250,17,"Western Europe",9.8604937,1,15
-"New Zealand",2,"Major NCDs",2015,0,554,18,"Australia/New Zealand",10.49086,1,16
-"United Kingdom",2,"Major NCDs",2015,0,826,15,"Northern Europe",11.300011,1,17
-"Chile",2,"Major NCDs",2015,0,152,8,"South America",11.563769,1,18
-"USA",2,"Major NCDs",2015,0,840,9,"Northern America",13.67293,1,19
-"Slovakia",2,"Major NCDs",2015,0,703,14,"Eastern Europe",17.51095,1,20
+country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,select,rank,temp_max,temp_min,rank2
+"Costa Rica",1,"CVD",2000,2,188,7,"Central America",6.5278673,1,1,9.657372,,1
+"Colombia",1,"CVD",2000,2,170,8,"South America",8.6685772,1,2,10.26512,,2
+"Mexico",1,"CVD",2000,2,484,7,"Central America",6.2216768,1,3,15.20673,,3
+"Brazil",1,"CVD",2000,2,76,8,"South America",10.573636,1,4,15.71108,,4
+"Philippines",1,"CVD",2000,2,608,11,"South-Eastern Asia",13.903239,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2000,2,398,12,"Southern Asia",26.956541,1,6,21.73191,,6
+"Mauritius",1,"CVD",2000,2,480,1,"Eastern Africa",20.26078,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2000,2,100,14,"Eastern Europe",19.576309,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2000,2,860,12,"Southern Asia",23.159161,1,10,24.42574,,9
+"Ukraine",1,"CVD",2000,2,804,14,"Eastern Europe",23.55271,1,9,26.28273,,10
+"Japan",2,"CVD",2000,2,392,10,"Eastern Asia",3.8849962,1,14,8.52804,,11
+"Norway",2,"CVD",2000,2,578,15,"Northern Europe",5.4251451,1,13,8.927007,,12
+"Australia",2,"CVD",2000,2,36,18,"Australia/New Zealand",4.6044908,1,12,9.07279,,13
+"Italy",2,"CVD",2000,2,380,16,"Southern Europe",4.9162488,1,15,9.526379,,14
+"France",2,"CVD",2000,2,250,17,"Western Europe",3.9225061,1,11,9.860494,,15
+"New Zealand",2,"CVD",2000,2,554,18,"Australia/New Zealand",6.3879819,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2000,2,826,15,"Northern Europe",7.1075692,1,17,11.30001,,17
+"Chile",2,"CVD",2000,2,152,8,"South America",6.1399679,1,18,11.56377,,18
+"USA",2,"CVD",2000,2,840,9,"Northern America",7.7744498,1,19,13.67293,,19
+"Slovakia",2,"CVD",2000,2,703,14,"Eastern Europe",14.497818,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2000,1,188,7,"Central America",5.8422918,1,4,9.657372,,1
+"Colombia",1,"Cancer",2000,1,170,8,"South America",6.3135805,1,3,10.26512,,2
+"Mexico",1,"Cancer",2000,1,484,7,"Central America",5.0024629,1,1,15.20673,,3
+"Brazil",1,"Cancer",2000,1,76,8,"South America",6.087153,1,7,15.71108,,4
+"Philippines",1,"Cancer",2000,1,608,11,"South-Eastern Asia",6.0841141,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2000,1,398,12,"Southern Asia",11.189437,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2000,1,480,1,"Eastern Africa",5.093215,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2000,1,100,14,"Eastern Europe",8.6776171,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2000,1,860,12,"Southern Asia",4.9822612,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2000,1,804,14,"Eastern Europe",10.47517,1,9,26.28273,,10
+"Japan",2,"Cancer",2000,1,392,10,"Eastern Asia",7.2292948,1,11,8.52804,,11
+"Norway",2,"Cancer",2000,1,578,15,"Northern Europe",7.8953981,1,12,8.927007,,12
+"Australia",2,"Cancer",2000,1,36,18,"Australia/New Zealand",7.5054922,1,13,9.07279,,13
+"Italy",2,"Cancer",2000,1,380,16,"Southern Europe",8.1999741,1,15,9.526379,,14
+"France",2,"Cancer",2000,1,250,17,"Western Europe",9.1532679,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2000,1,554,18,"Australia/New Zealand",8.6965218,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2000,1,826,15,"Northern Europe",8.5433397,1,18,11.30001,,17
+"Chile",2,"Cancer",2000,1,152,8,"South America",7.5448861,1,14,11.56377,,18
+"USA",2,"Cancer",2000,1,840,9,"Northern America",8.4499817,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2000,1,703,14,"Eastern Europe",11.704638,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2000,0,188,7,"Central America",14.090753,1,1,9.657372,14.09075,1
+"Colombia",1,"Major NCDs",2000,0,170,8,"South America",17.15904,1,2,10.26512,17.15904,2
+"Mexico",1,"Major NCDs",2000,0,484,7,"Central America",16.3724,1,3,15.20673,16.3724,3
+"Brazil",1,"Major NCDs",2000,0,76,8,"South America",19.0672,1,4,15.71108,19.0672,4
+"Philippines",1,"Major NCDs",2000,0,608,11,"South-Eastern Asia",22.793829,1,5,21.53543,22.79383,5
+"Kazakhstan",1,"Major NCDs",2000,0,398,12,"Southern Asia",35.665241,1,6,21.73191,35.66524,6
+"Mauritius",1,"Major NCDs",2000,0,480,1,"Eastern Africa",28.034609,1,7,22.49864,28.03461,7
+"Bulgaria",1,"Major NCDs",2000,0,100,14,"Eastern Europe",27.690691,1,8,24.3813,27.69069,8
+"Uzbekistan",1,"Major NCDs",2000,0,860,12,"Southern Asia",28.508209,1,9,24.42574,28.50821,9
+"Ukraine",1,"Major NCDs",2000,0,804,14,"Eastern Europe",32.071678,1,10,26.28273,32.07168,10
+"Japan",2,"Major NCDs",2000,0,392,10,"Eastern Asia",11.445832,1,11,8.52804,11.44583,11
+"Norway",2,"Major NCDs",2000,0,578,15,"Northern Europe",13.939801,1,12,8.927007,13.9398,12
+"Australia",2,"Major NCDs",2000,0,36,18,"Australia/New Zealand",12.99395,1,13,9.07279,12.99395,13
+"Italy",2,"Major NCDs",2000,0,380,16,"Southern Europe",13.574398,1,14,9.526379,13.5744,14
+"France",2,"Major NCDs",2000,0,250,17,"Western Europe",13.492664,1,15,9.860494,13.49266,15
+"New Zealand",2,"Major NCDs",2000,0,554,18,"Australia/New Zealand",16.221691,1,16,10.49086,16.22169,16
+"United Kingdom",2,"Major NCDs",2000,0,826,15,"Northern Europe",16.348099,1,17,11.30001,16.3481,17
+"Chile",2,"Major NCDs",2000,0,152,8,"South America",14.896929,1,18,11.56377,14.89693,18
+"USA",2,"Major NCDs",2000,0,840,9,"Northern America",17.607821,1,19,13.67293,17.60782,19
+"Slovakia",2,"Major NCDs",2000,0,703,14,"Eastern Europe",25.54529,1,20,17.51095,25.54529,20
+"Costa Rica",1,"CVD",2001,2,188,7,"Central America",6.3534646,1,1,9.657372,,1
+"Colombia",1,"CVD",2001,2,170,8,"South America",8.4173145,1,2,10.26512,,2
+"Mexico",1,"CVD",2001,2,484,7,"Central America",6.1013622,1,3,15.20673,,3
+"Brazil",1,"CVD",2001,2,76,8,"South America",10.304596,1,4,15.71108,,4
+"Philippines",1,"CVD",2001,2,608,11,"South-Eastern Asia",14.082471,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2001,2,398,12,"Southern Asia",27.125681,1,6,21.73191,,6
+"Mauritius",1,"CVD",2001,2,480,1,"Eastern Africa",20.129412,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2001,2,100,14,"Eastern Europe",19.339449,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2001,2,860,12,"Southern Asia",23.00746,1,10,24.42574,,9
+"Ukraine",1,"CVD",2001,2,804,14,"Eastern Europe",23.800131,1,9,26.28273,,10
+"Japan",2,"CVD",2001,2,392,10,"Eastern Asia",3.797441,1,14,8.52804,,11
+"Norway",2,"CVD",2001,2,578,15,"Northern Europe",5.0633349,1,13,8.927007,,12
+"Australia",2,"CVD",2001,2,36,18,"Australia/New Zealand",4.3160257,1,12,9.07279,,13
+"Italy",2,"CVD",2001,2,380,16,"Southern Europe",4.6360192,1,15,9.526379,,14
+"France",2,"CVD",2001,2,250,17,"Western Europe",3.7704251,1,11,9.860494,,15
+"New Zealand",2,"CVD",2001,2,554,18,"Australia/New Zealand",6.0439968,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2001,2,826,15,"Northern Europe",7.1075692,1,17,11.30001,,17
+"Chile",2,"CVD",2001,2,152,8,"South America",6.0097532,1,18,11.56377,,18
+"USA",2,"CVD",2001,2,840,9,"Northern America",7.5309267,1,19,13.67293,,19
+"Slovakia",2,"CVD",2001,2,703,14,"Eastern Europe",13.931209,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2001,1,188,7,"Central America",5.7188029,1,4,9.657372,,1
+"Colombia",1,"Cancer",2001,1,170,8,"South America",6.2990108,1,3,10.26512,,2
+"Mexico",1,"Cancer",2001,1,484,7,"Central America",4.9607501,1,1,15.20673,,3
+"Brazil",1,"Cancer",2001,1,76,8,"South America",6.0933328,1,7,15.71108,,4
+"Philippines",1,"Cancer",2001,1,608,11,"South-Eastern Asia",6.131237,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2001,1,398,12,"Southern Asia",10.955499,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2001,1,480,1,"Eastern Africa",5.1891818,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2001,1,100,14,"Eastern Europe",8.618598,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2001,1,860,12,"Southern Asia",4.8595862,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2001,1,804,14,"Eastern Europe",10.308233,1,9,26.28273,,10
+"Japan",2,"Cancer",2001,1,392,10,"Eastern Asia",7.055644,1,11,8.52804,,11
+"Norway",2,"Cancer",2001,1,578,15,"Northern Europe",7.7748494,1,12,8.927007,,12
+"Australia",2,"Cancer",2001,1,36,18,"Australia/New Zealand",7.339848,1,13,9.07279,,13
+"Italy",2,"Cancer",2001,1,380,16,"Southern Europe",8.0345516,1,15,9.526379,,14
+"France",2,"Cancer",2001,1,250,17,"Western Europe",8.9893522,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2001,1,554,18,"Australia/New Zealand",8.4714441,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2001,1,826,15,"Northern Europe",8.5433397,1,18,11.30001,,17
+"Chile",2,"Cancer",2001,1,152,8,"South America",7.466887,1,14,11.56377,,18
+"USA",2,"Cancer",2001,1,840,9,"Northern America",8.3130579,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2001,1,703,14,"Eastern Europe",11.449417,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2001,0,188,7,"Central America",13.81035,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2001,0,170,8,"South America",16.89595,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2001,0,484,7,"Central America",16.362589,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2001,0,76,8,"South America",18.77932,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2001,0,608,11,"South-Eastern Asia",23.089661,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2001,0,398,12,"Southern Asia",35.635628,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2001,0,480,1,"Eastern Africa",28.122021,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2001,0,100,14,"Eastern Europe",27.389898,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2001,0,860,12,"Southern Asia",28.252941,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2001,0,804,14,"Eastern Europe",32.158649,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2001,0,392,10,"Eastern Asia",11.179812,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2001,0,578,15,"Northern Europe",13.478097,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2001,0,36,18,"Australia/New Zealand",12.52452,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2001,0,380,16,"Southern Europe",13.137733,1,14,9.526379,,14
+"France",2,"Major NCDs",2001,0,250,17,"Western Europe",13.181072,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2001,0,554,18,"Australia/New Zealand",15.67831,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2001,0,826,15,"Northern Europe",16.348099,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2001,0,152,8,"South America",14.70175,1,18,11.56377,,18
+"USA",2,"Major NCDs",2001,0,840,9,"Northern America",17.275181,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2001,0,703,14,"Eastern Europe",24.823549,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2002,2,188,7,"Central America",6.1193109,1,1,9.657372,,1
+"Colombia",1,"CVD",2002,2,170,8,"South America",8.0891247,1,2,10.26512,,2
+"Mexico",1,"CVD",2002,2,484,7,"Central America",5.9631009,1,3,15.20673,,3
+"Brazil",1,"CVD",2002,2,76,8,"South America",10.087742,1,4,15.71108,,4
+"Philippines",1,"CVD",2002,2,608,11,"South-Eastern Asia",14.33855,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2002,2,398,12,"Southern Asia",27.25724,1,6,21.73191,,6
+"Mauritius",1,"CVD",2002,2,480,1,"Eastern Africa",19.967464,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2002,2,100,14,"Eastern Europe",19.26264,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2002,2,860,12,"Southern Asia",22.931349,1,10,24.42574,,9
+"Ukraine",1,"CVD",2002,2,804,14,"Eastern Europe",24.02459,1,9,26.28273,,10
+"Japan",2,"CVD",2002,2,392,10,"Eastern Asia",3.6903138,1,14,8.52804,,11
+"Norway",2,"CVD",2002,2,578,15,"Northern Europe",4.6982608,1,13,8.927007,,12
+"Australia",2,"CVD",2002,2,36,18,"Australia/New Zealand",4.0726562,1,12,9.07279,,13
+"Italy",2,"CVD",2002,2,380,16,"Southern Europe",4.3529282,1,15,9.526379,,14
+"France",2,"CVD",2002,2,250,17,"Western Europe",3.5884309,1,11,9.860494,,15
+"New Zealand",2,"CVD",2002,2,554,18,"Australia/New Zealand",5.6746941,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2002,2,826,15,"Northern Europe",6.6201849,1,17,11.30001,,17
+"Chile",2,"CVD",2002,2,152,8,"South America",5.8453617,1,18,11.56377,,18
+"USA",2,"CVD",2002,2,840,9,"Northern America",7.2756319,1,19,13.67293,,19
+"Slovakia",2,"CVD",2002,2,703,14,"Eastern Europe",13.440694,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2002,1,188,7,"Central America",5.69173,1,4,9.657372,,1
+"Colombia",1,"Cancer",2002,1,170,8,"South America",6.2105088,1,3,10.26512,,2
+"Mexico",1,"Cancer",2002,1,484,7,"Central America",4.9066653,1,1,15.20673,,3
+"Brazil",1,"Cancer",2002,1,76,8,"South America",6.1056681,1,7,15.71108,,4
+"Philippines",1,"Cancer",2002,1,608,11,"South-Eastern Asia",6.1315713,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2002,1,398,12,"Southern Asia",10.754025,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2002,1,480,1,"Eastern Africa",5.3350062,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2002,1,100,14,"Eastern Europe",8.5790892,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2002,1,860,12,"Southern Asia",4.7893171,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2002,1,804,14,"Eastern Europe",10.142809,1,9,26.28273,,10
+"Japan",2,"Cancer",2002,1,392,10,"Eastern Asia",6.9165697,1,11,8.52804,,11
+"Norway",2,"Cancer",2002,1,578,15,"Northern Europe",7.6260157,1,12,8.927007,,12
+"Australia",2,"Cancer",2002,1,36,18,"Australia/New Zealand",7.2139301,1,13,9.07279,,13
+"Italy",2,"Cancer",2002,1,380,16,"Southern Europe",7.8955994,1,15,9.526379,,14
+"France",2,"Cancer",2002,1,250,17,"Western Europe",8.8295259,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2002,1,554,18,"Australia/New Zealand",8.290801,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2002,1,826,15,"Northern Europe",8.3545942,1,18,11.30001,,17
+"Chile",2,"Cancer",2002,1,152,8,"South America",7.3647356,1,14,11.56377,,18
+"USA",2,"Cancer",2002,1,840,9,"Northern America",8.1519413,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2002,1,703,14,"Eastern Europe",11.216391,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2002,0,188,7,"Central America",13.527184,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2002,0,170,8,"South America",16.382959,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2002,0,484,7,"Central America",16.26898,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2002,0,76,8,"South America",18.54237,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2002,0,608,11,"South-Eastern Asia",23.5611,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2002,0,398,12,"Southern Asia",35.886932,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2002,0,480,1,"Eastern Africa",28.075951,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2002,0,100,14,"Eastern Europe",27.24667,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2002,0,860,12,"Southern Asia",28.287979,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2002,0,804,14,"Eastern Europe",32.225372,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2002,0,392,10,"Eastern Asia",10.921783,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2002,0,578,15,"Northern Europe",12.974152,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2002,0,36,18,"Australia/New Zealand",12.13914,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2002,0,380,16,"Southern Europe",12.707578,1,14,9.526379,,14
+"France",2,"Major NCDs",2002,0,250,17,"Western Europe",12.832578,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2002,0,554,18,"Australia/New Zealand",15.10235,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2002,0,826,15,"Northern Europe",15.70771,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2002,0,152,8,"South America",14.45646,1,18,11.56377,,18
+"USA",2,"Major NCDs",2002,0,840,9,"Northern America",16.86977,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2002,0,703,14,"Eastern Europe",24.165089,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2003,2,188,7,"Central America",5.829917,1,1,9.657372,,1
+"Colombia",1,"CVD",2003,2,170,8,"South America",7.790102,1,2,10.26512,,2
+"Mexico",1,"CVD",2003,2,484,7,"Central America",5.8679128,1,3,15.20673,,3
+"Brazil",1,"CVD",2003,2,76,8,"South America",9.8252268,1,4,15.71108,,4
+"Philippines",1,"CVD",2003,2,608,11,"South-Eastern Asia",14.55058,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2003,2,398,12,"Southern Asia",27.324459,1,6,21.73191,,6
+"Mauritius",1,"CVD",2003,2,480,1,"Eastern Africa",18.39299,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2003,2,100,14,"Eastern Europe",18.86867,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2003,2,860,12,"Southern Asia",22.992701,1,10,24.42574,,9
+"Ukraine",1,"CVD",2003,2,804,14,"Eastern Europe",24.343849,1,9,26.28273,,10
+"Japan",2,"CVD",2003,2,392,10,"Eastern Asia",3.6352899,1,14,8.52804,,11
+"Norway",2,"CVD",2003,2,578,15,"Northern Europe",4.4192181,1,13,8.927007,,12
+"Australia",2,"CVD",2003,2,36,18,"Australia/New Zealand",3.8187861,1,12,9.07279,,13
+"Italy",2,"CVD",2003,2,380,16,"Southern Europe",4.1192279,1,15,9.526379,,14
+"France",2,"CVD",2003,2,250,17,"Western Europe",3.4421279,1,11,9.860494,,15
+"New Zealand",2,"CVD",2003,2,554,18,"Australia/New Zealand",5.3557501,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2003,2,826,15,"Northern Europe",6.1671519,1,17,11.30001,,17
+"Chile",2,"CVD",2003,2,152,8,"South America",5.7303119,1,18,11.56377,,18
+"USA",2,"CVD",2003,2,840,9,"Northern America",7.038322,1,19,13.67293,,19
+"Slovakia",2,"CVD",2003,2,703,14,"Eastern Europe",13.086195,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2003,1,188,7,"Central America",5.622992,1,4,9.657372,,1
+"Colombia",1,"Cancer",2003,1,170,8,"South America",6.091351,1,3,10.26512,,2
+"Mexico",1,"Cancer",2003,1,484,7,"Central America",4.8587341,1,1,15.20673,,3
+"Brazil",1,"Cancer",2003,1,76,8,"South America",6.1147509,1,7,15.71108,,4
+"Philippines",1,"Cancer",2003,1,608,11,"South-Eastern Asia",6.0801721,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2003,1,398,12,"Southern Asia",10.556209,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2003,1,480,1,"Eastern Africa",5.3526173,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2003,1,100,14,"Eastern Europe",8.7771845,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2003,1,860,12,"Southern Asia",4.745399,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2003,1,804,14,"Eastern Europe",10.015729,1,9,26.28273,,10
+"Japan",2,"Cancer",2003,1,392,10,"Eastern Asia",6.7592301,1,11,8.52804,,11
+"Norway",2,"Cancer",2003,1,578,15,"Northern Europe",7.5113401,1,12,8.927007,,12
+"Australia",2,"Cancer",2003,1,36,18,"Australia/New Zealand",7.0332012,1,13,9.07279,,13
+"Italy",2,"Cancer",2003,1,380,16,"Southern Europe",7.747519,1,15,9.526379,,14
+"France",2,"Cancer",2003,1,250,17,"Western Europe",8.6863165,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2003,1,554,18,"Australia/New Zealand",8.0978937,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2003,1,826,15,"Northern Europe",8.1890469,1,18,11.30001,,17
+"Chile",2,"Cancer",2003,1,152,8,"South America",7.2605767,1,14,11.56377,,18
+"USA",2,"Cancer",2003,1,840,9,"Northern America",7.9931021,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2003,1,703,14,"Eastern Europe",11.022689,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2003,0,188,7,"Central America",13.114463,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2003,0,170,8,"South America",15.92768,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2003,0,484,7,"Central America",16.283461,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2003,0,76,8,"South America",18.222191,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2003,0,608,11,"South-Eastern Asia",23.886379,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2003,0,398,12,"Southern Asia",36.085423,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2003,0,480,1,"Eastern Africa",27.815601,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2003,0,100,14,"Eastern Europe",27.049759,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2003,0,860,12,"Southern Asia",28.47842,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2003,0,804,14,"Eastern Europe",32.585968,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2003,0,392,10,"Eastern Asia",10.705869,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2003,0,578,15,"Northern Europe",12.589389,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2003,0,36,18,"Australia/New Zealand",11.661334,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2003,0,380,16,"Southern Europe",12.335422,1,14,9.526379,,14
+"France",2,"Major NCDs",2003,0,250,17,"Western Europe",12.539562,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2003,0,554,18,"Australia/New Zealand",14.578449,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2003,0,826,15,"Northern Europe",15.10026,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2003,0,152,8,"South America",14.283679,1,18,11.56377,,18
+"USA",2,"Major NCDs",2003,0,840,9,"Northern America",16.500019,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2003,0,703,14,"Eastern Europe",23.670561,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2004,2,188,7,"Central America",5.549758,1,1,9.657372,,1
+"Colombia",1,"CVD",2004,2,170,8,"South America",7.5815902,1,2,10.26512,,2
+"Mexico",1,"CVD",2004,2,484,7,"Central America",5.7639508,1,3,15.20673,,3
+"Brazil",1,"CVD",2004,2,76,8,"South America",9.6448927,1,4,15.71108,,4
+"Philippines",1,"CVD",2004,2,608,11,"South-Eastern Asia",14.591974,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2004,2,398,12,"Southern Asia",27.38702,1,6,21.73191,,6
+"Mauritius",1,"CVD",2004,2,480,1,"Eastern Africa",16.832607,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2004,2,100,14,"Eastern Europe",18.52746,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2004,2,860,12,"Southern Asia",22.681601,1,10,24.42574,,9
+"Ukraine",1,"CVD",2004,2,804,14,"Eastern Europe",24.61834,1,9,26.28273,,10
+"Japan",2,"CVD",2004,2,392,10,"Eastern Asia",3.5607901,1,14,8.52804,,11
+"Norway",2,"CVD",2004,2,578,15,"Northern Europe",4.1494379,1,13,8.927007,,12
+"Australia",2,"CVD",2004,2,36,18,"Australia/New Zealand",3.5891018,1,12,9.07279,,13
+"Italy",2,"CVD",2004,2,380,16,"Southern Europe",3.8865991,1,15,9.526379,,14
+"France",2,"CVD",2004,2,250,17,"Western Europe",3.2987752,1,11,9.860494,,15
+"New Zealand",2,"CVD",2004,2,554,18,"Australia/New Zealand",5.0488319,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2004,2,826,15,"Northern Europe",5.8207283,1,17,11.30001,,17
+"Chile",2,"CVD",2004,2,152,8,"South America",5.559154,1,18,11.56377,,18
+"USA",2,"CVD",2004,2,840,9,"Northern America",6.8115034,1,19,13.67293,,19
+"Slovakia",2,"CVD",2004,2,703,14,"Eastern Europe",12.757331,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2004,1,188,7,"Central America",5.5677729,1,4,9.657372,,1
+"Colombia",1,"Cancer",2004,1,170,8,"South America",5.9928832,1,3,10.26512,,2
+"Mexico",1,"Cancer",2004,1,484,7,"Central America",4.8251433,1,1,15.20673,,3
+"Brazil",1,"Cancer",2004,1,76,8,"South America",6.1376476,1,7,15.71108,,4
+"Philippines",1,"Cancer",2004,1,608,11,"South-Eastern Asia",6.066617,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2004,1,398,12,"Southern Asia",10.326834,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2004,1,480,1,"Eastern Africa",5.2792091,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2004,1,100,14,"Eastern Europe",8.9410763,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2004,1,860,12,"Southern Asia",4.6698647,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2004,1,804,14,"Eastern Europe",9.9364481,1,9,26.28273,,10
+"Japan",2,"Cancer",2004,1,392,10,"Eastern Asia",6.6025453,1,11,8.52804,,11
+"Norway",2,"Cancer",2004,1,578,15,"Northern Europe",7.3812852,1,12,8.927007,,12
+"Australia",2,"Cancer",2004,1,36,18,"Australia/New Zealand",6.8849669,1,13,9.07279,,13
+"Italy",2,"Cancer",2004,1,380,16,"Southern Europe",7.6194549,1,15,9.526379,,14
+"France",2,"Cancer",2004,1,250,17,"Western Europe",8.5578613,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2004,1,554,18,"Australia/New Zealand",7.8997478,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2004,1,826,15,"Northern Europe",8.0692739,1,18,11.30001,,17
+"Chile",2,"Cancer",2004,1,152,8,"South America",7.1291938,1,14,11.56377,,18
+"USA",2,"Cancer",2004,1,840,9,"Northern America",7.8368859,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2004,1,703,14,"Eastern Europe",10.785677,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2004,0,188,7,"Central America",12.724945,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2004,0,170,8,"South America",15.561821,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2004,0,484,7,"Central America",16.258881,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2004,0,76,8,"South America",18.01733,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2004,0,608,11,"South-Eastern Asia",23.958612,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2004,0,398,12,"Southern Asia",36.225937,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2004,0,480,1,"Eastern Africa",27.518351,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2004,0,100,14,"Eastern Europe",26.88909,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2004,0,860,12,"Southern Asia",28.281408,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2004,0,804,14,"Eastern Europe",32.920738,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2004,0,392,10,"Eastern Asia",10.469664,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2004,0,578,15,"Northern Europe",12.218896,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2004,0,36,18,"Australia/New Zealand",11.271313,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2004,0,380,16,"Southern Europe",11.982846,1,14,9.526379,,14
+"France",2,"Major NCDs",2004,0,250,17,"Western Europe",12.262549,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2004,0,554,18,"Australia/New Zealand",14.062341,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2004,0,826,15,"Northern Europe",14.654679,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2004,0,152,8,"South America",13.97167,1,18,11.56377,,18
+"USA",2,"Major NCDs",2004,0,840,9,"Northern America",16.121889,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2004,0,703,14,"Eastern Europe",23.13867,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2005,2,188,7,"Central America",5.3256721,1,1,9.657372,,1
+"Colombia",1,"CVD",2005,2,170,8,"South America",7.3469748,1,2,10.26512,,2
+"Mexico",1,"CVD",2005,2,484,7,"Central America",5.6587119,1,3,15.20673,,3
+"Brazil",1,"CVD",2005,2,76,8,"South America",9.5054436,1,4,15.71108,,4
+"Philippines",1,"CVD",2005,2,608,11,"South-Eastern Asia",14.633367,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2005,2,398,12,"Southern Asia",27.351231,1,6,21.73191,,6
+"Mauritius",1,"CVD",2005,2,480,1,"Eastern Africa",14.968912,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2005,2,100,14,"Eastern Europe",18.058041,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2005,2,860,12,"Southern Asia",22.22014,1,10,24.42574,,9
+"Ukraine",1,"CVD",2005,2,804,14,"Eastern Europe",24.771801,1,9,26.28273,,10
+"Japan",2,"CVD",2005,2,392,10,"Eastern Asia",3.4746509,1,14,8.52804,,11
+"Norway",2,"CVD",2005,2,578,15,"Northern Europe",3.909611,1,13,8.927007,,12
+"Australia",2,"CVD",2005,2,36,18,"Australia/New Zealand",3.4936939,1,12,9.07279,,13
+"Italy",2,"CVD",2005,2,380,16,"Southern Europe",3.6831691,1,15,9.526379,,14
+"France",2,"CVD",2005,2,250,17,"Western Europe",3.1649671,1,11,9.860494,,15
+"New Zealand",2,"CVD",2005,2,554,18,"Australia/New Zealand",4.7873182,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2005,2,826,15,"Northern Europe",5.4839201,1,17,11.30001,,17
+"Chile",2,"CVD",2005,2,152,8,"South America",5.4660802,1,18,11.56377,,18
+"USA",2,"CVD",2005,2,840,9,"Northern America",6.5633616,1,19,13.67293,,19
+"Slovakia",2,"CVD",2005,2,703,14,"Eastern Europe",12.534886,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2005,1,188,7,"Central America",5.4730501,1,4,9.657372,,1
+"Colombia",1,"Cancer",2005,1,170,8,"South America",5.8614674,1,3,10.26512,,2
+"Mexico",1,"Cancer",2005,1,484,7,"Central America",4.7390051,1,1,15.20673,,3
+"Brazil",1,"Cancer",2005,1,76,8,"South America",6.1573377,1,7,15.71108,,4
+"Philippines",1,"Cancer",2005,1,608,11,"South-Eastern Asia",6.053062,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2005,1,398,12,"Southern Asia",10.125909,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2005,1,480,1,"Eastern Africa",5.2301021,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2005,1,100,14,"Eastern Europe",9.0491505,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2005,1,860,12,"Southern Asia",4.5885992,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2005,1,804,14,"Eastern Europe",9.8787699,1,9,26.28273,,10
+"Japan",2,"Cancer",2005,1,392,10,"Eastern Asia",6.4830928,1,11,8.52804,,11
+"Norway",2,"Cancer",2005,1,578,15,"Northern Europe",7.2469802,1,12,8.927007,,12
+"Australia",2,"Cancer",2005,1,36,18,"Australia/New Zealand",6.8088002,1,13,9.07279,,13
+"Italy",2,"Cancer",2005,1,380,16,"Southern Europe",7.5128226,1,15,9.526379,,14
+"France",2,"Cancer",2005,1,250,17,"Western Europe",8.4201231,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2005,1,554,18,"Australia/New Zealand",7.8043923,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2005,1,826,15,"Northern Europe",7.9425735,1,18,11.30001,,17
+"Chile",2,"Cancer",2005,1,152,8,"South America",6.9629526,1,14,11.56377,,18
+"USA",2,"Cancer",2005,1,840,9,"Northern America",7.6793151,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2005,1,703,14,"Eastern Europe",10.667047,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2005,0,188,7,"Central America",12.359639,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2005,0,170,8,"South America",15.12187,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2005,0,484,7,"Central America",16.09383,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2005,0,76,8,"South America",17.850361,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2005,0,608,11,"South-Eastern Asia",24.030846,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2005,0,398,12,"Southern Asia",36.29298,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2005,0,480,1,"Eastern Africa",26.86227,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2005,0,100,14,"Eastern Europe",26.581991,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2005,0,860,12,"Southern Asia",27.900291,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2005,0,804,14,"Eastern Europe",33.15176,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2005,0,392,10,"Eastern Asia",10.260807,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2005,0,578,15,"Northern Europe",11.856099,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2005,0,36,18,"Australia/New Zealand",11.089499,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2005,0,380,16,"Southern Europe",11.682222,1,14,9.526379,,14
+"France",2,"Major NCDs",2005,0,250,17,"Western Europe",11.992461,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2005,0,554,18,"Australia/New Zealand",13.67096,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2005,0,826,15,"Northern Europe",14.211949,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2005,0,152,8,"South America",13.73792,1,18,11.56377,,18
+"USA",2,"Major NCDs",2005,0,840,9,"Northern America",15.723769,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2005,0,703,14,"Eastern Europe",22.827511,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2006,2,188,7,"Central America",5.129034,1,1,9.657372,,1
+"Colombia",1,"CVD",2006,2,170,8,"South America",7.0983844,1,2,10.26512,,2
+"Mexico",1,"CVD",2006,2,484,7,"Central America",5.5900078,1,3,15.20673,,3
+"Brazil",1,"CVD",2006,2,76,8,"South America",9.3852158,1,4,15.71108,,4
+"Philippines",1,"CVD",2006,2,608,11,"South-Eastern Asia",14.674761,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2006,2,398,12,"Southern Asia",26.7512,1,6,21.73191,,6
+"Mauritius",1,"CVD",2006,2,480,1,"Eastern Africa",13.076927,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2006,2,100,14,"Eastern Europe",17.375191,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2006,2,860,12,"Southern Asia",22.11187,1,10,24.42574,,9
+"Ukraine",1,"CVD",2006,2,804,14,"Eastern Europe",24.760801,1,9,26.28273,,10
+"Japan",2,"CVD",2006,2,392,10,"Eastern Asia",3.3844287,1,14,8.52804,,11
+"Norway",2,"CVD",2006,2,578,15,"Northern Europe",3.7402992,1,13,8.927007,,12
+"Australia",2,"CVD",2006,2,36,18,"Australia/New Zealand",3.3982861,1,12,9.07279,,13
+"Italy",2,"CVD",2006,2,380,16,"Southern Europe",3.5071731,1,15,9.526379,,14
+"France",2,"CVD",2006,2,250,17,"Western Europe",3.0353711,1,11,9.860494,,15
+"New Zealand",2,"CVD",2006,2,554,18,"Australia/New Zealand",4.5643573,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2006,2,826,15,"Northern Europe",5.1607652,1,17,11.30001,,17
+"Chile",2,"CVD",2006,2,152,8,"South America",5.268074,1,18,11.56377,,18
+"USA",2,"CVD",2006,2,840,9,"Northern America",6.3369436,1,19,13.67293,,19
+"Slovakia",2,"CVD",2006,2,703,14,"Eastern Europe",12.211991,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2006,1,188,7,"Central America",5.3173771,1,4,9.657372,,1
+"Colombia",1,"Cancer",2006,1,170,8,"South America",5.6951828,1,3,10.26512,,2
+"Mexico",1,"Cancer",2006,1,484,7,"Central America",4.6662641,1,1,15.20673,,3
+"Brazil",1,"Cancer",2006,1,76,8,"South America",6.195467,1,7,15.71108,,4
+"Philippines",1,"Cancer",2006,1,608,11,"South-Eastern Asia",6.0395069,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2006,1,398,12,"Southern Asia",9.9437695,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2006,1,480,1,"Eastern Africa",5.1650038,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2006,1,100,14,"Eastern Europe",9.2068367,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2006,1,860,12,"Southern Asia",4.5756346,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2006,1,804,14,"Eastern Europe",9.8242579,1,9,26.28273,,10
+"Japan",2,"Cancer",2006,1,392,10,"Eastern Asia",6.3759675,1,11,8.52804,,11
+"Norway",2,"Cancer",2006,1,578,15,"Northern Europe",7.1253114,1,12,8.927007,,12
+"Australia",2,"Cancer",2006,1,36,18,"Australia/New Zealand",6.7326336,1,13,9.07279,,13
+"Italy",2,"Cancer",2006,1,380,16,"Southern Europe",7.3887119,1,15,9.526379,,14
+"France",2,"Cancer",2006,1,250,17,"Western Europe",8.2947273,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2006,1,554,18,"Australia/New Zealand",7.6846333,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2006,1,826,15,"Northern Europe",7.8302751,1,18,11.30001,,17
+"Chile",2,"Cancer",2006,1,152,8,"South America",6.7906647,1,14,11.56377,,18
+"USA",2,"Cancer",2006,1,840,9,"Northern America",7.5299559,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2006,1,703,14,"Eastern Europe",10.488709,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2006,0,188,7,"Central America",11.85565,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2006,0,170,8,"South America",14.612741,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2006,0,484,7,"Central America",15.9653,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2006,0,76,8,"South America",17.72772,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2006,0,608,11,"South-Eastern Asia",24.103079,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2006,0,398,12,"Southern Asia",35.85368,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2006,0,480,1,"Eastern Africa",26.08588,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2006,0,100,14,"Eastern Europe",26.12055,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2006,0,860,12,"Southern Asia",27.813233,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2006,0,804,14,"Eastern Europe",33.218239,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2006,0,392,10,"Eastern Asia",10.056449,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2006,0,578,15,"Northern Europe",11.575949,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2006,0,36,18,"Australia/New Zealand",10.907685,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2006,0,380,16,"Southern Europe",11.37525,1,14,9.526379,,14
+"France",2,"Major NCDs",2006,0,250,17,"Western Europe",11.732094,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2006,0,554,18,"Australia/New Zealand",13.33068,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2006,0,826,15,"Northern Europe",13.779479,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2006,0,152,8,"South America",13.36088,1,18,11.56377,,18
+"USA",2,"Major NCDs",2006,0,840,9,"Northern America",15.35644,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2006,0,703,14,"Eastern Europe",22.35302,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2007,2,188,7,"Central America",4.9330211,1,1,9.657372,,1
+"Colombia",1,"CVD",2007,2,170,8,"South America",6.7979469,1,2,10.26512,,2
+"Mexico",1,"CVD",2007,2,484,7,"Central America",5.556385,1,3,15.20673,,3
+"Brazil",1,"CVD",2007,2,76,8,"South America",9.2048883,1,4,15.71108,,4
+"Philippines",1,"CVD",2007,2,608,11,"South-Eastern Asia",14.931069,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2007,2,398,12,"Southern Asia",25.857311,1,6,21.73191,,6
+"Mauritius",1,"CVD",2007,2,480,1,"Eastern Africa",11.383542,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2007,2,100,14,"Eastern Europe",16.904659,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2007,2,860,12,"Southern Asia",22.0036,1,10,24.42574,,9
+"Ukraine",1,"CVD",2007,2,804,14,"Eastern Europe",24.19783,1,9,26.28273,,10
+"Japan",2,"CVD",2007,2,392,10,"Eastern Asia",3.3011689,1,14,8.52804,,11
+"Norway",2,"CVD",2007,2,578,15,"Northern Europe",3.5701308,1,13,8.927007,,12
+"Australia",2,"CVD",2007,2,36,18,"Australia/New Zealand",3.2095189,1,12,9.07279,,13
+"Italy",2,"CVD",2007,2,380,16,"Southern Europe",3.3918409,1,15,9.526379,,14
+"France",2,"CVD",2007,2,250,17,"Western Europe",2.9516768,1,11,9.860494,,15
+"New Zealand",2,"CVD",2007,2,554,18,"Australia/New Zealand",4.3711181,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2007,2,826,15,"Northern Europe",4.874804,1,17,11.30001,,17
+"Chile",2,"CVD",2007,2,152,8,"South America",5.1292872,1,18,11.56377,,18
+"USA",2,"CVD",2007,2,840,9,"Northern America",6.149868,1,19,13.67293,,19
+"Slovakia",2,"CVD",2007,2,703,14,"Eastern Europe",11.903701,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2007,1,188,7,"Central America",5.0971923,1,4,9.657372,,1
+"Colombia",1,"Cancer",2007,1,170,8,"South America",5.5416059,1,3,10.26512,,2
+"Mexico",1,"Cancer",2007,1,484,7,"Central America",4.5849438,1,1,15.20673,,3
+"Brazil",1,"Cancer",2007,1,76,8,"South America",6.2050748,1,7,15.71108,,4
+"Philippines",1,"Cancer",2007,1,608,11,"South-Eastern Asia",5.9955387,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2007,1,398,12,"Southern Asia",9.7454491,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2007,1,480,1,"Eastern Africa",5.025403,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2007,1,100,14,"Eastern Europe",9.2445154,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2007,1,860,12,"Southern Asia",4.56267,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2007,1,804,14,"Eastern Europe",9.7653275,1,9,26.28273,,10
+"Japan",2,"Cancer",2007,1,392,10,"Eastern Asia",6.2402596,1,11,8.52804,,11
+"Norway",2,"Cancer",2007,1,578,15,"Northern Europe",6.9987288,1,12,8.927007,,12
+"Australia",2,"Cancer",2007,1,36,18,"Australia/New Zealand",6.5757842,1,13,9.07279,,13
+"Italy",2,"Cancer",2007,1,380,16,"Southern Europe",7.2848873,1,15,9.526379,,14
+"France",2,"Cancer",2007,1,250,17,"Western Europe",8.1967783,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2007,1,554,18,"Australia/New Zealand",7.4760666,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2007,1,826,15,"Northern Europe",7.711874,1,18,11.30001,,17
+"Chile",2,"Cancer",2007,1,152,8,"South America",6.7211471,1,14,11.56377,,18
+"USA",2,"Cancer",2007,1,840,9,"Northern America",7.3930359,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2007,1,703,14,"Eastern Europe",10.35778,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2007,0,188,7,"Central America",11.308343,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2007,0,170,8,"South America",14.049419,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2007,0,484,7,"Central America",15.834909,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2007,0,76,8,"South America",17.522058,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2007,0,608,11,"South-Eastern Asia",24.35294,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2007,0,398,12,"Southern Asia",34.863327,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2007,0,480,1,"Eastern Africa",25.51099,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2007,0,100,14,"Eastern Europe",25.765471,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2007,0,860,12,"Southern Asia",27.726175,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2007,0,804,14,"Eastern Europe",32.76693,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2007,0,392,10,"Eastern Asia",9.8344965,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2007,0,578,15,"Northern Europe",11.30462,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2007,0,36,18,"Australia/New Zealand",10.558929,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2007,0,380,16,"Southern Europe",11.164186,1,14,9.526379,,14
+"France",2,"Major NCDs",2007,0,250,17,"Western Europe",11.548101,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2007,0,554,18,"Australia/New Zealand",12.93766,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2007,0,826,15,"Northern Europe",13.38023,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2007,0,152,8,"South America",13.121469,1,18,11.56377,,18
+"USA",2,"Major NCDs",2007,0,840,9,"Northern America",15.042541,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2007,0,703,14,"Eastern Europe",21.929001,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2008,2,188,7,"Central America",4.9014711,1,1,9.657372,,1
+"Colombia",1,"CVD",2008,2,170,8,"South America",6.5026565,1,2,10.26512,,2
+"Mexico",1,"CVD",2008,2,484,7,"Central America",5.5159593,1,3,15.20673,,3
+"Brazil",1,"CVD",2008,2,76,8,"South America",9.0784178,1,4,15.71108,,4
+"Philippines",1,"CVD",2008,2,608,11,"South-Eastern Asia",15.23797,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2008,2,398,12,"Southern Asia",24.73213,1,6,21.73191,,6
+"Mauritius",1,"CVD",2008,2,480,1,"Eastern Africa",10.946194,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2008,2,100,14,"Eastern Europe",16.566799,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2008,2,860,12,"Southern Asia",21.89533,1,10,24.42574,,9
+"Ukraine",1,"CVD",2008,2,804,14,"Eastern Europe",23.284691,1,9,26.28273,,10
+"Japan",2,"CVD",2008,2,392,10,"Eastern Asia",3.2025223,1,14,8.52804,,11
+"Norway",2,"CVD",2008,2,578,15,"Northern Europe",3.4173999,1,13,8.927007,,12
+"Australia",2,"CVD",2008,2,36,18,"Australia/New Zealand",3.045161,1,12,9.07279,,13
+"Italy",2,"CVD",2008,2,380,16,"Southern Europe",3.252399,1,15,9.526379,,14
+"France",2,"CVD",2008,2,250,17,"Western Europe",2.8482502,1,11,9.860494,,15
+"New Zealand",2,"CVD",2008,2,554,18,"Australia/New Zealand",4.1981997,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2008,2,826,15,"Northern Europe",4.6391978,1,17,11.30001,,17
+"Chile",2,"CVD",2008,2,152,8,"South America",5.0173907,1,18,11.56377,,18
+"USA",2,"CVD",2008,2,840,9,"Northern America",5.970233,1,19,13.67293,,19
+"Slovakia",2,"CVD",2008,2,703,14,"Eastern Europe",11.506165,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2008,1,188,7,"Central America",5.1427102,1,4,9.657372,,1
+"Colombia",1,"Cancer",2008,1,170,8,"South America",5.397284,1,3,10.26512,,2
+"Mexico",1,"Cancer",2008,1,484,7,"Central America",4.4980483,1,1,15.20673,,3
+"Brazil",1,"Cancer",2008,1,76,8,"South America",6.2264962,1,7,15.71108,,4
+"Philippines",1,"Cancer",2008,1,608,11,"South-Eastern Asia",5.9872608,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2008,1,398,12,"Southern Asia",9.4968271,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2008,1,480,1,"Eastern Africa",4.991416,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2008,1,100,14,"Eastern Europe",9.0747395,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2008,1,860,12,"Southern Asia",4.5497054,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2008,1,804,14,"Eastern Europe",9.7019854,1,9,26.28273,,10
+"Japan",2,"Cancer",2008,1,392,10,"Eastern Asia",6.1424928,1,11,8.52804,,11
+"Norway",2,"Cancer",2008,1,578,15,"Northern Europe",6.9182763,1,12,8.927007,,12
+"Australia",2,"Cancer",2008,1,36,18,"Australia/New Zealand",6.4340591,1,13,9.07279,,13
+"Italy",2,"Cancer",2008,1,380,16,"Southern Europe",7.1792631,1,15,9.526379,,14
+"France",2,"Cancer",2008,1,250,17,"Western Europe",8.0809784,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2008,1,554,18,"Australia/New Zealand",7.3683023,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2008,1,826,15,"Northern Europe",7.5876026,1,18,11.30001,,17
+"Chile",2,"Cancer",2008,1,152,8,"South America",6.6208591,1,14,11.56377,,18
+"USA",2,"Cancer",2008,1,840,9,"Northern America",7.2670684,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2008,1,703,14,"Eastern Europe",10.173319,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2008,0,188,7,"Central America",11.27792,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2008,0,170,8,"South America",13.51651,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2008,0,484,7,"Central America",15.678041,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2008,0,76,8,"South America",17.406731,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2008,0,608,11,"South-Eastern Asia",24.65843,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2008,0,398,12,"Southern Asia",33.620171,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2008,0,480,1,"Eastern Africa",24.875151,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2008,0,100,14,"Eastern Europe",25.309071,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2008,0,860,12,"Southern Asia",27.639117,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2008,0,804,14,"Eastern Europe",31.802931,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2008,0,392,10,"Eastern Asia",9.6338491,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2008,0,578,15,"Northern Europe",11.072684,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2008,0,36,18,"Australia/New Zealand",10.244868,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2008,0,380,16,"Southern Europe",10.91078,1,14,9.526379,,14
+"France",2,"Major NCDs",2008,0,250,17,"Western Europe",11.322762,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2008,0,554,18,"Australia/New Zealand",12.64402,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2008,0,826,15,"Northern Europe",13.02148,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2008,0,152,8,"South America",12.90849,1,18,11.56377,,18
+"USA",2,"Major NCDs",2008,0,840,9,"Northern America",14.72788,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2008,0,703,14,"Eastern Europe",21.40419,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2009,2,188,7,"Central America",4.8352189,1,1,9.657372,,1
+"Colombia",1,"CVD",2009,2,170,8,"South America",6.1425729,1,2,10.26512,,2
+"Mexico",1,"CVD",2009,2,484,7,"Central America",5.491868,1,3,15.20673,,3
+"Brazil",1,"CVD",2009,2,76,8,"South America",8.9234858,1,4,15.71108,,4
+"Philippines",1,"CVD",2009,2,608,11,"South-Eastern Asia",15.01873,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2009,2,398,12,"Southern Asia",23.12072,1,6,21.73191,,6
+"Mauritius",1,"CVD",2009,2,480,1,"Eastern Africa",10.484548,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2009,2,100,14,"Eastern Europe",16.204271,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2009,2,860,12,"Southern Asia",21.78706,1,10,24.42574,,9
+"Ukraine",1,"CVD",2009,2,804,14,"Eastern Europe",22.27729,1,9,26.28273,,10
+"Japan",2,"CVD",2009,2,392,10,"Eastern Asia",3.1345313,1,14,8.52804,,11
+"Norway",2,"CVD",2009,2,578,15,"Northern Europe",3.278955,1,13,8.927007,,12
+"Australia",2,"CVD",2009,2,36,18,"Australia/New Zealand",2.946054,1,12,9.07279,,13
+"Italy",2,"CVD",2009,2,380,16,"Southern Europe",3.154042,1,15,9.526379,,14
+"France",2,"CVD",2009,2,250,17,"Western Europe",2.7461021,1,11,9.860494,,15
+"New Zealand",2,"CVD",2009,2,554,18,"Australia/New Zealand",4.0447202,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2009,2,826,15,"Northern Europe",4.3869653,1,17,11.30001,,17
+"Chile",2,"CVD",2009,2,152,8,"South America",4.9075308,1,18,11.56377,,18
+"USA",2,"CVD",2009,2,840,9,"Northern America",5.8203263,1,19,13.67293,,19
+"Slovakia",2,"CVD",2009,2,703,14,"Eastern Europe",10.771679,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2009,1,188,7,"Central America",5.0339079,1,4,9.657372,,1
+"Colombia",1,"Cancer",2009,1,170,8,"South America",5.221993,1,3,10.26512,,2
+"Mexico",1,"Cancer",2009,1,484,7,"Central America",4.4184799,1,1,15.20673,,3
+"Brazil",1,"Cancer",2009,1,76,8,"South America",6.2229819,1,7,15.71108,,4
+"Philippines",1,"Cancer",2009,1,608,11,"South-Eastern Asia",5.8033471,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2009,1,398,12,"Southern Asia",9.2471714,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2009,1,480,1,"Eastern Africa",4.8531089,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2009,1,100,14,"Eastern Europe",8.9451618,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2009,1,860,12,"Southern Asia",4.5367408,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2009,1,804,14,"Eastern Europe",9.6231022,1,9,26.28273,,10
+"Japan",2,"Cancer",2009,1,392,10,"Eastern Asia",6.0646544,1,11,8.52804,,11
+"Norway",2,"Cancer",2009,1,578,15,"Northern Europe",6.8106985,1,12,8.927007,,12
+"Australia",2,"Cancer",2009,1,36,18,"Australia/New Zealand",6.3527322,1,13,9.07279,,13
+"Italy",2,"Cancer",2009,1,380,16,"Southern Europe",7.058146,1,15,9.526379,,14
+"France",2,"Cancer",2009,1,250,17,"Western Europe",7.9518847,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2009,1,554,18,"Australia/New Zealand",7.2805395,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2009,1,826,15,"Northern Europe",7.468996,1,18,11.30001,,17
+"Chile",2,"Cancer",2009,1,152,8,"South America",6.5374217,1,14,11.56377,,18
+"USA",2,"Cancer",2009,1,840,9,"Northern America",7.1401825,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2009,1,703,14,"Eastern Europe",10.041528,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2009,0,188,7,"Central America",11.042361,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2009,0,170,8,"South America",12.877131,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2009,0,484,7,"Central America",15.48838,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2009,0,76,8,"South America",17.24617,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2009,0,608,11,"South-Eastern Asia",24.09919,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2009,0,398,12,"Southern Asia",32.072411,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2009,0,480,1,"Eastern Africa",24.205599,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2009,0,100,14,"Eastern Europe",24.857021,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2009,0,860,12,"Southern Asia",27.552059,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2009,0,804,14,"Eastern Europe",30.75189,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2009,0,392,10,"Eastern Asia",9.4893904,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2009,0,578,15,"Northern Europe",10.817635,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2009,0,36,18,"Australia/New Zealand",10.07508,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2009,0,380,16,"Southern Europe",10.699793,1,14,9.526379,,14
+"France",2,"Major NCDs",2009,0,250,17,"Western Europe",11.103625,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2009,0,554,18,"Australia/New Zealand",12.376161,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2009,0,826,15,"Northern Europe",12.66338,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2009,0,152,8,"South America",12.710521,1,18,11.56377,,18
+"USA",2,"Major NCDs",2009,0,840,9,"Northern America",14.46557,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2009,0,703,14,"Eastern Europe",20.6532,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2010,2,188,7,"Central America",4.8643398,1,1,9.657372,,1
+"Colombia",1,"CVD",2010,2,170,8,"South America",5.8271022,1,2,10.26512,,2
+"Mexico",1,"CVD",2010,2,484,7,"Central America",5.4633231,1,3,15.20673,,3
+"Brazil",1,"CVD",2010,2,76,8,"South America",8.7295218,1,4,15.71108,,4
+"Philippines",1,"CVD",2010,2,608,11,"South-Eastern Asia",15.027259,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2010,2,398,12,"Southern Asia",21.141949,1,6,21.73191,,6
+"Mauritius",1,"CVD",2010,2,480,1,"Eastern Africa",9.8837004,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2010,2,100,14,"Eastern Europe",15.86766,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2010,2,860,12,"Southern Asia",21.397621,1,10,24.42574,,9
+"Ukraine",1,"CVD",2010,2,804,14,"Eastern Europe",21.18701,1,9,26.28273,,10
+"Japan",2,"CVD",2010,2,392,10,"Eastern Asia",3.068711,1,14,8.52804,,11
+"Norway",2,"CVD",2010,2,578,15,"Northern Europe",3.1615801,1,13,8.927007,,12
+"Australia",2,"CVD",2010,2,36,18,"Australia/New Zealand",2.819526,1,12,9.07279,,13
+"Italy",2,"CVD",2010,2,380,16,"Southern Europe",3.0660539,1,15,9.526379,,14
+"France",2,"CVD",2010,2,250,17,"Western Europe",2.647805,1,11,9.860494,,15
+"New Zealand",2,"CVD",2010,2,554,18,"Australia/New Zealand",3.8567979,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2010,2,826,15,"Northern Europe",4.1630311,1,17,11.30001,,17
+"Chile",2,"CVD",2010,2,152,8,"South America",4.7679758,1,18,11.56377,,18
+"USA",2,"CVD",2010,2,840,9,"Northern America",5.7093601,1,19,13.67293,,19
+"Slovakia",2,"CVD",2010,2,703,14,"Eastern Europe",10.056208,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2010,1,188,7,"Central America",5.0429969,1,4,9.657372,,1
+"Colombia",1,"Cancer",2010,1,170,8,"South America",5.0692401,1,3,10.26512,,2
+"Mexico",1,"Cancer",2010,1,484,7,"Central America",4.3680091,1,1,15.20673,,3
+"Brazil",1,"Cancer",2010,1,76,8,"South America",6.2237129,1,7,15.71108,,4
+"Philippines",1,"Cancer",2010,1,608,11,"South-Eastern Asia",5.7726431,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2010,1,398,12,"Southern Asia",9.0259981,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2010,1,480,1,"Eastern Africa",4.8224916,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2010,1,100,14,"Eastern Europe",8.9270639,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2010,1,860,12,"Southern Asia",4.469492,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2010,1,804,14,"Eastern Europe",9.592371,1,9,26.28273,,10
+"Japan",2,"Cancer",2010,1,392,10,"Eastern Asia",5.97013,1,11,8.52804,,11
+"Norway",2,"Cancer",2010,1,578,15,"Northern Europe",6.6537595,1,12,8.927007,,12
+"Australia",2,"Cancer",2010,1,36,18,"Australia/New Zealand",6.2204199,1,13,9.07279,,13
+"Italy",2,"Cancer",2010,1,380,16,"Southern Europe",6.9278216,1,15,9.526379,,14
+"France",2,"Cancer",2010,1,250,17,"Western Europe",7.8194509,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2010,1,554,18,"Australia/New Zealand",7.1081171,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2010,1,826,15,"Northern Europe",7.3515029,1,18,11.30001,,17
+"Chile",2,"Cancer",2010,1,152,8,"South America",6.4890189,1,14,11.56377,,18
+"USA",2,"Cancer",2010,1,840,9,"Northern America",7.0225186,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2010,1,703,14,"Eastern Europe",9.9249363,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2010,0,188,7,"Central America",11.02604,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2010,0,170,8,"South America",12.338341,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2010,0,484,7,"Central America",15.374949,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2010,0,76,8,"South America",17.03105,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2010,0,608,11,"South-Eastern Asia",24.023161,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2010,0,398,12,"Southern Asia",30.26248,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2010,0,480,1,"Eastern Africa",23.7568,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2010,0,100,14,"Eastern Europe",24.49482,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2010,0,860,12,"Southern Asia",27.107922,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2010,0,804,14,"Eastern Europe",29.654831,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2010,0,392,10,"Eastern Asia",9.3283672,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2010,0,578,15,"Northern Europe",10.567777,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2010,0,36,18,"Australia/New Zealand",9.807188,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2010,0,380,16,"Southern Europe",10.481062,1,14,9.526379,,14
+"France",2,"Major NCDs",2010,0,250,17,"Western Europe",10.883312,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2010,0,554,18,"Australia/New Zealand",12.00129,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2010,0,826,15,"Northern Europe",12.33435,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2010,0,152,8,"South America",12.51217,1,18,11.56377,,18
+"USA",2,"Major NCDs",2010,0,840,9,"Northern America",14.249579,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2010,0,703,14,"Eastern Europe",19.889269,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2011,2,188,7,"Central America",4.826694,1,1,9.657372,,1
+"Colombia",1,"CVD",2011,2,170,8,"South America",5.4619012,1,2,10.26512,,2
+"Mexico",1,"CVD",2011,2,484,7,"Central America",5.4035673,1,3,15.20673,,3
+"Brazil",1,"CVD",2011,2,76,8,"South America",8.4982281,1,4,15.71108,,4
+"Philippines",1,"CVD",2011,2,608,11,"South-Eastern Asia",14.745267,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2011,2,398,12,"Southern Asia",18.913481,1,6,21.73191,,6
+"Mauritius",1,"CVD",2011,2,480,1,"Eastern Africa",9.3847733,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2011,2,100,14,"Eastern Europe",15.67578,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2011,2,860,12,"Southern Asia",20.631529,1,10,24.42574,,9
+"Ukraine",1,"CVD",2011,2,804,14,"Eastern Europe",20.17503,1,9,26.28273,,10
+"Japan",2,"CVD",2011,2,392,10,"Eastern Asia",2.9909329,1,14,8.52804,,11
+"Norway",2,"CVD",2011,2,578,15,"Northern Europe",3.013588,1,13,8.927007,,12
+"Australia",2,"CVD",2011,2,36,18,"Australia/New Zealand",2.7047429,1,12,9.07279,,13
+"Italy",2,"CVD",2011,2,380,16,"Southern Europe",2.9699271,1,15,9.526379,,14
+"France",2,"CVD",2011,2,250,17,"Western Europe",2.543294,1,11,9.860494,,15
+"New Zealand",2,"CVD",2011,2,554,18,"Australia/New Zealand",3.6475372,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2011,2,826,15,"Northern Europe",3.9732521,1,17,11.30001,,17
+"Chile",2,"CVD",2011,2,152,8,"South America",4.7165818,1,18,11.56377,,18
+"USA",2,"CVD",2011,2,840,9,"Northern America",5.6188111,1,19,13.67293,,19
+"Slovakia",2,"CVD",2011,2,703,14,"Eastern Europe",9.7063236,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2011,1,188,7,"Central America",5.084981,1,4,9.657372,,1
+"Colombia",1,"Cancer",2011,1,170,8,"South America",4.8866553,1,3,10.26512,,2
+"Mexico",1,"Cancer",2011,1,484,7,"Central America",4.2934079,1,1,15.20673,,3
+"Brazil",1,"Cancer",2011,1,76,8,"South America",6.2058349,1,7,15.71108,,4
+"Philippines",1,"Cancer",2011,1,608,11,"South-Eastern Asia",5.6362123,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2011,1,398,12,"Southern Asia",8.6983795,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2011,1,480,1,"Eastern Africa",4.824008,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2011,1,100,14,"Eastern Europe",8.8699455,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2011,1,860,12,"Southern Asia",4.3808417,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2011,1,804,14,"Eastern Europe",9.4709768,1,9,26.28273,,10
+"Japan",2,"Cancer",2011,1,392,10,"Eastern Asia",5.8815312,1,11,8.52804,,11
+"Norway",2,"Cancer",2011,1,578,15,"Northern Europe",6.5413251,1,12,8.927007,,12
+"Australia",2,"Cancer",2011,1,36,18,"Australia/New Zealand",6.1075578,1,13,9.07279,,13
+"Italy",2,"Cancer",2011,1,380,16,"Southern Europe",6.7821064,1,15,9.526379,,14
+"France",2,"Cancer",2011,1,250,17,"Western Europe",7.666832,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2011,1,554,18,"Australia/New Zealand",6.9023666,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2011,1,826,15,"Northern Europe",7.2325411,1,18,11.30001,,17
+"Chile",2,"Cancer",2011,1,152,8,"South America",6.4502277,1,14,11.56377,,18
+"USA",2,"Cancer",2011,1,840,9,"Northern America",6.8946629,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2011,1,703,14,"Eastern Europe",9.8581815,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2011,0,188,7,"Central America",10.97542,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2011,0,170,8,"South America",11.68613,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2011,0,484,7,"Central America",15.137289,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2011,0,76,8,"South America",16.765381,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2011,0,608,11,"South-Eastern Asia",23.525615,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2011,0,398,12,"Southern Asia",28.21706,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2011,0,480,1,"Eastern Africa",23.217819,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2011,0,100,14,"Eastern Europe",24.21755,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2011,0,860,12,"Southern Asia",26.269638,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2011,0,804,14,"Eastern Europe",28.558939,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2011,0,392,10,"Eastern Asia",9.164052,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2011,0,578,15,"Northern Europe",10.306882,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2011,0,36,18,"Australia/New Zealand",9.5743914,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2011,0,380,16,"Southern Europe",10.239183,1,14,9.526379,,14
+"France",2,"Major NCDs",2011,0,250,17,"Western Europe",10.632153,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2011,0,554,18,"Australia/New Zealand",11.54434,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2011,0,826,15,"Northern Europe",12.035,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2011,0,152,8,"South America",12.40495,1,18,11.56377,,18
+"USA",2,"Major NCDs",2011,0,840,9,"Northern America",14.03629,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2011,0,703,14,"Eastern Europe",19.51489,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2012,2,188,7,"Central America",4.7402229,1,1,9.657372,,1
+"Colombia",1,"CVD",2012,2,170,8,"South America",5.317368,1,2,10.26512,,2
+"Mexico",1,"CVD",2012,2,484,7,"Central America",5.3756628,1,3,15.20673,,3
+"Brazil",1,"CVD",2012,2,76,8,"South America",8.2719717,1,4,15.71108,,4
+"Philippines",1,"CVD",2012,2,608,11,"South-Eastern Asia",14.463275,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2012,2,398,12,"Southern Asia",16.804609,1,6,21.73191,,6
+"Mauritius",1,"CVD",2012,2,480,1,"Eastern Africa",8.8900957,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2012,2,100,14,"Eastern Europe",15.56738,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2012,2,860,12,"Southern Asia",20.183741,1,10,24.42574,,9
+"Ukraine",1,"CVD",2012,2,804,14,"Eastern Europe",19.471361,1,9,26.28273,,10
+"Japan",2,"CVD",2012,2,392,10,"Eastern Asia",2.9170048,1,14,8.52804,,11
+"Norway",2,"CVD",2012,2,578,15,"Northern Europe",2.8677409,1,13,8.927007,,12
+"Australia",2,"CVD",2012,2,36,18,"Australia/New Zealand",2.6415071,1,12,9.07279,,13
+"Italy",2,"CVD",2012,2,380,16,"Southern Europe",2.8736119,1,15,9.526379,,14
+"France",2,"CVD",2012,2,250,17,"Western Europe",2.4357781,1,11,9.860494,,15
+"New Zealand",2,"CVD",2012,2,554,18,"Australia/New Zealand",3.5398688,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2012,2,826,15,"Northern Europe",3.8244359,1,17,11.30001,,17
+"Chile",2,"CVD",2012,2,152,8,"South America",4.6545901,1,18,11.56377,,18
+"USA",2,"CVD",2012,2,840,9,"Northern America",5.563302,1,19,13.67293,,19
+"Slovakia",2,"CVD",2012,2,703,14,"Eastern Europe",9.3564396,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2012,1,188,7,"Central America",5.0514989,1,4,9.657372,,1
+"Colombia",1,"Cancer",2012,1,170,8,"South America",4.792397,1,3,10.26512,,2
+"Mexico",1,"Cancer",2012,1,484,7,"Central America",4.2640591,1,1,15.20673,,3
+"Brazil",1,"Cancer",2012,1,76,8,"South America",6.1873541,1,7,15.71108,,4
+"Philippines",1,"Cancer",2012,1,608,11,"South-Eastern Asia",5.4997814,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2012,1,398,12,"Southern Asia",8.3503933,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2012,1,480,1,"Eastern Africa",4.7865119,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2012,1,100,14,"Eastern Europe",8.9057665,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2012,1,860,12,"Southern Asia",4.3660989,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2012,1,804,14,"Eastern Europe",9.2960358,1,9,26.28273,,10
+"Japan",2,"Cancer",2012,1,392,10,"Eastern Asia",5.797801,1,11,8.52804,,11
+"Norway",2,"Cancer",2012,1,578,15,"Northern Europe",6.4200878,1,12,8.927007,,12
+"Australia",2,"Cancer",2012,1,36,18,"Australia/New Zealand",5.993238,1,13,9.07279,,13
+"Italy",2,"Cancer",2012,1,380,16,"Southern Europe",6.6307268,1,15,9.526379,,14
+"France",2,"Cancer",2012,1,250,17,"Western Europe",7.5021753,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2012,1,554,18,"Australia/New Zealand",6.8524656,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2012,1,826,15,"Northern Europe",7.1126528,1,18,11.30001,,17
+"Chile",2,"Cancer",2012,1,152,8,"South America",6.3272223,1,14,11.56377,,18
+"USA",2,"Cancer",2012,1,840,9,"Northern America",6.7744875,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2012,1,703,14,"Eastern Europe",9.7914267,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2012,0,188,7,"Central America",10.806025,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2012,0,170,8,"South America",11.41977,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2012,0,484,7,"Central America",15.05683,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2012,0,76,8,"South America",16.47876,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2012,0,608,11,"South-Eastern Asia",23.028068,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2012,0,398,12,"Southern Asia",26.296869,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2012,0,480,1,"Eastern Africa",22.77729,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2012,0,100,14,"Eastern Europe",24.12068,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2012,0,860,12,"Southern Asia",25.80887,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2012,0,804,14,"Eastern Europe",27.71666,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2012,0,392,10,"Eastern Asia",9.0072031,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2012,0,578,15,"Northern Europe",10.030484,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2012,0,36,18,"Australia/New Zealand",9.4009867,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2012,0,380,16,"Southern Europe",9.983654,1,14,9.526379,,14
+"France",2,"Major NCDs",2012,0,250,17,"Western Europe",10.363581,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2012,0,554,18,"Australia/New Zealand",11.35021,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2012,0,826,15,"Northern Europe",11.77456,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2012,0,152,8,"South America",12.205319,1,18,11.56377,,18
+"USA",2,"Major NCDs",2012,0,840,9,"Northern America",13.87106,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2012,0,703,14,"Eastern Europe",19.140511,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2013,2,188,7,"Central America",4.616107,1,1,9.657372,,1
+"Colombia",1,"CVD",2013,2,170,8,"South America",5.1044726,1,2,10.26512,,2
+"Mexico",1,"CVD",2013,2,484,7,"Central America",5.3702669,1,3,15.20673,,3
+"Brazil",1,"CVD",2013,2,76,8,"South America",8.0656872,1,4,15.71108,,4
+"Philippines",1,"CVD",2013,2,608,11,"South-Eastern Asia",14.181283,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2013,2,398,12,"Southern Asia",14.58171,1,6,21.73191,,6
+"Mauritius",1,"CVD",2013,2,480,1,"Eastern Africa",8.7288494,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2013,2,100,14,"Eastern Europe",15.38784,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2013,2,860,12,"Southern Asia",19.93358,1,10,24.42574,,9
+"Ukraine",1,"CVD",2013,2,804,14,"Eastern Europe",19.271471,1,9,26.28273,,10
+"Japan",2,"CVD",2013,2,392,10,"Eastern Asia",2.8427391,1,14,8.52804,,11
+"Norway",2,"CVD",2013,2,578,15,"Northern Europe",2.7449419,1,13,8.927007,,12
+"Australia",2,"CVD",2013,2,36,18,"Australia/New Zealand",2.566344,1,12,9.07279,,13
+"Italy",2,"CVD",2013,2,380,16,"Southern Europe",2.8465011,1,15,9.526379,,14
+"France",2,"CVD",2013,2,250,17,"Western Europe",2.383142,1,11,9.860494,,15
+"New Zealand",2,"CVD",2013,2,554,18,"Australia/New Zealand",3.4036439,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2013,2,826,15,"Northern Europe",3.7005849,1,17,11.30001,,17
+"Chile",2,"CVD",2013,2,152,8,"South America",4.5487571,1,18,11.56377,,18
+"USA",2,"CVD",2013,2,840,9,"Northern America",5.5496492,1,19,13.67293,,19
+"Slovakia",2,"CVD",2013,2,703,14,"Eastern Europe",8.9307861,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2013,1,188,7,"Central America",4.9235239,1,4,9.657372,,1
+"Colombia",1,"Cancer",2013,1,170,8,"South America",4.6674323,1,3,10.26512,,2
+"Mexico",1,"Cancer",2013,1,484,7,"Central America",4.2558336,1,1,15.20673,,3
+"Brazil",1,"Cancer",2013,1,76,8,"South America",6.1644979,1,7,15.71108,,4
+"Philippines",1,"Cancer",2013,1,608,11,"South-Eastern Asia",5.3633506,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2013,1,398,12,"Southern Asia",8.0441074,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2013,1,480,1,"Eastern Africa",4.861259,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2013,1,100,14,"Eastern Europe",8.9858122,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2013,1,860,12,"Southern Asia",4.387825,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2013,1,804,14,"Eastern Europe",9.2521853,1,9,26.28273,,10
+"Japan",2,"Cancer",2013,1,392,10,"Eastern Asia",5.7022562,1,11,8.52804,,11
+"Norway",2,"Cancer",2013,1,578,15,"Northern Europe",6.1918712,1,12,8.927007,,12
+"Australia",2,"Cancer",2013,1,36,18,"Australia/New Zealand",5.9079409,1,13,9.07279,,13
+"Italy",2,"Cancer",2013,1,380,16,"Southern Europe",6.5702872,1,15,9.526379,,14
+"France",2,"Cancer",2013,1,250,17,"Western Europe",7.4179201,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2013,1,554,18,"Australia/New Zealand",6.7106697,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2013,1,826,15,"Northern Europe",7.0113831,1,18,11.30001,,17
+"Chile",2,"Cancer",2013,1,152,8,"South America",6.247335,1,14,11.56377,,18
+"USA",2,"Cancer",2013,1,840,9,"Northern America",6.6608958,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2013,1,703,14,"Eastern Europe",9.7291832,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2013,0,188,7,"Central America",10.502254,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2013,0,170,8,"South America",11.034887,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2013,0,484,7,"Central America",15.000529,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2013,0,76,8,"South America",16.21488,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2013,0,608,11,"South-Eastern Asia",22.530522,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2013,0,398,12,"Southern Asia",24.436041,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2013,0,480,1,"Eastern Africa",22.60239,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2013,0,100,14,"Eastern Europe",23.99542,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2013,0,860,12,"Southern Asia",25.585529,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2013,0,804,14,"Eastern Europe",27.48336,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2013,0,392,10,"Eastern Asia",8.8386145,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2013,0,578,15,"Northern Europe",9.6849499,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2013,0,36,18,"Australia/New Zealand",9.2531977,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2013,0,380,16,"Southern Europe",9.8958378,1,14,9.526379,,14
+"France",2,"Major NCDs",2013,0,250,17,"Western Europe",10.236019,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2013,0,554,18,"Australia/New Zealand",11.06376,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2013,0,826,15,"Northern Europe",11.56635,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2013,0,152,8,"South America",11.98997,1,18,11.56377,,18
+"USA",2,"Major NCDs",2013,0,840,9,"Northern America",13.77061,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2013,0,703,14,"Eastern Europe",18.707899,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2014,2,188,7,"Central America",4.4219403,1,1,9.657372,,1
+"Colombia",1,"CVD",2014,2,170,8,"South America",4.8915772,1,2,10.26512,,2
+"Mexico",1,"CVD",2014,2,484,7,"Central America",5.3781261,1,3,15.20673,,3
+"Brazil",1,"CVD",2014,2,76,8,"South America",7.9309611,1,4,15.71108,,4
+"Philippines",1,"CVD",2014,2,608,11,"South-Eastern Asia",13.899291,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2014,2,398,12,"Southern Asia",13.41793,1,6,21.73191,,6
+"Mauritius",1,"CVD",2014,2,480,1,"Eastern Africa",8.5685148,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2014,2,100,14,"Eastern Europe",15.536205,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2014,2,860,12,"Southern Asia",19.388635,1,10,24.42574,,9
+"Ukraine",1,"CVD",2014,2,804,14,"Eastern Europe",19.071581,1,9,26.28273,,10
+"Japan",2,"CVD",2014,2,392,10,"Eastern Asia",2.798089,1,14,8.52804,,11
+"Norway",2,"CVD",2014,2,578,15,"Northern Europe",2.6860871,1,13,8.927007,,12
+"Australia",2,"CVD",2014,2,36,18,"Australia/New Zealand",2.5336092,1,12,9.07279,,13
+"Italy",2,"CVD",2014,2,380,16,"Southern Europe",2.777366,1,15,9.526379,,14
+"France",2,"CVD",2014,2,250,17,"Western Europe",2.31428,1,11,9.860494,,15
+"New Zealand",2,"CVD",2014,2,554,18,"Australia/New Zealand",3.267419,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2014,2,826,15,"Northern Europe",3.6668081,1,17,11.30001,,17
+"Chile",2,"CVD",2014,2,152,8,"South America",4.5264449,1,18,11.56377,,18
+"USA",2,"CVD",2014,2,840,9,"Northern America",5.5465069,1,19,13.67293,,19
+"Slovakia",2,"CVD",2014,2,703,14,"Eastern Europe",8.414979,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2014,1,188,7,"Central America",4.741941,1,4,9.657372,,1
+"Colombia",1,"Cancer",2014,1,170,8,"South America",4.5424676,1,3,10.26512,,2
+"Mexico",1,"Cancer",2014,1,484,7,"Central America",4.2461772,1,1,15.20673,,3
+"Brazil",1,"Cancer",2014,1,76,8,"South America",6.1554203,1,7,15.71108,,4
+"Philippines",1,"Cancer",2014,1,608,11,"South-Eastern Asia",5.2269197,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2014,1,398,12,"Southern Asia",7.9262285,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2014,1,480,1,"Eastern Africa",4.9802661,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2014,1,100,14,"Eastern Europe",9.0343223,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2014,1,860,12,"Southern Asia",4.3668656,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2014,1,804,14,"Eastern Europe",9.2083349,1,9,26.28273,,10
+"Japan",2,"Cancer",2014,1,392,10,"Eastern Asia",5.649693,1,11,8.52804,,11
+"Norway",2,"Cancer",2014,1,578,15,"Northern Europe",6.1072021,1,12,8.927007,,12
+"Australia",2,"Cancer",2014,1,36,18,"Australia/New Zealand",5.8477521,1,13,9.07279,,13
+"Italy",2,"Cancer",2014,1,380,16,"Southern Europe",6.4645019,1,15,9.526379,,14
+"France",2,"Cancer",2014,1,250,17,"Western Europe",7.3102076,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2014,1,554,18,"Australia/New Zealand",6.5688737,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2014,1,826,15,"Northern Europe",6.9546022,1,18,11.30001,,17
+"Chile",2,"Cancer",2014,1,152,8,"South America",6.192668,1,14,11.56377,,18
+"USA",2,"Cancer",2014,1,840,9,"Northern America",6.6081276,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2014,1,703,14,"Eastern Europe",9.6059322,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2014,0,188,7,"Central America",10.079813,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2014,0,170,8,"South America",10.650004,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2014,0,484,7,"Central America",15.025049,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2014,0,76,8,"South America",16.03537,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2014,0,608,11,"South-Eastern Asia",22.032975,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2014,0,398,12,"Southern Asia",23.43792,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2014,0,480,1,"Eastern Africa",22.50086,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2014,0,100,14,"Eastern Europe",24.18836,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2014,0,860,12,"Southern Asia",25.005635,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2014,0,804,14,"Eastern Europe",27.250061,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2014,0,392,10,"Eastern Asia",8.7400351,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2014,0,578,15,"Northern Europe",9.5520573,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2014,0,36,18,"Australia/New Zealand",9.1605692,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2014,0,380,16,"Southern Europe",9.7111082,1,14,9.526379,,14
+"France",2,"Major NCDs",2014,0,250,17,"Western Europe",10.048256,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2014,0,554,18,"Australia/New Zealand",10.77731,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2014,0,826,15,"Northern Europe",11.48209,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2014,0,152,8,"South America",11.89391,1,18,11.56377,,18
+"USA",2,"Major NCDs",2014,0,840,9,"Northern America",13.71945,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2014,0,703,14,"Eastern Europe",18.109425,1,20,17.51095,,20
+"Costa Rica",1,"CVD",2015,2,188,7,"Central America",4.2277737,1,1,9.657372,,1
+"Colombia",1,"CVD",2015,2,170,8,"South America",4.6786819,1,2,10.26512,,2
+"Mexico",1,"CVD",2015,2,484,7,"Central America",5.4469061,1,3,15.20673,,3
+"Brazil",1,"CVD",2015,2,76,8,"South America",7.6682849,1,4,15.71108,,4
+"Philippines",1,"CVD",2015,2,608,11,"South-Eastern Asia",13.617299,1,7,21.53543,,5
+"Kazakhstan",1,"CVD",2015,2,398,12,"Southern Asia",11.17315,1,6,21.73191,,6
+"Mauritius",1,"CVD",2015,2,480,1,"Eastern Africa",9.0041075,1,5,22.49864,,7
+"Bulgaria",1,"CVD",2015,2,100,14,"Eastern Europe",15.68457,1,8,24.3813,,8
+"Uzbekistan",1,"CVD",2015,2,860,12,"Southern Asia",18.843689,1,10,24.42574,,9
+"Ukraine",1,"CVD",2015,2,804,14,"Eastern Europe",18.484739,1,9,26.28273,,10
+"Japan",2,"CVD",2015,2,392,10,"Eastern Asia",2.7030931,1,14,8.52804,,11
+"Norway",2,"CVD",2015,2,578,15,"Northern Europe",2.4729002,1,13,8.927007,,12
+"Australia",2,"CVD",2015,2,36,18,"Australia/New Zealand",2.4542379,1,12,9.07279,,13
+"Italy",2,"CVD",2015,2,380,16,"Southern Europe",2.708231,1,15,9.526379,,14
+"France",2,"CVD",2015,2,250,17,"Western Europe",2.2454181,1,11,9.860494,,15
+"New Zealand",2,"CVD",2015,2,554,18,"Australia/New Zealand",3.1311941,1,16,10.49086,,16
+"United Kingdom",2,"CVD",2015,2,826,15,"Northern Europe",3.6380908,1,17,11.30001,,17
+"Chile",2,"CVD",2015,2,152,8,"South America",4.348011,1,18,11.56377,,18
+"USA",2,"CVD",2015,2,840,9,"Northern America",5.5959606,1,19,13.67293,,19
+"Slovakia",2,"CVD",2015,2,703,14,"Eastern Europe",7.8991718,1,20,17.51095,,20
+"Costa Rica",1,"Cancer",2015,1,188,7,"Central America",4.560358,1,4,9.657372,,1
+"Colombia",1,"Cancer",2015,1,170,8,"South America",4.4175029,1,3,10.26512,,2
+"Mexico",1,"Cancer",2015,1,484,7,"Central America",4.279778,1,1,15.20673,,3
+"Brazil",1,"Cancer",2015,1,76,8,"South America",6.1395788,1,7,15.71108,,4
+"Philippines",1,"Cancer",2015,1,608,11,"South-Eastern Asia",5.0904889,1,6,21.53543,,5
+"Kazakhstan",1,"Cancer",2015,1,398,12,"Southern Asia",7.5482569,1,8,21.73191,,6
+"Mauritius",1,"Cancer",2015,1,480,1,"Eastern Africa",5.0539432,1,5,22.49864,,7
+"Bulgaria",1,"Cancer",2015,1,100,14,"Eastern Europe",9.0828323,1,10,24.3813,,8
+"Uzbekistan",1,"Cancer",2015,1,860,12,"Southern Asia",4.3459063,1,2,24.42574,,9
+"Ukraine",1,"Cancer",2015,1,804,14,"Eastern Europe",8.7686777,1,9,26.28273,,10
+"Japan",2,"Cancer",2015,1,392,10,"Eastern Asia",5.5291152,1,11,8.52804,,11
+"Norway",2,"Cancer",2015,1,578,15,"Northern Europe",5.7307863,1,12,8.927007,,12
+"Australia",2,"Cancer",2015,1,36,18,"Australia/New Zealand",5.7985482,1,13,9.07279,,13
+"Italy",2,"Cancer",2015,1,380,16,"Southern Europe",6.3587165,1,15,9.526379,,14
+"France",2,"Cancer",2015,1,250,17,"Western Europe",7.2024951,1,19,9.860494,,15
+"New Zealand",2,"Cancer",2015,1,554,18,"Australia/New Zealand",6.4270778,1,16,10.49086,,16
+"United Kingdom",2,"Cancer",2015,1,826,15,"Northern Europe",6.7833514,1,18,11.30001,,17
+"Chile",2,"Cancer",2015,1,152,8,"South America",6.0637221,1,14,11.56377,,18
+"USA",2,"Cancer",2015,1,840,9,"Northern America",6.4650116,1,17,13.67293,,19
+"Slovakia",2,"Cancer",2015,1,703,14,"Eastern Europe",9.4826813,1,20,17.51095,,20
+"Costa Rica",1,"Major NCDs",2015,0,188,7,"Central America",9.6573715,1,1,9.657372,,1
+"Colombia",1,"Major NCDs",2015,0,170,8,"South America",10.265121,1,2,10.26512,,2
+"Mexico",1,"Major NCDs",2015,0,484,7,"Central America",15.20673,1,3,15.20673,,3
+"Brazil",1,"Major NCDs",2015,0,76,8,"South America",15.71108,1,4,15.71108,,4
+"Philippines",1,"Major NCDs",2015,0,608,11,"South-Eastern Asia",21.535429,1,5,21.53543,,5
+"Kazakhstan",1,"Major NCDs",2015,0,398,12,"Southern Asia",21.731911,1,6,21.73191,,6
+"Mauritius",1,"Major NCDs",2015,0,480,1,"Eastern Africa",22.49864,1,7,22.49864,,7
+"Bulgaria",1,"Major NCDs",2015,0,100,14,"Eastern Europe",24.3813,1,8,24.3813,,8
+"Uzbekistan",1,"Major NCDs",2015,0,860,12,"Southern Asia",24.425741,1,9,24.42574,,9
+"Ukraine",1,"Major NCDs",2015,0,804,14,"Eastern Europe",26.28273,1,10,26.28273,,10
+"Japan",2,"Major NCDs",2015,0,392,10,"Eastern Asia",8.5280399,1,11,8.52804,,11
+"Norway",2,"Major NCDs",2015,0,578,15,"Northern Europe",8.9270067,1,12,8.927007,,12
+"Australia",2,"Major NCDs",2015,0,36,18,"Australia/New Zealand",9.0727901,1,13,9.07279,,13
+"Italy",2,"Major NCDs",2015,0,380,16,"Southern Europe",9.5263786,1,14,9.526379,,14
+"France",2,"Major NCDs",2015,0,250,17,"Western Europe",9.8604937,1,15,9.860494,,15
+"New Zealand",2,"Major NCDs",2015,0,554,18,"Australia/New Zealand",10.49086,1,16,10.49086,,16
+"United Kingdom",2,"Major NCDs",2015,0,826,15,"Northern Europe",11.300011,1,17,11.30001,,17
+"Chile",2,"Major NCDs",2015,0,152,8,"South America",11.563769,1,18,11.56377,,18
+"USA",2,"Major NCDs",2015,0,840,9,"Northern America",13.67293,1,19,13.67293,,19
+"Slovakia",2,"Major NCDs",2015,0,703,14,"Eastern Europe",17.51095,1,20,17.51095,,20
