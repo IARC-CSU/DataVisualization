@@ -130,9 +130,9 @@
 
 
 		var tick_list = new Object();  
-		tick_list.major = [0,2,4,6,8,10,12];
-		tick_list.minor = [1,3,5,7,9,11];
-		tick_list.value_top = 12; 
+		tick_list.major = [0,5,10,15,20,25,30];
+		tick_list.minor = [2.5,7.5,12.5,17.5,22.5,27.5];
+		tick_list.value_top = 30; 
 		tick_list.value_bottom = 0; 
 
 		
@@ -305,7 +305,14 @@
 			.attr("fill", "#000000")    // set the line colour
 			.attr("transform", "rotate(-45)")
 			.each(function (d) { // to use the wrap label fonction 
-				var lines = wordwrap(d.values[0].values[0].country_label, label_wrap)
+				var temp = d.values[0].values[0].country_label;
+				if (/\s/.test(temp)) {
+					var max = label_wrap;
+				} 
+				else {
+					var max = 100;
+				}
+				var lines = wordwrap(temp, max);
 				for (var i = 0; i < lines.length; i++) {
 					d3.select(this).append("tspan").attr("dy",0).attr("x",0).attr("y",30/Math.pow(3/2, lines.length)+i*15).text(lines[i])
 					}
@@ -538,9 +545,9 @@
 		
 		
 		if (document.getElementById('radio_cause1').checked) {
-			tick_list.major = [0,2,4,6,8,10,12];
-			tick_list.minor = [1,3,5,7,9,11];
-			tick_list.value_top = 12; // Will change according to the last tick
+			tick_list.major = [0,5,10,15,20,25,30];
+			tick_list.minor = [2.5,7.5,12.5,17.5,22.5,27.5];
+			tick_list.value_top = 30; // Will change according to the last tick
 			tick_list.value_bottom = 0; // Will change according to the first tick
 		} 
 		else if (document.getElementById('radio_cause2').checked) {
@@ -956,6 +963,7 @@
 	}
 
 	function wordwrap(text, max) { // to wrap label (not from me, forget the link)
+		
 		var regex = new RegExp(".{0,"+max+"}(?:\\s|$)","g");
 		var lines = []
 		var line
