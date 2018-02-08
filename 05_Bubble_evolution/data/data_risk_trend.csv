@@ -15,7 +15,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2000,2,380,16,"Southern Europe",4.9162488,1,15,9.526379,,14
 "France",2,"CVD",2000,2,250,17,"Western Europe",3.9225061,1,11,9.860494,,15
 "New Zealand",2,"CVD",2000,2,554,18,"Australia/New Zealand",6.3879819,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2000,2,826,15,"Northern Europe",7.1075692,1,17,11.30001,,17
+"UK",2,"CVD",2000,2,826,15,"Northern Europe",7.5499997,1,17,11.30001,,17
 "Chile",2,"CVD",2000,2,152,8,"South America",6.1399679,1,18,11.56377,,18
 "USA",2,"CVD",2000,2,840,9,"Northern America",7.7744498,1,19,13.67293,,19
 "Slovakia",2,"CVD",2000,2,703,14,"Eastern Europe",14.497818,1,20,17.51095,,20
@@ -35,7 +35,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2000,1,380,16,"Southern Europe",8.1999741,1,15,9.526379,,14
 "France",2,"Cancer",2000,1,250,17,"Western Europe",9.1532679,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2000,1,554,18,"Australia/New Zealand",8.6965218,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2000,1,826,15,"Northern Europe",8.5433397,1,18,11.30001,,17
+"UK",2,"Cancer",2000,1,826,15,"Northern Europe",8.7209997,1,18,11.30001,,17
 "Chile",2,"Cancer",2000,1,152,8,"South America",7.5448861,1,14,11.56377,,18
 "USA",2,"Cancer",2000,1,840,9,"Northern America",8.4499817,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2000,1,703,14,"Eastern Europe",11.704638,1,20,17.51095,,20
@@ -55,7 +55,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2000,0,380,16,"Southern Europe",13.574398,1,14,9.526379,13.5744,14
 "France",2,"Major NCDs",2000,0,250,17,"Western Europe",13.492664,1,15,9.860494,13.49266,15
 "New Zealand",2,"Major NCDs",2000,0,554,18,"Australia/New Zealand",16.221691,1,16,10.49086,16.22169,16
-"United Kingdom",2,"Major NCDs",2000,0,826,15,"Northern Europe",16.348099,1,17,11.30001,16.3481,17
+"UK",2,"Major NCDs",2000,0,826,15,"Northern Europe",16.929001,1,17,11.30001,16.929,17
 "Chile",2,"Major NCDs",2000,0,152,8,"South America",14.896929,1,18,11.56377,14.89693,18
 "USA",2,"Major NCDs",2000,0,840,9,"Northern America",17.607821,1,19,13.67293,17.60782,19
 "Slovakia",2,"Major NCDs",2000,0,703,14,"Eastern Europe",25.54529,1,20,17.51095,25.54529,20
@@ -75,7 +75,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2001,2,380,16,"Southern Europe",4.6360192,1,15,9.526379,,14
 "France",2,"CVD",2001,2,250,17,"Western Europe",3.7704251,1,11,9.860494,,15
 "New Zealand",2,"CVD",2001,2,554,18,"Australia/New Zealand",6.0439968,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2001,2,826,15,"Northern Europe",7.1075692,1,17,11.30001,,17
+"UK",2,"CVD",2001,2,826,15,"Northern Europe",7.1075692,1,17,11.30001,,17
 "Chile",2,"CVD",2001,2,152,8,"South America",6.0097532,1,18,11.56377,,18
 "USA",2,"CVD",2001,2,840,9,"Northern America",7.5309267,1,19,13.67293,,19
 "Slovakia",2,"CVD",2001,2,703,14,"Eastern Europe",13.931209,1,20,17.51095,,20
@@ -95,7 +95,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2001,1,380,16,"Southern Europe",8.0345516,1,15,9.526379,,14
 "France",2,"Cancer",2001,1,250,17,"Western Europe",8.9893522,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2001,1,554,18,"Australia/New Zealand",8.4714441,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2001,1,826,15,"Northern Europe",8.5433397,1,18,11.30001,,17
+"UK",2,"Cancer",2001,1,826,15,"Northern Europe",8.5433397,1,18,11.30001,,17
 "Chile",2,"Cancer",2001,1,152,8,"South America",7.466887,1,14,11.56377,,18
 "USA",2,"Cancer",2001,1,840,9,"Northern America",8.3130579,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2001,1,703,14,"Eastern Europe",11.449417,1,20,17.51095,,20
@@ -115,7 +115,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2001,0,380,16,"Southern Europe",13.137733,1,14,9.526379,,14
 "France",2,"Major NCDs",2001,0,250,17,"Western Europe",13.181072,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2001,0,554,18,"Australia/New Zealand",15.67831,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2001,0,826,15,"Northern Europe",16.348099,1,17,11.30001,,17
+"UK",2,"Major NCDs",2001,0,826,15,"Northern Europe",16.348099,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2001,0,152,8,"South America",14.70175,1,18,11.56377,,18
 "USA",2,"Major NCDs",2001,0,840,9,"Northern America",17.275181,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2001,0,703,14,"Eastern Europe",24.823549,1,20,17.51095,,20
@@ -135,7 +135,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2002,2,380,16,"Southern Europe",4.3529282,1,15,9.526379,,14
 "France",2,"CVD",2002,2,250,17,"Western Europe",3.5884309,1,11,9.860494,,15
 "New Zealand",2,"CVD",2002,2,554,18,"Australia/New Zealand",5.6746941,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2002,2,826,15,"Northern Europe",6.6201849,1,17,11.30001,,17
+"UK",2,"CVD",2002,2,826,15,"Northern Europe",6.6201849,1,17,11.30001,,17
 "Chile",2,"CVD",2002,2,152,8,"South America",5.8453617,1,18,11.56377,,18
 "USA",2,"CVD",2002,2,840,9,"Northern America",7.2756319,1,19,13.67293,,19
 "Slovakia",2,"CVD",2002,2,703,14,"Eastern Europe",13.440694,1,20,17.51095,,20
@@ -155,7 +155,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2002,1,380,16,"Southern Europe",7.8955994,1,15,9.526379,,14
 "France",2,"Cancer",2002,1,250,17,"Western Europe",8.8295259,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2002,1,554,18,"Australia/New Zealand",8.290801,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2002,1,826,15,"Northern Europe",8.3545942,1,18,11.30001,,17
+"UK",2,"Cancer",2002,1,826,15,"Northern Europe",8.3545942,1,18,11.30001,,17
 "Chile",2,"Cancer",2002,1,152,8,"South America",7.3647356,1,14,11.56377,,18
 "USA",2,"Cancer",2002,1,840,9,"Northern America",8.1519413,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2002,1,703,14,"Eastern Europe",11.216391,1,20,17.51095,,20
@@ -175,7 +175,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2002,0,380,16,"Southern Europe",12.707578,1,14,9.526379,,14
 "France",2,"Major NCDs",2002,0,250,17,"Western Europe",12.832578,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2002,0,554,18,"Australia/New Zealand",15.10235,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2002,0,826,15,"Northern Europe",15.70771,1,17,11.30001,,17
+"UK",2,"Major NCDs",2002,0,826,15,"Northern Europe",15.70771,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2002,0,152,8,"South America",14.45646,1,18,11.56377,,18
 "USA",2,"Major NCDs",2002,0,840,9,"Northern America",16.86977,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2002,0,703,14,"Eastern Europe",24.165089,1,20,17.51095,,20
@@ -195,7 +195,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2003,2,380,16,"Southern Europe",4.1192279,1,15,9.526379,,14
 "France",2,"CVD",2003,2,250,17,"Western Europe",3.4421279,1,11,9.860494,,15
 "New Zealand",2,"CVD",2003,2,554,18,"Australia/New Zealand",5.3557501,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2003,2,826,15,"Northern Europe",6.1671519,1,17,11.30001,,17
+"UK",2,"CVD",2003,2,826,15,"Northern Europe",6.1671519,1,17,11.30001,,17
 "Chile",2,"CVD",2003,2,152,8,"South America",5.7303119,1,18,11.56377,,18
 "USA",2,"CVD",2003,2,840,9,"Northern America",7.038322,1,19,13.67293,,19
 "Slovakia",2,"CVD",2003,2,703,14,"Eastern Europe",13.086195,1,20,17.51095,,20
@@ -215,7 +215,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2003,1,380,16,"Southern Europe",7.747519,1,15,9.526379,,14
 "France",2,"Cancer",2003,1,250,17,"Western Europe",8.6863165,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2003,1,554,18,"Australia/New Zealand",8.0978937,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2003,1,826,15,"Northern Europe",8.1890469,1,18,11.30001,,17
+"UK",2,"Cancer",2003,1,826,15,"Northern Europe",8.1890469,1,18,11.30001,,17
 "Chile",2,"Cancer",2003,1,152,8,"South America",7.2605767,1,14,11.56377,,18
 "USA",2,"Cancer",2003,1,840,9,"Northern America",7.9931021,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2003,1,703,14,"Eastern Europe",11.022689,1,20,17.51095,,20
@@ -235,7 +235,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2003,0,380,16,"Southern Europe",12.335422,1,14,9.526379,,14
 "France",2,"Major NCDs",2003,0,250,17,"Western Europe",12.539562,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2003,0,554,18,"Australia/New Zealand",14.578449,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2003,0,826,15,"Northern Europe",15.10026,1,17,11.30001,,17
+"UK",2,"Major NCDs",2003,0,826,15,"Northern Europe",15.10026,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2003,0,152,8,"South America",14.283679,1,18,11.56377,,18
 "USA",2,"Major NCDs",2003,0,840,9,"Northern America",16.500019,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2003,0,703,14,"Eastern Europe",23.670561,1,20,17.51095,,20
@@ -255,7 +255,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2004,2,380,16,"Southern Europe",3.8865991,1,15,9.526379,,14
 "France",2,"CVD",2004,2,250,17,"Western Europe",3.2987752,1,11,9.860494,,15
 "New Zealand",2,"CVD",2004,2,554,18,"Australia/New Zealand",5.0488319,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2004,2,826,15,"Northern Europe",5.8207283,1,17,11.30001,,17
+"UK",2,"CVD",2004,2,826,15,"Northern Europe",5.8207283,1,17,11.30001,,17
 "Chile",2,"CVD",2004,2,152,8,"South America",5.559154,1,18,11.56377,,18
 "USA",2,"CVD",2004,2,840,9,"Northern America",6.8115034,1,19,13.67293,,19
 "Slovakia",2,"CVD",2004,2,703,14,"Eastern Europe",12.757331,1,20,17.51095,,20
@@ -275,7 +275,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2004,1,380,16,"Southern Europe",7.6194549,1,15,9.526379,,14
 "France",2,"Cancer",2004,1,250,17,"Western Europe",8.5578613,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2004,1,554,18,"Australia/New Zealand",7.8997478,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2004,1,826,15,"Northern Europe",8.0692739,1,18,11.30001,,17
+"UK",2,"Cancer",2004,1,826,15,"Northern Europe",8.0692739,1,18,11.30001,,17
 "Chile",2,"Cancer",2004,1,152,8,"South America",7.1291938,1,14,11.56377,,18
 "USA",2,"Cancer",2004,1,840,9,"Northern America",7.8368859,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2004,1,703,14,"Eastern Europe",10.785677,1,20,17.51095,,20
@@ -295,7 +295,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2004,0,380,16,"Southern Europe",11.982846,1,14,9.526379,,14
 "France",2,"Major NCDs",2004,0,250,17,"Western Europe",12.262549,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2004,0,554,18,"Australia/New Zealand",14.062341,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2004,0,826,15,"Northern Europe",14.654679,1,17,11.30001,,17
+"UK",2,"Major NCDs",2004,0,826,15,"Northern Europe",14.654679,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2004,0,152,8,"South America",13.97167,1,18,11.56377,,18
 "USA",2,"Major NCDs",2004,0,840,9,"Northern America",16.121889,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2004,0,703,14,"Eastern Europe",23.13867,1,20,17.51095,,20
@@ -315,7 +315,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2005,2,380,16,"Southern Europe",3.6831691,1,15,9.526379,,14
 "France",2,"CVD",2005,2,250,17,"Western Europe",3.1649671,1,11,9.860494,,15
 "New Zealand",2,"CVD",2005,2,554,18,"Australia/New Zealand",4.7873182,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2005,2,826,15,"Northern Europe",5.4839201,1,17,11.30001,,17
+"UK",2,"CVD",2005,2,826,15,"Northern Europe",5.4839201,1,17,11.30001,,17
 "Chile",2,"CVD",2005,2,152,8,"South America",5.4660802,1,18,11.56377,,18
 "USA",2,"CVD",2005,2,840,9,"Northern America",6.5633616,1,19,13.67293,,19
 "Slovakia",2,"CVD",2005,2,703,14,"Eastern Europe",12.534886,1,20,17.51095,,20
@@ -335,7 +335,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2005,1,380,16,"Southern Europe",7.5128226,1,15,9.526379,,14
 "France",2,"Cancer",2005,1,250,17,"Western Europe",8.4201231,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2005,1,554,18,"Australia/New Zealand",7.8043923,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2005,1,826,15,"Northern Europe",7.9425735,1,18,11.30001,,17
+"UK",2,"Cancer",2005,1,826,15,"Northern Europe",7.9425735,1,18,11.30001,,17
 "Chile",2,"Cancer",2005,1,152,8,"South America",6.9629526,1,14,11.56377,,18
 "USA",2,"Cancer",2005,1,840,9,"Northern America",7.6793151,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2005,1,703,14,"Eastern Europe",10.667047,1,20,17.51095,,20
@@ -355,7 +355,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2005,0,380,16,"Southern Europe",11.682222,1,14,9.526379,,14
 "France",2,"Major NCDs",2005,0,250,17,"Western Europe",11.992461,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2005,0,554,18,"Australia/New Zealand",13.67096,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2005,0,826,15,"Northern Europe",14.211949,1,17,11.30001,,17
+"UK",2,"Major NCDs",2005,0,826,15,"Northern Europe",14.211949,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2005,0,152,8,"South America",13.73792,1,18,11.56377,,18
 "USA",2,"Major NCDs",2005,0,840,9,"Northern America",15.723769,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2005,0,703,14,"Eastern Europe",22.827511,1,20,17.51095,,20
@@ -375,7 +375,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2006,2,380,16,"Southern Europe",3.5071731,1,15,9.526379,,14
 "France",2,"CVD",2006,2,250,17,"Western Europe",3.0353711,1,11,9.860494,,15
 "New Zealand",2,"CVD",2006,2,554,18,"Australia/New Zealand",4.5643573,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2006,2,826,15,"Northern Europe",5.1607652,1,17,11.30001,,17
+"UK",2,"CVD",2006,2,826,15,"Northern Europe",5.1607652,1,17,11.30001,,17
 "Chile",2,"CVD",2006,2,152,8,"South America",5.268074,1,18,11.56377,,18
 "USA",2,"CVD",2006,2,840,9,"Northern America",6.3369436,1,19,13.67293,,19
 "Slovakia",2,"CVD",2006,2,703,14,"Eastern Europe",12.211991,1,20,17.51095,,20
@@ -395,7 +395,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2006,1,380,16,"Southern Europe",7.3887119,1,15,9.526379,,14
 "France",2,"Cancer",2006,1,250,17,"Western Europe",8.2947273,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2006,1,554,18,"Australia/New Zealand",7.6846333,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2006,1,826,15,"Northern Europe",7.8302751,1,18,11.30001,,17
+"UK",2,"Cancer",2006,1,826,15,"Northern Europe",7.8302751,1,18,11.30001,,17
 "Chile",2,"Cancer",2006,1,152,8,"South America",6.7906647,1,14,11.56377,,18
 "USA",2,"Cancer",2006,1,840,9,"Northern America",7.5299559,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2006,1,703,14,"Eastern Europe",10.488709,1,20,17.51095,,20
@@ -415,7 +415,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2006,0,380,16,"Southern Europe",11.37525,1,14,9.526379,,14
 "France",2,"Major NCDs",2006,0,250,17,"Western Europe",11.732094,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2006,0,554,18,"Australia/New Zealand",13.33068,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2006,0,826,15,"Northern Europe",13.779479,1,17,11.30001,,17
+"UK",2,"Major NCDs",2006,0,826,15,"Northern Europe",13.779479,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2006,0,152,8,"South America",13.36088,1,18,11.56377,,18
 "USA",2,"Major NCDs",2006,0,840,9,"Northern America",15.35644,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2006,0,703,14,"Eastern Europe",22.35302,1,20,17.51095,,20
@@ -435,7 +435,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2007,2,380,16,"Southern Europe",3.3918409,1,15,9.526379,,14
 "France",2,"CVD",2007,2,250,17,"Western Europe",2.9516768,1,11,9.860494,,15
 "New Zealand",2,"CVD",2007,2,554,18,"Australia/New Zealand",4.3711181,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2007,2,826,15,"Northern Europe",4.874804,1,17,11.30001,,17
+"UK",2,"CVD",2007,2,826,15,"Northern Europe",4.874804,1,17,11.30001,,17
 "Chile",2,"CVD",2007,2,152,8,"South America",5.1292872,1,18,11.56377,,18
 "USA",2,"CVD",2007,2,840,9,"Northern America",6.149868,1,19,13.67293,,19
 "Slovakia",2,"CVD",2007,2,703,14,"Eastern Europe",11.903701,1,20,17.51095,,20
@@ -455,7 +455,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2007,1,380,16,"Southern Europe",7.2848873,1,15,9.526379,,14
 "France",2,"Cancer",2007,1,250,17,"Western Europe",8.1967783,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2007,1,554,18,"Australia/New Zealand",7.4760666,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2007,1,826,15,"Northern Europe",7.711874,1,18,11.30001,,17
+"UK",2,"Cancer",2007,1,826,15,"Northern Europe",7.711874,1,18,11.30001,,17
 "Chile",2,"Cancer",2007,1,152,8,"South America",6.7211471,1,14,11.56377,,18
 "USA",2,"Cancer",2007,1,840,9,"Northern America",7.3930359,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2007,1,703,14,"Eastern Europe",10.35778,1,20,17.51095,,20
@@ -475,7 +475,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2007,0,380,16,"Southern Europe",11.164186,1,14,9.526379,,14
 "France",2,"Major NCDs",2007,0,250,17,"Western Europe",11.548101,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2007,0,554,18,"Australia/New Zealand",12.93766,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2007,0,826,15,"Northern Europe",13.38023,1,17,11.30001,,17
+"UK",2,"Major NCDs",2007,0,826,15,"Northern Europe",13.38023,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2007,0,152,8,"South America",13.121469,1,18,11.56377,,18
 "USA",2,"Major NCDs",2007,0,840,9,"Northern America",15.042541,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2007,0,703,14,"Eastern Europe",21.929001,1,20,17.51095,,20
@@ -495,7 +495,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2008,2,380,16,"Southern Europe",3.252399,1,15,9.526379,,14
 "France",2,"CVD",2008,2,250,17,"Western Europe",2.8482502,1,11,9.860494,,15
 "New Zealand",2,"CVD",2008,2,554,18,"Australia/New Zealand",4.1981997,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2008,2,826,15,"Northern Europe",4.6391978,1,17,11.30001,,17
+"UK",2,"CVD",2008,2,826,15,"Northern Europe",4.6391978,1,17,11.30001,,17
 "Chile",2,"CVD",2008,2,152,8,"South America",5.0173907,1,18,11.56377,,18
 "USA",2,"CVD",2008,2,840,9,"Northern America",5.970233,1,19,13.67293,,19
 "Slovakia",2,"CVD",2008,2,703,14,"Eastern Europe",11.506165,1,20,17.51095,,20
@@ -515,7 +515,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2008,1,380,16,"Southern Europe",7.1792631,1,15,9.526379,,14
 "France",2,"Cancer",2008,1,250,17,"Western Europe",8.0809784,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2008,1,554,18,"Australia/New Zealand",7.3683023,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2008,1,826,15,"Northern Europe",7.5876026,1,18,11.30001,,17
+"UK",2,"Cancer",2008,1,826,15,"Northern Europe",7.5876026,1,18,11.30001,,17
 "Chile",2,"Cancer",2008,1,152,8,"South America",6.6208591,1,14,11.56377,,18
 "USA",2,"Cancer",2008,1,840,9,"Northern America",7.2670684,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2008,1,703,14,"Eastern Europe",10.173319,1,20,17.51095,,20
@@ -535,7 +535,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2008,0,380,16,"Southern Europe",10.91078,1,14,9.526379,,14
 "France",2,"Major NCDs",2008,0,250,17,"Western Europe",11.322762,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2008,0,554,18,"Australia/New Zealand",12.64402,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2008,0,826,15,"Northern Europe",13.02148,1,17,11.30001,,17
+"UK",2,"Major NCDs",2008,0,826,15,"Northern Europe",13.02148,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2008,0,152,8,"South America",12.90849,1,18,11.56377,,18
 "USA",2,"Major NCDs",2008,0,840,9,"Northern America",14.72788,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2008,0,703,14,"Eastern Europe",21.40419,1,20,17.51095,,20
@@ -555,7 +555,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2009,2,380,16,"Southern Europe",3.154042,1,15,9.526379,,14
 "France",2,"CVD",2009,2,250,17,"Western Europe",2.7461021,1,11,9.860494,,15
 "New Zealand",2,"CVD",2009,2,554,18,"Australia/New Zealand",4.0447202,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2009,2,826,15,"Northern Europe",4.3869653,1,17,11.30001,,17
+"UK",2,"CVD",2009,2,826,15,"Northern Europe",4.3869653,1,17,11.30001,,17
 "Chile",2,"CVD",2009,2,152,8,"South America",4.9075308,1,18,11.56377,,18
 "USA",2,"CVD",2009,2,840,9,"Northern America",5.8203263,1,19,13.67293,,19
 "Slovakia",2,"CVD",2009,2,703,14,"Eastern Europe",10.771679,1,20,17.51095,,20
@@ -575,7 +575,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2009,1,380,16,"Southern Europe",7.058146,1,15,9.526379,,14
 "France",2,"Cancer",2009,1,250,17,"Western Europe",7.9518847,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2009,1,554,18,"Australia/New Zealand",7.2805395,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2009,1,826,15,"Northern Europe",7.468996,1,18,11.30001,,17
+"UK",2,"Cancer",2009,1,826,15,"Northern Europe",7.468996,1,18,11.30001,,17
 "Chile",2,"Cancer",2009,1,152,8,"South America",6.5374217,1,14,11.56377,,18
 "USA",2,"Cancer",2009,1,840,9,"Northern America",7.1401825,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2009,1,703,14,"Eastern Europe",10.041528,1,20,17.51095,,20
@@ -595,7 +595,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2009,0,380,16,"Southern Europe",10.699793,1,14,9.526379,,14
 "France",2,"Major NCDs",2009,0,250,17,"Western Europe",11.103625,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2009,0,554,18,"Australia/New Zealand",12.376161,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2009,0,826,15,"Northern Europe",12.66338,1,17,11.30001,,17
+"UK",2,"Major NCDs",2009,0,826,15,"Northern Europe",12.66338,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2009,0,152,8,"South America",12.710521,1,18,11.56377,,18
 "USA",2,"Major NCDs",2009,0,840,9,"Northern America",14.46557,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2009,0,703,14,"Eastern Europe",20.6532,1,20,17.51095,,20
@@ -615,7 +615,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2010,2,380,16,"Southern Europe",3.0660539,1,15,9.526379,,14
 "France",2,"CVD",2010,2,250,17,"Western Europe",2.647805,1,11,9.860494,,15
 "New Zealand",2,"CVD",2010,2,554,18,"Australia/New Zealand",3.8567979,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2010,2,826,15,"Northern Europe",4.1630311,1,17,11.30001,,17
+"UK",2,"CVD",2010,2,826,15,"Northern Europe",4.1630311,1,17,11.30001,,17
 "Chile",2,"CVD",2010,2,152,8,"South America",4.7679758,1,18,11.56377,,18
 "USA",2,"CVD",2010,2,840,9,"Northern America",5.7093601,1,19,13.67293,,19
 "Slovakia",2,"CVD",2010,2,703,14,"Eastern Europe",10.056208,1,20,17.51095,,20
@@ -635,7 +635,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2010,1,380,16,"Southern Europe",6.9278216,1,15,9.526379,,14
 "France",2,"Cancer",2010,1,250,17,"Western Europe",7.8194509,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2010,1,554,18,"Australia/New Zealand",7.1081171,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2010,1,826,15,"Northern Europe",7.3515029,1,18,11.30001,,17
+"UK",2,"Cancer",2010,1,826,15,"Northern Europe",7.3515029,1,18,11.30001,,17
 "Chile",2,"Cancer",2010,1,152,8,"South America",6.4890189,1,14,11.56377,,18
 "USA",2,"Cancer",2010,1,840,9,"Northern America",7.0225186,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2010,1,703,14,"Eastern Europe",9.9249363,1,20,17.51095,,20
@@ -655,7 +655,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2010,0,380,16,"Southern Europe",10.481062,1,14,9.526379,,14
 "France",2,"Major NCDs",2010,0,250,17,"Western Europe",10.883312,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2010,0,554,18,"Australia/New Zealand",12.00129,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2010,0,826,15,"Northern Europe",12.33435,1,17,11.30001,,17
+"UK",2,"Major NCDs",2010,0,826,15,"Northern Europe",12.33435,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2010,0,152,8,"South America",12.51217,1,18,11.56377,,18
 "USA",2,"Major NCDs",2010,0,840,9,"Northern America",14.249579,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2010,0,703,14,"Eastern Europe",19.889269,1,20,17.51095,,20
@@ -675,7 +675,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2011,2,380,16,"Southern Europe",2.9699271,1,15,9.526379,,14
 "France",2,"CVD",2011,2,250,17,"Western Europe",2.543294,1,11,9.860494,,15
 "New Zealand",2,"CVD",2011,2,554,18,"Australia/New Zealand",3.6475372,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2011,2,826,15,"Northern Europe",3.9732521,1,17,11.30001,,17
+"UK",2,"CVD",2011,2,826,15,"Northern Europe",3.9732521,1,17,11.30001,,17
 "Chile",2,"CVD",2011,2,152,8,"South America",4.7165818,1,18,11.56377,,18
 "USA",2,"CVD",2011,2,840,9,"Northern America",5.6188111,1,19,13.67293,,19
 "Slovakia",2,"CVD",2011,2,703,14,"Eastern Europe",9.7063236,1,20,17.51095,,20
@@ -695,7 +695,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2011,1,380,16,"Southern Europe",6.7821064,1,15,9.526379,,14
 "France",2,"Cancer",2011,1,250,17,"Western Europe",7.666832,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2011,1,554,18,"Australia/New Zealand",6.9023666,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2011,1,826,15,"Northern Europe",7.2325411,1,18,11.30001,,17
+"UK",2,"Cancer",2011,1,826,15,"Northern Europe",7.2325411,1,18,11.30001,,17
 "Chile",2,"Cancer",2011,1,152,8,"South America",6.4502277,1,14,11.56377,,18
 "USA",2,"Cancer",2011,1,840,9,"Northern America",6.8946629,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2011,1,703,14,"Eastern Europe",9.8581815,1,20,17.51095,,20
@@ -715,7 +715,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2011,0,380,16,"Southern Europe",10.239183,1,14,9.526379,,14
 "France",2,"Major NCDs",2011,0,250,17,"Western Europe",10.632153,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2011,0,554,18,"Australia/New Zealand",11.54434,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2011,0,826,15,"Northern Europe",12.035,1,17,11.30001,,17
+"UK",2,"Major NCDs",2011,0,826,15,"Northern Europe",12.035,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2011,0,152,8,"South America",12.40495,1,18,11.56377,,18
 "USA",2,"Major NCDs",2011,0,840,9,"Northern America",14.03629,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2011,0,703,14,"Eastern Europe",19.51489,1,20,17.51095,,20
@@ -735,7 +735,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2012,2,380,16,"Southern Europe",2.8736119,1,15,9.526379,,14
 "France",2,"CVD",2012,2,250,17,"Western Europe",2.4357781,1,11,9.860494,,15
 "New Zealand",2,"CVD",2012,2,554,18,"Australia/New Zealand",3.5398688,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2012,2,826,15,"Northern Europe",3.8244359,1,17,11.30001,,17
+"UK",2,"CVD",2012,2,826,15,"Northern Europe",3.8244359,1,17,11.30001,,17
 "Chile",2,"CVD",2012,2,152,8,"South America",4.6545901,1,18,11.56377,,18
 "USA",2,"CVD",2012,2,840,9,"Northern America",5.563302,1,19,13.67293,,19
 "Slovakia",2,"CVD",2012,2,703,14,"Eastern Europe",9.3564396,1,20,17.51095,,20
@@ -755,7 +755,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2012,1,380,16,"Southern Europe",6.6307268,1,15,9.526379,,14
 "France",2,"Cancer",2012,1,250,17,"Western Europe",7.5021753,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2012,1,554,18,"Australia/New Zealand",6.8524656,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2012,1,826,15,"Northern Europe",7.1126528,1,18,11.30001,,17
+"UK",2,"Cancer",2012,1,826,15,"Northern Europe",7.1126528,1,18,11.30001,,17
 "Chile",2,"Cancer",2012,1,152,8,"South America",6.3272223,1,14,11.56377,,18
 "USA",2,"Cancer",2012,1,840,9,"Northern America",6.7744875,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2012,1,703,14,"Eastern Europe",9.7914267,1,20,17.51095,,20
@@ -775,7 +775,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2012,0,380,16,"Southern Europe",9.983654,1,14,9.526379,,14
 "France",2,"Major NCDs",2012,0,250,17,"Western Europe",10.363581,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2012,0,554,18,"Australia/New Zealand",11.35021,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2012,0,826,15,"Northern Europe",11.77456,1,17,11.30001,,17
+"UK",2,"Major NCDs",2012,0,826,15,"Northern Europe",11.77456,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2012,0,152,8,"South America",12.205319,1,18,11.56377,,18
 "USA",2,"Major NCDs",2012,0,840,9,"Northern America",13.87106,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2012,0,703,14,"Eastern Europe",19.140511,1,20,17.51095,,20
@@ -795,7 +795,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2013,2,380,16,"Southern Europe",2.8465011,1,15,9.526379,,14
 "France",2,"CVD",2013,2,250,17,"Western Europe",2.383142,1,11,9.860494,,15
 "New Zealand",2,"CVD",2013,2,554,18,"Australia/New Zealand",3.4036439,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2013,2,826,15,"Northern Europe",3.7005849,1,17,11.30001,,17
+"UK",2,"CVD",2013,2,826,15,"Northern Europe",3.7005849,1,17,11.30001,,17
 "Chile",2,"CVD",2013,2,152,8,"South America",4.5487571,1,18,11.56377,,18
 "USA",2,"CVD",2013,2,840,9,"Northern America",5.5496492,1,19,13.67293,,19
 "Slovakia",2,"CVD",2013,2,703,14,"Eastern Europe",8.9307861,1,20,17.51095,,20
@@ -815,7 +815,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2013,1,380,16,"Southern Europe",6.5702872,1,15,9.526379,,14
 "France",2,"Cancer",2013,1,250,17,"Western Europe",7.4179201,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2013,1,554,18,"Australia/New Zealand",6.7106697,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2013,1,826,15,"Northern Europe",7.0113831,1,18,11.30001,,17
+"UK",2,"Cancer",2013,1,826,15,"Northern Europe",7.0113831,1,18,11.30001,,17
 "Chile",2,"Cancer",2013,1,152,8,"South America",6.247335,1,14,11.56377,,18
 "USA",2,"Cancer",2013,1,840,9,"Northern America",6.6608958,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2013,1,703,14,"Eastern Europe",9.7291832,1,20,17.51095,,20
@@ -835,7 +835,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2013,0,380,16,"Southern Europe",9.8958378,1,14,9.526379,,14
 "France",2,"Major NCDs",2013,0,250,17,"Western Europe",10.236019,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2013,0,554,18,"Australia/New Zealand",11.06376,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2013,0,826,15,"Northern Europe",11.56635,1,17,11.30001,,17
+"UK",2,"Major NCDs",2013,0,826,15,"Northern Europe",11.56635,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2013,0,152,8,"South America",11.98997,1,18,11.56377,,18
 "USA",2,"Major NCDs",2013,0,840,9,"Northern America",13.77061,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2013,0,703,14,"Eastern Europe",18.707899,1,20,17.51095,,20
@@ -855,7 +855,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2014,2,380,16,"Southern Europe",2.777366,1,15,9.526379,,14
 "France",2,"CVD",2014,2,250,17,"Western Europe",2.31428,1,11,9.860494,,15
 "New Zealand",2,"CVD",2014,2,554,18,"Australia/New Zealand",3.267419,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2014,2,826,15,"Northern Europe",3.6668081,1,17,11.30001,,17
+"UK",2,"CVD",2014,2,826,15,"Northern Europe",3.6668081,1,17,11.30001,,17
 "Chile",2,"CVD",2014,2,152,8,"South America",4.5264449,1,18,11.56377,,18
 "USA",2,"CVD",2014,2,840,9,"Northern America",5.5465069,1,19,13.67293,,19
 "Slovakia",2,"CVD",2014,2,703,14,"Eastern Europe",8.414979,1,20,17.51095,,20
@@ -875,7 +875,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2014,1,380,16,"Southern Europe",6.4645019,1,15,9.526379,,14
 "France",2,"Cancer",2014,1,250,17,"Western Europe",7.3102076,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2014,1,554,18,"Australia/New Zealand",6.5688737,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2014,1,826,15,"Northern Europe",6.9546022,1,18,11.30001,,17
+"UK",2,"Cancer",2014,1,826,15,"Northern Europe",6.9546022,1,18,11.30001,,17
 "Chile",2,"Cancer",2014,1,152,8,"South America",6.192668,1,14,11.56377,,18
 "USA",2,"Cancer",2014,1,840,9,"Northern America",6.6081276,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2014,1,703,14,"Eastern Europe",9.6059322,1,20,17.51095,,20
@@ -895,7 +895,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2014,0,380,16,"Southern Europe",9.7111082,1,14,9.526379,,14
 "France",2,"Major NCDs",2014,0,250,17,"Western Europe",10.048256,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2014,0,554,18,"Australia/New Zealand",10.77731,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2014,0,826,15,"Northern Europe",11.48209,1,17,11.30001,,17
+"UK",2,"Major NCDs",2014,0,826,15,"Northern Europe",11.48209,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2014,0,152,8,"South America",11.89391,1,18,11.56377,,18
 "USA",2,"Major NCDs",2014,0,840,9,"Northern America",13.71945,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2014,0,703,14,"Eastern Europe",18.109425,1,20,17.51095,,20
@@ -915,7 +915,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"CVD",2015,2,380,16,"Southern Europe",2.708231,1,15,9.526379,,14
 "France",2,"CVD",2015,2,250,17,"Western Europe",2.2454181,1,11,9.860494,,15
 "New Zealand",2,"CVD",2015,2,554,18,"Australia/New Zealand",3.1311941,1,16,10.49086,,16
-"United Kingdom",2,"CVD",2015,2,826,15,"Northern Europe",3.6380908,1,17,11.30001,,17
+"UK",2,"CVD",2015,2,826,15,"Northern Europe",3.6380908,1,17,11.30001,,17
 "Chile",2,"CVD",2015,2,152,8,"South America",4.348011,1,18,11.56377,,18
 "USA",2,"CVD",2015,2,840,9,"Northern America",5.5959606,1,19,13.67293,,19
 "Slovakia",2,"CVD",2015,2,703,14,"Eastern Europe",7.8991718,1,20,17.51095,,20
@@ -935,7 +935,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Cancer",2015,1,380,16,"Southern Europe",6.3587165,1,15,9.526379,,14
 "France",2,"Cancer",2015,1,250,17,"Western Europe",7.2024951,1,19,9.860494,,15
 "New Zealand",2,"Cancer",2015,1,554,18,"Australia/New Zealand",6.4270778,1,16,10.49086,,16
-"United Kingdom",2,"Cancer",2015,1,826,15,"Northern Europe",6.7833514,1,18,11.30001,,17
+"UK",2,"Cancer",2015,1,826,15,"Northern Europe",6.7833514,1,18,11.30001,,17
 "Chile",2,"Cancer",2015,1,152,8,"South America",6.0637221,1,14,11.56377,,18
 "USA",2,"Cancer",2015,1,840,9,"Northern America",6.4650116,1,17,13.67293,,19
 "Slovakia",2,"Cancer",2015,1,703,14,"Eastern Europe",9.4826813,1,20,17.51095,,20
@@ -955,7 +955,7 @@ country_label,hdi,cause,year,cause_num,country_code,area_code,area_label,risk,se
 "Italy",2,"Major NCDs",2015,0,380,16,"Southern Europe",9.5263786,1,14,9.526379,,14
 "France",2,"Major NCDs",2015,0,250,17,"Western Europe",9.8604937,1,15,9.860494,,15
 "New Zealand",2,"Major NCDs",2015,0,554,18,"Australia/New Zealand",10.49086,1,16,10.49086,,16
-"United Kingdom",2,"Major NCDs",2015,0,826,15,"Northern Europe",11.300011,1,17,11.30001,,17
+"UK",2,"Major NCDs",2015,0,826,15,"Northern Europe",11.300011,1,17,11.30001,,17
 "Chile",2,"Major NCDs",2015,0,152,8,"South America",11.563769,1,18,11.56377,,18
 "USA",2,"Major NCDs",2015,0,840,9,"Northern America",13.67293,1,19,13.67293,,19
 "Slovakia",2,"Major NCDs",2015,0,703,14,"Eastern Europe",17.51095,1,20,17.51095,,20

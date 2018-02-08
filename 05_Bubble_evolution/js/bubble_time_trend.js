@@ -15,7 +15,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
@@ -510,7 +510,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
@@ -544,7 +544,10 @@
 				
 				update_axis(bar_graph,data_temp);
 				update_data_circle(bar_graph,data_nest);
-				update_grey_bubble(bar_graph, data_nest_grey)
+				
+				if (group_value == 2) {
+					update_grey_bubble(bar_graph, data_nest_grey)
+				}
 			}
 		)
 	}
