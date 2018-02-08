@@ -15,7 +15,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
@@ -510,7 +510,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
