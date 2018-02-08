@@ -521,6 +521,10 @@
 				var data_temp = data.filter(function(d){
 					return (d[group_label] == group_value)
 				});
+				
+				var data_temp_grey = data.filter(function(d){
+					return (d[group_label] == 1)
+				});
 
 				var data_nest=d3.nest()
 					.key(function(d) {return d.country_label;})
@@ -528,12 +532,19 @@
 					.key(function(d) {return d.year;})
 					.sortKeys(d3.ascending)
 					.entries(data_temp)
+					
+				var data_nest_grey=d3.nest()
+					.key(function(d) {return d.country_label;})
+					.sortKeys(d3.ascending)
+					.key(function(d) {return d.year;})
+					.sortKeys(d3.ascending)
+					.entries(data_temp_grey)
 
 				var bar_graph=d3.select("#chart").select(".bar_graph1")
 				
 				update_axis(bar_graph,data_temp);
 				update_data_circle(bar_graph,data_nest);
-
+				update_grey_bubble(bar_graph, data_nest_grey)
 			}
 		)
 	}
@@ -703,6 +714,48 @@
 		
 		
 
+	}
+	
+
+	function update_grey_bubble(bar_graph, data_nest_grey) {
+		
+		
+		var circle_holder = graph_select.selectAll(".circle_holder")
+		
+		circle_holder
+			.data(data_nest_grey)
+			.append("circle")
+			.attr("class","circle_grey")
+			.attr("r",7)
+			.style("stroke", "#00000030")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", function(d, i) {
+				return "translate("+ (xScale(15+1)*0.1) +"," + (yScale(d.values[15].values[0].risk)) + ")";}) 
+			.attr("fill", "#eeeeee")
+			.each(function() {
+				this.parentNode.insertBefore(this, this.parentNode.firstChild);
+			});
+			
+		
+		circle_holder
+			.data(data_nest_grey)
+			.append("path")
+			.attr("class","path_grey")
+			.attr("d", function(d, i){
+				return lineFunction(d.values)
+				})
+			.attr("stroke", "#50505030")
+			.attr("stroke-width", 2)
+			.attr("fill", "none")
+			.each(function() {
+				this.parentNode.insertBefore(this, this.parentNode.firstChild);
+			});
+			
+
+
+		
+		
+		
 	}
 	
 	function tick_generator(value_max, value_min = 0, log_scale=false )	{
