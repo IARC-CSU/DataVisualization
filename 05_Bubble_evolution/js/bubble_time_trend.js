@@ -60,7 +60,7 @@
 					.attr("width", 100)
 					.attr("height", 30)
 					.append("g")
-					.attr("class", "graph_legend")	
+					.attr("class", "graph_legend1")	
 					.attr("transform", "translate(" + ( margin.left_page + (graph_width)  + 50)   + "," + (margin.top_page+ 20)  + ")") 
 					
 
@@ -114,7 +114,7 @@
 			.attr("fill", "#377eb8");
 			
 		graph_select.append("text")
-			.attr("class","text_legend")
+			.attr("class","text_legend_base")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
 			.attr("transform","translate(-10,3)")
@@ -191,6 +191,7 @@
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("fill", "#b7b7b7");
+			
 			
 		graph_select.append("text")
 			.attr("class","text_legend_base")

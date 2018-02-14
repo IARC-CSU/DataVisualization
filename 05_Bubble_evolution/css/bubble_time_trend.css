@@ -103,6 +103,10 @@ form {
     g.graph_legend text {
 	font-size: 22px;
   }
+  
+    g.graph_legend1 text {
+	font-size: 22px;
+  }
  
      text.text1 {
 	font-size: 17px;
