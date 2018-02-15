@@ -77,7 +77,7 @@
 
 				add_axis_title(bar_graph,data_temp,true);
 				add_circle_line(bar_graph,data_nest, "#377eb8");
-				add_circle_line(bar_graph,data_nest1 ,"#1b9e77");
+				add_circle_line(bar_graph,data_nest1 ,"#e41a1c");
 				add_legend_cat(graph_legend);
 				add_legend(graph_legend2);
 
@@ -128,7 +128,7 @@
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform","translate(0,20)")
-			.attr("fill", "#1b9e77");
+			.attr("fill", "#e41a1c");
 			
 
 		graph_select.append("text")
