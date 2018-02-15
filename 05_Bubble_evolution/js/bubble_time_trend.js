@@ -77,7 +77,7 @@
 
 				add_axis_title(bar_graph,data_temp,true);
 				add_circle_line(bar_graph,data_nest, "#377eb8");
-				add_circle_line(bar_graph,data_nest1 ,"#e41a1c");
+				//add_circle_line(bar_graph,data_nest1 ,"#e41a1c");
 				add_legend_cat(graph_legend);
 				add_legend(graph_legend2);
 
