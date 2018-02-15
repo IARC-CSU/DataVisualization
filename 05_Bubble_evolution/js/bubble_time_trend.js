@@ -288,6 +288,13 @@
 			.attr("x2", graph_width+5)
 			.attr("y2", var_height);  
 			
+		graph_select.append("line") // add line for hdi separation
+			.style("stroke", "black")  
+			.attr("x1", xScale(11*(bar_space+1)))
+			.attr("y1", -20)  
+			.attr("x2",xScale(11*(bar_space+1)))
+			.attr("y2", var_height+100);  
+			
 		graph_select.append("text") // add x axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
