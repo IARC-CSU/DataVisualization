@@ -4,9 +4,13 @@
 
 .line {
   fill: none;
-  stroke: purple;
   stroke-width: 2px;
-  stroke-dasharray: 5px ; 
+  stroke-opacity:0.7;
+}
+
+.line_poly{
+  fill: none ;
+  stroke-width: 2px;
 }
 
 .area {
@@ -16,94 +20,183 @@
 </style>
 <body>
 
+<!-- load the jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- load the d3.js library -->    	
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/regression.min.js"></script>
 <script>
 
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-// parse the date / time
-var parseTime = d3.timeParse("%d-%b-%y");
+    width = $(window).width()- margin.left - margin.right,
+    height = $(window).height() / 2 - margin.top - margin.bottom;
 
 // set the ranges
-var x = d3.scaleTime().range([0, width]);
-var y = d3.scaleLinear().range([height, 0]);
+var x = d3.scaleLinear().range([0, width]); // age
+var y = d3.scaleLinear().range([height, 0]); // bmi
 
 // define the area
 var area = d3.area()
-    .x(function(d) { return x(d.date); })
+    .x(function(d) { return x(d.age); })
     .y0(height)
-    .y1(function(d) { return y(d.close); });
+    .y1(function(d) { return y(d.bmi); });
 
 // define the line
 var valueline = d3.line()
-    .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.close); });
+    .x(function(d) { return x(d.age); })
+    .y(function(d) { return y(d.bmi); });
+
+var color = d3.scaleOrdinal( d3['schemeCategory20'] ) ; 
+
+var linePolynome = d3.line().curve(d3.curveCardinal);
 
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select("body").append("svg")
+var svg_observed = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .attr('id','observed')
+    .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-// get the data
-d3.csv("line.csv", function(error, data) {
-  if (error) throw error;
+var svg_projected = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height - 10 + margin.top + margin.bottom)
+    .attr('id','projected')
+    .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
 
+// get the data observed
+d3.csv("data/MyDataRaw.csv", function(error, data) {
+
+  if (error) throw error;
+  var values = { 'x' : [] , 'y' : [] } ;
   // format the data
   data.forEach(function(d) {
-      d.date = parseTime(d.date);
-      d.close = +d.close;
+      
+      d.age = +d.age;
+      d.bmi = +d.bmi;
+
+      values.x.push( d.age );
+      values.y.push( d.bmi );
   });
 
-  // scale the range of the data
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain([0, d3.max(data, function(d) { return d.close; })]);
+  var observed = d3.nest()
+    .key( function(d){ return d.id })
+    .entries( data ); 
 
-  
-  // add the valueline path.
-  svg.append("path")
-      .data([data])
-      .attr("class", "line")
-      .attr("d", valueline);
+  y.domain([0,d3.max(values.y)]); // bmi
+  x.domain([0,d3.max(values.x)]); // age
 
-  // add the X Axis
-  svg.append("g")
+  svg_observed.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call( d3.axisBottom(x) );
 
   // add the Y Axis
-  svg.append("g")
-      .call(d3.axisLeft(y));
+  svg_observed.append("g")
+      .call( d3.axisLeft(y) );
 
-});
+  for( var l in observed )
+  {
+    svg_observed.append("path")
+      .data([observed[l].values])
+      .attr("class", function(d){ return "line line_"+d.id ; })
+      .attr("d", valueline)
+      .style('stroke',function(d,i){ 
+          return color(l); 
+      })
+      .on('mouseover',function(d){
+        console.info(d);
+        d3.select(this).style('stroke-opacity',1) ; 
+        d3.selectAll('.line_poly').style('fill','#cccccc') ; 
+        d3.selectAll('#line_poly_'+d.id).style('stroke','red');
+      });
+  }
 
+  // get the data
+  d3.csv("data/ModCoef.csv", function(error, polynomes) {
 
-// get the data
-d3.csv("area.csv", function(error, data) {
-  if (error) throw error;
+    if (error) throw error;
+    // format the data
+    polynomes.forEach(function(d) {
+        
+        d.a = +d.a;
+        d.b = +d.b;
+        d.c = +d.c; 
+        
+    });
 
-  // format the data
-  data.forEach(function(d) {
-      d.date = parseTime(d.date);
-      d.close = +d.close;
+    let polyReg = [] ; 
+    let tmpVals = [] ; 
+
+    for( var p in polynomes )
+    {
+      if( observed[p] == undefined ) continue ;   
+
+      let vals = observed[p].values ; 
+      let polyReg = regression('polynomial', vals );
+      let poly = polynomes[p] ; 
+
+      tmpVals[p] = { 'id' : poly.id , 'values' : [] } ; 
+
+      let v = 0 ; 
+      tmpVals[p].values.push({ 'x' : v , 'y' : ( poly.a * Math.pow(v, 2) ) + poly.b * v + poly.c  }); 
+      /*for(var j = 0; j < vals.length; j++) 
+      {
+        let v =  vals[j].bmi ; 
+
+        tmpVals[p].values.push({
+          'x' : vals[j].age , 
+          'y' : poly.a * Math.pow(v,2) + poly.b * v + poly.c , 
+          'bmi' : v 
+        }) ; 
+      }*/ 
+
+      v = 70 ; 
+      tmpVals[p].values.push({ 'x' : v , 'y' : ( poly.a * Math.pow(v, 2) ) + poly.b * v + poly.c  }); 
+
+      // console.info( poly.id , tmpVals[p].values ) ; 
+
+      svg_projected.append("path")
+        .datum( tmpVals[p].values )
+        .attr("class", "line_poly")
+        .style("stroke","#cccccc")
+        .attr("id", function(d){ return 'line_poly_'+poly.id }) // assign ID
+        .attr("d", d3.line()
+           .curve( d3.curveCardinal )
+           .x(function(d) { return x(d.x); })
+           .y(function(d) { return y(d.y); })
+       );
+
+      // break ; 
+    }
+      
+    svg_projected.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call( d3.axisBottom(x) );
+
+    // add the Y Axis
+    svg_projected.append("g")
+        .call( d3.axisLeft(y) );
+
   });
 
-  // add the area
-  svg.append("path")
-       .data([data])
-       .attr("class", "area")
-       .attr("d", area);
-
-
 });
+
+function getPredicted (x, coefs) {
+    // Get a predicted y value
+    var pred = 0
+    for(var i = 0; i < coefs.length; i++) {
+        var dp = Math.pow(x, i)*coefs[i];
+        pred += dp;
+    }
+    return (Math.exp(pred))
+    // return (pred)
+}
 
 
 
