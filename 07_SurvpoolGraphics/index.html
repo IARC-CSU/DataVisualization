@@ -24,7 +24,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- load the d3.js library -->    	
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="js/regression.min.js"></script>
+<script src="js/regression.js"></script>
+<script src="js/polynomial.js"></script>
 <script>
 
 // set the dimensions and margins of the graph
@@ -89,8 +90,11 @@ d3.csv("data/MyDataRaw.csv", function(error, data) {
     .key( function(d){ return d.id })
     .entries( data ); 
 
-  y.domain([0,d3.max(values.y)]); // bmi
-  x.domain([0,d3.max(values.x)]); // age
+  /*y.domain([15,d3.max(values.y)]); // bmi
+  x.domain([20,d3.max(values.x)]);*/ // age
+
+  y.domain([15,40]); // bmi
+  x.domain([20,80]);
 
   svg_observed.append("g")
       .attr("transform", "translate(0," + height + ")")
@@ -104,17 +108,22 @@ d3.csv("data/MyDataRaw.csv", function(error, data) {
   {
     svg_observed.append("path")
       .data([observed[l].values])
-      .attr("class", function(d){ return "line line_"+d.id ; })
+      .attr("class", function(d){ return "line line_"+d[0].id ; })
       .attr("d", valueline)
       .style('stroke',function(d,i){ 
           return color(l); 
       })
       .on('mouseover',function(d){
-        console.info(d);
         d3.select(this).style('stroke-opacity',1) ; 
-        d3.selectAll('.line_poly').style('fill','#cccccc') ; 
+        d3.selectAll('.line_poly').style('stroke-opacity',0) ; 
         d3.selectAll('#line_poly_'+d.id).style('stroke','red');
-      });
+      })
+      .on('mouseout',function(d){
+        d3.selectAll('.line_poly').style('stroke-opacity',0.7) ; 
+        d3.selectAll('#line_poly_'+d.id).style('stroke','#cccccc');
+      })
+    ;
+    break ; 
   }
 
   // get the data
@@ -138,28 +147,36 @@ d3.csv("data/MyDataRaw.csv", function(error, data) {
       if( observed[p] == undefined ) continue ;   
 
       let vals = observed[p].values ; 
-      let polyReg = regression('polynomial', vals );
+      let polynomial_values = [] ; 
+      for ( var va in vals ) polynomial_values.push( [vals[va].bmi,vals[va].age] ) ; 
+
       let poly = polynomes[p] ; 
+      //let polyReg = regression('polynomial', polynomial_values );
+      //let polyReg = Polynomial([poly.c,poly.b,poly.a])
 
       tmpVals[p] = { 'id' : poly.id , 'values' : [] } ; 
 
-      let v = 0 ; 
-      tmpVals[p].values.push({ 'x' : v , 'y' : ( poly.a * Math.pow(v, 2) ) + poly.b * v + poly.c  }); 
-      /*for(var j = 0; j < vals.length; j++) 
+      //let v = 20 ; 
+      //tmpVals[p].values.push({ 'x' : v , 'y' : ( poly.a * Math.pow(v, 2) ) + poly.b * v + poly.c  }); 
+    
+      for(var j = 20; j <= 80 ; j++) 
       {
-        let v =  vals[j].bmi ; 
+        //let v =  vals[j].bmi ; 
 
         tmpVals[p].values.push({
-          'x' : vals[j].age , 
-          'y' : poly.a * Math.pow(v,2) + poly.b * v + poly.c , 
-          'bmi' : v 
+          'x' : j , 
+          'y' : poly.a * Math.pow(j,2) + poly.b * j + poly.c , 
+          //'y' : poly.a * Math.pow(v,2) + poly.b * v + poly.c , 
+          //'y' : polyReg.equation[2] * Math.pow(v,2) + polyReg.equation[1] * v + polyReg.equation[0] , 
+          //'y' : polyReg.eval(v) , 
+          //'bmi' : v 
         }) ; 
-      }*/ 
+      }
 
-      v = 70 ; 
-      tmpVals[p].values.push({ 'x' : v , 'y' : ( poly.a * Math.pow(v, 2) ) + poly.b * v + poly.c  }); 
+      //v = 70 ; 
+      //tmpVals[p].values.push({ 'x' : v , 'y' : ( poly.a * Math.pow(v, 2) ) + poly.b * v + poly.c  }); 
 
-      // console.info( poly.id , tmpVals[p].values ) ; 
+      //console.info( poly.id ,   tmpVals[p].values ) ; 
 
       svg_projected.append("path")
         .datum( tmpVals[p].values )
@@ -172,7 +189,7 @@ d3.csv("data/MyDataRaw.csv", function(error, data) {
            .y(function(d) { return y(d.y); })
        );
 
-      // break ; 
+      break ; 
     }
       
     svg_projected.append("g")
