@@ -1407,6 +1407,7 @@ function manageLegends()
     {
         var colorset = CanMapColorSet ;
 
+        console.info( colorset ) ; 
         // console.info( "CanMapUniqueValues" , CanMapUniqueValues , "=" , CanMapUniqueValues.length , "colorset = " , colorset.length ); 
 
         if ( CanMapUniqueValues.length < colorset.length ) 
