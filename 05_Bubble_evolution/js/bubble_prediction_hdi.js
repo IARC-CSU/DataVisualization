@@ -78,14 +78,14 @@
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2012")
+			.text("2018")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2035")
+			.text("2040")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
 
