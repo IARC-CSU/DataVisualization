@@ -878,7 +878,7 @@
 			return (d.volume == 1 & d.sex == 1 & d.rank == 1)
 		});
 		
-		console.log(datatemp[2])
+
 
 		var registry_list = {};
 		for (i=0;i<nb_registry; i++ ) {
