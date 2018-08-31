@@ -2404,6 +2404,11 @@
 			outline: 0;
 			overflow: hidden;
 		}
+		
+			.thumbnails a h3 {
+				background: #676767!important;
+				margin-bottom: 0px!important;
+			}
 
 			.thumbnails a img {
 				display: block;
@@ -2424,11 +2429,6 @@
 			}​
 			
 			
-
-			.thumbnails a h3 {
-				margin: 1em;
-			}
-
 			.thumbnails a:hover {
 				background-color: rgba(255, 255, 255, 0.25);
 			}
