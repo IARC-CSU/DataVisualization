@@ -15,7 +15,7 @@
 		
 		// variable general
 		
-		var nb_country = 173;
+		var nb_country = 185;
 				
 		var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 50, left_page: 400 },
 			width = 1500 - margin.left - margin.right,
@@ -46,6 +46,7 @@
 		color_cancer["Corpus uteri"]           = "#9FE72D";
 		color_cancer["Gallbladder"]            = "#006158";
 		color_cancer["Hodgkin lymphoma"]       = "#97d5b4";
+		color_cancer["Hypopharynx"]			   = "#6D8A6D";
 		color_cancer["Kaposi sarcoma"]         = "#FFC2CA";
 		color_cancer["Kidney"]                 = "#040186";
 		color_cancer["Larynx"]                 = "#aec80d";
@@ -54,23 +55,28 @@
 		color_cancer["Liver"]                  = "#F3A654";
 		color_cancer["Lung"]                   = "#1E90FF";
 		color_cancer["Melanoma of skin"]       = "#cd100a";
+		color_cancer["Mesothelioma"]           = "#6D8A6D";
 		color_cancer["Multiple myeloma"]       = "#333333";
 		color_cancer["Nasopharynx"]            = "#2A4950";
 		color_cancer["Non-Hodgkin lymphoma"]   = "#2231D0";
 		color_cancer["Oesophagus"]             = "#DC1341";
-		color_cancer["Other pharynx"]          = "#6D8A6D";
-		color_cancer["Ovary"]                  = "#00F5B6";
+		color_cancer["Oropharynx"]             = "#00F5B6";
+		color_cancer["Ovary"]                  = "#8C07C2";
 		color_cancer["Pancreas"]               = "#940009";
+		color_cancer["Penis"]                  = "#E69C56";
 		color_cancer["Prostate"]               = "#34A76E";
+		color_cancer["Salivary glands"]        = "#57A67A";
 		color_cancer["Stomach"]                = "#4682B4";
 		color_cancer["Testis"]                 = "#3a1ad1";
 		color_cancer["Thyroid"]                = "#ADD9E4";
+		color_cancer["Vagina"]                 = "#FF713F";
+		color_cancer["Vulva"]                  = "#FF6C7D";
 		
 
 		var heatMap; // not sure it need to be initialize ?
 		var bool_cluster = false;
 		var sex_select = "Women";	
-		var nb_site_max = 25;  
+		var nb_site_max = 30;  
 		var transitionTime = 1500;
 		var label_padding = -3; // label of the cancer site distance from heatmaps
 		
