@@ -2404,18 +2404,31 @@
 			outline: 0;
 			overflow: hidden;
 		}
+		
+			.thumbnails a h3 {
+				background: #676767!important;
+				margin-bottom: 0px!important;
+			}
 
 			.thumbnails a img {
 				display: block;
 				width: 100%;
 				border-top-left-radius: 4px;
 				border-top-right-radius: 4px;
+				opacity: 1.0;
+				transition: opacity .55s ease-in-out;
+				-moz-transition: opacity .55s ease-in-out;
+				-webkit-transition: opacity .55s ease-in-out;
 			}
-
-			.thumbnails a h3 {
-				margin: 1em;
-			}
-
+			
+			.thumbnails a img:hover {
+				opacity: 0.0;
+				transition: opacity .55s ease-in-out;
+				-moz-transition: opacity .55s ease-in-out;
+				-webkit-transition: opacity .55s ease-in-out;
+			}​
+			
+			
 			.thumbnails a:hover {
 				background-color: rgba(255, 255, 255, 0.25);
 			}
