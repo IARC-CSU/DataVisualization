@@ -5,9 +5,9 @@
   
   	<title> Bubble chart mortality hdi </title>
 	<!--link rel="icon" href="favicon.ico" /-->
-	<link rel="stylesheet" href="css/bubble_evolution.css" type="text/css">
+	<link rel="stylesheet" href="css/bubble_prediction_risk.css" type="text/css">
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
-	<script type="text/javascript" src="js/bubble_mortality_hdi.js"></script>
+	<script type="text/javascript" src="js/bubble_prediction_risk.js"></script>
 
 
 
@@ -18,40 +18,15 @@
 		
 	// variable general
 	
-	var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 70, left_page: 250 },
-	width = 1500 - margin.left - margin.right,
+	var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 70, left_page: 150 },
+	width = 1700 - margin.left - margin.right,
 	height = 800 - margin.top - margin.bottom,
 	
 	XgridSize = 30 // 20*Xgrid for the range of the bar 
 
 	var color_cancer = {};
-	color_cancer["Bladder"]                = "#278D29";
-	color_cancer["Brain, nervous system"]  = "#D5BED2";
-	color_cancer["Breast"]                 = "#FF68BC";
-	color_cancer["Cervix uteri"]           = "#FF7500";
-	color_cancer["Colorectal"]             = "#FFD803";
-	color_cancer["Corpus uteri"]           = "#9FE72D";
-	color_cancer["Gallbladder"]            = "#006158";
-	color_cancer["Hodgkin lymphoma"]       = "#97d5b4";
-	color_cancer["Kaposi sarcoma"]         = "#FFC2CA";
-	color_cancer["Kidney"]                 = "#040186";
-	color_cancer["Larynx"]                 = "#aec80d";
-	color_cancer["Leukaemia"]              = "#FFFFA6";
-	color_cancer["Lip, oral cavity"]       = "#AE563E";
-	color_cancer["Liver"]                  = "#F3A654";
-	color_cancer["Lung"]                   = "#1E90FF";
-	color_cancer["Melanoma of skin"]       = "#cd100a";
-	color_cancer["Multiple myeloma"]       = "#333333";
-	color_cancer["Nasopharynx"]            = "#2A4950";
-	color_cancer["Non-Hodgkin lymphoma"]   = "#2231D0";
-	color_cancer["Oesophagus"]             = "#DC1341";
-	color_cancer["Other pharynx"]          = "#6D8A6D";
-	color_cancer["Ovary"]                  = "#00F5B6";
-	color_cancer["Pancreas"]               = "#940009";
-	color_cancer["Prostate"]               = "#34A76E";
-	color_cancer["Stomach"]                = "#4682B4";
-	color_cancer["Testis"]                 = "#3a1ad1";
-	color_cancer["Thyroid"]                = "#ADD9E4";
+	color_cancer[1]  = "#E66101"; // low and medium 
+	color_cancer[2]  = "#2C7BB6"; // high hdi
 	
 
 	
@@ -59,8 +34,8 @@
 	var transition_time = 1000
 	
 	var bar_space = 2.5	// Space between bar 
-	var nb_cancer = 4  // nb of cancer shows (here top 10)
-	var label_wrap = 19 // size max of a label on one line
+	var nb_cancer = 5  // nb of cancer shows (here top 10)
+	var label_wrap = 10 // size max of a label on one line
 	
 	var var_height = 550
 	
@@ -116,11 +91,11 @@
 
 	</div>
 	
-	<div id="header">
+	<div id="header" >
 		<div>
-			<h1><a href="#"> Mortality rate evolution<br/>1981-1985 to 2006-2010 </a></h1>
+			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2015</a></h1>
 			<div class="desc">
-				Very high HDI 
+				Cancer
 			</div>
 		</div>		
 	
@@ -131,27 +106,13 @@
 		
 		<div class = "div_left">
 		<form>
-		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 1981-1985</label>
+		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2000</label>
 		<br/>
-		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2006-2010</label>
+		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2015</label>
 		</form>
 		
-		<div >
-		<form>
-		<label><input type="radio" id="radio_HDI1"  name="hdi"  checked="checked" onChange="update_data('hdi_group','0')"> Very High HDI</label>
-		<br/>
-		<label><input type="radio" id="radio_HDI2" name="hdi"   onChange="update_data('hdi_group','1')"> Medium and High HDI</label>
-		</form>
-		</div>
-		
-		<div>
-		<form>
-		<label><input type="checkbox" id="check_scale"  name="scale_update" onChange="update_scale()"> Log scale</label>
-		</br>
-		<label><input type="checkbox" id="check_axis"  name="axis_update"  checked="checked"> Update axis</label>
-		</form>
-		
-		</div>
+
+
 		</div>
 		
 		
