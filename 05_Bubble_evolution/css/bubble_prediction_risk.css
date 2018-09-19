@@ -89,16 +89,22 @@ form {
 	
 	  
 
+.circle_aim {
+	opacity:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
 
 
-
-  
     text.bar_title {
 	font-size: 30px;
   }
   
     text.y_title {
-	font-size: 22px;
+	font-size: 24px;
   }
   
     g.graph_legend text {
@@ -106,20 +112,20 @@ form {
   }
  
      text.text1 {
-	font-size: 17px;
+	font-size: 20px;
   }
   
  
      text.text2 {
-	font-size: 17px;
+	font-size: 20px;
   }
   
   text.text_percent {
-	font-size: 20px;
+	font-size: 22px;
   }
   
     text.cancer_label {
-	font-size: 20px;
+	font-size: 22px;
   }
   
  line {
@@ -145,6 +151,7 @@ form {
 
 	.yaxis text {
 		font-family: sans-serif;
+		font-size:18px;
 	}
 	
 	  .yaxis_minor path,

@@ -78,21 +78,70 @@
 			.attr("class","circle_legend2")
 			.attr("r", 20)
 			.style("stroke", "#b7b7b7")   // set the line colour
-			//.attr("cy", function(d, i) {return yScale(d.rate2)- yScale(d.rate1)})
 			.style("stroke-width", 2)
 			.attr("fill", "#b7b7b7");
+			
+		 graph_select.append("circle")
+			.attr("class","circle_aim")
+			.attr("r", 20)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", "translate(0,110)") 
+			.attr("fill", "none");
+			
+		 graph_select.append("circle")
+			.attr("class","circle_aim")
+			.attr("r", 15)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", "translate(0,110)") 
+			.attr("fill", "none");
+			
+		 graph_select.append("circle")
+			.attr("class","circle_aim")
+			.attr("r", 10)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", "translate(0,110)") 
+			.attr("fill", "none");
+			
+		 graph_select.append("circle")
+			.attr("class","circle_aim")
+			.attr("r", 5)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", "translate(0,110)") 
+			.attr("fill", "#FF0000");
+			
+		graph_select.append("text")
+			.attr("class","circle_aim")
+			.attr("text-anchor", "left")
+			.attr("x", 30)
+			.attr("y", 110)
+			.text("SDG target for 2030:")
+			.attr("dy", "0.25em")
+			
+		graph_select.append("text")
+			.attr("class","circle_aim")
+			.attr("text-anchor", "left")
+			.attr("x", 30)
+			.attr("y", 110)
+			.text("Reduce by 1/3")
+			.attr("dy", "1.50em")
+
+
 			
 		graph_select.append("text")
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
-			.attr("x", 25)
+			.attr("x", 30)
 			.text("2000")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
-			.attr("x", 25)
+			.attr("x", 30)
 			.text("2015")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
@@ -273,17 +322,19 @@
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("fill", "none");
 			
+			
+			
+		 nodes.append("circle")
+			.attr("class","circle_aim")
+			.attr("r", 20)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
+			.attr("fill", "none");
+			
 		 nodes.append("circle")
 			.attr("class","circle_aim")
 			.attr("r", 15)
-			.style("stroke", "#FF0000")   // set the line colour
-			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
-			.attr("fill", "none");
-			
-		 nodes.append("circle")
-			.attr("class","circle_aim")
-			.attr("r", 13)
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
@@ -291,24 +342,8 @@
 			
 		 nodes.append("circle")
 			.attr("class","circle_aim")
-			.attr("r", 11)
-			.style("stroke", "#FF0000")   // set the line colour
-			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
-			.attr("fill", "none");
-			
-		 nodes.append("circle")
-			.attr("class","circle_aim")
-			.attr("r", 9)
+			.attr("r", 10)
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
-			.attr("fill", "none");
-			
-		nodes.append("circle")
-			.attr("class","circle_aim")
-			.attr("r", 7)
-			.style("stroke", "#FF0000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
 			.attr("fill", "none");
@@ -319,15 +354,8 @@
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
-			.attr("fill", "none");
-	
-		nodes.append("circle")
-			.attr("class","circle_aim")
-			.attr("r", 3)
-			.style("stroke", "#FF0000")   // set the line colour
-			.style("stroke-width", 2)
-			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1*(2/3))) + ")";}) 
-			.attr("fill", "none");
+			.attr("fill", "#FF0000");
+
 			
 
 			
@@ -401,9 +429,22 @@
 			.attr("class","cancer_label")
 			.attr("text-anchor", "middle")
 			.attr("y", function(d, i) {return  var_height + 20 })
-			.text(function(d,i) {return d.cancer_label})
 			.attr("dy", "0.25em")
-			.attr("fill", "#000000");    // set the line colour
+			.attr("fill", "#000000")
+			.each(function (d) { // to use the wrap label fonction 
+				var temp =d.cancer_label;
+				console.log(temp)
+				if (/\s/.test(temp)) {
+					var max = label_wrap;
+				} 
+				else {
+					var max = 100;
+				}
+				var lines = wordwrap(temp, max);
+				for (var i = 0; i < lines.length; i++) {
+					d3.select(this).append("tspan").attr("dy", var_height+15).attr("x",0).attr("y",30/Math.pow(3/2, lines.length)+i*20).text(lines[i])
+					}
+			});	
 			
 
 
@@ -1048,9 +1089,6 @@
 				}
 				return "translate(0," + (update_range) + ")";
 			})
-			//.text(function(d,i) {
-			//	return d3.format("+.0%")((d.rate2-d.rate1)/d.rate1)
-			//})
 			.tween("text", function(d,i) {
 				
 				var to = (d.rate2-d.rate1)/d.rate1;
@@ -1089,58 +1127,25 @@
 			
 	}
 	
-	function update_scale() {
-		
-		document.getElementById('radio_old').disabled = true;
-		document.getElementById('radio_new').disabled = true;
-		document.getElementById('radio_HDI1').disabled = true;
-		document.getElementById('radio_HDI2').disabled = true;
-		
-		var file_use = "data/bochen_table_data.csv"; 
-		d3.csv(file_use,
-			
-		function(d) {
-		return {
-			
-				sex : +d.hdi,
-				cancer_label : d.cancer_label,
-				cancer_code: +d.cancer_code,
-				volume : +d.volume,
-				rate1: +d.rate1,
-				rate2: +d.rate2,
-
-			};	
-		},		
-		function(data) {
-			
-			bool_hdi = document.getElementById('radio_HDI1').checked;	
-
-			
-			var data_temp = data;
-			
-		bool = document.getElementById('check_scale').checked;	
-		
-		var bar_graph=[ // create array with both bargraph
-				d3.select("#chart").selectAll(".bar_graph1") // draw main windows
-				,
-				d3.select("#chart").selectAll(".bar_graph2")
-				]
+	function add_goal() {
 		
 		
-		
-		
-		update_axis(bar_graph,data_temp,true, bool);
-        update_axis(bar_graph,data_temp,false,bool);
-		update_data_circle(bar_graph,data_temp, true,null);
-        update_data_circle(bar_graph,data_temp, false,null);
-
-			
-		document.getElementById('check_axis').checked = true;
-		
-		}
-		)		
-		
+	if (document.getElementById('who_goal').checked) {
+		var op = 1 
+	} else {
+		var op = 0
 	}
+	
+	var temp = document.getElementsByClassName("circle_aim");	
+
+	
+	for (var i = 0, max = temp.length; i < max; i++) {
+		temp[i].style.opacity = op;
+	}
+
+		
+}
+
 	
 	function tick_generator(value_max, value_min = 0, log_scale=false )	{
 	//generate tick on the axis 
@@ -1381,7 +1386,8 @@
 		
 		
 	function wordwrap(text, max) { // to wrap label (not from me, forget the link)
-		var regex = new Regelastic(".{0,"+max+"}(?:\\s|$)","g");
+		
+		var regex = new RegExp(".{0,"+max+"}(?:\\s|$)","g");
 		var lines = []
 		var line
 		while ((line = regex.exec(text))!="") {
