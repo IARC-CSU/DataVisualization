@@ -118,7 +118,7 @@
 			.attr("text-anchor", "left")
 			.attr("x", 30)
 			.attr("y", 110)
-			.text("SDG target for 2030:")
+			.text("Reducing the risk")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
@@ -126,7 +126,7 @@
 			.attr("text-anchor", "left")
 			.attr("x", 30)
 			.attr("y", 110)
-			.text("Reduce by 1/3")
+			.text("in 2000 by 1/3")
 			.attr("dy", "1.50em")
 
 
