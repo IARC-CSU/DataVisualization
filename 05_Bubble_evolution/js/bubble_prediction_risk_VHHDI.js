@@ -75,8 +75,8 @@
 		graph_select.append("circle")
 			.attr("class","circle_legend2")
 			.attr("r", 20)
-			.style("stroke", "#b7b7b7")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 1)
 			.attr("fill", "#b7b7b7");
 			
 		 graph_select.append("circle")
@@ -160,7 +160,7 @@
 		var y_max2 = d3.max(data, function(d) {return d.rate2})
 		var y_max = d3.max([y_max1,y_max2])
 		var tick_list = tick_generator(y_max)
-		
+		console.log(tick_list)
 		
 		yScale.domain([0,tick_list.value_top]); // update xscale domain
 		
@@ -274,7 +274,7 @@
 
 			
 		if (bool_left_graph) {
-			sex = 2
+			sex = 1
 			v_key = 0 //volume key for the array or nest data
 			axis_y_line = 0 
 		} else {
@@ -315,7 +315,7 @@
 		 nodes.append("circle")
 			.attr("class","circle1")
 			.attr("r", 20)
-			.style("stroke", function(d,i) {return color_cancer[d.sex];})   // set the line colour
+			.style("stroke",  function(d, i) {return color_cancer[d.sex];})
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("fill", "none");
@@ -402,8 +402,8 @@
 		nodes.append("circle")
 			.attr("class","circle2")
 			.attr("r", 20)
-			.style("stroke", function(d,i) {return color_cancer[d.sex];})    // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 1)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("fill", function(d,i) {return color_cancer[d.sex];});
 		   
@@ -687,7 +687,7 @@
 	function update_data_circle(graph, data,bool_left_graph,data_src) {
 		
 		if (bool_left_graph) {
-			sex = 2
+			sex = 1
 			v_key = 0 //volume key for the array or nest data
 		} else {
 			sex = 2
@@ -956,7 +956,6 @@
 		
 }
 
-	
 	function tick_generator(value_max, value_min = 0, log_scale=false )	{
 	//generate tick on the axis 
 		//max of the value
@@ -969,15 +968,17 @@
 		tick_list.major = [];
 		tick_list.minor = [];
 		tick_list.value_top = value_max; // Will change according to the last tick
-		tick_list.value_bottom = value_min; // Will change according to the first tick
 			
 		var log_max = Math.pow(10,Math.floor(Math.log10(value_max))); // order of magnitude of max (power of 10)
 		var unit_floor_max = Math.floor(value_max/log_max) // left digit of max 
 		
 		if (!log_scale) {
 			var tick_space = 0;
+			
+		
+			
 			if (unit_floor_max < 2) {
-				tick_space = 0.2*log_max;	
+				tick_space = 0.1*log_max;	
 			}
 			else {
 				if (unit_floor_max < 5) {
@@ -1008,21 +1009,14 @@
 		} else {
 		
 			var temp = 0;
-			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
-			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
+			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of max (power of 10)
+			var unit_floor_min = Math.floor(value_min/log_min) // left digit of max 
 			
 			if (log_min == log_max) { // if min and max same magnitude
 			
-				for (var i = unit_floor_min-1; i <= unit_floor_max+1; i++) {
-					
-					if (i == 0) {
-						temp=9*(log_min/10)
-						tick_list.major.push(temp);
-					} else {
-						temp = i*log_min;
-						tick_list.major.push(temp);
-					}
-
+				for (var i = unit_floor_min; i <= unit_floor_max+1; i++) {
+					temp = i*log_min;
+					tick_list.major.push(temp);
 				}
 				if (unit_floor_min == unit_floor_max) { // min and max same first digit
 				
@@ -1043,29 +1037,21 @@
 			} else if ((log_max/log_min) < 1000){  //if max and min difference magnitude < 1000
 				
 				if (unit_floor_min < 6) {
-					for (var i = unit_floor_min-1; i <= 5; i++) {
-						
-						if (i == 0) {
-							temp=9*(log_min/10)
-							tick_list.major.push(temp);
-						} 
-						else {
-							temp = i*log_min;
-							tick_list.major.push(temp);
-						}
+					for (var i = unit_floor_min; i <= 5; i++) {
+						temp = i*log_min;
+						tick_list.major.push(temp);
 					}
 				
 				tick_list.major.push(7*log_min);
 				
 				}
 				else {
-					tick_list.major.push((unit_floor_min-1)*log_min);
+					tick_list.major.push(unit_floor_min*log_min);
 				}
 				
 				for (var i = unit_floor_min; i <= 19; i++) {
-					
-					temp = (i*log_min); 
-					tick_list.minor.push(temp);
+						temp = (i*log_min); 
+						tick_list.minor.push(temp);
 				}
 				
 				while (log_min != (log_max/10)) {
@@ -1111,33 +1097,25 @@
 				
 			} else { //if max and min difference magnitude > 1000
 				
-
-				
 				if (unit_floor_min == 1) {
-					tick_list.major.push(9*(log_min/10));
 					tick_list.major.push(log_min);
 					tick_list.major.push(2*log_min);
 					tick_list.major.push(3*log_min);
 					tick_list.major.push(5*log_min);
 				} else if (unit_floor_min == 2) {
-					tick_list.major.push(log_min);
 					tick_list.major.push(2*log_min);
 					tick_list.major.push(3*log_min);
 					tick_list.major.push(5*log_min);
 				} else if (unit_floor_min < 6) {
-					tick_list.major.push(3*log_min);
 					tick_list.major.push(5*log_min);
 					tick_list.major.push(7*log_min);	
 				} else {
-					tick_list.major.push(5*log_min);
 					tick_list.major.push(7*log_min);	
 				}
 				
 				for (var i = unit_floor_min; i <= 9; i++) {
-				
-					temp = (i*log_min); 
-					tick_list.minor.push(temp);
-
+						temp = (i*log_min); 
+						tick_list.minor.push(temp);
 				}
 				
 				while (log_min != (log_max/10)) {
@@ -1183,16 +1161,11 @@
 		var max_major = tick_list.major[tick_list.major.length-1];
 		var max_minor = tick_list.minor[tick_list.minor.length-1];
 		
-		var min_major = tick_list.major[0];
-		var min_minor = tick_list.minor[0]
-		
 		
 		tick_list.value_top = Math.max(max_major,max_minor)	
-		tick_list.value_bottom = Math.min(min_major,min_minor)	
 		}
 	return (tick_list)
 	}
-	
 		
 		
 	function wordwrap(text, max) { // to wrap label (not from me, forget the link)
