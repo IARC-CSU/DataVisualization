@@ -258,13 +258,13 @@
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-45," +var_height/2 + ") rotate(-90)")
-				.text("Risk of dying from cancer, 0-69 years old (%)")
+				.text("Risk of dying (%)")
 		} else {
 			graph_select.append("text") // add x axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate("+(graph_width+60)+"," +var_height/2 + ") rotate(-90)")
-				.text("Risk of dying from cancer, 0-69 years old (%)")
+				.text("Risk of dying (%)")
 			
 		}
 		
