@@ -49,14 +49,63 @@ body {
 .div_left {
     position: relative;
     top: -700px;
-    left: 50px;
-    width: 200px;
+    width: 250px;
 	 
 	}
 	
 
 	
+.button {
+  display: block;
+  float:left;
+  padding: 0.5em 1.0em;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
 
+#country_element {
+    margin-top: 2%;
+
+}
+
+#input_country {
+	
+	height: 20px;
+	font-size: 14px;
+	
+}
+
+#country_element .tag {
+    margin-left: 0px;
+	margin-bottom: 2px;
+
+}
+
+#input_country_container .dropdown-input {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#input_country_container .dropdown-btn {
+	vertical-align: top;
+	height: 26px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#input_country_container .caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
 	
 	  
  text.y_title {

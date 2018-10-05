@@ -6,6 +6,7 @@
   	<title> CI5 plus trend</title>
 	<!--link rel="icon" href="favicon.ico" /-->
 	<link rel="stylesheet" href="css/ci5_trend.css" type="text/css">
+	<link rel="stylesheet" href="css/awesomplete.css?v=4.4.1"> 
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
 	<script type="text/javascript" src="js/awesomplete.min.js"></script>
 	<script type="text/javascript" src="js/ci5_trend.js"></script>
@@ -39,10 +40,8 @@
 
 	
 
-	<div>
-	<form>
-	<input id="input_country" />
-	</form>
+	<div id="input_country_container">
+	<input id="input_country" /><button class="dropdown-btn" type="button"><span class="caret"></span></button>
 	<form id ="country_element">
 
 	</form>
@@ -121,9 +120,25 @@
 	
 	var input_country = document.getElementById("input_country");
 	var awesomplete = new Awesomplete(input_country, {
-		minChars: 2,
-		maxItems: 20,
-		autoFirst:true
+		minChars: 0,
+		maxItems: 500,
+		autoFirst:true,
+		sort:false
+	});
+	
+	Awesomplete.$('.dropdown-btn').addEventListener("click", function() {
+		if (awesomplete.ul.childNodes.length === 0) {
+			awesomplete.minChars = 0;
+			awesomplete.evaluate();
+
+		}
+		else if (awesomplete.ul.hasAttribute('hidden')) {
+			awesomplete.open();
+
+		}
+		else {
+			awesomplete.close();
+		}
 	});
 	
 	// field autocomplete
