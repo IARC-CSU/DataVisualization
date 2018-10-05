@@ -1,0 +1,124 @@
+
+
+body { 
+	padding:0px;
+	max-width:1200px;
+	margin: 0 auto;
+	font-family:Source Sans Pro, sans-serif;
+	font-size:100%;
+	}
+	
+#header{ 
+	background:#fff;
+	width:100%;
+	display:inline-block;
+	position:relative;
+	margin-top:10px;
+	}
+	
+#header div {
+	float: left;
+	padding-bottom: 10px;
+	width:100%;
+	}
+	
+#header div h1{
+	margin-bottom:0px;
+	}
+	
+#header div h1 a{
+	display:block;
+	text-align:center;
+	color:#000;
+	text-decoration:none;
+	outline: none;
+	}
+	
+#header div.desc{
+	text-align:center;
+	font-size:2em;
+	margin-top:10px;
+	}
+	
+#chart {
+	float:left;
+	}
+	
+
+	
+.div_left {
+    position: relative;
+    top: -700px;
+    left: 50px;
+    width: 200px;
+	 
+	}
+	
+
+	
+
+	
+	  
+ text.y_title {
+	font-size: 22px;
+  }
+  
+ text.country_label {
+	font-size: 20px;
+    cursor: pointer;
+  }
+  
+ line {
+	stroke-width: 1;
+}
+	  
+ 	line.tick_major  {
+			opacity: 1;
+	} 
+
+ 	line.tick_minor  {
+			opacity: 1;
+	}  	
+	
+	  .yaxis path,
+	  .yaxis line {
+			fill: none;
+			stroke: #b7b7b7;
+			opacity:1
+		}
+		
+	
+
+	.yaxis text {
+		font-family: sans-serif;
+	}
+	
+	  .yaxis_minor path,
+	  .yaxis_minor line {
+			fill: none;
+			stroke: #b7b7b7;
+			opacity:1;
+		}
+		
+	  .xaxis path,
+	  .xaxis line {
+			fill: none;
+			stroke: #b7b7b7;
+			opacity:1
+		}
+		
+	
+
+	.xaxis text {
+		font-family: sans-serif;
+	}
+	
+	  .xaxis_minor path,
+	  .xaxis_minor line {
+			fill: none;
+			stroke: #b7b7b7;
+			opacity:1;
+		}
+		
+
+	
