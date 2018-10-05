@@ -40,7 +40,7 @@
 				for (var i = 0; i < data_country.length; i += 1) {
 					country_list.push(data_country[i].key)
 				}
-				console.log(country_list)
+
 				awesomplete.list = country_list;
 				
 				
@@ -49,14 +49,6 @@
 					return (d.sex == 1 & d.cancer == 1 & [208,36,250].includes(d.country_code))
 				});
 				
-
-				
-				var data_nest=d3.nest()
-					.key(function(d) {return d.country_code;})
-					.sortKeys(d3.ascending)
-					.key(function(d) {return d.year;})
-					.sortKeys(d3.ascending)
-					.entries(data_temp)
 				
 				// create graph
 										
@@ -72,7 +64,7 @@
 
 
 				add_axis_title(bar_graph,data_temp);
-				//add_trend(bar_graph,data_nest, true);
+
 				
 				
 			
@@ -246,13 +238,8 @@
 	
 	function add_trend(graph, data) {
 
-			
-		graph_select = graph
-		var data_temp = data
 		
-
-		
-		var nodes = graph_select.append("g")
+		var nodes = graph.append("g")
 			.attr("id","nodes_id")
 			.attr("class", "nodes")
 			.selectAll()
@@ -370,12 +357,40 @@
 						
 					}
 					
+					
+					
 					var data_country = data.filter(function(d){
 						return (d.sex == 1 & d.cancer == 1 & country_list.includes(d.country_label))
 					});
 					
 					update_scale(bar_graph, data_country)
 					
+					
+					
+					if (country_list.length > 1) {
+						
+						country_list.pop();
+						
+						var data_country_old = data.filter(function(d){
+							return (d.sex == 1 & d.cancer == 1 & country_list.includes(d.country_label))
+						});
+						
+						console.log(data_country_old)
+						
+						
+						var data_update=d3.nest()
+							.key(function(d) { return d.country_label; }).sortKeys(function(a,b) { return country_list.indexOf(a) - country_list.indexOf(b); })
+							.key(function(d) {return d.year;}).sortKeys(d3.ascending)
+							.entries(data_country_old)
+							
+						console.log(data_update)
+						
+						update_trend(bar_graph, data_update)
+						
+					}
+					
+
+
 					var nodes = graph_select.append("g")
 						.attr("id","nodes_id")
 						.attr("class", "nodes")
@@ -428,6 +443,7 @@
 					}, transition_time)
 					
 					
+
 						
 					
 
@@ -509,6 +525,37 @@
 		
 	}
 	
+	function update_trend (graph, data) {
+		
+
+		graph.selectAll(".trend")
+		.data(data)
+		.transition().duration(transition_time).ease(ease_effect)
+		.attr("d", function(d, i){
+			return lineFunction(d.values)
+			})
+		.attr("stroke", function(d, i){
+			return color_scale_10(i)
+			})
+		.attr("stroke-width", 2)
+		.attr("fill", "none")
+			
+		 graph.selectAll(".country_label")
+		.data(data)
+		.transition().duration(transition_time).ease(ease_effect)
+		.attr("x", function (d) {
+			nb_year = d.values.length;
+			temp = d.values[nb_year-1].values[0];	
+			return (xScale(temp.year+1));
+		})
+		.attr("y", function (d) {
+			nb_year = d.values.length;
+			temp = d.values[nb_year-1].values[0];	
+			return (yScale(temp.asr));
+		})
+	
+		
+	}
 
 	function update_grid(graph, axe_class, scale, tick_class,tick_list,axes, z1,z2) {
 
