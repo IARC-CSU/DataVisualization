@@ -45,10 +45,16 @@ body {
 	}
 	
 
-	
-.div_left {
+.div_select_1 {
     position: relative;
     top: -700px;
+    width: 450px;
+	 
+	}
+	
+.div_select_2 {
+    position: relative;
+    top: -655px;
     width: 250px;
 	 
 	}
@@ -66,9 +72,12 @@ body {
   cursor: pointer;
 }
 
-#country_element {
-    margin-top: 2%;
-
+#input_cancer {
+	
+	height: 20px;
+	font-size: 14px;
+	width: 260px;
+	
 }
 
 #input_country {
@@ -78,24 +87,29 @@ body {
 	
 }
 
+#country_element {
+    margin-top: 2%;
+
+}
+
 #country_element .tag {
     margin-left: 0px;
 	margin-bottom: 2px;
 
 }
 
-#input_country_container .dropdown-input {
+div.input_select_container .dropdown-input {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
-#input_country_container .dropdown-btn {
+div.input_select_container .dropdown-btn {
 	vertical-align: top;
 	height: 26px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
 
-#input_country_container .caret {
+div.input_select_container .caret {
 	display: inline-block;
 	width: 0;
 	height: 0;

@@ -31,9 +31,10 @@
 					.sortKeys(d3.ascending)
 					.entries(data)
 					
-				
-				
-
+				var data_cancer = d3.nest()
+					.key(function(d) {return d.cancer_label;})
+					.sortKeys(d3.ascending)
+					.entries(data)
 				
 				country_list = [];
 				
@@ -41,8 +42,14 @@
 					country_list.push(data_country[i].key)
 				}
 
-				awesomplete.list = country_list;
+				awesomplete2.list = country_list;
 				
+				cancer_list = [];
+				for (var i = 0; i < data_cancer.length; i += 1) {
+					cancer_list.push(data_cancer[i].key)
+				}
+
+				awesomplete1.list = cancer_list;
 				
 				//filter data 
 				var data_temp = data.filter(function(d){

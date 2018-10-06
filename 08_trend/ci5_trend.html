@@ -26,9 +26,6 @@
 	<div id="header" >
 		<div>
 			<h1><a href="#"> CI5 plus trend</a></h1>
-			<div class="desc">
-				find description
-			</div>
 		</div>		
 	
 	</div>
@@ -36,13 +33,17 @@
 		
 	<div id="chart"></div>
 	
-	<div class = "div_left">
-
+	<div class = "div_select_1">
+	<div class = "input_select_container">
+	<input id="input_cancer" /><button class="dropdown-btn select1" type="button"><span class="caret"></span></button>
+	</div>
+	</div>
 	
+	<div class = "div_select_2">
 
-	<div id="input_country_container">
-	<input id="input_country" /><button class="dropdown-btn" type="button"><span class="caret"></span></button>
-	<form id ="country_element">
+	<div  class = "input_select_container">
+	<input id="input_country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
+	<form id ="country_element"/>
 
 	</form>
 	
@@ -59,25 +60,20 @@
 		
 	// variable general
 	
-	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 15, left_page: 300 },
+	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 60, left_page: 300 },
 	width = 1200 - margin.left - margin.right,
 	height = 700 - margin.top - margin.bottom,
 	
 	XgridSize = 10 // 20*Xgrid for the range of the bar 
 
 	var color_cancer = {};
-	//color_cancer["Low HDI"] = "#D7191C";
-	//color_cancer["Very High HDI"]           = "#2C7BB6";
 	color_cancer[1]  = "#E66101"; // low and medium 
 	color_cancer[2]  = "#2C7BB6"; // high hdi
-	//color_cancer[2]  = "#ABD9E9"; // high hdi
-
-
+	
 	var ease_effect = "linear"
 	var transition_time = 1000
 	
 	var bar_space = 1.5	// Space between bar 
-	var span_year = 2015-1975  // nb of cancer shows (here top 10)
 	var label_wrap = 10 // size max of a label on one line
 	
 	
@@ -120,35 +116,63 @@
 		
 	};
 	
-	var input_country = document.getElementById("input_country");
-	var awesomplete = new Awesomplete(input_country, {
+	var input_cancer = document.getElementById("input_cancer");
+	var awesomplete1 = new Awesomplete(input_cancer, {
 		minChars: 0,
 		maxItems: 500,
 		autoFirst:true,
 		sort:false
 	});
 	
-	Awesomplete.$('.dropdown-btn').addEventListener("click", function() {
-		if (awesomplete.ul.childNodes.length === 0) {
-			awesomplete.minChars = 0;
-			awesomplete.evaluate();
+	Awesomplete.$('.dropdown-btn.select1').addEventListener("click", function() {
+		if (awesomplete1.ul.childNodes.length === 0) {
+			awesomplete1.minChars = 0;
+			awesomplete1.evaluate();
 
 		}
-		else if (awesomplete.ul.hasAttribute('hidden')) {
-			awesomplete.open();
+		else if (awesomplete1.ul.hasAttribute('hidden')) {
+			awesomplete1.open();
 
 		}
 		else {
-			awesomplete.close();
+			awesomplete1.close();
 		}
 	});
+	
+	var input_country = document.getElementById("input_country");
+	var awesomplete2 = new Awesomplete(input_country, {
+		minChars: 0,
+		maxItems: 500,
+		autoFirst:true,
+		sort:false
+	});
+	
+	Awesomplete.$('.dropdown-btn.select2').addEventListener("click", function() {
+		if (awesomplete2.ul.childNodes.length === 0) {
+			awesomplete2.minChars = 0;
+			awesomplete2.evaluate();
+
+		}
+		else if (awesomplete2.ul.hasAttribute('hidden')) {
+			awesomplete2.open();
+
+		}
+		else {
+			awesomplete2.close();
+		}
+	});
+	
 	
 	// field autocomplete
 	
 	
 	// text input listener
 	window.addEventListener("awesomplete-select", function(e){
-	  add_country(e.text.value)
+	  target = e.target.id
+	  
+	  if (target == "input_country") {
+		add_country(e.text.value)
+		}
 	});
 
 	
