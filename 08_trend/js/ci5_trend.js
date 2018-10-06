@@ -93,12 +93,6 @@
 
 		xScale.domain([tick_year_list.value_bottom,tick_year_list.value_top]); // update xscale domain
 
-		
-		
-
-
-		
-		axis_orient = "left"
 		axis_y = var_height
 		axis_tick_major = 8
 		axis_tick_minor = 5
@@ -110,7 +104,7 @@
 
 		var yAxis = d3.svg.axis() 
 			.scale(yScale)
-			.orient(axis_orient)
+			.orient("left")
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
@@ -119,7 +113,7 @@
 					
 	    var yAxis_minor = d3.svg.axis() 
 			.scale(yScale)  
-			.orient(axis_orient)
+			.orient("left")
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.minor)	
@@ -141,29 +135,29 @@
 			.tickValues(tick_year_list.minor)	
 			.tickFormat("")	;	
 			
-		graph_select = graph
+
 		
-		graph_select.append("g") // draw axis major
+		graph.append("g") // draw axis major
 			.attr("class", "yaxis")
 			.attr("transform", "translate(" + (0)+ "," +(0) + ")")
 			.call(yAxis);
 			
-		graph_select.append("g") // draw axis major
+		graph.append("g") // draw axis major
 			.attr("class", "xaxis")
 			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
 			.call(xAxis);
 
-		graph_select.append("g") // draw axis minor
+		graph.append("g") // draw axis minor
 			.attr("class", "yaxis_minor")
 			.attr("transform", "translate(" + (0)+ "," +(0) + ")")
 			.call(yAxis_minor);
 			
-		graph_select.append("g") // draw axis minor
+		graph.append("g") // draw axis minor
 			.attr("class", "xaxis_minor")
 			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
 			.call(xAxis_minor);
 				
-		graph_select.selectAll(".yaxis") // add Big tick
+		graph.selectAll(".yaxis") // add Big tick
 			.data(tick_list.major, function(d) { return d; })
 			.enter()
 			.append("line")
@@ -174,7 +168,7 @@
 			.attr("y2", function(d) { return yScale(d); })
 			.attr("y1", function(d) { return yScale(d); })
 			
-		graph_select.selectAll(".yaxis") // add small tick
+		graph.selectAll(".yaxis") // add small tick
 			.data(tick_list.minor, function(d) { return d; })
 			.enter()
 			.append("line")
@@ -185,7 +179,7 @@
 			.attr("y2", function(d) { return yScale(d); })
 			.attr("y1", function(d) { return yScale(d); })
 			
-		graph_select.selectAll(".xaxis") // add Big tick
+		graph.selectAll(".xaxis") // add Big tick
 			.data(tick_year_list.major, function(d) { return d; })
 			.enter()
 			.append("line")
@@ -196,7 +190,7 @@
 			.attr("x2", function(d) { return xScale(d); })
 			.attr("x1", function(d) { return xScale(d); })
 			
-		graph_select.selectAll(".xaxis") // add small tick
+		graph.selectAll(".xaxis") // add small tick
 			.data(tick_year_list.minor, function(d) { return d; })
 			.enter()
 			.append("line")
@@ -210,21 +204,21 @@
 		
 		
 		
-		graph_select.append("line") // add line for y = 0
+		graph.append("line") // add line for y = 0
 			.style("stroke", "black")  
 			.attr("x1", 0)
 			.attr("y1", var_height+10)  
 			.attr("x2", graph_width+5)
 			.attr("y2", var_height+10);  
 			
-		graph_select.append("line") // add line for x = 0
+		graph.append("line") // add line for x = 0
 			.style("stroke", "black")  
 			.attr("x1", 0)
 			.attr("y1", -10)  
 			.attr("x2",0)
 			.attr("y2", var_height+10);  
 			
-		graph_select.append("text") // add x axis subtitle
+		graph.append("text") // add x axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
@@ -375,7 +369,7 @@
 							return (d.sex == 1 & d.cancer == 1 & country_list.includes(d.country_label))
 						});
 						
-						console.log(data_country_old)
+					
 						
 						
 						var data_update=d3.nest()
@@ -383,8 +377,7 @@
 							.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 							.entries(data_country_old)
 							
-						console.log(data_update)
-						
+					
 						update_trend(bar_graph, data_update)
 						
 					}
@@ -414,7 +407,7 @@
 						.attr("stroke-width", 2)
 						.attr("fill", "none")
 
-
+					
 						
 					path.call(transition);
 					
@@ -461,7 +454,9 @@
 		var y_max = d3.max(data, function(d) {return d.asr})
 		var y_min = d3.min(data, function(d) {return d.asr})
 		var tick_list = tick_generator(y_max, y_min, true)
+		
 
+		
 		yScale.domain([tick_list.value_bottom,tick_list.value_top]); // update xscale domain
 		
 		
@@ -475,7 +470,6 @@
 
 		
 	
-		axis_orient = "left"
 		axis_y = var_height
 		axis_tick_major = 8
 		axis_tick_minor = 5
@@ -486,7 +480,7 @@
 
 		var yAxis = d3.svg.axis() 
 			.scale(yScale)
-			.orient(axis_orient)
+			.orient("left")
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
@@ -495,7 +489,7 @@
 					
 	    var yAxis_minor = d3.svg.axis() 
 			.scale(yScale)  
-			.orient(axis_orient)
+			.orient("left")
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.minor)	
@@ -517,10 +511,11 @@
 			.tickValues(tick_year_list.minor)	
 			.tickFormat("")	;	
 			
-		update_grid(graph, ".yaxis",yAxis, ".tick_major",tick_list, 2,  -axis_tick_major,0)
-		update_grid(graph, ".yaxis_minor",yAxis_minor, ".tick_minor",tick_list, 2,  -axis_tick_minor,0)
-		update_grid(graph, ".xaxis",xAxis, ".tick_year_major",tick_year_list, 1,  axis_tick_major+var_height+10, var_height+10)
-		update_grid(graph, ".xaxis_minor",xAxis_minor, ".tick_year_minor",tick_year_list, 1,  axis_tick_minor+var_height+10, var_height+10)
+
+		update_grid(graph, ".yaxis",yAxis, ".tick_major",tick_list.major, 2,  -axis_tick_major,0)
+		update_grid(graph, ".yaxis_minor",yAxis_minor, ".tick_minor",tick_list.minor, 2,  -axis_tick_minor,0)
+		update_grid(graph, ".xaxis",xAxis, ".tick_year_major",tick_year_list.major, 1,  axis_tick_major+var_height+10, var_height+10)
+		update_grid(graph, ".xaxis_minor",xAxis_minor, ".tick_year_minor",tick_year_list.minor, 1,  axis_tick_minor+var_height+10, var_height+10)
 
 		
 	}
@@ -557,16 +552,24 @@
 		
 	}
 
-	function update_grid(graph, axe_class, scale, tick_class,tick_list,axes, z1,z2) {
+	function update_grid(graph, axe_class,scale,tick_class,tick_values,axes, z1,z2) {
 
 	graph.selectAll(axe_class)
 		.transition().duration(transition_time).ease(ease_effect)  
 		.call(scale);
-			
-	var grid=graph.selectAll(tick_class)
-		.data(tick_list.major, function(d) { return d; })
+
+	
+	console.log(tick_values)
+	
+	var grid =  d3.select("#chart").selectAll(tick_class)
+		.data(tick_values, function(d) { 
+			//console.log(d)
+			return d;
+		})
 		
 	if (axes == 2) {
+		
+
 		
 		grid.transition().duration(transition_time).ease(ease_effect)
 				.attr("y1", function(d) {return yScale(d); })
@@ -576,7 +579,7 @@
 		
 		grid.enter()
 			.append("line")
-			.attr("class", "tick_class")
+			.attr("class", tick_class)
 			.attr("stroke", "black")
 			.attr("x1", z1)
 			.attr("x2", z2 )
@@ -584,6 +587,9 @@
 			.attr("y2", function(d) { return yScale(d); })
 			
 	} else {
+		
+		
+
 	
 		grid.transition().duration(transition_time).ease(ease_effect)
 			.attr("x1", function(d) {return xScale(d); })
@@ -593,7 +599,7 @@
 		
 		grid.enter()
 			.append("line")
-			.attr("class", "tick_class")
+			.attr("class", tick_class)
 			.attr("stroke", "black")
 			.attr("y1", z1)
 			.attr("y2", z2 )
