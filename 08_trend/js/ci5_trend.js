@@ -567,12 +567,13 @@
 	if (axes == 2) {
 		
 
+		grid.exit().remove()
 		
 		grid.transition().duration(transition_time).ease(ease_effect)
 				.attr("y1", function(d) {return yScale(d); })
 				.attr("y2", function(d) {return yScale(d); })
 			
-		grid.exit().remove()
+		
 		
 		grid.enter()
 			.append("line")
@@ -587,12 +588,13 @@
 		
 		
 
-	
+		grid.exit().remove()
+		
 		grid.transition().duration(transition_time).ease(ease_effect)
 			.attr("x1", function(d) {return xScale(d); })
 			.attr("x2", function(d) {return xScale(d); })
 			
-		grid.exit().remove()
+		
 		
 		grid.enter()
 			.append("line")
