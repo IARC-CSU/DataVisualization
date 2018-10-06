@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  
+  	<title> Bubble chart mortality hdi </title>
+	<!--link rel="icon" href="favicon.ico" /-->
+	<link rel="stylesheet" href="css/bubble_prediction_risk.css" type="text/css">
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/bubble_prediction_risk_VHHDI.js"></script>
+
+
+
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	
+	
+		<script type="text/javascript">
+		
+	// variable general
+	
+	var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 70, left_page: 150 },
+	width = 1700 - margin.left - margin.right,
+	height = 800 - margin.top - margin.bottom,
+	
+	XgridSize = 30 // 20*Xgrid for the range of the bar 
+
+	var color_cancer = {};
+	color_cancer[1]  = "#E66101"; // low and medium 
+	color_cancer[2]  = "#2C7BB6"; // high hdi
+	
+
+	
+	var ease_effect = "sin-in-out"
+	var transition_time = 1000
+	
+	var bar_space = 2.5	// Space between bar 
+	var nb_cancer = 10  // nb of cancer shows (here top 10)
+	var label_wrap = 10 // size max of a label on one line
+	
+	var var_height = 550
+	
+	var graph_separation = 40
+
+	
+	
+	var xScale = d3.scale.linear()
+		.domain([1, nb_cancer])  // 
+		.range([0  ,(nb_cancer-1)* XgridSize ]);
+		
+	// width of the bar graphs
+
+	var graph_width = xScale(((nb_cancer+1)*bar_space)+nb_cancer)
+
+	
+	// I define xScale and Xaxis's here because I want them as general variable 
+
+	var yScale = d3.scale.linear()
+		.domain([0, 100]) 
+		.range([var_height  ,0]);
+		
+
+		
+	
+	 window.onload = function()
+		{
+		bubble_evo()
+		
+	};
+	
+	function doc_keyUp(e) {
+
+		// add jeyboard shortcut for s + ctrl
+		if (e.keyCode == 83) {
+			// call your function to do the thing
+			update_circle(true);
+			update_legend(true);
+
+		}
+			}
+			// register the handler 
+		document.addEventListener('keyup', doc_keyUp, false);
+			
+	</script>
+	
+	 
+	</head>
+  	
+	<body>
+
+	<div class="">
+
+	</div>
+	
+	<div id="header" >
+		<div>
+			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2015</a></h1>
+			<div class="desc">
+				Cancer
+			</div>
+		</div>		
+	
+	</div>
+	
+		
+		<div id="chart"></div>
+		
+		<div class = "div_left">
+		<form>
+		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2000</label>
+		<br/>
+		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2015</label>
+		</form>
+		<br/>
+		<form>
+		<label><input type="checkbox" id="who_goal"  name="who" onChange="add_goal()"> WHO objectives</label>
+		</form>
+		</div>
+		
+		
+
+
+		
+		
+
+</body>
+ 
+</html>
+	

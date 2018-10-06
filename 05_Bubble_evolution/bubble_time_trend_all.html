@@ -5,21 +5,21 @@
   
   	<title> Bubble chart NCD's risk</title>
 	<!--link rel="icon" href="favicon.ico" /-->
-	<link rel="stylesheet" href="css/bubble_time_trend.css" type="text/css">
+	<link rel="stylesheet" href="css/bubble_time_trend_all.css" type="text/css">
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
-	<script type="text/javascript" src="js/bubble_time_trend.js"></script>
-	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/bubble_time_trend_all.js"></script>
+
 	
 	
 		<script type="text/javascript">
 		
 	// variable general
 	
-	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 15, left_page: 75 },
-	width = 500 - margin.left - margin.right,
+	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 15, left_page: 200 },
+	width = 1350 - margin.left - margin.right,
 	height = 750 - margin.top - margin.bottom,
 	
-	XgridSize = 20 // 20*Xgrid for the range of the bar 
+	XgridSize = 30 // 20*Xgrid for the range of the bar 
 
 	var color_cancer = {};
 	//color_cancer["Low HDI"] = "#D7191C";
@@ -33,7 +33,7 @@
 	var transition_time = 1000
 	
 	var bar_space = 1.5	// Space between bar 
-	var nb_cancer = 20  // nb of cancer shows (here top 10)
+	var nb_cancer = 10  // nb of cancer shows (here top 10)
 	var label_wrap = 10 // size max of a label on one line
 	
 	
@@ -48,10 +48,7 @@
 
 	var graph_width = xScale(((nb_cancer+1+0.5)*bar_space)+nb_cancer+0.5)
 
-	
-	// I define xScale and Xaxis's here because I want them as general variable 
-	// So I need to use the value for the Canada Men..
-	// I suppose there should be another way, to define them in the d3.csv fonction and use the data..
+
 	
 	var yScale = d3.scale.linear() 
 		.domain([0, 100]) 

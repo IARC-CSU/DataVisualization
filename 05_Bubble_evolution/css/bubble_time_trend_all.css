@@ -1,0 +1,156 @@
+
+
+body { 
+	padding:0px;
+	max-width:1200px;
+	margin: 0 auto;
+	font-family:Source Sans Pro, sans-serif;
+	font-size:100%;
+	}
+	
+#header{ 
+	background:#fff;
+	width:100%;
+	display:inline-block;
+	position:relative;
+	margin-top:10px;
+	}
+	
+#header div {
+	float: left;
+	padding-bottom: 10px;
+	width:100%;
+	}
+	
+#header div h1{
+	margin-bottom:0px;
+	}
+	
+#header div h1 a{
+	display:block;
+	text-align:center;
+	color:#000;
+	text-decoration:none;
+	outline: none;
+	}
+	
+#header div.desc{
+	text-align:center;
+	font-size:2em;
+	margin-top:10px;
+	}
+	
+#chart {
+	float:left;
+	}
+	
+
+	
+.div_left {
+	position:relative;
+	top:-900px;
+	left:-100px;
+	 
+	}
+	
+
+	
+form {
+	display:inline-block;
+	margin: 10px 0px 10px 10px;
+
+	}
+	
+	
+.custom-radio{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 3px;
+    }
+	
+.custom-radio input[type="radio"]{
+	margin: 1px;
+	position: absolute;
+	z-index: 2;            
+	cursor: pointer;
+	outline: none;
+	opacity: 0;
+	/* CSS hacks for older browsers */
+	_noFocusLine: expression(this.hideFocus=true); 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+	
+	  
+
+
+
+
+  
+    text.bar_title {
+	font-size: 30px;
+  }
+  
+    text.y_title {
+	font-size: 22px;
+  }
+  
+    g.graph_legend text {
+	font-size: 22px;
+  }
+ 
+     text.text1 {
+	font-size: 17px;
+  }
+  
+ 
+     text.text2 {
+	font-size: 17px;
+  }
+  
+  text.text_percent {
+	font-size: 20px;
+  }
+  
+    text.cancer_label {
+	font-size: 20px;
+  }
+  
+ line {
+	stroke-width: 1;
+}
+	  
+ 	line.tick_major  {
+			opacity: 1;
+	} 
+
+ 	line.tick_minor  {
+			opacity: 1;
+	}  	
+	
+	  .yaxis path,
+	  .yaxis line {
+			fill: none;
+			stroke: #b7b7b7;
+			opacity:1
+		}
+		
+	
+
+	.yaxis text {
+		font-family: sans-serif;
+	}
+	
+	  .yaxis_minor path,
+	  .yaxis_minor line {
+			fill: none;
+			stroke: #b7b7b7;
+			opacity:1;
+		}
+		
+	

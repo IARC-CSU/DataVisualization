@@ -2,7 +2,7 @@
 
 	function bubble_evo() // generate heatmap 
 	{	
-		var file_use = "data/data_risk_trend.csv"; 
+		var file_use = "data/risk_trend_20.csv"; 
 
 		d3.csv(file_use,
 			
@@ -15,7 +15,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
@@ -25,6 +25,10 @@
 				var data_temp = data.filter(function(d){
 					return (d.cause_num == 1)
 				});
+				
+				var data_temp1 = data.filter(function(d){
+					return (d.cause_num == 2)
+				});
 
 				var data_nest=d3.nest()
 					.key(function(d) {return d.country_label;})
@@ -32,6 +36,13 @@
 					.key(function(d) {return d.year;})
 					.sortKeys(d3.ascending)
 					.entries(data_temp)
+					
+				var data_nest1=d3.nest()
+					.key(function(d) {return d.country_label;})
+					.sortKeys(d3.ascending)
+					.key(function(d) {return d.year;})
+					.sortKeys(d3.ascending)
+					.entries(data_temp1)
 				
 				// create graph
 										
@@ -49,20 +60,93 @@
 					.attr("width", 100)
 					.attr("height", 30)
 					.append("g")
-					.attr("class", "graph_legend")	
+					.attr("class", "graph_legend1")	
 					.attr("transform", "translate(" + ( margin.left_page + (graph_width)  + 50)   + "," + (margin.top_page+ 20)  + ")") 
+					
+
+				var graph_legend2 =
+				d3.select("#chart").selectAll("svg")
+					.append("g")
+					.attr("width", 100)
+					.attr("height", 30)
+					.append("g")
+					.attr("class", "graph_legend")	
+					.attr("transform", "translate(" + ( margin.left_page + (graph_width)  + 50)   + "," + (margin.top_page+ 100)  + ")") 
 					
 				
 
 				add_axis_title(bar_graph,data_temp,true);
-				add_circle_line(bar_graph,data_nest, true);
-				add_legend(graph_legend);
+				add_circle_line(bar_graph,data_nest, "#377eb8");
+				add_circle_line(bar_graph,data_nest1 ,"#e41a1c");
+				add_legend_cat(graph_legend);
+				add_legend(graph_legend2);
+
 				
 				
 			
 			
 			}
 		);
+	}
+	
+	
+	function add_legend_cat(graph) {
+		
+		var line_legend = [ 
+		  { "x": 0,   "y": 0},  
+		  { "x": 5,  "y": 20},
+		  { "x": 10,  "y": 30},
+		  { "x": 15,  "y": 52},		  
+		  { "x": 20,  "y": 66},
+		  { "x": 25,  "y": 76},
+		  { "x": 30,  "y": 81},
+		  { "x": 35,  "y": 83},
+		  { "x": 40,  "y": 85},
+		];
+		
+		graph_select = graph
+		
+		graph_select.append("circle")
+			.attr("class","circle_legend")
+			.attr("r", 7)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("fill", "#377eb8");
+			
+		graph_select.append("text")
+			.attr("class","text_legend_base")
+			.attr("text-anchor", "left")
+			.attr("x", 25)
+			.attr("transform","translate(-10,3)")
+			.text("Cancer")
+			.attr("dy", "0.15em")
+			
+			
+		graph_select.append("circle")
+			.attr("class","circle_legend")
+			.attr("r", 7)
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform","translate(0,20)")
+			.attr("fill", "#e41a1c");
+			
+
+		graph_select.append("text")
+			.attr("class","text_legend")
+			.attr("text-anchor", "left")
+			.attr("transform","translate(-10,23)")
+			.attr("x", 25)
+			.text("Cardiovascular")
+			.attr("dy", "0.15em")
+			
+		graph_select.append("text")
+			.attr("class","text_legend")
+			.attr("text-anchor", "left")
+			.attr("transform","translate(-10,23)")
+			.attr("x", 25)
+			.text("diseases")
+			.attr("dy", "1.15em")
+			
 	}
 	
 	function add_legend(graph) {
@@ -107,6 +191,7 @@
 			.style("stroke", "#000000")   // set the line colour
 			.style("stroke-width", 2)
 			.attr("fill", "#b7b7b7");
+			
 			
 		graph_select.append("text")
 			.attr("class","text_legend_base")
@@ -203,6 +288,13 @@
 			.attr("x2", graph_width+5)
 			.attr("y2", var_height);  
 			
+		graph_select.append("line") // add line for hdi separation
+			.style("stroke", "black")  
+			.attr("x1", xScale(11*(bar_space+1)))
+			.attr("y1", -20)  
+			.attr("x2",xScale(11*(bar_space+1)))
+			.attr("y2", var_height+100);  
+			
 		graph_select.append("text") // add x axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
@@ -228,9 +320,10 @@
 			 			
 	}
 
-	function add_circle_line(graph, data) {
+	function add_circle_line(graph, data, color) {
 
-			
+		console.log(color)
+		
 		graph_select = graph
 		var data_temp = data
 		
@@ -256,7 +349,8 @@
 				return lineFunction(d.values)
 				})
 			.attr("stroke", function(d, i) {
-				return color_cancer[d.values[0].values[0].hdi]
+				
+				return color;
 			})
 			.attr("stroke-width", 2)
 			.attr("fill", "none")
@@ -266,7 +360,6 @@
 			.attr("stroke-dasharray", function(d,i) {
 
 				length = path[0][i].getTotalLength();
-				console.log(length)
 				return length + " " + length
 			})
 			.attr("stroke-dashoffset", function(d,i) {
@@ -282,7 +375,7 @@
 			.attr("transform", function(d, i) {
 				return "translate(0," + (yScale(d.values[0].values[0].risk)) + ")";}) 
 			.attr("fill", function(d, i) {
-				return color_cancer[d.values[0].values[0].hdi] 
+				return color;
 			});
 		
 		var node_label = graph_select
@@ -486,7 +579,7 @@
 	
 	function update_data(group_label,group_value){
 		
-		var file_use = "data/data_risk_trend.csv"; 
+		var file_use = "data/risk_trend_20.csv"; 
 		
 		if (group_value == 0) {
 			subtitle = "Major Non-communicable diseases"

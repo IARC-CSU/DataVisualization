@@ -113,14 +113,14 @@ function Heatmap_gen() { // generate heatmap
 		if (sex_select == "Women") {
 				
 			var file_use = "data/HDI_ASR_women_new.csv"; 
-			var nb_site = 25;  
+			var nb_site = 30;  
 			
 		}
 				
 		else {
 
 			var file_use = "data/HDI_ASR_men_new.csv"; 
-			var nb_site = 23;
+			var nb_site = 27;
 	
 			
 		}
@@ -397,17 +397,17 @@ function sortBars(bool) { // fonction to change batr orders
 		bool_cluster = bool;
 		if (sex_select == "Women") {
 				
-			var nb_site = 25;  // Sex change  25
-			var cl_2 = 21 // Sex change 21
-			var cl_1 = 16
+			var nb_site = 30;  // Sex change  30
+			var cl_2 = 20 // Sex change 21
+			var cl_1 = 14
 			
 		}
 				
 		else {
 		
-			var nb_site = 23;  
-			var cl_2 = 20; 
-			var cl_1 = 17; 
+			var nb_site = 27;  
+			var cl_2 = 25; 
+			var cl_1 = 21; 
 		}
 		
  		d3.select(".heatmap").selectAll(".rect_stack")	

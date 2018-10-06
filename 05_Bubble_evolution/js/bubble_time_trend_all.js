@@ -2,7 +2,7 @@
 
 	function bubble_evo() // generate heatmap 
 	{	
-		var file_use = "data/data_risk_trend.csv"; 
+		var file_use = "data/risk_trend_all.csv"; 
 
 		d3.csv(file_use,
 			
@@ -15,7 +15,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
@@ -213,14 +213,14 @@
 		graph_select.append("text") // add x axis subtitle
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
-			.attr("transform", "translate("+xScale(5.5*(bar_space+1))+"," +(var_height +150) + ")")
-			.text("Medium / High HDI")
+			.attr("transform", "translate("+xScale(3*(bar_space+1))+"," +(var_height +150) + ")")
+			.text("Low / High HDI")
 			
 		graph_select.append("text") // add x axis subtitle
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
-			.attr("transform", "translate("+xScale(16*(bar_space+1))+"," +(var_height +150) + ")")
-			.text("Very High HDI")
+			.attr("transform", "translate("+xScale(8.5*(bar_space+1))+"," +(var_height +150) + ")")
+			.text("High / Very High HDI")
 	
 
 		
@@ -266,7 +266,6 @@
 			.attr("stroke-dasharray", function(d,i) {
 
 				length = path[0][i].getTotalLength();
-				console.log(length)
 				return length + " " + length
 			})
 			.attr("stroke-dashoffset", function(d,i) {
@@ -301,7 +300,6 @@
 			.append("text")
 			.attr("class","cancer_label")
 			.style("text-anchor", "middle")
-			//.text(function(d,i) {return d.values[0].values[0].country_label})
 			.attr("dy", "0.25em")
 			.attr("fill", "#000000")    // set the line colour
 			.attr("transform", "rotate(-45)")
@@ -329,14 +327,14 @@
 			.style("stroke", "black")  
 			.attr("x1",  function(d, i) {
 				pos = (i+1)
-				if (i > 9) {
+				if (i >= (nb_cancer/2)) {
 					pos = pos +0.5
 				}
 				return xScale((pos)*(bar_space+1))
 			})
 			.attr("x2",  function(d, i) {
 				pos = (i+1)
-				if (i > 9) {
+				if (i >= (nb_cancer/2)) {
 					pos = pos +0.5
 				}
 				return xScale((pos)*(bar_space+1))
@@ -353,14 +351,14 @@
 			.style("stroke", "black")  
 			.attr("x1",  function(d, i) {
 				pos = (i+1)
-				if (i > 9) {
+				if (i >= (nb_cancer/2)) {
 					pos = pos +0.5
 				}
 				return xScale((pos)*(bar_space+1))
 			})
 			.attr("x2",  function(d, i) {
 				pos = (i+1)
-				if (i > 9) {
+				if (i >= (nb_cancer/2)) {
 					pos = pos +0.5
 				}
 				return xScale((pos)*(bar_space+1))
@@ -486,7 +484,7 @@
 	
 	function update_data(group_label,group_value){
 		
-		var file_use = "data/data_risk_trend.csv"; 
+		var file_use = "data/risk_trend_all.csv"; 
 		
 		if (group_value == 0) {
 			subtitle = "Major Non-communicable diseases"
@@ -511,7 +509,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		

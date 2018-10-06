@@ -7,7 +7,7 @@
 	<!--link rel="icon" href="favicon.ico" /-->
 	<link rel="stylesheet" href="css/bubble_time_trend.css" type="text/css">
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
-	<script type="text/javascript" src="js/bubble_time_trend.js"></script>
+	<script type="text/javascript" src="js/bubble_time_trend_both.js"></script>
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
 	
 	
@@ -16,7 +16,7 @@
 	// variable general
 	
 	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 15, left_page: 75 },
-	width = 500 - margin.left - margin.right,
+	width = 1350 - margin.left - margin.right,
 	height = 750 - margin.top - margin.bottom,
 	
 	XgridSize = 20 // 20*Xgrid for the range of the bar 
@@ -92,7 +92,7 @@
 		<div>
 			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2015</a></h1>
 			<div class="desc">
-				Cancer
+				Non-communicable diseases
 			</div>
 		</div>		
 	
@@ -106,7 +106,7 @@
 		<form>
 		<label><input type="radio" id="radio_cause1"  name="hdi"  checked="checked" onChange="update_data('cause_num','1')"> Cancer</label>
 		<br/>
-		<label><input type="radio" id="radio_cause2" name="hdi"   onChange="update_data('cause_num','2')"> Cardiovascular Disease</label>
+		<label><input type="radio" id="radio_cause2" name="hdi"   onChange="update_data('cause_num','2')"> Cardio</label>
 		<br/>
 		<label><input type="radio" id="radio_cause3" name="hdi"   onChange="update_data('cause_num','0')"> Major NCDs</label>
 		<!--br/>
