@@ -109,8 +109,13 @@ body {
 	
 	  
  text.y_title {
-	font-size: 22px;
+	font-size: 18px;
   }
+  
+   text.x_title {
+	font-size: 18px;
+  }
+  
   
  text.country_label {
 	font-size: 20px;

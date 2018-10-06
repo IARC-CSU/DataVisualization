@@ -93,12 +93,10 @@
 
 		xScale.domain([tick_year_list.value_bottom,tick_year_list.value_top]); // update xscale domain
 
-		axis_y = var_height
 		axis_tick_major = 8
 		axis_tick_minor = 5
 		axis_tick2 = 0
 		
-		var graph_width = xScale(tick_year_list.value_top + 2)
 		
 
 
@@ -208,7 +206,7 @@
 			.style("stroke", "black")  
 			.attr("x1", 0)
 			.attr("y1", var_height+10)  
-			.attr("x2", graph_width+5)
+			.attr("x2", graph_width)
 			.attr("y2", var_height+10);  
 			
 		graph.append("line") // add line for x = 0
@@ -218,11 +216,17 @@
 			.attr("x2",0)
 			.attr("y2", var_height+10);  
 			
-		graph.append("text") // add x axis subtitle
+		graph.append("text") // add y axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
-				.text("ASR")
+				.text("Age standardized (W) incidence rate per 100,000")
+				
+		graph.append("text") // add x axis subtitle
+				.attr("class", "x_title")
+				.attr("text-anchor", "middle")
+				.attr("transform", "translate(" +(graph_width/2) + "," +(var_height+ 60) + ")")
+				.text("Year")
 				
 		
 	
@@ -384,7 +388,7 @@
 					
 
 
-					var nodes = graph_select.append("g")
+					var nodes = bar_graph.append("g")
 						.attr("id","nodes_id")
 						.attr("class", "nodes")
 						.selectAll()
@@ -474,7 +478,6 @@
 		axis_tick_major = 8
 		axis_tick_minor = 5
 		
-		var graph_width = xScale(tick_year_list.value_top + 2)
 		
 
 
@@ -557,15 +560,9 @@
 	graph.selectAll(axe_class)
 		.transition().duration(transition_time).ease(ease_effect)  
 		.call(scale);
-
 	
-	console.log(tick_values)
-	
-	var grid =  d3.select("#chart").selectAll(tick_class)
-		.data(tick_values, function(d) { 
-			//console.log(d)
-			return d;
-		})
+	var grid = graph.selectAll(tick_class)
+		.data(tick_values, function(d) {return d;})
 		
 	if (axes == 2) {
 		
