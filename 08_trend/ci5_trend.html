@@ -80,7 +80,7 @@
 	var var_height = 600
 	var graph_width = 520
 		
-	
+	var active_cancer = "All cancers excluding non-melanoma skin"
 
 	var xScale = d3.scale.linear()
 		.domain([1975, 2015])  // 
@@ -168,10 +168,17 @@
 	
 	// text input listener
 	window.addEventListener("awesomplete-select", function(e){
-	  target = e.target.id
-	  
-	  if (target == "input_country") {
-		add_country(e.text.value)
+		target = e.target.id
+		
+		if (target == "input_country") {
+			
+			console.log(active_cancer );
+			
+			add_country(e.text.value, active_cancer)
+			
+		} else if (target == "input_cancer") {
+			active_cancer = e.text.value
+			update_cancer(e.text.value)
 		}
 	});
 

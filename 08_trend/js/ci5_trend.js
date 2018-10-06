@@ -295,7 +295,7 @@
 
 	}
 	
-	function add_country(label_input) {
+	function add_country(label_input, cancer_input) {
 		
 		var country_element = document.getElementById("country_element").children;
 		var bool_unique = true 
@@ -341,7 +341,7 @@
 					
 					//filter data 
 					var data_temp = data.filter(function(d){
-						return (d.sex == 1 & d.cancer == 1 & d.country_label == label_input)
+						return (d.sex == 1 & d.cancer_label == cancer_input & d.country_label == label_input)
 					});
 					
 					var data_nest=d3.nest()
@@ -365,7 +365,7 @@
 					
 					
 					var data_country = data.filter(function(d){
-						return (d.sex == 1 & d.cancer == 1 & country_list.includes(d.country_label))
+						return (d.sex == 1 & d.cancer_label == cancer_input & country_list.includes(d.country_label))
 					});
 					
 					update_scale(bar_graph, data_country)
@@ -377,7 +377,7 @@
 						country_list.pop();
 						
 						var data_country_old = data.filter(function(d){
-							return (d.sex == 1 & d.cancer == 1 & country_list.includes(d.country_label))
+							return (d.sex == 1 & d.cancer_label == cancer_input & country_list.includes(d.country_label))
 						});
 						
 					
@@ -456,6 +456,74 @@
 			)
 		}
 	}
+		
+	function update_cancer(label_input) {
+		
+		var country_element = document.getElementById("country_element").children;
+
+
+		//const temp_tag = document.createElement("button");
+		//temp_tag.setAttribute("class", "tag row button");
+		//temp_tag.setAttribute("data-filter", label_input);
+		//temp_tag.innerHTML = label_input;
+		
+		//document.getElementById("country_element").appendChild(temp_tag)
+
+		
+		
+		var file_use = "data/CI5plus_asr_country.csv"; 
+
+		d3.csv(file_use,
+			
+			function(d) {
+			return {
+				
+				sex : +d.sex,
+				year: +d.year,
+				cancer_label : d.cancer_label,
+				cancer : +d.cancer,
+				country_code : +d.country_code,
+				country_label : d.country_label,
+				asr: +d.asr
+				};	
+			},		
+			function(data) {
+				
+														
+				var bar_graph=d3.select("#chart").select(".bar_graph")
+				
+				var nb_country = country_element.length-1
+
+				country_list = [];
+				for (var i = 0; i <= nb_country; i += 1) { 
+					country_list.push(country_element[i].innerHTML)
+					
+				}
+				
+				console.log(country_list)
+				
+				if (country_list.length > 0) {
+					var data_country = data.filter(function(d){
+						return (d.sex == 1 & d.cancer_label == label_input & country_list.includes(d.country_label))
+					});
+				
+					update_scale(bar_graph, data_country)
+				
+					var data_update=d3.nest()
+						.key(function(d) { return d.country_label; }).sortKeys(function(a,b) { return country_list.indexOf(a) - country_list.indexOf(b); })
+						.key(function(d) {return d.year;}).sortKeys(d3.ascending)
+						.entries(data_country)
+						
+				
+					update_trend(bar_graph, data_update)
+					
+				}
+			}
+					
+		)
+}
+		
+		
 		
 		
 		
@@ -570,7 +638,9 @@
 	
 
 	var grid = graph.selectAll(tick_class)
-		.data(tick_values, function(d) {return d;})
+		.data(tick_values, function(d) {
+			return d;
+			})
 		
 	if (axes == 2) {
 		
