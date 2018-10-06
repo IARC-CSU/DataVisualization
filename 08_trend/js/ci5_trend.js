@@ -20,7 +20,8 @@
 				cancer : +d.cancer,
 				country_code : +d.country_code,
 				country_label : d.country_label,
-				asr: +d.asr
+				asr: +d.asr,
+				smoothed: +d.smoothed
 				};	
 			},		
 			function(data) {
@@ -89,8 +90,8 @@
 	function add_axis_title(graph,data) { 
 
 
-		var y_max = d3.max(data, function(d) {return d.asr})
-		var y_min = d3.min(data, function(d) {return d.asr})
+		var y_max = d3.max(data, function(d) {return d.smoothed})
+		var y_min = d3.min(data, function(d) {return d.smoothed})
 		var tick_list = tick_generator(y_max, y_min, true)
 
 		yScale.domain([tick_list.value_bottom,tick_list.value_top]); // update xscale domain
@@ -301,7 +302,7 @@
 			.attr("y", function (d) {
 				nb_year = d.values.length;
 				temp = d.values[nb_year-1].values[0];	
-				return (yScale(temp.asr));
+				return (yScale(temp.smoothed));
 			})
 			.text(function (d) {
 				nb_year = d.values.length
@@ -357,7 +358,8 @@
 					cancer : +d.cancer,
 					country_code : +d.country_code,
 					country_label : d.country_label,
-					asr: +d.asr
+					asr: +d.asr,
+					smoothed: +d.smoothed
 					};	
 				},		
 				function(data) {
@@ -459,7 +461,7 @@
 						.attr("y", function (d) {
 							nb_year = d.values.length;
 							temp = d.values[nb_year-1].values[0];	
-							return (yScale(temp.asr));
+							return (yScale(temp.smoothed));
 						})
 						.text(function (d) {
 							nb_year = d.values.length
@@ -509,7 +511,8 @@
 				cancer : +d.cancer,
 				country_code : +d.country_code,
 				country_label : d.country_label,
-				asr: +d.asr
+				asr: +d.asr,
+				smoothed: +d.smoothed
 				};	
 			},		
 			function(data) {
@@ -558,8 +561,8 @@
 	function update_scale (graph, data) {
 		
 
-		var y_max = d3.max(data, function(d) {return d.asr})
-		var y_min = d3.min(data, function(d) {return d.asr})
+		var y_max = d3.max(data, function(d) {return d.smoothed})
+		var y_min = d3.min(data, function(d) {return d.smoothed})
 		var tick_list = tick_generator(y_max, y_min, true)
 		
 
@@ -718,7 +721,7 @@
 		.attr("y", function (d) {
 			nb_year = d.values.length;
 			temp = d.values[nb_year-1].values[0];	
-			return (yScale(temp.asr));
+			return (yScale(temp.smoothed));
 		})
 	
 		
