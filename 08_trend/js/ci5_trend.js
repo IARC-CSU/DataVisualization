@@ -568,6 +568,7 @@
 		.transition().duration(transition_time).ease(ease_effect)  
 		.call(scale);
 	
+
 	var grid = graph.selectAll(tick_class)
 		.data(tick_values, function(d) {return d;})
 		
