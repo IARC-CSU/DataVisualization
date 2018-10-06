@@ -31,10 +31,14 @@
 					.sortKeys(d3.ascending)
 					.entries(data)
 					
+				var data_cancer_temp = data.filter(function(d){
+					return (d.sex == 1)
+				});
+					
 				var data_cancer = d3.nest()
 					.key(function(d) {return d.cancer_label;})
 					.sortKeys(d3.ascending)
-					.entries(data)
+					.entries(data_cancer_temp)
 				
 				country_list = [];
 				
@@ -53,7 +57,7 @@
 				
 				//filter data 
 				var data_temp = data.filter(function(d){
-					return (d.sex == 1 & d.cancer == 1 & [208,36,250].includes(d.country_code))
+					return (d.sex == 1 & d.cancer_label == active_cancer & [208,36,250].includes(d.country_code))
 				});
 				
 				
@@ -235,6 +239,12 @@
 				.attr("transform", "translate(" +(graph_width/2) + "," +(var_height+ 60) + ")")
 				.text("Year")
 				
+		graph.append("text") // add x axis subtitle
+				.attr("class", "graph_title")
+				.attr("text-anchor", "middle")
+				.attr("transform", "translate(" +(graph_width/2) + "," +(-30) + ")")
+				.text("All cancers excluding non-melanoma skin")
+				
 		
 	
 
@@ -248,7 +258,7 @@
 			.attr("id","nodes_id")
 			.attr("class", "nodes")
 			.selectAll()
-			.data(data_temp)
+			.data(data)
 			.enter()
 			.append("g")
 			.attr("class", "country_holder")
@@ -388,7 +398,9 @@
 							.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 							.entries(data_country_old)
 							
-					
+						
+						
+						
 						update_trend(bar_graph, data_update)
 						
 					}
@@ -499,8 +511,7 @@
 					country_list.push(country_element[i].innerHTML)
 					
 				}
-				
-				console.log(country_list)
+
 				
 				if (country_list.length > 0) {
 					var data_country = data.filter(function(d){
@@ -514,10 +525,14 @@
 						.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 						.entries(data_country)
 						
-				
+					console.log(data_update)
 					update_trend(bar_graph, data_update)
 					
+				
+					
 				}
+				bar_graph.selectAll(".graph_title") // add x axis subtitle
+					.text(label_input)
 			}
 					
 		)
@@ -600,11 +615,12 @@
 	
 	function update_trend (graph, data) {
 		
-
+		console.log(graph.selectAll(".trend").data)
 		graph.selectAll(".trend")
 		.data(data)
 		.transition().duration(transition_time).ease(ease_effect)
 		.attr("d", function(d, i){
+			console.log(d.values)
 			return lineFunction(d.values)
 			})
 		.attr("stroke", function(d, i){
@@ -612,6 +628,8 @@
 			})
 		.attr("stroke-width", 2)
 		.attr("fill", "none")
+		.attr("stroke-dasharray", function(d) {
+		});
 			
 		 graph.selectAll(".country_label")
 		.data(data)
@@ -993,4 +1011,5 @@
             i = d3.interpolateString("0," + l, l + "," + l);
         return function (t) { return i(t); };
     }
+	
 

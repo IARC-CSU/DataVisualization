@@ -24,9 +24,7 @@
 	</div>
 	
 	<div id="header" >
-		<div>
-			<h1><a href="#"> CI5 plus trend</a></h1>
-		</div>		
+
 	
 	</div>
 	
@@ -35,14 +33,14 @@
 	
 	<div class = "div_select_1">
 	<div class = "input_select_container">
-	<input id="input_cancer" /><button class="dropdown-btn select1" type="button"><span class="caret"></span></button>
+	<input id="input_cancer" placeholder="select a cancer" /><button class="dropdown-btn select1" type="button"><span class="caret"></span></button>
 	</div>
 	</div>
 	
 	<div class = "div_select_2">
 
 	<div  class = "input_select_container">
-	<input id="input_country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
+	<input id="input_country" placeholder="add a country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
 	<form id ="country_element"/>
 
 	</form>
@@ -62,7 +60,7 @@
 	
 	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 60, left_page: 300 },
 	width = 1200 - margin.left - margin.right,
-	height = 700 - margin.top - margin.bottom,
+	height = 800 - margin.top - margin.bottom,
 	
 	XgridSize = 10 // 20*Xgrid for the range of the bar 
 
@@ -169,20 +167,21 @@
 	// text input listener
 	window.addEventListener("awesomplete-select", function(e){
 		target = e.target.id
+
 		
 		if (target == "input_country") {
-			
-			console.log(active_cancer );
-			
 			add_country(e.text.value, active_cancer)
 			
 		} else if (target == "input_cancer") {
 			active_cancer = e.text.value
 			update_cancer(e.text.value)
 		}
+
+		e.text.value = ""
+		
 	});
 
-	
+
 	
 			
 	</script >
