@@ -47,14 +47,14 @@ body {
 
 .div_select_1 {
     position: relative;
-    top: -660px;
-    width: 450px;
+    top: -760px;
+    width: 250px;
 	 
 	}
 	
 .div_select_2 {
     position: relative;
-    top: -655px;
+    top: -755px;
     width: 250px;
 	 
 	}
@@ -163,12 +163,19 @@ div.input_select_container .caret {
 	.yaxis text {
 		font-family: sans-serif;
 	}
+	.yaxis_tick line {
+		stroke: #000000;
+	}
 	
 	  .yaxis_minor path,
 	  .yaxis_minor line {
 			fill: none;
 			stroke: #b7b7b7;
 			opacity:1;
+		}
+	.yaxis_minor_tick line {
+			stroke: #000000;
+
 		}
 		
 	  .xaxis path,
@@ -177,6 +184,10 @@ div.input_select_container .caret {
 			stroke: #b7b7b7;
 			opacity:1
 		}
+	.xaxis_tick line {
+		stroke: #000000;
+
+	}
 		
 	
 
@@ -190,6 +201,11 @@ div.input_select_container .caret {
 			stroke: #b7b7b7;
 			opacity:1;
 		}
+	.xaxis_minor_tick line {
+		stroke: #000000;
+
+	}
+		
 		
 
 	

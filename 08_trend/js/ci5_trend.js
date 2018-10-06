@@ -144,74 +144,87 @@
 			.tickValues(tick_year_list.minor)	
 			.tickFormat("")	;	
 			
+			
+			
+		var yAxis_tick = d3.svg.axis() 
+			.scale(yScale)
+			.orient("left")
+			.tickSize(8, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_list.major)
+			.tickFormat("");			
+
+	    var yAxis_minor_tick = d3.svg.axis() 
+			.scale(yScale)  
+			.orient("left")
+			.tickSize(5, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_list.minor)	
+			.tickFormat("");
+
+			
+		var xAxis_tick = d3.svg.axis() 
+			.scale(xScale)
+			.orient("bottom")
+			.tickSize(8, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_year_list.major)
+			.tickFormat("");			
+
+			
+	    var xAxis_minor_tick = d3.svg.axis() 
+			.scale(xScale)  
+			.orient("bottom")
+			.tickSize(5, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_year_list.minor)
+			.tickFormat("");			
+
 
 		
 		graph.append("g") // draw axis major
-			.attr("class", "yaxis")
+			.attr("class", "yaxis ")
 			.attr("transform", "translate(" + (0)+ "," +(0) + ")")
 			.call(yAxis);
 			
 		graph.append("g") // draw axis major
-			.attr("class", "xaxis")
+			.attr("class", "xaxis ")
 			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
 			.call(xAxis);
 
 		graph.append("g") // draw axis minor
-			.attr("class", "yaxis_minor")
+			.attr("class", "yaxis_minor ")
 			.attr("transform", "translate(" + (0)+ "," +(0) + ")")
 			.call(yAxis_minor);
 			
 		graph.append("g") // draw axis minor
-			.attr("class", "xaxis_minor")
+			.attr("class", "xaxis_minor ")
 			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
 			.call(xAxis_minor);
 				
-		graph.selectAll(".yaxis") // add Big tick
-			.data(tick_list.major, function(d) { return d; })
-			.enter()
-			.append("line")
-			.attr("class", "tick_major")
-			.attr("stroke", "black")
-			.attr("x2",  0 )
-			.attr("x1", -axis_tick_major)
-			.attr("y2", function(d) { return yScale(d); })
-			.attr("y1", function(d) { return yScale(d); })
+		graph.append("g") // draw axis major
+			.attr("class", "yaxis_tick")
+			.attr("transform", "translate(" + (0)+ "," +(0) + ")")
+			.call(yAxis_tick);
 			
-		graph.selectAll(".yaxis") // add small tick
-			.data(tick_list.minor, function(d) { return d; })
-			.enter()
-			.append("line")
-			.attr("class", "tick_minor")
-			.attr("stroke", "black")
-			.attr("x2",  0)
-			.attr("x1", -axis_tick_minor)
-			.attr("y2", function(d) { return yScale(d); })
-			.attr("y1", function(d) { return yScale(d); })
+		graph.append("g") // draw axis major
+			.attr("class", "xaxis_tick")
+			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
+			.call(xAxis_tick);
+
+		graph.append("g") // draw axis minor
+			.attr("class", "yaxis_minor_tick")
+			.attr("transform", "translate(" + (0)+ "," +(0) + ")")
+			.call(yAxis_minor_tick);
 			
-		graph.selectAll(".xaxis") // add Big tick
-			.data(tick_year_list.major, function(d) { return d; })
-			.enter()
-			.append("line")
-			.attr("class", "tick_year_major")
-			.attr("stroke", "black")
-			.attr("y2",  var_height+10 )
-			.attr("y1", axis_tick_major+var_height+10)
-			.attr("x2", function(d) { return xScale(d); })
-			.attr("x1", function(d) { return xScale(d); })
-			
-		graph.selectAll(".xaxis") // add small tick
-			.data(tick_year_list.minor, function(d) { return d; })
-			.enter()
-			.append("line")
-			.attr("class", "tick_year_minor")
-			.attr("stroke", "black")
-			.attr("y2",  var_height+10)
-			.attr("y1", axis_tick_minor+var_height+10)
-			.attr("x2", function(d) { return xScale(d); })
-			.attr("x1", function(d) { return xScale(d); })
-			
+		graph.append("g") // draw axis minor
+			.attr("class", "xaxis_minor_tick")
+			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
+			.call(xAxis_minor_tick);
+				
 		
 		
+			
 		
 		graph.append("line") // add line for y = 0
 			.style("stroke", "black")  
@@ -604,11 +617,74 @@
 			.tickValues(tick_year_list.minor)	
 			.tickFormat("")	;	
 			
+		var yAxis_tick = d3.svg.axis() 
+			.scale(yScale)
+			.orient("left")
+			.tickSize(8, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_list.major)
+			.tickFormat("");			
 
-		update_grid(graph, ".yaxis",yAxis, ".tick_major",tick_list.major, 2,  -axis_tick_major,0)
-		update_grid(graph, ".yaxis_minor",yAxis_minor, ".tick_minor",tick_list.minor, 2,  -axis_tick_minor,0)
-		update_grid(graph, ".xaxis",xAxis, ".tick_year_major",tick_year_list.major, 1,  axis_tick_major+var_height+10, var_height+10)
-		update_grid(graph, ".xaxis_minor",xAxis_minor, ".tick_year_minor",tick_year_list.minor, 1,  axis_tick_minor+var_height+10, var_height+10)
+	    var yAxis_minor_tick = d3.svg.axis() 
+			.scale(yScale)  
+			.orient("left")
+			.tickSize(5, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_list.minor)	
+			.tickFormat("");
+
+			
+		var xAxis_tick = d3.svg.axis() 
+			.scale(xScale)
+			.orient("bottom")
+			.tickSize(8, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_year_list.major)
+			.tickFormat("");			
+
+			
+	    var xAxis_minor_tick = d3.svg.axis() 
+			.scale(xScale)  
+			.orient("bottom")
+			.tickSize(5, 0,0)
+			.tickPadding(12)
+			.tickValues(tick_year_list.minor)
+			.tickFormat("");			
+
+			
+				
+		graph.selectAll( ".yaxis")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(yAxis);
+				
+		graph.selectAll( ".xaxis")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(xAxis);
+				
+		graph.selectAll( ".yaxis_minor")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(yAxis_minor);
+		
+		graph.selectAll( ".xaxis_minor")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(xAxis_minor);
+		
+		graph.selectAll( ".yaxis_tick")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(yAxis_tick);
+				
+		graph.selectAll( ".xaxis_tick")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(xAxis_tick);
+				
+		graph.selectAll( ".yaxis_minor_tick")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(yAxis_minor_tick);
+		
+		graph.selectAll( ".xaxis_minor_tick")
+		.transition().duration(transition_time).ease(ease_effect)  
+		.call(xAxis_minor_tick);
+			
 
 		
 	}
