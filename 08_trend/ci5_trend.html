@@ -4,16 +4,19 @@
   <head>
   
   	<title> CI5 plus trend</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!--link rel="icon" href="favicon.ico" /-->
 	<link rel="stylesheet" href="css/ci5_trend.css" type="text/css">
 	<link rel="stylesheet" href="css/awesomplete.css?v=4.4.1"> 
+	
+	<script type="text/javascript" src="Jquery/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
 	<script type="text/javascript" src="js/awesomplete.min.js"></script>
 	<script type="text/javascript" src="js/ci5_trend.js"></script>
 
 	
 	
-	
+
 	 
 	</head>
   	
@@ -41,9 +44,8 @@
 
 	<div  class = "input_select_container">
 	<input id="input_country" placeholder="add a country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
-	<form id ="country_element"/>
-
-	</form>
+	
+	<ul id ="country_element"></ul>
 	
 	</div>
 	</div>
@@ -99,7 +101,7 @@
 	var lineFunction = d3.svg.line()
 		.x(function(d,i){return xScale(d.values[0].year); })
 		.y(function(d,i)  { 
-			return yScale(d.values[0].asr); })
+			return yScale(d.values[0].smoothed); })
 		.interpolate("linear");
 		
 	var color_scale_10 = d3.scale.category10();
@@ -129,7 +131,8 @@
 
 		}
 		else if (awesomplete1.ul.hasAttribute('hidden')) {
-			awesomplete1.open();
+			awesomplete1.minChars = 0;
+			awesomplete1.evaluate();
 
 		}
 		else {
@@ -152,7 +155,8 @@
 
 		}
 		else if (awesomplete2.ul.hasAttribute('hidden')) {
-			awesomplete2.open();
+			awesomplete2.minChars = 0;
+			awesomplete2.evaluate();
 
 		}
 		else {
@@ -180,6 +184,39 @@
 		e.text.value = ""
 		
 	});
+	
+
+	// 
+	$("#country_element").on("click", ".select_country", function(event){
+		
+		country_label = this.attributes.label.value;
+
+		$(this).remove();
+		
+		remove_country(country_label,active_cancer )
+
+	});
+	
+	$("#country_element").on("mouseover", ".select_country", function(event){
+		
+		country_label = this.attributes.label.value;
+
+		
+		highlight_country(country_label, true)
+
+	});
+	
+	$("#country_element").on("mouseout", ".select_country", function(event){
+		
+		country_label = this.attributes.label.value;
+
+
+		highlight_country(country_label, false)
+
+	});
+
+	
+	
 
 
 	
