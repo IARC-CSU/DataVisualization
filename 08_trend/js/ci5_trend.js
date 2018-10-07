@@ -118,7 +118,7 @@
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
-			.tickFormat(d3.format(".0f"));
+			.tickFormat(d3.format(""));
 			
 					
 	    var yAxis_minor = d3.svg.axis() 
@@ -135,7 +135,7 @@
 			.tickSize(-var_height-20, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_year_list.major)	
-			.tickFormat(d3.format(".0f"));
+			.tickFormat(d3.format(""));
 			
 	    var xAxis_minor = d3.svg.axis() 
 			.scale(xScale)  
@@ -634,7 +634,9 @@
 			.tickSize(-graph_width, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
-			.tickFormat(d3.format(".0f"));
+			.tickFormat(function(d) {
+				return d3.format("")(d).replace(/0+1/,"")	
+			});
 			
 					
 	    var yAxis_minor = d3.svg.axis() 
@@ -651,7 +653,7 @@
 			.tickSize(-var_height-20, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_year_list.major)	
-			.tickFormat(d3.format(".0f"));
+			.tickFormat(d3.format(""));
 			
 	    var xAxis_minor = d3.svg.axis() 
 			.scale(xScale)  
