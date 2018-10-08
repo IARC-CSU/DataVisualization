@@ -261,8 +261,14 @@
 		graph.append("text") // add x axis subtitle
 				.attr("class", "graph_title")
 				.attr("text-anchor", "middle")
-				.attr("transform", "translate(" +(graph_width/2) + "," +(-30) + ")")
+				.attr("transform", "translate(" +(graph_width/2) + "," +(-50) + ")")
 				.text("All cancers excluding non-melanoma skin")
+				
+		graph.append("text") // add x axis subtitle
+				.attr("class", "graph_subtitle")
+				.attr("text-anchor", "middle")
+				.attr("transform", "translate(" +(graph_width/2) + "," +(-20) + ")")
+				.text("Male")
 				
 		
 	
@@ -612,7 +618,9 @@
 					
 				}
 				bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(active_cancer + ", " + sex_label)
+					.text(active_cancer)
+				bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
+					.text(sex_label)
 			}
 					
 		)
@@ -666,8 +674,11 @@
 				}
 
 				awesomplete1.list = cancer_list;
-
-				if (!cancer_input.includes(cancer_list)) {
+				
+				console.log(cancer_list)
+				console.log(cancer_input)
+				
+				if (!cancer_list.includes(cancer_input)) {
 					
 					active_cancer = "All cancers excluding non-melanoma skin";
 					cancer_input  = active_cancer
@@ -675,7 +686,9 @@
 				}
 				
 				bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(active_cancer + ", " + label_input)
+					.text(active_cancer)
+				bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
+					.text(label_input)
 				
 				// update scale 
 				

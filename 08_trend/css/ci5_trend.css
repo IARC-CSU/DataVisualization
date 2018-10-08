@@ -147,6 +147,10 @@ div.input_select_container .caret {
 	font-size: 24px;
   }
   
+       text.graph_subtitle {
+	font-size: 22px;
+  }
+  
   text.regional_text {
 	  font-size: 12px;
   }
