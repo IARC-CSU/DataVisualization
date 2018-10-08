@@ -44,6 +44,14 @@ body {
 	float:left;
 	}
 	
+	
+.div_regional {
+    position: relative;
+    top: -770px;
+    width: 250px;
+	 
+	}
+	
 .div_select_sex {
     position: relative;
     top: -765px;
@@ -77,6 +85,10 @@ body {
   font-size: 12px;
   text-shadow: 0 1px white;
   cursor: pointer;
+}
+
+#check_regional {
+	margin: 3px 3px 3px 0px;
 }
 
 #input_cancer {

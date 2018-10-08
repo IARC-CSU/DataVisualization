@@ -1,12 +1,45 @@
 
 
 
-
-	function CI5_trend() // generate heatmap 
+	function CI5_trend(bool_first) // generate heatmap 
 	{	
 	
+		var bool_national = document.getElementById("check_regional").checked 
+		console.log(bool_national)
+	
+		if (bool_national) {
+			file_use = "data/CI5plus_asr_country.csv"; 
+			document.getElementById("input_country").placeholder = "Add a country"
+		} 
+		else {
+			file_use = "data/CI5plus_asr_registry.csv"; 
+			document.getElementById("input_country").placeholder = "Add a registry"
+		}
+	
+	
+		if (!bool_first) {
+	
+			// get value do default
+			active_cancer = "All cancers excluding non-melanoma skin";
+			active_sex = 1;
+			regional = 0;
 
-		console.log(file_use)
+			// delete all nodes 
+			
+			var bar_graph= d3.select("#chart").select(".bar_graph");
+			var graph = bar_graph.selectAll(".nodes");
+			graph.remove()
+			
+			//
+			while (document.getElementById("country_element").firstChild) {
+				document.getElementById("country_element").removeChild(document.getElementById("country_element").firstChild);
+			}
+								
+			
+		}
+		
+		
+
 
 		d3.csv(file_use,
 			
@@ -55,35 +88,43 @@
 				
 				//filter data 
 				var data_temp = data.filter(function(d){
-					return (d.sex == 1 & d.cancer_label == active_cancer & [208,36,250].includes(d.country_code));
+					return (d.sex == 1 & d.cancer_label == active_cancer);
 				});
 				
 				
 				// create graph
-										
-				var bar_graph= // create array with both bargraph
-				d3.select("#chart").append("svg") // draw main windows
-					.attr("width", width + margin.left + margin.right)
-					.attr("height", height + margin.top + margin.bottom)
-					.append("g")
-					.attr("class", "bar_graph")	
-					.attr("transform", "translate(" + margin.left_page   + "," + margin.top_page  + ")"); 
+								
+				if (bool_first) {
+					var bar_graph= // create array with both bargraph
+					d3.select("#chart").append("svg") // draw main windows
+						.attr("width", width + margin.left + margin.right)
+						.attr("height", height + margin.top + margin.bottom)
+						.append("g")
+						.attr("class", "bar_graph")	
+						.attr("transform", "translate(" + margin.left_page   + "," + margin.top_page  + ")"); 
+				
+						
+					bar_graph.append("text")
+							.attr("class","regional_text")
+							.attr("text-anchor", "end")
+							.attr("transform", "translate(" +(graph_width) + "," +(graph_height+ 60) + ")")
+							.text("*: Regional registries")
+							.attr("opacity", 0)
+							.attr("dy", "0.15em")
+							
 					
-				bar_graph.append("text")
-						.attr("class","regional_text")
-						.attr("text-anchor", "end")
-						.attr("transform", "translate(" +(graph_width) + "," +(graph_height+ 60) + ")")
-						.text("*: Regional registries")
-						.attr("opacity", 0)
-						.attr("dy", "0.15em")
 
 
-				add_axis_title(bar_graph,data_temp);
-
-				
-				
+					add_axis_title(bar_graph,data_temp);
+				}			
 			
-			
+			}
+		).on("progress", function(event){
+        //update progress bar
+        if (d3.event.lengthComputable) {
+          var percentComplete = Math.round(d3.event.loaded * 100 / d3.event.total);
+          console.log(percentComplete);
+			   }
 			}
 		);
 	}
@@ -554,6 +595,8 @@
 		
 		
 	}
+	
+
 	
 	function update_cancer(label_input,sex_input) {
 		

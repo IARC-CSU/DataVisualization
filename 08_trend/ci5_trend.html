@@ -34,6 +34,10 @@
 		
 	<div id="chart"></div>
 	
+	<div class = "div_regional">
+	<label><input type="checkbox" id="check_regional" checked="checked" onChange=" CI5_trend(false)">Group by country</label>
+	</div>
+	
 	<div class = "div_select_sex">
 	<div class = "input_select_container">
 	<input id="input_sex" placeholder="select sex" /><button class="dropdown-btn sex" type="button"><span class="caret"></span></button>
@@ -74,6 +78,8 @@
 	var file_use = "data/CI5plus_asr_country.csv"; 
 	
 	var XgridSize = 10; 
+	
+	var bool_national = false; 
 
 
 	
@@ -110,7 +116,7 @@
 	
 	 window.onload = function()
 		{
-		CI5_trend()
+		CI5_trend(true)
 		
 	};
 	
