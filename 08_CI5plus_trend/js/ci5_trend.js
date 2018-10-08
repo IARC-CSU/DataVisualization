@@ -602,7 +602,7 @@
 		
 		var op  = 1
 		if (bool) {
-			op = 0.3
+			op = 0.25
 		}
 		
 		var bar_graph= d3.select("#chart").select(".bar_graph");
