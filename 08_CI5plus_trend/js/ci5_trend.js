@@ -129,10 +129,12 @@
 			
 			
 			div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
 			
 		}).on("progress", function(event){
 
 			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
 			 
 		});
 	}
@@ -492,11 +494,13 @@
 
 
 					
-		div_left_panel.style.opacity = 1;
+			div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
 			
 		}).on("progress", function(event){
 
 			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
 			 
 		});
 			
@@ -673,9 +677,17 @@
 					.text(active_cancer)
 				bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
 					.text(sex_label)
-			}
+			
 					
-		)
+			div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
+			
+		}).on("progress", function(event){
+
+			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
+			 
+		});
 }
 		
 		
@@ -771,7 +783,15 @@
 				}
 				
 				
-			});
+						div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
+			
+		}).on("progress", function(event){
+
+			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
+			 
+		});
 	
 		
 

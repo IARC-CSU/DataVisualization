@@ -44,7 +44,12 @@ body {
 	float:left;
 	}
 	
-
+#wait {
+    position: relative;
+    top: -775px;
+	opacity:0;
+	 
+	}
 	
 .div_regional {
     position: relative;
