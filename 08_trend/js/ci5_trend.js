@@ -3,7 +3,9 @@
 
 	function CI5_trend(bool_first) // generate heatmap 
 	{	
-	
+		
+		
+		
 		var bool_national = document.getElementById("check_regional").checked 
 		console.log(bool_national)
 	
@@ -34,6 +36,10 @@
 			while (document.getElementById("country_element").firstChild) {
 				document.getElementById("country_element").removeChild(document.getElementById("country_element").firstChild);
 			}
+			
+			bar_graph.selectAll(".regional_text")
+				.transition().duration(transition_time).ease(ease_effect)  
+				.attr("opacity", 0)
 								
 			
 		}
@@ -56,6 +62,8 @@
 			},		
 			function(data) {
 					
+				
+				
 				
 				var data_country = d3.nest()
 					.key(function(d) {return d.country_label;})
@@ -116,17 +124,17 @@
 
 
 					add_axis_title(bar_graph,data_temp);
-				}			
+				}
+
 			
-			}
-		).on("progress", function(event){
-        //update progress bar
-        if (d3.event.lengthComputable) {
-          var percentComplete = Math.round(d3.event.loaded * 100 / d3.event.total);
-          console.log(percentComplete);
-			   }
-			}
-		);
+			
+			div_left_panel.style.opacity = 1;
+			
+		}).on("progress", function(event){
+
+			div_left_panel.style.opacity = 0.5;
+			 
+		});
 	}
 
 	
@@ -425,7 +433,7 @@
 
 					var nodes = bar_graph.append("g")
 						.attr("id","nodes_id")
-						.attr("class", function(d,i) { return "nodes" + " nodes_" + label_input.replace(/\:|\s+/g, '');} )
+						.attr("class", function(d,i) { return "nodes" + " nodes_" + label_input.replace(/[^a-z]/g, '');} )
 						.selectAll()
 						.data(data_nest)
 						.enter()
@@ -472,19 +480,28 @@
 							temp = d.values[nb_year-1].values[0];	
 							return (yScale(temp.smoothed));
 						})
-						.text(label_input)
+						.text(label_input.replace(/_/, ', '))
 						.attr("dy", "0.15em")
 						.call(drag)
 					}, transition_time)
 					
 					
 
-						
+			
 					
 
 
-					}
-			)
+					
+		div_left_panel.style.opacity = 1;
+			
+		}).on("progress", function(event){
+
+			div_left_panel.style.opacity = 0.5;
+			 
+		});
+			
+			
+			
 		}
 	}
 		
@@ -506,7 +523,7 @@
 		
 		graph_all.attr("opacity",1)
 		
-		var graph = bar_graph.selectAll(".nodes_" + label_input.replace(/\:|\s+/g, ''));
+		var graph = bar_graph.selectAll(".nodes_" + label_input.replace(/[^a-z]/g, ''));
 		
 		
 		var temp_label = graph[0][0].textContent
@@ -589,7 +606,7 @@
 		}
 		
 		var bar_graph= d3.select("#chart").select(".bar_graph");
-		var graph = bar_graph.selectAll(".nodes:not(.nodes_" + label_input.replace(/\:|\s+/g, '') + ")");
+		var graph = bar_graph.selectAll(".nodes:not(.nodes_" + label_input.replace(/[^a-z]/g, '') + ")");
 
 		graph.attr("opacity", op)
 		
@@ -797,7 +814,7 @@
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
 			.tickFormat(function(d) {
-				return d3.format("0.2f")(d).replace(/\.?0+$/,"")	
+				return d3.format("0.3f")(d).replace(/\.?0+$/,"")	
 			});
 			
 					
