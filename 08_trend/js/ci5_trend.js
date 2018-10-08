@@ -7,7 +7,6 @@
 	
 
 		
-		var file_use = "data/CI5plus_asr_country.csv"; 
 
 		d3.csv(file_use,
 			
@@ -30,35 +29,35 @@
 				var data_country = d3.nest()
 					.key(function(d) {return d.country_label;})
 					.sortKeys(d3.ascending)
-					.entries(data)
+					.entries(data);
 					
 				var data_cancer_temp = data.filter(function(d){
-					return (d.sex == 1)
+					return (d.sex == 1);
 				});
 					
 				var data_cancer = d3.nest()
 					.key(function(d) {return d.cancer_label;})
 					.sortKeys(d3.ascending)
-					.entries(data_cancer_temp)
+					.entries(data_cancer_temp);
 				
 				country_list = [];
 				
 				for (var i = 0; i < data_country.length; i += 1) {
-					country_list.push(data_country[i].key)
+					country_list.push(data_country[i].key);
 				}
 
 				awesomplete2.list = country_list;
 				
 				cancer_list = [];
-				for (var i = 0; i < data_cancer.length; i += 1) {
-					cancer_list.push(data_cancer[i].key)
+				for (var j = 0; j < data_cancer.length; j += 1) {
+					cancer_list.push(data_cancer[j].key);
 				}
 
 				awesomplete1.list = cancer_list;
 				
 				//filter data 
 				var data_temp = data.filter(function(d){
-					return (d.sex == 1 & d.cancer_label == active_cancer & [208,36,250].includes(d.country_code))
+					return (d.sex == 1 & d.cancer_label == active_cancer & [208,36,250].includes(d.country_code));
 				});
 				
 				
@@ -70,9 +69,15 @@
 					.attr("height", height + margin.top + margin.bottom)
 					.append("g")
 					.attr("class", "bar_graph")	
-					.attr("transform", "translate(" + margin.left_page   + "," + margin.top_page  + ")") 
+					.attr("transform", "translate(" + margin.left_page   + "," + margin.top_page  + ")"); 
 					
-			
+				bar_graph.append("text")
+						.attr("class","regional_text")
+						.attr("text-anchor", "end")
+						.attr("transform", "translate(" +(graph_width) + "," +(graph_height+ 60) + ")")
+						.text("*: Regional registries")
+						.attr("opacity", 0)
+						.attr("dy", "0.15em")
 
 
 				add_axis_title(bar_graph,data_temp);
@@ -132,7 +137,7 @@
 		var xAxis = d3.svg.axis() 
 			.scale(xScale)
 			.orient("bottom")
-			.tickSize(-var_height-20, 0,0)
+			.tickSize(-graph_height-20, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_year_list.major)	
 			.tickFormat(d3.format(""));
@@ -140,7 +145,7 @@
 	    var xAxis_minor = d3.svg.axis() 
 			.scale(xScale)  
 			.orient("bottom")
-			.tickSize(-var_height-20, 0,0)
+			.tickSize(-graph_height-20, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_year_list.minor)	
 			.tickFormat("")	;	
@@ -190,7 +195,7 @@
 			
 		graph.append("g") // draw axis major
 			.attr("class", "xaxis ")
-			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
+			.attr("transform", "translate(" + (0)+ "," +(graph_height+10) + ")")
 			.call(xAxis);
 
 		graph.append("g") // draw axis minor
@@ -200,7 +205,7 @@
 			
 		graph.append("g") // draw axis minor
 			.attr("class", "xaxis_minor ")
-			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
+			.attr("transform", "translate(" + (0)+ "," +(graph_height+10) + ")")
 			.call(xAxis_minor);
 				
 		graph.append("g") // draw axis major
@@ -210,7 +215,7 @@
 			
 		graph.append("g") // draw axis major
 			.attr("class", "xaxis_tick")
-			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
+			.attr("transform", "translate(" + (0)+ "," +(graph_height+10) + ")")
 			.call(xAxis_tick);
 
 		graph.append("g") // draw axis minor
@@ -220,7 +225,7 @@
 			
 		graph.append("g") // draw axis minor
 			.attr("class", "xaxis_minor_tick")
-			.attr("transform", "translate(" + (0)+ "," +(var_height+10) + ")")
+			.attr("transform", "translate(" + (0)+ "," +(graph_height+10) + ")")
 			.call(xAxis_minor_tick);
 				
 		
@@ -230,27 +235,27 @@
 		graph.append("line") // add line for y = 0
 			.style("stroke", "black")  
 			.attr("x1", 0)
-			.attr("y1", var_height+10)  
+			.attr("y1", graph_height+10)  
 			.attr("x2", graph_width)
-			.attr("y2", var_height+10);  
+			.attr("y2", graph_height+10);  
 			
 		graph.append("line") // add line for x = 0
 			.style("stroke", "black")  
 			.attr("x1", 0)
 			.attr("y1", -10)  
 			.attr("x2",0)
-			.attr("y2", var_height+10);  
+			.attr("y2", graph_height+10);  
 			
 		graph.append("text") // add y axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
-				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
+				.attr("transform", "translate(-60," +graph_height/2 + ") rotate(-90)")
 				.text("Age standardized (W) incidence rate per 100,000")
 				
 		graph.append("text") // add x axis subtitle
 				.attr("class", "x_title")
 				.attr("text-anchor", "middle")
-				.attr("transform", "translate(" +(graph_width/2) + "," +(var_height+ 60) + ")")
+				.attr("transform", "translate(" +(graph_width/2) + "," +(graph_height+ 60) + ")")
 				.text("Year")
 				
 		graph.append("text") // add x axis subtitle
@@ -267,7 +272,7 @@
 	
 
 	
-	function add_country(label_input, cancer_input) {
+	function add_country(label_input, cancer_input, sex_input) {
 		
 		var country_element = document.getElementById("country_element").children;
 		var bool_unique = true 
@@ -297,7 +302,7 @@
 		
 		
 			
-			var file_use = "data/CI5plus_asr_country.csv"; 
+			
 
 			d3.csv(file_use,
 				
@@ -311,14 +316,15 @@
 					country_code : +d.country_code,
 					country_label : d.country_label,
 					asr: +d.asr,
-					smoothed: +d.smoothed
+					smoothed: +d.smoothed,
+					national: +d.national
 					};	
 				},		
 				function(data) {
 					
 					//filter data 
 					var data_temp = data.filter(function(d){
-						return (d.sex == 1 & d.cancer_label == cancer_input & d.country_label == label_input)
+						return (d.sex == sex_input & d.cancer_label == cancer_input & d.country_label == label_input)
 					});
 					
 					var data_nest=d3.nest()
@@ -342,7 +348,7 @@
 					
 					
 					var data_country = data.filter(function(d){
-						return (d.sex == 1 & d.cancer_label == cancer_input & country_list.includes(d.country_label))
+						return (d.sex == sex_input & d.cancer_label == cancer_input & country_list.includes(d.country_label))
 					});
 					
 					update_scale(bar_graph, data_country)
@@ -354,7 +360,7 @@
 						country_list.pop();
 						
 						var data_country_old = data.filter(function(d){
-							return (d.sex == 1 & d.cancer_label == cancer_input & country_list.includes(d.country_label))
+							return (d.sex == sex_input & d.cancer_label == cancer_input & country_list.includes(d.country_label))
 						});
 						
 					
@@ -372,7 +378,7 @@
 						
 					}
 					
-
+					
 
 					var nodes = bar_graph.append("g")
 						.attr("id","nodes_id")
@@ -400,10 +406,19 @@
 						
 					path.call(transition);
 					
+					var nat = data_nest[0].values[0].values[0].national
+					if (nat == 0 ) {
+						label_input = label_input + "*"
+						regional = regional + 1 
+						
+						bar_graph.selectAll(".regional_text")
+							.transition().duration(transition_time).ease(ease_effect)  
+							.attr("opacity", 1)
+					}
+					
 					setTimeout(function() {
 					 nodes.append("text")
 						.attr("class","country_label")
-						.attr("text-anchor", "left")
 						.attr("x", function (d) {
 							nb_year = d.values.length;
 							temp = d.values[nb_year-1].values[0];	
@@ -430,7 +445,7 @@
 		}
 	}
 		
-	function remove_country(label_input, cancer_input) {
+	function remove_country(label_input, cancer_input, sex_input) {
 		
 		
 		var country_element = document.getElementById("country_element").children;
@@ -449,6 +464,21 @@
 		graph_all.attr("opacity",1)
 		
 		var graph = bar_graph.selectAll(".nodes_" + label_input.replace(/\:|\s+/g, ''));
+		
+		
+		var temp_label = graph[0][0].textContent
+		
+		if (temp_label.includes("*")) {
+			regional = regional - 1 ;
+		}
+		
+		
+		if (regional  == 0) {
+			bar_graph.selectAll(".regional_text")
+				.transition().duration(transition_time).ease(ease_effect)  
+				.attr("opacity", 0)
+		}
+		
 		graph.remove();
 
 
@@ -456,7 +486,6 @@
 		
 		if (country_list.length > 0) {
 		
-			var file_use = "data/CI5plus_asr_country.csv"; 
 
 			d3.csv(file_use,
 				
@@ -483,7 +512,7 @@
 	
 					
 					var data_country = data.filter(function(d){
-						return (d.sex == 1 & d.cancer_label == cancer_input & country_list.includes(d.country_label))
+						return (d.sex == sex_input & d.cancer_label == cancer_input & country_list.includes(d.country_label))
 					});
 					
 					update_scale(bar_graph, data_country)
@@ -515,7 +544,7 @@
 		
 		var op  = 1
 		if (bool) {
-			op = 0.2
+			op = 0.3
 		}
 		
 		var bar_graph= d3.select("#chart").select(".bar_graph");
@@ -526,21 +555,15 @@
 		
 	}
 	
-	function update_cancer(label_input) {
+	function update_cancer(label_input,sex_input) {
+		
+		sex_label = "Male";
+		if (sex_input == 2 ) {
+			sex_label = "Female";;
+		}
 		
 		var country_element = document.getElementById("country_element").children;
-
-
-		//const temp_tag = document.createElement("button");
-		//temp_tag.setAttribute("class", "tag row button");
-		//temp_tag.setAttribute("data-filter", label_input);
-		//temp_tag.innerHTML = label_input;
 		
-		//document.getElementById("country_element").appendChild(temp_tag)
-
-		
-		
-		var file_use = "data/CI5plus_asr_country.csv"; 
 
 		d3.csv(file_use,
 			
@@ -573,7 +596,7 @@
 				
 				if (country_list.length > 0) {
 					var data_country = data.filter(function(d){
-						return (d.sex == 1 & d.cancer_label == label_input & country_list.includes(d.country_label))
+						return (d.sex == sex_input & d.cancer_label == label_input & country_list.includes(d.country_label))
 					});
 				
 					update_scale(bar_graph, data_country)
@@ -589,14 +612,107 @@
 					
 				}
 				bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(label_input)
+					.text(active_cancer + ", " + sex_label)
 			}
 					
 		)
 }
 		
 		
+	function update_sex(sex_input, cancer_input) {
 		
+		label_input = "Male";
+		if (sex_input == 2 ) {
+			label_input = "Female";;
+		}
+		
+		
+		var country_element = document.getElementById("country_element").children;
+		
+		// update of cancer label list
+		
+		var bar_graph=d3.select("#chart").select(".bar_graph")
+
+		d3.csv(file_use,
+			
+			function(d) {
+			return {
+				
+				sex : +d.sex,
+				year: +d.year,
+				cancer_label : d.cancer_label,
+				cancer : +d.cancer,
+				country_code : +d.country_code,
+				country_label : d.country_label,
+				asr: +d.asr,
+				smoothed: +d.smoothed
+				};	
+			},		
+			function(data) {
+					
+					
+				var data_cancer_temp = data.filter(function(d){
+					return (d.sex == sex_input)
+				});
+					
+				var data_cancer = d3.nest()
+					.key(function(d) {return d.cancer_label;})
+					.sortKeys(d3.ascending)
+					.entries(data_cancer_temp)
+				
+				cancer_list = [];
+				for (var i = 0; i < data_cancer.length; i += 1) {
+					cancer_list.push(data_cancer[i].key)
+				}
+
+				awesomplete1.list = cancer_list;
+
+				if (!cancer_input.includes(cancer_list)) {
+					
+					active_cancer = "All cancers excluding non-melanoma skin";
+					cancer_input  = active_cancer
+					
+				}
+				
+				bar_graph.selectAll(".graph_title") // add x axis subtitle
+					.text(active_cancer + ", " + label_input)
+				
+				// update scale 
+				
+				
+				var nb_country = country_element.length-1
+
+				country_list = [];
+				for (var i = 0; i <= nb_country; i += 1) { 
+					country_list.push(country_element[i].innerHTML)
+					
+				}
+
+				
+				if (country_list.length > 0) {
+					var data_country = data.filter(function(d){
+						return (d.sex == sex_input & d.cancer_label == cancer_input & country_list.includes(d.country_label))
+					});
+				
+					update_scale(bar_graph, data_country)
+				
+					var data_update=d3.nest()
+						.key(function(d) { return d.country_label; }).sortKeys(function(a,b) { return country_list.indexOf(a) - country_list.indexOf(b); })
+						.key(function(d) {return d.year;}).sortKeys(d3.ascending)
+						.entries(data_country)
+						
+					update_trend(bar_graph, data_update)
+					
+				
+					
+				}
+				
+				
+			});
+	
+		
+
+	}
 		
 		
 	function update_scale (graph, data) {
@@ -621,7 +737,7 @@
 
 		
 	
-		axis_y = var_height
+		axis_y = graph_height
 		axis_tick_major = 8
 		axis_tick_minor = 5
 		
@@ -650,7 +766,7 @@
 		var xAxis = d3.svg.axis() 
 			.scale(xScale)
 			.orient("bottom")
-			.tickSize(-var_height-20, 0,0)
+			.tickSize(-graph_height-20, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_year_list.major)	
 			.tickFormat(d3.format(""));
@@ -658,7 +774,7 @@
 	    var xAxis_minor = d3.svg.axis() 
 			.scale(xScale)  
 			.orient("bottom")
-			.tickSize(-var_height-20, 0,0)
+			.tickSize(-graph_height-20, 0,0)
 			.tickPadding(12)
 			.tickValues(tick_year_list.minor)	
 			.tickFormat("")	;	
@@ -874,18 +990,20 @@
 				bool_major = !bool_major;
 				
 			}
-		} else {
+		} 
+		else {
 		
 		
 			var temp = 0;
 			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
 			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
 			
+			console.log("tick_info")
 			console.log(log_min)
 			console.log(log_max)
-			
 			console.log(unit_floor_min)
 			console.log(unit_floor_max)
+			console.log("end")
 			
 			if (log_min == log_max) { // if min and max same magnitude
 			
@@ -932,7 +1050,7 @@
 				}
 
 			}
-			else if ((log_max/log_min) < 100){  //if max and min difference magnitude < 100
+			else if ((log_max/log_min) == 10){  //if max and min difference magnitude < 100
 				// major ticks
 				if (unit_floor_min < 5) { // 
 					
@@ -954,7 +1072,7 @@
 				// minor ticks
 
 				
-				for (var i = unit_floor_min; i <= 19; i++) {
+				for (var i = unit_floor_min; i <= 29; i++) {
 					
 					temp = (i*log_min); 
 					tick_list.minor.push(temp);
@@ -963,10 +1081,11 @@
 				log_min = log_min*10
 				
 
-				for (var i = 2; i <= unit_floor_max; i++) {
+				for (var i = 1; i <= unit_floor_max; i++) {
 
 					temp = (i*log_min + (log_min/2)); 
 					tick_list.minor.push(temp);
+					tick_list.major.push(temp);
 		
 				}
 

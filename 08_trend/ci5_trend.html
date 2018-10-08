@@ -34,6 +34,12 @@
 		
 	<div id="chart"></div>
 	
+	<div class = "div_select_sex">
+	<div class = "input_select_container">
+	<input id="input_sex" placeholder="select sex" /><button class="dropdown-btn sex" type="button"><span class="caret"></span></button>
+	</div>
+	</div>
+	
 	<div class = "div_select_1">
 	<div class = "input_select_container">
 	<input id="input_cancer" placeholder="select a cancer" /><button class="dropdown-btn select1" type="button"><span class="caret"></span></button>
@@ -60,43 +66,35 @@
 		
 	// variable general
 	
-	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 60, left_page: 300 },
-	width = 1200 - margin.left - margin.right,
-	height = 800 - margin.top - margin.bottom,
 	
-	XgridSize = 10 // 20*Xgrid for the range of the bar 
+	var margin = { top: 50, right: 150, bottom: 75, left: 225, top_page: 60, left_page: 300 };
+	width = 1200 - margin.left - margin.right;
+	height = 800 - margin.top - margin.bottom;
+	
+	var file_use = "data/CI5plus_asr_country.csv"; 
+	
+	var XgridSize = 10; 
 
-	var color_cancer = {};
-	color_cancer[1]  = "#E66101"; // low and medium 
-	color_cancer[2]  = "#2C7BB6"; // high hdi
+
 	
-	var ease_effect = "linear"
-	var transition_time = 1000
-	
-	var bar_space = 1.5	// Space between bar 
-	var label_wrap = 10 // size max of a label on one line
-	
-	
-	var var_height = 600
-	var graph_width = 520
+	var ease_effect = "linear";
+	var transition_time = 1000;
+
+	var graph_height = 600;
+	var graph_width = 520;
 		
-	var active_cancer = "All cancers excluding non-melanoma skin"
+	var active_cancer = "All cancers excluding non-melanoma skin";
+	var active_sex = 1;
+
+	var regional = 0;
 
 	var xScale = d3.scale.linear()
 		.domain([1975, 2015])  // 
 		.range([10  ,(50)* XgridSize ]);
-		
-	// width of the bar graphs
 
-
-	
-	// I define xScale and Xaxis's here because I want them as general variable 
-	// So I need to use the value for the Canada Men..
-	// I suppose there should be another way, to define them in the d3.csv fonction and use the data..
-	
 	var yScale = d3.scale.linear() 
 		.domain([0, 200]) 
-		.range([var_height  ,0]);
+		.range([graph_height  ,0]);
 		
 	var lineFunction = d3.svg.line()
 		.x(function(d,i){return xScale(d.values[0].year); })
@@ -115,6 +113,32 @@
 		CI5_trend()
 		
 	};
+	
+var input_sex = document.getElementById("input_sex");
+	var awesomplete_sex = new Awesomplete(input_sex, {
+		minChars: 0,
+		maxItems: 500,
+		autoFirst:true,
+		sort:false
+	});
+	
+	Awesomplete.$('.dropdown-btn.sex').addEventListener("click", function() {
+		if (awesomplete_sex.ul.childNodes.length === 0) {
+			awesomplete_sex.minChars = 0;
+			awesomplete_sex.evaluate();
+
+		}
+		else if (awesomplete_sex.ul.hasAttribute('hidden')) {
+			awesomplete_sex.minChars = 0;
+			awesomplete_sex.evaluate();
+
+		}
+		else {
+			awesomplete_sex.close();
+		}
+	});
+	
+	awesomplete_sex.list = ["Male", "Female"];
 	
 	var input_cancer = document.getElementById("input_cancer");
 	var awesomplete1 = new Awesomplete(input_cancer, {
@@ -174,11 +198,24 @@
 
 		
 		if (target == "input_country") {
-			add_country(e.text.value, active_cancer)
+			add_country(e.text.value, active_cancer,active_sex)
+
 			
 		} else if (target == "input_cancer") {
 			active_cancer = e.text.value
-			update_cancer(e.text.value)
+			update_cancer(e.text.value, active_sex)
+
+		} else if (target == "input_sex") {
+			
+			if (e.text.value == "Male" ) {
+				active_sex = 1;
+			}
+			else if (e.text.value == "Female" ) {
+				active_sex = 2;
+			}
+		
+		
+			update_sex(active_sex,active_cancer)
 		}
 
 		e.text.value = ""
@@ -193,7 +230,7 @@
 
 		$(this).remove();
 		
-		remove_country(country_label,active_cancer )
+		remove_country(country_label,active_cancer, active_sex )
 
 	});
 	
