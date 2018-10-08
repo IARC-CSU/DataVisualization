@@ -6,7 +6,7 @@
 	{	
 	
 
-		
+		console.log(file_use)
 
 		d3.csv(file_use,
 			
