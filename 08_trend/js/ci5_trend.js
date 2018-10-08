@@ -16,8 +16,6 @@
 				sex : +d.sex,
 				year: +d.year,
 				cancer_label : d.cancer_label,
-				cancer : +d.cancer,
-				country_code : +d.country_code,
 				country_label : d.country_label,
 				asr: +d.asr,
 				smoothed: +d.smoothed
@@ -318,8 +316,6 @@
 					sex : +d.sex,
 					year: +d.year,
 					cancer_label : d.cancer_label,
-					cancer : +d.cancer,
-					country_code : +d.country_code,
 					country_label : d.country_label,
 					asr: +d.asr,
 					smoothed: +d.smoothed,
@@ -501,8 +497,6 @@
 					sex : +d.sex,
 					year: +d.year,
 					cancer_label : d.cancer_label,
-					cancer : +d.cancer,
-					country_code : +d.country_code,
 					country_label : d.country_label,
 					asr: +d.asr,
 					smoothed: +d.smoothed
@@ -579,8 +573,6 @@
 				sex : +d.sex,
 				year: +d.year,
 				cancer_label : d.cancer_label,
-				cancer : +d.cancer,
-				country_code : +d.country_code,
 				country_label : d.country_label,
 				asr: +d.asr,
 				smoothed: +d.smoothed
@@ -649,8 +641,6 @@
 				sex : +d.sex,
 				year: +d.year,
 				cancer_label : d.cancer_label,
-				cancer : +d.cancer,
-				country_code : +d.country_code,
 				country_label : d.country_label,
 				asr: +d.asr,
 				smoothed: +d.smoothed
