@@ -376,7 +376,7 @@
 
 					var nodes = bar_graph.append("g")
 						.attr("id","nodes_id")
-						.attr("class", function(d,i) { return "nodes" + " nodes_" + label_input.replace(/\s+/g, '');} )
+						.attr("class", function(d,i) { return "nodes" + " nodes_" + label_input.replace(/\:|\s+/g, '');} )
 						.selectAll()
 						.data(data_nest)
 						.enter()
@@ -448,7 +448,7 @@
 		
 		graph_all.attr("opacity",1)
 		
-		var graph = bar_graph.selectAll(".nodes_" + label_input.replace(/\s+/g, ''));
+		var graph = bar_graph.selectAll(".nodes_" + label_input.replace(/\:|\s+/g, ''));
 		graph.remove();
 
 
@@ -498,7 +498,7 @@
 							.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 							.entries(data_country)
 						
-						console.log("test")
+	
 						update_trend(bar_graph, data_update)
 						
 					}			
@@ -519,7 +519,7 @@
 		}
 		
 		var bar_graph= d3.select("#chart").select(".bar_graph");
-		var graph = bar_graph.selectAll(".nodes:not(.nodes_" + label_input.replace(/\s+/g, '') + ")");
+		var graph = bar_graph.selectAll(".nodes:not(.nodes_" + label_input.replace(/\:|\s+/g, '') + ")");
 
 		graph.attr("opacity", op)
 		
@@ -635,7 +635,7 @@
 			.tickPadding(12)
 			.tickValues(tick_list.major)	
 			.tickFormat(function(d) {
-				return d3.format("")(d).replace(/0+1/,"")	
+				return d3.format("0.2f")(d).replace(/\.?0+$/,"")	
 			});
 			
 					
@@ -876,60 +876,83 @@
 			}
 		} else {
 		
+		
 			var temp = 0;
 			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
 			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
 			
+			console.log(log_min)
+			console.log(log_max)
+			
+			console.log(unit_floor_min)
+			console.log(unit_floor_max)
+			
 			if (log_min == log_max) { // if min and max same magnitude
 			
-				for (var i = unit_floor_min-1; i <= unit_floor_max+1; i++) {
+				for (var i = unit_floor_min; i <= unit_floor_max+1; i++) {
 					
-					if (i == 0) {
-						temp=9*(log_min/10)
-						tick_list.major.push(temp);
-					} else {
-						temp = i*log_min;
-						tick_list.major.push(temp);
-					}
+					temp = i*log_min;
+					tick_list.major.push(temp); // add major tick for ech unit (20,30,40, etc..)
+				}
 
-				}
-				if (unit_floor_min == unit_floor_max) { // min and max same first digit
-				
-					for (var i = 0; i <= 9; i++) {
-						temp = (i*log_min/10); 
-						temp = (unit_floor_min*log_min) + temp;
-						tick_list.minor.push(temp);
-					}
-				}
-				else {
+			
+				if (unit_floor_min == unit_floor_max) { // min and max same first digit 
 					
-					for (var i = 0; i <= 19; i++) {
+					
+					
+					for (var i = 0; i <= 9; i++) { 
 						temp = (i*log_min/10); 
 						temp = (unit_floor_min*log_min) + temp;
 						tick_list.minor.push(temp);
-					}
-				}
-			} else if ((log_max/log_min) < 1000){  //if max and min difference magnitude < 1000
-				
-				if (unit_floor_min < 6) {
-					for (var i = unit_floor_min-1; i <= 5; i++) {
-						
-						if (i == 0) {
-							temp=9*(log_min/10)
-							tick_list.major.push(temp);
-						} 
-						else {
-							temp = i*log_min;
+						if (i % 2 == 0 ) {
 							tick_list.major.push(temp);
 						}
 					}
-				
-				tick_list.major.push(7*log_min);
-				
 				}
 				else {
-					tick_list.major.push((unit_floor_min-1)*log_min);
+
+					for (var i = 0; i <= ((unit_floor_max-unit_floor_min+1)*10)-1; i++) { // minor ticks for every unit/10 for 2 first unit (ie 20,21,22,23,..., 38,39)
+						temp = (i*log_min/10); 
+						temp = (unit_floor_min*log_min) + temp;
+						tick_list.minor.push(temp);
+						if (i < 20 ) {
+							if (i % 2 == 0) {
+								tick_list.major.push(temp);
+							}
+						} 
+						else {
+							if (i % 5 == 0) {
+								tick_list.major.push(temp);
+							}
+							
+						}
+						
+						
+					}
 				}
+
+			}
+			else if ((log_max/log_min) < 100){  //if max and min difference magnitude < 100
+				// major ticks
+				if (unit_floor_min < 5) { // 
+					
+					tick_list.major.push(unit_floor_min*log_min);
+					tick_list.major.push(5*log_min);
+					tick_list.major.push(7*log_min);
+					tick_list.major.push(15*log_min);
+					
+					
+				} else if (unit_floor_min == 5){
+					tick_list.major.push(unit_floor_min*log_min);
+					tick_list.major.push(7*log_min);
+					tick_list.major.push(15*log_min);
+					
+				}
+				else {
+					tick_list.major.push((unit_floor_min)*log_min);
+				}
+				// minor ticks
+
 				
 				for (var i = unit_floor_min; i <= 19; i++) {
 					
@@ -937,76 +960,42 @@
 					tick_list.minor.push(temp);
 				}
 				
-				while (log_min != (log_max/10)) {
-					
-					log_min = log_min*10;
-					tick_list.major.push(log_min);
-					tick_list.major.push(2*log_min);
-					tick_list.major.push(3*log_min);
-					tick_list.major.push(5*log_min);
-					tick_list.major.push(7*log_min);
-					
-					for (var i = 2; i <= 19; i++) {
-						temp = (i*log_min); 
-						tick_list.minor.push(temp);
-					}	
-				}
-				for (var i = 2; i <= unit_floor_max+1; i++) {
-						temp = (i*log_max); 
-						tick_list.minor.push(temp);
+				log_min = log_min*10
+				
+
+				for (var i = 2; i <= unit_floor_max; i++) {
+
+					temp = (i*log_min + (log_min/2)); 
+					tick_list.minor.push(temp);
+		
 				}
 
-				if (unit_floor_max < 5 ) {
-					for (var i = 1; i <= unit_floor_max+1; i++) {
-						temp = (i*log_max); 
-						tick_list.major.push(temp);
+
+				for (var i = 1; i <= unit_floor_max+1; i++) {
+					temp = (i*log_max); 
+					tick_list.major.push(temp);
+				}
+				
+				
+				
+			} 
+			else { //if max and min difference magnitude > 100
+				
+				
+				log_min = log_min*10;
+				for (var i = 1; i <= 9; i++) {
+					tick_list.major.push(i*log_min);
+					
+				}
+				
+				for (var i = 1; i <= ((unit_floor_max+1)*10)-1; i++) {
+					tick_list.minor.push(i*log_min);
+					if (i%5 == 0) {
+						tick_list.major.push(i*log_min);
 					}
 					
-				} else if (unit_floor_max < 7) {
-					tick_list.major.push(log_max);
-					tick_list.major.push(2*log_max);
-					tick_list.major.push(3*log_max);
-					tick_list.major.push(5*log_max);
-					tick_list.major.push((unit_floor_max+1)*log_max);
 					
-				} else {
-					tick_list.major.push(log_max);
-					tick_list.major.push(2*log_max);
-					tick_list.major.push(3*log_max);
-					tick_list.major.push(5*log_max);
-					tick_list.major.push(7*log_max);
-					tick_list.major.push((unit_floor_max+1)*log_max);
-				}
-				
-			} else { //if max and min difference magnitude > 1000
-				
-
-				
-				if (unit_floor_min == 1) {
-					tick_list.major.push(9*(log_min/10));
-					tick_list.major.push(log_min);
-					tick_list.major.push(2*log_min);
-					tick_list.major.push(3*log_min);
-					tick_list.major.push(5*log_min);
-				} else if (unit_floor_min == 2) {
-					tick_list.major.push(log_min);
-					tick_list.major.push(2*log_min);
-					tick_list.major.push(3*log_min);
-					tick_list.major.push(5*log_min);
-				} else if (unit_floor_min < 6) {
-					tick_list.major.push(3*log_min);
-					tick_list.major.push(5*log_min);
-					tick_list.major.push(7*log_min);	
-				} else {
-					tick_list.major.push(5*log_min);
-					tick_list.major.push(7*log_min);	
-				}
-				
-				for (var i = unit_floor_min; i <= 9; i++) {
-				
-					temp = (i*log_min); 
-					tick_list.minor.push(temp);
-
+					
 				}
 				
 				while (log_min != (log_max/10)) {
@@ -1016,15 +1005,39 @@
 					tick_list.major.push(2*log_min);
 					tick_list.major.push(5*log_min);
 					
-					for (var i = 2; i <= 9; i++) {
-						temp = (i*log_min); 
-						tick_list.minor.push(temp);
+					for (var i = 2; i <= ((unit_floor_max+1)*10)-1; i++) {
+						
+						
+						if  (i <= 5) {
+							temp = (i*log_min); 
+							tick_list.minor.push(temp);
+						} else {
+							
+							if (i%5 == 0) {
+								
+							temp = (i*log_min); 
+							tick_list.minor.push(temp);
+								
+							}
+							
+						}
 					}	
 				}
 				
 				for (var i = 2; i <= unit_floor_max+1; i++) {
-					temp = (i*log_max); 
-					tick_list.minor.push(temp);
+					if  (i <= 5) {
+						temp = (i*log_min); 
+						tick_list.minor.push(temp);
+					} else {
+						
+						if (i %5 == 0) {
+							
+						temp = (i*log_min); 
+						tick_list.minor.push(temp);
+							
+						}
+						
+					}
 				}	
 				
 				if (unit_floor_max < 5) {
@@ -1049,16 +1062,32 @@
 				}		
 			}
 		
+		
+		temp = Math.ceil(value_max/(log_max/10)) * (log_max/10) 
+		
+
+		
+		tick_list.major = tick_list.major.filter(function(item) { 
+			return item <= temp;
+		})
+		
+		tick_list.minor = tick_list.minor.filter(function(item) { 
+			return item <= temp;
+		})
+		
+		
+			
 		var max_major = tick_list.major[tick_list.major.length-1];
 		var max_minor = tick_list.minor[tick_list.minor.length-1];
 		
 		var min_major = tick_list.major[0];
-		var min_minor = tick_list.minor[0]
+		var min_minor = tick_list.minor[0]			
 		
-		
-		tick_list.value_top = Math.max(max_major,max_minor)	
-		tick_list.value_bottom = Math.min(min_major,min_minor)	
+		tick_list.value_top = Math.max(max_major,max_minor,temp)	
+		tick_list.value_bottom = Math.min(min_major,min_minor,value_min)	
 		}
+		
+		// 
 	return (tick_list)
 	}
 	
