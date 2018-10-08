@@ -7,7 +7,7 @@
 		
 		
 		var bool_national = document.getElementById("check_regional").checked 
-		console.log(bool_national)
+
 	
 		if (bool_national) {
 			file_use = "data/CI5plus_asr_country.csv"; 
@@ -737,8 +737,7 @@
 
 				awesomplete1.list = cancer_list;
 				
-				console.log(cancer_list)
-				console.log(cancer_input)
+
 				
 				if (!cancer_list.includes(cancer_input)) {
 					
