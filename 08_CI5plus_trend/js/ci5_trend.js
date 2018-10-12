@@ -1,6 +1,6 @@
 
 
-	
+
 
 	function switch_input_field() {
 
@@ -15,10 +15,7 @@
 		active_title = temp
 		
 		
-		// TODO add asterisk if regional data
-		// update title 
-		bar_graph.selectAll(".graph_title") // add x axis subtitle
-				.text(active_title)
+
 				
 		update_placeholder(bool_switch, bool_national)
 				
@@ -33,10 +30,7 @@
 		}
 		
 		
-		
-		bar_graph.selectAll(".regional_text")
-			.transition().duration(transition_time).ease(ease_effect)  
-			.attr("opacity", 0)
+	
 								
 
 		d3.csv(file_use,
@@ -82,6 +76,29 @@
 				var data_trend = data.filter(function(d){
 					return (d.sex == active_sex & d.var_title == active_title & d.var_trend == active_trend)
 				});
+				
+						
+		
+
+				title_label = active_title
+				if (bool_switch) {
+					if (data_trend[0].national == 0) {
+						title_label = title_label + "*"
+						bar_graph.selectAll(".regional_text")
+							.transition().duration(transition_time).ease(ease_effect)  
+							.attr("opacity", 1)
+					}
+					else {
+						bar_graph.selectAll(".regional_text")
+							.transition().duration(transition_time).ease(ease_effect)  
+							.attr("opacity", 0)
+					}
+					
+
+				}
+				// update title 
+				bar_graph.selectAll(".graph_title") // add x axis subtitle
+					.text(title_label)
 				
 				update_scale(bar_graph, data_trend)
 		
@@ -812,8 +829,8 @@
 						var node_label = trend_element[i].getAttribute('label')
 						if (!trend_list.includes(node_label)) {
 							
-							// TODO remove trend element as well
 							
+							trend_element[i].remove();
 							var graph = bar_graph.selectAll(".nodes_" + node_label.replace(/[^a-z]/g, ''));
 							graph.remove();
 							
