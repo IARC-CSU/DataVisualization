@@ -15,6 +15,7 @@
 		active_title = temp
 		
 		
+		// TODO add asterisk if regional data
 		// update title 
 		bar_graph.selectAll(".graph_title") // add x axis subtitle
 				.text(active_title)
@@ -419,15 +420,10 @@
 	var temp_li = document.createElement("li");
 	temp_li.setAttribute("class", "select_trend");
 	temp_li.setAttribute("label", active_trend);
-	
-	
-	var temp_span = document.createElement("span");
-	temp_span.setAttribute("class", "select_remove");
-	temp_span.innerHTML = "x";
-	
-	temp_li.appendChild(temp_span)
 	temp_li.innerHTML = active_trend;
-	console.log(temp_li)
+	
+
+
 	document.getElementById("trend_element").appendChild(temp_li)
 
  }
@@ -810,12 +806,18 @@
 					
 					awesomplete2.list = trend_list;
 					
-					// drop node not include in list
+					
 					for (var i = 0; i < trend_element.length; i++) {
+						
 						var node_label = trend_element[i].getAttribute('label')
 						if (!trend_list.includes(node_label)) {
+							
+							// TODO remove trend element as well
+							
 							var graph = bar_graph.selectAll(".nodes_" + node_label.replace(/[^a-z]/g, ''));
 							graph.remove();
+							
+							
 						}
 					}		
 					
