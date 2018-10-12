@@ -67,7 +67,9 @@
 	<div  class = "input_select_container">
 	<input id="input_trend" placeholder="Add a country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
 	
-	<ul id ="trend_element"></ul>
+	<ul id ="trend_element">
+	<li class="select_trend" label="test">Test</li>
+	</ul>
 	
 	</div>
 	</div>
@@ -76,7 +78,7 @@
 	
 	</div>	
 
-		
+
 		
 
 </body>
@@ -222,12 +224,14 @@ var input_sex = document.getElementById("input_sex");
 
 		
 		if (target == "input_trend") {
-			add_trend(e.text.value, active_title,active_sex)
+			
+			active_trend = e.text.value
+			add_trend()
 
 			
 		} else if (target == "input_title") {
 			active_title = e.text.value
-			update_title(e.text.value, active_sex)
+			update_title()
 
 		} else if (target == "input_sex") {
 			
@@ -239,7 +243,7 @@ var input_sex = document.getElementById("input_sex");
 			}
 		
 		
-			update_sex(active_sex,active_title)
+			update_sex()
 		}
 
 		e.text.value = ""
