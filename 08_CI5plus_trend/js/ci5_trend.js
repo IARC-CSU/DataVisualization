@@ -419,7 +419,15 @@
 	var temp_li = document.createElement("li");
 	temp_li.setAttribute("class", "select_trend");
 	temp_li.setAttribute("label", active_trend);
+	
+	
+	var temp_span = document.createElement("span");
+	temp_span.setAttribute("class", "select_remove");
+	temp_span.innerHTML = "x";
+	
+	temp_li.appendChild(temp_span)
 	temp_li.innerHTML = active_trend;
+	console.log(temp_li)
 	document.getElementById("trend_element").appendChild(temp_li)
 
  }
