@@ -5,11 +5,12 @@
 		bool_switch = !bool_switch 
 		var bool_national = document.getElementById("check_regional").checked; 
 		var bar_graph= d3.select("#chart").select(".bar_graph");
-		
 	
-	
-		active_sex = 1;
 		regional = 0;
+		
+		var temp = active_trend
+		active_trend = active_title
+		active_title = temp
 		
 		// get value do default
 		if (bool_switch) {
@@ -21,11 +22,7 @@
 			else {
 				document.getElementById("input_title").placeholder = "Select registry"
 			}
-				
-			active_title = "Australia"
-			bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text("Australia")
-			
+
 		}
 		else {
 			
@@ -36,12 +33,10 @@
 			else {
 				document.getElementById("input_trend").placeholder = "Add a registry"
 			}
-			
-			
-			active_title = "All cancers excluding non-melanoma skin"
-			bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text("All cancers excluding non-melanoma skin")
 		}
+					
+		bar_graph.selectAll(".graph_title") // add x axis subtitle
+				.text(active_title)
 		
 		// delete all nodes 
 		
@@ -66,17 +61,17 @@
 			},
 			function(data) {
 					
+				var data_temp = data.filter(function(d){
+					return (d.sex == active_sex);
+				});
+				
 				
 				var data_trend = d3.nest()
 					.key(function(d) {return d.var_trend;})
 					.sortKeys(d3.ascending)
-					.entries(data);
+					.entries(data_temp);
 					
 
-					
-				var data_temp = data.filter(function(d){
-					return (d.sex == 1);
-				});
 					
 				var data_title = d3.nest()
 					.key(function(d) {return d.var_title;})
@@ -124,17 +119,32 @@
 		
 		
 		var bool_national = document.getElementById("check_regional").checked 
+		if (bool_switch) {
+			
+			document.getElementById("input_trend").placeholder = "Add a cancer"
+			if (bool_national) {
+				file_use = "data/CI5plus_asr_country.csv"; 
+				document.getElementById("input_title").placeholder = "Select country"
+			} 
+			else {
+				file_use = "data/CI5plus_asr_registry.csv"; 
+				document.getElementById("input_title").placeholder = "Select registry"
+			}
 
-	
-		if (bool_national) {
-			file_use = "data/CI5plus_asr_country.csv"; 
-			document.getElementById("input_trend").placeholder = "Add a country"
-		} 
-		else {
-			file_use = "data/CI5plus_asr_registry.csv"; 
-			document.getElementById("input_trend").placeholder = "Add a registry"
 		}
-	
+		else {
+			
+			document.getElementById("input_title").placeholder = "Select a cancer"
+			if (bool_national) {
+				file_use = "data/CI5plus_asr_country.csv"; 
+				document.getElementById("input_trend").placeholder = "Add a country"
+			} 
+			else {
+				file_use = "data/CI5plus_asr_registry.csv"; 
+				document.getElementById("input_trend").placeholder = "Add a registry"
+			}
+		}
+						
 	
 		if (!bool_first) {
 	
@@ -441,6 +451,8 @@
 		var trend_element = document.getElementById("trend_element").children;
 		var bool_unique = true 
 		
+		active_trend = label_input
+		
 	
 		
 		for (var i = 0; i < trend_element.length; i++) {
@@ -467,8 +479,8 @@
 		
 			
 			
-			console.log(bool_switch)
-			console.log(label_input)
+
+
 			d3.csv(file_use,
 				
 				function(d){
@@ -476,9 +488,7 @@
 				},	
 				function(data) {
 					
-					console.log(data)
-					console.log(active_title)
-					console.log(label_input)
+
 					//filter data 
 					var data_temp = data.filter(function(d){
 						return (d.sex == sex_input & d.var_title == active_title & d.var_trend == label_input)
@@ -527,7 +537,7 @@
 							.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 							.entries(data_trend_old)
 							
-						console.log(data_update)
+
 						update_trend(bar_graph, data_update)
 						
 					}
@@ -624,7 +634,6 @@
 		graph_all.attr("opacity",1)
 		
 		var graph = bar_graph.selectAll(".nodes_" + label_input.replace(/[^a-z]/g, ''));
-		
 		
 		var temp_label = graph[0][0].textContent
 		
@@ -781,7 +790,6 @@
 		
 		var trend_element = document.getElementById("trend_element").children;
 		
-		// update of cancer label list
 		
 		var bar_graph=d3.select("#chart").select(".bar_graph")
 
@@ -793,29 +801,57 @@
 			function(data) {
 					
 					
-				var data_title_temp = data.filter(function(d){
+				var data_temp = data.filter(function(d){
 					return (d.sex == sex_input)
 				});
 					
-				var data_title = d3.nest()
-					.key(function(d) {return d.var_title;})
-					.sortKeys(d3.ascending)
-					.entries(data_title_temp)
-				
-				title_list = [];
-				for (var i = 0; i < data_title.length; i += 1) {
-					title_list.push(data_title[i].key)
-				}
-
-				awesomplete1.list = title_list;
-				
-
-				
-				if (!title_list.includes(active_title)) {
+				if (bool_switch) {
+					var data_trend = d3.nest()
+						.key(function(d) {return d.var_trend;})
+						.sortKeys(d3.ascending)
+						.entries(data_temp)
 					
-					active_title = "All cancers excluding non-melanoma skin";
+					
+					
+					trend_list = [];
+					for (var i = 0; i < data_trend.length; i += 1) {
+						trend_list.push(data_trend[i].key)
+					}
+					
+					awesomplete2.list = trend_list;
+					
+					// drop node not include in list
+					for (var i = 0; i < trend_element.length; i++) {
+						var node_label = trend_element[i].getAttribute('label')
+						if (!trend_list.includes(node_label)) {
+							var graph = bar_graph.selectAll(".nodes_" + node_label.replace(/[^a-z]/g, ''));
+							graph.remove();
+						}
+					}		
 					
 				}
+				else {
+					
+					if (!title_list.includes(active_title)) {
+						active_title = "All cancers excluding non-melanoma skin";
+					}
+					
+					var data_title = d3.nest()
+						.key(function(d) {return d.var_title;})
+						.sortKeys(d3.ascending)
+						.entries(data_temp)
+					
+					title_list = [];
+					for (var i = 0; i < data_title.length; i += 1) {
+						title_list.push(data_title[i].key)
+					}
+
+					awesomplete1.list = title_list;
+				}
+					
+
+				
+				
 				
 				bar_graph.selectAll(".graph_title") // add x axis subtitle
 					.text(active_title)
@@ -853,7 +889,7 @@
 				}
 				
 				
-						div_left_panel.style.opacity = 1;
+			div_left_panel.style.opacity = 1;
 			div_wait.style.opacity = 0;
 			
 		}).on("progress", function(event){
@@ -1151,12 +1187,12 @@
 			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
 			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
 			
-			console.log("tick_info")
-			console.log(log_min)
-			console.log(log_max)
-			console.log(unit_floor_min)
-			console.log(unit_floor_max)
-			console.log("end")
+			//console.log("tick_info")
+			//console.log(log_min)
+			//console.log(log_max)
+			//console.log(unit_floor_min)
+			//console.log(unit_floor_max)
+			//console.log("end")
 			
 			if (log_min == log_max) { // if min and max same magnitude
 			
