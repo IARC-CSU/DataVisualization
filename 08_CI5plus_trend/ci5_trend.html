@@ -40,6 +40,11 @@
 	<div id="left_panel">
 
 
+
+
+	<div class = "div_switch">
+	<button class="switch" onclick="switch_input_field()"/>
+	</div>
 	
 	<div class = "div_regional">
 	<label><input type="checkbox" id="check_regional" checked="checked" onChange=" CI5_trend(false)">Group by country</label>
@@ -47,28 +52,32 @@
 	
 	<div class = "div_select_sex">
 	<div class = "input_select_container">
-	<input id="input_sex" placeholder="select sex" /><button class="dropdown-btn sex" type="button"><span class="caret"></span></button>
+	<input id="input_sex" placeholder="Select sex" /><button class="dropdown-btn sex" type="button"><span class="caret"></span></button>
 	</div>
 	</div>
 	
 	<div class = "div_select_1">
 	<div class = "input_select_container">
-	<input id="input_cancer" placeholder="select a cancer" /><button class="dropdown-btn select1" type="button"><span class="caret"></span></button>
+	<input id="input_title" placeholder="Select a cancer" /><button class="dropdown-btn select1" type="button"><span class="caret"></span></button>
 	</div>
 	</div>
 	
 	<div class = "div_select_2">
 
 	<div  class = "input_select_container">
-	<input id="input_country" placeholder="add a country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
+	<input id="input_trend" placeholder="Add a country" /><button class="dropdown-btn select2" type="button"><span class="caret"></span></button>
 	
-	<ul id ="country_element"></ul>
+	<ul id ="trend_element">
+	</ul>
 	
 	</div>
 	</div>
+	
+
+	
 	</div>	
 
-		
+
 		
 
 </body>
@@ -87,6 +96,7 @@
 	var XgridSize = 10; 
 	
 	var bool_national = false; 
+	var bool_switch = false; 
 
 	var div_left_panel = document.getElementById("left_panel"); 
 	var div_wait = document.getElementById("wait"); 
@@ -97,7 +107,8 @@
 	var graph_height = 600;
 	var graph_width = 520;
 		
-	var active_cancer = "All cancers excluding non-melanoma skin";
+	var active_trend = "Australia";
+	var active_title = "All cancers excluding non-melanoma skin";
 	var active_sex = 1;
 
 	var regional = 0;
@@ -113,7 +124,7 @@
 	var lineFunction = d3.svg.line()
 		.x(function(d,i){return xScale(d.values[0].year); })
 		.y(function(d,i)  { 
-			return yScale(d.values[0].smoothed); })
+			return yScale(d.values[0].value); })
 		.interpolate("linear");
 		
 	var color_scale_10 = d3.scale.category10();
@@ -154,8 +165,8 @@ var input_sex = document.getElementById("input_sex");
 	
 	awesomplete_sex.list = ["Male", "Female"];
 	
-	var input_cancer = document.getElementById("input_cancer");
-	var awesomplete1 = new Awesomplete(input_cancer, {
+	var input_title = document.getElementById("input_title");
+	var awesomplete1 = new Awesomplete(input_title, {
 		minChars: 0,
 		maxItems: 500,
 		autoFirst:true,
@@ -178,8 +189,8 @@ var input_sex = document.getElementById("input_sex");
 		}
 	});
 	
-	var input_country = document.getElementById("input_country");
-	var awesomplete2 = new Awesomplete(input_country, {
+	var input_trend = document.getElementById("input_trend");
+	var awesomplete2 = new Awesomplete(input_trend, {
 		minChars: 0,
 		maxItems: 500,
 		autoFirst:true,
@@ -211,13 +222,15 @@ var input_sex = document.getElementById("input_sex");
 		target = e.target.id
 
 		
-		if (target == "input_country") {
-			add_country(e.text.value, active_cancer,active_sex)
+		if (target == "input_trend") {
+			
+			active_trend = e.text.value
+			add_trend()
 
 			
-		} else if (target == "input_cancer") {
-			active_cancer = e.text.value
-			update_cancer(e.text.value, active_sex)
+		} else if (target == "input_title") {
+			active_title = e.text.value
+			update_title()
 
 		} else if (target == "input_sex") {
 			
@@ -229,7 +242,7 @@ var input_sex = document.getElementById("input_sex");
 			}
 		
 		
-			update_sex(active_sex,active_cancer)
+			update_sex()
 		}
 
 		e.text.value = ""
@@ -238,31 +251,31 @@ var input_sex = document.getElementById("input_sex");
 	
 
 	// 
-	$("#country_element").on("click", ".select_country", function(event){
+	$("#trend_element").on("click", ".select_trend", function(event){
 		
-		country_label = this.attributes.label.value;
+		trend_label = this.attributes.label.value;
 
 		$(this).remove();
 		
-		remove_country(country_label,active_cancer, active_sex )
+		remove_trend(trend_label,active_title, active_sex )
 
 	});
 	
-	$("#country_element").on("mouseover", ".select_country", function(event){
+	$("#trend_element").on("mouseover", ".select_trend", function(event){
 		
-		country_label = this.attributes.label.value;
+		trend_label = this.attributes.label.value;
 
 		
-		highlight_country(country_label, true)
+		highlight_trend(trend_label, true)
 
 	});
 	
-	$("#country_element").on("mouseout", ".select_country", function(event){
+	$("#trend_element").on("mouseout", ".select_trend", function(event){
 		
-		country_label = this.attributes.label.value;
+		trend_label = this.attributes.label.value;
 
 
-		highlight_country(country_label, false)
+		highlight_trend(trend_label, false)
 
 	});
 
