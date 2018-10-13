@@ -72,12 +72,13 @@
 
 				awesomplete1.list = title_list;
 				
+				console.log(active_sex + active_title + active_trend)
 				// update scale 
 				var data_trend = data.filter(function(d){
 					return (d.sex == active_sex & d.var_title == active_title & d.var_trend == active_trend)
 				});
 				
-						
+				console.log(data_trend)
 		
 
 				title_label = active_title
@@ -129,21 +130,42 @@
 	{	
 		
 		
-		
+			
 		var bool_national = document.getElementById("check_regional").checked 
 		update_placeholder(bool_switch, bool_national) 
 						
 	
 		if (!bool_first) {
-	
-			// get value do default
-			active_title = "All cancers excluding non-melanoma skin";
-			active_sex = 1;
+			
+			var bar_graph= d3.select("#chart").select(".bar_graph");
+			
+			if (bool_national) {
+					var active_temp = "Australia";
+					title_label = active_temp + "*"
+					var op = 1
+					
+				}
+				else {
+					var active_temp = "Australia_NSW_ACT"
+					title_label = active_temp
+					var op = 0
+				}
+			
+			if (bool_switch) {
+				active_title = active_temp
+			} else {
+				active_trend = active_temp
+				title_label = active_title
+				
+			}
+			bar_graph.selectAll(".graph_title") // add x axis subtitle
+					.text(title_label)
+			
 			regional = 0;
 
 			// delete all nodes 
 			
-			var bar_graph= d3.select("#chart").select(".bar_graph");
+		
 			var graph = bar_graph.selectAll(".nodes");
 			graph.remove()
 			
@@ -154,7 +176,7 @@
 			
 			bar_graph.selectAll(".regional_text")
 				.transition().duration(transition_time).ease(ease_effect)  
-				.attr("opacity", 0)
+				.attr("opacity", op)
 								
 			
 		}
@@ -170,15 +192,17 @@
 			function(data) {
 					
 				
-				
+				var data_trend_temp = data.filter(function(d){
+					return (d.sex == active_sex);
+				});
 				
 				var data_trend = d3.nest()
 					.key(function(d) {return d.var_trend;})
 					.sortKeys(d3.ascending)
-					.entries(data);
+					.entries(data_trend_temp);
 					
 				var data_title_temp = data.filter(function(d){
-					return (d.sex == 1);
+					return (d.sex == active_sex);
 				});
 					
 				var data_title = d3.nest()
@@ -200,18 +224,13 @@
 				}
 
 				awesomplete1.list = title_list;
-				
-				//filter data 
-				var data_temp = data.filter(function(d){
-					return (d.sex == 1 & d.var_title == active_title);
-				});
-				
-				
-				// create graph
 								
 				if (bool_first) {
-					var bar_graph= // create array with both bargraph
-					d3.select("#chart").append("svg") // draw main windows
+					
+
+				
+					var bar_graph=
+					d3.select("#chart").append("svg") 
 						.attr("width", width + margin.left + margin.right)
 						.attr("height", height + margin.top + margin.bottom)
 						.append("g")
@@ -227,7 +246,9 @@
 							.attr("opacity", 0)
 							.attr("dy", "0.15em")
 							
-					
+					var data_temp = data.filter(function(d){
+						return (d.sex == active_sex & d.var_title == active_title);
+					});
 
 
 					add_axis_title(bar_graph,data_temp);
@@ -841,9 +862,7 @@
 				}
 				else {
 					
-					if (!title_list.includes(active_title)) {
-						active_title = "All cancers excluding non-melanoma skin";
-					}
+					
 					
 					var data_title = d3.nest()
 						.key(function(d) {return d.var_title;})
@@ -853,6 +872,11 @@
 					title_list = [];
 					for (var i = 0; i < data_title.length; i += 1) {
 						title_list.push(data_title[i].key)
+					}
+					
+					
+					if (!title_list.includes(active_title)) {
+						active_title = "All cancers excluding non-melanoma skin";
 					}
 
 					awesomplete1.list = title_list;
