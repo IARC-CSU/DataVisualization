@@ -18,12 +18,22 @@
 					return (d.sex == active_sex & d.var_title == active_title)
 				});
 				
+				console.log(data_trend)
+				
+				
 				var data_update=d3.nest()
-					.key(function(d) { return d.var_trend; }).sortKeys(d3.ascending)
-					.key(function(d) {return d.year;}).sortKeys(d3.ascending)
-					.entries(data_update)
+					.key(function(d) { return d.var_trend; })
+					.rollup(function(v) {
+						return  v[v.length-1].value; 
+					})
+					.entries(data_trend)
+					.sort(function(a, b){ return d3.descending(a.values, b.values); });
 					
+
+	
+				
 				console.log(data_update)
+		
 		
 			
 				
