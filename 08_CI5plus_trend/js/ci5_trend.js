@@ -1,6 +1,47 @@
 
 
+	function add_top() {
+		
+		nb_top = 5
+		var bar_graph=d3.select("#chart").select(".bar_graph")
+		
+		// remove all nodes
+		
+		d3.csv(file_use,
+			
+			function(d){
+				return parse_variable(d);
+			},		
+			function(data) {
+				
+				var data_trend = data.filter(function(d){
+					return (d.sex == active_sex & d.var_title == active_title)
+				});
+				
+				var data_update=d3.nest()
+					.key(function(d) { return d.var_trend; }).sortKeys(d3.ascending)
+					.key(function(d) {return d.year;}).sortKeys(d3.ascending)
+					.entries(data_update)
+					
+				console.log(data_update)
+		
+			
+				
+			
+				
+			div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
+			
+		}).on("progress", function(event){
 
+			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
+			 
+		});
+		
+		
+	}
+	
 
 	function switch_input_field() {
 
@@ -179,9 +220,6 @@
 			
 		}
 		
-		
-
-
 		d3.csv(file_use,
 			
 			function(d){
@@ -1549,6 +1587,9 @@
 		
 		
 	}
+	
+	
+	
 	
 	function dragmove(d) {
     d3.select(this)
