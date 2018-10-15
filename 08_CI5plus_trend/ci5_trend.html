@@ -95,6 +95,8 @@
 	
 	var XgridSize = 10; 
 	
+	var var_fix;
+	
 	var bool_national = false; 
 	var bool_switch = false; 
 
@@ -251,11 +253,16 @@ var input_sex = document.getElementById("input_sex");
 	
 
 	// 
-	$("#trend_element").on("click", ".select_trend", function(event){
-		
-		trend_label = this.attributes.label.value;
+	
 
-		$(this).remove();
+	
+	
+	$("#trend_element").on("click", ".select_remove", function(event){
+		
+		trend_label = $(this).parent().attr("label")
+		
+		$(this).parent().remove()
+		//$(this).remove();
 		
 		remove_trend(trend_label,active_title, active_sex )
 

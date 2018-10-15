@@ -72,13 +72,11 @@
 
 				awesomplete1.list = title_list;
 				
-				console.log(active_sex + active_title + active_trend)
 				// update scale 
 				var data_trend = data.filter(function(d){
 					return (d.sex == active_sex & d.var_title == active_title & d.var_trend == active_trend)
 				});
 				
-				console.log(data_trend)
 		
 
 				title_label = active_title
@@ -458,12 +456,18 @@
 	var temp_li = document.createElement("li");
 	temp_li.setAttribute("class", "select_trend");
 	temp_li.setAttribute("label", active_trend);
+	
+	var temp_span = document.createElement("span");
+	temp_span.setAttribute("class", "select_remove");
+	temp_span.innerHTML = "x";
+	
 	temp_li.innerHTML = active_trend;
 	
 
-
-	document.getElementById("trend_element").appendChild(temp_li)
-
+	temp_li.prepend(temp_span);
+	document.getElementById("trend_element").appendChild(temp_li);
+	
+	
  }
 	
 	function add_trend() {
@@ -490,19 +494,25 @@
 				},	
 				function(data) {
 					
-									
+							
 					var bar_graph=d3.select("#chart").select(".bar_graph")
 					
 					var nb_trend = trend_element.length -1
+					
 					trend_list = [];
 					for (var i = 0; i <= nb_trend; i += 1) { 
-						trend_list.push(trend_element[i].innerHTML)
+						
+						
+						trend_list.push(trend_element[i].getAttribute('label'))
 					}
+					
+					
 					
 
 					var data_trend = data.filter(function(d){
 						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
 					});
+					
 					
 					update_scale(bar_graph, data_trend)
 					
@@ -522,7 +532,7 @@
 					var data_temp = data.filter(function(d){
 						return (d.sex == active_sex & d.var_title == active_title & d.var_trend == active_trend)
 					});
-					
+							
 					add_node(bar_graph,data_temp,nb_trend)
 
 			div_left_panel.style.opacity = 1;
@@ -619,7 +629,7 @@
 		var nb_trend = trend_element.length -1
 		trend_list = [];
 		for (var i = 0; i <= nb_trend; i += 1) { 
-			trend_list.push(trend_element[i].innerHTML)
+			trend_list.push(trend_element[i].getAttribute('label'))
 			
 		}
 		
@@ -744,7 +754,7 @@
 
 				trend_list = [];
 				for (var i = 0; i <= nb_trend; i += 1) { 
-					trend_list.push(trend_element[i].innerHTML)
+					trend_list.push(trend_element[i].getAttribute('label'))
 					
 				}
 
@@ -755,7 +765,6 @@
 						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
 					});
 					
-					console.log(data_trend)
 				
 					update_scale(bar_graph, data_trend)
 					update_trend(bar_graph, data_trend)
@@ -898,7 +907,7 @@
 
 				trend_list = [];
 				for (var i = 0; i <= nb_trend; i += 1) { 
-					trend_list.push(trend_element[i].innerHTML)
+					trend_list.push(trend_element[i].getAttribute('label'))
 					
 				}
 

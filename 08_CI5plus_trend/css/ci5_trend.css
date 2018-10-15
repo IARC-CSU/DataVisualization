@@ -284,7 +284,7 @@ div.input_select_container .caret {
     background-color: #e4e4e4;
     border: 1px solid #aaa;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: context-menu;
     color: #000;
     float: left;
     margin-right: 5px;
@@ -292,6 +292,19 @@ div.input_select_container .caret {
     padding: 0 5px;
 }
 
+
+
+.select_remove{
+	color: #999;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.select_remove:hover {
+    color: #333;
+}
 ul {
     padding: 0;
 	width:200px;
