@@ -1,6 +1,138 @@
 
 
+	function add_top(nb_top,type ) {
+		
+		var bar_graph=d3.select("#chart").select(".bar_graph")
+		var trend_element = document.getElementById("trend_element").children;
+		
+		// remove all nodes
+		
+		d3.csv(file_use,
+			
+			function(d){
+				return parse_variable(d);
+			},		
+			function(data) {
+				
+				var data_trend = data.filter(function(d){
+					return (d.sex == active_sex & d.var_title == active_title)
+				});
+				
+				console.log(active_title)
+				console.log(data_trend)
+				
+				var data_sort=d3.nest()
+					.key(function(d) { return d.var_trend; })
+					.rollup(function(v) {
+						
+						console.log(v)
+						console.log(v.length)
+						
+						var temp = Math.max(0,v.length-10)
+						var temp2 = v.length-temp 
+						
+						return  {
+							eapc: 100*(Math.pow(v[v.length-1].value / v[temp].value, 1/[temp2])-1),
+							last: v[v.length-1].value
+						};
+					})
+					.entries(data_trend)
+					
+				
+				if (type == 1) {
+					data_sort.sort(function(a, b){ return d3.descending(a.values.last, b.values.last); });
+				}
+				else if (type == 2){
+					data_sort.sort(function(a, b){ return d3.descending(a.values.eapc, b.values.eapc); });
+				} 
+				else if (type == 3){
+					data_sort.sort(function(a, b){ return d3.ascending(a.values.eapc, b.values.eapc); });
+				} 
+				
+				console.log(data_sort)
+				
+							
+				// add new trend from data_sort to top _list
+				var nb_trend = trend_element.length -1
+				var trend_list = [];
+				for (var i = 0; i <= nb_trend; i += 1) { 	
+					trend_list.push(trend_element[i].getAttribute('label'))
+				}
+				
+				var top_list = [];
+				
+				if (bool_switch) {
+					var start = 1; 
+				} 
+				else {
+					var start = 0;
+				}
+				
+				for (var i = start; i < nb_top+ start; i += 1) {
+					
+					if (!trend_list.includes(data_sort[i].key)) {
+						top_list.push(data_sort[i].key);
+					}
+				}
+								
+				// add new tag
+				for (var i = 0; i < top_list.length; i += 1) {
+					add_tag(top_list[i])
+				}
+				
+				
+				active_trend = top_list[0];
+				
+				// create data for scale
+				nb_trend = trend_element.length -1
+				trend_list = [];
+				for (var i = 0; i <= nb_trend; i += 1) { 	
+					trend_list.push(trend_element[i].getAttribute('label'))
+				}
+				
+				var data_trend = data.filter(function(d){
+					return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
+				});
+					
+				update_scale(bar_graph, data_trend)
+				
+				// add new data 
+				if (trend_list.length > nb_top) {
+						
+					trend_list.pop();
+					console.log(trend_list)
+					
+					var trend_old = trend_list.slice(0,trend_list.length-top_list.length+1);
+						
+					var data_trend_old = data.filter(function(d){
+						return (d.sex == active_sex & d.var_title == active_title & trend_old.includes(d.var_trend))
+					});
+								
 
+					update_trend(bar_graph, data_trend_old)
+						
+				}
+					
+				var data_temp = data.filter(function(d){
+					return (d.sex == active_sex & d.var_title == active_title & top_list.includes(d.var_trend))
+				});
+						
+				add_node(bar_graph,data_temp,nb_trend)
+				
+				
+			div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
+			
+		}).on("progress", function(event){
+
+			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
+			 
+		});
+		
+		
+	}
+	
 
 	function switch_input_field() {
 
@@ -105,7 +237,7 @@
 				
 				if (nb_node > 0) {
 					
-					add_tag()
+					add_tag(active_trend)
 					add_node(bar_graph,data_trend,0)
 
 				}
@@ -179,9 +311,6 @@
 			
 		}
 		
-		
-
-
 		d3.csv(file_use,
 			
 			function(d){
@@ -451,17 +580,17 @@
 			 			
 	}
 	
-	function add_tag() {
+	function add_tag(label) {
 	 
 	var temp_li = document.createElement("li");
 	temp_li.setAttribute("class", "select_trend");
-	temp_li.setAttribute("label", active_trend);
+	temp_li.setAttribute("label", label);
 	
 	var temp_span = document.createElement("span");
 	temp_span.setAttribute("class", "select_remove");
 	temp_span.innerHTML = "x";
 	
-	temp_li.innerHTML = active_trend;
+	temp_li.innerHTML = label;
 	
 
 	temp_li.prepend(temp_span);
@@ -484,7 +613,7 @@
 		
 		if (bool_unique) {
 			
-			 add_tag()
+
 
 
 			d3.csv(file_use,
@@ -497,6 +626,8 @@
 							
 					var bar_graph=d3.select("#chart").select(".bar_graph")
 					
+					add_tag(active_trend)
+					
 					var nb_trend = trend_element.length -1
 					
 					trend_list = [];
@@ -507,7 +638,7 @@
 					}
 					
 					
-					
+
 
 					var data_trend = data.filter(function(d){
 						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
@@ -550,22 +681,31 @@
 		}
 	}
 		
-	function add_node(graph,data, nb_trend) {
+	function add_node(graph,data) {
+		
+		var trend_element = document.getElementById("trend_element").children;
+		var nb_trend = trend_element.length-1
+
+		var trend_list = [];
+		for (var i = 0; i <= nb_trend; i += 1) { 
+			trend_list.push(trend_element[i].getAttribute('label'))
+			
+		}
+	
 		
 		var data_nest=d3.nest()
-			.key(function(d) {return d.var_trend;})
-			.sortKeys(d3.ascending)
-			.key(function(d) {return d.year;})
-			.sortKeys(d3.ascending)
-			.entries(data)
+		.key(function(d) { return d.var_trend; }).sortKeys(function(a,b) { return trend_list.indexOf(a) - trend_list.indexOf(b); })
+		.key(function(d) {return d.year;}).sortKeys(d3.ascending)
+		.entries(data)
 
+		
 		var nodes = graph.append("g")
-			.attr("id","nodes_id")
-			.attr("class", function(d,i) { return "nodes" + " nodes_" + active_trend.replace(/[^a-z]/g, '');} )
 			.selectAll()
 			.data(data_nest)
 			.enter()
 			.append("g")
+			.attr("class", function(d,i) { 
+				return "nodes" + " nodes_" + d.key.replace(/[^a-z]/g, '');} )
 			.attr("transform", function(d, i) {
 				return "translate(0,0)";
 				})
@@ -585,19 +725,7 @@
 			
 		path.call(transition);
 		
-		var trend_label = active_trend 
-		
-		if (!bool_switch) {
-			var nat = data_nest[0].values[0].values[0].national
-			if (nat == 0 ) {
-				trend_label = active_trend + "*"
-				regional = regional + 1 
-				
-				graph.selectAll(".regional_text")
-					.transition().duration(transition_time).ease(ease_effect)  
-					.attr("opacity", 1)
-			}
-		}
+	
 		
 		setTimeout(function() {
 		 nodes.append("text")
@@ -612,41 +740,63 @@
 				temp = d.values[nb_year-1].values[0];	
 				return (yScale(temp.value));
 			})
-			.text(trend_label.replace(/_/, ', '))
+			.text( function (d,i) {
+				var trend_label = d.key 
+				if (!bool_switch) {
+					var nat = d.values[0].values[0].national
+					if (nat == 0 ) {
+						trend_label = trend_label + "*";
+						regional = regional + 1; 
+						graph.selectAll(".regional_text")
+							.transition().duration(transition_time).ease(ease_effect)  
+							.attr("opacity", 1)
+					}
+				}
+				return trend_label.replace(/_/, ', ');
+			})
 			.attr("dy", "0.15em")
 			.call(drag)
 		}, transition_time)
+		
 
 		
 		
 	}
 		
-	function remove_trend(label_input, active_title, sex_input) {
+	function remove_trend(label_input, active_title) {
 		
-	
+		var bool_national = document.getElementById("check_regional").checked; 
+		
 		
 		var trend_element = document.getElementById("trend_element").children;
 		var nb_trend = trend_element.length -1
 		trend_list = [];
+
 		for (var i = 0; i <= nb_trend; i += 1) { 
 			trend_list.push(trend_element[i].getAttribute('label'))
 			
 		}
 		
+		
 
 		
 		if (trend_list.length > 0) {
-			active_trend = trend_list[trend_list.length-2];
+			active_trend = trend_list[trend_list.length-1];
 		} else {
 			if (bool_switch) {
 				active_trend = "All cancers excluding non-melanoma skin"
 			} 
 			else {
-				active_trend = "Australia"
+				if (bool_national) {
+					active_trend = "Australia"
+				} 
+				else {
+					active_trend = "Australia_NSW_ACT"
+				}
 			}
 		}
 	
-		
+
 		
 		// remove element
 		
@@ -671,9 +821,12 @@
 		}
 		
 		graph.remove();
+		
 
 
 		// update scale
+		
+		console.log(trend_list)
 		
 		if (trend_list.length > 0) {
 		
@@ -693,19 +846,19 @@
 	
 					
 					var data_trend = data.filter(function(d){
-						return (d.sex == sex_input & d.var_title == active_title & trend_list.includes(d.var_trend))
+						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
 					});
+					
+		
+					
 					
 					update_scale(bar_graph, data_trend)
 					
 					// update other countries
+
+					update_trend(bar_graph, data_trend)
 						
-						
-					if (trend_list.length > 0) {
-						
-						update_trend(bar_graph, data_trend)
-						
-					}			
+							
 
 				}
 			)
@@ -919,7 +1072,7 @@
 				
 					update_scale(bar_graph, data_trend)
 				
-					update_trend(bar_graph, data_trend)
+					update_trend(bar_graph, data_trend, trend_list)
 					
 				
 					
@@ -943,147 +1096,172 @@
 		
 	function update_scale (graph, data) {
 		
-
-		var y_max = d3.max(data, function(d) {return d.value})
-		var y_min = d3.min(data, function(d) {return d.value})
-		var tick_list = tick_generator(y_max, y_min, true)
+		console.log(data.length)
 		
-
-		
-		yScale.domain([tick_list.value_bottom,tick_list.value_top]); // update xscale domain
-		
-		
-		var x_max = d3.max(data, function(d) {return d.year})
-		var x_min = d3.min(data, function(d) {return d.year})
-		
-		
-		var tick_year_list = tick_year_generator(x_max, x_min)
-
-		xScale.domain([tick_year_list.value_bottom,tick_year_list.value_top]); // update xscale domain
-
-		
-	
-		axis_y = graph_height
-		axis_tick_major = 8
-		axis_tick_minor = 5
-		
-		
-
-
-		var yAxis = d3.svg.axis() 
-			.scale(yScale)
-			.orient("left")
-			.tickSize(-graph_width, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_list.major)	
-			.tickFormat(function(d) {
-				return d3.format("0.3f")(d).replace(/\.?0+$/,"")	
-			});
+		if (data.length > 0)  {
 			
+			var y_max = d3.max(data, function(d) {return d.value})
+			var y_min = d3.min(data, function(d) {return d.value})
+			
+
+			
+			
+			
+			var tick_list = tick_generator(y_max, y_min, true)
+			
+
+			
+			yScale.domain([tick_list.value_bottom,tick_list.value_top]); // update xscale domain
+			
+			
+			var x_max = d3.max(data, function(d) {return d.year})
+			var x_min = d3.min(data, function(d) {return d.year})
+			
+			
+			var tick_year_list = tick_year_generator(x_max, x_min)
+
+			xScale.domain([tick_year_list.value_bottom,tick_year_list.value_top]); // update xscale domain
+
+			
+		
+			axis_y = graph_height
+			axis_tick_major = 8
+			axis_tick_minor = 5
+			
+			
+
+
+			var yAxis = d3.svg.axis() 
+				.scale(yScale)
+				.orient("left")
+				.tickSize(-graph_width, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_list.major)	
+				.tickFormat(function(d) {
+					return d3.format("0.3f")(d).replace(/\.?0+$/,"")	
+				});
+				
+						
+			var yAxis_minor = d3.svg.axis() 
+				.scale(yScale)  
+				.orient("left")
+				.tickSize(-graph_width, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_list.minor)	
+				.tickFormat("")	;
+				
+			var xAxis = d3.svg.axis() 
+				.scale(xScale)
+				.orient("bottom")
+				.tickSize(-graph_height-20, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_year_list.major)	
+				.tickFormat(d3.format(""));
+				
+			var xAxis_minor = d3.svg.axis() 
+				.scale(xScale)  
+				.orient("bottom")
+				.tickSize(-graph_height-20, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_year_list.minor)	
+				.tickFormat("")	;	
+				
+			var yAxis_tick = d3.svg.axis() 
+				.scale(yScale)
+				.orient("left")
+				.tickSize(8, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_list.major)
+				.tickFormat("");			
+
+			var yAxis_minor_tick = d3.svg.axis() 
+				.scale(yScale)  
+				.orient("left")
+				.tickSize(5, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_list.minor)	
+				.tickFormat("");
+
+				
+			var xAxis_tick = d3.svg.axis() 
+				.scale(xScale)
+				.orient("bottom")
+				.tickSize(8, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_year_list.major)
+				.tickFormat("");			
+
+				
+			var xAxis_minor_tick = d3.svg.axis() 
+				.scale(xScale)  
+				.orient("bottom")
+				.tickSize(5, 0,0)
+				.tickPadding(12)
+				.tickValues(tick_year_list.minor)
+				.tickFormat("");			
+
+				
 					
-	    var yAxis_minor = d3.svg.axis() 
-			.scale(yScale)  
-			.orient("left")
-			.tickSize(-graph_width, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_list.minor)	
-			.tickFormat("")	;
+			graph.selectAll( ".yaxis")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(yAxis);
+					
+			graph.selectAll( ".xaxis")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(xAxis);
+					
+			graph.selectAll( ".yaxis_minor")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(yAxis_minor);
 			
-		var xAxis = d3.svg.axis() 
-			.scale(xScale)
-			.orient("bottom")
-			.tickSize(-graph_height-20, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_year_list.major)	
-			.tickFormat(d3.format(""));
+			graph.selectAll( ".xaxis_minor")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(xAxis_minor);
 			
-	    var xAxis_minor = d3.svg.axis() 
-			.scale(xScale)  
-			.orient("bottom")
-			.tickSize(-graph_height-20, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_year_list.minor)	
-			.tickFormat("")	;	
+			graph.selectAll( ".yaxis_tick")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(yAxis_tick);
+					
+			graph.selectAll( ".xaxis_tick")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(xAxis_tick);
+					
+			graph.selectAll( ".yaxis_minor_tick")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(yAxis_minor_tick);
 			
-		var yAxis_tick = d3.svg.axis() 
-			.scale(yScale)
-			.orient("left")
-			.tickSize(8, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_list.major)
-			.tickFormat("");			
-
-	    var yAxis_minor_tick = d3.svg.axis() 
-			.scale(yScale)  
-			.orient("left")
-			.tickSize(5, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_list.minor)	
-			.tickFormat("");
-
+			graph.selectAll( ".xaxis_minor_tick")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.call(xAxis_minor_tick);
 			
-		var xAxis_tick = d3.svg.axis() 
-			.scale(xScale)
-			.orient("bottom")
-			.tickSize(8, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_year_list.major)
-			.tickFormat("");			
-
-			
-	    var xAxis_minor_tick = d3.svg.axis() 
-			.scale(xScale)  
-			.orient("bottom")
-			.tickSize(5, 0,0)
-			.tickPadding(12)
-			.tickValues(tick_year_list.minor)
-			.tickFormat("");			
-
-			
+		}
 				
-		graph.selectAll( ".yaxis")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(yAxis);
-				
-		graph.selectAll( ".xaxis")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(xAxis);
-				
-		graph.selectAll( ".yaxis_minor")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(yAxis_minor);
-		
-		graph.selectAll( ".xaxis_minor")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(xAxis_minor);
-		
-		graph.selectAll( ".yaxis_tick")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(yAxis_tick);
-				
-		graph.selectAll( ".xaxis_tick")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(xAxis_tick);
-				
-		graph.selectAll( ".yaxis_minor_tick")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(yAxis_minor_tick);
-		
-		graph.selectAll( ".xaxis_minor_tick")
-		.transition().duration(transition_time).ease(ease_effect)  
-		.call(xAxis_minor_tick);
-			
 
 		
 	}
 	
 	function update_trend (graph, data) {
+	
+	
+	
+	var trend_element = document.getElementById("trend_element").children;
+	var nb_trend = trend_element.length-1
+
+	var trend_list = [];
+	for (var i = 0; i <= nb_trend; i += 1) { 
+		trend_list.push(trend_element[i].getAttribute('label'))
+		
+	}
+	
+
 		
 	var data_update=d3.nest()
 		.key(function(d) { return d.var_trend; }).sortKeys(function(a,b) { return trend_list.indexOf(a) - trend_list.indexOf(b); })
 		.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 		.entries(data)
 		
+
+			
 		graph.selectAll(".trend")
 		.data(data_update)
 		.transition().duration(transition_time).ease(ease_effect)
@@ -1229,12 +1407,12 @@
 			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
 			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
 			
-			//console.log("tick_info")
-			//console.log(log_min)
-			//console.log(log_max)
-			//console.log(unit_floor_min)
-			//console.log(unit_floor_max)
-			//console.log("end")
+			console.log("tick_info")
+			console.log(log_min)
+			console.log(log_max)
+			console.log(unit_floor_min)
+			console.log(unit_floor_max)
+			console.log("end")
 			
 			if (log_min == log_max) { // if min and max same magnitude
 			
@@ -1549,6 +1727,9 @@
 		
 		
 	}
+	
+	
+	
 	
 	function dragmove(d) {
     d3.select(this)

@@ -48,26 +48,50 @@ body {
     position: relative;
     top: -775px;
 	opacity:0;
+	left: 50px;
 	 
 	}
 	
 .div_switch {
     position: relative;
     top: -670px;
-    left: -40px;
+	 
+	}
+	
+.div_top1 {
+    position: relative;
+    top: -570px;
+	left: -10px;
+	 
+	}
+	
+.div_top2 {
+    position: relative;
+    top: -500px;
+	left: -10px;
+	 
+	}
+	
+.div_top3 {
+    position: relative;
+    top: -430px;
+	left: -10px;
 	 
 	}
 	
 .div_regional {
     position: relative;
     top: -770px;
+	left: 50px;
     width: 250px;
+	
 	 
 	}
 	
 .div_select_sex {
     position: relative;
     top: -765px;
+	left: 50px;
     width: 250px;
 	 
 	}
@@ -76,6 +100,7 @@ body {
 .div_select_1 {
     position: relative;
     top: -760px;
+	left: 50px;
     width: 250px;
 	 
 	}
@@ -83,6 +108,7 @@ body {
 .div_select_2 {
     position: relative;
     top: -755px;
+	left: 50px;
     width: 250px;
 	 
 	}
@@ -121,6 +147,45 @@ button.switch:hover {
 button.switch:active {
 	background:#28ade9;
 	background-image: url("button_switch_active.png");
+}
+
+button.top {
+	width:55px;
+	height:30px;
+	background:#61c2ee;
+	border-radius:10%;
+	border-color:#a0a0a0;
+	border-width:0.5px;
+	border-style:solid;
+	outline:none;
+	}
+
+button.top:hover {
+	background:#28ade9;
+}
+
+button.top.asr {
+	background-image: url("button_top_ASR.png");
+}
+
+button.top.asr:hover {
+	background-image: url("button_top_ASR.png");
+}
+
+button.top.drift_max {
+	background-image: url("button_top_drift.png");
+}
+
+button.top.drift_max:hover {
+	background-image: url("button_top_drift.png");
+}
+
+button.top.drift_min {
+	background-image: url("button_top_drift_min.png");
+}
+
+button.top.drift_min:hover {
+	background-image: url("button_top_drift_min.png");
 }
 
 #check_switch {
