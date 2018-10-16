@@ -48,26 +48,36 @@ body {
     position: relative;
     top: -775px;
 	opacity:0;
+	left: 50px;
 	 
 	}
 	
 .div_switch {
     position: relative;
     top: -670px;
-    left: -40px;
+	 
+	}
+	
+	.div_top1 {
+    position: relative;
+    top: -570px;
+	left: -10px;
 	 
 	}
 	
 .div_regional {
     position: relative;
     top: -770px;
+	left: 50px;
     width: 250px;
+	
 	 
 	}
 	
 .div_select_sex {
     position: relative;
     top: -765px;
+	left: 50px;
     width: 250px;
 	 
 	}
@@ -76,6 +86,7 @@ body {
 .div_select_1 {
     position: relative;
     top: -760px;
+	left: 50px;
     width: 250px;
 	 
 	}
@@ -83,6 +94,7 @@ body {
 .div_select_2 {
     position: relative;
     top: -755px;
+	left: 50px;
     width: 250px;
 	 
 	}
@@ -122,6 +134,25 @@ button.switch:active {
 	background:#28ade9;
 	background-image: url("button_switch_active.png");
 }
+
+button.top {
+	width:55px;
+	height:30px;
+	background:#61c2ee;
+	background-image: url("button_top_ASR.png");
+	border-radius:10%;
+	border-color:#a0a0a0;
+	border-width:0.5px;
+	border-style:solid;
+	outline:none;
+	}
+
+button.top:hover {
+	background:#28ade9;
+	background-image: url("button_top_ASR.png");
+}
+
+
 
 #check_switch {
 	margin: 3px 3px 3px 0px;
