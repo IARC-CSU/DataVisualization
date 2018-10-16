@@ -1,6 +1,6 @@
 
 
-	function add_top(nb_top,bool_eapc ) {
+	function add_top(nb_top,type ) {
 		
 		var bar_graph=d3.select("#chart").select(".bar_graph")
 		var trend_element = document.getElementById("trend_element").children;
@@ -18,25 +18,39 @@
 					return (d.sex == active_sex & d.var_title == active_title)
 				});
 				
+				console.log(active_title)
+				console.log(data_trend)
+				
 				var data_sort=d3.nest()
 					.key(function(d) { return d.var_trend; })
 					.rollup(function(v) {
+						
+						console.log(v)
+						console.log(v.length)
+						
+						var temp = Math.max(0,v.length-10)
+						var temp2 = v.length-temp 
+						
 						return  {
-							eapc: 100*(Math.pow(v[v.length-1].value / v[v.length-10].value, 1/[10])-1),
+							eapc: 100*(Math.pow(v[v.length-1].value / v[temp].value, 1/[temp2])-1),
 							last: v[v.length-1].value
 						};
 					})
 					.entries(data_trend)
 					
 				
-				if (bool_eapc) {
-					data_sort.sort(function(a, b){ return d3.descending(a.values.eapc, b.values.eapc); });
-				}
-				else {
+				if (type == 1) {
 					data_sort.sort(function(a, b){ return d3.descending(a.values.last, b.values.last); });
 				}
+				else if (type == 2){
+					data_sort.sort(function(a, b){ return d3.descending(a.values.eapc, b.values.eapc); });
+				} 
+				else if (type == 3){
+					data_sort.sort(function(a, b){ return d3.ascending(a.values.eapc, b.values.eapc); });
+				} 
 				
-
+				console.log(data_sort)
+				
 							
 				// add new trend from data_sort to top _list
 				var nb_trend = trend_element.length -1
@@ -46,7 +60,15 @@
 				}
 				
 				var top_list = [];
-				for (var i = 0; i < nb_top; i += 1) {
+				
+				if (bool_switch) {
+					var start = 1; 
+				} 
+				else {
+					var start = 0;
+				}
+				
+				for (var i = start; i < nb_top+ start; i += 1) {
 					
 					if (!trend_list.includes(data_sort[i].key)) {
 						top_list.push(data_sort[i].key);

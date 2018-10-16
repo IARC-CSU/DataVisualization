@@ -58,9 +58,23 @@ body {
 	 
 	}
 	
-	.div_top1 {
+.div_top1 {
     position: relative;
     top: -570px;
+	left: -10px;
+	 
+	}
+	
+.div_top2 {
+    position: relative;
+    top: -500px;
+	left: -10px;
+	 
+	}
+	
+.div_top3 {
+    position: relative;
+    top: -430px;
 	left: -10px;
 	 
 	}
@@ -139,7 +153,6 @@ button.top {
 	width:55px;
 	height:30px;
 	background:#61c2ee;
-	background-image: url("button_top_ASR.png");
 	border-radius:10%;
 	border-color:#a0a0a0;
 	border-width:0.5px;
@@ -149,10 +162,31 @@ button.top {
 
 button.top:hover {
 	background:#28ade9;
+}
+
+button.top.asr {
 	background-image: url("button_top_ASR.png");
 }
 
+button.top.asr:hover {
+	background-image: url("button_top_ASR.png");
+}
 
+button.top.drift_max {
+	background-image: url("button_top_drift.png");
+}
+
+button.top.drift_max:hover {
+	background-image: url("button_top_drift.png");
+}
+
+button.top.drift_min {
+	background-image: url("button_top_drift_min.png");
+}
+
+button.top.drift_min:hover {
+	background-image: url("button_top_drift_min.png");
+}
 
 #check_switch {
 	margin: 3px 3px 3px 0px;
