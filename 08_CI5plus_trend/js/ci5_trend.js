@@ -1,4 +1,30 @@
 
+	function clear_node() {
+		
+		var bar_graph=d3.select("#chart").select(".bar_graph")
+		var trend_element = document.getElementById("trend_element").children;
+		
+		// delete all nodes
+			var graph = bar_graph.selectAll(".nodes");
+			graph.remove()
+			
+		// delete tag element 
+					while (document.getElementById("trend_element").firstChild) {
+				document.getElementById("trend_element").removeChild(document.getElementById("trend_element").firstChild);
+			}
+		
+		regional = 0;
+		
+		if (!bool_switch) {
+			bar_graph.selectAll(".regional_text")
+				.transition().duration(transition_time).ease(ease_effect)  
+				.attr("opacity", 0)
+		}
+
+
+		
+		
+	}
 
 	function add_top(nb_top,type ) {
 		
@@ -18,15 +44,13 @@
 					return (d.sex == active_sex & d.var_title == active_title)
 				});
 				
-				console.log(active_title)
-				console.log(data_trend)
+
 				
 				var data_sort=d3.nest()
 					.key(function(d) { return d.var_trend; })
 					.rollup(function(v) {
 						
-						console.log(v)
-						console.log(v.length)
+		
 						
 						var temp = Math.max(0,v.length-10)
 						var temp2 = v.length-temp 
@@ -49,7 +73,6 @@
 					data_sort.sort(function(a, b){ return d3.ascending(a.values.eapc, b.values.eapc); });
 				} 
 				
-				console.log(data_sort)
 				
 							
 				// add new trend from data_sort to top _list
@@ -100,7 +123,6 @@
 				if (trend_list.length > nb_top) {
 						
 					trend_list.pop();
-					console.log(trend_list)
 					
 					var trend_old = trend_list.slice(0,trend_list.length-top_list.length+1);
 						
@@ -826,7 +848,6 @@
 
 		// update scale
 		
-		console.log(trend_list)
 		
 		if (trend_list.length > 0) {
 		
@@ -1096,7 +1117,6 @@
 		
 	function update_scale (graph, data) {
 		
-		console.log(data.length)
 		
 		if (data.length > 0)  {
 			
@@ -1407,12 +1427,12 @@
 			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
 			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
 			
-			console.log("tick_info")
-			console.log(log_min)
-			console.log(log_max)
-			console.log(unit_floor_min)
-			console.log(unit_floor_max)
-			console.log("end")
+			//console.log("tick_info")
+			//console.log(log_min)
+			//console.log(log_max)
+			//console.log(unit_floor_min)
+			//console.log(unit_floor_max)
+			//console.log("end")
 			
 			if (log_min == log_max) { // if min and max same magnitude
 			

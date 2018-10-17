@@ -52,6 +52,11 @@ body {
 	 
 	}
 	
+.div_clear {
+    position: relative;
+    top: -350px;
+	 
+	}
 .div_switch {
     position: relative;
     top: -670px;
@@ -147,6 +152,28 @@ button.switch:hover {
 button.switch:active {
 	background:#28ade9;
 	background-image: url("button_switch_active.png");
+}
+
+button.clear {
+	width:35px;
+	height:35px;
+	background:#61c2ee;
+	background-image: url("button_clear.png");
+	border-radius:50%;
+	border-color:#a0a0a0;
+	border-width:0.5px;
+	border-style:solid;
+	outline:none;
+	}
+
+button.clear:hover {
+	background:#28ade9;
+	background-image: url("button_clear_hover.png");
+}
+
+button.clear:active {
+	background:#28ade9;
+	background-image: url("button_clear_hover.png");
 }
 
 button.top {
