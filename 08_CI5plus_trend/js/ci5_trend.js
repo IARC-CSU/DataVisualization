@@ -279,7 +279,7 @@
 			var data = data_country;
 		}
 		
-		console.log(data)
+
 	
 		var data_temp = data.filter(function(d){
 			return (d.sex == active_sex);
