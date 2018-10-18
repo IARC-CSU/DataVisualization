@@ -1,4 +1,9 @@
 
+	function load_data() {
+
+	}
+	
+
 	function clear_node() {
 		
 		var bar_graph=d3.select("#chart").select(".bar_graph")
@@ -26,132 +31,212 @@
 		
 	}
 
+	function switch_national() {
+		
+		var bool_national = document.getElementById("check_regional").checked; 
+		update_placeholder(bool_switch, bool_national) 
+		
+		var bar_graph= d3.select("#chart").select(".bar_graph");
+			
+		if (bool_national) {
+				var data = data_country;
+				var active_temp = "Australia";
+				title_label = active_temp + "*"
+				var op = 1
+				
+			}
+			else {
+				var data = data_registry;
+				var active_temp = "Australia_NSW_ACT"
+				title_label = active_temp
+				var op = 0
+			}
+		
+		if (bool_switch) {
+			active_title = active_temp
+			
+		} else {
+			active_trend = active_temp
+			title_label = active_title
+		
+			
+		}
+		bar_graph.selectAll(".graph_title") // add x axis subtitle
+				.text(title_label)
+		
+		regional = 0;
+
+		// delete all nodes 
+		
+	
+		var graph = bar_graph.selectAll(".nodes");
+		graph.remove()
+		
+		//
+		while (document.getElementById("trend_element").firstChild) {
+			document.getElementById("trend_element").removeChild(document.getElementById("trend_element").firstChild);
+		}
+		
+		bar_graph.selectAll(".regional_text")
+			.transition().duration(transition_time).ease(ease_effect)  
+			.attr("opacity", op)		
+				
+		var data_trend_temp = data.filter(function(d){
+			return (d.sex == active_sex);
+		});
+		
+		var data_trend = d3.nest()
+			.key(function(d) {return d[varname_trend];})
+			.sortKeys(d3.ascending)
+			.entries(data_trend_temp);
+			
+		var data_title_temp = data.filter(function(d){
+			return (d.sex == active_sex);
+		});
+			
+		var data_title = d3.nest()
+			.key(function(d) {return d[varname_title];})
+			.sortKeys(d3.ascending)
+			.entries(data_title_temp);
+		
+		trend_list = [];
+		
+		for (var i = 0; i < data_trend.length; i += 1) {
+			trend_list.push(data_trend[i].key);
+		}
+
+		awesomplete2.list = trend_list;
+		
+		title_list = [];
+		for (var j = 0; j < data_title.length; j += 1) {
+			title_list.push(data_title[j].key);
+		}
+
+		awesomplete1.list = title_list;
+
+		
+	}
+	
+	
 	function add_top(nb_top,type ) {
 		
 		var bar_graph=d3.select("#chart").select(".bar_graph")
 		var trend_element = document.getElementById("trend_element").children;
+		var bool_national = document.getElementById("check_regional").checked; 
 		
 		// remove all nodes
 		
-		d3.csv(file_use,
-			
-			function(d){
-				return parse_variable(d);
-			},		
-			function(data) {
+		if (!bool_national) {
+			var data = data_registry;
+		}
+		else {
+			var data = data_country;
+		}
 				
-				var data_trend = data.filter(function(d){
-					return (d.sex == active_sex & d.var_title == active_title)
-				});
-				
-
-				
-				var data_sort=d3.nest()
-					.key(function(d) { return d.var_trend; })
-					.rollup(function(v) {
-						
-		
-						
-						var temp = Math.max(0,v.length-10)
-						var temp2 = v.length-temp 
-						
-						return  {
-							eapc: 100*(Math.pow(v[v.length-1].value / v[temp].value, 1/[temp2])-1),
-							last: v[v.length-1].value
-						};
-					})
-					.entries(data_trend)
-					
-				
-				if (type == 1) {
-					data_sort.sort(function(a, b){ return d3.descending(a.values.last, b.values.last); });
-				}
-				else if (type == 2){
-					data_sort.sort(function(a, b){ return d3.descending(a.values.eapc, b.values.eapc); });
-				} 
-				else if (type == 3){
-					data_sort.sort(function(a, b){ return d3.ascending(a.values.eapc, b.values.eapc); });
-				} 
-				
-				
-							
-				// add new trend from data_sort to top _list
-				var nb_trend = trend_element.length -1
-				var trend_list = [];
-				for (var i = 0; i <= nb_trend; i += 1) { 	
-					trend_list.push(trend_element[i].getAttribute('label'))
-				}
-				
-				var top_list = [];
-				
-				if (bool_switch) {
-					var start = 1; 
-				} 
-				else {
-					var start = 0;
-				}
-				
-				for (var i = start; i < nb_top+ start; i += 1) {
-					
-					if (!trend_list.includes(data_sort[i].key)) {
-						top_list.push(data_sort[i].key);
-					}
-				}
-								
-				// add new tag
-				for (var i = 0; i < top_list.length; i += 1) {
-					add_tag(top_list[i])
-				}
-				
-				
-				active_trend = top_list[0];
-				
-				// create data for scale
-				nb_trend = trend_element.length -1
-				trend_list = [];
-				for (var i = 0; i <= nb_trend; i += 1) { 	
-					trend_list.push(trend_element[i].getAttribute('label'))
-				}
-				
-				var data_trend = data.filter(function(d){
-					return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
-				});
-					
-				update_scale(bar_graph, data_trend)
-				
-				// add new data 
-				if (trend_list.length > nb_top) {
-						
-					trend_list.pop();
-					
-					var trend_old = trend_list.slice(0,trend_list.length-top_list.length+1);
-						
-					var data_trend_old = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title & trend_old.includes(d.var_trend))
-					});
-								
-
-					update_trend(bar_graph, data_trend_old)
-						
-				}
-					
-				var data_temp = data.filter(function(d){
-					return (d.sex == active_sex & d.var_title == active_title & top_list.includes(d.var_trend))
-				});
-						
-				add_node(bar_graph,data_temp,nb_trend)
-				
-				
-			div_left_panel.style.opacity = 1;
-			div_wait.style.opacity = 0;
-			
-		}).on("progress", function(event){
-
-			div_left_panel.style.opacity = 0.5;
-			div_wait.style.opacity = 1;
-			 
+		var data_trend = data.filter(function(d){
+			return (d.sex == active_sex & d[varname_title] == active_title)
 		});
 		
+
+		
+		var data_sort=d3.nest()
+			.key(function(d) { return d[varname_trend]; })
+			.rollup(function(v) {
+				
+
+				
+				var temp = Math.max(0,v.length-10)
+				var temp2 = v.length-temp 
+				
+				return  {
+					eapc: 100*(Math.pow(v[v.length-1].value / v[temp].value, 1/[temp2])-1),
+					last: v[v.length-1].value
+				};
+			})
+			.entries(data_trend)
+			
+		
+		if (type == 1) {
+			data_sort.sort(function(a, b){ return d3.descending(a.values.last, b.values.last); });
+		}
+		else if (type == 2){
+			data_sort.sort(function(a, b){ return d3.descending(a.values.eapc, b.values.eapc); });
+		} 
+		else if (type == 3){
+			data_sort.sort(function(a, b){ return d3.ascending(a.values.eapc, b.values.eapc); });
+		} 
+		
+		
+					
+		// add new trend from data_sort to top _list
+		var nb_trend = trend_element.length -1
+		var trend_list = [];
+		for (var i = 0; i <= nb_trend; i += 1) { 	
+			trend_list.push(trend_element[i].getAttribute('label'))
+		}
+		
+		var top_list = [];
+		
+		if (bool_switch) {
+			var start = 1; 
+		} 
+		else {
+			var start = 0;
+		}
+		
+		for (var i = start; i < nb_top+ start; i += 1) {
+			
+			if (!trend_list.includes(data_sort[i].key)) {
+				top_list.push(data_sort[i].key);
+			}
+		}
+						
+		// add new tag
+		for (var i = 0; i < top_list.length; i += 1) {
+			add_tag(top_list[i])
+		}
+		
+		
+		active_trend = top_list[0];
+		
+		// create data for scale
+		nb_trend = trend_element.length -1
+		trend_list = [];
+		for (var i = 0; i <= nb_trend; i += 1) { 	
+			trend_list.push(trend_element[i].getAttribute('label'))
+		}
+		
+		var data_trend = data.filter(function(d){
+			return (d.sex == active_sex & d[varname_title] == active_title & trend_list.includes(d[varname_trend]))
+		});
+			
+		update_scale(bar_graph, data_trend)
+		
+		// add new data 
+		if (trend_list.length > nb_top) {
+				
+			trend_list.pop();
+			
+			var trend_old = trend_list.slice(0,trend_list.length-top_list.length+1);
+				
+			var data_trend_old = data.filter(function(d){
+				return (d.sex == active_sex & d[varname_title] == active_title & trend_old.includes(d[varname_trend]))
+			});
+						
+
+			update_trend(bar_graph, data_trend_old)
+				
+		}
+			
+		var data_temp = data.filter(function(d){
+			return (d.sex == active_sex & d[varname_title] == active_title & top_list.includes(d[varname_trend]))
+		});
+		
+		
+		add_node(bar_graph,data_temp)
+		
+				
+	
 		
 	}
 	
@@ -168,7 +253,9 @@
 		active_trend = active_title
 		active_title = temp
 		
-		
+		temp = varname_title
+		varname_title = varname_trend
+		varname_trend = temp
 
 				
 		update_placeholder(bool_switch, bool_national)
@@ -184,161 +271,104 @@
 		}
 		
 		
+		if (!bool_national) {
+			var data = data_registry;
+			
+		}
+		else {
+			var data = data_country;
+		}
+		
+		console.log(data)
 	
-								
-
-		d3.csv(file_use,
-			
-			function(d){
-				return parse_variable(d);
-			},
-			function(data) {
-					
-				var data_temp = data.filter(function(d){
-					return (d.sex == active_sex);
-				});
-				
-				
-				var data_trend = d3.nest()
-					.key(function(d) {return d.var_trend;})
-					.sortKeys(d3.ascending)
-					.entries(data_temp);
-					
-
-					
-				var data_title = d3.nest()
-					.key(function(d) {return d.var_title;})
-					.sortKeys(d3.ascending)
-					.entries(data_temp);
-				
-				trend_list = [];
-				
-				for (var i = 0; i < data_trend.length; i += 1) {
-					trend_list.push(data_trend[i].key);
-				}
-
-				awesomplete2.list = trend_list;
-				
-				title_list = [];
-				for (var j = 0; j < data_title.length; j += 1) {
-					title_list.push(data_title[j].key);
-				}
-
-				awesomplete1.list = title_list;
-				
-				// update scale 
-				var data_trend = data.filter(function(d){
-					return (d.sex == active_sex & d.var_title == active_title & d.var_trend == active_trend)
-				});
-				
-		
-
-				title_label = active_title
-				if (bool_switch) {
-					if (data_trend[0].national == 0) {
-						title_label = title_label + "*"
-						bar_graph.selectAll(".regional_text")
-							.transition().duration(transition_time).ease(ease_effect)  
-							.attr("opacity", 1)
-					}
-					else {
-						bar_graph.selectAll(".regional_text")
-							.transition().duration(transition_time).ease(ease_effect)  
-							.attr("opacity", 0)
-					}
-					
-
-				}
-				// update title 
-				bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(title_label)
-				
-				update_scale(bar_graph, data_trend)
-		
-			
-				
-				if (nb_node > 0) {
-					
-					add_tag(active_trend)
-					add_node(bar_graph,data_trend,0)
-
-				}
-				
-
-			div_left_panel.style.opacity = 1;
-			div_wait.style.opacity = 0;
-			
-		}).on("progress", function(event){
-
-			div_left_panel.style.opacity = 0.5;
-			div_wait.style.opacity = 1;
-			 
+		var data_temp = data.filter(function(d){
+			return (d.sex == active_sex);
 		});
+		
+		
+		var data_trend = d3.nest()
+			.key(function(d) {return d[varname_trend];})
+			.sortKeys(d3.ascending)
+			.entries(data_temp);
+			
+
+			
+		var data_title = d3.nest()
+			.key(function(d) {return d[varname_title];})
+			.sortKeys(d3.ascending)
+			.entries(data_temp);
+		
+		trend_list = [];
+		
+		for (var i = 0; i < data_trend.length; i += 1) {
+			trend_list.push(data_trend[i].key);
+		}
+
+		awesomplete2.list = trend_list;
+		
+		title_list = [];
+		for (var j = 0; j < data_title.length; j += 1) {
+			title_list.push(data_title[j].key);
+		}
+
+		awesomplete1.list = title_list;
+		
+		// update scale 
+		var data_trend = data.filter(function(d){
+			return (d.sex == active_sex & d[varname_title] == active_title & d[varname_trend] == active_trend)
+		});
+		
+
+
+		title_label = active_title
+		if (bool_switch) {
+			if (data_trend[0].national == 0) {
+				title_label = title_label + "*"
+				bar_graph.selectAll(".regional_text")
+					.transition().duration(transition_time).ease(ease_effect)  
+					.attr("opacity", 1)
+			}
+			else {
+				bar_graph.selectAll(".regional_text")
+					.transition().duration(transition_time).ease(ease_effect)  
+					.attr("opacity", 0)
+			}
+			
+
+		}
+		// update title 
+		bar_graph.selectAll(".graph_title") // add x axis subtitle
+			.text(title_label)
+		
+		update_scale(bar_graph, data_trend)
+
+	
+		
+		if (nb_node > 0) {
+			
+			add_tag(active_trend)
+			add_node(bar_graph,data_trend)
+
+		}
+		
+
 		
 	}
 
-
-	function CI5_trend(bool_first) 
+	
+	
+	
+	function CI5_trend() 
 	{	
 		
-		
-			
-		var bool_national = document.getElementById("check_regional").checked 
-		update_placeholder(bool_switch, bool_national) 
-						
-	
-		if (!bool_first) {
-			
-			var bar_graph= d3.select("#chart").select(".bar_graph");
-			
-			if (bool_national) {
-					var active_temp = "Australia";
-					title_label = active_temp + "*"
-					var op = 1
-					
-				}
-				else {
-					var active_temp = "Australia_NSW_ACT"
-					title_label = active_temp
-					var op = 0
-				}
-			
-			if (bool_switch) {
-				active_title = active_temp
-			} else {
-				active_trend = active_temp
-				title_label = active_title
-				
-			}
-			bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(title_label)
-			
-			regional = 0;
-
-			// delete all nodes 
-			
-		
-			var graph = bar_graph.selectAll(".nodes");
-			graph.remove()
-			
-			//
-			while (document.getElementById("trend_element").firstChild) {
-				document.getElementById("trend_element").removeChild(document.getElementById("trend_element").firstChild);
-			}
-			
-			bar_graph.selectAll(".regional_text")
-				.transition().duration(transition_time).ease(ease_effect)  
-				.attr("opacity", op)
-								
-			
-		}
-		
-		d3.csv(file_use,
+		d3.csv("data/CI5plus_asr_country.csv",
 			
 			function(d){
 				return parse_variable(d);
 			},		
 			function(data) {
+				
+				data_country = data;
 					
 				
 				var data_trend_temp = data.filter(function(d){
@@ -346,7 +376,7 @@
 				});
 				
 				var data_trend = d3.nest()
-					.key(function(d) {return d.var_trend;})
+					.key(function(d) {return d[varname_trend];})
 					.sortKeys(d3.ascending)
 					.entries(data_trend_temp);
 					
@@ -355,7 +385,7 @@
 				});
 					
 				var data_title = d3.nest()
-					.key(function(d) {return d.var_title;})
+					.key(function(d) {return d[varname_title];})
 					.sortKeys(d3.ascending)
 					.entries(data_title_temp);
 				
@@ -374,38 +404,59 @@
 
 				awesomplete1.list = title_list;
 								
-				if (bool_first) {
+	
 					
 
-				
-					var bar_graph=
-					d3.select("#chart").append("svg") 
-						.attr("width", width + margin.left + margin.right)
-						.attr("height", height + margin.top + margin.bottom)
-						.append("g")
-						.attr("class", "bar_graph")	
-						.attr("transform", "translate(" + margin.left_page   + "," + margin.top_page  + ")"); 
-				
+			
+				var bar_graph=
+				d3.select("#chart").append("svg") 
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("class", "bar_graph")	
+					.attr("transform", "translate(" + margin.left_page   + "," + margin.top_page  + ")"); 
+			
+					
+				bar_graph.append("text")
+						.attr("class","regional_text")
+						.attr("text-anchor", "end")
+						.attr("transform", "translate(" +(graph_width) + "," +(graph_height+ 60) + ")")
+						.text("*: Regional registries")
+						.attr("opacity", 0)
+						.attr("dy", "0.15em")
 						
-					bar_graph.append("text")
-							.attr("class","regional_text")
-							.attr("text-anchor", "end")
-							.attr("transform", "translate(" +(graph_width) + "," +(graph_height+ 60) + ")")
-							.text("*: Regional registries")
-							.attr("opacity", 0)
-							.attr("dy", "0.15em")
-							
-					var data_temp = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title);
-					});
+				var data_temp = data.filter(function(d){
+					return (d.sex == active_sex & d[varname_title] == active_title);
+				});
 
 
-					add_axis_title(bar_graph,data_temp);
-				}
+				add_axis_title(bar_graph,data_temp);
+				
 
 			
 			
 			div_left_panel.style.opacity = 1;
+			div_wait.style.opacity = 0;
+			
+		}).on("progress", function(event){
+
+			div_left_panel.style.opacity = 0.5;
+			div_wait.style.opacity = 1;
+			 
+		});
+		
+		d3.csv("data/CI5plus_asr_registry.csv" ,
+			
+			function(d){
+				return parse_variable(d);
+			},		
+			function(data) {
+				
+				data_registry = data;
+				
+			
+			
+		div_left_panel.style.opacity = 1;
 			div_wait.style.opacity = 0;
 			
 		}).on("progress", function(event){
@@ -624,7 +675,8 @@
 	function add_trend() {
 		
 		var trend_element = document.getElementById("trend_element").children;
-		var bool_unique = true 
+		var bool_unique = true
+		var bool_national = document.getElementById("check_regional").checked; 		
 		
 		
 		for (var i = 0; i < trend_element.length; i++) {
@@ -638,65 +690,57 @@
 
 
 
-			d3.csv(file_use,
-				
-				function(d){
-					return parse_variable(d);
-				},	
-				function(data) {
-					
-							
-					var bar_graph=d3.select("#chart").select(".bar_graph")
-					
-					add_tag(active_trend)
-					
-					var nb_trend = trend_element.length -1
-					
-					trend_list = [];
-					for (var i = 0; i <= nb_trend; i += 1) { 
 						
-						
-						trend_list.push(trend_element[i].getAttribute('label'))
-					}
-					
-					
-
-
-					var data_trend = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
-					});
-					
-					
-					update_scale(bar_graph, data_trend)
-					
-					if (trend_list.length > 1) {
-						
-						trend_list.pop();
-						
-						var data_trend_old = data.filter(function(d){
-							return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
-						});
-								
-
-						update_trend(bar_graph, data_trend_old)
-						
-					}
-					
-					var data_temp = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title & d.var_trend == active_trend)
-					});
-							
-					add_node(bar_graph,data_temp,nb_trend)
-
-			div_left_panel.style.opacity = 1;
-			div_wait.style.opacity = 0;
+			if (!bool_national) {
+				var data = data_registry;
+			}
+			else {
+				var data = data_country;
+			}
 			
-		}).on("progress", function(event){
+			var bar_graph=d3.select("#chart").select(".bar_graph")
+			
+			add_tag(active_trend)
+			
+			var nb_trend = trend_element.length -1
+			
+			trend_list = [];
+			for (var i = 0; i <= nb_trend; i += 1) { 
+				
+				
+				trend_list.push(trend_element[i].getAttribute('label'))
+			}
+			
+			
 
-			div_left_panel.style.opacity = 0.5;
-			div_wait.style.opacity = 1;
-			 
-		});
+
+			var data_trend = data.filter(function(d){
+				return (d.sex == active_sex & d[varname_title] == active_title & trend_list.includes(d[varname_trend]))
+			});
+			
+			
+			update_scale(bar_graph, data_trend)
+			
+			if (trend_list.length > 1) {
+				
+				trend_list.pop();
+				
+				var data_trend_old = data.filter(function(d){
+					return (d.sex == active_sex & d[varname_title] == active_title & trend_list.includes(d[varname_trend]))
+				});
+						
+
+				update_trend(bar_graph, data_trend_old)
+				
+			}
+			
+			var data_temp = data.filter(function(d){
+				return (d.sex == active_sex & d[varname_title] == active_title & d[varname_trend] == active_trend)
+			});
+					
+			add_node(bar_graph,data_temp)
+
+	
 			
 			
 			
@@ -713,10 +757,12 @@
 			trend_list.push(trend_element[i].getAttribute('label'))
 			
 		}
-	
+		
+		var nb_node = graph.selectAll(".nodes")[0].length;
+		
 		
 		var data_nest=d3.nest()
-		.key(function(d) { return d.var_trend; }).sortKeys(function(a,b) { return trend_list.indexOf(a) - trend_list.indexOf(b); })
+		.key(function(d) { return d[varname_trend]; }).sortKeys(function(a,b) { return trend_list.indexOf(a) - trend_list.indexOf(b); })
 		.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 		.entries(data)
 
@@ -738,7 +784,7 @@
 				return lineFunction(d.values)
 				})
 			.attr("stroke", function(d, i){
-				return color_scale_10(i + nb_trend)
+				return color_scale_10(i + nb_node)
 				})
 			.attr("stroke-width", 2)
 			.attr("fill", "none")
@@ -852,37 +898,37 @@
 		if (trend_list.length > 0) {
 		
 
-			d3.csv(file_use,
-				
-				function(d){
-					return parse_variable(d);
-				},	
-				function(data) {
+		if (!bool_national) {
+			var data = data_registry;
+		}
+		else {
+			var data = data_country;
+		}
 					
 
-					// create graph
-											
-					var bar_graph=d3.select("#chart").select(".bar_graph")
-					
-	
-					
-					var data_trend = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
-					});
-					
+		// create graph
+								
+		var bar_graph=d3.select("#chart").select(".bar_graph")
 		
-					
-					
-					update_scale(bar_graph, data_trend)
-					
-					// update other countries
 
-					update_trend(bar_graph, data_trend)
+		
+		var data_trend = data.filter(function(d){
+			return (d.sex == active_sex & d[varname_title] == active_title & trend_list.includes(d[varname_trend]))
+		});
+		
+
+		
+		
+		update_scale(bar_graph, data_trend)
+		
+		// update other countries
+
+		update_trend(bar_graph, data_trend)
 						
 							
 
-				}
-			)
+				
+			
 			
 		}
 	
@@ -914,81 +960,73 @@
 		}
 		
 		var trend_element = document.getElementById("trend_element").children;
+		var bool_national = document.getElementById("check_regional").checked; 
+
+		if (!bool_national) {
+			var data = data_registry;
+		}
+		else {
+			var data = data_country;
+		}
 		
+		var bar_graph=d3.select("#chart").select(".bar_graph")				
+		var nb_trend = trend_element.length-1
 
-		d3.csv(file_use,
+		trend_list = [];
+		for (var i = 0; i <= nb_trend; i += 1) { 
+			trend_list.push(trend_element[i].getAttribute('label'))
 			
-			function(d) {
-			return parse_variable(d);
-			},		
-			function(data) {
-				
-				var bar_graph=d3.select("#chart").select(".bar_graph")				
-				var nb_trend = trend_element.length-1
+		}
 
-				trend_list = [];
-				for (var i = 0; i <= nb_trend; i += 1) { 
-					trend_list.push(trend_element[i].getAttribute('label'))
-					
-				}
-
-				if (trend_list.length > 0) {
-					
-					
-					var data_trend = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
-					});
-					
-				
-					update_scale(bar_graph, data_trend)
-					update_trend(bar_graph, data_trend)
-						
-				}
-				
-				var data_title = data.filter(function(d){
-						return (d.var_title == active_title)
-					});
-					
-				
-				
-				title_label = active_title
-				
-				if (bool_switch) {
-					if (data_title[0].national == 0) {
-						title_label = title_label + "*"
-						bar_graph.selectAll(".regional_text")
-							.transition().duration(transition_time).ease(ease_effect)  
-							.attr("opacity", 1)
-					}
-					else {
-						bar_graph.selectAll(".regional_text")
-							.transition().duration(transition_time).ease(ease_effect)  
-							.attr("opacity", 0)
-					}
-					
-				
-				}
-				
-				bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(title_label)
-				bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
-					.text(sex_label)
+		if (trend_list.length > 0) {
 			
-					
-			div_left_panel.style.opacity = 1;
-			div_wait.style.opacity = 0;
 			
-		}).on("progress", function(event){
+			var data_trend = data.filter(function(d){
+				return (d.sex == active_sex & d[varname_title] == active_title & trend_list.includes(d[varname_trend]))
+			});
+			
+		
+			update_scale(bar_graph, data_trend)
+			update_trend(bar_graph, data_trend)
+				
+		}
+		
+		var data_title = data.filter(function(d){
+				return (d[varname_title] == active_title)
+			});
+			
+		
+		
+		title_label = active_title
+		
+		if (bool_switch) {
+			if (data_title[0].national == 0) {
+				title_label = title_label + "*"
+				bar_graph.selectAll(".regional_text")
+					.transition().duration(transition_time).ease(ease_effect)  
+					.attr("opacity", 1)
+			}
+			else {
+				bar_graph.selectAll(".regional_text")
+					.transition().duration(transition_time).ease(ease_effect)  
+					.attr("opacity", 0)
+			}
+			
+		
+		}
+		
+		bar_graph.selectAll(".graph_title") // add x axis subtitle
+			.text(title_label)
+		bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
+			.text(sex_label)
+	
+			
 
-			div_left_panel.style.opacity = 0.5;
-			div_wait.style.opacity = 1;
-			 
-		});
 }
 		
 		
 	function update_sex() {
-		
+		var bool_national = document.getElementById("check_regional").checked; 
 		label_input = "Male";
 		if (active_sex == 2 ) {
 			label_input = "Female";;
@@ -999,116 +1037,106 @@
 		
 		
 		var bar_graph=d3.select("#chart").select(".bar_graph")
-
-		d3.csv(file_use,
-			
-			function(d) {
-				return parse_variable(d);
-			},		
-			function(data) {
+		
+		if (!bool_national) {
+			var data = data_registry;
+		}
+		else {
+			var data = data_country;
+		}
 					
-					
-				var data_temp = data.filter(function(d){
-					return (d.sex == active_sex)
-				});
-					
-				if (bool_switch) {
-					var data_trend = d3.nest()
-						.key(function(d) {return d.var_trend;})
-						.sortKeys(d3.ascending)
-						.entries(data_temp)
-					
-					
-					
-					trend_list = [];
-					for (var i = 0; i < data_trend.length; i += 1) {
-						trend_list.push(data_trend[i].key)
-					}
-					
-					awesomplete2.list = trend_list;
-					
-					
-					for (var i = 0; i < trend_element.length; i++) {
-						
-						var node_label = trend_element[i].getAttribute('label')
-						if (!trend_list.includes(node_label)) {
-							
-							
-							trend_element[i].remove();
-							var graph = bar_graph.selectAll(".nodes_" + node_label.replace(/[^a-z]/g, ''));
-							graph.remove();
-							
-							
-						}
-					}		
-					
-				}
-				else {
-					
-					
-					
-					var data_title = d3.nest()
-						.key(function(d) {return d.var_title;})
-						.sortKeys(d3.ascending)
-						.entries(data_temp)
-					
-					title_list = [];
-					for (var i = 0; i < data_title.length; i += 1) {
-						title_list.push(data_title[i].key)
-					}
-					
-					
-					if (!title_list.includes(active_title)) {
-						active_title = "All cancers excluding non-melanoma skin";
-					}
-
-					awesomplete1.list = title_list;
-				}
-					
-
-				
-				
-				
-				bar_graph.selectAll(".graph_title") // add x axis subtitle
-					.text(active_title)
-				bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
-					.text(label_input)
-				
-				// update scale 
-				
-				
-				var nb_trend = trend_element.length-1
-
-				trend_list = [];
-				for (var i = 0; i <= nb_trend; i += 1) { 
-					trend_list.push(trend_element[i].getAttribute('label'))
-					
-				}
-
-				
-				if (trend_list.length > 0) {
-					var data_trend = data.filter(function(d){
-						return (d.sex == active_sex & d.var_title == active_title & trend_list.includes(d.var_trend))
-					});
-				
-					update_scale(bar_graph, data_trend)
-				
-					update_trend(bar_graph, data_trend, trend_list)
-					
-				
-					
-				}
-				
-				
-			div_left_panel.style.opacity = 1;
-			div_wait.style.opacity = 0;
-			
-		}).on("progress", function(event){
-
-			div_left_panel.style.opacity = 0.5;
-			div_wait.style.opacity = 1;
-			 
+		var data_temp = data.filter(function(d){
+			return (d.sex == active_sex)
 		});
+			
+		if (bool_switch) {
+			var data_trend = d3.nest()
+				.key(function(d) {return d[varname_trend];})
+				.sortKeys(d3.ascending)
+				.entries(data_temp)
+			
+			
+			
+			trend_list = [];
+			for (var i = 0; i < data_trend.length; i += 1) {
+				trend_list.push(data_trend[i].key)
+			}
+			
+			awesomplete2.list = trend_list;
+			
+			
+			for (var i = 0; i < trend_element.length; i++) {
+				
+				var node_label = trend_element[i].getAttribute('label')
+				if (!trend_list.includes(node_label)) {
+					
+					
+					trend_element[i].remove();
+					var graph = bar_graph.selectAll(".nodes_" + node_label.replace(/[^a-z]/g, ''));
+					graph.remove();
+					
+					
+				}
+			}		
+			
+		}
+		else {
+			
+			
+			
+			var data_title = d3.nest()
+				.key(function(d) {return d[varname_title];})
+				.sortKeys(d3.ascending)
+				.entries(data_temp)
+			
+			title_list = [];
+			for (var i = 0; i < data_title.length; i += 1) {
+				title_list.push(data_title[i].key)
+			}
+			
+			
+			if (!title_list.includes(active_title)) {
+				active_title = "All cancers excluding non-melanoma skin";
+			}
+
+			awesomplete1.list = title_list;
+		}
+			
+
+		
+		
+		
+		bar_graph.selectAll(".graph_title") // add x axis subtitle
+			.text(active_title)
+		bar_graph.selectAll(".graph_subtitle") // add x axis subtitle
+			.text(label_input)
+		
+		// update scale 
+		
+		
+		var nb_trend = trend_element.length-1
+
+		trend_list = [];
+		for (var i = 0; i <= nb_trend; i += 1) { 
+			trend_list.push(trend_element[i].getAttribute('label'))
+			
+		}
+
+		
+		if (trend_list.length > 0) {
+			var data_trend = data.filter(function(d){
+				return (d.sex == active_sex & d[varname_title] == active_title & trend_list.includes(d[varname_trend]))
+			});
+		
+			update_scale(bar_graph, data_trend)
+		
+			update_trend(bar_graph, data_trend, trend_list)
+			
+		
+			
+		}
+		
+				
 	
 		
 
@@ -1276,7 +1304,7 @@
 
 		
 	var data_update=d3.nest()
-		.key(function(d) { return d.var_trend; }).sortKeys(function(a,b) { return trend_list.indexOf(a) - trend_list.indexOf(b); })
+		.key(function(d) { return d[varname_trend]; }).sortKeys(function(a,b) { return trend_list.indexOf(a) - trend_list.indexOf(b); })
 		.key(function(d) {return d.year;}).sortKeys(d3.ascending)
 		.entries(data)
 		
@@ -1690,31 +1718,18 @@
 	
 	
 	function parse_variable(d) {
-		if (!bool_switch) {
 			return {
 				
 				sex : +d.sex,
 				year: +d.year,
-				var_title :  d.cancer_label,
-				var_trend : d.country_label,
+				cancer_label : d.cancer_label,
+				country_label : d.country_label,
 				asr: +d.asr,
 				value: +d.smoothed,
 				national: +d.national
 			};	
-		}
-		else {
-			return {
-				sex : +d.sex,
-				year: +d.year,
-				var_title :  d.country_label,
-				var_trend : d.cancer_label,
-				asr: +d.asr,
-				value: +d.smoothed,
-				national: +d.national
-			};	
-		}					
-		
-	}
+		}		
+
 	
 	function update_placeholder(bool_switch, bool_national) {
 		

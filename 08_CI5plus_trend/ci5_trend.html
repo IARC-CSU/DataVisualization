@@ -63,7 +63,7 @@
 	
 
 	<div class = "div_regional">
-	<label><input type="checkbox" id="check_regional" checked="checked" onChange=" CI5_trend(false)">Group by country</label>
+	<label><input type="checkbox" id="check_regional" checked="checked" onChange="switch_national()">Group by country</label>
 	</div>
 	
 	<div class = "div_select_sex">
@@ -111,7 +111,13 @@
 	
 	var XgridSize = 10; 
 	
-	var var_fix;
+	var data_country;
+	var data_registry;
+	
+	var varname_title = "cancer_label"
+	var varname_trend = "country_label"
+	
+	
 	
 	var bool_national = false; 
 	var bool_switch = false; 
@@ -153,7 +159,7 @@
 	
 	 window.onload = function()
 		{
-		CI5_trend(true)
+		 CI5_trend(); 
 		
 	};
 	
