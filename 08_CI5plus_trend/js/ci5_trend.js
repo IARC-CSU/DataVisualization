@@ -1455,12 +1455,14 @@
 			var log_min = Math.pow(10,Math.floor(Math.log10(value_min))); // order of magnitude of min (power of 10)
 			var unit_floor_min = Math.floor(value_min/log_min) // left digit of min 
 			
-			//console.log("tick_info")
-			//console.log(log_min)
-			//console.log(log_max)
-			//console.log(unit_floor_min)
-			//console.log(unit_floor_max)
-			//console.log("end")
+			
+			// denmark prostate larynx bone
+			console.log("tick_info")
+			console.log(log_min)
+			console.log(log_max)
+			console.log(unit_floor_min)
+			console.log(unit_floor_max)
+			console.log("end")
 			
 			if (log_min == log_max) { // if min and max same magnitude
 			
@@ -1557,12 +1559,13 @@
 			} 
 			else { //if max and min difference magnitude > 100
 				
-				
+
 				log_min = log_min*10;
-				for (var i = 1; i <= 9; i++) {
-					tick_list.major.push(i*log_min);
-					
-				}
+				tick_list.major.push(1*log_min);
+				tick_list.major.push(5*log_min);
+
+
+				
 				
 				for (var i = 1; i <= ((unit_floor_max+1)*10)-1; i++) {
 					tick_list.minor.push(i*log_min);
@@ -1577,9 +1580,24 @@
 				while (log_min != (log_max/10)) {
 					
 					log_min = log_min*10;
-					tick_list.major.push(log_min);
-					tick_list.major.push(2*log_min);
-					tick_list.major.push(5*log_min);
+					
+					
+					for (var i = 1; i<=19 ; i++) {
+						
+						tick_list.minor.push(i*log_min);
+						if (i%2 == 0) {
+							tick_list.major.push(i*log_min);
+						}
+					}
+					
+					for (var i = 20; i<=99 ; i++) {
+						
+						tick_list.minor.push(i*log_min);
+						if (i%5 == 0) {
+							tick_list.major.push(i*log_min);
+						}
+					}
+					
 					
 					for (var i = 2; i <= ((unit_floor_max+1)*10)-1; i++) {
 						
