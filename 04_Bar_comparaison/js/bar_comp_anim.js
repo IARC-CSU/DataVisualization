@@ -3,7 +3,7 @@
 	
     function bar_comp() // generate heatmap 
 	{ 	
-		var file_use = "data/CI5IvsCI5X.csv"; 
+		var file_use = "data/EMRO.csv"; 
 		
 	
 
@@ -33,7 +33,7 @@
 				
 				// Keep canada, men 
 				var data_temp = data.filter(function(d){
-					return (d.country_code == 124 & d.sex == 1  )
+					return (d.country_code == 48000 & d.sex == 1  )
 				});
 				
 				// I nest by cancer to have group (text, bar and line)
@@ -101,7 +101,7 @@
 			.attr("text-anchor", "middle")
 			.attr("x", var_width/2)     
 			.attr("y", -50)
-			.text(function(d,i) { return d.per1 + " - " + d.per2 });
+			.text(function(d,i) { return d.per1  });
 				 
 		graph_select.append("g") // draw axis major
 			.attr("class", "xaxis")
@@ -845,7 +845,7 @@
 		
 		var title_period = d3.select("#chart").select(bar_graph_class).selectAll(".bar_title")
 			.data(data_period)
-			.text(function(d,i) { return d.per1 + " - " + d.per2 });
+			.text(function(d,i) { return d.per1  });
 		
 
 		// update tick position major
@@ -1398,6 +1398,8 @@
 		var datatemp = data.filter(function(d){
 			return (d.volume == 1 & d.sex == 1 & d.rank == 1)
 		});
+		
+		console.log(datatemp)
 
 		var registry_list = {};
 		for (i=0;i<nb_registry; i++ ) {
@@ -1457,7 +1459,7 @@
 			var sex_select = 2;
 		}
 
-		var file_use = "data/CI5IvsCI5X.csv"; 
+		var file_use = "data/EMRO.csv"; 
 		var country_select = document.getElementById('countryList').value;
 
 			 d3.csv(file_use,
@@ -1500,7 +1502,7 @@
 				sex_select = 2;
 			}
 		
-		var file_use = "data/CI5IvsCI5X.csv"; 
+		var file_use = "data/EMRO.csv"; 
 
 			d3.csv(file_use,
 				function(d) {

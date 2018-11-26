@@ -1,0 +1,217 @@
+sex,year,cancer,cancer_label,country_code,country_label,cases,py,asr,volume,per1,per2,rank
+1,1998,11,"Lung",48000,"Bahrain-Bahraini",37,191577,35.68,1,1998,1998,1
+1,1998,29,"Leukaemia",48000,"Bahrain-Bahraini",20,191577,15.08,1,1998,1998,2
+1,1998,5,"Colorectum",48000,"Bahrain-Bahraini",14,191577,13.75,1,1998,1998,3
+1,1998,22,"Bladder",48000,"Bahrain-Bahraini",14,191577,13.08,1,1998,1998,4
+1,1998,19,"Prostate",48000,"Bahrain-Bahraini",11,191577,10.59,1,1998,1998,5
+1,1998,2,"Lip oral cavity and pharynx",48000,"Bahrain-Bahraini",7,191577,5.93,1,1998,1998,6
+1,1998,21,"Kidney",48000,"Bahrain-Bahraini",8,191577,5.87,1,1998,1998,7
+1,1998,4,"Stomach",48000,"Bahrain-Bahraini",6,191577,5.87,1,1998,1998,8
+1,1998,27,"Non-Hodgkin lymphoma",48000,"Bahrain-Bahraini",7,191577,5.67,1,1998,1998,9
+1,1998,10,"Larynx",48000,"Bahrain-Bahraini",5,191577,4.85,1,1998,1998,10
+1,1998,9,"Pancreas",48000,"Bahrain-Bahraini",5,191577,4.55,1,1998,1998,11
+1,1998,7,"Liver",48000,"Bahrain-Bahraini",4,191577,4.20,1,1998,1998,12
+1,1998,14,"Connective and soft tissue",48000,"Bahrain-Bahraini",5,191577,4.00,1,1998,1998,13
+1,1998,3,"Oesophagus",48000,"Bahrain-Bahraini",4,191577,3.66,1,1998,1998,14
+1,1998,24,"Brain, central nervous system",48000,"Bahrain-Bahraini",5,191577,2.71,1,1998,1998,15
+1,1998,28,"Multiple myeloma and immunoproliferative diseases",48000,"Bahrain-Bahraini",2,191577,2.07,1,1998,1998,16
+1,1998,26,"Hodgkin lymphoma",48000,"Bahrain-Bahraini",3,191577,1.37,1,1998,1998,17
+1,1998,25,"Thyroid",48000,"Bahrain-Bahraini",2,191577,1.34,1,1998,1998,18
+1,1998,8,"Gallbladder and extrahepatic ducts",48000,"Bahrain-Bahraini",1,191577,1.08,1,1998,1998,19
+1,1998,20,"Testis",48000,"Bahrain-Bahraini",2,191577,1.05,1,1998,1998,20
+1,1998,12,"Bone",48000,"Bahrain-Bahraini",1,191577,0.98,1,1998,1998,21
+1,1998,17,"Corpus uteri",48000,"Bahrain-Bahraini",0,191577,0.00,1,1998,1998,22
+1,1998,15,"Breast",48000,"Bahrain-Bahraini",0,191577,0.00,1,1998,1998,23
+1,1998,16,"Cervix uteri",48000,"Bahrain-Bahraini",0,191577,0.00,1,1998,1998,24
+1,1998,23,"Eye",48000,"Bahrain-Bahraini",0,191577,0.00,1,1998,1998,25
+1,1998,18,"Ovary",48000,"Bahrain-Bahraini",0,191577,0.00,1,1998,1998,26
+1,1998,13,"Melanoma of skin",48000,"Bahrain-Bahraini",0,191577,0.00,1,1998,1998,27
+1,1998,11,"Lung",414000,"Kuwait-Kuwaiti",30,382058,18.22,1,1998,1998,1
+1,1998,5,"Colorectum",414000,"Kuwait-Kuwaiti",29,382058,17.21,1,1998,1998,2
+1,1998,19,"Prostate",414000,"Kuwait-Kuwaiti",17,382058,11.33,1,1998,1998,3
+1,1998,27,"Non-Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",24,382058,11.09,1,1998,1998,4
+1,1998,7,"Liver",414000,"Kuwait-Kuwaiti",11,382058,6.43,1,1998,1998,5
+1,1998,22,"Bladder",414000,"Kuwait-Kuwaiti",9,382058,6.04,1,1998,1998,6
+1,1998,21,"Kidney",414000,"Kuwait-Kuwaiti",10,382058,5.99,1,1998,1998,7
+1,1998,24,"Brain, central nervous system",414000,"Kuwait-Kuwaiti",15,382058,5.91,1,1998,1998,8
+1,1998,2,"Lip oral cavity and pharynx",414000,"Kuwait-Kuwaiti",8,382058,4.53,1,1998,1998,9
+1,1998,4,"Stomach",414000,"Kuwait-Kuwaiti",7,382058,4.52,1,1998,1998,10
+1,1998,26,"Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",13,382058,4.30,1,1998,1998,11
+1,1998,25,"Thyroid",414000,"Kuwait-Kuwaiti",8,382058,3.96,1,1998,1998,12
+1,1998,10,"Larynx",414000,"Kuwait-Kuwaiti",5,382058,3.27,1,1998,1998,13
+1,1998,3,"Oesophagus",414000,"Kuwait-Kuwaiti",4,382058,2.54,1,1998,1998,14
+1,1998,29,"Leukaemia",414000,"Kuwait-Kuwaiti",7,382058,2.47,1,1998,1998,15
+1,1998,9,"Pancreas",414000,"Kuwait-Kuwaiti",3,382058,2.15,1,1998,1998,16
+1,1998,8,"Gallbladder and extrahepatic ducts",414000,"Kuwait-Kuwaiti",3,382058,1.95,1,1998,1998,17
+1,1998,14,"Connective and soft tissue",414000,"Kuwait-Kuwaiti",5,382058,1.87,1,1998,1998,18
+1,1998,12,"Bone",414000,"Kuwait-Kuwaiti",3,382058,1.08,1,1998,1998,19
+1,1998,20,"Testis",414000,"Kuwait-Kuwaiti",2,382058,0.41,1,1998,1998,20
+1,1998,28,"Multiple myeloma and immunoproliferative diseases",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,21
+1,1998,18,"Ovary",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,22
+1,1998,16,"Cervix uteri",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,23
+1,1998,15,"Breast",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,24
+1,1998,23,"Eye",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,25
+1,1998,17,"Corpus uteri",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,26
+1,1998,13,"Melanoma of skin",414000,"Kuwait-Kuwaiti",0,382058,0.00,1,1998,1998,27
+2,1998,15,"Breast",48000,"Bahrain-Bahraini",47,187858,35.22,1,1998,1998,1
+2,1998,11,"Lung",48000,"Bahrain-Bahraini",17,187858,17.02,1,1998,1998,2
+2,1998,16,"Cervix uteri",48000,"Bahrain-Bahraini",14,187858,11.44,1,1998,1998,3
+2,1998,18,"Ovary",48000,"Bahrain-Bahraini",12,187858,10.19,1,1998,1998,4
+2,1998,5,"Colorectum",48000,"Bahrain-Bahraini",12,187858,9.73,1,1998,1998,5
+2,1998,29,"Leukaemia",48000,"Bahrain-Bahraini",14,187858,7.76,1,1998,1998,6
+2,1998,2,"Lip oral cavity and pharynx",48000,"Bahrain-Bahraini",8,187858,6.50,1,1998,1998,7
+2,1998,4,"Stomach",48000,"Bahrain-Bahraini",6,187858,5.42,1,1998,1998,8
+2,1998,17,"Corpus uteri",48000,"Bahrain-Bahraini",7,187858,5.15,1,1998,1998,9
+2,1998,25,"Thyroid",48000,"Bahrain-Bahraini",8,187858,4.65,1,1998,1998,10
+2,1998,27,"Non-Hodgkin lymphoma",48000,"Bahrain-Bahraini",6,187858,4.42,1,1998,1998,11
+2,1998,22,"Bladder",48000,"Bahrain-Bahraini",4,187858,4.08,1,1998,1998,12
+2,1998,9,"Pancreas",48000,"Bahrain-Bahraini",3,187858,3.00,1,1998,1998,13
+2,1998,28,"Multiple myeloma and immunoproliferative diseases",48000,"Bahrain-Bahraini",2,187858,1.96,1,1998,1998,14
+2,1998,21,"Kidney",48000,"Bahrain-Bahraini",2,187858,1.96,1,1998,1998,15
+2,1998,10,"Larynx",48000,"Bahrain-Bahraini",2,187858,1.80,1,1998,1998,16
+2,1998,8,"Gallbladder and extrahepatic ducts",48000,"Bahrain-Bahraini",1,187858,1.09,1,1998,1998,17
+2,1998,3,"Oesophagus",48000,"Bahrain-Bahraini",1,187858,1.09,1,1998,1998,18
+2,1998,7,"Liver",48000,"Bahrain-Bahraini",1,187858,1.09,1,1998,1998,19
+2,1998,13,"Melanoma of skin",48000,"Bahrain-Bahraini",1,187858,1.01,1,1998,1998,20
+2,1998,26,"Hodgkin lymphoma",48000,"Bahrain-Bahraini",1,187858,0.96,1,1998,1998,21
+2,1998,12,"Bone",48000,"Bahrain-Bahraini",2,187858,0.80,1,1998,1998,22
+2,1998,19,"Prostate",48000,"Bahrain-Bahraini",0,187858,0.00,1,1998,1998,23
+2,1998,24,"Brain, central nervous system",48000,"Bahrain-Bahraini",0,187858,0.00,1,1998,1998,24
+2,1998,23,"Eye",48000,"Bahrain-Bahraini",0,187858,0.00,1,1998,1998,25
+2,1998,14,"Connective and soft tissue",48000,"Bahrain-Bahraini",0,187858,0.00,1,1998,1998,26
+2,1998,20,"Testis",48000,"Bahrain-Bahraini",0,187858,0.00,1,1998,1998,27
+2,1998,15,"Breast",414000,"Kuwait-Kuwaiti",94,390200,38.71,1,1998,1998,1
+2,1998,5,"Colorectum",414000,"Kuwait-Kuwaiti",21,390200,10.77,1,1998,1998,2
+2,1998,11,"Lung",414000,"Kuwait-Kuwaiti",17,390200,9.45,1,1998,1998,3
+2,1998,27,"Non-Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",14,390200,7.06,1,1998,1998,4
+2,1998,18,"Ovary",414000,"Kuwait-Kuwaiti",12,390200,5.87,1,1998,1998,5
+2,1998,25,"Thyroid",414000,"Kuwait-Kuwaiti",18,390200,5.79,1,1998,1998,6
+2,1998,29,"Leukaemia",414000,"Kuwait-Kuwaiti",11,390200,5.10,1,1998,1998,7
+2,1998,9,"Pancreas",414000,"Kuwait-Kuwaiti",7,390200,3.47,1,1998,1998,8
+2,1998,21,"Kidney",414000,"Kuwait-Kuwaiti",6,390200,2.97,1,1998,1998,9
+2,1998,16,"Cervix uteri",414000,"Kuwait-Kuwaiti",9,390200,2.78,1,1998,1998,10
+2,1998,2,"Lip oral cavity and pharynx",414000,"Kuwait-Kuwaiti",6,390200,2.64,1,1998,1998,11
+2,1998,8,"Gallbladder and extrahepatic ducts",414000,"Kuwait-Kuwaiti",5,390200,2.61,1,1998,1998,12
+2,1998,3,"Oesophagus",414000,"Kuwait-Kuwaiti",5,390200,2.60,1,1998,1998,13
+2,1998,26,"Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",8,390200,2.30,1,1998,1998,14
+2,1998,17,"Corpus uteri",414000,"Kuwait-Kuwaiti",5,390200,2.29,1,1998,1998,15
+2,1998,7,"Liver",414000,"Kuwait-Kuwaiti",4,390200,2.25,1,1998,1998,16
+2,1998,4,"Stomach",414000,"Kuwait-Kuwaiti",5,390200,1.88,1,1998,1998,17
+2,1998,24,"Brain, central nervous system",414000,"Kuwait-Kuwaiti",5,390200,1.81,1,1998,1998,18
+2,1998,22,"Bladder",414000,"Kuwait-Kuwaiti",3,390200,1.27,1,1998,1998,19
+2,1998,14,"Connective and soft tissue",414000,"Kuwait-Kuwaiti",2,390200,1.18,1,1998,1998,20
+2,1998,28,"Multiple myeloma and immunoproliferative diseases",414000,"Kuwait-Kuwaiti",1,390200,0.73,1,1998,1998,21
+2,1998,13,"Melanoma of skin",414000,"Kuwait-Kuwaiti",1,390200,0.26,1,1998,1998,22
+2,1998,12,"Bone",414000,"Kuwait-Kuwaiti",1,390200,0.22,1,1998,1998,23
+2,1998,23,"Eye",414000,"Kuwait-Kuwaiti",0,390200,0.00,1,1998,1998,24
+2,1998,10,"Larynx",414000,"Kuwait-Kuwaiti",0,390200,0.00,1,1998,1998,25
+2,1998,19,"Prostate",414000,"Kuwait-Kuwaiti",0,390200,0.00,1,1998,1998,26
+2,1998,20,"Testis",414000,"Kuwait-Kuwaiti",0,390200,0.00,1,1998,1998,27
+1,2012,5,"Colorectum",48000,"Bahrain-Bahraini",47,305354,21.80,10,2012,2012,1
+1,2012,19,"Prostate",48000,"Bahrain-Bahraini",31,305354,16.25,10,2012,2012,2
+1,2012,11,"Lung",48000,"Bahrain-Bahraini",28,305354,14.06,10,2012,2012,3
+1,2012,22,"Bladder",48000,"Bahrain-Bahraini",25,305354,12.51,10,2012,2012,4
+1,2012,27,"Non-Hodgkin lymphoma",48000,"Bahrain-Bahraini",22,305354,8.74,10,2012,2012,5
+1,2012,29,"Leukaemia",48000,"Bahrain-Bahraini",19,305354,7.57,10,2012,2012,6
+1,2012,9,"Pancreas",48000,"Bahrain-Bahraini",13,305354,6.43,10,2012,2012,7
+1,2012,2,"Lip oral cavity and pharynx",48000,"Bahrain-Bahraini",12,305354,5.65,10,2012,2012,8
+1,2012,24,"Brain, central nervous system",48000,"Bahrain-Bahraini",10,305354,3.98,10,2012,2012,9
+1,2012,21,"Kidney",48000,"Bahrain-Bahraini",10,305354,3.46,10,2012,2012,10
+1,2012,4,"Stomach",48000,"Bahrain-Bahraini",7,305354,3.45,10,2012,2012,11
+1,2012,26,"Hodgkin lymphoma",48000,"Bahrain-Bahraini",10,305354,3.14,10,2012,2012,12
+1,2012,7,"Liver",48000,"Bahrain-Bahraini",6,305354,2.54,10,2012,2012,13
+1,2012,8,"Gallbladder and extrahepatic ducts",48000,"Bahrain-Bahraini",5,305354,2.08,10,2012,2012,14
+1,2012,25,"Thyroid",48000,"Bahrain-Bahraini",4,305354,1.91,10,2012,2012,15
+1,2012,10,"Larynx",48000,"Bahrain-Bahraini",4,305354,1.80,10,2012,2012,16
+1,2012,3,"Oesophagus",48000,"Bahrain-Bahraini",4,305354,1.50,10,2012,2012,17
+1,2012,14,"Connective and soft tissue",48000,"Bahrain-Bahraini",3,305354,0.92,10,2012,2012,18
+1,2012,12,"Bone",48000,"Bahrain-Bahraini",2,305354,0.62,10,2012,2012,19
+1,2012,20,"Testis",48000,"Bahrain-Bahraini",1,305354,0.33,10,2012,2012,20
+1,2012,18,"Ovary",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,21
+1,2012,13,"Melanoma of skin",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,22
+1,2012,28,"Multiple myeloma and immunoproliferative diseases",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,23
+1,2012,23,"Eye",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,24
+1,2012,15,"Breast",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,25
+1,2012,17,"Corpus uteri",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,26
+1,2012,16,"Cervix uteri",48000,"Bahrain-Bahraini",0,305354,0.00,10,2012,2012,27
+1,2012,19,"Prostate",414000,"Kuwait-Kuwaiti",62,586892,22.40,10,2012,2012,1
+1,2012,5,"Colorectum",414000,"Kuwait-Kuwaiti",69,586892,21.89,10,2012,2012,2
+1,2012,11,"Lung",414000,"Kuwait-Kuwaiti",33,586892,11.75,10,2012,2012,3
+1,2012,22,"Bladder",414000,"Kuwait-Kuwaiti",30,586892,9.81,10,2012,2012,4
+1,2012,29,"Leukaemia",414000,"Kuwait-Kuwaiti",35,586892,8.28,10,2012,2012,5
+1,2012,27,"Non-Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",30,586892,7.70,10,2012,2012,6
+1,2012,2,"Lip oral cavity and pharynx",414000,"Kuwait-Kuwaiti",25,586892,6.96,10,2012,2012,7
+1,2012,7,"Liver",414000,"Kuwait-Kuwaiti",17,586892,6.24,10,2012,2012,8
+1,2012,9,"Pancreas",414000,"Kuwait-Kuwaiti",16,586892,5.21,10,2012,2012,9
+1,2012,26,"Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",25,586892,4.99,10,2012,2012,10
+1,2012,21,"Kidney",414000,"Kuwait-Kuwaiti",15,586892,4.22,10,2012,2012,11
+1,2012,4,"Stomach",414000,"Kuwait-Kuwaiti",10,586892,3.38,10,2012,2012,12
+1,2012,24,"Brain, central nervous system",414000,"Kuwait-Kuwaiti",13,586892,3.33,10,2012,2012,13
+1,2012,28,"Multiple myeloma and immunoproliferative diseases",414000,"Kuwait-Kuwaiti",10,586892,3.11,10,2012,2012,14
+1,2012,20,"Testis",414000,"Kuwait-Kuwaiti",15,586892,2.84,10,2012,2012,15
+1,2012,3,"Oesophagus",414000,"Kuwait-Kuwaiti",7,586892,2.07,10,2012,2012,16
+1,2012,25,"Thyroid",414000,"Kuwait-Kuwaiti",9,586892,1.98,10,2012,2012,17
+1,2012,10,"Larynx",414000,"Kuwait-Kuwaiti",5,586892,1.90,10,2012,2012,18
+1,2012,8,"Gallbladder and extrahepatic ducts",414000,"Kuwait-Kuwaiti",2,586892,0.71,10,2012,2012,19
+1,2012,13,"Melanoma of skin",414000,"Kuwait-Kuwaiti",2,586892,0.62,10,2012,2012,20
+1,2012,12,"Bone",414000,"Kuwait-Kuwaiti",4,586892,0.59,10,2012,2012,21
+1,2012,14,"Connective and soft tissue",414000,"Kuwait-Kuwaiti",2,586892,0.58,10,2012,2012,22
+1,2012,23,"Eye",414000,"Kuwait-Kuwaiti",1,586892,0.14,10,2012,2012,23
+1,2012,17,"Corpus uteri",414000,"Kuwait-Kuwaiti",0,586892,0.00,10,2012,2012,24
+1,2012,15,"Breast",414000,"Kuwait-Kuwaiti",0,586892,0.00,10,2012,2012,25
+1,2012,16,"Cervix uteri",414000,"Kuwait-Kuwaiti",0,586892,0.00,10,2012,2012,26
+1,2012,18,"Ovary",414000,"Kuwait-Kuwaiti",0,586892,0.00,10,2012,2012,27
+2,2012,15,"Breast",48000,"Bahrain-Bahraini",134,294275,53.85,10,2012,2012,1
+2,2012,5,"Colorectum",48000,"Bahrain-Bahraini",33,294275,13.26,10,2012,2012,2
+2,2012,18,"Ovary",48000,"Bahrain-Bahraini",23,294275,9.71,10,2012,2012,3
+2,2012,7,"Liver",48000,"Bahrain-Bahraini",12,294275,5.77,10,2012,2012,4
+2,2012,27,"Non-Hodgkin lymphoma",48000,"Bahrain-Bahraini",12,294275,5.57,10,2012,2012,5
+2,2012,11,"Lung",48000,"Bahrain-Bahraini",12,294275,5.06,10,2012,2012,6
+2,2012,17,"Corpus uteri",48000,"Bahrain-Bahraini",10,294275,4.13,10,2012,2012,7
+2,2012,25,"Thyroid",48000,"Bahrain-Bahraini",12,294275,4.06,10,2012,2012,8
+2,2012,4,"Stomach",48000,"Bahrain-Bahraini",10,294275,3.50,10,2012,2012,9
+2,2012,29,"Leukaemia",48000,"Bahrain-Bahraini",8,294275,3.27,10,2012,2012,10
+2,2012,16,"Cervix uteri",48000,"Bahrain-Bahraini",7,294275,2.89,10,2012,2012,11
+2,2012,9,"Pancreas",48000,"Bahrain-Bahraini",5,294275,2.64,10,2012,2012,12
+2,2012,2,"Lip oral cavity and pharynx",48000,"Bahrain-Bahraini",7,294275,2.55,10,2012,2012,13
+2,2012,26,"Hodgkin lymphoma",48000,"Bahrain-Bahraini",5,294275,1.92,10,2012,2012,14
+2,2012,21,"Kidney",48000,"Bahrain-Bahraini",5,294275,1.90,10,2012,2012,15
+2,2012,24,"Brain, central nervous system",48000,"Bahrain-Bahraini",4,294275,1.78,10,2012,2012,16
+2,2012,22,"Bladder",48000,"Bahrain-Bahraini",4,294275,1.64,10,2012,2012,17
+2,2012,14,"Connective and soft tissue",48000,"Bahrain-Bahraini",3,294275,1.33,10,2012,2012,18
+2,2012,28,"Multiple myeloma and immunoproliferative diseases",48000,"Bahrain-Bahraini",2,294275,0.87,10,2012,2012,19
+2,2012,8,"Gallbladder and extrahepatic ducts",48000,"Bahrain-Bahraini",1,294275,0.43,10,2012,2012,20
+2,2012,3,"Oesophagus",48000,"Bahrain-Bahraini",1,294275,0.32,10,2012,2012,21
+2,2012,10,"Larynx",48000,"Bahrain-Bahraini",0,294275,0.00,10,2012,2012,22
+2,2012,19,"Prostate",48000,"Bahrain-Bahraini",0,294275,0.00,10,2012,2012,23
+2,2012,13,"Melanoma of skin",48000,"Bahrain-Bahraini",0,294275,0.00,10,2012,2012,24
+2,2012,20,"Testis",48000,"Bahrain-Bahraini",0,294275,0.00,10,2012,2012,25
+2,2012,12,"Bone",48000,"Bahrain-Bahraini",0,294275,0.00,10,2012,2012,26
+2,2012,23,"Eye",48000,"Bahrain-Bahraini",0,294275,0.00,10,2012,2012,27
+2,2012,15,"Breast",414000,"Kuwait-Kuwaiti",251,608914,58.68,10,2012,2012,1
+2,2012,5,"Colorectum",414000,"Kuwait-Kuwaiti",75,608914,18.49,10,2012,2012,2
+2,2012,25,"Thyroid",414000,"Kuwait-Kuwaiti",58,608914,10.44,10,2012,2012,3
+2,2012,27,"Non-Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",41,608914,9.46,10,2012,2012,4
+2,2012,17,"Corpus uteri",414000,"Kuwait-Kuwaiti",32,608914,8.83,10,2012,2012,5
+2,2012,29,"Leukaemia",414000,"Kuwait-Kuwaiti",21,608914,4.17,10,2012,2012,6
+2,2012,9,"Pancreas",414000,"Kuwait-Kuwaiti",15,608914,3.94,10,2012,2012,7
+2,2012,18,"Ovary",414000,"Kuwait-Kuwaiti",15,608914,3.88,10,2012,2012,8
+2,2012,2,"Lip oral cavity and pharynx",414000,"Kuwait-Kuwaiti",14,608914,3.83,10,2012,2012,9
+2,2012,26,"Hodgkin lymphoma",414000,"Kuwait-Kuwaiti",19,608914,3.23,10,2012,2012,10
+2,2012,16,"Cervix uteri",414000,"Kuwait-Kuwaiti",14,608914,3.18,10,2012,2012,11
+2,2012,24,"Brain, central nervous system",414000,"Kuwait-Kuwaiti",12,608914,2.88,10,2012,2012,12
+2,2012,28,"Multiple myeloma and immunoproliferative diseases",414000,"Kuwait-Kuwaiti",10,608914,2.73,10,2012,2012,13
+2,2012,11,"Lung",414000,"Kuwait-Kuwaiti",10,608914,2.69,10,2012,2012,14
+2,2012,4,"Stomach",414000,"Kuwait-Kuwaiti",10,608914,2.56,10,2012,2012,15
+2,2012,7,"Liver",414000,"Kuwait-Kuwaiti",9,608914,2.48,10,2012,2012,16
+2,2012,21,"Kidney",414000,"Kuwait-Kuwaiti",11,608914,2.31,10,2012,2012,17
+2,2012,22,"Bladder",414000,"Kuwait-Kuwaiti",8,608914,2.23,10,2012,2012,18
+2,2012,8,"Gallbladder and extrahepatic ducts",414000,"Kuwait-Kuwaiti",7,608914,1.91,10,2012,2012,19
+2,2012,14,"Connective and soft tissue",414000,"Kuwait-Kuwaiti",5,608914,0.77,10,2012,2012,20
+2,2012,3,"Oesophagus",414000,"Kuwait-Kuwaiti",2,608914,0.58,10,2012,2012,21
+2,2012,12,"Bone",414000,"Kuwait-Kuwaiti",2,608914,0.32,10,2012,2012,22
+2,2012,23,"Eye",414000,"Kuwait-Kuwaiti",1,608914,0.21,10,2012,2012,23
+2,2012,13,"Melanoma of skin",414000,"Kuwait-Kuwaiti",0,608914,0.00,10,2012,2012,24
+2,2012,19,"Prostate",414000,"Kuwait-Kuwaiti",0,608914,0.00,10,2012,2012,25
+2,2012,20,"Testis",414000,"Kuwait-Kuwaiti",0,608914,0.00,10,2012,2012,26
+2,2012,10,"Larynx",414000,"Kuwait-Kuwaiti",0,608914,0.00,10,2012,2012,27
