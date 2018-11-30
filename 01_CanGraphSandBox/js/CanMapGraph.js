@@ -38,6 +38,7 @@ var CanMapGraph = function( object ){
             'globe_translate' : { 'x' : 0 , 'y' : 50 } , 
             'translate'     : null , 
             'key_data'      : 'id',
+            'hd'            : false , 
             'mode'          : 'heat' , // heat or bubble
             'show_background' : true , 
             'background_globe' : '#ffffff',
@@ -310,9 +311,12 @@ CanMapGraph.prototype = {
     */ 
     preLoadMapData : function() {
 
+        let url_world_geojson = (  CanMapConf.chart.hd == false ) ? "/data/world.geojson" : "/data/world-who-out.geojson" ; 
+
         // queue function loads all external data files asynchronously 
         queue()     
-            .defer(d3.json, "data/world-general.topojson" ) // our geometries
+            // .defer(d3.json, "data/world-general.topojson" ) // our geometries
+            .defer(d3.json, url_world_geojson )
             .defer(d3.csv, "data/countries.csv")  // our data specific
             .await(function( error , geometries , countries ){ 
 
@@ -752,7 +756,7 @@ function grabValues( CanGraphGeometries,CanGraphCountries,predictions ){
     
     // if ( CanGraphCountries == undefined ) return ; 
 
-    // console.info( CanGraphCountries ) ;
+     console.info( CanGraphGeometries ) ;
 
     // first init to 0
     for (var index = 0; index < CanGraphCountries.length; index++ ) {

@@ -1,7 +1,14 @@
 	
 	path.country{
-		stroke: #000 ; 
-		stroke-width: 0.4;
+		stroke: #292929 ; 
+		stroke-width: 0.2 ;
+	}
+
+	text.country-txt{
+		font-size: 0.4em ; 
+		/*text-shadow: 1px 1px #ffffff ; */
+		display: none ; 
+		fill: #000000 ;
 	}
 
 	img#iarc{
@@ -30,8 +37,8 @@
 
 	div#txt-footer-map{
 		position: absolute;
-	    bottom: 50px;
-	    width: 760px;
+	    bottom: 80px;
+	    width: 1260px;
 	    right: 150px;
 	    font-size: 0.8em;
 	    text-align: justify;

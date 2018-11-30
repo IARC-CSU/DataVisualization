@@ -187,7 +187,6 @@ a.circle{
     font-weight: bold ; 
     font-size: 2em ; 
     text-align: center ; 
-    width: 100% ; 
     margin: 0;
 }
 
@@ -218,7 +217,8 @@ footer{
 h1{
     margin: 0.2em 0 ; 
     text-align: center ; 
-    padding-top: 20px ;
+    padding: 20px 50px ;
+    width: 1757px ;
 }
 
 h2 span.square{
@@ -431,6 +431,39 @@ ol.legend li{
     line-height: 15px;
 }
 
+ul.legend{
+    display: block;
+    position: absolute;
+    bottom: 115px;
+    left: 10px;
+    width: 350px ;
+}
+ul.legend li{
+    float: left ; 
+    width: 100% ;
+}
+
+ul.legend li span{
+    display: inline-block ; 
+    float: left ;
+}
+
+ul.legend li span.box{
+    width: 35px;
+    height: 20px;
+}
+
+ul.legend li span.box_label{
+    padding: 0 0 2px 5px ; 
+}
+
+ul.legend li span.no_data{
+    background: #f0f0f0 ; 
+}
+ul.legend li span.not_applicable{
+    background: #7d7d7d ; 
+}
+
 .disclaimer,.about{
     float: left;
 }
@@ -498,7 +531,8 @@ ol.legend li{
    ============ */
 
     .title {
-        float: left;
+        float: left ;
+        background: #fff ;
     }
 
     nav {
@@ -702,4 +736,8 @@ ul.hubs-list li span{
     h3 {
         page-break-after: avoid;
     }
+}
+
+path#code_ESH{
+    fill : #7d7d7d !important;
 }

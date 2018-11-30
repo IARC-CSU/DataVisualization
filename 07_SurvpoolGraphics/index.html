@@ -1,47 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style> /* set the CSS */
 
-svg{
-  float: left;
-  display: inline-block;
-}
-.line,.line_anim{
-  fill: none;
-  stroke-width: 3px;
-  stroke-opacity:0.7;
-}
-
-.line_poly,.line_poly_animation{
-  fill: none ;
-  stroke-width: 3px;
-}
-
-.area {
-  fill: #94ffa2;
-}
-
-.title{
-  width: 100%;
-}
-
-.grid.age line {
-  stroke: #000000;
-  stroke-dasharray: 5px ; 
-  stroke-width: 2px ;
-}
-
-.grid.bmi line {
-  stroke: #000000;
-  stroke-width: 4px ;
-  cursor: row-resize ; 
-}
-
-.grid path {
-  stroke-width: 0;
-}
-
-</style>
 <body>
 
 <!-- load the jquery library -->
@@ -235,11 +194,13 @@ d3.csv("data/MyDataRaw.csv", function(error, data) {
       .attr("d", valueline)
       .style("stroke-opacity",0.5)
       .attr("src-color",function(d){ return color(l);})
-      .style('stroke',function(d,i){ return color(l);})
+      .style('stroke', function(d,i){ return color(l);})
       .on('mouseover',function(d){
 
-        d3.selectAll('.line').style('stroke-opacity',0.2).style('stroke','#cccccc') ; 
-        d3.select(this).style('stroke-opacity',1).style('stroke',function(d){ return d3.select(this).attr('src-color');}) ; 
+        let my_color = d3.select(this).attr('src-color'); 
+        
+        d3.selectAll('.line').style('stroke-opacity',0.2).style('stroke',my_color) ; 
+        d3.select(this).style('stroke-opacity',1).style('stroke',my_color).style("stroke-width","4px") ; 
         
         d3.selectAll('.line_poly').style('stroke-opacity',0.2) ; 
         d3.selectAll('#line_poly_'+d[0].id).style('stroke','red').style('stroke-opacity',1);
@@ -306,6 +267,7 @@ d3.csv("data/MyDataRaw.csv", function(error, data) {
       svg_projected.append("path")
         .datum( tmpVals[p].values )
         .attr("class", "line_poly")
+        .style("stroke-opacity",0.2)
         .style("stroke","#cccccc")
         .attr("id", function(d){ return 'line_poly_'+poly.id }) // assign ID
         .attr("d", d3.line()
