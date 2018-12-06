@@ -113,6 +113,9 @@
 		<br/>
 		<form>
 		<label><input type="checkbox" id="who_goal"  name="who" onChange="add_goal()"> WHO objectives</label>
+		<br/>
+		<br/>
+		<a href="#" id="download">Download</a>
 		</form>
 		</div>
 		
@@ -123,6 +126,13 @@
 		
 
 </body>
+
+	<script type="text/javascript">
+
+	d3.select("#download")
+    .on("mouseover", writeDownloadLink);
+		
+	</script >
  
 </html>
 	
