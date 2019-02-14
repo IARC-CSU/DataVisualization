@@ -167,6 +167,7 @@
 		} 
 		
 		
+		
 					
 		// add new trend from data_sort to top _list
 		var nb_trend = trend_element.length -1
