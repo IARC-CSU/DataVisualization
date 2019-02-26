@@ -116,6 +116,8 @@
 		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2000</label>
 		<br/>
 		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2016</label>
+		<br/><br/>
+		<a href="#" id="download">Download</a>
 		</form>
 		
 
@@ -132,5 +134,13 @@
 
 </body>
  
+ 	<script type="text/javascript">
+
+	d3.select("#download")
+    .on("mouseover", writeDownloadLink);
+		
+	</script>
+ 
+
 </html>
 	
