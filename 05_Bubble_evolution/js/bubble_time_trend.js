@@ -105,6 +105,7 @@
 		];
 		
 		graph_select = graph
+
 		
 		graph_select.append("circle")
 			.attr("class","circle_legend")
@@ -184,6 +185,15 @@
 				length = path_legend.node().getTotalLength();
 				return length;
 			})
+
+		graph_select.append("path")
+			.attr("d", d3.svg.symbol()
+				.size( function(d) { return (14*14)/2 })
+				.type( function(d) { return "square" }))
+			.attr("transform","rotate(45)")
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("fill", "#b7b7b7");
 		
 		 graph_select.append("circle")
 			.attr("class","circle_legend1")
@@ -306,13 +316,13 @@
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
 			.attr("transform", "translate("+xScale(5.5*(bar_space+1))+"," +(var_height +150) + ")")
-			.text("Medium / High HDI")
+			.text("Middle-income countries")
 			
 		graph_select.append("text") // add x axis subtitle
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
 			.attr("transform", "translate("+xScale(16*(bar_space+1))+"," +(var_height +150) + ")")
-			.text("Very High HDI")
+			.text("High-income countries")
 	
 
 		
@@ -367,6 +377,18 @@
 				return length;
 			})
 
+		nodes.append("path")
+			.attr("d", d3.svg.symbol()
+				.size( function(d) { return (14*14)/2 })
+				.type( function(d) { return "square" }))
+			.style("stroke", "#000000")   // set the line colour
+			.style("stroke-width", 2)
+			.attr("transform", function(d, i) {
+				return "translate(0," + (yScale(d.values[0].values[0].risk)) + ") rotate(45)";}) 
+			.attr("fill", function(d, i) {
+				return color;
+			});
+
 		nodes.append("circle")
 			.attr("class","circle1")
 			.attr("r",7)
@@ -377,6 +399,8 @@
 			.attr("fill", function(d, i) {
 				return color;
 			});
+
+		
 		
 		var node_label = graph_select
 			.selectAll()
