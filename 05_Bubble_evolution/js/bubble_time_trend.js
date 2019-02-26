@@ -15,7 +15,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
@@ -525,9 +525,9 @@
 			})
 			.tween("text", function(d) {
 				if(bool)
-		      		var i = d3.interpolate(  2000 , 2015 );
+		      		var i = d3.interpolate(  2000 , 2016 );
 		      	else
-		      		var i = d3.interpolate(  2015 , 2000 );
+		      		var i = d3.interpolate(  2016 , 2000 );
 		      	return function(t) {
 		        	d3.select(this).text( roundNumber(i(t), 1) );
 		      	};
@@ -604,7 +604,7 @@
 				hdi: +d.hdi,
 				risk: +d.risk,
 				year: +d.year,
-				rank: +d.rank2,
+				rank: +d.rank,
 
 				};	
 			},		
