@@ -76,8 +76,8 @@
 				
 
 				add_axis_title(bar_graph,data_temp,true);
-				add_circle_line(bar_graph,data_nest, "#377eb8");
-				add_circle_line(bar_graph,data_nest1 ,"#e41a1c");
+				add_circle_line(bar_graph,data_nest, "#377eb8", true);
+				add_circle_line(bar_graph,data_nest1 ,"#e41a1c", false);
 				add_legend_cat(graph_legend);
 				add_legend(graph_legend2);
 
@@ -105,13 +105,12 @@
 		];
 		
 		graph_select = graph
-
 		
 		graph_select.append("circle")
 			.attr("class","circle_legend")
 			.attr("r", 7)
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_symbol)
 			.attr("fill", "#377eb8");
 			
 		graph_select.append("text")
@@ -127,7 +126,7 @@
 			.attr("class","circle_legend")
 			.attr("r", 7)
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_symbol)
 			.attr("transform","translate(0,20)")
 			.attr("fill", "#e41a1c");
 			
@@ -169,7 +168,7 @@
 		var path_legend = graph_select.append("path")
 			.attr("class","path_legend")
 			.style("stroke", "#b7b7b7")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_line)
 			.attr("d", function(d, i){
 				return lineFunction_legend(line_legend)
 				})
@@ -192,14 +191,14 @@
 				.type( function(d) { return "square" }))
 			.attr("transform","rotate(45)")
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_symbol)
 			.attr("fill", "#b7b7b7");
 		
 		 graph_select.append("circle")
 			.attr("class","circle_legend1")
 			.attr("r", 7)
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_symbol)
 			.attr("fill", "#b7b7b7");
 			
 			
@@ -330,12 +329,108 @@
 			 			
 	}
 
-	function add_circle_line(graph, data, color) {
+	function add_circle_line(graph, data, color, cancer_label) {
 
 		console.log(color)
 		
 		graph_select = graph
 		var data_temp = data
+
+		if (cancer_label) {
+		
+			var node_label = graph_select
+				.selectAll()
+				.data(data_temp)
+				.enter()
+				.append("g")
+				.attr("class","cancer_label_holder")
+				.attr("transform", function(d, i) {
+					shift = (d.values[0].values[0].hdi-1)/2
+					pos = (d.values[0].values[0].rank)
+					return "translate(" + (xScale((pos+shift)*(bar_space+1))) + "," + (var_height +30)+ ")";
+					})
+				
+			node_label
+				.append("text")
+				.attr("class","cancer_label")
+				.style("text-anchor", "middle")
+				//.text(function(d,i) {return d.values[0].values[0].country_label})
+				.attr("dy", "0.25em")
+				.attr("fill", "#000000")    // set the line colour
+				.attr("transform", "rotate(-45)")
+				.each(function (d) { // to use the wrap label fonction 
+					var temp = d.values[0].values[0].country_label;
+					if (/\s/.test(temp)) {
+						var max = label_wrap;
+					} 
+					else {
+						var max = 100;
+					}
+					var lines = wordwrap(temp, max);
+					for (var i = 0; i < lines.length; i++) {
+						d3.select(this).append("tspan").attr("dy",0).attr("x",0).attr("y",30/Math.pow(3/2, lines.length)+i*15).text(lines[i])
+						}
+				});	
+				
+				
+
+			graph_select.append("g") // add line for each group
+				.selectAll()
+				.data(data_temp)
+				.enter()
+				.append("line")
+				.style("stroke", "#c0c0c0")  
+				.attr("x1",  function(d, i) {
+					pos = (i+1)
+					if (i > 9) {
+						pos = pos +0.5
+					}
+					return xScale((pos)*(bar_space+1))
+				})
+				.attr("x2",  function(d, i) {
+					pos = (i+1)
+					if (i > 9) {
+						pos = pos +0.5
+					}
+					return xScale((pos)*(bar_space+1))
+				})
+				.attr("y1", var_height) 
+				.attr("y2", 0) 
+				.style("opacity", 1);
+				
+			graph_select.append("g") // add line for each group
+				.selectAll()
+				.data(data_temp)
+				.enter()
+				.append("line")
+				.style("stroke", "black")  
+				.attr("x1",  function(d, i) {
+					pos = (i+1)
+					if (i > 9) {
+						pos = pos +0.5
+					}
+					return xScale((pos)*(bar_space+1))
+				})
+				.attr("x2",  function(d, i) {
+					pos = (i+1)
+					if (i > 9) {
+						pos = pos +0.5
+					}
+					return xScale((pos)*(bar_space+1))
+				})
+				.attr("y1", var_height + 10)  
+				.attr("y2", var_height) 
+				.style("opacity", 1);
+
+			graph_select.append("line") // add line for x = 0
+			.style("stroke", "black")  
+			.attr("x1", 0)
+			.attr("y1", var_height)   
+			.attr("x2", 0)
+			.attr("y2", 0);
+
+		}
+		
 		
 		var nodes = graph_select.append("g")
 			.attr("id","nodes_id")
@@ -362,7 +457,7 @@
 				
 				return color;
 			})
-			.attr("stroke-width", 2)
+			.attr("stroke-width", stroke_line)
 			.attr("fill", "none")
 		
 		
@@ -382,7 +477,7 @@
 				.size( function(d) { return (14*14)/2 })
 				.type( function(d) { return "square" }))
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_symbol)
 			.attr("transform", function(d, i) {
 				return "translate(0," + (yScale(d.values[0].values[0].risk)) + ") rotate(45)";}) 
 			.attr("fill", function(d, i) {
@@ -393,106 +488,12 @@
 			.attr("class","circle1")
 			.attr("r",7)
 			.style("stroke", "#000000")   // set the line colour
-			.style("stroke-width", 2)
+			.style("stroke-width", stroke_symbol)
 			.attr("transform", function(d, i) {
 				return "translate(0," + (yScale(d.values[0].values[0].risk)) + ")";}) 
 			.attr("fill", function(d, i) {
 				return color;
 			});
-
-		
-		
-		var node_label = graph_select
-			.selectAll()
-			.data(data_temp)
-			.enter()
-			.append("g")
-			.attr("class","cancer_label_holder")
-			.attr("transform", function(d, i) {
-				shift = (d.values[0].values[0].hdi-1)/2
-				pos = (d.values[0].values[0].rank)
-				return "translate(" + (xScale((pos+shift)*(bar_space+1))) + "," + (var_height +30)+ ")";
-				})
-			
-		node_label
-			.append("text")
-			.attr("class","cancer_label")
-			.style("text-anchor", "middle")
-			//.text(function(d,i) {return d.values[0].values[0].country_label})
-			.attr("dy", "0.25em")
-			.attr("fill", "#000000")    // set the line colour
-			.attr("transform", "rotate(-45)")
-			.each(function (d) { // to use the wrap label fonction 
-				var temp = d.values[0].values[0].country_label;
-				if (/\s/.test(temp)) {
-					var max = label_wrap;
-				} 
-				else {
-					var max = 100;
-				}
-				var lines = wordwrap(temp, max);
-				for (var i = 0; i < lines.length; i++) {
-					d3.select(this).append("tspan").attr("dy",0).attr("x",0).attr("y",30/Math.pow(3/2, lines.length)+i*15).text(lines[i])
-					}
-			});	
-			
-			
-
-		graph_select.append("g") // add line for each group
-			.selectAll()
-			.data(data_temp)
-			.enter()
-			.append("line")
-			.style("stroke", "black")  
-			.attr("x1",  function(d, i) {
-				pos = (i+1)
-				if (i > 9) {
-					pos = pos +0.5
-				}
-				return xScale((pos)*(bar_space+1))
-			})
-			.attr("x2",  function(d, i) {
-				pos = (i+1)
-				if (i > 9) {
-					pos = pos +0.5
-				}
-				return xScale((pos)*(bar_space+1))
-			})
-			.attr("y1", var_height) 
-			.attr("y2", 0) 
-			.style("opacity", 0.1);
-			
-		graph_select.append("g") // add line for each group
-			.selectAll()
-			.data(data_temp)
-			.enter()
-			.append("line")
-			.style("stroke", "black")  
-			.attr("x1",  function(d, i) {
-				pos = (i+1)
-				if (i > 9) {
-					pos = pos +0.5
-				}
-				return xScale((pos)*(bar_space+1))
-			})
-			.attr("x2",  function(d, i) {
-				pos = (i+1)
-				if (i > 9) {
-					pos = pos +0.5
-				}
-				return xScale((pos)*(bar_space+1))
-			})
-			.attr("y1", var_height + 10)  
-			.attr("y2", var_height) 
-			.style("opacity", 1);
-
-		graph_select.append("line") // add line for x = 0
-		.style("stroke", "black")  
-		.attr("x1", 0)
-		.attr("y1", var_height)   
-		.attr("x2", 0)
-		.attr("y2", 0);
-		
 
 	}
 	
