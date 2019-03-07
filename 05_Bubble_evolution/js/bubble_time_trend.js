@@ -266,6 +266,7 @@
 			.attr("stroke-dasharray", function(d,i) {
 
 				length = path[0][i].getTotalLength();
+				console.log(length)
 				return length + " " + length
 			})
 			.attr("stroke-dashoffset", function(d,i) {

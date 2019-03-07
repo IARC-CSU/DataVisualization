@@ -1,0 +1,1021 @@
+country_code,country_label,risk,cause_num,cause,year,hdi,area_code,area_label,select,rank
+36,"Australia",5.874734,1,"Malignant neoplasms",2014,2,18,"Australia/New Zealand",1,12
+36,"Australia",12.72632,0,"Major NCDs",2001,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.614958,1,"Malignant neoplasms",2008,2,18,"Australia/New Zealand",1,12
+36,"Australia",3.247384,2,"Cardiovascular diseases",2006,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.969199,1,"Malignant neoplasms",2005,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.471977,2,"Cardiovascular diseases",2016,2,18,"Australia/New Zealand",1,12
+36,"Australia",10.79638,0,"Major NCDs",2007,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.742641,1,"Malignant neoplasms",2007,2,18,"Australia/New Zealand",1,12
+36,"Australia",12.02649,0,"Major NCDs",2003,2,18,"Australia/New Zealand",1,12
+36,"Australia",13.11451,0,"Major NCDs",2000,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.573204,2,"Cardiovascular diseases",2012,2,18,"Australia/New Zealand",1,12
+36,"Australia",3.223177,2,"Cardiovascular diseases",2007,2,18,"Australia/New Zealand",1,12
+36,"Australia",10.60071,0,"Major NCDs",2008,2,18,"Australia/New Zealand",1,12
+36,"Australia",7.606865,1,"Malignant neoplasms",2000,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.510851,2,"Cardiovascular diseases",2015,2,18,"Australia/New Zealand",1,12
+36,"Australia",4.152118,2,"Cardiovascular diseases",2002,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.038362,1,"Malignant neoplasms",2012,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.85307,2,"Cardiovascular diseases",2010,2,18,"Australia/New Zealand",1,12
+36,"Australia",5.910396,1,"Malignant neoplasms",2016,2,18,"Australia/New Zealand",1,12
+36,"Australia",4.37355,2,"Cardiovascular diseases",2001,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.615124,2,"Cardiovascular diseases",2014,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.726427,2,"Cardiovascular diseases",2011,2,18,"Australia/New Zealand",1,12
+36,"Australia",9.359098,0,"Major NCDs",2013,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.445929,1,"Malignant neoplasms",2009,2,18,"Australia/New Zealand",1,12
+36,"Australia",9.330482,0,"Major NCDs",2014,2,18,"Australia/New Zealand",1,12
+36,"Australia",9.970413,0,"Major NCDs",2010,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.007229,1,"Malignant neoplasms",2013,2,18,"Australia/New Zealand",1,12
+36,"Australia",11.72091,0,"Major NCDs",2016,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.580081,2,"Cardiovascular diseases",2013,2,18,"Australia/New Zealand",1,12
+36,"Australia",7.4698,1,"Malignant neoplasms",2001,2,18,"Australia/New Zealand",1,12
+36,"Australia",4.529999,2,"Cardiovascular diseases",2000,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.250242,1,"Malignant neoplasms",2011,2,18,"Australia/New Zealand",1,12
+36,"Australia",7.106485,1,"Malignant neoplasms",2004,2,18,"Australia/New Zealand",1,12
+36,"Australia",12.47013,0,"Major NCDs",2002,2,18,"Australia/New Zealand",1,12
+36,"Australia",3.184577,2,"Cardiovascular diseases",2008,2,18,"Australia/New Zealand",1,12
+36,"Australia",10.70677,0,"Major NCDs",2006,2,18,"Australia/New Zealand",1,12
+36,"Australia",11.40538,0,"Major NCDs",2005,2,18,"Australia/New Zealand",1,12
+36,"Australia",3.586389,2,"Cardiovascular diseases",2005,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.70284,1,"Malignant neoplasms",2006,2,18,"Australia/New Zealand",1,12
+36,"Australia",3.721026,2,"Cardiovascular diseases",2004,2,18,"Australia/New Zealand",1,12
+36,"Australia",9.323126,0,"Major NCDs",2015,2,18,"Australia/New Zealand",1,12
+36,"Australia",9.781311,0,"Major NCDs",2011,2,18,"Australia/New Zealand",1,12
+36,"Australia",3.910043,2,"Cardiovascular diseases",2003,2,18,"Australia/New Zealand",1,12
+36,"Australia",10.19542,0,"Major NCDs",2009,2,18,"Australia/New Zealand",1,12
+36,"Australia",5.960216,1,"Malignant neoplasms",2015,2,18,"Australia/New Zealand",1,12
+36,"Australia",7.40884,1,"Malignant neoplasms",2002,2,18,"Australia/New Zealand",1,12
+36,"Australia",6.328276,1,"Malignant neoplasms",2010,2,18,"Australia/New Zealand",1,12
+36,"Australia",2.929182,2,"Cardiovascular diseases",2009,2,18,"Australia/New Zealand",1,12
+36,"Australia",7.277759,1,"Malignant neoplasms",2003,2,18,"Australia/New Zealand",1,12
+36,"Australia",9.379982,0,"Major NCDs",2012,2,18,"Australia/New Zealand",1,12
+36,"Australia",11.65785,0,"Major NCDs",2004,2,18,"Australia/New Zealand",1,12
+76,"Brazil",6.911934,1,"Malignant neoplasms",2012,1,8,"South America",1,6
+76,"Brazil",23.58586,0,"Major NCDs",2001,1,8,"South America",1,6
+76,"Brazil",10.91565,2,"Cardiovascular diseases",2005,1,8,"South America",1,6
+76,"Brazil",22.24606,0,"Major NCDs",2003,1,8,"South America",1,6
+76,"Brazil",18.80598,0,"Major NCDs",2011,1,8,"South America",1,6
+76,"Brazil",20.39353,0,"Major NCDs",2006,1,8,"South America",1,6
+76,"Brazil",6.681332,1,"Malignant neoplasms",2015,1,8,"South America",1,6
+76,"Brazil",6.682232,1,"Malignant neoplasms",2014,1,8,"South America",1,6
+76,"Brazil",17.09299,0,"Major NCDs",2014,1,8,"South America",1,6
+76,"Brazil",7.55787,1,"Malignant neoplasms",2004,1,8,"South America",1,6
+76,"Brazil",10.29742,2,"Cardiovascular diseases",2008,1,8,"South America",1,6
+76,"Brazil",12.26436,2,"Cardiovascular diseases",2002,1,8,"South America",1,6
+76,"Brazil",9.001,2,"Cardiovascular diseases",2012,1,8,"South America",1,6
+76,"Brazil",7.84931,1,"Malignant neoplasms",2001,1,8,"South America",1,6
+76,"Brazil",7.589908,1,"Malignant neoplasms",2003,1,8,"South America",1,6
+76,"Brazil",22.0275,0,"Major NCDs",2016,1,8,"South America",1,6
+76,"Brazil",19.99701,0,"Major NCDs",2007,1,8,"South America",1,6
+76,"Brazil",11.93232,2,"Cardiovascular diseases",2003,1,8,"South America",1,6
+76,"Brazil",7.972633,2,"Cardiovascular diseases",2016,1,8,"South America",1,6
+76,"Brazil",9.445651,2,"Cardiovascular diseases",2011,1,8,"South America",1,6
+76,"Brazil",18.1598,0,"Major NCDs",2012,1,8,"South America",1,6
+76,"Brazil",8.32011,2,"Cardiovascular diseases",2014,1,8,"South America",1,6
+76,"Brazil",7.255045,1,"Malignant neoplasms",2006,1,8,"South America",1,6
+76,"Brazil",19.03092,0,"Major NCDs",2010,1,8,"South America",1,6
+76,"Brazil",7.07347,1,"Malignant neoplasms",2010,1,8,"South America",1,6
+76,"Brazil",9.887068,2,"Cardiovascular diseases",2009,1,8,"South America",1,6
+76,"Brazil",11.74522,2,"Cardiovascular diseases",2004,1,8,"South America",1,6
+76,"Brazil",10.67496,2,"Cardiovascular diseases",2006,1,8,"South America",1,6
+76,"Brazil",6.680514,1,"Malignant neoplasms",2016,1,8,"South America",1,6
+76,"Brazil",7.058758,1,"Malignant neoplasms",2009,1,8,"South America",1,6
+76,"Brazil",12.8771,2,"Cardiovascular diseases",2001,1,8,"South America",1,6
+76,"Brazil",21.97715,0,"Major NCDs",2004,1,8,"South America",1,6
+76,"Brazil",17.70288,0,"Major NCDs",2013,1,8,"South America",1,6
+76,"Brazil",20.76856,0,"Major NCDs",2005,1,8,"South America",1,6
+76,"Brazil",7.368398,1,"Malignant neoplasms",2005,1,8,"South America",1,6
+76,"Brazil",7.163623,1,"Malignant neoplasms",2007,1,8,"South America",1,6
+76,"Brazil",6.806047,1,"Malignant neoplasms",2013,1,8,"South America",1,6
+76,"Brazil",8.180835,2,"Cardiovascular diseases",2015,1,8,"South America",1,6
+76,"Brazil",7.733804,1,"Malignant neoplasms",2002,1,8,"South America",1,6
+76,"Brazil",7.948346,1,"Malignant neoplasms",2000,1,8,"South America",1,6
+76,"Brazil",16.96344,0,"Major NCDs",2015,1,8,"South America",1,6
+76,"Brazil",6.96735,1,"Malignant neoplasms",2011,1,8,"South America",1,6
+76,"Brazil",19.32439,0,"Major NCDs",2009,1,8,"South America",1,6
+76,"Brazil",24.41662,0,"Major NCDs",2000,1,8,"South America",1,6
+76,"Brazil",22.81546,0,"Major NCDs",2002,1,8,"South America",1,6
+76,"Brazil",9.611523,2,"Cardiovascular diseases",2010,1,8,"South America",1,6
+76,"Brazil",7.192229,1,"Malignant neoplasms",2008,1,8,"South America",1,6
+76,"Brazil",10.40583,2,"Cardiovascular diseases",2007,1,8,"South America",1,6
+76,"Brazil",8.663398,2,"Cardiovascular diseases",2013,1,8,"South America",1,6
+76,"Brazil",13.48273,2,"Cardiovascular diseases",2000,1,8,"South America",1,6
+76,"Brazil",19.86973,0,"Major NCDs",2008,1,8,"South America",1,6
+100,"Bulgaria",14.43258,2,"Cardiovascular diseases",2015,1,14,"Eastern Europe",1,9
+100,"Bulgaria",15.19513,2,"Cardiovascular diseases",2014,1,14,"Eastern Europe",1,9
+100,"Bulgaria",14.39498,2,"Cardiovascular diseases",2013,1,14,"Eastern Europe",1,9
+100,"Bulgaria",25.38241,0,"Major NCDs",2008,1,14,"Eastern Europe",1,9
+100,"Bulgaria",18.78428,2,"Cardiovascular diseases",2004,1,14,"Eastern Europe",1,9
+100,"Bulgaria",19.37775,2,"Cardiovascular diseases",2003,1,14,"Eastern Europe",1,9
+100,"Bulgaria",16.08898,2,"Cardiovascular diseases",2009,1,14,"Eastern Europe",1,9
+100,"Bulgaria",8.895716,1,"Malignant neoplasms",2011,1,14,"Eastern Europe",1,9
+100,"Bulgaria",19.28771,2,"Cardiovascular diseases",2002,1,14,"Eastern Europe",1,9
+100,"Bulgaria",28.04537,0,"Major NCDs",2001,1,14,"Eastern Europe",1,9
+100,"Bulgaria",8.776854,1,"Malignant neoplasms",2001,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.297938,1,"Malignant neoplasms",2015,1,14,"Eastern Europe",1,9
+100,"Bulgaria",28.45358,0,"Major NCDs",2000,1,14,"Eastern Europe",1,9
+100,"Bulgaria",27.44244,0,"Major NCDs",2005,1,14,"Eastern Europe",1,9
+100,"Bulgaria",14.80293,2,"Cardiovascular diseases",2012,1,14,"Eastern Europe",1,9
+100,"Bulgaria",17.77652,2,"Cardiovascular diseases",2006,1,14,"Eastern Europe",1,9
+100,"Bulgaria",23.79683,0,"Major NCDs",2015,1,14,"Eastern Europe",1,9
+100,"Bulgaria",15.69428,2,"Cardiovascular diseases",2011,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.618299,1,"Malignant neoplasms",2006,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.184587,1,"Malignant neoplasms",2009,1,14,"Eastern Europe",1,9
+100,"Bulgaria",27.27993,0,"Major NCDs",2006,1,14,"Eastern Europe",1,9
+100,"Bulgaria",17.92155,2,"Cardiovascular diseases",2005,1,14,"Eastern Europe",1,9
+100,"Bulgaria",8.716118,1,"Malignant neoplasms",2000,1,14,"Eastern Europe",1,9
+100,"Bulgaria",8.815579,1,"Malignant neoplasms",2010,1,14,"Eastern Europe",1,9
+100,"Bulgaria",27.9483,0,"Major NCDs",2003,1,14,"Eastern Europe",1,9
+100,"Bulgaria",25.47963,0,"Major NCDs",2009,1,14,"Eastern Europe",1,9
+100,"Bulgaria",24.47715,0,"Major NCDs",2014,1,14,"Eastern Europe",1,9
+100,"Bulgaria",19.9714,2,"Cardiovascular diseases",2000,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.178762,1,"Malignant neoplasms",2014,1,14,"Eastern Europe",1,9
+100,"Bulgaria",24.84215,0,"Major NCDs",2011,1,14,"Eastern Europe",1,9
+100,"Bulgaria",26.28907,0,"Major NCDs",2007,1,14,"Eastern Europe",1,9
+100,"Bulgaria",25.12049,0,"Major NCDs",2010,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.532886,1,"Malignant neoplasms",2007,1,14,"Eastern Europe",1,9
+100,"Bulgaria",23.62777,0,"Major NCDs",2013,1,14,"Eastern Europe",1,9
+100,"Bulgaria",27.49721,0,"Major NCDs",2004,1,14,"Eastern Europe",1,9
+100,"Bulgaria",24.17892,0,"Major NCDs",2012,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.711346,1,"Malignant neoplasms",2005,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.343056,1,"Malignant neoplasms",2012,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.222792,1,"Malignant neoplasms",2013,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.811593,1,"Malignant neoplasms",2016,1,14,"Eastern Europe",1,9
+100,"Bulgaria",8.919271,1,"Malignant neoplasms",2003,1,14,"Eastern Europe",1,9
+100,"Bulgaria",16.7329,2,"Cardiovascular diseases",2007,1,14,"Eastern Europe",1,9
+100,"Bulgaria",27.94313,0,"Major NCDs",2002,1,14,"Eastern Europe",1,9
+100,"Bulgaria",19.5623,2,"Cardiovascular diseases",2001,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.084301,1,"Malignant neoplasms",2004,1,14,"Eastern Europe",1,9
+100,"Bulgaria",30.39965,0,"Major NCDs",2016,1,14,"Eastern Europe",1,9
+100,"Bulgaria",15.28224,2,"Cardiovascular diseases",2016,1,14,"Eastern Europe",1,9
+100,"Bulgaria",16.03226,2,"Cardiovascular diseases",2010,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.028402,1,"Malignant neoplasms",2002,1,14,"Eastern Europe",1,9
+100,"Bulgaria",15.67816,2,"Cardiovascular diseases",2008,1,14,"Eastern Europe",1,9
+100,"Bulgaria",9.636333,1,"Malignant neoplasms",2008,1,14,"Eastern Europe",1,9
+152,"Chile",13.1517,0,"Major NCDs",2008,2,8,"South America",1,15
+152,"Chile",6.451572,1,"Malignant neoplasms",2016,2,8,"South America",1,15
+152,"Chile",7.104218,1,"Malignant neoplasms",2005,2,8,"South America",1,15
+152,"Chile",13.71969,0,"Major NCDs",2007,2,8,"South America",1,15
+152,"Chile",6.789978,1,"Malignant neoplasms",2008,2,8,"South America",1,15
+152,"Chile",5.059551,2,"Cardiovascular diseases",2008,2,8,"South America",1,15
+152,"Chile",5.671517,2,"Cardiovascular diseases",2002,2,8,"South America",1,15
+152,"Chile",13.02858,0,"Major NCDs",2012,2,8,"South America",1,15
+152,"Chile",6.729249,1,"Malignant neoplasms",2013,2,8,"South America",1,15
+152,"Chile",16.86707,0,"Major NCDs",2016,2,8,"South America",1,15
+152,"Chile",6.892322,1,"Malignant neoplasms",2011,2,8,"South America",1,15
+152,"Chile",14.39587,0,"Major NCDs",2002,2,8,"South America",1,15
+152,"Chile",14.5202,0,"Major NCDs",2003,2,8,"South America",1,15
+152,"Chile",5.234908,2,"Cardiovascular diseases",2006,2,8,"South America",1,15
+152,"Chile",4.826335,2,"Cardiovascular diseases",2012,2,8,"South America",1,15
+152,"Chile",4.882479,2,"Cardiovascular diseases",2011,2,8,"South America",1,15
+152,"Chile",13.32393,0,"Major NCDs",2010,2,8,"South America",1,15
+152,"Chile",7.50927,1,"Malignant neoplasms",2000,2,8,"South America",1,15
+152,"Chile",7.039402,1,"Malignant neoplasms",2009,2,8,"South America",1,15
+152,"Chile",4.851988,2,"Cardiovascular diseases",2014,2,8,"South America",1,15
+152,"Chile",14.58531,0,"Major NCDs",2000,2,8,"South America",1,15
+152,"Chile",5.543381,2,"Cardiovascular diseases",2004,2,8,"South America",1,15
+152,"Chile",7.446656,1,"Malignant neoplasms",2002,2,8,"South America",1,15
+152,"Chile",6.787749,1,"Malignant neoplasms",2012,2,8,"South America",1,15
+152,"Chile",5.397856,2,"Cardiovascular diseases",2007,2,8,"South America",1,15
+152,"Chile",14.07326,0,"Major NCDs",2004,2,8,"South America",1,15
+152,"Chile",7.04308,1,"Malignant neoplasms",2006,2,8,"South America",1,15
+152,"Chile",5.458908,2,"Cardiovascular diseases",2005,2,8,"South America",1,15
+152,"Chile",6.541333,1,"Malignant neoplasms",2014,2,8,"South America",1,15
+152,"Chile",14.90598,0,"Major NCDs",2001,2,8,"South America",1,15
+152,"Chile",4.89558,2,"Cardiovascular diseases",2013,2,8,"South America",1,15
+152,"Chile",5.946736,2,"Cardiovascular diseases",2000,2,8,"South America",1,15
+152,"Chile",7.124383,1,"Malignant neoplasms",2004,2,8,"South America",1,15
+152,"Chile",13.37619,0,"Major NCDs",2009,2,8,"South America",1,15
+152,"Chile",4.614332,2,"Cardiovascular diseases",2016,2,8,"South America",1,15
+152,"Chile",12.49619,0,"Major NCDs",2015,2,8,"South America",1,15
+152,"Chile",6.568558,1,"Malignant neoplasms",2015,2,8,"South America",1,15
+152,"Chile",12.60123,0,"Major NCDs",2014,2,8,"South America",1,15
+152,"Chile",13.93742,0,"Major NCDs",2005,2,8,"South America",1,15
+152,"Chile",7.54908,1,"Malignant neoplasms",2001,2,8,"South America",1,15
+152,"Chile",13.15858,0,"Major NCDs",2011,2,8,"South America",1,15
+152,"Chile",6.869282,1,"Malignant neoplasms",2007,2,8,"South America",1,15
+152,"Chile",13.63961,0,"Major NCDs",2006,2,8,"South America",1,15
+152,"Chile",12.86585,0,"Major NCDs",2013,2,8,"South America",1,15
+152,"Chile",5.050047,2,"Cardiovascular diseases",2009,2,8,"South America",1,15
+152,"Chile",7.377085,1,"Malignant neoplasms",2003,2,8,"South America",1,15
+152,"Chile",5.066941,2,"Cardiovascular diseases",2010,2,8,"South America",1,15
+152,"Chile",5.835997,2,"Cardiovascular diseases",2003,2,8,"South America",1,15
+152,"Chile",6.840008,1,"Malignant neoplasms",2010,2,8,"South America",1,15
+152,"Chile",4.666015,2,"Cardiovascular diseases",2015,2,8,"South America",1,15
+152,"Chile",5.958252,2,"Cardiovascular diseases",2001,2,8,"South America",1,15
+170,"Colombia",18.07149,0,"Major NCDs",2008,1,8,"South America",1,7
+170,"Colombia",18.8884,0,"Major NCDs",2006,1,8,"South America",1,7
+170,"Colombia",7.314772,1,"Malignant neoplasms",2013,1,8,"South America",1,7
+170,"Colombia",19.65198,0,"Major NCDs",2003,1,8,"South America",1,7
+170,"Colombia",17.4427,0,"Major NCDs",2009,1,8,"South America",1,7
+170,"Colombia",20.61333,0,"Major NCDs",2000,1,8,"South America",1,7
+170,"Colombia",9.71416,2,"Cardiovascular diseases",2002,1,8,"South America",1,7
+170,"Colombia",7.131563,1,"Malignant neoplasms",2011,1,8,"South America",1,7
+170,"Colombia",17.29537,0,"Major NCDs",2010,1,8,"South America",1,7
+170,"Colombia",7.699444,2,"Cardiovascular diseases",2013,1,8,"South America",1,7
+170,"Colombia",9.386039,2,"Cardiovascular diseases",2004,1,8,"South America",1,7
+170,"Colombia",7.790525,1,"Malignant neoplasms",2000,1,8,"South America",1,7
+170,"Colombia",9.366043,2,"Cardiovascular diseases",2006,1,8,"South America",1,7
+170,"Colombia",19.62706,0,"Major NCDs",2002,1,8,"South America",1,7
+170,"Colombia",7.43555,1,"Malignant neoplasms",2005,1,8,"South America",1,7
+170,"Colombia",7.251058,1,"Malignant neoplasms",2014,1,8,"South America",1,7
+170,"Colombia",7.39055,1,"Malignant neoplasms",2009,1,8,"South America",1,7
+170,"Colombia",7.701681,1,"Malignant neoplasms",2003,1,8,"South America",1,7
+170,"Colombia",7.669258,1,"Malignant neoplasms",2002,1,8,"South America",1,7
+170,"Colombia",7.29283,1,"Malignant neoplasms",2008,1,8,"South America",1,7
+170,"Colombia",7.323172,1,"Malignant neoplasms",2010,1,8,"South America",1,7
+170,"Colombia",19.22674,0,"Major NCDs",2004,1,8,"South America",1,7
+170,"Colombia",20.01502,0,"Major NCDs",2001,1,8,"South America",1,7
+170,"Colombia",7.453466,1,"Malignant neoplasms",2006,1,8,"South America",1,7
+170,"Colombia",7.609059,1,"Malignant neoplasms",2004,1,8,"South America",1,7
+170,"Colombia",18.78399,0,"Major NCDs",2005,1,8,"South America",1,7
+170,"Colombia",7.765124,2,"Cardiovascular diseases",2012,1,8,"South America",1,7
+170,"Colombia",8.80808,2,"Cardiovascular diseases",2008,1,8,"South America",1,7
+170,"Colombia",16.51537,0,"Major NCDs",2013,1,8,"South America",1,7
+170,"Colombia",7.205558,1,"Malignant neoplasms",2012,1,8,"South America",1,7
+170,"Colombia",9.530842,2,"Cardiovascular diseases",2003,1,8,"South America",1,7
+170,"Colombia",16.67569,0,"Major NCDs",2011,1,8,"South America",1,7
+170,"Colombia",20.39905,0,"Major NCDs",2016,1,8,"South America",1,7
+170,"Colombia",7.125666,1,"Malignant neoplasms",2015,1,8,"South America",1,7
+170,"Colombia",8.997695,2,"Cardiovascular diseases",2007,1,8,"South America",1,7
+170,"Colombia",7.557419,2,"Cardiovascular diseases",2014,1,8,"South America",1,7
+170,"Colombia",7.216846,1,"Malignant neoplasms",2016,1,8,"South America",1,7
+170,"Colombia",7.994101,2,"Cardiovascular diseases",2011,1,8,"South America",1,7
+170,"Colombia",7.598975,1,"Malignant neoplasms",2001,1,8,"South America",1,7
+170,"Colombia",10.07755,2,"Cardiovascular diseases",2001,1,8,"South America",1,7
+170,"Colombia",8.282639,2,"Cardiovascular diseases",2010,1,8,"South America",1,7
+170,"Colombia",7.23925,2,"Cardiovascular diseases",2016,1,8,"South America",1,7
+170,"Colombia",8.37871,2,"Cardiovascular diseases",2009,1,8,"South America",1,7
+170,"Colombia",16.25259,0,"Major NCDs",2014,1,8,"South America",1,7
+170,"Colombia",16.54575,0,"Major NCDs",2012,1,8,"South America",1,7
+170,"Colombia",18.3497,0,"Major NCDs",2007,1,8,"South America",1,7
+170,"Colombia",7.442356,1,"Malignant neoplasms",2007,1,8,"South America",1,7
+170,"Colombia",10.51362,2,"Cardiovascular diseases",2000,1,8,"South America",1,7
+170,"Colombia",7.438014,2,"Cardiovascular diseases",2015,1,8,"South America",1,7
+170,"Colombia",15.94443,0,"Major NCDs",2015,1,8,"South America",1,7
+170,"Colombia",9.218339,2,"Cardiovascular diseases",2005,1,8,"South America",1,7
+188,"Costa Rica",5.899226,1,"Malignant neoplasms",2001,1,7,"Central America",1,4
+188,"Costa Rica",5.025914,2,"Cardiovascular diseases",2008,1,7,"Central America",1,4
+188,"Costa Rica",5.53229,1,"Malignant neoplasms",2015,1,7,"Central America",1,4
+188,"Costa Rica",5.049918,2,"Cardiovascular diseases",2016,1,7,"Central America",1,4
+188,"Costa Rica",13.2178,0,"Major NCDs",2002,1,7,"Central America",1,4
+188,"Costa Rica",5.665166,1,"Malignant neoplasms",2000,1,7,"Central America",1,4
+188,"Costa Rica",5.65026,1,"Malignant neoplasms",2012,1,7,"Central America",1,4
+188,"Costa Rica",5.415208,2,"Cardiovascular diseases",2012,1,7,"Central America",1,4
+188,"Costa Rica",5.334302,1,"Malignant neoplasms",2008,1,7,"Central America",1,4
+188,"Costa Rica",6.015163,1,"Malignant neoplasms",2006,1,7,"Central America",1,4
+188,"Costa Rica",5.267564,1,"Malignant neoplasms",2009,1,7,"Central America",1,4
+188,"Costa Rica",5.074906,2,"Cardiovascular diseases",2009,1,7,"Central America",1,4
+188,"Costa Rica",5.63738,2,"Cardiovascular diseases",2003,1,7,"Central America",1,4
+188,"Costa Rica",5.553462,2,"Cardiovascular diseases",2006,1,7,"Central America",1,4
+188,"Costa Rica",5.509608,1,"Malignant neoplasms",2016,1,7,"Central America",1,4
+188,"Costa Rica",6.003366,2,"Cardiovascular diseases",2002,1,7,"Central America",1,4
+188,"Costa Rica",15.8316,0,"Major NCDs",2016,1,7,"Central America",1,4
+188,"Costa Rica",6.069063,1,"Malignant neoplasms",2004,1,7,"Central America",1,4
+188,"Costa Rica",11.70446,0,"Major NCDs",2008,1,7,"Central America",1,4
+188,"Costa Rica",11.76707,0,"Major NCDs",2013,1,7,"Central America",1,4
+188,"Costa Rica",6.561512,2,"Cardiovascular diseases",2001,1,7,"Central America",1,4
+188,"Costa Rica",13.39213,0,"Major NCDs",2003,1,7,"Central America",1,4
+188,"Costa Rica",6.086268,1,"Malignant neoplasms",2010,1,7,"Central America",1,4
+188,"Costa Rica",5.36764,1,"Malignant neoplasms",2007,1,7,"Central America",1,4
+188,"Costa Rica",5.63017,2,"Cardiovascular diseases",2010,1,7,"Central America",1,4
+188,"Costa Rica",11.7023,0,"Major NCDs",2007,1,7,"Central America",1,4
+188,"Costa Rica",12.61408,0,"Major NCDs",2005,1,7,"Central America",1,4
+188,"Costa Rica",5.384016,1,"Malignant neoplasms",2014,1,7,"Central America",1,4
+188,"Costa Rica",5.740918,1,"Malignant neoplasms",2013,1,7,"Central America",1,4
+188,"Costa Rica",5.048139,2,"Cardiovascular diseases",2015,1,7,"Central America",1,4
+188,"Costa Rica",13.02262,0,"Major NCDs",2010,1,7,"Central America",1,4
+188,"Costa Rica",12.12348,0,"Major NCDs",2011,1,7,"Central America",1,4
+188,"Costa Rica",12.11322,0,"Major NCDs",2012,1,7,"Central America",1,4
+188,"Costa Rica",5.37438,2,"Cardiovascular diseases",2011,1,7,"Central America",1,4
+188,"Costa Rica",5.670213,1,"Malignant neoplasms",2002,1,7,"Central America",1,4
+188,"Costa Rica",5.583094,1,"Malignant neoplasms",2005,1,7,"Central America",1,4
+188,"Costa Rica",5.765556,2,"Cardiovascular diseases",2004,1,7,"Central America",1,4
+188,"Costa Rica",5.532523,2,"Cardiovascular diseases",2005,1,7,"Central America",1,4
+188,"Costa Rica",11.3036,0,"Major NCDs",2014,1,7,"Central America",1,4
+188,"Costa Rica",5.726967,1,"Malignant neoplasms",2003,1,7,"Central America",1,4
+188,"Costa Rica",4.935487,2,"Cardiovascular diseases",2014,1,7,"Central America",1,4
+188,"Costa Rica",11.56005,0,"Major NCDs",2009,1,7,"Central America",1,4
+188,"Costa Rica",5.006501,2,"Cardiovascular diseases",2007,1,7,"Central America",1,4
+188,"Costa Rica",13.66296,0,"Major NCDs",2004,1,7,"Central America",1,4
+188,"Costa Rica",6.733144,2,"Cardiovascular diseases",2000,1,7,"Central America",1,4
+188,"Costa Rica",5.620577,1,"Malignant neoplasms",2011,1,7,"Central America",1,4
+188,"Costa Rica",14.14896,0,"Major NCDs",2000,1,7,"Central America",1,4
+188,"Costa Rica",4.973564,2,"Cardiovascular diseases",2013,1,7,"Central America",1,4
+188,"Costa Rica",14.11827,0,"Major NCDs",2001,1,7,"Central America",1,4
+188,"Costa Rica",12.99281,0,"Major NCDs",2006,1,7,"Central America",1,4
+188,"Costa Rica",11.60791,0,"Major NCDs",2015,1,7,"Central America",1,4
+250,"France",11.40872,0,"Major NCDs",2012,2,17,"Western Europe",1,19
+250,"France",10.77358,0,"Major NCDs",2015,2,17,"Western Europe",1,19
+250,"France",8.579769,1,"Malignant neoplasms",2009,2,17,"Western Europe",1,19
+250,"France",8.332448,1,"Malignant neoplasms",2011,2,17,"Western Europe",1,19
+250,"France",9.125927,1,"Malignant neoplasms",2003,2,17,"Western Europe",1,19
+250,"France",2.375301,2,"Cardiovascular diseases",2015,2,17,"Western Europe",1,19
+250,"France",12.34486,0,"Major NCDs",2006,2,17,"Western Europe",1,19
+250,"France",9.389569,1,"Malignant neoplasms",2000,2,17,"Western Europe",1,19
+250,"France",3.598087,2,"Cardiovascular diseases",2003,2,17,"Western Europe",1,19
+250,"France",12.05152,0,"Major NCDs",2008,2,17,"Western Europe",1,19
+250,"France",2.632754,2,"Cardiovascular diseases",2012,2,17,"Western Europe",1,19
+250,"France",3.280858,2,"Cardiovascular diseases",2004,2,17,"Western Europe",1,19
+250,"France",13.36458,0,"Major NCDs",2002,2,17,"Western Europe",1,19
+250,"France",3.78366,2,"Cardiovascular diseases",2001,2,17,"Western Europe",1,19
+250,"France",7.979936,1,"Malignant neoplasms",2014,2,17,"Western Europe",1,19
+250,"France",9.26795,1,"Malignant neoplasms",2001,2,17,"Western Europe",1,19
+250,"France",2.911167,2,"Cardiovascular diseases",2009,2,17,"Western Europe",1,19
+250,"France",13.94709,0,"Major NCDs",2016,2,17,"Western Europe",1,19
+250,"France",13.23764,0,"Major NCDs",2003,2,17,"Western Europe",1,19
+250,"France",7.866252,1,"Malignant neoplasms",2015,2,17,"Western Europe",1,19
+250,"France",10.91743,0,"Major NCDs",2014,2,17,"Western Europe",1,19
+250,"France",2.981045,2,"Cardiovascular diseases",2008,2,17,"Western Europe",1,19
+250,"France",8.505775,1,"Malignant neoplasms",2010,2,17,"Western Europe",1,19
+250,"France",13.54285,0,"Major NCDs",2001,2,17,"Western Europe",1,19
+250,"France",3.258463,2,"Cardiovascular diseases",2005,2,17,"Western Europe",1,19
+250,"France",11.78579,0,"Major NCDs",2010,2,17,"Western Europe",1,19
+250,"France",12.69284,0,"Major NCDs",2004,2,17,"Western Europe",1,19
+250,"France",3.037173,2,"Cardiovascular diseases",2007,2,17,"Western Europe",1,19
+250,"France",12.17169,0,"Major NCDs",2007,2,17,"Western Europe",1,19
+250,"France",3.904812,2,"Cardiovascular diseases",2000,2,17,"Western Europe",1,19
+250,"France",8.862327,1,"Malignant neoplasms",2005,2,17,"Western Europe",1,19
+250,"France",8.767633,1,"Malignant neoplasms",2006,2,17,"Western Europe",1,19
+250,"France",9.228991,1,"Malignant neoplasms",2002,2,17,"Western Europe",1,19
+250,"France",2.676488,2,"Cardiovascular diseases",2011,2,17,"Western Europe",1,19
+250,"France",8.584333,1,"Malignant neoplasms",2008,2,17,"Western Europe",1,19
+250,"France",8.658576,1,"Malignant neoplasms",2007,2,17,"Western Europe",1,19
+250,"France",8.247234,1,"Malignant neoplasms",2012,2,17,"Western Europe",1,19
+250,"France",11.53046,0,"Major NCDs",2011,2,17,"Western Europe",1,19
+250,"France",3.662088,2,"Cardiovascular diseases",2002,2,17,"Western Europe",1,19
+250,"France",8.067493,1,"Malignant neoplasms",2016,2,17,"Western Europe",1,19
+250,"France",8.927507,1,"Malignant neoplasms",2004,2,17,"Western Europe",1,19
+250,"France",2.445985,2,"Cardiovascular diseases",2014,2,17,"Western Europe",1,19
+250,"France",11.18846,0,"Major NCDs",2013,2,17,"Western Europe",1,19
+250,"France",2.327065,2,"Cardiovascular diseases",2016,2,17,"Western Europe",1,19
+250,"France",3.121843,2,"Cardiovascular diseases",2006,2,17,"Western Europe",1,19
+250,"France",11.96391,0,"Major NCDs",2009,2,17,"Western Europe",1,19
+250,"France",12.61733,0,"Major NCDs",2005,2,17,"Western Europe",1,19
+250,"France",2.817734,2,"Cardiovascular diseases",2010,2,17,"Western Europe",1,19
+250,"France",8.117789,1,"Malignant neoplasms",2013,2,17,"Western Europe",1,19
+250,"France",13.81809,0,"Major NCDs",2000,2,17,"Western Europe",1,19
+250,"France",2.556163,2,"Cardiovascular diseases",2013,2,17,"Western Europe",1,19
+380,"Italy",6.884966,1,"Malignant neoplasms",2010,2,16,"Southern Europe",1,16
+380,"Italy",10.93969,0,"Major NCDs",2008,2,16,"Southern Europe",1,16
+380,"Italy",7.375771,1,"Malignant neoplasms",2005,2,16,"Southern Europe",1,16
+380,"Italy",2.808247,2,"Cardiovascular diseases",2015,2,16,"Southern Europe",1,16
+380,"Italy",8.034476,1,"Malignant neoplasms",2001,2,16,"Southern Europe",1,16
+380,"Italy",7.874146,1,"Malignant neoplasms",2002,2,16,"Southern Europe",1,16
+380,"Italy",7.823694,1,"Malignant neoplasms",2003,2,16,"Southern Europe",1,16
+380,"Italy",11.80062,0,"Major NCDs",2004,2,16,"Southern Europe",1,16
+380,"Italy",3.664932,2,"Cardiovascular diseases",2004,2,16,"Southern Europe",1,16
+380,"Italy",3.582268,2,"Cardiovascular diseases",2005,2,16,"Southern Europe",1,16
+380,"Italy",10.33899,0,"Major NCDs",2010,2,16,"Southern Europe",1,16
+380,"Italy",6.713612,1,"Malignant neoplasms",2012,2,16,"Southern Europe",1,16
+380,"Italy",11.95482,0,"Major NCDs",2016,2,16,"Southern Europe",1,16
+380,"Italy",3.376003,2,"Cardiovascular diseases",2006,2,16,"Southern Europe",1,16
+380,"Italy",3.121776,2,"Cardiovascular diseases",2009,2,16,"Southern Europe",1,16
+380,"Italy",9.780645,0,"Major NCDs",2013,2,16,"Southern Europe",1,16
+380,"Italy",10.11419,0,"Major NCDs",2012,2,16,"Southern Europe",1,16
+380,"Italy",6.509235,1,"Malignant neoplasms",2013,2,16,"Southern Europe",1,16
+380,"Italy",7.124773,1,"Malignant neoplasms",2009,2,16,"Southern Europe",1,16
+380,"Italy",6.499616,1,"Malignant neoplasms",2016,2,16,"Southern Europe",1,16
+380,"Italy",7.322195,1,"Malignant neoplasms",2007,2,16,"Southern Europe",1,16
+380,"Italy",2.728941,2,"Cardiovascular diseases",2016,2,16,"Southern Europe",1,16
+380,"Italy",6.393223,1,"Malignant neoplasms",2015,2,16,"Southern Europe",1,16
+380,"Italy",9.774711,0,"Major NCDs",2015,2,16,"Southern Europe",1,16
+380,"Italy",10.26465,0,"Major NCDs",2011,2,16,"Southern Europe",1,16
+380,"Italy",13.0607,0,"Major NCDs",2001,2,16,"Southern Europe",1,16
+380,"Italy",6.461839,1,"Malignant neoplasms",2014,2,16,"Southern Europe",1,16
+380,"Italy",6.799354,1,"Malignant neoplasms",2011,2,16,"Southern Europe",1,16
+380,"Italy",3.198384,2,"Cardiovascular diseases",2008,2,16,"Southern Europe",1,16
+380,"Italy",12.66621,0,"Major NCDs",2002,2,16,"Southern Europe",1,16
+380,"Italy",7.354339,1,"Malignant neoplasms",2006,2,16,"Southern Europe",1,16
+380,"Italy",7.201284,1,"Malignant neoplasms",2008,2,16,"Southern Europe",1,16
+380,"Italy",2.856882,2,"Cardiovascular diseases",2012,2,16,"Southern Europe",1,16
+380,"Italy",10.80747,0,"Major NCDs",2009,2,16,"Southern Europe",1,16
+380,"Italy",8.165558,1,"Malignant neoplasms",2000,2,16,"Southern Europe",1,16
+380,"Italy",3.275625,2,"Cardiovascular diseases",2007,2,16,"Southern Europe",1,16
+380,"Italy",11.55043,0,"Major NCDs",2005,2,16,"Southern Europe",1,16
+380,"Italy",7.607218,1,"Malignant neoplasms",2004,2,16,"Southern Europe",1,16
+380,"Italy",2.918903,2,"Cardiovascular diseases",2010,2,16,"Southern Europe",1,16
+380,"Italy",9.663904,0,"Major NCDs",2014,2,16,"Southern Europe",1,16
+380,"Italy",4.477803,2,"Cardiovascular diseases",2001,2,16,"Southern Europe",1,16
+380,"Italy",11.14635,0,"Major NCDs",2007,2,16,"Southern Europe",1,16
+380,"Italy",12.46977,0,"Major NCDs",2003,2,16,"Southern Europe",1,16
+380,"Italy",4.238143,2,"Cardiovascular diseases",2002,2,16,"Southern Europe",1,16
+380,"Italy",4.050341,2,"Cardiovascular diseases",2003,2,16,"Southern Europe",1,16
+380,"Italy",11.24828,0,"Major NCDs",2006,2,16,"Southern Europe",1,16
+380,"Italy",2.911902,2,"Cardiovascular diseases",2011,2,16,"Southern Europe",1,16
+380,"Italy",2.729522,2,"Cardiovascular diseases",2013,2,16,"Southern Europe",1,16
+380,"Italy",2.678371,2,"Cardiovascular diseases",2014,2,16,"Southern Europe",1,16
+380,"Italy",13.47857,0,"Major NCDs",2000,2,16,"Southern Europe",1,16
+380,"Italy",4.701998,2,"Cardiovascular diseases",2000,2,16,"Southern Europe",1,16
+392,"Japan",3.066634,2,"Cardiovascular diseases",2009,2,10,"Eastern Asia",1,11
+392,"Japan",6.103098,1,"Malignant neoplasms",2010,2,10,"Eastern Asia",1,11
+392,"Japan",3.136917,2,"Cardiovascular diseases",2008,2,10,"Eastern Asia",1,11
+392,"Japan",6.674978,1,"Malignant neoplasms",2003,2,10,"Eastern Asia",1,11
+392,"Japan",9.71893,0,"Major NCDs",2008,2,10,"Eastern Asia",1,11
+392,"Japan",2.632252,2,"Cardiovascular diseases",2016,2,10,"Eastern Asia",1,11
+392,"Japan",3.179268,2,"Cardiovascular diseases",2007,2,10,"Eastern Asia",1,11
+392,"Japan",2.654619,2,"Cardiovascular diseases",2015,2,10,"Eastern Asia",1,11
+392,"Japan",5.839498,1,"Malignant neoplasms",2012,2,10,"Eastern Asia",1,11
+392,"Japan",6.323253,1,"Malignant neoplasms",2006,2,10,"Eastern Asia",1,11
+392,"Japan",7.086229,1,"Malignant neoplasms",2001,2,10,"Eastern Asia",1,11
+392,"Japan",2.699102,2,"Cardiovascular diseases",2014,2,10,"Eastern Asia",1,11
+392,"Japan",3.271928,2,"Cardiovascular diseases",2006,2,10,"Eastern Asia",1,11
+392,"Japan",5.593379,1,"Malignant neoplasms",2015,2,10,"Eastern Asia",1,11
+392,"Japan",3.579121,2,"Cardiovascular diseases",2002,2,10,"Eastern Asia",1,11
+392,"Japan",9.554309,0,"Major NCDs",2009,2,10,"Eastern Asia",1,11
+392,"Japan",10.53263,0,"Major NCDs",2004,2,10,"Eastern Asia",1,11
+392,"Japan",3.453906,2,"Cardiovascular diseases",2005,2,10,"Eastern Asia",1,11
+392,"Japan",6.702818,1,"Malignant neoplasms",2004,2,10,"Eastern Asia",1,11
+392,"Japan",5.703073,1,"Malignant neoplasms",2016,2,10,"Eastern Asia",1,11
+392,"Japan",10.63989,0,"Major NCDs",2003,2,10,"Eastern Asia",1,11
+392,"Japan",6.270982,1,"Malignant neoplasms",2007,2,10,"Eastern Asia",1,11
+392,"Japan",8.746323,0,"Major NCDs",2014,2,10,"Eastern Asia",1,11
+392,"Japan",6.829758,1,"Malignant neoplasms",2002,2,10,"Eastern Asia",1,11
+392,"Japan",10.36791,0,"Major NCDs",2005,2,10,"Eastern Asia",1,11
+392,"Japan",6.202758,1,"Malignant neoplasms",2008,2,10,"Eastern Asia",1,11
+392,"Japan",9.10175,0,"Major NCDs",2012,2,10,"Eastern Asia",1,11
+392,"Japan",8.630372,0,"Major NCDs",2015,2,10,"Eastern Asia",1,11
+392,"Japan",10.82386,0,"Major NCDs",2002,2,10,"Eastern Asia",1,11
+392,"Japan",3.42391,2,"Cardiovascular diseases",2004,2,10,"Eastern Asia",1,11
+392,"Japan",6.10793,1,"Malignant neoplasms",2009,2,10,"Eastern Asia",1,11
+392,"Japan",9.380029,0,"Major NCDs",2011,2,10,"Eastern Asia",1,11
+392,"Japan",7.277167,1,"Malignant neoplasms",2000,2,10,"Eastern Asia",1,11
+392,"Japan",11.1329,0,"Major NCDs",2001,2,10,"Eastern Asia",1,11
+392,"Japan",6.006897,1,"Malignant neoplasms",2011,2,10,"Eastern Asia",1,11
+392,"Japan",9.520883,0,"Major NCDs",2010,2,10,"Eastern Asia",1,11
+392,"Japan",9.841636,0,"Major NCDs",2007,2,10,"Eastern Asia",1,11
+392,"Japan",10.35538,0,"Major NCDs",2016,2,10,"Eastern Asia",1,11
+392,"Japan",3.726338,2,"Cardiovascular diseases",2000,2,10,"Eastern Asia",1,11
+392,"Japan",3.035357,2,"Cardiovascular diseases",2010,2,10,"Eastern Asia",1,11
+392,"Japan",2.8807,2,"Cardiovascular diseases",2012,2,10,"Eastern Asia",1,11
+392,"Japan",9.985781,0,"Major NCDs",2006,2,10,"Eastern Asia",1,11
+392,"Japan",2.982474,2,"Cardiovascular diseases",2011,2,10,"Eastern Asia",1,11
+392,"Japan",8.921679,0,"Major NCDs",2013,2,10,"Eastern Asia",1,11
+392,"Japan",3.626473,2,"Cardiovascular diseases",2001,2,10,"Eastern Asia",1,11
+392,"Japan",6.493783,1,"Malignant neoplasms",2005,2,10,"Eastern Asia",1,11
+392,"Japan",3.541814,2,"Cardiovascular diseases",2003,2,10,"Eastern Asia",1,11
+392,"Japan",5.671701,1,"Malignant neoplasms",2014,2,10,"Eastern Asia",1,11
+392,"Japan",11.43748,0,"Major NCDs",2000,2,10,"Eastern Asia",1,11
+392,"Japan",2.767194,2,"Cardiovascular diseases",2013,2,10,"Eastern Asia",1,11
+392,"Japan",5.774322,1,"Malignant neoplasms",2013,2,10,"Eastern Asia",1,11
+398,"Kazakhstan",38.12993,0,"Major NCDs",2002,1,12,"Southern Asia",1,8
+398,"Kazakhstan",13.40587,1,"Malignant neoplasms",2002,1,12,"Southern Asia",1,8
+398,"Kazakhstan",12.94301,1,"Malignant neoplasms",2006,1,12,"Southern Asia",1,8
+398,"Kazakhstan",9.290615,1,"Malignant neoplasms",2016,1,12,"Southern Asia",1,8
+398,"Kazakhstan",32.86198,0,"Major NCDs",2010,1,12,"Southern Asia",1,8
+398,"Kazakhstan",8.924286,1,"Malignant neoplasms",2015,1,12,"Southern Asia",1,8
+398,"Kazakhstan",13.6541,1,"Malignant neoplasms",2001,1,12,"Southern Asia",1,8
+398,"Kazakhstan",28.56489,0,"Major NCDs",2013,1,12,"Southern Asia",1,8
+398,"Kazakhstan",31.2047,0,"Major NCDs",2011,1,12,"Southern Asia",1,8
+398,"Kazakhstan",11.02521,1,"Malignant neoplasms",2010,1,12,"Southern Asia",1,8
+398,"Kazakhstan",20.71456,2,"Cardiovascular diseases",2011,1,12,"Southern Asia",1,8
+398,"Kazakhstan",38.57297,0,"Major NCDs",2004,1,12,"Southern Asia",1,8
+398,"Kazakhstan",25.82203,2,"Cardiovascular diseases",2007,1,12,"Southern Asia",1,8
+398,"Kazakhstan",9.172433,1,"Malignant neoplasms",2014,1,12,"Southern Asia",1,8
+398,"Kazakhstan",28.35651,0,"Major NCDs",2014,1,12,"Southern Asia",1,8
+398,"Kazakhstan",13.24232,1,"Malignant neoplasms",2003,1,12,"Southern Asia",1,8
+398,"Kazakhstan",19.28804,2,"Cardiovascular diseases",2015,1,12,"Southern Asia",1,8
+398,"Kazakhstan",27.07722,2,"Cardiovascular diseases",2005,1,12,"Southern Asia",1,8
+398,"Kazakhstan",22.14293,2,"Cardiovascular diseases",2010,1,12,"Southern Asia",1,8
+398,"Kazakhstan",10.54684,1,"Malignant neoplasms",2011,1,12,"Southern Asia",1,8
+398,"Kazakhstan",33.40907,0,"Major NCDs",2009,1,12,"Southern Asia",1,8
+398,"Kazakhstan",35.52908,0,"Major NCDs",2008,1,12,"Southern Asia",1,8
+398,"Kazakhstan",24.30351,2,"Cardiovascular diseases",2008,1,12,"Southern Asia",1,8
+398,"Kazakhstan",11.9931,1,"Malignant neoplasms",2008,1,12,"Southern Asia",1,8
+398,"Kazakhstan",27.40812,2,"Cardiovascular diseases",2003,1,12,"Southern Asia",1,8
+398,"Kazakhstan",37.3833,0,"Major NCDs",2007,1,12,"Southern Asia",1,8
+398,"Kazakhstan",17.9282,2,"Cardiovascular diseases",2016,1,12,"Southern Asia",1,8
+398,"Kazakhstan",12.57366,1,"Malignant neoplasms",2007,1,12,"Southern Asia",1,8
+398,"Kazakhstan",26.62529,2,"Cardiovascular diseases",2004,1,12,"Southern Asia",1,8
+398,"Kazakhstan",38.37108,0,"Major NCDs",2001,1,12,"Southern Asia",1,8
+398,"Kazakhstan",38.93683,0,"Major NCDs",2005,1,12,"Southern Asia",1,8
+398,"Kazakhstan",39.39238,0,"Major NCDs",2003,1,12,"Southern Asia",1,8
+398,"Kazakhstan",11.48625,1,"Malignant neoplasms",2009,1,12,"Southern Asia",1,8
+398,"Kazakhstan",13.15922,1,"Malignant neoplasms",2005,1,12,"Southern Asia",1,8
+398,"Kazakhstan",37.94325,0,"Major NCDs",2006,1,12,"Southern Asia",1,8
+398,"Kazakhstan",18.878,2,"Cardiovascular diseases",2014,1,12,"Southern Asia",1,8
+398,"Kazakhstan",19.94307,2,"Cardiovascular diseases",2012,1,12,"Southern Asia",1,8
+398,"Kazakhstan",9.618589,1,"Malignant neoplasms",2013,1,12,"Southern Asia",1,8
+398,"Kazakhstan",18.74729,2,"Cardiovascular diseases",2013,1,12,"Southern Asia",1,8
+398,"Kazakhstan",10.11399,1,"Malignant neoplasms",2012,1,12,"Southern Asia",1,8
+398,"Kazakhstan",26.37804,2,"Cardiovascular diseases",2000,1,12,"Southern Asia",1,8
+398,"Kazakhstan",25.88489,2,"Cardiovascular diseases",2002,1,12,"Southern Asia",1,8
+398,"Kazakhstan",28.57824,0,"Major NCDs",2015,1,12,"Southern Asia",1,8
+398,"Kazakhstan",25.91845,2,"Cardiovascular diseases",2001,1,12,"Southern Asia",1,8
+398,"Kazakhstan",35.57045,0,"Major NCDs",2016,1,12,"Southern Asia",1,8
+398,"Kazakhstan",22.39968,2,"Cardiovascular diseases",2009,1,12,"Southern Asia",1,8
+398,"Kazakhstan",39.06525,0,"Major NCDs",2000,1,12,"Southern Asia",1,8
+398,"Kazakhstan",30.17976,0,"Major NCDs",2012,1,12,"Southern Asia",1,8
+398,"Kazakhstan",26.19326,2,"Cardiovascular diseases",2006,1,12,"Southern Asia",1,8
+398,"Kazakhstan",13.92336,1,"Malignant neoplasms",2000,1,12,"Southern Asia",1,8
+398,"Kazakhstan",13.2101,1,"Malignant neoplasms",2004,1,12,"Southern Asia",1,8
+480,"Mauritius",16.35582,2,"Cardiovascular diseases",2004,1,1,"Eastern Africa",1,3
+480,"Mauritius",27.1863,0,"Major NCDs",2006,1,1,"Eastern Africa",1,3
+480,"Mauritius",11.73627,2,"Cardiovascular diseases",2006,1,1,"Eastern Africa",1,3
+480,"Mauritius",18.38818,2,"Cardiovascular diseases",2002,1,1,"Eastern Africa",1,3
+480,"Mauritius",29.14174,0,"Major NCDs",2004,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.021955,1,"Malignant neoplasms",2005,1,1,"Eastern Africa",1,3
+480,"Mauritius",25.64754,0,"Major NCDs",2009,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.936025,1,"Malignant neoplasms",2014,1,1,"Eastern Africa",1,3
+480,"Mauritius",22.99449,0,"Major NCDs",2014,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.260554,1,"Malignant neoplasms",2009,1,1,"Eastern Africa",1,3
+480,"Mauritius",8.388624,2,"Cardiovascular diseases",2014,1,1,"Eastern Africa",1,3
+480,"Mauritius",29.68413,0,"Major NCDs",2000,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.902675,1,"Malignant neoplasms",2012,1,1,"Eastern Africa",1,3
+480,"Mauritius",23.22643,0,"Major NCDs",2012,1,1,"Eastern Africa",1,3
+480,"Mauritius",27.22804,0,"Major NCDs",2005,1,1,"Eastern Africa",1,3
+480,"Mauritius",29.81788,0,"Major NCDs",2002,1,1,"Eastern Africa",1,3
+480,"Mauritius",9.324903,2,"Cardiovascular diseases",2011,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.643905,1,"Malignant neoplasms",2002,1,1,"Eastern Africa",1,3
+480,"Mauritius",8.283338,2,"Cardiovascular diseases",2013,1,1,"Eastern Africa",1,3
+480,"Mauritius",8.815407,2,"Cardiovascular diseases",2015,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.859631,1,"Malignant neoplasms",2010,1,1,"Eastern Africa",1,3
+480,"Mauritius",25.70104,0,"Major NCDs",2008,1,1,"Eastern Africa",1,3
+480,"Mauritius",30.34052,0,"Major NCDs",2003,1,1,"Eastern Africa",1,3
+480,"Mauritius",22.69247,0,"Major NCDs",2013,1,1,"Eastern Africa",1,3
+480,"Mauritius",24.10829,0,"Major NCDs",2010,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.405952,1,"Malignant neoplasms",2013,1,1,"Eastern Africa",1,3
+480,"Mauritius",18.04361,2,"Cardiovascular diseases",2000,1,1,"Eastern Africa",1,3
+480,"Mauritius",17.17477,2,"Cardiovascular diseases",2003,1,1,"Eastern Africa",1,3
+480,"Mauritius",17.3786,2,"Cardiovascular diseases",2001,1,1,"Eastern Africa",1,3
+480,"Mauritius",29.44395,0,"Major NCDs",2001,1,1,"Eastern Africa",1,3
+480,"Mauritius",8.333004,2,"Cardiovascular diseases",2012,1,1,"Eastern Africa",1,3
+480,"Mauritius",10.89648,2,"Cardiovascular diseases",2008,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.110493,1,"Malignant neoplasms",2007,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.331121,1,"Malignant neoplasms",2000,1,1,"Eastern Africa",1,3
+480,"Mauritius",22.76821,0,"Major NCDs",2015,1,1,"Eastern Africa",1,3
+480,"Mauritius",11.43588,2,"Cardiovascular diseases",2007,1,1,"Eastern Africa",1,3
+480,"Mauritius",25.69849,0,"Major NCDs",2007,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.801009,1,"Malignant neoplasms",2003,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.122873,1,"Malignant neoplasms",2015,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.971018,1,"Malignant neoplasms",2004,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.897608,1,"Malignant neoplasms",2001,1,1,"Eastern Africa",1,3
+480,"Mauritius",28.80603,0,"Major NCDs",2016,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.475543,1,"Malignant neoplasms",2008,1,1,"Eastern Africa",1,3
+480,"Mauritius",12.01332,2,"Cardiovascular diseases",2005,1,1,"Eastern Africa",1,3
+480,"Mauritius",23.63878,0,"Major NCDs",2011,1,1,"Eastern Africa",1,3
+480,"Mauritius",5.288209,1,"Malignant neoplasms",2006,1,1,"Eastern Africa",1,3
+480,"Mauritius",10.96453,2,"Cardiovascular diseases",2009,1,1,"Eastern Africa",1,3
+480,"Mauritius",9.123824,2,"Cardiovascular diseases",2016,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.531661,1,"Malignant neoplasms",2011,1,1,"Eastern Africa",1,3
+480,"Mauritius",9.826512,2,"Cardiovascular diseases",2010,1,1,"Eastern Africa",1,3
+480,"Mauritius",4.872975,1,"Malignant neoplasms",2016,1,1,"Eastern Africa",1,3
+484,"Mexico",16.75883,0,"Major NCDs",2006,1,7,"Central America",1,1
+484,"Mexico",15.72737,0,"Major NCDs",2012,1,7,"Central America",1,1
+484,"Mexico",5.010783,1,"Malignant neoplasms",2006,1,7,"Central America",1,1
+484,"Mexico",15.89201,0,"Major NCDs",2015,1,7,"Central America",1,1
+484,"Mexico",5.142588,1,"Malignant neoplasms",2004,1,7,"Central America",1,1
+484,"Mexico",4.821464,1,"Malignant neoplasms",2007,1,7,"Central America",1,1
+484,"Mexico",22.8352,0,"Major NCDs",2016,1,7,"Central America",1,1
+484,"Mexico",4.585949,1,"Malignant neoplasms",2010,1,7,"Central America",1,1
+484,"Mexico",16.78465,0,"Major NCDs",2000,1,7,"Central America",1,1
+484,"Mexico",5.376463,2,"Cardiovascular diseases",2016,1,7,"Central America",1,1
+484,"Mexico",16.47811,0,"Major NCDs",2007,1,7,"Central America",1,1
+484,"Mexico",5.825004,2,"Cardiovascular diseases",2005,1,7,"Central America",1,1
+484,"Mexico",5.246821,1,"Malignant neoplasms",2002,1,7,"Central America",1,1
+484,"Mexico",4.553293,1,"Malignant neoplasms",2011,1,7,"Central America",1,1
+484,"Mexico",17.21657,0,"Major NCDs",2002,1,7,"Central America",1,1
+484,"Mexico",5.663562,2,"Cardiovascular diseases",2009,1,7,"Central America",1,1
+484,"Mexico",5.463366,2,"Cardiovascular diseases",2012,1,7,"Central America",1,1
+484,"Mexico",5.225437,1,"Malignant neoplasms",2003,1,7,"Central America",1,1
+484,"Mexico",5.411317,2,"Cardiovascular diseases",2013,1,7,"Central America",1,1
+484,"Mexico",6.168674,2,"Cardiovascular diseases",2002,1,7,"Central America",1,1
+484,"Mexico",15.89577,0,"Major NCDs",2014,1,7,"Central America",1,1
+484,"Mexico",16.7526,0,"Major NCDs",2008,1,7,"Central America",1,1
+484,"Mexico",5.86693,2,"Cardiovascular diseases",2004,1,7,"Central America",1,1
+484,"Mexico",5.235376,1,"Malignant neoplasms",2000,1,7,"Central America",1,1
+484,"Mexico",6.092872,2,"Cardiovascular diseases",2003,1,7,"Central America",1,1
+484,"Mexico",6.078686,2,"Cardiovascular diseases",2001,1,7,"Central America",1,1
+484,"Mexico",5.539506,2,"Cardiovascular diseases",2015,1,7,"Central America",1,1
+484,"Mexico",4.41373,1,"Malignant neoplasms",2013,1,7,"Central America",1,1
+484,"Mexico",5.600914,2,"Cardiovascular diseases",2010,1,7,"Central America",1,1
+484,"Mexico",5.440667,2,"Cardiovascular diseases",2011,1,7,"Central America",1,1
+484,"Mexico",5.626584,2,"Cardiovascular diseases",2006,1,7,"Central America",1,1
+484,"Mexico",4.701739,1,"Malignant neoplasms",2009,1,7,"Central America",1,1
+484,"Mexico",6.20501,2,"Cardiovascular diseases",2000,1,7,"Central America",1,1
+484,"Mexico",5.74276,2,"Cardiovascular diseases",2008,1,7,"Central America",1,1
+484,"Mexico",15.41464,0,"Major NCDs",2013,1,7,"Central America",1,1
+484,"Mexico",4.840199,1,"Malignant neoplasms",2008,1,7,"Central America",1,1
+484,"Mexico",4.516749,1,"Malignant neoplasms",2015,1,7,"Central America",1,1
+484,"Mexico",5.508404,2,"Cardiovascular diseases",2014,1,7,"Central America",1,1
+484,"Mexico",4.521309,1,"Malignant neoplasms",2014,1,7,"Central America",1,1
+484,"Mexico",17.10256,0,"Major NCDs",2004,1,7,"Central America",1,1
+484,"Mexico",4.389934,1,"Malignant neoplasms",2016,1,7,"Central America",1,1
+484,"Mexico",17.40189,0,"Major NCDs",2003,1,7,"Central America",1,1
+484,"Mexico",5.128339,1,"Malignant neoplasms",2001,1,7,"Central America",1,1
+484,"Mexico",16.66335,0,"Major NCDs",2001,1,7,"Central America",1,1
+484,"Mexico",17.14544,0,"Major NCDs",2005,1,7,"Central America",1,1
+484,"Mexico",5.667361,2,"Cardiovascular diseases",2007,1,7,"Central America",1,1
+484,"Mexico",15.62641,0,"Major NCDs",2011,1,7,"Central America",1,1
+484,"Mexico",4.511445,1,"Malignant neoplasms",2012,1,7,"Central America",1,1
+484,"Mexico",5.06712,1,"Malignant neoplasms",2005,1,7,"Central America",1,1
+484,"Mexico",16.38171,0,"Major NCDs",2009,1,7,"Central America",1,1
+484,"Mexico",16.26592,0,"Major NCDs",2010,1,7,"Central America",1,1
+554,"New Zealand",6.262313,1,"Malignant neoplasms",2016,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",5.012474,2,"Cardiovascular diseases",2004,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.255007,2,"Cardiovascular diseases",2013,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",5.984952,2,"Cardiovascular diseases",2001,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.03069,1,"Malignant neoplasms",2010,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",4.397746,2,"Cardiovascular diseases",2007,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",4.443438,2,"Cardiovascular diseases",2006,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",6.280957,1,"Malignant neoplasms",2015,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",5.735687,2,"Cardiovascular diseases",2002,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",4.670098,2,"Cardiovascular diseases",2005,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",13.08418,0,"Major NCDs",2007,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",8.539436,1,"Malignant neoplasms",2001,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.462941,1,"Malignant neoplasms",2008,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",11.26788,0,"Major NCDs",2012,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",12.31215,0,"Major NCDs",2009,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",8.200361,1,"Malignant neoplasms",2002,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.230883,2,"Cardiovascular diseases",2014,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.104119,1,"Malignant neoplasms",2009,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",15.11914,0,"Major NCDs",2002,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",14.24649,0,"Major NCDs",2004,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",12.25128,0,"Major NCDs",2016,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",6.703581,1,"Malignant neoplasms",2013,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.677705,1,"Malignant neoplasms",2007,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",6.24199,2,"Cardiovascular diseases",2000,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",6.848665,1,"Malignant neoplasms",2012,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.526925,1,"Malignant neoplasms",2006,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",10.68638,0,"Major NCDs",2014,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.809042,2,"Cardiovascular diseases",2010,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",4.192815,2,"Cardiovascular diseases",2008,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",12.80423,0,"Major NCDs",2008,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.560855,1,"Malignant neoplasms",2005,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",10.37426,0,"Major NCDs",2015,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",6.47361,1,"Malignant neoplasms",2014,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",8.059354,1,"Malignant neoplasms",2003,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",10.92916,0,"Major NCDs",2013,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.486606,2,"Cardiovascular diseases",2012,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",15.86634,0,"Major NCDs",2000,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",4.065387,2,"Cardiovascular diseases",2009,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.109988,2,"Cardiovascular diseases",2015,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",11.82063,0,"Major NCDs",2010,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",15.72027,0,"Major NCDs",2001,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.709443,2,"Cardiovascular diseases",2011,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",8.507897,1,"Malignant neoplasms",2000,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",14.47786,0,"Major NCDs",2003,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",13.27789,0,"Major NCDs",2005,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",13.10976,0,"Major NCDs",2006,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",11.85659,0,"Major NCDs",2011,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",7.139776,1,"Malignant neoplasms",2011,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",8.133471,1,"Malignant neoplasms",2004,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",3.03442,2,"Cardiovascular diseases",2016,2,18,"Australia/New Zealand",1,14
+554,"New Zealand",5.2784,2,"Cardiovascular diseases",2003,2,18,"Australia/New Zealand",1,14
+578,"Norway",3.726372,2,"Cardiovascular diseases",2007,2,15,"Northern Europe",1,13
+578,"Norway",7.627532,1,"Malignant neoplasms",2004,2,15,"Northern Europe",1,13
+578,"Norway",9.806396,0,"Major NCDs",2014,2,15,"Northern Europe",1,13
+578,"Norway",11.28971,0,"Major NCDs",2009,2,15,"Northern Europe",1,13
+578,"Norway",11.67662,0,"Major NCDs",2008,2,15,"Northern Europe",1,13
+578,"Norway",7.292284,1,"Malignant neoplasms",2010,2,15,"Northern Europe",1,13
+578,"Norway",11.3005,0,"Major NCDs",2010,2,15,"Northern Europe",1,13
+578,"Norway",7.377431,1,"Malignant neoplasms",2006,2,15,"Northern Europe",1,13
+578,"Norway",13.00241,0,"Major NCDs",2003,2,15,"Northern Europe",1,13
+578,"Norway",14.20134,0,"Major NCDs",2000,2,15,"Northern Europe",1,13
+578,"Norway",2.602828,2,"Cardiovascular diseases",2014,2,15,"Northern Europe",1,13
+578,"Norway",3.368532,2,"Cardiovascular diseases",2009,2,15,"Northern Europe",1,13
+578,"Norway",9.345498,0,"Major NCDs",2015,2,15,"Northern Europe",1,13
+578,"Norway",4.21158,2,"Cardiovascular diseases",2004,2,15,"Northern Europe",1,13
+578,"Norway",6.921669,1,"Malignant neoplasms",2011,2,15,"Northern Europe",1,13
+578,"Norway",10.83427,0,"Major NCDs",2011,2,15,"Northern Europe",1,13
+578,"Norway",4.449864,2,"Cardiovascular diseases",2003,2,15,"Northern Europe",1,13
+578,"Norway",5.372414,2,"Cardiovascular diseases",2000,2,15,"Northern Europe",1,13
+578,"Norway",7.767928,1,"Malignant neoplasms",2003,2,15,"Northern Europe",1,13
+578,"Norway",11.96782,0,"Major NCDs",2016,2,15,"Northern Europe",1,13
+578,"Norway",8.028063,1,"Malignant neoplasms",2001,2,15,"Northern Europe",1,13
+578,"Norway",4.960078,2,"Cardiovascular diseases",2002,2,15,"Northern Europe",1,13
+578,"Norway",10.5078,0,"Major NCDs",2013,2,15,"Northern Europe",1,13
+578,"Norway",3.133952,2,"Cardiovascular diseases",2011,2,15,"Northern Europe",1,13
+578,"Norway",11.984,0,"Major NCDs",2006,2,15,"Northern Europe",1,13
+578,"Norway",7.205369,1,"Malignant neoplasms",2008,2,15,"Northern Europe",1,13
+578,"Norway",13.78438,0,"Major NCDs",2002,2,15,"Northern Europe",1,13
+578,"Norway",7.458806,1,"Malignant neoplasms",2007,2,15,"Northern Europe",1,13
+578,"Norway",3.629088,2,"Cardiovascular diseases",2008,2,15,"Northern Europe",1,13
+578,"Norway",6.747212,1,"Malignant neoplasms",2013,2,15,"Northern Europe",1,13
+578,"Norway",11.94901,0,"Major NCDs",2007,2,15,"Northern Europe",1,13
+578,"Norway",5.164748,2,"Cardiovascular diseases",2001,2,15,"Northern Europe",1,13
+578,"Norway",3.944117,2,"Cardiovascular diseases",2005,2,15,"Northern Europe",1,13
+578,"Norway",3.130898,2,"Cardiovascular diseases",2012,2,15,"Northern Europe",1,13
+578,"Norway",6.397165,1,"Malignant neoplasms",2014,2,15,"Northern Europe",1,13
+578,"Norway",2.920762,2,"Cardiovascular diseases",2013,2,15,"Northern Europe",1,13
+578,"Norway",3.233706,2,"Cardiovascular diseases",2010,2,15,"Northern Europe",1,13
+578,"Norway",12.56291,0,"Major NCDs",2004,2,15,"Northern Europe",1,13
+578,"Norway",2.549426,2,"Cardiovascular diseases",2016,2,15,"Northern Europe",1,13
+578,"Norway",6.657703,1,"Malignant neoplasms",2012,2,15,"Northern Europe",1,13
+578,"Norway",6.047329,1,"Malignant neoplasms",2016,2,15,"Northern Europe",1,13
+578,"Norway",8.122533,1,"Malignant neoplasms",2002,2,15,"Northern Europe",1,13
+578,"Norway",3.776914,2,"Cardiovascular diseases",2006,2,15,"Northern Europe",1,13
+578,"Norway",13.87098,0,"Major NCDs",2001,2,15,"Northern Europe",1,13
+578,"Norway",8.114425,1,"Malignant neoplasms",2000,2,15,"Northern Europe",1,13
+578,"Norway",7.056135,1,"Malignant neoplasms",2009,2,15,"Northern Europe",1,13
+578,"Norway",2.551393,2,"Cardiovascular diseases",2015,2,15,"Northern Europe",1,13
+578,"Norway",10.68286,0,"Major NCDs",2012,2,15,"Northern Europe",1,13
+578,"Norway",7.538746,1,"Malignant neoplasms",2005,2,15,"Northern Europe",1,13
+578,"Norway",12.23887,0,"Major NCDs",2005,2,15,"Northern Europe",1,13
+578,"Norway",6.011374,1,"Malignant neoplasms",2015,2,15,"Northern Europe",1,13
+608,"Philippines",26.90825,0,"Major NCDs",2015,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.11402,2,"Cardiovascular diseases",2011,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.23211,2,"Cardiovascular diseases",2013,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.28493,2,"Cardiovascular diseases",2005,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.36503,1,"Malignant neoplasms",2003,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.41033,2,"Cardiovascular diseases",2014,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.183031,1,"Malignant neoplasms",2006,1,11,"South-Eastern Asia",1,5
+608,"Philippines",28.01996,0,"Major NCDs",2002,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.45247,1,"Malignant neoplasms",2005,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.35121,1,"Malignant neoplasms",2004,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.86024,2,"Cardiovascular diseases",2007,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.60251,0,"Major NCDs",2010,1,11,"South-Eastern Asia",1,5
+608,"Philippines",35.35099,0,"Major NCDs",2016,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.32367,0,"Major NCDs",2012,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.81092,2,"Cardiovascular diseases",2002,1,11,"South-Eastern Asia",1,5
+608,"Philippines",18.61024,2,"Cardiovascular diseases",2016,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.47807,0,"Major NCDs",2001,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.599216,1,"Malignant neoplasms",2001,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.986488,1,"Malignant neoplasms",2008,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.49176,2,"Cardiovascular diseases",2015,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.347248,1,"Malignant neoplasms",2016,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.69019,1,"Malignant neoplasms",2002,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.49718,2,"Cardiovascular diseases",2001,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.30909,0,"Major NCDs",2011,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.396047,1,"Malignant neoplasms",2015,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.502249,1,"Malignant neoplasms",2013,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.85828,0,"Major NCDs",2007,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.74404,0,"Major NCDs",2004,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.38345,2,"Cardiovascular diseases",2003,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.74387,2,"Cardiovascular diseases",2004,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.82631,2,"Cardiovascular diseases",2006,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.02572,2,"Cardiovascular diseases",2000,1,11,"South-Eastern Asia",1,5
+608,"Philippines",26.81647,0,"Major NCDs",2000,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.20687,2,"Cardiovascular diseases",2010,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.807401,1,"Malignant neoplasms",2010,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.80039,0,"Major NCDs",2008,1,11,"South-Eastern Asia",1,5
+608,"Philippines",28.19869,0,"Major NCDs",2006,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.35982,0,"Major NCDs",2003,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.701033,1,"Malignant neoplasms",2011,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.968487,1,"Malignant neoplasms",2007,1,11,"South-Eastern Asia",1,5
+608,"Philippines",28.41049,0,"Major NCDs",2005,1,11,"South-Eastern Asia",1,5
+608,"Philippines",16.74529,2,"Cardiovascular diseases",2008,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.898889,1,"Malignant neoplasms",2009,1,11,"South-Eastern Asia",1,5
+608,"Philippines",26.98582,0,"Major NCDs",2013,1,11,"South-Eastern Asia",1,5
+608,"Philippines",28.04173,0,"Major NCDs",2009,1,11,"South-Eastern Asia",1,5
+608,"Philippines",7.619589,1,"Malignant neoplasms",2000,1,11,"South-Eastern Asia",1,5
+608,"Philippines",27.01596,0,"Major NCDs",2014,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.3037,2,"Cardiovascular diseases",2012,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.46973,1,"Malignant neoplasms",2014,1,11,"South-Eastern Asia",1,5
+608,"Philippines",6.637855,1,"Malignant neoplasms",2012,1,11,"South-Eastern Asia",1,5
+608,"Philippines",17.3246,2,"Cardiovascular diseases",2009,1,11,"South-Eastern Asia",1,5
+703,"Slovakia",19.89546,0,"Major NCDs",2011,2,14,"Eastern Europe",1,20
+703,"Slovakia",12.87053,2,"Cardiovascular diseases",2003,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.87898,1,"Malignant neoplasms",2005,2,14,"Eastern Europe",1,20
+703,"Slovakia",23.63204,0,"Major NCDs",2003,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.17381,1,"Malignant neoplasms",2009,2,14,"Eastern Europe",1,20
+703,"Slovakia",21.06617,0,"Major NCDs",2009,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.47035,2,"Cardiovascular diseases",2010,2,14,"Eastern Europe",1,20
+703,"Slovakia",14.1107,2,"Cardiovascular diseases",2000,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.42627,1,"Malignant neoplasms",2006,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.51273,1,"Malignant neoplasms",2007,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.0726,1,"Malignant neoplasms",2016,2,14,"Eastern Europe",1,20
+703,"Slovakia",24.77353,0,"Major NCDs",2001,2,14,"Eastern Europe",1,20
+703,"Slovakia",23.85666,0,"Major NCDs",2002,2,14,"Eastern Europe",1,20
+703,"Slovakia",9.887971,1,"Malignant neoplasms",2014,2,14,"Eastern Europe",1,20
+703,"Slovakia",20.35208,0,"Major NCDs",2010,2,14,"Eastern Europe",1,20
+703,"Slovakia",11.54949,1,"Malignant neoplasms",2001,2,14,"Eastern Europe",1,20
+703,"Slovakia",22.93631,0,"Major NCDs",2005,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.17097,1,"Malignant neoplasms",2011,2,14,"Eastern Europe",1,20
+703,"Slovakia",11.38135,2,"Cardiovascular diseases",2008,2,14,"Eastern Europe",1,20
+703,"Slovakia",9.737099,2,"Cardiovascular diseases",2011,2,14,"Eastern Europe",1,20
+703,"Slovakia",22.51981,0,"Major NCDs",2016,2,14,"Eastern Europe",1,20
+703,"Slovakia",9.925372,1,"Malignant neoplasms",2010,2,14,"Eastern Europe",1,20
+703,"Slovakia",8.177328,2,"Cardiovascular diseases",2014,2,14,"Eastern Europe",1,20
+703,"Slovakia",18.7731,0,"Major NCDs",2013,2,14,"Eastern Europe",1,20
+703,"Slovakia",22.29091,0,"Major NCDs",2006,2,14,"Eastern Europe",1,20
+703,"Slovakia",12.43487,2,"Cardiovascular diseases",2004,2,14,"Eastern Europe",1,20
+703,"Slovakia",12.20702,2,"Cardiovascular diseases",2006,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.04922,1,"Malignant neoplasms",2013,2,14,"Eastern Europe",1,20
+703,"Slovakia",25.26841,0,"Major NCDs",2000,2,14,"Eastern Europe",1,20
+703,"Slovakia",18.71751,0,"Major NCDs",2012,2,14,"Eastern Europe",1,20
+703,"Slovakia",13.70223,2,"Cardiovascular diseases",2001,2,14,"Eastern Europe",1,20
+703,"Slovakia",8.665805,2,"Cardiovascular diseases",2012,2,14,"Eastern Europe",1,20
+703,"Slovakia",7.610584,2,"Cardiovascular diseases",2015,2,14,"Eastern Europe",1,20
+703,"Slovakia",13.15876,2,"Cardiovascular diseases",2002,2,14,"Eastern Europe",1,20
+703,"Slovakia",22.35819,0,"Major NCDs",2007,2,14,"Eastern Europe",1,20
+703,"Slovakia",11.78645,1,"Malignant neoplasms",2000,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.7625,1,"Malignant neoplasms",2004,2,14,"Eastern Europe",1,20
+703,"Slovakia",10.26523,1,"Malignant neoplasms",2008,2,14,"Eastern Europe",1,20
+703,"Slovakia",18.19721,0,"Major NCDs",2014,2,14,"Eastern Europe",1,20
+703,"Slovakia",22.95526,0,"Major NCDs",2004,2,14,"Eastern Europe",1,20
+703,"Slovakia",11.0393,2,"Cardiovascular diseases",2009,2,14,"Eastern Europe",1,20
+703,"Slovakia",7.243601,2,"Cardiovascular diseases",2016,2,14,"Eastern Europe",1,20
+703,"Slovakia",8.682014,2,"Cardiovascular diseases",2013,2,14,"Eastern Europe",1,20
+703,"Slovakia",9.854684,1,"Malignant neoplasms",2012,2,14,"Eastern Europe",1,20
+703,"Slovakia",11.1205,1,"Malignant neoplasms",2002,2,14,"Eastern Europe",1,20
+703,"Slovakia",12.09394,2,"Cardiovascular diseases",2007,2,14,"Eastern Europe",1,20
+703,"Slovakia",12.43348,2,"Cardiovascular diseases",2005,2,14,"Eastern Europe",1,20
+703,"Slovakia",9.819087,1,"Malignant neoplasms",2015,2,14,"Eastern Europe",1,20
+703,"Slovakia",21.45178,0,"Major NCDs",2008,2,14,"Eastern Europe",1,20
+703,"Slovakia",11.12527,1,"Malignant neoplasms",2003,2,14,"Eastern Europe",1,20
+703,"Slovakia",17.65836,0,"Major NCDs",2015,2,14,"Eastern Europe",1,20
+804,"Ukraine",9.971507,1,"Malignant neoplasms",2010,1,14,"Eastern Europe",1,10
+804,"Ukraine",18.96364,2,"Cardiovascular diseases",2011,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.54234,1,"Malignant neoplasms",2007,1,14,"Eastern Europe",1,10
+804,"Ukraine",32.8766,0,"Major NCDs",2016,1,14,"Eastern Europe",1,10
+804,"Ukraine",10.49104,1,"Malignant neoplasms",2009,1,14,"Eastern Europe",1,10
+804,"Ukraine",18.24963,2,"Cardiovascular diseases",2014,1,14,"Eastern Europe",1,10
+804,"Ukraine",18.40954,2,"Cardiovascular diseases",2013,1,14,"Eastern Europe",1,10
+804,"Ukraine",23.40705,2,"Cardiovascular diseases",2003,1,14,"Eastern Europe",1,10
+804,"Ukraine",25.1825,2,"Cardiovascular diseases",2005,1,14,"Eastern Europe",1,10
+804,"Ukraine",21.45769,2,"Cardiovascular diseases",2009,1,14,"Eastern Europe",1,10
+804,"Ukraine",33.83787,0,"Major NCDs",2003,1,14,"Eastern Europe",1,10
+804,"Ukraine",24.07536,2,"Cardiovascular diseases",2007,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.36991,1,"Malignant neoplasms",2006,1,14,"Eastern Europe",1,10
+804,"Ukraine",30.73778,0,"Major NCDs",2009,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.87477,1,"Malignant neoplasms",2005,1,14,"Eastern Europe",1,10
+804,"Ukraine",33.99932,0,"Major NCDs",2006,1,14,"Eastern Europe",1,10
+804,"Ukraine",33.25596,0,"Major NCDs",2001,1,14,"Eastern Europe",1,10
+804,"Ukraine",26.75251,0,"Major NCDs",2014,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.54867,1,"Malignant neoplasms",2002,1,14,"Eastern Europe",1,10
+804,"Ukraine",27.62769,0,"Major NCDs",2011,1,14,"Eastern Europe",1,10
+804,"Ukraine",24.25668,2,"Cardiovascular diseases",2004,1,14,"Eastern Europe",1,10
+804,"Ukraine",16.79296,2,"Cardiovascular diseases",2016,1,14,"Eastern Europe",1,10
+804,"Ukraine",10.00702,1,"Malignant neoplasms",2016,1,14,"Eastern Europe",1,10
+804,"Ukraine",33.65399,0,"Major NCDs",2002,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.46072,1,"Malignant neoplasms",2008,1,14,"Eastern Europe",1,10
+804,"Ukraine",9.738859,1,"Malignant neoplasms",2013,1,14,"Eastern Europe",1,10
+804,"Ukraine",29.2644,0,"Major NCDs",2010,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.71153,1,"Malignant neoplasms",2004,1,14,"Eastern Europe",1,10
+804,"Ukraine",9.592971,1,"Malignant neoplasms",2011,1,14,"Eastern Europe",1,10
+804,"Ukraine",17.20168,2,"Cardiovascular diseases",2015,1,14,"Eastern Europe",1,10
+804,"Ukraine",25.83647,0,"Major NCDs",2015,1,14,"Eastern Europe",1,10
+804,"Ukraine",12.14948,1,"Malignant neoplasms",2000,1,14,"Eastern Europe",1,10
+804,"Ukraine",9.455044,1,"Malignant neoplasms",2015,1,14,"Eastern Europe",1,10
+804,"Ukraine",20.36297,2,"Cardiovascular diseases",2010,1,14,"Eastern Europe",1,10
+804,"Ukraine",35.52271,0,"Major NCDs",2005,1,14,"Eastern Europe",1,10
+804,"Ukraine",33.53392,0,"Major NCDs",2008,1,14,"Eastern Europe",1,10
+804,"Ukraine",22.9875,2,"Cardiovascular diseases",2000,1,14,"Eastern Europe",1,10
+804,"Ukraine",23.07433,2,"Cardiovascular diseases",2002,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.52605,1,"Malignant neoplasms",2003,1,14,"Eastern Europe",1,10
+804,"Ukraine",27.21383,0,"Major NCDs",2013,1,14,"Eastern Europe",1,10
+804,"Ukraine",34.23849,0,"Major NCDs",2000,1,14,"Eastern Europe",1,10
+804,"Ukraine",27.48351,0,"Major NCDs",2012,1,14,"Eastern Europe",1,10
+804,"Ukraine",9.385728,1,"Malignant neoplasms",2014,1,14,"Eastern Europe",1,10
+804,"Ukraine",23.60406,2,"Cardiovascular diseases",2008,1,14,"Eastern Europe",1,10
+804,"Ukraine",18.73217,2,"Cardiovascular diseases",2012,1,14,"Eastern Europe",1,10
+804,"Ukraine",11.73403,1,"Malignant neoplasms",2001,1,14,"Eastern Europe",1,10
+804,"Ukraine",34.67051,0,"Major NCDs",2004,1,14,"Eastern Europe",1,10
+804,"Ukraine",22.39756,2,"Cardiovascular diseases",2001,1,14,"Eastern Europe",1,10
+804,"Ukraine",24.04862,2,"Cardiovascular diseases",2006,1,14,"Eastern Europe",1,10
+804,"Ukraine",34.09078,0,"Major NCDs",2007,1,14,"Eastern Europe",1,10
+804,"Ukraine",9.703388,1,"Malignant neoplasms",2012,1,14,"Eastern Europe",1,10
+826,"UK",4.279338,2,"Cardiovascular diseases",2009,2,15,"Northern Europe",1,17
+826,"UK",14.19522,0,"Major NCDs",2005,2,15,"Northern Europe",1,17
+826,"UK",7.585838,1,"Malignant neoplasms",2008,2,15,"Northern Europe",1,17
+826,"UK",7.161245,2,"Cardiovascular diseases",2000,2,15,"Northern Europe",1,17
+826,"UK",13.7223,0,"Major NCDs",2006,2,15,"Northern Europe",1,17
+826,"UK",6.751808,1,"Malignant neoplasms",2015,2,15,"Northern Europe",1,17
+826,"UK",5.085693,2,"Cardiovascular diseases",2006,2,15,"Northern Europe",1,17
+826,"UK",14.67081,0,"Major NCDs",2004,2,15,"Northern Europe",1,17
+826,"UK",13.03394,0,"Major NCDs",2008,2,15,"Northern Europe",1,17
+826,"UK",11.75503,0,"Major NCDs",2011,2,15,"Northern Europe",1,17
+826,"UK",3.677448,2,"Cardiovascular diseases",2012,2,15,"Northern Europe",1,17
+826,"UK",7.383912,1,"Malignant neoplasms",2009,2,15,"Northern Europe",1,17
+826,"UK",13.40759,0,"Major NCDs",2007,2,15,"Northern Europe",1,17
+826,"UK",7.951038,1,"Malignant neoplasms",2005,2,15,"Northern Europe",1,17
+826,"UK",6.82945,2,"Cardiovascular diseases",2001,2,15,"Northern Europe",1,17
+826,"UK",8.103854,1,"Malignant neoplasms",2004,2,15,"Northern Europe",1,17
+826,"UK",4.17689,2,"Cardiovascular diseases",2010,2,15,"Northern Europe",1,17
+826,"UK",8.564122,1,"Malignant neoplasms",2000,2,15,"Northern Europe",1,17
+826,"UK",11.24729,0,"Major NCDs",2015,2,15,"Northern Europe",1,17
+826,"UK",6.804915,1,"Malignant neoplasms",2014,2,15,"Northern Europe",1,17
+826,"UK",6.553611,2,"Cardiovascular diseases",2002,2,15,"Northern Europe",1,17
+826,"UK",7.752152,1,"Malignant neoplasms",2007,2,15,"Northern Europe",1,17
+826,"UK",7.198496,1,"Malignant neoplasms",2010,2,15,"Northern Europe",1,17
+826,"UK",15.33482,0,"Major NCDs",2003,2,15,"Northern Europe",1,17
+826,"UK",8.231666,1,"Malignant neoplasms",2003,2,15,"Northern Europe",1,17
+826,"UK",7.850809,1,"Malignant neoplasms",2006,2,15,"Northern Europe",1,17
+826,"UK",12.18262,0,"Major NCDs",2010,2,15,"Northern Europe",1,17
+826,"UK",12.4607,0,"Major NCDs",2009,2,15,"Northern Europe",1,17
+826,"UK",5.431853,2,"Cardiovascular diseases",2005,2,15,"Northern Europe",1,17
+826,"UK",7.0759,1,"Malignant neoplasms",2012,2,15,"Northern Europe",1,17
+826,"UK",3.559971,2,"Cardiovascular diseases",2014,2,15,"Northern Europe",1,17
+826,"UK",6.25707,2,"Cardiovascular diseases",2003,2,15,"Northern Europe",1,17
+826,"UK",11.19467,0,"Major NCDs",2014,2,15,"Northern Europe",1,17
+826,"UK",7.15088,1,"Malignant neoplasms",2011,2,15,"Northern Europe",1,17
+826,"UK",11.45756,0,"Major NCDs",2013,2,15,"Northern Europe",1,17
+826,"UK",3.626777,2,"Cardiovascular diseases",2013,2,15,"Northern Europe",1,17
+826,"UK",8.476353,1,"Malignant neoplasms",2001,2,15,"Northern Europe",1,17
+826,"UK",11.6181,0,"Major NCDs",2012,2,15,"Northern Europe",1,17
+826,"UK",15.99629,0,"Major NCDs",2001,2,15,"Northern Europe",1,17
+826,"UK",16.4198,0,"Major NCDs",2000,2,15,"Northern Europe",1,17
+826,"UK",4.595012,2,"Cardiovascular diseases",2008,2,15,"Northern Europe",1,17
+826,"UK",6.940082,1,"Malignant neoplasms",2013,2,15,"Northern Europe",1,17
+826,"UK",6.872007,1,"Malignant neoplasms",2016,2,15,"Northern Europe",1,17
+826,"UK",3.608409,2,"Cardiovascular diseases",2015,2,15,"Northern Europe",1,17
+826,"UK",3.767247,2,"Cardiovascular diseases",2011,2,15,"Northern Europe",1,17
+826,"UK",5.785936,2,"Cardiovascular diseases",2004,2,15,"Northern Europe",1,17
+826,"UK",15.71005,0,"Major NCDs",2002,2,15,"Northern Europe",1,17
+826,"UK",14.49903,0,"Major NCDs",2016,2,15,"Northern Europe",1,17
+826,"UK",3.459924,2,"Cardiovascular diseases",2016,2,15,"Northern Europe",1,17
+826,"UK",4.838676,2,"Cardiovascular diseases",2007,2,15,"Northern Europe",1,17
+826,"UK",8.438424,1,"Malignant neoplasms",2002,2,15,"Northern Europe",1,17
+840,"USA",7.482503,1,"Malignant neoplasms",2008,2,9,"Northern America",1,18
+840,"USA",14.80632,0,"Major NCDs",2009,2,9,"Northern America",1,18
+840,"USA",5.535337,2,"Cardiovascular diseases",2014,2,9,"Northern America",1,18
+840,"USA",5.815379,2,"Cardiovascular diseases",2009,2,9,"Northern America",1,18
+840,"USA",14.33945,0,"Major NCDs",2015,2,9,"Northern America",1,18
+840,"USA",6.094986,2,"Cardiovascular diseases",2007,2,9,"Northern America",1,18
+840,"USA",17.5535,0,"Major NCDs",2001,2,9,"Northern America",1,18
+840,"USA",15.14875,0,"Major NCDs",2008,2,9,"Northern America",1,18
+840,"USA",5.730855,2,"Cardiovascular diseases",2015,2,9,"Northern America",1,18
+840,"USA",20.43485,0,"Major NCDs",2016,2,9,"Northern America",1,18
+840,"USA",5.564279,2,"Cardiovascular diseases",2011,2,9,"Northern America",1,18
+840,"USA",15.26862,0,"Major NCDs",2007,2,9,"Northern America",1,18
+840,"USA",6.839124,1,"Malignant neoplasms",2013,2,9,"Northern America",1,18
+840,"USA",13.99816,0,"Major NCDs",2014,2,9,"Northern America",1,18
+840,"USA",6.558548,2,"Cardiovascular diseases",2005,2,9,"Northern America",1,18
+840,"USA",8.200728,1,"Malignant neoplasms",2003,2,9,"Northern America",1,18
+840,"USA",17.99412,0,"Major NCDs",2000,2,9,"Northern America",1,18
+840,"USA",16.93922,0,"Major NCDs",2003,2,9,"Northern America",1,18
+840,"USA",14.06559,0,"Major NCDs",2013,2,9,"Northern America",1,18
+840,"USA",7.344821,2,"Cardiovascular diseases",2002,2,9,"Northern America",1,18
+840,"USA",6.052884,2,"Cardiovascular diseases",2016,2,9,"Northern America",1,18
+840,"USA",7.802298,2,"Cardiovascular diseases",2000,2,9,"Northern America",1,18
+840,"USA",7.072574,1,"Malignant neoplasms",2011,2,9,"Northern America",1,18
+840,"USA",5.529674,2,"Cardiovascular diseases",2013,2,9,"Northern America",1,18
+840,"USA",17.26133,0,"Major NCDs",2002,2,9,"Northern America",1,18
+840,"USA",16.03758,0,"Major NCDs",2005,2,9,"Northern America",1,18
+840,"USA",14.47322,0,"Major NCDs",2010,2,9,"Northern America",1,18
+840,"USA",6.003834,2,"Cardiovascular diseases",2008,2,9,"Northern America",1,18
+840,"USA",6.323166,2,"Cardiovascular diseases",2006,2,9,"Northern America",1,18
+840,"USA",16.31904,0,"Major NCDs",2004,2,9,"Northern America",1,18
+840,"USA",8.493247,1,"Malignant neoplasms",2001,2,9,"Northern America",1,18
+840,"USA",8.000531,1,"Malignant neoplasms",2004,2,9,"Northern America",1,18
+840,"USA",7.218546,1,"Malignant neoplasms",2010,2,9,"Northern America",1,18
+840,"USA",6.75964,1,"Malignant neoplasms",2014,2,9,"Northern America",1,18
+840,"USA",7.582311,1,"Malignant neoplasms",2007,2,9,"Northern America",1,18
+840,"USA",6.823491,1,"Malignant neoplasms",2015,2,9,"Northern America",1,18
+840,"USA",7.120943,2,"Cardiovascular diseases",2003,2,9,"Northern America",1,18
+840,"USA",14.30648,0,"Major NCDs",2011,2,9,"Northern America",1,18
+840,"USA",7.031389,1,"Malignant neoplasms",2016,2,9,"Northern America",1,18
+840,"USA",14.20086,0,"Major NCDs",2012,2,9,"Northern America",1,18
+840,"USA",6.735994,2,"Cardiovascular diseases",2004,2,9,"Northern America",1,18
+840,"USA",7.832739,1,"Malignant neoplasms",2005,2,9,"Northern America",1,18
+840,"USA",7.697525,1,"Malignant neoplasms",2006,2,9,"Northern America",1,18
+840,"USA",8.361892,1,"Malignant neoplasms",2002,2,9,"Northern America",1,18
+840,"USA",8.671896,1,"Malignant neoplasms",2000,2,9,"Northern America",1,18
+840,"USA",7.352567,1,"Malignant neoplasms",2009,2,9,"Northern America",1,18
+840,"USA",15.61443,0,"Major NCDs",2006,2,9,"Northern America",1,18
+840,"USA",7.006022,1,"Malignant neoplasms",2012,2,9,"Northern America",1,18
+840,"USA",5.536067,2,"Cardiovascular diseases",2012,2,9,"Northern America",1,18
+840,"USA",5.649739,2,"Cardiovascular diseases",2010,2,9,"Northern America",1,18
+840,"USA",7.485142,2,"Cardiovascular diseases",2001,2,9,"Northern America",1,18
+860,"Uzbekistan",5.015055,1,"Malignant neoplasms",2006,1,12,"Southern Asia",1,2
+860,"Uzbekistan",24.82944,0,"Major NCDs",2015,1,12,"Southern Asia",1,2
+860,"Uzbekistan",21.38744,2,"Cardiovascular diseases",2008,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.869783,1,"Malignant neoplasms",2004,1,12,"Southern Asia",1,2
+860,"Uzbekistan",19.52546,2,"Cardiovascular diseases",2013,1,12,"Southern Asia",1,2
+860,"Uzbekistan",25.92449,0,"Major NCDs",2012,1,12,"Southern Asia",1,2
+860,"Uzbekistan",20.64849,2,"Cardiovascular diseases",2010,1,12,"Southern Asia",1,2
+860,"Uzbekistan",29.25221,0,"Major NCDs",2000,1,12,"Southern Asia",1,2
+860,"Uzbekistan",18.71023,2,"Cardiovascular diseases",2015,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.59906,1,"Malignant neoplasms",2011,1,12,"Southern Asia",1,2
+860,"Uzbekistan",28.492,0,"Major NCDs",2001,1,12,"Southern Asia",1,2
+860,"Uzbekistan",22.44068,2,"Cardiovascular diseases",2000,1,12,"Southern Asia",1,2
+860,"Uzbekistan",28.27132,0,"Major NCDs",2004,1,12,"Southern Asia",1,2
+860,"Uzbekistan",22.13879,2,"Cardiovascular diseases",2001,1,12,"Southern Asia",1,2
+860,"Uzbekistan",23.01681,2,"Cardiovascular diseases",2002,1,12,"Southern Asia",1,2
+860,"Uzbekistan",22.17934,2,"Cardiovascular diseases",2007,1,12,"Southern Asia",1,2
+860,"Uzbekistan",21.99096,2,"Cardiovascular diseases",2004,1,12,"Southern Asia",1,2
+860,"Uzbekistan",26.20163,0,"Major NCDs",2011,1,12,"Southern Asia",1,2
+860,"Uzbekistan",22.93172,2,"Cardiovascular diseases",2006,1,12,"Southern Asia",1,2
+860,"Uzbekistan",20.3216,2,"Cardiovascular diseases",2011,1,12,"Southern Asia",1,2
+860,"Uzbekistan",23.42813,2,"Cardiovascular diseases",2005,1,12,"Southern Asia",1,2
+860,"Uzbekistan",25.62945,0,"Major NCDs",2013,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.689306,1,"Malignant neoplasms",2008,1,12,"Southern Asia",1,2
+860,"Uzbekistan",28.37437,0,"Major NCDs",2007,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.461325,1,"Malignant neoplasms",2016,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.778787,1,"Malignant neoplasms",2002,1,12,"Southern Asia",1,2
+860,"Uzbekistan",29.00475,0,"Major NCDs",2003,1,12,"Southern Asia",1,2
+860,"Uzbekistan",31.25685,0,"Major NCDs",2016,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.560907,1,"Malignant neoplasms",2013,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.550768,1,"Malignant neoplasms",2009,1,12,"Southern Asia",1,2
+860,"Uzbekistan",25.87825,0,"Major NCDs",2014,1,12,"Southern Asia",1,2
+860,"Uzbekistan",27.44538,0,"Major NCDs",2008,1,12,"Southern Asia",1,2
+860,"Uzbekistan",29.28115,0,"Major NCDs",2006,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.762842,1,"Malignant neoplasms",2014,1,12,"Southern Asia",1,2
+860,"Uzbekistan",29.24857,0,"Major NCDs",2002,1,12,"Southern Asia",1,2
+860,"Uzbekistan",22.65115,2,"Cardiovascular diseases",2003,1,12,"Southern Asia",1,2
+860,"Uzbekistan",20.75174,2,"Cardiovascular diseases",2009,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.890965,1,"Malignant neoplasms",2001,1,12,"Southern Asia",1,2
+860,"Uzbekistan",5.004552,1,"Malignant neoplasms",2005,1,12,"Southern Asia",1,2
+860,"Uzbekistan",5.080994,1,"Malignant neoplasms",2000,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.403333,1,"Malignant neoplasms",2010,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.557364,1,"Malignant neoplasms",2015,1,12,"Southern Asia",1,2
+860,"Uzbekistan",18.97528,2,"Cardiovascular diseases",2016,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.511159,1,"Malignant neoplasms",2012,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.840723,1,"Malignant neoplasms",2003,1,12,"Southern Asia",1,2
+860,"Uzbekistan",26.46104,0,"Major NCDs",2010,1,12,"Southern Asia",1,2
+860,"Uzbekistan",19.66188,2,"Cardiovascular diseases",2014,1,12,"Southern Asia",1,2
+860,"Uzbekistan",29.84288,0,"Major NCDs",2005,1,12,"Southern Asia",1,2
+860,"Uzbekistan",19.93237,2,"Cardiovascular diseases",2012,1,12,"Southern Asia",1,2
+860,"Uzbekistan",4.845778,1,"Malignant neoplasms",2007,1,12,"Southern Asia",1,2
+860,"Uzbekistan",26.66678,0,"Major NCDs",2009,1,12,"Southern Asia",1,2
