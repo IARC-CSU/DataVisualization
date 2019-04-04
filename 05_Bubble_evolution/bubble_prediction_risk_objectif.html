@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  
   <head>
+  	<meta charset="utf-8">
   
   	<title> Bubble chart mortality hdi </title>
 	<!--link rel="icon" href="favicon.ico" /-->
 	<link rel="stylesheet" href="css/bubble_prediction_risk.css" type="text/css">
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
-	<script type="text/javascript" src="js/bubble_prediction_risk_VHHDI.js"></script>
+	<script type="text/javascript" src="js/ru_bubble_prediction_risk_objectif.js"></script>
 
 
 
 	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
 	
 	
-		<script type="text/javascript">
+	<script type="text/javascript">
 		
 	// variable general
 	
@@ -27,14 +28,15 @@
 	var color_cancer = {};
 	color_cancer[1]  = "#E66101"; // low and medium 
 	color_cancer[2]  = "#2C7BB6"; // high hdi
-	
+
+	var file_use = "data/ru_prediction_risk_objectif_EU28.csv"; 
 
 	
 	var ease_effect = "sin-in-out"
 	var transition_time = 1000
 	
 	var bar_space = 2.5	// Space between bar 
-	var nb_cancer = 10  // nb of cancer shows (here top 10)
+	var nb_cancer = 11  // nb of cancer shows (here top 10)
 	var label_wrap = 10 // size max of a label on one line
 	
 	var var_height = 550
@@ -93,7 +95,7 @@
 	
 	<div id="header" >
 		<div>
-			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2015</a></h1>
+			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2016</a></h1>
 			<div class="desc">
 				Cancer
 			</div>
@@ -108,7 +110,7 @@
 		<form>
 		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2000</label>
 		<br/>
-		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2015</label>
+		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2016</label>
 		</form>
 		<br/>
 		<form>

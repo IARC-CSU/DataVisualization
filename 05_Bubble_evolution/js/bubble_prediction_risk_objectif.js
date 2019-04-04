@@ -1,6 +1,6 @@
  function bubble_evo() // generate heatmap 
 	{ 	
-		var file_use = "data/prediction_risk_VHHDI.csv"; 
+		
 		
 	
 
@@ -9,12 +9,11 @@
 			function(d) {
 			return {
 				
-				sex : +d.hdi,
+				sex : +d.selection,
 				cancer_label : d.country_label,
 				cancer_code: +d.country_code,
-				volume : +d.volume,
-				rate1: +d.risk2000,
-				rate2: +d.risk2015,
+				rate1: +d.risk1,
+				rate2: +d.risk2,
 
 				};	
 			},		
@@ -140,7 +139,7 @@
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
 			.attr("x", 30)
-			.text("2015")
+			.text("2016")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
 
@@ -278,8 +277,8 @@
 			v_key = 0 //volume key for the array or nest data
 			axis_y_line = 0 
 		} else {
-			sex = 2
-			v_key = 1 
+			sex = 1
+			v_key = 0 
 			axis_y_line = graph_width
 		}
 		
@@ -425,9 +424,10 @@
 			
 	   nodes.append("text")
 			.attr("class","cancer_label")
-			.attr("text-anchor", "middle")
+			.attr("text-anchor", "end")
 			.attr("y", function(d, i) {return  var_height + 20 })
 			.attr("dy", "0.25em")
+			.attr("transform", "translate(-400,165) rotate(-45)")
 			.attr("fill", "#000000")
 			.each(function (d) { // to use the wrap label fonction 
 				var temp =d.cancer_label;
