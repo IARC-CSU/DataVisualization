@@ -273,11 +273,11 @@
 
 			
 		if (bool_left_graph) {
-			sex = 1
+			sex = 2
 			v_key = 0 //volume key for the array or nest data
 			axis_y_line = 0 
 		} else {
-			sex = 1
+			sex = 2
 			v_key = 0 
 			axis_y_line = graph_width
 		}

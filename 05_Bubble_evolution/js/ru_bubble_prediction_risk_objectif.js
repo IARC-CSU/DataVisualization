@@ -117,17 +117,23 @@
 			.attr("y", 110)
 			.text("Снижение риска")
 			.attr("dy", "0.25em")
+
+		graph_select.append("text")
+			.attr("class","circle_aim")
+			.attr("text-anchor", "left")
+			.attr("x", 30)
+			.attr("y", 110)
+			.text("по отношению к")
+			.attr("dy", "1.50em")
 			
 		graph_select.append("text")
 			.attr("class","circle_aim")
 			.attr("text-anchor", "left")
 			.attr("x", 30)
 			.attr("y", 110)
-			.text("в 2000 году на 1/3")
-			.attr("dy", "1.50em")
+			.text("2000 году на 1/3")
+			.attr("dy", "2.75em")
 
-
-			
 		graph_select.append("text")
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
@@ -273,11 +279,11 @@
 
 			
 		if (bool_left_graph) {
-			sex = 2
+			sex = 1
 			v_key = 0 //volume key for the array or nest data
 			axis_y_line = 0 
 		} else {
-			sex = 2
+			sex = 1
 			v_key = 0 
 			axis_y_line = graph_width
 		}
