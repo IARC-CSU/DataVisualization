@@ -17,12 +17,17 @@
 		<script type="text/javascript">
 		
 	// variable general
+
 	
 	var margin = { top: 50, right: 200, bottom: 100, left: 300, top_page: 20, left_page: 350 },
 	width = 1500 - margin.left - margin.right,
 	height = 800 - margin.top - margin.bottom,
 	
 	XgridSize = 30 // 20*Xgrid for the range of the bar 
+
+	//var file_use = "data/prediction_demographic_data.csv"; 
+	var file_use = "data/prediction_HDI_mortality.csv"; 
+
 
 	var color_cancer = {};
 	color_cancer["Low HDI"]                = "#D7191C";
@@ -82,7 +87,7 @@
 	
 	<div id="header" >
 		<div>
-			<h1><a href="#"> New cases prediction<br/>2018 to 2040</a></h1>
+			<h1><a href="#"> Cancer deaths prediction<br/>2018 to 2040</a></h1>
 			<div class="desc">
 				Demographic effect 
 			</div>

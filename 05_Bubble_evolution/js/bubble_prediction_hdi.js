@@ -3,7 +3,7 @@
 	
     function bubble_evo() // generate heatmap 
 	{ 	
-		var file_use = "data/prediction_demographic_data.csv"; 
+		
 		
 	
 
@@ -189,7 +189,7 @@
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
-				.text("Number of new cases (million)")
+				.text("Number of deaths (million)")
 
 		
 
@@ -543,7 +543,7 @@
 		document.getElementById('radio_old').disabled = true;
 		document.getElementById('radio_new').disabled = true;
 		
-		var file_use = "data/prediction_demographic_data.csv"; 
+
 		d3.csv(file_use,
 			
 		function(d) {

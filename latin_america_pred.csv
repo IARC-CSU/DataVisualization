@@ -1,0 +1,25 @@
+y_label,country_code,group2,rate1,rate2,group1
+"Central America",2,1,256782,472217,0
+"Central America",2,2,119168,233240,0
+"South America",3,1,1044017,1764472,0
+"South America",3,2,490515,880732,0
+"The Caribbean",1,1,108987,161535,0
+"The Caribbean",1,2,61488,95094,0
+"World",0,1,18078957,2.86e+07,0
+"World",0,2,9555027,1.56e+07,0
+"Central America",2,1,115751,224160,1
+"Central America",2,2,57609,115539,1
+"Central America",2,1,141031,248057,2
+"Central America",2,2,61559,117701,2
+"South America",3,1,509014,912515,1
+"South America",3,2,253762,475096,1
+"South America",3,1,535003,851957,2
+"South America",3,2,236753,405636,2
+"The Caribbean",1,1,56239,86208,1
+"The Caribbean",1,2,33521,53272,1
+"The Caribbean",1,1,52748,75327,2
+"The Caribbean",1,2,27967,41822,2
+"World",0,1,9456418,1.55e+07,1
+"World",0,2,5385640,9023171,1
+"World",0,1,8622539,1.30e+07,2
+"World",0,2,4169387,6595865,2

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  
+  	<title> Bubble chart mortality hdi </title>
+	<!--link rel="icon" href="favicon.ico" /-->
+	<link rel="stylesheet" href="css/bubble_evolution.css" type="text/css">
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/bubble_mortality_hdi.js"></script>
+
+
+
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	
+	
+		<script type="text/javascript">
+		
+
+
+	// variable general
+	
+	var file_use = "data/prediction_continent.csv"; 
+	var group1_label = ["Both sexes", "Males", "Females"];
+	var group2_label = ["Incidence", "Mortality"];
+	var x_label = ["Number of new cases (thousands)", "Number of deaths (thousands)"]
+	var x_label_space = 75
+	var roundLevel = 1
+	var nb_cancer = 6  // nb of cancer shows (here top 10)
+
+
+
+
+	var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 70,
+		left_page: 575-((nb_cancer-2)*100) },
+	width = 2000 - margin.left - margin.right,
+	height = 800 - margin.top - margin.bottom,
+	
+	XgridSize = 25 // 20*Xgrid for the range of the bar 
+
+	var color_cancer = {};
+	color_cancer["Bladder"]               = "#278D29";
+	color_cancer["Brain, nervous system"] = "#D5BED2";
+	color_cancer["Breast"]                = "#FF68BC";
+	color_cancer["Cervix uteri"]          = "#FF7500";
+	color_cancer["Colorectal"]            = "#FFD803";
+	color_cancer["Corpus uteri"]          = "#9FE72D";
+	color_cancer["Gallbladder"]           = "#006158";
+	color_cancer["Hodgkin lymphoma"]      = "#97d5b4";
+	color_cancer["Kaposi sarcoma"]        = "#FFC2CA";
+	color_cancer["Kidney"]                = "#040186";
+	color_cancer["Larynx"]                = "#aec80d";
+	color_cancer["Leukaemia"]             = "#FFFFA6";
+	color_cancer["Lip, oral cavity"]      = "#AE563E";
+	color_cancer["Liver"]                 = "#F3A654";
+	color_cancer["Lung"]                  = "#1E90FF";
+	color_cancer["Melanoma of skin"]      = "#cd100a";
+	color_cancer["Multiple myeloma"]      = "#333333";
+	color_cancer["Nasopharynx"]           = "#2A4950";
+	color_cancer["Non-Hodgkin lymphoma"]  = "#2231D0";
+	color_cancer["Oesophagus"]            = "#DC1341";
+	color_cancer["Other pharynx"]         = "#6D8A6D";
+	color_cancer["Ovary"]                 = "#00F5B6";
+	color_cancer["Pancreas"]              = "#940009";
+	color_cancer["Prostate"]              = "#34A76E";
+	color_cancer["Stomach"]               = "#4682B4";
+	color_cancer["Testis"]                = "#3a1ad1";
+	color_cancer["Thyroid"]               = "#ADD9E4";
+	
+	color_cancer["World"]                 = "#ADD9E4";
+	color_cancer["Central America"]       = "#DC1341";
+	color_cancer["South America"]         = "#1E90FF";
+	color_cancer["The Caribbean"]         = "#FFD803";
+	
+	color_cancer["Africa"]                          = "#f2f034";
+	color_cancer["Asia"]                            = "#30bf30";
+	color_cancer["Europe"]                          = "#377eb8";
+	color_cancer["Latin America and the caribbean"] = "#cd345a";
+	color_cancer["Northern America"]                = "#984ea3";
+	color_cancer["Oceania"]                         = "#f67d38";
+	
+
+	
+	var ease_effect = "sin-in-out"
+	var transition_time = 1000
+	
+	var bar_space = 2.5	// Space between bar 
+	var label_wrap = 10 // size max of a label on one line
+	
+	var var_height = 550
+	
+	var graph_separation = 40
+
+	
+	
+	var xScale = d3.scale.linear()
+		.domain([1, nb_cancer])  // 
+		.range([0  ,(nb_cancer-1)* XgridSize ]);
+		
+	// width of the bar graphs
+
+	var graph_width = xScale(((nb_cancer+1)*bar_space)+nb_cancer)
+
+	
+	// I define xScale and Xaxis's here because I want them as general variable 
+
+	var yScale = d3.scale.linear()
+		.domain([0, 100]) 
+		.range([var_height  ,0]);
+		
+
+		
+	
+	 window.onload = function()
+		{
+		bubble_evo()
+		
+	};
+	
+	function doc_keyUp(e) {
+
+		// add jeyboard shortcut for s + ctrl
+		if (e.keyCode == 83) {
+			// call your function to do the thing
+			update_circle(true);
+			update_legend(true);
+
+		}
+			}
+			// register the handler 
+		document.addEventListener('keyup', doc_keyUp, false);
+			
+	</script>
+	
+	 
+	</head>
+  	
+	<body>
+
+	<div class="">
+
+	</div>
+	
+	<div id="header">
+		<div>
+			<h1><a href="#"> World <br/>2018 to 2040</a></h1>
+			<div class="desc">
+				Both sexes
+			</div>
+		</div>		
+	
+	</div>
+	
+		
+		<div id="chart"></div>
+		
+		<div class = "div_left">
+		<form>
+		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2018</label>
+		<br/>
+		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2040</label>
+		</form>
+		
+		<div >
+		<form>
+		<label><input type="radio" id="radio_HDI1"  name="hdi"  checked="checked" onChange="update_data('group1','0')"> Both sexes</label>
+		<br/>
+		<label><input type="radio" id="radio_HDI2" name="hdi"   onChange="update_data('group1','1')"> Males</label>
+		<br/>
+		<label><input type="radio" id="radio_HDI2" name="hdi"   onChange="update_data('group1','2')"> Females</label>
+		</form>
+		</div>
+		
+		<div>
+		<form>
+		<label><input type="checkbox" id="check_scale"  name="scale_update" onChange="update_scale()"> Log scale</label>
+		</br>
+		<label><input type="checkbox" id="check_axis"  name="axis_update"  checked="checked"> Update axis</label>
+		</form>
+		
+		</div>
+		</div>
+		
+		
+
+
+		
+		
+
+</body>
+ 
+</html>
+	

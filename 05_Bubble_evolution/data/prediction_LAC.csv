@@ -1,0 +1,19 @@
+y_label,country_code,group2,rate1,rate2,group1
+"The Caribbean",1,1,109,162,0
+"Central America",2,1,257,472,0
+"South America",3,1,1044,1764,0
+"The Caribbean",1,2,61,95,0
+"Central America",2,2,119,233,0
+"South America",3,2,491,881,0
+"The Caribbean",1,1,56,86,1
+"Central America",2,1,116,224,1
+"South America",3,1,509,913,1
+"The Caribbean",1,2,34,53,1
+"Central America",2,2,58,116,1
+"South America",3,2,254,475,1
+"The Caribbean",1,1,53,75,2
+"Central America",2,1,141,248,2
+"South America",3,1,535,852,2
+"The Caribbean",1,2,28,42,2
+"Central America",2,2,62,118,2
+"South America",3,2,237,406,2

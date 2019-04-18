@@ -1,0 +1,37 @@
+y_label,country_code,group2,rate1,rate2,group1
+"Africa",903,1,1055,2110,0
+"Asia",935,1,8751,14115,0
+"Europe",908,1,4230,4927,0
+"Latin America and the caribbean",904,1,1413,2424,0
+"Northern America",905,1,2379,3252,0
+"Oceania",909,1,252,371,0
+"Africa",903,2,693,1417,0
+"Asia",935,2,5477,9367,0
+"Europe",908,2,1943,2354,0
+"Latin America and the caribbean",904,2,673,1223,0
+"Northern America",905,2,698,1008,0
+"Oceania",909,2,70,109,0
+"Africa",903,1,447,910,1
+"Asia",935,1,4657,7796,1
+"Europe",908,1,2248,2768,1
+"Latin America and the caribbean",904,1,682,1237,1
+"Northern America",905,1,1274,1837,1
+"Oceania",909,1,149,222,1
+"Africa",903,2,317,656,1
+"Asia",935,2,3231,5587,1
+"Europe",908,2,1086,1375,1
+"Latin America and the caribbean",904,2,346,652,1
+"Northern America",905,2,368,559,1
+"Oceania",909,2,39,62,1
+"Africa",903,1,609,1200,2
+"Asia",935,1,4094,6319,2
+"Europe",908,1,1982,2159,2
+"Latin America and the caribbean",904,1,730,1186,2
+"Northern America",905,1,1104,1415,2
+"Oceania",909,1,103,149,2
+"Africa",903,2,377,761,2
+"Asia",935,2,2246,3780,2
+"Europe",908,2,858,979,2
+"Latin America and the caribbean",904,2,327,570,2
+"Northern America",905,2,331,449,2
+"Oceania",909,2,31,48,2
