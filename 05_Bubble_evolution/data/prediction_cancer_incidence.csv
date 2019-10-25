@@ -1,0 +1,7 @@
+cancer_label,cancer_order,rate1,rate2
+Lung,1,1222,2060
+Colorectum,2,979,1580
+Breast,3,911,1220
+Stomach,4,763,1218
+Prostate,5,319,552
+Cervix uteri,6,323,438
