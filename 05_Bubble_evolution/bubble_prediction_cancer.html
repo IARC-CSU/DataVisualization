@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  
+  	<title> Bubble chart mortality hdi </title>
+	<!--link rel="icon" href="favicon.ico" /-->
+	<link rel="stylesheet" href="css/bubble_evolution.css" type="text/css">
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/bubble_prediction_cancer.js"></script>
+
+
+
+	<script type="text/javascript" src="d3/d3.v3.min.js"></script>
+	
+	
+		<script type="text/javascript">
+		
+	// variable general
+
+	
+	var margin = { top: 50, right: 200, bottom: 100, left: 300, top_page: 20, left_page: 350 },
+	width = 1500 - margin.left - margin.right,
+	height = 800 - margin.top - margin.bottom,
+	
+	XgridSize = 30 // 20*Xgrid for the range of the bar 
+
+	//var file_use = "data/prediction_demographic_data.csv"; 
+	var file_use = "data/prediction_cancer_incidence.csv"; 
+
+
+	var color_cancer = {};
+	color_cancer["Lung"]         = "#1E90FF";
+	color_cancer["Colorectum"]   = "#FFD803";
+	color_cancer["Stomach"]      = "#4682B4";
+	color_cancer["Prostate"]     = "#34A76E";
+	color_cancer["Breast"]       = "#FF68BC";
+	color_cancer["Cervix uteri"] = "#FF7500";
+
+	var ease_effect = "sin-in-out"
+	var transition_time = 1000
+	
+	var bar_space = 3	// Space between bar 
+	var nb_cancer = 6  // nb of cancer shows (here top 10)
+	var label_wrap = 19 // size max of a label on one line
+	
+	var var_height = 550
+	
+
+	var xScale = d3.scale.linear()
+		.domain([1, nb_cancer])  // 
+		.range([0  ,(nb_cancer-1)* XgridSize ]);
+		
+	// width of the bar graphs
+
+	var graph_width = xScale(((nb_cancer+1)*bar_space)+nb_cancer)
+
+	
+	// I define xScale and Xaxis's here because I want them as general variable 
+	// So I need to use the value for the Canada Men..
+	// I suppose there should be another way, to define them in the d3.csv fonction and use the data..
+	
+	var yScale = d3.scale.linear() 
+		.domain([0, 100]) 
+		.range([var_height  ,0]);
+		
+		
+	
+	 window.onload = function()
+		{
+		bubble_evo()
+		
+	};
+	
+			
+	</script >
+	
+	 
+	</head>
+  	
+	<body>
+
+	<div class="">
+
+	</div>
+	
+	<div id="header" >
+		<div>
+			<h1><a href="#"> Cancer incidence prediction<br/>2018 to 2040</a></h1>
+			<div class="desc">
+				Demographic effect 
+			</div>
+		</div>		
+	
+	</div>
+	
+		
+		<div id="chart"></div>
+		
+		<div class = "div_left">
+		<form>
+		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2018</label>
+		<br/>
+		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2040</label>
+		</form>
+		
+		
+		<div>
+		<form>
+		<label><input type="checkbox" id="check_scale"  name="scale_update" onChange="update_scale()">Log scale</label>
+		</form>
+		</div>
+		
+		</div>
+		
+		
+
+		
+
+
+		
+		
+
+</body>
+ 
+</html>
+	
