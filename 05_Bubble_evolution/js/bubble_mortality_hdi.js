@@ -1,6 +1,6 @@
  function bubble_evo() // generate heatmap 
 	{ 	
-		
+		var file_use = "data/bochen_table_data2.csv"; 
 		
 	
 
@@ -9,9 +9,11 @@
 			function(d) {
 			return {
 				
-				group1 : +d.group1,
-				group2 : +d.group2,
-				y_label : d.y_label,
+				hdi_group : +d.hdi_group,
+				sex : +d.sex,
+				cancer_label : d.cancer_label,
+				cancer_code: +d.cancer_code,
+				volume : +d.volume,
 				rate1: +d.rate1,
 				rate2: +d.rate2,
 
@@ -22,7 +24,7 @@
 				
 				// Keep men , very high HDI 
 				var data_temp = data.filter(function(d){
-					return (d.group1 == 0)
+					return (d.hdi_group == 0)
 				});
 				
 				// create graph
@@ -88,14 +90,14 @@
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2018")
+			.text("1981-1985")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2040")
+			.text("2006-2010")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
 
@@ -125,16 +127,16 @@
 			axis_x = 0
 			axis_tick1 = 10
 			axis_tick2 = 0
+			graph_title = "Males"
 		} else {
 			v_key = 1 
 			axis_orient = "right"
 			axis_x = graph_width
 			axis_tick1 = -graph_width
 			axis_tick2 = graph_width+10
+			graph_title = "Females"
 			
 		}
-
-		graph_title = group2_label[v_key]
 		
 
 		var yAxis = d3.svg.axis() 
@@ -210,33 +212,37 @@
 			graph_select.append("text") // add x axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
-				.attr("transform", "translate("+(x_label_space*-1)+"," +var_height/2 + ") rotate(-90)")
-				.text(x_label[0])
+				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
+				.text("Age-standardized (W) mortality rate per 100,000")
 		} else {
 			graph_select.append("text") // add x axis subtitle
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
-				.attr("transform", "translate("+(graph_width+x_label_space+15)+"," +var_height/2 + ") rotate(-90)")
-				.text(x_label[1])
+				.attr("transform", "translate("+(graph_width+75)+"," +var_height/2 + ") rotate(-90)")
+				.text("Age-standardized (W) mortality rate per 100,000")
+			
 		}
+		
+
+			 			
 	}
 
 	function add_bar_text_line(graph, data,bool_left_graph) {
 
 			
 		if (bool_left_graph) {
-			group2 = 1
+			sex = 1
 			v_key = 0 //volume key for the array or nest data
 			axis_y_line = 0 
 		} else {
-			group2 = 2
+			sex = 2
 			v_key = 1 
 			axis_y_line = graph_width
 		}
 		
 		graph_select = graph[v_key]
 		var data_temp = data.filter(function(d){
-			return (d.group2==group2)
+			return (d.sex==sex)
 		});
 		
 		var nodes = graph_select.append("g")
@@ -266,14 +272,14 @@
 		 nodes.append("circle")
 			.attr("class","circle1")
 			.attr("r", 20)
-			.style("stroke", function(d,i) {return color_cancer[d.y_label];})   // set the line colour
+			.style("stroke", function(d,i) {return color_cancer[d.cancer_label];})   // set the line colour
 			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("fill", "none");
 			
 	   nodes.append("svg:path")
 		.attr("class","arrow_link")
-		.attr("fill", function(d,i) {return color_cancer[d.y_label];})
+		.attr("fill", function(d,i) {return color_cancer[d.cancer_label];})
 		.attr("d", function(d,i) {
 			var update_range = yScale(d.rate2)- yScale(d.rate1)
 			if (update_range > 0) {
@@ -293,7 +299,7 @@
 				
 	  nodes.append("line")
 			.attr("class","line_link")
-	  		.style("stroke", function(d,i) {return color_cancer[d.y_label];}) 
+	  		.style("stroke", function(d,i) {return color_cancer[d.cancer_label];}) 
 			.style("stroke-width", 2)				
 			.attr("y1", function(d,i) {
 				var update_range = yScale(d.rate2)- yScale(d.rate1)
@@ -316,10 +322,10 @@
 		nodes.append("circle")
 			.attr("class","circle2")
 			.attr("r", 20)
-			.style("stroke", "#000000")    // set the line colour
-			.style("stroke-width", 1)
+			.style("stroke", function(d,i) {return color_cancer[d.cancer_label];})    // set the line colour
+			.style("stroke-width", 2)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
-			.attr("fill", function(d,i) {return color_cancer[d.y_label];});
+			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});
 		   
 		nodes.append("text")
 			.attr("class","text1")
@@ -327,7 +333,7 @@
 			.text(function(d,i) {return d.rate1})
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("dy", "0.25em")
-			.attr("fill", function(d,i) {return color_cancer[d.y_label];});    // set the line colour
+			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});    // set the line colour
 			
 		nodes.append("text")
 		    .attr("class","text2")
@@ -338,25 +344,12 @@
 			.attr("fill", "#000000");    // set the line colour
 			
 	   nodes.append("text")
-			.attr("class","y_label")
-			.style("text-anchor", "middle")
+			.attr("class","cancer_label")
+			.attr("text-anchor", "middle")
+			.attr("y", function(d, i) {return  var_height + 20 })
+			.text(function(d,i) {return d.cancer_label})
 			.attr("dy", "0.25em")
-			.attr("fill", "#000000")   // set the line colour
-			.attr("transform", "translate(0," + (var_height+20) +") rotate(0)")
-			.each(function (d) { // to use the wrap label fonction 
-				var temp = d.y_label;
-				console.log(temp)
-				if (/\s/.test(temp)) {
-					var max = label_wrap;
-				} 
-				else {
-					var max = 100;
-				}
-				var lines = wordwrap(temp, max);
-				for (var i = 0; i < lines.length; i++) {
-					d3.select(this).append("tspan").attr("dy",0).attr("x",0).attr("y",30/Math.pow(3/2, lines.length)+i*15).text(lines[i])
-					}
-			});	
+			.attr("fill", "#000000");    // set the line colour
 			
 
 
@@ -379,7 +372,7 @@
 			})
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("dy", "0.25em")
-			//.attr("fill", function(d,i) {return color_cancer[d.y_label];})
+			//.attr("fill", function(d,i) {return color_cancer[d.cancer_label];})
 			.attr("fill", "#000000")
 			.style("opacity",0); 
 			
@@ -597,16 +590,21 @@
 	}
 			
 	function roundNumber( value ){
-		var val =  Math.round( value *roundLevel) / roundLevel ; 
+		var val =  Math.round( value * 10) / 10 ; 
 		return val ; 
 	}
 
 	function update_data(group_label,group_value){
 		
+		var file_use = "data/bochen_table_data2.csv"; 
 		
+		if (group_value == 0) {
+			subtitle = "Very high HDI"
+		}
+		else {
+			subtitle = "Medium & High HDI"
+		}
 		
-		subtitle = group1_label[group_value]
-
 		d3.select("#header").select(".desc").text(subtitle)
 	
 		d3.csv(file_use,
@@ -614,9 +612,11 @@
 			function(d) {
 			return {
 				
-				group1 : +d.group1,
-				group2 : +d.group2,
-				y_label : d.y_label,
+				hdi_group : +d.hdi_group,
+				sex : +d.sex,
+				cancer_label : d.cancer_label,
+				cancer_code: +d.cancer_code,
+				volume : +d.volume,
 				rate1: +d.rate1,
 				rate2: +d.rate2,
 
@@ -627,8 +627,8 @@
 
 
 				var data_src = d3.nest()
-            		.key( function(d){ return d.group1 ;  })
-            		.key( function(d){ return d.group2 ;  })
+            		.key( function(d){ return d.hdi_group ;  })
+            		.key( function(d){ return d.sex ;  })
             		.entries( data )  ; 
 
 
@@ -702,16 +702,15 @@
 			axis_x = 0
 			axis_tick1 = 10
 			axis_tick2 = 0
-
+			graph_title = "Males"
 		} else {
 			v_key = 1 
 			axis_orient = "right"
 			axis_x = graph_width
 			axis_tick1 = -graph_width
 			axis_tick2 = graph_width + 10
+			graph_title = "Females"
 		}
-
-		graph_title = group2_label[v_key]
 		
 
 		var yAxis = d3.svg.axis() 
@@ -787,16 +786,16 @@
 	function update_data_circle(graph, data,bool_left_graph,data_src) {
 		
 		if (bool_left_graph) {
-			group2 = 1
+			sex = 1
 			v_key = 0 //volume key for the array or nest data
 		} else {
-			group2 = 2
+			sex = 2
 			v_key = 1 
 		}
 		
 		graph_select = graph[v_key]
 		var data_temp = data.filter(function(d){
-			return (d.group2==group2)
+			return (d.sex==sex)
 		});
 		
 		bool_new = document.getElementById('radio_new').checked;
@@ -804,7 +803,7 @@
 		graph_select.selectAll(".circle1")
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
-			.style("stroke", function(d,i) {return color_cancer[d.y_label];})   
+			.style("stroke", function(d,i) {return color_cancer[d.cancer_label];})   
 			.attr("transform", function(d, i) {
 				return "translate(" + 0 + "," + yScale(d.rate1) + ")";
 			}); 
@@ -821,12 +820,12 @@
 				}
 				return "translate(0," + (update_range) + ")";
 			})
-			.attr("fill", function(d,i) {return color_cancer[d.y_label];});
+			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});
 			
 		graph_select.selectAll(".arrow_link")
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
-			.attr("fill", function(d,i) {return color_cancer[d.y_label];})
+			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];})
 			.attr("d", function(d,i) {
 				var update_range = yScale(d.rate2)- yScale(d.rate1)
 				if (update_range > 0) {
@@ -864,7 +863,7 @@
 		graph_select.selectAll(".line_link")
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
-	  		.style("stroke", function(d,i) {return color_cancer[d.y_label];}) 			
+	  		.style("stroke", function(d,i) {return color_cancer[d.cancer_label];}) 			
 			.attr("y1", function(d,i) {
 				var update_range = yScale(d.rate2)- yScale(d.rate1)
 				return (Math.sign(update_range)*20) + yScale(d.rate1)
@@ -902,7 +901,7 @@
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
-			.attr("fill", function(d,i) {return color_cancer[d.y_label];})    // set the line colour
+			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];})    // set the line colour
 			.style("opacity", function(d,i) {
 				if (bool_new) {
 					var update_range = yScale(d.rate2)- yScale(d.rate1)
@@ -918,7 +917,7 @@
 			.tween("text", function(d,i) {
 				var to = d.rate1 ;
 				if (data_src != null) {
-					var from = data_src[0].values[d.group2-1].values[i].rate1 ; 
+					var from = data_src[0].values[d.sex-1].values[i].rate1 ; 
 				}
 				else {
 					var from = to
@@ -948,14 +947,14 @@
 				if (bool_new) {
 				 var to = d.rate2 ;
 				  if (data_src != null) {
-					var from = data_src[0].values[d.group2-1].values[i].rate2 ; 
+					var from = data_src[0].values[d.sex-1].values[i].rate2 ; 
 				  }	else {
 					var from = to
 				  }
 				} else {
 				  var to = d.rate1 ;
 				  if (data_src != null) {
-					 var from = data_src[0].values[d.group2-1].values[i].rate1 ; 
+					 var from = data_src[0].values[d.sex-1].values[i].rate1 ; 
 				  }	else {
 					var from = to
 				  }  
@@ -972,10 +971,10 @@
 
 
 			
-		graph_select.selectAll(".y_label")
+		graph_select.selectAll(".cancer_label")
 			.data(data_temp)
 			.transition().duration(transition_time).ease(ease_effect)
-			.text(function(d,i) {return d.y_label})
+			.text(function(d,i) {return d.cancer_label})
 
 		
 		graph_select.selectAll(".text_percent")
@@ -1007,8 +1006,8 @@
 				var to = (d.rate2-d.rate1)/d.rate1;
 							
 				if (data_src != null) {
-					var from = (data_src[0].values[d.group2-1].values[i].rate2 - data_src[0].values[d.group2-1].values[i].rate1)/
-								(data_src[0].values[d.group2-1].values[i].rate1);
+					var from = (data_src[0].values[d.sex-1].values[i].rate2 - data_src[0].values[d.sex-1].values[i].rate1)/
+								(data_src[0].values[d.sex-1].values[i].rate1);
 				} else {
 					var from = to
 				} 
@@ -1047,15 +1046,17 @@
 		document.getElementById('radio_HDI1').disabled = true;
 		document.getElementById('radio_HDI2').disabled = true;
 		
-		
+		var file_use = "data/bochen_table_data2.csv"; 
 		d3.csv(file_use,
 			
 		function(d) {
 		return {
 			
-				group1 : +d.group1,
-				group2 : +d.group2,
-				y_label : d.y_label,
+				hdi_group : +d.hdi_group,
+				sex : +d.sex,
+				cancer_label : d.cancer_label,
+				cancer_code: +d.cancer_code,
+				volume : +d.volume,
 				rate1: +d.rate1,
 				rate2: +d.rate2,
 
@@ -1068,10 +1069,10 @@
 			
 			var data_temp = data.filter(function(d){
 				if(bool_hdi) {
-					return (d.group1 == 0)
+					return (d.hdi_group == 0)
 				}
 				else {
-					return (d.group1 == 1)
+					return (d.hdi_group == 1)
 				}
 			});
 			
@@ -1338,7 +1339,7 @@
 		
 		
 	function wordwrap(text, max) { // to wrap label (not from me, forget the link)
-		var regex = new RegExp(".{0,"+max+"}(?:\\s|$)","g");
+		var regex = new Regelastic(".{0,"+max+"}(?:\\s|$)","g");
 		var lines = []
 		var line
 		while ((line = regex.exec(text))!="") {
@@ -1346,5 +1347,4 @@
 		} 
 		return lines
 	}
-	
 		
