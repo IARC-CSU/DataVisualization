@@ -1,0 +1,188 @@
+	
+	#graph_title{
+		padding-left: 0;
+		margin-left: 0;
+	}	
+	
+	ul.filters{
+		position: absolute ; 
+		display: none;
+	}
+
+	ul.filters li{
+		display: inline-block; 
+		margin-right: 20px;
+	}
+
+	ul.filters li a{
+		font-size: 0.8em;
+	}
+
+	ul.filters li span.btn{
+		display: inline-block; 
+		width: 20px ; 
+		height: 15px;
+    	line-height: 15px;
+	}
+
+	select[name="mode"]{
+		position: absolute;
+		right: 20px ;
+		top: 50px;
+	}
+
+	#map-container svg{
+		display: none ; 
+	}
+
+	path.country{
+		stroke: #292929 ; 
+		stroke-width: 0.2 ;
+	}
+
+	text.country-txt{
+		font-size: 0.4em ; 
+		/*text-shadow: 1px 1px #ffffff ; */
+		display: none ; 
+		fill: #000000 ;
+	}
+
+	img#iarc{
+		position: absolute;
+		bottom: 50px ; 
+		left: 50px ;
+		height: 65px ; 
+	}
+
+	img#who{
+		position: absolute;
+		bottom: 50px ; 
+		right: 50px ;
+		width: 70px ; 
+	}
+
+	.hidden{
+		display: none; 
+	}
+
+	div#copyright-footer-map{
+		position: absolute;
+	    bottom: 60px;
+	    width: 200px;
+	    right: 950px;
+	    font-size: 0.8em;
+	    text-align: justify;
+	    line-height: 14px;
+	}
+
+	div#txt-footer-map{
+		position: absolute;
+	    bottom: 80px;
+	    width: 70%;
+	    right: 150px;
+	    font-size: 0.8em;
+	    text-align: justify;
+	    line-height: 14px;
+	}
+
+	.canTooltip {
+	  background: #ffffff;
+	  border: solid 1px #eee;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	  color: #333;
+	  display: none;
+	  left: 130px;
+	  padding: 10px;
+	  position: absolute;
+	  text-align: center;
+	  top: 95px;
+	  z-index: 10;
+	  width: 350px;
+	  height: 120px;
+	}
+
+	.canTooltip .tooltip-line{
+		border-left: solid 3px black;
+	    height: 120px;
+	    width: 2px;
+	    position: absolute;
+	}
+
+	/* line 581, ../sass/_components.scss */
+	.canTooltip h5 {
+	  margin: 0;
+	  font-size: 14px;
+	  font-weight: bold;
+	  margin-bottom: 4px;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  overflow: hidden;
+	  width: 95%;
+	  text-align: left;
+	  margin-left: 5%;
+	}
+	/* line 592, ../sass/_components.scss */
+	.canTooltip table {
+	  border: none;
+	  width: 95%;
+	  font-size: 12px;
+	  margin-left: 5%;
+	}
+	/* line 596, ../sass/_components.scss */
+	.canTooltip table tr {
+	  border-bottom: dotted 1px #cccccc;
+	  padding: 3px 0;
+	}
+	/* line 599, ../sass/_components.scss */
+	.canTooltip table tr td.metric {
+	  text-align: left;
+	  padding-right: 10px;
+	  line-height: 21px;
+	}
+	/* line 605, ../sass/_components.scss */
+	.canTooltip table tr td.value {
+	  font-weight: bold;
+	  text-align: right;
+	  line-height: 21px
+	}
+	.canTooltip span.flag{
+		text-align: right;
+		margin-top: 5px;
+		float: right;
+	}
+
+	/* line 611, ../sass/_components.scss */
+	.canTooltip .g-tip-caret {
+	  position: absolute;
+	  bottom: -5.5px;
+	  fill: #fff;
+	  stroke: none;
+	}
+	/* line 618, ../sass/_components.scss */
+	.canTooltip:after {
+	  content: " ";
+	  position: absolute;
+	  bottom: -6px;
+	  left: 50%;
+	  margin-left: -7px;
+	  width: 0;
+	  height: 0;
+	  border-left: 7px solid transparent;
+	  border-right: 7px solid transparent;
+	  border-top: 7px solid #ffffff;
+	}
+	/* line 631, ../sass/_components.scss */
+	.canTooltip .label {
+	  color: rgba(0, 0, 0, 0.87);
+	  display: inline-block;
+	  font-size: 12px;
+	  padding: 5px 5px 0px 5px;
+	  font-weight: 600;
+	}
+
+	img#loader{
+		position: absolute;
+		left: 50% ; 
+		margin-left: -68px;
+		top: 35%;
+	}
