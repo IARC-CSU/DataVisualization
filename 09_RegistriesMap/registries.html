@@ -1,0 +1,187 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> Registries </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/graphics/registries.css">
+        <link rel="stylesheet" href="css/flags.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <link rel="icon" type="image/png" href="favicon.ico" />
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="overlay">
+
+            <div id="registry">
+
+                <a class="close" onclick="javascript:closeModal()"><i class="fas fa-window-close"></i></a>
+
+                <div id="inner-container">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <h2></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="city">    
+                                <span class="desc"><i class="fas fa-map-marker-alt"></i> &nbsp; Location : </span> 
+                                <span class="value" id="city"></span>
+                            </p>
+
+                            <p class="department">
+                                <span class="desc"><i class="fas fa-building"></i> &nbsp; Department : </span> 
+                                <span class="value" id="department"></span>
+                            </p>
+
+                            <p class="population-covered">
+                                <span class="desc"><i class="fas fa-laptop-code"></i> &nbsp; Website : </span> 
+                                <span class="value"><a href="#">http://www.cancer-registry-name.com</a></span>
+                            </p>
+
+                            <p class="viz_btn">
+                                <a href="javascript:void(0);" onclick="showGraphic('overview')" class="button" id="row_overview">
+                                    <i class="fas fa-chart-line"></i> &nbsp; Overview
+                                </a> 
+                            </p>
+
+                            <p class="viz_btn">
+                                <a href="javascript:void(0);" onclick="showGraphic('table')" class="button" id="row_table">
+                                    <i class="fas fa-chart-line"></i> &nbsp; Tables
+                                </a> 
+                            </p>
+
+                            <p class="viz_btn">
+                                <a href="javascript:void(0);" onclick="showGraphic('trends')" class="button" id="row_trends">
+                                    <i class="fas fa-chart-line"></i> &nbsp; Trends 
+                                </a> 
+                            </p>
+
+                            <p class="viz_btn">
+                                <a href="javascript:void(0);" onclick="showGraphic('cohorts')" class="button" id="row_cohorts">
+                                    <i class="fas fa-chart-bar"></i> &nbsp; Cohorts 
+                                </a> 
+                            </p>
+
+                            <p class="viz_btn">
+                                <a href="javascript:void(0);" onclick="showGraphic('bars')" class="button" id="row_bars">
+                                    <i class="fas fa-table"></i> &nbsp; Bars 
+                                </a> 
+                            </p>
+
+                        </div>
+                        <div class="col-md-9" id="right_registry">
+                            <img src="img/loader.gif" title="Loader" id="loader_registry">
+                            <iframe id="frame1" src="" width="100%" height="800"></iframe>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title" id="graph_title">
+                    
+                </h1>
+            </header>
+        </div>
+
+        <div class="main-container">
+            
+            <div class="main wrapper clearfix" id="map-container">
+
+                <ul class="filters filter1 hidden">
+                    <li>
+                        <a style="background: #000;" href="javascript:void(0);"onclick="zoomRegistry(undefined);">
+                            <!--<i class="fas fa-globe"></i>&nbsp;--> World
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="areas">
+
+
+
+                </ul>
+
+                <!--<ul class="filters filter2">
+                </ul>-->
+
+                <form name="search" autocomplete="one" class="hidden">
+                    <div class="autocomplete">
+                        <input id="registry_name" type="text" name="registry" placeholder="Search a registry">
+                    </div>
+                </form>
+
+                <!--<select name="mode" class="hidden">
+                    <option>All</option>
+                    <option value="continent">By continent</option>
+                    <option value="membership">By Membership</option>
+                </select>-->
+
+                <img src="img/loader.gif" title="Loader" id="loader">
+                    
+                <ul class="legend hidden">
+                    <!--<li>
+                        <span class="box no_data"></span> <span class="box_label"> No data </span>
+                    </li>-->
+                    <li>
+                        <span class="box not_applicable"></span> <span class="box_label"> Not applicable </span>
+                    </li>
+                </ul>
+
+            </div> <!-- #main -->
+            <div class="footer-map hidden">
+                <img src="img/logo-iarc.jpg" title="IARC" id="iarc">
+                <div id="txt-footer-map">The boundaries and names shown and the designations used on this map do not imply the expression of any opinion whatsoever on the part of the World Health Organization concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Dotted and dashed lines on maps represent approximate border lines for which there may not yet be full agreement.
+                ©WHO 2020. All rights reserved
+                </div>
+                <img src="img/logo-who.png" title="WHO" id="who">
+            </div>
+
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">IARC, 150 Cours Albert Thomas, 69372 Lyon CEDEX 08, France - Tel: +33 (0)4 72 73 84 85 - Privacy Policy  © IARC 2020 - All Rights Reserved.
+            </footer>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+
+        <script src="js/cangraph.min.js"></script>
+        <script src="js/CanGraph.js"></script>
+        <script src="js/CanMapGraphV3.js"></script>
+        <script src="js/underscore.js"></script>
+
+
+        <script src="js/graphics/registries.js"></script>
+
+    </body>
+</html>

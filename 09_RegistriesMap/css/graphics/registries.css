@@ -1,0 +1,379 @@
+	
+	body{
+		font-family: 'Nunito', sans-serif;
+	}
+
+	#graph_title{
+		padding-fleft: 0;
+		margin-left: 0;
+	}	
+
+	div.overlay{
+		background: rgba(0,0,0,0.8);
+		padding: 20px ;
+		width: 100%; 
+		height: 100vh; 
+		position: fixed;
+		overflow: hidden; 
+		display: none ; 
+		z-index: 9 ; 
+	}
+
+	div.overlay a.close{
+		display: block;
+	    position: absolute;
+	    top: 10px;
+    	right: 10px;
+	    cursor: pointer;
+	    z-index: 9999999;
+	    opacity: 1;
+	}
+
+	div.overlay a.close i{
+		color: #000; 
+		font-size: 1.4em;
+	}
+	
+	ul.filters{
+		position: absolute ;
+		top: 50px ;
+	    left: -10px;
+    	padding-left: 0; 
+	}
+
+	ul.filters li{
+		display: block;
+	    margin-right: 20px;
+	    width: 180px;
+	    padding: 3px 10px;
+	}
+
+	ul.filters li a{
+		font-size: 0.8em;
+		color: #fff ;
+		display: block; 
+		padding: 3px 10px 3px 20px;
+		text-decoration: none; 
+		text-transform: uppercase;
+		font-weight: 800 ; 
+		transition: all 0.2s ease-in-out ;
+	}
+
+	ul.filters li a:hover{
+		opacity: 0.8 ;
+		padding-left: 30px ; 
+	}
+
+	ul.filters li span.btn{
+		display: inline-block; 
+		width: 20px ; 
+		height: 15px;
+    	line-height: 15px;
+	}
+
+	ul.areas{
+		position: fixed;
+		top: 100px; 
+		left: 0px; 
+		padding-left: 0;
+	}
+
+	ul.areas li{
+		transition: all 0.5s ease-in-out ;
+		left: -350px; 
+		width: 250px;
+		position: absolute;
+	}
+
+	ul.areas li a{
+		font-size: 0.8em;
+		color: #fff ; 
+		padding: 5px 10px ; 
+	}
+
+	select[name="mode"]{
+		position: absolute;
+		right: 20px ;
+		top: 50px;
+	}
+
+	form{
+		position: absolute;
+	    right: 30px;
+    	top: 45px;
+	}
+
+	.autocomplete {
+	  /*the container must be positioned relative:*/
+	  position: relative;
+	  display: inline-block;
+	}
+	input {
+	  border: 1px solid transparent;
+	  background-color: #f1f1f1;
+	  font-size: 16px;
+	}
+	.autocomplete-items {
+	  position: absolute;
+	  border: 1px solid #d4d4d4;
+	  border-bottom: none;
+	  border-top: none;
+	  z-index: 99;
+	  /*position the autocomplete items to be the same width as the container:*/
+	  top: 100%;
+	  left: 0;
+	  right: 0;
+	}
+	.autocomplete-items div {
+	  padding: 5px 10px;
+	  cursor: pointer;
+	  font-size: 0.8em;
+	  background-color: #fff;
+	  border-bottom: 1px solid #d4d4d4;
+	}
+	.autocomplete-items div:hover {
+	  /*when hovering an item:*/
+	  background-color: #e9e9e9;
+	}
+	.autocomplete-active {
+	  /*when navigating through the items using the arrow keys:*/
+	  background-color: DodgerBlue !important;
+	  color: #ffffff;
+	}
+
+	#map-container svg{
+		display: none ; 
+	}
+
+	path.country{
+		stroke: #292929 ; 
+		stroke-width: 0.2 ;
+	}
+
+	circle.reg{
+		cursor: pointer;
+	}
+
+	text.country-txt{
+		font-size: 0.2em ; 
+		text-shadow: 2px 2px #ffffff	 ;
+		display: none ; 
+		fill: #000000 ;
+	}
+
+	img#iarc{
+		position: absolute;
+		bottom: 50px ; 
+		left: 50px ;
+		height: 65px ; 
+	}
+
+	img#who{
+		position: absolute;
+		bottom: 50px ; 
+		right: 50px ;
+		width: 70px ; 
+	}
+
+	.hidden{
+		display: none; 
+	}
+
+	div#registry{
+		padding: 20px;
+	    width: 100%;
+	    /* height: 90%; */
+	    background: #fff;
+	    height: 95vh; 
+	    position: relative;
+	}
+
+	div#registry h2{
+		margin-top: 0px; 
+		font-weight: 800 ; 
+	}
+
+	div#registry #inner-container{
+		border-left: solid 5px #fff ; 
+		padding-left: 20px;
+	}
+
+	div#registry span.desc{
+		display: inline-block ; 
+		font-weight: 800;
+	}
+
+	div#registry span.value{
+		display: block ; 
+		width: 500px;
+	}
+
+	div#registry #loader_registry{
+		left: 50%;
+	    position: absolute;
+	    top: 300px;
+	}
+
+	div#registry .viz_btn a.button{
+		display: block; 
+		background: #ccc ; 
+		color: #000 ; 
+		padding: 5px 10px ; 
+		text-decoration: none;
+	}
+
+	div#registry .viz_btn a.button.on{
+		color: #fff ; 
+	}
+
+	div#right_registry{
+		max-height: 750px;
+		overflow-y: auto;
+	}
+
+	div#right_registry img{
+		max-width: 100%;
+	}
+
+	div#copyright-footer-map{
+		position: absolute;
+	    bottom: 60px;
+	    width: 200px;
+	    right: 950px;
+	    font-size: 0.8em;
+	    text-align: justify;
+	    line-height: 14px;
+	}
+
+	iframe{
+		border:none ;
+		overflow: hidden;
+		display: none ; 
+	}
+
+
+	div#txt-footer-map{
+		position: absolute;
+	    bottom: 60px;
+	    width: 70%;
+	    right: 150px;
+	    font-size: 0.8em;
+	    text-align: justify;
+	    line-height: 14px;
+	}
+
+	.footer-container footer{
+	    bottom: 15px;
+	}
+
+	.canTooltip {
+	  background: #ffffff;
+	  border: solid 1px #eee;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	  color: #333;
+	  display: none;
+	  left: 130px;
+	  padding: 10px;
+	  position: absolute;
+	  text-align: center;
+	  top: 95px;
+	  z-index: 10;
+	  width: 350px;
+	  height: 110px;
+	}
+
+	.canToolTipCountry{
+		width: 200px;
+    	height: auto;
+    	padding: 5px;
+	}
+
+	.canTooltip .tooltip-line{
+		border-left: solid 3px black;
+	    height: 90px;
+	    width: 2px;
+	    position: absolute;
+	}
+
+	/* line 581, ../sass/_components.scss */
+	.canTooltip h5 {
+	  margin: 0;
+	  font-size: 14px;
+	  font-weight: bold;
+	  margin-bottom: 4px;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  overflow: hidden;
+	  width: 95%;
+	  text-align: left;
+	  margin-left: 5%;
+	}
+	/* line 592, ../sass/_components.scss */
+	.canTooltip table {
+	  border: none;
+	  width: 95%;
+	  font-size: 12px;
+	  margin-left: 5%;
+	}
+	/* line 596, ../sass/_components.scss */
+	.canTooltip table tr {
+	  border-bottom: dotted 1px #cccccc;
+	  padding: 3px 0;
+	}
+	/* line 599, ../sass/_components.scss */
+	.canTooltip table tr td.metric {
+	  text-align: left;
+	  padding-right: 10px;
+	  line-height: 21px;
+	}
+	.canTooltip table tr td.metric.country {
+	  line-height: 16px;
+	  padding-bottom: 0px;
+	}
+	/* line 605, ../sass/_components.scss */
+	.canTooltip table tr td.value {
+	  font-weight: bold;
+	  text-align: right;
+	  line-height: 21px
+	}
+	.canTooltip span.flag{
+		text-align: right;
+		margin-top: 5px;
+		float: right;
+	}
+
+	/* line 611, ../sass/_components.scss */
+	.canTooltip .g-tip-caret {
+	  position: absolute;
+	  bottom: -5.5px;
+	  fill: #fff;
+	  stroke: none;
+	}
+	/* line 618, ../sass/_components.scss */
+	.canTooltip:after {
+	  content: " ";
+	  position: absolute;
+	  bottom: -6px;
+	  left: 50%;
+	  margin-left: -7px;
+	  width: 0;
+	  height: 0;
+	  border-left: 7px solid transparent;
+	  border-right: 7px solid transparent;
+	  border-top: 7px solid #ffffff;
+	}
+	/* line 631, ../sass/_components.scss */
+	.canTooltip .label {
+	  color: rgba(0, 0, 0, 0.87);
+	  display: inline-block;
+	  font-size: 12px;
+	  padding: 5px 5px 0px 5px;
+	  font-weight: 600;
+	}
+
+	img#loader{
+		position: absolute;
+		left: 50% ; 
+		margin-left: -68px;
+		top: 35%;
+	}

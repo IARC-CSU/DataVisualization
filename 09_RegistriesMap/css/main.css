@@ -1,0 +1,743 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+li{
+    list-style-type: none ; 
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px 'Cabin', sans-serif, Arial;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    
+}
+
+.footer-container,
+.main aside {
+}
+
+.header-container,
+.footer-container
+{
+    background: #0b80b7;
+}
+
+#container{
+
+}
+
+ul.breadcrumb{
+    background-color: #fff ; 
+    height: 20px ; 
+    padding: 10px 20px 15px 20px ; 
+    position: absolute ; 
+    top : 80px ;
+    left: -230px ; 
+    transition: all 0.5s ease-in-out ;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3); 
+}
+
+ul.breadcrumb.show{
+    left: 0px ; 
+}
+
+
+ul.breadcrumb li{
+    display: inline-block ; 
+}
+
+ul.breadcrumb li:first-child a{
+    border-left: solid 5px #0b80b7;
+    padding-left: 5px;
+}
+
+div#hubPanel,div#countryPanel{
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3); 
+    position: absolute;
+    top: 80px ; 
+    right: -700px ; 
+    transition: all .7s ease-in-out;
+    background-color: #fff ; 
+    padding: 0 25px ; 
+    width: 600px ; 
+    height: 650px ; 
+    overflow-y: auto ;
+}
+
+div#hubPanel.show,div#countryPanel.show{
+    right: 0px ; 
+}
+
+div#hubPanel h2{
+    color: #1e4273 ;
+    width: 100% ; 
+}
+
+div#countryPanel #chart{
+    width: 550px ; 
+    height: 250px ; 
+}
+
+.nvd3 text{
+    font-family: 'Cabin', sans-serif, Arial ; 
+}
+
+footer h3{
+    color: white ; 
+}
+
+a{
+    color: #000 ; 
+    text-decoration: none ; 
+}
+
+a:hover{
+    color: #1e4273 ; 
+    text-decoration: underline ; 
+}
+
+article footer a{
+    color: #fabb00;
+    text-decoration: underline;
+}
+
+article footer a:hover{
+    color: #ccc ; 
+}
+
+p.center{
+    text-align: center ; 
+}
+
+a.circle{
+    background: #fff ; 
+    border-radius: 60px;
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+}
+
+.title {
+    font-weight: bold ; 
+    font-size: 2em ; 
+    text-align: center ; 
+    margin: 0;
+}
+
+header,footer{
+    position: absolute ; 
+}
+
+
+header,footer{
+    width: 100% ; 
+    height: 30px ;
+    background-color: #fff ; 
+}
+
+footer{
+    bottom : 0 ;
+}
+
+.title img{
+    height: 50px ;
+    float: left ; 
+    margin-left: 20px ;
+    z-index: 10;
+    position: absolute;
+    left: 0; 
+}
+
+h1{
+    margin: 0.2em 0 ; 
+    text-align: center ; 
+    padding: 20px 50px ;
+    width: 1757px ;
+}
+
+h2 span.square{
+    display: inline-block;
+    height: 20px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    float: left;
+    padding: 0px 5% 10px;
+}
+
+.main aside h2{
+    color: #000 ; 
+}
+
+.footer-container footer {
+    padding: 0px 0 10px 0;
+    position: fixed;
+    height: 15px;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+ul.social{
+    float: right ; 
+}
+
+ul.social li{
+    list-style-type: none ; 
+}
+
+ul.social li i{
+    font-size: 1.2em ; 
+}
+
+h2{
+    width: 100% ; 
+    display: block ; 
+    padding-top: 5px ; 
+}
+
+select{
+    margin: 0 5px ; 
+}
+
+.main header{
+    -webkit-transition: min-height 1s; 
+  -moz-transition: min-height 1s; 
+  -ms-transition: min-height 1s; 
+  -o-transition: min-height 1s; 
+  transition: min-height 1s;  
+    min-height: 500px ;
+    padding-top: 200px; 
+}
+
+.main header.run{
+    min-height: 0px ; 
+    padding-top: 0px; 
+}
+
+div.cycler{
+    width: 50% ; 
+    display: inline-block ; 
+    float: left ; 
+}
+
+.cycler img{
+    margin: auto ;
+    display: block ; 
+    text-align: center ; 
+}
+
+section.container-statistics{
+    float: left ; 
+}
+
+h3{
+    text-align: left ; 
+}
+
+h4{
+    text-align: center ; 
+}
+
+ul.hubCountries li{
+    float: left ; 
+    width: 33% ; 
+}
+
+.dataviz{
+    min-height: 140px ; 
+    display: inline-block ; 
+    float: left;
+}
+
+.dataviz h3{
+    text-align: left ; 
+}
+
+span.figure{
+    font-size: 4em ; 
+    margin-right: 20px ; 
+    float: left ; 
+    color: #999 ; 
+}
+
+.step ul li{
+    display: inline-block;
+    float: left;
+    /*width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0 5px 5px 0;
+    background: #fabb00;*/
+    margin-right: 5px; 
+    margin-bottom: 5px ; 
+}
+
+.viz,.cycler{
+    display: none ; 
+}
+
+.step ul li i{
+    color: #000 ; 
+}
+
+.about p i{
+    margin-right: 10px ; 
+}
+
+ul#list-nb-step{
+    display: block;
+    position: absolute;
+    left: 10px ;
+    bottom: 10px ; 
+    width: 250px ; 
+    float: left;
+    /* margin-left: 0px; */
+    padding: 10px 35px 10px 10px;
+}
+
+#distance svg{
+    margin-top: 20px ;
+}
+
+ol.legend li{
+    font-style: italic;
+    font-size: 11px ;
+    line-height: 15px;
+}
+
+ul.legend{
+    display: block;
+    position: absolute;
+    bottom: 115px;
+    left: 10px;
+    width: 350px ;
+}
+ul.legend li{
+    float: left ; 
+    width: 100% ;
+}
+
+ul.legend li span{
+    display: inline-block ; 
+    float: left ;
+}
+
+ul.legend li span.box{
+    width: 35px;
+    height: 20px;
+}
+
+ul.legend li span.box_label{
+    padding: 0 0 2px 5px ; 
+}
+
+ul.legend li span.no_data{
+    background: #f0f0f0 ; 
+}
+ul.legend li span.not_applicable{
+    background: #7d7d7d ; 
+}
+
+.disclaimer,.about{
+    float: left;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+
+    div.cycler{
+        width: 100% ; 
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left ;
+        background: #fff ;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+    }
+
+    .main article.viz{
+        width: 70% ; 
+    }
+
+    .main article.disclaimer{
+        width: 100%;
+    }
+
+    .main article.about{
+        width: 100%  
+    }
+
+    .main aside {
+        float: right;
+        width: 18%;
+        min-height: 600px;
+    }
+
+    div.cycler{
+        width: 49%; 
+   }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+   .dataviz{
+        width: 49% ; 
+   }
+
+   div.cycler{
+        width: 22%; 
+   }
+
+    .wrapper {
+        width: 100%; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+    .main-container{
+        min-height: 580px ; 
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+ul.hubs-list{
+    margin: auto;
+    position: absolute ; 
+    padding-left: 0px;
+    bottom: 50px;
+    left: 20px;
+    width: 275px ;
+}
+
+ul.hubs-list li{
+    list-style-type:  none ; 
+    display: inline-block ;
+    float: left ;  
+    width: 100%;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 0px;
+}
+
+ul.hubs-list li a{
+    font-size: 0.8em ;
+}
+
+ul.hubs-list li span{
+    width: 30px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+ 
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+path#code_ESH{
+    fill : #7d7d7d !important;
+}

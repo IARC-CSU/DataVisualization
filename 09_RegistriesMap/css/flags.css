@@ -1,0 +1,2539 @@
+/* line 251, ../sass/plugins/_flags.scss */
+
+/* line 1, ../sass/plugins/_flags.scss */
+.f16 .flag {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: text-top;
+  line-height: 16px;
+  background: url(../img/flags16.png) no-repeat;
+}
+
+/* line 2, ../sass/plugins/_flags.scss */
+.f16 ._African_Union {
+  background-position: 0 -16px;
+}
+
+/* line 3, ../sass/plugins/_flags.scss */
+.f16 ._Arab_League {
+  background-position: 0 -32px;
+}
+
+/* line 4, ../sass/plugins/_flags.scss */
+.f16 ._ASEAN {
+  background-position: 0 -48px;
+}
+
+/* line 5, ../sass/plugins/_flags.scss */
+.f16 ._CARICOM {
+  background-position: 0 -64px;
+}
+
+/* line 6, ../sass/plugins/_flags.scss */
+.f16 ._CIS {
+  background-position: 0 -80px;
+}
+
+/* line 7, ../sass/plugins/_flags.scss */
+.f16 ._Commonwealth {
+  background-position: 0 -96px;
+}
+
+/* line 8, ../sass/plugins/_flags.scss */
+.f16 ._England {
+  background-position: 0 -112px;
+}
+
+/* line 9, ../sass/plugins/_flags.scss */
+.f16 ._European_Union, .f16 .eu {
+  background-position: 0 -128px;
+}
+
+/* line 10, ../sass/plugins/_flags.scss */
+.f16 ._Islamic_Conference {
+  background-position: 0 -144px;
+}
+
+/* line 11, ../sass/plugins/_flags.scss */
+.f16 ._Kosovo {
+  background-position: 0 -160px;
+}
+
+/* line 12, ../sass/plugins/_flags.scss */
+.f16 ._NATO {
+  background-position: 0 -176px;
+}
+
+/* line 13, ../sass/plugins/_flags.scss */
+.f16 ._Northern_Cyprus {
+  background-position: 0 -192px;
+}
+
+/* line 14, ../sass/plugins/_flags.scss */
+.f16 ._Northern_Ireland {
+  background-position: 0 -208px;
+}
+
+/* line 15, ../sass/plugins/_flags.scss */
+.f16 ._Olimpic_Movement {
+  background-position: 0 -224px;
+}
+
+/* line 16, ../sass/plugins/_flags.scss */
+.f16 ._OPEC {
+  background-position: 0 -240px;
+}
+
+/* line 17, ../sass/plugins/_flags.scss */
+.f16 ._Red_Cross {
+  background-position: 0 -256px;
+}
+
+/* line 18, ../sass/plugins/_flags.scss */
+.f16 ._Scotland {
+  background-position: 0 -272px;
+}
+
+/* line 19, ../sass/plugins/_flags.scss */
+.f16 ._Somaliland {
+  background-position: 0 -288px;
+}
+
+/* line 20, ../sass/plugins/_flags.scss */
+.f16 ._Tibet {
+  background-position: 0 -304px;
+}
+
+/* line 21, ../sass/plugins/_flags.scss */
+.f16 ._United_Nations {
+  background-position: 0 -320px;
+}
+
+/* line 22, ../sass/plugins/_flags.scss */
+.f16 ._Wales {
+  background-position: 0 -336px;
+}
+
+/* line 23, ../sass/plugins/_flags.scss */
+.f16 .ad {
+  background-position: 0 -352px;
+}
+
+/* line 24, ../sass/plugins/_flags.scss */
+.f16 .ae {
+  background-position: 0 -368px;
+}
+
+/* line 25, ../sass/plugins/_flags.scss */
+.f16 .af {
+  background-position: 0 -384px;
+}
+
+/* line 26, ../sass/plugins/_flags.scss */
+.f16 .ag {
+  background-position: 0 -400px;
+}
+
+/* line 27, ../sass/plugins/_flags.scss */
+.f16 .ai {
+  background-position: 0 -416px;
+}
+
+/* line 28, ../sass/plugins/_flags.scss */
+.f16 .al {
+  background-position: 0 -432px;
+}
+
+/* line 29, ../sass/plugins/_flags.scss */
+.f16 .am {
+  background-position: 0 -448px;
+}
+
+/* line 30, ../sass/plugins/_flags.scss */
+.f16 .ao {
+  background-position: 0 -464px;
+}
+
+/* line 31, ../sass/plugins/_flags.scss */
+.f16 .aq {
+  background-position: 0 -480px;
+}
+
+/* line 32, ../sass/plugins/_flags.scss */
+.f16 .ar {
+  background-position: 0 -496px;
+}
+
+/* line 33, ../sass/plugins/_flags.scss */
+.f16 .as {
+  background-position: 0 -512px;
+}
+
+/* line 34, ../sass/plugins/_flags.scss */
+.f16 .at {
+  background-position: 0 -528px;
+}
+
+/* line 35, ../sass/plugins/_flags.scss */
+.f16 .au {
+  background-position: 0 -544px;
+}
+
+/* line 36, ../sass/plugins/_flags.scss */
+.f16 .aw {
+  background-position: 0 -560px;
+}
+
+/* line 37, ../sass/plugins/_flags.scss */
+.f16 .ax {
+  background-position: 0 -576px;
+}
+
+/* line 38, ../sass/plugins/_flags.scss */
+.f16 .az {
+  background-position: 0 -592px;
+}
+
+/* line 39, ../sass/plugins/_flags.scss */
+.f16 .ba {
+  background-position: 0 -608px;
+}
+
+/* line 40, ../sass/plugins/_flags.scss */
+.f16 .bb {
+  background-position: 0 -624px;
+}
+
+/* line 41, ../sass/plugins/_flags.scss */
+.f16 .bd {
+  background-position: 0 -640px;
+}
+
+/* line 42, ../sass/plugins/_flags.scss */
+.f16 .be {
+  background-position: 0 -656px;
+}
+
+/* line 43, ../sass/plugins/_flags.scss */
+.f16 .bf {
+  background-position: 0 -672px;
+}
+
+/* line 44, ../sass/plugins/_flags.scss */
+.f16 .bg {
+  background-position: 0 -688px;
+}
+
+/* line 45, ../sass/plugins/_flags.scss */
+.f16 .bh {
+  background-position: 0 -704px;
+}
+
+/* line 46, ../sass/plugins/_flags.scss */
+.f16 .bi {
+  background-position: 0 -720px;
+}
+
+/* line 47, ../sass/plugins/_flags.scss */
+.f16 .bj {
+  background-position: 0 -736px;
+}
+
+/* line 48, ../sass/plugins/_flags.scss */
+.f16 .bm {
+  background-position: 0 -752px;
+}
+
+/* line 49, ../sass/plugins/_flags.scss */
+.f16 .bn {
+  background-position: 0 -768px;
+}
+
+/* line 50, ../sass/plugins/_flags.scss */
+.f16 .bo {
+  background-position: 0 -784px;
+}
+
+/* line 51, ../sass/plugins/_flags.scss */
+.f16 .br {
+  background-position: 0 -800px;
+}
+
+/* line 52, ../sass/plugins/_flags.scss */
+.f16 .bs {
+  background-position: 0 -816px;
+}
+
+/* line 53, ../sass/plugins/_flags.scss */
+.f16 .bt {
+  background-position: 0 -832px;
+}
+
+/* line 54, ../sass/plugins/_flags.scss */
+.f16 .bw {
+  background-position: 0 -848px;
+}
+
+/* line 55, ../sass/plugins/_flags.scss */
+.f16 .by {
+  background-position: 0 -864px;
+}
+
+/* line 56, ../sass/plugins/_flags.scss */
+.f16 .bz {
+  background-position: 0 -880px;
+}
+
+/* line 57, ../sass/plugins/_flags.scss */
+.f16 .ca {
+  background-position: 0 -896px;
+}
+
+/* line 58, ../sass/plugins/_flags.scss */
+.f16 .cg {
+  background-position: 0 -912px;
+}
+
+/* line 59, ../sass/plugins/_flags.scss */
+.f16 .cf {
+  background-position: 0 -928px;
+}
+
+/* line 60, ../sass/plugins/_flags.scss */
+.f16 .cd {
+  background-position: 0 -944px;
+}
+
+/* line 61, ../sass/plugins/_flags.scss */
+.f16 .ch {
+  background-position: 0 -960px;
+}
+
+/* line 62, ../sass/plugins/_flags.scss */
+.f16 .ci {
+  background-position: 0 -976px;
+}
+
+/* line 63, ../sass/plugins/_flags.scss */
+.f16 .ck {
+  background-position: 0 -992px;
+}
+
+/* line 64, ../sass/plugins/_flags.scss */
+.f16 .cl {
+  background-position: 0 -1008px;
+}
+
+/* line 65, ../sass/plugins/_flags.scss */
+.f16 .cm {
+  background-position: 0 -1024px;
+}
+
+/* line 66, ../sass/plugins/_flags.scss */
+.f16 .cn {
+  background-position: 0 -1040px;
+}
+
+/* line 67, ../sass/plugins/_flags.scss */
+.f16 .co {
+  background-position: 0 -1056px;
+}
+
+/* line 68, ../sass/plugins/_flags.scss */
+.f16 .cr {
+  background-position: 0 -1072px;
+}
+
+/* line 69, ../sass/plugins/_flags.scss */
+.f16 .cu {
+  background-position: 0 -1088px;
+}
+
+/* line 70, ../sass/plugins/_flags.scss */
+.f16 .cv {
+  background-position: 0 -1104px;
+}
+
+/* line 71, ../sass/plugins/_flags.scss */
+.f16 .cy {
+  background-position: 0 -1120px;
+}
+
+/* line 72, ../sass/plugins/_flags.scss */
+.f16 .cz {
+  background-position: 0 -1136px;
+}
+
+/* line 73, ../sass/plugins/_flags.scss */
+.f16 .de {
+  background-position: 0 -1152px;
+}
+
+/* line 74, ../sass/plugins/_flags.scss */
+.f16 .dj {
+  background-position: 0 -1168px;
+}
+
+/* line 75, ../sass/plugins/_flags.scss */
+.f16 .dk {
+  background-position: 0 -1184px;
+}
+
+/* line 76, ../sass/plugins/_flags.scss */
+.f16 .dm {
+  background-position: 0 -1200px;
+}
+
+/* line 77, ../sass/plugins/_flags.scss */
+.f16 .do {
+  background-position: 0 -1216px;
+}
+
+/* line 78, ../sass/plugins/_flags.scss */
+.f16 .dz {
+  background-position: 0 -1232px;
+}
+
+/* line 79, ../sass/plugins/_flags.scss */
+.f16 .ec {
+  background-position: 0 -1248px;
+}
+
+/* line 80, ../sass/plugins/_flags.scss */
+.f16 .ee {
+  background-position: 0 -1264px;
+}
+
+/* line 81, ../sass/plugins/_flags.scss */
+.f16 .eg {
+  background-position: 0 -1280px;
+}
+
+/* line 82, ../sass/plugins/_flags.scss */
+.f16 .eh {
+  background-position: 0 -1296px;
+}
+
+/* line 83, ../sass/plugins/_flags.scss */
+.f16 .er {
+  background-position: 0 -1312px;
+}
+
+/* line 84, ../sass/plugins/_flags.scss */
+.f16 .es {
+  background-position: 0 -1328px;
+}
+
+/* line 85, ../sass/plugins/_flags.scss */
+.f16 .et {
+  background-position: 0 -1344px;
+}
+
+/* line 86, ../sass/plugins/_flags.scss */
+.f16 .fi {
+  background-position: 0 -1360px;
+}
+
+/* line 87, ../sass/plugins/_flags.scss */
+.f16 .fj {
+  background-position: 0 -1376px;
+}
+
+/* line 88, ../sass/plugins/_flags.scss */
+.f16 .fm {
+  background-position: 0 -1392px;
+}
+
+/* line 89, ../sass/plugins/_flags.scss */
+.f16 .fo {
+  background-position: 0 -1408px;
+}
+
+/* line 90, ../sass/plugins/_flags.scss */
+.f16 .fr {
+  background-position: 0 -1424px;
+}
+
+/* line 90, ../sass/plugins/_flags.scss */
+.f16 .bl, .f16 .cp, .f16 .mf, .f16 .yt {
+  background-position: 0 -1424px;
+}
+
+/* line 91, ../sass/plugins/_flags.scss */
+.f16 .ga {
+  background-position: 0 -1440px;
+}
+
+/* line 92, ../sass/plugins/_flags.scss */
+.f16 .gb {
+  background-position: 0 -1456px;
+}
+
+/* line 92, ../sass/plugins/_flags.scss */
+.f16 .sh {
+  background-position: 0 -1456px;
+}
+
+/* line 93, ../sass/plugins/_flags.scss */
+.f16 .gd {
+  background-position: 0 -1472px;
+}
+
+/* line 94, ../sass/plugins/_flags.scss */
+.f16 .ge {
+  background-position: 0 -1488px;
+}
+
+/* line 95, ../sass/plugins/_flags.scss */
+.f16 .gg {
+  background-position: 0 -1504px;
+}
+
+/* line 96, ../sass/plugins/_flags.scss */
+.f16 .gh {
+  background-position: 0 -1520px;
+}
+
+/* line 97, ../sass/plugins/_flags.scss */
+.f16 .gi {
+  background-position: 0 -1536px;
+}
+
+/* line 98, ../sass/plugins/_flags.scss */
+.f16 .gl {
+  background-position: 0 -1552px;
+}
+
+/* line 99, ../sass/plugins/_flags.scss */
+.f16 .gm {
+  background-position: 0 -1568px;
+}
+
+/* line 100, ../sass/plugins/_flags.scss */
+.f16 .gn {
+  background-position: 0 -1584px;
+}
+
+/* line 101, ../sass/plugins/_flags.scss */
+.f16 .gp {
+  background-position: 0 -1600px;
+}
+
+/* line 102, ../sass/plugins/_flags.scss */
+.f16 .gq {
+  background-position: 0 -1616px;
+}
+
+/* line 103, ../sass/plugins/_flags.scss */
+.f16 .gr {
+  background-position: 0 -1632px;
+}
+
+/* line 104, ../sass/plugins/_flags.scss */
+.f16 .gt {
+  background-position: 0 -1648px;
+}
+
+/* line 105, ../sass/plugins/_flags.scss */
+.f16 .gu {
+  background-position: 0 -1664px;
+}
+
+/* line 106, ../sass/plugins/_flags.scss */
+.f16 .gw {
+  background-position: 0 -1680px;
+}
+
+/* line 107, ../sass/plugins/_flags.scss */
+.f16 .gy {
+  background-position: 0 -1696px;
+}
+
+/* line 108, ../sass/plugins/_flags.scss */
+.f16 .hk {
+  background-position: 0 -1712px;
+}
+
+/* line 109, ../sass/plugins/_flags.scss */
+.f16 .hn {
+  background-position: 0 -1728px;
+}
+
+/* line 110, ../sass/plugins/_flags.scss */
+.f16 .hr {
+  background-position: 0 -1744px;
+}
+
+/* line 111, ../sass/plugins/_flags.scss */
+.f16 .ht {
+  background-position: 0 -1760px;
+}
+
+/* line 112, ../sass/plugins/_flags.scss */
+.f16 .hu {
+  background-position: 0 -1776px;
+}
+
+/* line 113, ../sass/plugins/_flags.scss */
+.f16 .id {
+  background-position: 0 -1792px;
+}
+
+/* line 114, ../sass/plugins/_flags.scss */
+.f16 .mc {
+  background-position: 0 -1792px;
+}
+
+/* line 115, ../sass/plugins/_flags.scss */
+.f16 .ie {
+  background-position: 0 -1808px;
+}
+
+/* line 116, ../sass/plugins/_flags.scss */
+.f16 .il {
+  background-position: 0 -1824px;
+}
+
+/* line 117, ../sass/plugins/_flags.scss */
+.f16 .im {
+  background-position: 0 -1840px;
+}
+
+/* line 118, ../sass/plugins/_flags.scss */
+.f16 .in {
+  background-position: 0 -1856px;
+}
+
+/* line 119, ../sass/plugins/_flags.scss */
+.f16 .iq {
+  background-position: 0 -1872px;
+}
+
+/* line 120, ../sass/plugins/_flags.scss */
+.f16 .ir {
+  background-position: 0 -1888px;
+}
+
+/* line 121, ../sass/plugins/_flags.scss */
+.f16 .is {
+  background-position: 0 -1904px;
+}
+
+/* line 122, ../sass/plugins/_flags.scss */
+.f16 .it {
+  background-position: 0 -1920px;
+}
+
+/* line 123, ../sass/plugins/_flags.scss */
+.f16 .je {
+  background-position: 0 -1936px;
+}
+
+/* line 124, ../sass/plugins/_flags.scss */
+.f16 .jm {
+  background-position: 0 -1952px;
+}
+
+/* line 125, ../sass/plugins/_flags.scss */
+.f16 .jo {
+  background-position: 0 -1968px;
+}
+
+/* line 126, ../sass/plugins/_flags.scss */
+.f16 .jp {
+  background-position: 0 -1984px;
+}
+
+/* line 127, ../sass/plugins/_flags.scss */
+.f16 .ke {
+  background-position: 0 -2000px;
+}
+
+/* line 128, ../sass/plugins/_flags.scss */
+.f16 .kg {
+  background-position: 0 -2016px;
+}
+
+/* line 129, ../sass/plugins/_flags.scss */
+.f16 .kh {
+  background-position: 0 -2032px;
+}
+
+/* line 130, ../sass/plugins/_flags.scss */
+.f16 .ki {
+  background-position: 0 -2048px;
+}
+
+/* line 131, ../sass/plugins/_flags.scss */
+.f16 .km {
+  background-position: 0 -2064px;
+}
+
+/* line 132, ../sass/plugins/_flags.scss */
+.f16 .kn {
+  background-position: 0 -2080px;
+}
+
+/* line 133, ../sass/plugins/_flags.scss */
+.f16 .kp {
+  background-position: 0 -2096px;
+}
+
+/* line 134, ../sass/plugins/_flags.scss */
+.f16 .kr {
+  background-position: 0 -2112px;
+}
+
+/* line 135, ../sass/plugins/_flags.scss */
+.f16 .kw {
+  background-position: 0 -2128px;
+}
+
+/* line 136, ../sass/plugins/_flags.scss */
+.f16 .ky {
+  background-position: 0 -2144px;
+}
+
+/* line 137, ../sass/plugins/_flags.scss */
+.f16 .kz {
+  background-position: 0 -2160px;
+}
+
+/* line 138, ../sass/plugins/_flags.scss */
+.f16 .la {
+  background-position: 0 -2176px;
+}
+
+/* line 139, ../sass/plugins/_flags.scss */
+.f16 .lb {
+  background-position: 0 -2192px;
+}
+
+/* line 140, ../sass/plugins/_flags.scss */
+.f16 .lc {
+  background-position: 0 -2208px;
+}
+
+/* line 141, ../sass/plugins/_flags.scss */
+.f16 .li {
+  background-position: 0 -2224px;
+}
+
+/* line 142, ../sass/plugins/_flags.scss */
+.f16 .lk {
+  background-position: 0 -2240px;
+}
+
+/* line 143, ../sass/plugins/_flags.scss */
+.f16 .lr {
+  background-position: 0 -2256px;
+}
+
+/* line 144, ../sass/plugins/_flags.scss */
+.f16 .ls {
+  background-position: 0 -2272px;
+}
+
+/* line 145, ../sass/plugins/_flags.scss */
+.f16 .lt {
+  background-position: 0 -2288px;
+}
+
+/* line 146, ../sass/plugins/_flags.scss */
+.f16 .lu {
+  background-position: 0 -2304px;
+}
+
+/* line 147, ../sass/plugins/_flags.scss */
+.f16 .lv {
+  background-position: 0 -2320px;
+}
+
+/* line 148, ../sass/plugins/_flags.scss */
+.f16 .ly {
+  background-position: 0 -2336px;
+}
+
+/* line 149, ../sass/plugins/_flags.scss */
+.f16 .ma {
+  background-position: 0 -2352px;
+}
+
+/* line 150, ../sass/plugins/_flags.scss */
+.f16 .md {
+  background-position: 0 -2368px;
+}
+
+/* line 151, ../sass/plugins/_flags.scss */
+.f16 .me {
+  background-position: 0 -2384px;
+}
+
+/* line 152, ../sass/plugins/_flags.scss */
+.f16 .mg {
+  background-position: 0 -2400px;
+}
+
+/* line 153, ../sass/plugins/_flags.scss */
+.f16 .mh {
+  background-position: 0 -2416px;
+}
+
+/* line 154, ../sass/plugins/_flags.scss */
+.f16 .mk {
+  background-position: 0 -2432px;
+}
+
+/* line 155, ../sass/plugins/_flags.scss */
+.f16 .ml {
+  background-position: 0 -2448px;
+}
+
+/* line 156, ../sass/plugins/_flags.scss */
+.f16 .mm {
+  background-position: 0 -2464px;
+}
+
+/* line 157, ../sass/plugins/_flags.scss */
+.f16 .mn {
+  background-position: 0 -2480px;
+}
+
+/* line 158, ../sass/plugins/_flags.scss */
+.f16 .mo {
+  background-position: 0 -2496px;
+}
+
+/* line 159, ../sass/plugins/_flags.scss */
+.f16 .mq {
+  background-position: 0 -2512px;
+}
+
+/* line 160, ../sass/plugins/_flags.scss */
+.f16 .mr {
+  background-position: 0 -2528px;
+}
+
+/* line 161, ../sass/plugins/_flags.scss */
+.f16 .ms {
+  background-position: 0 -2544px;
+}
+
+/* line 162, ../sass/plugins/_flags.scss */
+.f16 .mt {
+  background-position: 0 -2560px;
+}
+
+/* line 163, ../sass/plugins/_flags.scss */
+.f16 .mu {
+  background-position: 0 -2576px;
+}
+
+/* line 164, ../sass/plugins/_flags.scss */
+.f16 .mv {
+  background-position: 0 -2592px;
+}
+
+/* line 165, ../sass/plugins/_flags.scss */
+.f16 .mw {
+  background-position: 0 -2608px;
+}
+
+/* line 166, ../sass/plugins/_flags.scss */
+.f16 .mx {
+  background-position: 0 -2624px;
+}
+
+/* line 167, ../sass/plugins/_flags.scss */
+.f16 .my {
+  background-position: 0 -2640px;
+}
+
+/* line 168, ../sass/plugins/_flags.scss */
+.f16 .mz {
+  background-position: 0 -2656px;
+}
+
+/* line 169, ../sass/plugins/_flags.scss */
+.f16 .na {
+  background-position: 0 -2672px;
+}
+
+/* line 170, ../sass/plugins/_flags.scss */
+.f16 .nc {
+  background-position: 0 -2688px;
+}
+
+/* line 171, ../sass/plugins/_flags.scss */
+.f16 .ne {
+  background-position: 0 -2704px;
+}
+
+/* line 172, ../sass/plugins/_flags.scss */
+.f16 .ng {
+  background-position: 0 -2720px;
+}
+
+/* line 173, ../sass/plugins/_flags.scss */
+.f16 .ni {
+  background-position: 0 -2736px;
+}
+
+/* line 174, ../sass/plugins/_flags.scss */
+.f16 .nl {
+  background-position: 0 -2752px;
+}
+
+/* line 174, ../sass/plugins/_flags.scss */
+.f16 .bq {
+  background-position: 0 -2752px;
+}
+
+/* line 175, ../sass/plugins/_flags.scss */
+.f16 .no {
+  background-position: 0 -2768px;
+}
+
+/* line 175, ../sass/plugins/_flags.scss */
+.f16 .bv, .f16 .nq, .f16 .sj {
+  background-position: 0 -2768px;
+}
+
+/* line 176, ../sass/plugins/_flags.scss */
+.f16 .np {
+  background-position: 0 -2784px;
+}
+
+/* line 177, ../sass/plugins/_flags.scss */
+.f16 .nr {
+  background-position: 0 -2800px;
+}
+
+/* line 178, ../sass/plugins/_flags.scss */
+.f16 .nz {
+  background-position: 0 -2816px;
+}
+
+/* line 179, ../sass/plugins/_flags.scss */
+.f16 .om {
+  background-position: 0 -2832px;
+}
+
+/* line 180, ../sass/plugins/_flags.scss */
+.f16 .pa {
+  background-position: 0 -2848px;
+}
+
+/* line 181, ../sass/plugins/_flags.scss */
+.f16 .pe {
+  background-position: 0 -2864px;
+}
+
+/* line 182, ../sass/plugins/_flags.scss */
+.f16 .pf {
+  background-position: 0 -2880px;
+}
+
+/* line 183, ../sass/plugins/_flags.scss */
+.f16 .pg {
+  background-position: 0 -2896px;
+}
+
+/* line 184, ../sass/plugins/_flags.scss */
+.f16 .ph {
+  background-position: 0 -2912px;
+}
+
+/* line 185, ../sass/plugins/_flags.scss */
+.f16 .pk {
+  background-position: 0 -2928px;
+}
+
+/* line 186, ../sass/plugins/_flags.scss */
+.f16 .pl {
+  background-position: 0 -2944px;
+}
+
+/* line 187, ../sass/plugins/_flags.scss */
+.f16 .pr {
+  background-position: 0 -2960px;
+}
+
+/* line 188, ../sass/plugins/_flags.scss */
+.f16 .ps {
+  background-position: 0 -2976px;
+}
+
+/* line 189, ../sass/plugins/_flags.scss */
+.f16 .pt {
+  background-position: 0 -2992px;
+}
+
+/* line 190, ../sass/plugins/_flags.scss */
+.f16 .pw {
+  background-position: 0 -3008px;
+}
+
+/* line 191, ../sass/plugins/_flags.scss */
+.f16 .py {
+  background-position: 0 -3024px;
+}
+
+/* line 192, ../sass/plugins/_flags.scss */
+.f16 .qa {
+  background-position: 0 -3040px;
+}
+
+/* line 193, ../sass/plugins/_flags.scss */
+.f16 .re {
+  background-position: 0 -3056px;
+}
+
+/* line 194, ../sass/plugins/_flags.scss */
+.f16 .ro {
+  background-position: 0 -3072px;
+}
+
+/* line 195, ../sass/plugins/_flags.scss */
+.f16 .rs {
+  background-position: 0 -3088px;
+}
+
+/* line 196, ../sass/plugins/_flags.scss */
+.f16 .ru {
+  background-position: 0 -3104px;
+}
+
+/* line 197, ../sass/plugins/_flags.scss */
+.f16 .rw {
+  background-position: 0 -3120px;
+}
+
+/* line 198, ../sass/plugins/_flags.scss */
+.f16 .sa {
+  background-position: 0 -3136px;
+}
+
+/* line 199, ../sass/plugins/_flags.scss */
+.f16 .sb {
+  background-position: 0 -3152px;
+}
+
+/* line 200, ../sass/plugins/_flags.scss */
+.f16 .sc {
+  background-position: 0 -3168px;
+}
+
+/* line 201, ../sass/plugins/_flags.scss */
+.f16 .sd {
+  background-position: 0 -3184px;
+}
+
+/* line 202, ../sass/plugins/_flags.scss */
+.f16 .se {
+  background-position: 0 -3200px;
+}
+
+/* line 203, ../sass/plugins/_flags.scss */
+.f16 .sg {
+  background-position: 0 -3216px;
+}
+
+/* line 204, ../sass/plugins/_flags.scss */
+.f16 .si {
+  background-position: 0 -3232px;
+}
+
+/* line 205, ../sass/plugins/_flags.scss */
+.f16 .sk {
+  background-position: 0 -3248px;
+}
+
+/* line 206, ../sass/plugins/_flags.scss */
+.f16 .sl {
+  background-position: 0 -3264px;
+}
+
+/* line 207, ../sass/plugins/_flags.scss */
+.f16 .sm {
+  background-position: 0 -3280px;
+}
+
+/* line 208, ../sass/plugins/_flags.scss */
+.f16 .sn {
+  background-position: 0 -3296px;
+}
+
+/* line 209, ../sass/plugins/_flags.scss */
+.f16 .so {
+  background-position: 0 -3312px;
+}
+
+/* line 210, ../sass/plugins/_flags.scss */
+.f16 .sr {
+  background-position: 0 -3328px;
+}
+
+/* line 211, ../sass/plugins/_flags.scss */
+.f16 .st {
+  background-position: 0 -3344px;
+}
+
+/* line 212, ../sass/plugins/_flags.scss */
+.f16 .sv {
+  background-position: 0 -3360px;
+}
+
+/* line 213, ../sass/plugins/_flags.scss */
+.f16 .sy {
+  background-position: 0 -3376px;
+}
+
+/* line 214, ../sass/plugins/_flags.scss */
+.f16 .sz {
+  background-position: 0 -3392px;
+}
+
+/* line 215, ../sass/plugins/_flags.scss */
+.f16 .tc {
+  background-position: 0 -3408px;
+}
+
+/* line 216, ../sass/plugins/_flags.scss */
+.f16 .td {
+  background-position: 0 -3424px;
+}
+
+/* line 217, ../sass/plugins/_flags.scss */
+.f16 .tg {
+  background-position: 0 -3440px;
+}
+
+/* line 218, ../sass/plugins/_flags.scss */
+.f16 .th {
+  background-position: 0 -3456px;
+}
+
+/* line 219, ../sass/plugins/_flags.scss */
+.f16 .tj {
+  background-position: 0 -3472px;
+}
+
+/* line 220, ../sass/plugins/_flags.scss */
+.f16 .tl {
+  background-position: 0 -3488px;
+}
+
+/* line 221, ../sass/plugins/_flags.scss */
+.f16 .tm {
+  background-position: 0 -3504px;
+}
+
+/* line 222, ../sass/plugins/_flags.scss */
+.f16 .tn {
+  background-position: 0 -3520px;
+}
+
+/* line 223, ../sass/plugins/_flags.scss */
+.f16 .to {
+  background-position: 0 -3536px;
+}
+
+/* line 224, ../sass/plugins/_flags.scss */
+.f16 .tr {
+  background-position: 0 -3552px;
+}
+
+/* line 225, ../sass/plugins/_flags.scss */
+.f16 .tt {
+  background-position: 0 -3568px;
+}
+
+/* line 226, ../sass/plugins/_flags.scss */
+.f16 .tv {
+  background-position: 0 -3584px;
+}
+
+/* line 227, ../sass/plugins/_flags.scss */
+.f16 .tw {
+  background-position: 0 -3600px;
+}
+
+/* line 228, ../sass/plugins/_flags.scss */
+.f16 .tz {
+  background-position: 0 -3616px;
+}
+
+/* line 229, ../sass/plugins/_flags.scss */
+.f16 .ua {
+  background-position: 0 -3632px;
+}
+
+/* line 230, ../sass/plugins/_flags.scss */
+.f16 .ug {
+  background-position: 0 -3648px;
+}
+
+/* line 231, ../sass/plugins/_flags.scss */
+.f16 .us {
+  background-position: 0 -3664px;
+}
+
+/* line 232, ../sass/plugins/_flags.scss */
+.f16 .uy {
+  background-position: 0 -3680px;
+}
+
+/* line 233, ../sass/plugins/_flags.scss */
+.f16 .uz {
+  background-position: 0 -3696px;
+}
+
+/* line 234, ../sass/plugins/_flags.scss */
+.f16 .va {
+  background-position: 0 -3712px;
+}
+
+/* line 235, ../sass/plugins/_flags.scss */
+.f16 .vc {
+  background-position: 0 -3728px;
+}
+
+/* line 236, ../sass/plugins/_flags.scss */
+.f16 .ve {
+  background-position: 0 -3744px;
+}
+
+/* line 237, ../sass/plugins/_flags.scss */
+.f16 .vg {
+  background-position: 0 -3760px;
+}
+
+/* line 238, ../sass/plugins/_flags.scss */
+.f16 .vi {
+  background-position: 0 -3776px;
+}
+
+/* line 239, ../sass/plugins/_flags.scss */
+.f16 .vn {
+  background-position: 0 -3792px;
+}
+
+/* line 240, ../sass/plugins/_flags.scss */
+.f16 .vu {
+  background-position: 0 -3808px;
+}
+
+/* line 241, ../sass/plugins/_flags.scss */
+.f16 .ws {
+  background-position: 0 -3824px;
+}
+
+/* line 242, ../sass/plugins/_flags.scss */
+.f16 .ye {
+  background-position: 0 -3840px;
+}
+
+/* line 243, ../sass/plugins/_flags.scss */
+.f16 .za {
+  background-position: 0 -3856px;
+}
+
+/* line 244, ../sass/plugins/_flags.scss */
+.f16 .zm {
+  background-position: 0 -3872px;
+}
+
+/* line 245, ../sass/plugins/_flags.scss */
+.f16 .zw {
+  background-position: 0 -3888px;
+}
+
+/* line 246, ../sass/plugins/_flags.scss */
+.f16 .sx {
+  background-position: 0 -3904px;
+}
+
+/* line 247, ../sass/plugins/_flags.scss */
+.f16 .cw {
+  background-position: 0 -3920px;
+}
+
+/* line 248, ../sass/plugins/_flags.scss */
+.f16 .ss {
+  background-position: 0 -3936px;
+}
+
+/* line 249, ../sass/plugins/_flags.scss */
+.f16 .nu {
+  background-position: 0 -3952px;
+}
+.f32 .flag {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  vertical-align: text-top;
+  line-height: 32px;
+  background: url(../img/flags32.png) no-repeat;
+}
+
+/* line 252, ../sass/plugins/_flags.scss */
+.f32 ._African_Union {
+  background-position: 0 -32px;
+}
+
+/* line 253, ../sass/plugins/_flags.scss */
+.f32 ._Arab_League {
+  background-position: 0 -64px;
+}
+
+/* line 254, ../sass/plugins/_flags.scss */
+.f32 ._ASEAN {
+  background-position: 0 -96px;
+}
+
+/* line 255, ../sass/plugins/_flags.scss */
+.f32 ._CARICOM {
+  background-position: 0 -128px;
+}
+
+/* line 256, ../sass/plugins/_flags.scss */
+.f32 ._CIS {
+  background-position: 0 -160px;
+}
+
+/* line 257, ../sass/plugins/_flags.scss */
+.f32 ._Commonwealth {
+  background-position: 0 -192px;
+}
+
+/* line 258, ../sass/plugins/_flags.scss */
+.f32 ._England {
+  background-position: 0 -224px;
+}
+
+/* line 259, ../sass/plugins/_flags.scss */
+.f32 ._European_Union, .f32 .eu {
+  background-position: 0 -256px;
+}
+
+/* line 260, ../sass/plugins/_flags.scss */
+.f32 ._Islamic_Conference {
+  background-position: 0 -288px;
+}
+
+/* line 261, ../sass/plugins/_flags.scss */
+.f32 ._Kosovo {
+  background-position: 0 -320px;
+}
+
+/* line 262, ../sass/plugins/_flags.scss */
+.f32 ._NATO {
+  background-position: 0 -352px;
+}
+
+/* line 263, ../sass/plugins/_flags.scss */
+.f32 ._Northern_Cyprus {
+  background-position: 0 -384px;
+}
+
+/* line 264, ../sass/plugins/_flags.scss */
+.f32 ._Northern_Ireland {
+  background-position: 0 -416px;
+}
+
+/* line 265, ../sass/plugins/_flags.scss */
+.f32 ._Olimpic_Movement {
+  background-position: 0 -448px;
+}
+
+/* line 266, ../sass/plugins/_flags.scss */
+.f32 ._OPEC {
+  background-position: 0 -480px;
+}
+
+/* line 267, ../sass/plugins/_flags.scss */
+.f32 ._Red_Cross {
+  background-position: 0 -512px;
+}
+
+/* line 268, ../sass/plugins/_flags.scss */
+.f32 ._Scotland {
+  background-position: 0 -544px;
+}
+
+/* line 269, ../sass/plugins/_flags.scss */
+.f32 ._Somaliland {
+  background-position: 0 -576px;
+}
+
+/* line 270, ../sass/plugins/_flags.scss */
+.f32 ._Tibet {
+  background-position: 0 -608px;
+}
+
+/* line 271, ../sass/plugins/_flags.scss */
+.f32 ._United_Nations {
+  background-position: 0 -640px;
+}
+
+/* line 272, ../sass/plugins/_flags.scss */
+.f32 ._Wales {
+  background-position: 0 -672px;
+}
+
+/* line 273, ../sass/plugins/_flags.scss */
+.f32 .ad {
+  background-position: 0 -704px;
+}
+
+/* line 274, ../sass/plugins/_flags.scss */
+.f32 .ae {
+  background-position: 0 -736px;
+}
+
+/* line 275, ../sass/plugins/_flags.scss */
+.f32 .af {
+  background-position: 0 -768px;
+}
+
+/* line 276, ../sass/plugins/_flags.scss */
+.f32 .ag {
+  background-position: 0 -800px;
+}
+
+/* line 277, ../sass/plugins/_flags.scss */
+.f32 .ai {
+  background-position: 0 -832px;
+}
+
+/* line 278, ../sass/plugins/_flags.scss */
+.f32 .al {
+  background-position: 0 -864px;
+}
+
+/* line 279, ../sass/plugins/_flags.scss */
+.f32 .am {
+  background-position: 0 -896px;
+}
+
+/* line 280, ../sass/plugins/_flags.scss */
+.f32 .ao {
+  background-position: 0 -928px;
+}
+
+/* line 281, ../sass/plugins/_flags.scss */
+.f32 .aq {
+  background-position: 0 -960px;
+}
+
+/* line 282, ../sass/plugins/_flags.scss */
+.f32 .ar {
+  background-position: 0 -992px;
+}
+
+/* line 283, ../sass/plugins/_flags.scss */
+.f32 .as {
+  background-position: 0 -1024px;
+}
+
+/* line 284, ../sass/plugins/_flags.scss */
+.f32 .at {
+  background-position: 0 -1056px;
+}
+
+/* line 285, ../sass/plugins/_flags.scss */
+.f32 .au {
+  background-position: 0 -1088px;
+}
+
+/* line 286, ../sass/plugins/_flags.scss */
+.f32 .aw {
+  background-position: 0 -1120px;
+}
+
+/* line 287, ../sass/plugins/_flags.scss */
+.f32 .ax {
+  background-position: 0 -1152px;
+}
+
+/* line 288, ../sass/plugins/_flags.scss */
+.f32 .az {
+  background-position: 0 -1184px;
+}
+
+/* line 289, ../sass/plugins/_flags.scss */
+.f32 .ba {
+  background-position: 0 -1216px;
+}
+
+/* line 290, ../sass/plugins/_flags.scss */
+.f32 .bb {
+  background-position: 0 -1248px;
+}
+
+/* line 291, ../sass/plugins/_flags.scss */
+.f32 .bd {
+  background-position: 0 -1280px;
+}
+
+/* line 292, ../sass/plugins/_flags.scss */
+.f32 .be {
+  background-position: 0 -1312px;
+}
+
+/* line 293, ../sass/plugins/_flags.scss */
+.f32 .bf {
+  background-position: 0 -1344px;
+}
+
+/* line 294, ../sass/plugins/_flags.scss */
+.f32 .bg {
+  background-position: 0 -1376px;
+}
+
+/* line 295, ../sass/plugins/_flags.scss */
+.f32 .bh {
+  background-position: 0 -1408px;
+}
+
+/* line 296, ../sass/plugins/_flags.scss */
+.f32 .bi {
+  background-position: 0 -1440px;
+}
+
+/* line 297, ../sass/plugins/_flags.scss */
+.f32 .bj {
+  background-position: 0 -1472px;
+}
+
+/* line 298, ../sass/plugins/_flags.scss */
+.f32 .bm {
+  background-position: 0 -1504px;
+}
+
+/* line 299, ../sass/plugins/_flags.scss */
+.f32 .bn {
+  background-position: 0 -1536px;
+}
+
+/* line 300, ../sass/plugins/_flags.scss */
+.f32 .bo {
+  background-position: 0 -1568px;
+}
+
+/* line 301, ../sass/plugins/_flags.scss */
+.f32 .br {
+  background-position: 0 -1600px;
+}
+
+/* line 302, ../sass/plugins/_flags.scss */
+.f32 .bs {
+  background-position: 0 -1632px;
+}
+
+/* line 303, ../sass/plugins/_flags.scss */
+.f32 .bt {
+  background-position: 0 -1664px;
+}
+
+/* line 304, ../sass/plugins/_flags.scss */
+.f32 .bw {
+  background-position: 0 -1696px;
+}
+
+/* line 305, ../sass/plugins/_flags.scss */
+.f32 .by {
+  background-position: 0 -1728px;
+}
+
+/* line 306, ../sass/plugins/_flags.scss */
+.f32 .bz {
+  background-position: 0 -1760px;
+}
+
+/* line 307, ../sass/plugins/_flags.scss */
+.f32 .ca {
+  background-position: 0 -1792px;
+}
+
+/* line 308, ../sass/plugins/_flags.scss */
+.f32 .cd {
+  background-position: 0 -1824px;
+}
+
+/* line 309, ../sass/plugins/_flags.scss */
+.f32 .cf {
+  background-position: 0 -1856px;
+}
+
+/* line 310, ../sass/plugins/_flags.scss */
+.f32 .cg {
+  background-position: 0 -1888px;
+}
+
+/* line 311, ../sass/plugins/_flags.scss */
+.f32 .ch {
+  background-position: 0 -1920px;
+}
+
+/* line 312, ../sass/plugins/_flags.scss */
+.f32 .ci {
+  background-position: 0 -1952px;
+}
+
+/* line 313, ../sass/plugins/_flags.scss */
+.f32 .ck {
+  background-position: 0 -1984px;
+}
+
+/* line 314, ../sass/plugins/_flags.scss */
+.f32 .cl {
+  background-position: 0 -2016px;
+}
+
+/* line 315, ../sass/plugins/_flags.scss */
+.f32 .cm {
+  background-position: 0 -2048px;
+}
+
+/* line 316, ../sass/plugins/_flags.scss */
+.f32 .cn {
+  background-position: 0 -2080px;
+}
+
+/* line 317, ../sass/plugins/_flags.scss */
+.f32 .co {
+  background-position: 0 -2112px;
+}
+
+/* line 318, ../sass/plugins/_flags.scss */
+.f32 .cr {
+  background-position: 0 -2144px;
+}
+
+/* line 319, ../sass/plugins/_flags.scss */
+.f32 .cu {
+  background-position: 0 -2176px;
+}
+
+/* line 320, ../sass/plugins/_flags.scss */
+.f32 .cv {
+  background-position: 0 -2208px;
+}
+
+/* line 321, ../sass/plugins/_flags.scss */
+.f32 .cy {
+  background-position: 0 -2240px;
+}
+
+/* line 322, ../sass/plugins/_flags.scss */
+.f32 .cz {
+  background-position: 0 -2272px;
+}
+
+/* line 323, ../sass/plugins/_flags.scss */
+.f32 .de {
+  background-position: 0 -2304px;
+}
+
+/* line 324, ../sass/plugins/_flags.scss */
+.f32 .dj {
+  background-position: 0 -2336px;
+}
+
+/* line 325, ../sass/plugins/_flags.scss */
+.f32 .dk {
+  background-position: 0 -2368px;
+}
+
+/* line 326, ../sass/plugins/_flags.scss */
+.f32 .dm {
+  background-position: 0 -2400px;
+}
+
+/* line 327, ../sass/plugins/_flags.scss */
+.f32 .do {
+  background-position: 0 -2432px;
+}
+
+/* line 328, ../sass/plugins/_flags.scss */
+.f32 .dz {
+  background-position: 0 -2464px;
+}
+
+/* line 329, ../sass/plugins/_flags.scss */
+.f32 .ec {
+  background-position: 0 -2496px;
+}
+
+/* line 330, ../sass/plugins/_flags.scss */
+.f32 .ee {
+  background-position: 0 -2528px;
+}
+
+/* line 331, ../sass/plugins/_flags.scss */
+.f32 .eg {
+  background-position: 0 -2560px;
+}
+
+/* line 332, ../sass/plugins/_flags.scss */
+.f32 .eh {
+  background-position: 0 -2592px;
+}
+
+/* line 333, ../sass/plugins/_flags.scss */
+.f32 .er {
+  background-position: 0 -2624px;
+}
+
+/* line 334, ../sass/plugins/_flags.scss */
+.f32 .es {
+  background-position: 0 -2656px;
+}
+
+/* line 335, ../sass/plugins/_flags.scss */
+.f32 .et {
+  background-position: 0 -2688px;
+}
+
+/* line 336, ../sass/plugins/_flags.scss */
+.f32 .fi {
+  background-position: 0 -2720px;
+}
+
+/* line 337, ../sass/plugins/_flags.scss */
+.f32 .fj {
+  background-position: 0 -2752px;
+}
+
+/* line 338, ../sass/plugins/_flags.scss */
+.f32 .fm {
+  background-position: 0 -2784px;
+}
+
+/* line 339, ../sass/plugins/_flags.scss */
+.f32 .fo {
+  background-position: 0 -2816px;
+}
+
+/* line 340, ../sass/plugins/_flags.scss */
+.f32 .fr {
+  background-position: 0 -2848px;
+}
+
+/* line 340, ../sass/plugins/_flags.scss */
+.f32 .bl, .f32 .cp, .f32 .mf, .f32 .yt {
+  background-position: 0 -2848px;
+}
+
+/* line 341, ../sass/plugins/_flags.scss */
+.f32 .ga {
+  background-position: 0 -2880px;
+}
+
+/* line 342, ../sass/plugins/_flags.scss */
+.f32 .gb {
+  background-position: 0 -2912px;
+}
+
+/* line 342, ../sass/plugins/_flags.scss */
+.f32 .sh {
+  background-position: 0 -2912px;
+}
+
+/* line 343, ../sass/plugins/_flags.scss */
+.f32 .gd {
+  background-position: 0 -2944px;
+}
+
+/* line 344, ../sass/plugins/_flags.scss */
+.f32 .ge {
+  background-position: 0 -2976px;
+}
+
+/* line 345, ../sass/plugins/_flags.scss */
+.f32 .gg {
+  background-position: 0 -3008px;
+}
+
+/* line 346, ../sass/plugins/_flags.scss */
+.f32 .gh {
+  background-position: 0 -3040px;
+}
+
+/* line 347, ../sass/plugins/_flags.scss */
+.f32 .gi {
+  background-position: 0 -3072px;
+}
+
+/* line 348, ../sass/plugins/_flags.scss */
+.f32 .gl {
+  background-position: 0 -3104px;
+}
+
+/* line 349, ../sass/plugins/_flags.scss */
+.f32 .gm {
+  background-position: 0 -3136px;
+}
+
+/* line 350, ../sass/plugins/_flags.scss */
+.f32 .gn {
+  background-position: 0 -3168px;
+}
+
+/* line 351, ../sass/plugins/_flags.scss */
+.f32 .gp {
+  background-position: 0 -3200px;
+}
+
+/* line 352, ../sass/plugins/_flags.scss */
+.f32 .gq {
+  background-position: 0 -3232px;
+}
+
+/* line 353, ../sass/plugins/_flags.scss */
+.f32 .gr {
+  background-position: 0 -3264px;
+}
+
+/* line 354, ../sass/plugins/_flags.scss */
+.f32 .gt {
+  background-position: 0 -3296px;
+}
+
+/* line 355, ../sass/plugins/_flags.scss */
+.f32 .gu {
+  background-position: 0 -3328px;
+}
+
+/* line 356, ../sass/plugins/_flags.scss */
+.f32 .gw {
+  background-position: 0 -3360px;
+}
+
+/* line 357, ../sass/plugins/_flags.scss */
+.f32 .gy {
+  background-position: 0 -3392px;
+}
+
+/* line 358, ../sass/plugins/_flags.scss */
+.f32 .hk {
+  background-position: 0 -3424px;
+}
+
+/* line 359, ../sass/plugins/_flags.scss */
+.f32 .hn {
+  background-position: 0 -3456px;
+}
+
+/* line 360, ../sass/plugins/_flags.scss */
+.f32 .hr {
+  background-position: 0 -3488px;
+}
+
+/* line 361, ../sass/plugins/_flags.scss */
+.f32 .ht {
+  background-position: 0 -3520px;
+}
+
+/* line 362, ../sass/plugins/_flags.scss */
+.f32 .hu {
+  background-position: 0 -3552px;
+}
+
+/* line 363, ../sass/plugins/_flags.scss */
+.f32 .id {
+  background-position: 0 -3584px;
+}
+
+/* line 364, ../sass/plugins/_flags.scss */
+.f32 .mc {
+  background-position: 0 -3584px;
+}
+
+/* line 365, ../sass/plugins/_flags.scss */
+.f32 .ie {
+  background-position: 0 -3616px;
+}
+
+/* line 366, ../sass/plugins/_flags.scss */
+.f32 .il {
+  background-position: 0 -3648px;
+}
+
+/* line 367, ../sass/plugins/_flags.scss */
+.f32 .im {
+  background-position: 0 -3680px;
+}
+
+/* line 368, ../sass/plugins/_flags.scss */
+.f32 .in {
+  background-position: 0 -3712px;
+}
+
+/* line 369, ../sass/plugins/_flags.scss */
+.f32 .iq {
+  background-position: 0 -3744px;
+}
+
+/* line 370, ../sass/plugins/_flags.scss */
+.f32 .ir {
+  background-position: 0 -3776px;
+}
+
+/* line 371, ../sass/plugins/_flags.scss */
+.f32 .is {
+  background-position: 0 -3808px;
+}
+
+/* line 372, ../sass/plugins/_flags.scss */
+.f32 .it {
+  background-position: 0 -3840px;
+}
+
+/* line 373, ../sass/plugins/_flags.scss */
+.f32 .je {
+  background-position: 0 -3872px;
+}
+
+/* line 374, ../sass/plugins/_flags.scss */
+.f32 .jm {
+  background-position: 0 -3904px;
+}
+
+/* line 375, ../sass/plugins/_flags.scss */
+.f32 .jo {
+  background-position: 0 -3936px;
+}
+
+/* line 376, ../sass/plugins/_flags.scss */
+.f32 .jp {
+  background-position: 0 -3968px;
+}
+
+/* line 377, ../sass/plugins/_flags.scss */
+.f32 .ke {
+  background-position: 0 -4000px;
+}
+
+/* line 378, ../sass/plugins/_flags.scss */
+.f32 .kg {
+  background-position: 0 -4032px;
+}
+
+/* line 379, ../sass/plugins/_flags.scss */
+.f32 .kh {
+  background-position: 0 -4064px;
+}
+
+/* line 380, ../sass/plugins/_flags.scss */
+.f32 .ki {
+  background-position: 0 -4096px;
+}
+
+/* line 381, ../sass/plugins/_flags.scss */
+.f32 .km {
+  background-position: 0 -4128px;
+}
+
+/* line 382, ../sass/plugins/_flags.scss */
+.f32 .kn {
+  background-position: 0 -4160px;
+}
+
+/* line 383, ../sass/plugins/_flags.scss */
+.f32 .kp {
+  background-position: 0 -4192px;
+}
+
+/* line 384, ../sass/plugins/_flags.scss */
+.f32 .kr {
+  background-position: 0 -4224px;
+}
+
+/* line 385, ../sass/plugins/_flags.scss */
+.f32 .kw {
+  background-position: 0 -4256px;
+}
+
+/* line 386, ../sass/plugins/_flags.scss */
+.f32 .ky {
+  background-position: 0 -4288px;
+}
+
+/* line 387, ../sass/plugins/_flags.scss */
+.f32 .kz {
+  background-position: 0 -4320px;
+}
+
+/* line 388, ../sass/plugins/_flags.scss */
+.f32 .la {
+  background-position: 0 -4352px;
+}
+
+/* line 389, ../sass/plugins/_flags.scss */
+.f32 .lb {
+  background-position: 0 -4384px;
+}
+
+/* line 390, ../sass/plugins/_flags.scss */
+.f32 .lc {
+  background-position: 0 -4416px;
+}
+
+/* line 391, ../sass/plugins/_flags.scss */
+.f32 .li {
+  background-position: 0 -4448px;
+}
+
+/* line 392, ../sass/plugins/_flags.scss */
+.f32 .lk {
+  background-position: 0 -4480px;
+}
+
+/* line 393, ../sass/plugins/_flags.scss */
+.f32 .lr {
+  background-position: 0 -4512px;
+}
+
+/* line 394, ../sass/plugins/_flags.scss */
+.f32 .ls {
+  background-position: 0 -4544px;
+}
+
+/* line 395, ../sass/plugins/_flags.scss */
+.f32 .lt {
+  background-position: 0 -4576px;
+}
+
+/* line 396, ../sass/plugins/_flags.scss */
+.f32 .lu {
+  background-position: 0 -4608px;
+}
+
+/* line 397, ../sass/plugins/_flags.scss */
+.f32 .lv {
+  background-position: 0 -4640px;
+}
+
+/* line 398, ../sass/plugins/_flags.scss */
+.f32 .ly {
+  background-position: 0 -4672px;
+}
+
+/* line 399, ../sass/plugins/_flags.scss */
+.f32 .ma {
+  background-position: 0 -4704px;
+}
+
+/* line 400, ../sass/plugins/_flags.scss */
+.f32 .md {
+  background-position: 0 -4736px;
+}
+
+/* line 401, ../sass/plugins/_flags.scss */
+.f32 .me {
+  background-position: 0 -4768px;
+}
+
+/* line 402, ../sass/plugins/_flags.scss */
+.f32 .mg {
+  background-position: 0 -4800px;
+}
+
+/* line 403, ../sass/plugins/_flags.scss */
+.f32 .mh {
+  background-position: 0 -4832px;
+}
+
+/* line 404, ../sass/plugins/_flags.scss */
+.f32 .mk {
+  background-position: 0 -4864px;
+}
+
+/* line 405, ../sass/plugins/_flags.scss */
+.f32 .ml {
+  background-position: 0 -4896px;
+}
+
+/* line 406, ../sass/plugins/_flags.scss */
+.f32 .mm {
+  background-position: 0 -4928px;
+}
+
+/* line 407, ../sass/plugins/_flags.scss */
+.f32 .mn {
+  background-position: 0 -4960px;
+}
+
+/* line 408, ../sass/plugins/_flags.scss */
+.f32 .mo {
+  background-position: 0 -4992px;
+}
+
+/* line 409, ../sass/plugins/_flags.scss */
+.f32 .mq {
+  background-position: 0 -5024px;
+}
+
+/* line 410, ../sass/plugins/_flags.scss */
+.f32 .mr {
+  background-position: 0 -5056px;
+}
+
+/* line 411, ../sass/plugins/_flags.scss */
+.f32 .ms {
+  background-position: 0 -5088px;
+}
+
+/* line 412, ../sass/plugins/_flags.scss */
+.f32 .mt {
+  background-position: 0 -5120px;
+}
+
+/* line 413, ../sass/plugins/_flags.scss */
+.f32 .mu {
+  background-position: 0 -5152px;
+}
+
+/* line 414, ../sass/plugins/_flags.scss */
+.f32 .mv {
+  background-position: 0 -5184px;
+}
+
+/* line 415, ../sass/plugins/_flags.scss */
+.f32 .mw {
+  background-position: 0 -5216px;
+}
+
+/* line 416, ../sass/plugins/_flags.scss */
+.f32 .mx {
+  background-position: 0 -5248px;
+}
+
+/* line 417, ../sass/plugins/_flags.scss */
+.f32 .my {
+  background-position: 0 -5280px;
+}
+
+/* line 418, ../sass/plugins/_flags.scss */
+.f32 .mz {
+  background-position: 0 -5312px;
+}
+
+/* line 419, ../sass/plugins/_flags.scss */
+.f32 .na {
+  background-position: 0 -5344px;
+}
+
+/* line 420, ../sass/plugins/_flags.scss */
+.f32 .nc {
+  background-position: 0 -5376px;
+}
+
+/* line 421, ../sass/plugins/_flags.scss */
+.f32 .ne {
+  background-position: 0 -5408px;
+}
+
+/* line 422, ../sass/plugins/_flags.scss */
+.f32 .ng {
+  background-position: 0 -5440px;
+}
+
+/* line 423, ../sass/plugins/_flags.scss */
+.f32 .ni {
+  background-position: 0 -5472px;
+}
+
+/* line 424, ../sass/plugins/_flags.scss */
+.f32 .nl {
+  background-position: 0 -5504px;
+}
+
+/* line 424, ../sass/plugins/_flags.scss */
+.f32 .bq {
+  background-position: 0 -5504px;
+}
+
+/* line 425, ../sass/plugins/_flags.scss */
+.f32 .no {
+  background-position: 0 -5536px;
+}
+
+/* line 425, ../sass/plugins/_flags.scss */
+.f32 .bv, .f32 .nq, .f32 .sj {
+  background-position: 0 -5536px;
+}
+
+/* line 426, ../sass/plugins/_flags.scss */
+.f32 .np {
+  background-position: 0 -5568px;
+}
+
+/* line 427, ../sass/plugins/_flags.scss */
+.f32 .nr {
+  background-position: 0 -5600px;
+}
+
+/* line 428, ../sass/plugins/_flags.scss */
+.f32 .nz {
+  background-position: 0 -5632px;
+}
+
+/* line 429, ../sass/plugins/_flags.scss */
+.f32 .om {
+  background-position: 0 -5664px;
+}
+
+/* line 430, ../sass/plugins/_flags.scss */
+.f32 .pa {
+  background-position: 0 -5696px;
+}
+
+/* line 431, ../sass/plugins/_flags.scss */
+.f32 .pe {
+  background-position: 0 -5728px;
+}
+
+/* line 432, ../sass/plugins/_flags.scss */
+.f32 .pf {
+  background-position: 0 -5760px;
+}
+
+/* line 433, ../sass/plugins/_flags.scss */
+.f32 .pg {
+  background-position: 0 -5792px;
+}
+
+/* line 434, ../sass/plugins/_flags.scss */
+.f32 .ph {
+  background-position: 0 -5824px;
+}
+
+/* line 435, ../sass/plugins/_flags.scss */
+.f32 .pk {
+  background-position: 0 -5856px;
+}
+
+/* line 436, ../sass/plugins/_flags.scss */
+.f32 .pl {
+  background-position: 0 -5888px;
+}
+
+/* line 437, ../sass/plugins/_flags.scss */
+.f32 .pr {
+  background-position: 0 -5920px;
+}
+
+/* line 438, ../sass/plugins/_flags.scss */
+.f32 .ps {
+  background-position: 0 -5952px;
+}
+
+/* line 439, ../sass/plugins/_flags.scss */
+.f32 .pt {
+  background-position: 0 -5984px;
+}
+
+/* line 440, ../sass/plugins/_flags.scss */
+.f32 .pw {
+  background-position: 0 -6016px;
+}
+
+/* line 441, ../sass/plugins/_flags.scss */
+.f32 .py {
+  background-position: 0 -6048px;
+}
+
+/* line 442, ../sass/plugins/_flags.scss */
+.f32 .qa {
+  background-position: 0 -6080px;
+}
+
+/* line 443, ../sass/plugins/_flags.scss */
+.f32 .re {
+  background-position: 0 -6112px;
+}
+
+/* line 444, ../sass/plugins/_flags.scss */
+.f32 .ro {
+  background-position: 0 -6144px;
+}
+
+/* line 445, ../sass/plugins/_flags.scss */
+.f32 .rs {
+  background-position: 0 -6176px;
+}
+
+/* line 446, ../sass/plugins/_flags.scss */
+.f32 .ru {
+  background-position: 0 -6208px;
+}
+
+/* line 447, ../sass/plugins/_flags.scss */
+.f32 .rw {
+  background-position: 0 -6240px;
+}
+
+/* line 448, ../sass/plugins/_flags.scss */
+.f32 .sa {
+  background-position: 0 -6272px;
+}
+
+/* line 449, ../sass/plugins/_flags.scss */
+.f32 .sb {
+  background-position: 0 -6304px;
+}
+
+/* line 450, ../sass/plugins/_flags.scss */
+.f32 .sc {
+  background-position: 0 -6336px;
+}
+
+/* line 451, ../sass/plugins/_flags.scss */
+.f32 .sd {
+  background-position: 0 -6368px;
+}
+
+/* line 452, ../sass/plugins/_flags.scss */
+.f32 .se {
+  background-position: 0 -6400px;
+}
+
+/* line 453, ../sass/plugins/_flags.scss */
+.f32 .sg {
+  background-position: 0 -6432px;
+}
+
+/* line 454, ../sass/plugins/_flags.scss */
+.f32 .si {
+  background-position: 0 -6464px;
+}
+
+/* line 455, ../sass/plugins/_flags.scss */
+.f32 .sk {
+  background-position: 0 -6496px;
+}
+
+/* line 456, ../sass/plugins/_flags.scss */
+.f32 .sl {
+  background-position: 0 -6528px;
+}
+
+/* line 457, ../sass/plugins/_flags.scss */
+.f32 .sm {
+  background-position: 0 -6560px;
+}
+
+/* line 458, ../sass/plugins/_flags.scss */
+.f32 .sn {
+  background-position: 0 -6592px;
+}
+
+/* line 459, ../sass/plugins/_flags.scss */
+.f32 .so {
+  background-position: 0 -6624px;
+}
+
+/* line 460, ../sass/plugins/_flags.scss */
+.f32 .sr {
+  background-position: 0 -6656px;
+}
+
+/* line 461, ../sass/plugins/_flags.scss */
+.f32 .st {
+  background-position: 0 -6688px;
+}
+
+/* line 462, ../sass/plugins/_flags.scss */
+.f32 .sv {
+  background-position: 0 -6720px;
+}
+
+/* line 463, ../sass/plugins/_flags.scss */
+.f32 .sy {
+  background-position: 0 -6752px;
+}
+
+/* line 464, ../sass/plugins/_flags.scss */
+.f32 .sz {
+  background-position: 0 -6784px;
+}
+
+/* line 465, ../sass/plugins/_flags.scss */
+.f32 .tc {
+  background-position: 0 -6816px;
+}
+
+/* line 466, ../sass/plugins/_flags.scss */
+.f32 .td {
+  background-position: 0 -6848px;
+}
+
+/* line 467, ../sass/plugins/_flags.scss */
+.f32 .tg {
+  background-position: 0 -6880px;
+}
+
+/* line 468, ../sass/plugins/_flags.scss */
+.f32 .th {
+  background-position: 0 -6912px;
+}
+
+/* line 469, ../sass/plugins/_flags.scss */
+.f32 .tj {
+  background-position: 0 -6944px;
+}
+
+/* line 470, ../sass/plugins/_flags.scss */
+.f32 .tl {
+  background-position: 0 -6976px;
+}
+
+/* line 471, ../sass/plugins/_flags.scss */
+.f32 .tm {
+  background-position: 0 -7008px;
+}
+
+/* line 472, ../sass/plugins/_flags.scss */
+.f32 .tn {
+  background-position: 0 -7040px;
+}
+
+/* line 473, ../sass/plugins/_flags.scss */
+.f32 .to {
+  background-position: 0 -7072px;
+}
+
+/* line 474, ../sass/plugins/_flags.scss */
+.f32 .tr {
+  background-position: 0 -7104px;
+}
+
+/* line 475, ../sass/plugins/_flags.scss */
+.f32 .tt {
+  background-position: 0 -7136px;
+}
+
+/* line 476, ../sass/plugins/_flags.scss */
+.f32 .tv {
+  background-position: 0 -7168px;
+}
+
+/* line 477, ../sass/plugins/_flags.scss */
+.f32 .tw {
+  background-position: 0 -7200px;
+}
+
+/* line 478, ../sass/plugins/_flags.scss */
+.f32 .tz {
+  background-position: 0 -7232px;
+}
+
+/* line 479, ../sass/plugins/_flags.scss */
+.f32 .ua {
+  background-position: 0 -7264px;
+}
+
+/* line 480, ../sass/plugins/_flags.scss */
+.f32 .ug {
+  background-position: 0 -7296px;
+}
+
+/* line 481, ../sass/plugins/_flags.scss */
+.f32 .us {
+  background-position: 0 -7328px;
+}
+
+/* line 482, ../sass/plugins/_flags.scss */
+.f32 .uy {
+  background-position: 0 -7360px;
+}
+
+/* line 483, ../sass/plugins/_flags.scss */
+.f32 .uz {
+  background-position: 0 -7392px;
+}
+
+/* line 484, ../sass/plugins/_flags.scss */
+.f32 .va {
+  background-position: 0 -7424px;
+}
+
+/* line 485, ../sass/plugins/_flags.scss */
+.f32 .vc {
+  background-position: 0 -7456px;
+}
+
+/* line 486, ../sass/plugins/_flags.scss */
+.f32 .ve {
+  background-position: 0 -7488px;
+}
+
+/* line 487, ../sass/plugins/_flags.scss */
+.f32 .vg {
+  background-position: 0 -7520px;
+}
+
+/* line 488, ../sass/plugins/_flags.scss */
+.f32 .vi {
+  background-position: 0 -7552px;
+}
+
+/* line 489, ../sass/plugins/_flags.scss */
+.f32 .vn {
+  background-position: 0 -7584px;
+}
+
+/* line 490, ../sass/plugins/_flags.scss */
+.f32 .vu {
+  background-position: 0 -7616px;
+}
+
+/* line 491, ../sass/plugins/_flags.scss */
+.f32 .ws {
+  background-position: 0 -7648px;
+}
+
+/* line 492, ../sass/plugins/_flags.scss */
+.f32 .ye {
+  background-position: 0 -7680px;
+}
+
+/* line 493, ../sass/plugins/_flags.scss */
+.f32 .za {
+  background-position: 0 -7712px;
+}
+
+/* line 494, ../sass/plugins/_flags.scss */
+.f32 .zm {
+  background-position: 0 -7744px;
+}
+
+/* line 495, ../sass/plugins/_flags.scss */
+.f32 .zw {
+  background-position: 0 -7776px;
+}
+
+/* line 496, ../sass/plugins/_flags.scss */
+.f32 .sx {
+  background-position: 0 -7808px;
+}
+
+/* line 497, ../sass/plugins/_flags.scss */
+.f32 .cw {
+  background-position: 0 -7840px;
+}
+
+/* line 498, ../sass/plugins/_flags.scss */
+.f32 .ss {
+  background-position: 0 -7872px;
+}
+
+/* line 499, ../sass/plugins/_flags.scss */
+.f32 .nu {
+  background-position: 0 -7904px;
+}
