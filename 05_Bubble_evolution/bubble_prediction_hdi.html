@@ -26,7 +26,7 @@
 	XgridSize = 30 // 20*Xgrid for the range of the bar 
 
 	//var file_use = "data/prediction_demographic_data.csv"; 
-	var file_use = "data/prediction_HDI_mortality.csv"; 
+	var file_use = "data/prediction_HDI_incidence.csv"; 
 
 
 	var color_cancer = {};
@@ -87,7 +87,7 @@
 	
 	<div id="header" >
 		<div>
-			<h1><a href="#"> Cancer deaths prediction<br/>2018 to 2040</a></h1>
+			<h1><a href="#"> Cancer prediction<br/>2020 to 2040</a></h1>
 			<div class="desc">
 				Demographic effect 
 			</div>
@@ -100,7 +100,7 @@
 		
 		<div class = "div_left">
 		<form>
-		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2018</label>
+		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2020</label>
 		<br/>
 		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2040</label>
 		</form>
