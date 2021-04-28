@@ -51,7 +51,7 @@
 	// So I need to use the value for the Canada Men..
 	// I suppose there should be another way, to define them in the d3.csv fonction and use the data..
 	var xScale = d3.scale.linear()
-		.domain([0, 100]) 
+		.domain([0, 120]) 
 		.range([0  ,var_width]);
 		
 	var xAxis = d3.svg.axis() 
@@ -59,14 +59,14 @@
 		.orient("bottom")
 		.tickSize(-graph_height-20, 0,0)
 		.tickPadding(12)
-		.tickValues([0,20,40,60,80,100])	
+		.tickValues([0,20,40,60,80,100,120])	
 
 	var xAxis_minor = d3.svg.axis() 
 		.scale(xScale)
 		.orient("bottom")
 		.tickSize(-graph_height-20, 0,0)
 		.tickPadding(12)
-		.tickValues([10,30,50,70,90])	
+		.tickValues([10,30,50,70,90,110])	
 		.tickFormat("")	
 
 		

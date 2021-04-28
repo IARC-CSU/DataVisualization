@@ -860,12 +860,20 @@
 				}		
 			}
 		
-		var max_major = tick_list.major[tick_list.major.length-1];
-		var max_minor = tick_list.minor[tick_list.minor.length-1];
-		
-		
-		tick_list.value_top = Math.max(max_major,max_minor)	
+			var max_major = tick_list.major[tick_list.major.length-1];
+			var max_minor = tick_list.minor[tick_list.minor.length-1];
+
+
+			
+			tick_list.value_top = Math.max(max_major,max_minor)	
 		}
+
+
+		tick_list.value_top = 120;
+		tick_list.major = [0,20,40,60,80,100,120];
+		tick_list.minor = [10,30,50,70,90,110];
+
+		
 	return (tick_list)
 	}
 	
