@@ -218,12 +218,24 @@
 			.attr("width", function(d,i) {return xScale(d.asr);})
 			.attr("height", YgridSize)
 			.attr("fill", "#2c7bb6")
+
+		cancer_group.append("text")
+			.attr("id",function(d) {
+				return "id_label" + (v_key+1) + "_" + d.values[v_key].values[0].cancer_label; // Need the id, to after know the size of the text
+			})
+			.attr("class", "text_label"+(v_key+1))
+			.attr("text-anchor", "start")
+			.attr("x",function(d,i) { return xScale(d.values[v_key].values[0].asr) + 3 })   
+			.attr("y", +25)
+			.text(function(d,i) { return Math.round((d.values[v_key].values[0].asr)*10)/10 });
 			
 		cancer_group.append("line")  // add line to group (diferent of left and right graph)
 			.attr("class","line" + (v_key+1)) // add class to select by class, for the update 
 			.attr("x1", function(d,i) { 
 				if (bool_left_graph) {
-					return xScale(d.values[v_key].values[0].asr)+5;
+					var temp_id = "id_label1_" + d.values[v_key].values[0].cancer_label;
+					var temp = document.getElementById(temp_id).getBBox().width;
+					return xScale(d.values[v_key].values[0].asr)+temp+5;
 				} else {
 					return -line_separation;
 					
@@ -494,13 +506,17 @@
 		// data 
 		// boolean 
 		
+		
 		if (bool_left_graph) {
 			var bar_class = ".bar1";
 			var line_class = ".line1";
+			var text_class = ".text_label1";
+			
 			var v_key = 0;
 		} else {
 			var bar_class = ".bar2";
 			var line_class = ".line2";
+			var text_class = ".text_label2";
 			var v_key = 1;
 		}
 		
@@ -538,30 +554,44 @@
 					return "#b62ca1";
 				}	
 			});
-			
 
-		d3.select("#chart").selectAll(line_class)
+		var bar = d3.select("#chart").selectAll(text_class) // select by class
 			.data(data_nest)
 			.transition().duration(transition_time)	
-			.attr("x1", function(d,i) {
-				if (bool_left_graph) {
-					return xScale(d.values[0].values[0].asr)+5;
-				} else {
-					return -line_separation;
-				}
-			})	
-			.attr("stroke", function(d,i) {
-				var rank1 = d.values[0].values[0].rank
-				var rank2 = d.values[1].values[0].rank
-				var rank_diff = rank2-rank1;
-				if (rank_diff > 0) {
-					return "green";
-				} else if (rank_diff < 0){
-					return "red"
-				} else {
-					return "black"
-				}
-			});
+			.attr("x",function(d,i) { return xScale(d.values[v_key].values[0].asr) + 3 })   
+			.text(function(d,i) { return Math.round((d.values[v_key].values[0].asr)*10)/10 })
+			.call(endall, function() { //  https://stackoverflow.com/a/20773846/6925100
+				d3.select("#chart").selectAll(line_class)
+				.data(data_nest)
+				.transition().duration(100)	
+				.attr("x1", function(d,i) {
+					if (bool_left_graph) {
+						var temp_id = "id_label1_" + d.values[v_key].values[0].cancer_label;
+						var temp = document.getElementById(temp_id).getBBox().width;
+						console.log(d.values[v_key].values[0].cancer_label)
+						console.log(document.getElementById(temp_id).textContent)
+						console.log(temp)
+						return xScale(d.values[0].values[0].asr)+temp+5;
+					} else {
+						return -line_separation;
+					}
+				})	
+				.attr("stroke", function(d,i) {
+					var rank1 = d.values[0].values[0].rank
+					var rank2 = d.values[1].values[0].rank
+					var rank_diff = rank2-rank1;
+					if (rank_diff > 0) {
+						return "green";
+					} else if (rank_diff < 0){
+						return "red"
+					} else {
+						return "black"
+					}
+				});
+
+			 })
+
+		
 		
 	}
 	
@@ -1007,6 +1037,18 @@
 				}
 			)
 		}
+
+
+	function endall(transition, callback) 
+	{ 
+	    if (typeof callback !== "function") throw new Error("Wrong callback in endall");
+	    if (transition.size() === 0) { callback() }
+	    var n = 0; 
+	    transition 
+	        .each(function() { ++n; }) 
+	        .each("end", function() { if (!--n) callback.apply(this, arguments); }); 
+	 } 
+
 
 
 
