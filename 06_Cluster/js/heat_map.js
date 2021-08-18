@@ -164,7 +164,7 @@ function Heatmap_gen() { // generate heatmap
 			var xAxis = d3.svg.axis() 
                   .scale(xScale)
                   .orient("bottom")
-				  .tickValues([1, 20, 40, 60, 80, 100, 120,140,160,nb_country]);
+				  .tickValues([1, 20, 40, 60, 80, 100, 120,140,160,180]);
 				  
 
 				  
@@ -406,8 +406,8 @@ function sortBars(bool) { // fonction to change batr orders
 		else {
 		
 			var nb_site = 27;  
-			var cl_2 = 25; 
-			var cl_1 = 21; 
+			var cl_2 = 24; 
+			var cl_1 = 19; 
 		}
 		
  		d3.select(".heatmap").selectAll(".rect_stack")	

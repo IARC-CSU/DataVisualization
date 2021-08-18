@@ -1,0 +1,1201 @@
+year,risk,cause,country_code,country_label,area_code,area_label,select,hdi,cause_num,rank
+2000,14.83709,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2000,7.530657,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2000,4.445835,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2001,14.40674,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2001,7.408799,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2001,4.297815,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2002,14.1259,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2002,7.306688,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2002,4.055759,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2003,13.69644,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2003,7.162296,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2003,3.806672,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2004,13.26983,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2004,7.032621,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2004,3.635973,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2005,13.25045,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2005,6.964566,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2005,3.552568,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2006,12.7998,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2006,6.841142,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2006,3.288466,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2007,12.55601,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2007,6.670508,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2007,3.156348,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2008,12.36099,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2008,6.552868,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2008,3.126919,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2009,12.01787,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2009,6.376544,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2009,2.883051,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2010,11.77912,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2010,6.285315,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2010,2.814648,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2011,11.65015,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2011,6.250799,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2011,2.708329,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2012,11.21952,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2012,6.028332,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2012,2.553096,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2013,11.27856,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2013,6.005649,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2013,2.56093,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2014,11.35661,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2014,5.850187,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2014,2.599276,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2015,11.3416,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2015,5.897242,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2015,2.520834,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2016,11.02569,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2016,5.680509,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2016,2.431339,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2017,10.81561,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2017,5.505834,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2017,2.339267,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2018,10.74681,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2018,5.58541,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2018,2.277588,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2019,10.69421,"allncd",36,"Australia",18,"Australia/New Zealand",1,2,0,12
+2019,5.462465,"cancer",36,"Australia",18,"Australia/New Zealand",1,2,1,12
+2019,2.254977,"cvd",36,"Australia",18,"Australia/New Zealand",1,2,2,12
+2000,24.92492,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2000,6.995315,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2000,11.81775,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2001,24.39467,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2001,6.97343,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2001,11.3798,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2002,23.87131,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2002,6.925005,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2002,10.92744,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2003,23.45251,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2003,6.847253,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2003,10.71061,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2004,23.3403,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2004,6.853749,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2004,10.59892,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2005,22.29977,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2005,6.710106,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2005,9.903852,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2006,22.05387,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2006,6.648078,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2006,9.749557,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2007,21.76797,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2007,6.587523,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2007,9.541659,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2008,21.79288,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2008,6.642811,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2008,9.485464,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2009,21.36257,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2009,6.541507,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2009,9.14564,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2010,21.18681,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2010,6.58162,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2010,8.922435,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2011,21.08553,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2011,6.50767,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2011,8.808297,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2012,20.49661,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2012,6.488569,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2012,8.423477,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2013,20.18833,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2013,6.435895,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2013,8.178609,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2014,19.66153,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2014,6.347939,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2014,7.900943,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2015,19.63911,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2015,6.378406,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2015,7.803596,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2016,19.78293,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2016,6.366581,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2016,7.895929,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2017,19.21319,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2017,6.326106,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2017,7.491627,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2018,19.13733,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2018,6.33589,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2018,7.344479,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2019,18.91807,"allncd",76,"Brazil",8,"South America",1,2,0,20
+2019,6.27214,"cancer",76,"Brazil",8,"South America",1,2,1,20
+2019,7.228213,"cvd",76,"Brazil",8,"South America",1,2,2,20
+2000,30.44975,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2000,8.641534,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2000,20.02712,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2001,30.11264,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2001,8.730597,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2001,19.61468,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2002,29.74014,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2002,8.964527,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2002,19.28542,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2003,29.73942,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2003,8.858209,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2003,19.37938,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2004,29.44825,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2004,9.061496,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2004,18.87736,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2005,29.86748,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2005,9.737419,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2005,18.08706,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2006,29.62864,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2006,9.65484,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2006,17.96416,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2007,28.95807,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2007,9.591138,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2007,16.96542,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2008,28.07563,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2008,9.714135,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2008,15.9104,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2009,28.06586,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2009,9.279876,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2009,16.34924,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2010,27.74755,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2010,8.952134,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2010,16.36286,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2011,27.2429,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2011,8.95687,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2011,15.864,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2012,26.61222,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2012,9.371225,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2012,14.90537,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2013,26.19547,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2013,9.283765,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2013,14.5438,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2014,27.2336,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2014,9.239923,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2014,15.35893,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2015,26.83003,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2015,9.228995,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2015,14.88314,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2016,26.91862,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2016,8.803426,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2016,15.20054,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2017,26.99788,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2017,8.798993,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2017,15.29145,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2018,26.96523,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2018,8.686116,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2018,15.14836,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2019,26.71944,"allncd",100,"Bulgaria",14,"Eastern Europe",1,2,0,22
+2019,8.459603,"cancer",100,"Bulgaria",14,"Eastern Europe",1,2,1,22
+2019,15.1559,"cvd",100,"Bulgaria",14,"Eastern Europe",1,2,2,22
+2000,18.09945,"allncd",152,"Chile",8,"South America",1,2,0,13
+2000,7.397169,"cancer",152,"Chile",8,"South America",1,2,1,13
+2000,5.803003,"cvd",152,"Chile",8,"South America",1,2,2,13
+2001,18.88098,"allncd",152,"Chile",8,"South America",1,2,0,13
+2001,7.485404,"cancer",152,"Chile",8,"South America",1,2,1,13
+2001,5.860369,"cvd",152,"Chile",8,"South America",1,2,2,13
+2002,18.3072,"allncd",152,"Chile",8,"South America",1,2,0,13
+2002,7.401921,"cancer",152,"Chile",8,"South America",1,2,1,13
+2002,5.579555,"cvd",152,"Chile",8,"South America",1,2,2,13
+2003,18.38004,"allncd",152,"Chile",8,"South America",1,2,0,13
+2003,7.34521,"cancer",152,"Chile",8,"South America",1,2,1,13
+2003,5.736702,"cvd",152,"Chile",8,"South America",1,2,2,13
+2004,17.89936,"allncd",152,"Chile",8,"South America",1,2,0,13
+2004,7.08247,"cancer",152,"Chile",8,"South America",1,2,1,13
+2004,5.445934,"cvd",152,"Chile",8,"South America",1,2,2,13
+2005,17.42551,"allncd",152,"Chile",8,"South America",1,2,0,13
+2005,7.032568,"cancer",152,"Chile",8,"South America",1,2,1,13
+2005,5.349,"cvd",152,"Chile",8,"South America",1,2,2,13
+2006,17.04323,"allncd",152,"Chile",8,"South America",1,2,0,13
+2006,6.971053,"cancer",152,"Chile",8,"South America",1,2,1,13
+2006,5.114199,"cvd",152,"Chile",8,"South America",1,2,2,13
+2007,17.26216,"allncd",152,"Chile",8,"South America",1,2,0,13
+2007,6.754951,"cancer",152,"Chile",8,"South America",1,2,1,13
+2007,5.31242,"cvd",152,"Chile",8,"South America",1,2,2,13
+2008,16.49305,"allncd",152,"Chile",8,"South America",1,2,0,13
+2008,6.662463,"cancer",152,"Chile",8,"South America",1,2,1,13
+2008,4.966815,"cvd",152,"Chile",8,"South America",1,2,2,13
+2009,16.75833,"allncd",152,"Chile",8,"South America",1,2,0,13
+2009,6.868275,"cancer",152,"Chile",8,"South America",1,2,1,13
+2009,4.943339,"cvd",152,"Chile",8,"South America",1,2,2,13
+2010,16.70246,"allncd",152,"Chile",8,"South America",1,2,0,13
+2010,6.622633,"cancer",152,"Chile",8,"South America",1,2,1,13
+2010,4.927414,"cvd",152,"Chile",8,"South America",1,2,2,13
+2011,16.17676,"allncd",152,"Chile",8,"South America",1,2,0,13
+2011,6.639843,"cancer",152,"Chile",8,"South America",1,2,1,13
+2011,4.718424,"cvd",152,"Chile",8,"South America",1,2,2,13
+2012,15.94248,"allncd",152,"Chile",8,"South America",1,2,0,13
+2012,6.494026,"cancer",152,"Chile",8,"South America",1,2,1,13
+2012,4.641207,"cvd",152,"Chile",8,"South America",1,2,2,13
+2013,15.71819,"allncd",152,"Chile",8,"South America",1,2,0,13
+2013,6.398144,"cancer",152,"Chile",8,"South America",1,2,1,13
+2013,4.673051,"cvd",152,"Chile",8,"South America",1,2,2,13
+2014,15.24416,"allncd",152,"Chile",8,"South America",1,2,0,13
+2014,6.180544,"cancer",152,"Chile",8,"South America",1,2,1,13
+2014,4.597941,"cvd",152,"Chile",8,"South America",1,2,2,13
+2015,14.98446,"allncd",152,"Chile",8,"South America",1,2,0,13
+2015,6.115509,"cancer",152,"Chile",8,"South America",1,2,1,13
+2015,4.337726,"cvd",152,"Chile",8,"South America",1,2,2,13
+2016,14.3591,"allncd",152,"Chile",8,"South America",1,2,0,13
+2016,5.981304,"cancer",152,"Chile",8,"South America",1,2,1,13
+2016,4.002609,"cvd",152,"Chile",8,"South America",1,2,2,13
+2017,13.70894,"allncd",152,"Chile",8,"South America",1,2,0,13
+2017,5.70902,"cancer",152,"Chile",8,"South America",1,2,1,13
+2017,3.766048,"cvd",152,"Chile",8,"South America",1,2,2,13
+2018,13.35666,"allncd",152,"Chile",8,"South America",1,2,0,13
+2018,5.691898,"cancer",152,"Chile",8,"South America",1,2,1,13
+2018,3.648501,"cvd",152,"Chile",8,"South America",1,2,2,13
+2019,13.05289,"allncd",152,"Chile",8,"South America",1,2,0,13
+2019,5.475821,"cancer",152,"Chile",8,"South America",1,2,1,13
+2019,3.451078,"cvd",152,"Chile",8,"South America",1,2,2,13
+2000,17.08077,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2000,6.018269,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2000,7.228027,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2001,16.51767,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2001,5.840115,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2001,6.794283,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2002,16.07429,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2002,5.863232,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2002,6.403887,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2003,16.12988,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2003,5.824985,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2003,6.345745,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2004,15.78072,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2004,5.719198,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2004,6.288344,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2005,15.46692,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2005,5.542564,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2005,6.174738,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2006,15.29593,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2006,5.457634,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2006,6.073658,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2007,14.6264,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2007,5.362423,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2007,5.699642,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2008,14.17962,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2008,5.173531,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2008,5.446,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2009,13.33652,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2009,5.154682,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2009,4.888687,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2010,13.25787,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2010,5.042344,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2010,4.813236,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2011,12.48871,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2011,4.831538,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2011,4.544512,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2012,12.29508,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2012,4.824351,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2012,4.354393,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2013,12.15676,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2013,4.833104,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2013,4.291578,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2014,12.14689,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2014,4.848674,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2014,4.236217,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2015,12.37253,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2015,4.857319,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2015,4.391717,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2016,12.3337,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2016,4.895083,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2016,4.358783,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2017,12.13527,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2017,4.916769,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2017,4.255619,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2018,11.77184,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2018,4.741313,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2018,4.113389,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2019,11.6587,"allncd",170,"Colombia",8,"South America",1,2,0,8
+2019,4.706504,"cancer",170,"Colombia",8,"South America",1,2,1,8
+2019,4.067163,"cvd",170,"Colombia",8,"South America",1,2,2,8
+2000,15.71875,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2000,5.122327,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2000,6.123208,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2001,15.52403,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2001,5.316739,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2001,5.932718,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2002,14.68298,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2002,5.057557,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2002,5.372758,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2003,14.75827,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2003,5.069163,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2003,4.997735,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2004,14.86609,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2004,5.315003,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2004,5.07857,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2005,13.70142,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2005,4.858163,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2005,4.830208,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2006,14.35332,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2006,5.187524,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2006,4.805957,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2007,12.76262,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2007,4.614287,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2007,4.305125,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2008,12.85367,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2008,4.546244,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2008,4.233926,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2009,12.62426,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2009,4.481574,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2009,4.25359,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2010,14.00635,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2010,5.16075,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2010,4.793634,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2011,13.24262,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2011,4.742157,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2011,4.54366,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2012,12.99995,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2012,4.777455,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2012,4.584027,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2013,12.92012,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2013,4.884956,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2013,4.24063,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2014,12.88756,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2014,4.607355,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2014,4.231125,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2015,12.6921,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2015,4.859041,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2015,3.91042,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2016,13.12047,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2016,4.903386,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2016,3.822755,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2017,13.33892,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2017,4.996475,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2017,3.842774,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2018,12.80841,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2018,4.740423,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2018,3.510071,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2019,12.77674,"allncd",188,"Costa Rica",7,"Central America",1,2,0,7
+2019,4.667758,"cancer",188,"Costa Rica",7,"Central America",1,2,1,7
+2019,3.377262,"cvd",188,"Costa Rica",7,"Central America",1,2,2,7
+2000,16.99426,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2000,9.585818,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2000,3.979481,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2001,16.76883,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2001,9.479999,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2001,3.861128,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2002,16.53271,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2002,9.418149,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2002,3.727675,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2003,16.39821,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2003,9.253636,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2003,3.638887,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2004,15.49783,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2004,9.012115,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2004,3.300622,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2005,15.45552,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2005,8.953409,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2005,3.27902,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2006,15.11162,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2006,8.819975,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2006,3.13154,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2007,14.8517,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2007,8.681099,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2007,3.031314,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2008,14.6908,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2008,8.560535,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2008,2.957347,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2009,14.56888,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2009,8.560727,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2009,2.892364,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2010,14.47315,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2010,8.520819,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2010,2.813003,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2011,14.12374,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2011,8.345121,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2011,2.669895,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2012,14.40891,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2012,8.506469,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2012,2.707242,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2013,13.78622,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2013,8.179358,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2013,2.562133,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2014,13.41317,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2014,8.050399,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2014,2.45414,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2015,13.52073,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2015,7.99149,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2015,2.47913,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2016,13.4135,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2016,7.896378,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2016,2.465573,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2017,13.25096,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2017,7.838455,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2017,2.403387,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2018,13.13056,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2018,7.7558,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2018,2.367411,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2019,13.00694,"allncd",250,"France",17,"Western Europe",1,2,0,21
+2019,7.675167,"cancer",250,"France",17,"Western Europe",1,2,1,21
+2019,2.329174,"cvd",250,"France",17,"Western Europe",1,2,2,21
+2000,15.56493,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2000,8.21831,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2000,4.737761,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2001,15.31055,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2001,8.146952,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2001,4.549414,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2002,14.82906,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2002,8.000641,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2002,4.322192,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2003,14.6731,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2003,7.948278,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2003,4.12212,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2004,13.87938,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2004,7.748638,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2004,3.742604,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2005,13.61443,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2005,7.518042,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2005,3.657745,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2006,13.11787,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2006,7.430109,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2006,3.406319,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2007,12.88679,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2007,7.335255,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2007,3.276021,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2008,12.65679,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2008,7.188863,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2008,3.182736,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2009,12.53694,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2009,7.12944,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2009,3.114072,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2010,12.12774,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2010,6.950188,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2010,2.944269,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2011,12.21974,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2011,6.982992,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2011,2.996239,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2012,12.11293,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2012,6.904785,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2012,2.943379,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2013,11.60106,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2013,6.64151,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2013,2.788883,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2014,11.33281,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2014,6.532852,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2014,2.70759,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2015,11.49539,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2015,6.414504,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2015,2.817303,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2016,10.93272,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2016,6.192523,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2016,2.598593,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2017,11.05616,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2017,6.144774,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2017,2.648588,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2018,10.78376,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2018,5.983464,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2018,2.572462,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2019,10.62356,"allncd",380,"Italy",16,"Southern Europe",1,2,0,16
+2019,5.854498,"cancer",380,"Italy",16,"Southern Europe",1,2,1,16
+2019,2.527582,"cvd",380,"Italy",16,"Southern Europe",1,2,2,16
+2000,12.90131,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2000,7.282358,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2000,3.68958,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2001,12.56323,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2001,7.090579,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2001,3.590198,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2002,12.21013,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2002,6.83393,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2002,3.546054,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2003,12.00269,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2003,6.677935,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2003,3.509478,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2004,11.88172,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2004,6.70685,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2004,3.394765,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2005,11.73376,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2005,6.496812,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2005,3.424884,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2006,11.33671,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2006,6.327309,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2006,3.246631,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2007,11.19263,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2007,6.276621,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2007,3.178982,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2008,11.04151,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2008,6.208331,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2008,3.135685,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2009,10.86743,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2009,6.109342,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2009,3.065619,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2010,10.85416,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2010,6.107193,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2010,3.035361,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2011,10.70527,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2011,6.011874,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2011,2.983194,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2012,10.39598,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2012,5.843701,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2012,2.881314,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2013,10.20161,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2013,5.78113,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2013,2.768581,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2014,10.00525,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2014,5.679431,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2014,2.700554,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2015,9.899618,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2015,5.597839,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2015,2.65377,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2016,10.03995,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2016,5.649389,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2016,2.698982,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2017,10.02183,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2017,5.494635,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2017,2.701694,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2018,9.831306,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2018,5.324748,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2018,2.661492,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2019,9.699496,"allncd",392,"Japan",10,"Eastern Asia",1,2,0,11
+2019,5.228813,"cancer",392,"Japan",10,"Eastern Asia",1,2,1,11
+2019,2.60712,"cvd",392,"Japan",10,"Eastern Asia",1,2,2,11
+2000,45.23734,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2000,15.56479,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2000,27.59386,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2001,44.099,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2001,14.78729,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2001,26.94552,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2002,43.11747,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2002,14.20392,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2002,26.34627,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2003,43.93389,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2003,14.27771,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2003,27.11905,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2004,42.09976,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2004,13.4518,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2004,25.82429,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2005,41.92816,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2005,13.39122,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2005,25.68931,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2006,40.68515,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2006,12.9372,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2006,24.69578,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2007,39.97542,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2007,12.7668,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2007,23.97248,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2008,37.53381,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2008,12.06629,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2008,22.03057,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2009,35.40762,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2009,11.48441,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2009,20.24341,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2010,35.74257,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2010,11.71222,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2010,20.09381,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2011,34.77629,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2011,11.38868,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2011,19.05107,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2012,33.63499,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2012,11.1042,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2012,17.89924,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2013,31.45143,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2013,10.40833,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2013,16.37089,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2014,30.32543,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2014,10.11365,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2014,15.42653,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2015,29.59447,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2015,9.889227,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2015,14.75637,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2016,28.74038,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2016,9.695486,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2016,13.96321,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2017,27.98324,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2017,9.499353,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2017,13.0793,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2018,26.80518,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2018,9.066785,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2018,12.6957,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2019,25.98368,"allncd",398,"Kazakhstan",12,"Southern Asia",1,2,0,23
+2019,8.761333,"cancer",398,"Kazakhstan",12,"Southern Asia",1,2,1,23
+2019,12.34372,"cvd",398,"Kazakhstan",12,"Southern Asia",1,2,2,23
+2000,33.42731,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2000,5.171523,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2000,13.58028,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2001,33.24183,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2001,5.906967,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2001,13.18212,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2002,32.76697,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2002,5.529462,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2002,13.6507,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2003,32.347,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2003,5.792092,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2003,13.01773,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2004,32.01278,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2004,6.188404,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2004,12.61196,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2005,31.13334,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2005,5.098179,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2005,12.30334,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2006,30.67029,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2006,5.162866,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2006,11.59307,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2007,30.24626,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2007,5.353923,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2007,12.12246,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2008,29.28407,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2008,5.500827,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2008,10.99421,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2009,28.75505,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2009,5.117184,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2009,10.81786,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2010,27.79071,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2010,4.892027,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2010,9.998762,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2011,27.38056,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2011,4.614499,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2011,9.582285,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2012,26.87638,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2012,5.031569,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2012,8.789466,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2013,26.61957,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2013,5.624576,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2013,8.690809,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2014,26.02319,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2014,5.027697,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2014,8.657247,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2015,26.11083,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2015,5.304989,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2015,9.220954,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2016,25.90977,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2016,4.933527,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2016,9.195525,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2017,25.72959,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2017,5.594144,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2017,8.705825,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2018,25.91698,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2018,4.859135,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2018,9.752401,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2019,26.02417,"allncd",480,"Mauritius",1,"Eastern Africa",1,2,0,9
+2019,5.049614,"cancer",480,"Mauritius",1,"Eastern Africa",1,2,1,9
+2019,8.913264,"cvd",480,"Mauritius",1,"Eastern Africa",1,2,2,9
+2000,22.37808,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2000,5.195777,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2000,6.277598,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2001,22.06737,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2001,5.065153,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2001,6.121142,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2002,22.40748,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2002,5.155716,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2002,6.18277,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2003,22.44421,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2003,5.102864,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2003,6.064844,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2004,21.96213,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2004,5.003884,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2004,5.82424,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2005,22.01845,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2005,4.913059,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2005,5.766965,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2006,21.5123,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2006,4.86169,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2006,5.573546,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2007,21.2849,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2007,4.686745,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2007,5.627423,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2008,21.66418,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2008,4.713283,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2008,5.713787,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2009,21.2748,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2009,4.58859,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2009,5.667381,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2010,21.08689,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2010,4.486751,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2010,5.576334,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2011,20.53086,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2011,4.457689,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2011,5.44895,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2012,20.60187,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2012,4.422024,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2012,5.476188,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2013,20.34203,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2013,4.315674,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2013,5.418343,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2014,20.83525,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2014,4.419576,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2014,5.534018,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2015,20.93674,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2015,4.423923,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2015,5.581933,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2016,21.39605,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2016,4.41005,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2016,5.738569,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2017,21.02758,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2017,4.38093,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2017,5.7329,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2018,20.80771,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2018,4.300053,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2018,5.642254,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2019,20.77666,"allncd",484,"Mexico",7,"Central America",1,2,0,6
+2019,4.273343,"cancer",484,"Mexico",7,"Central America",1,2,1,6
+2019,5.654616,"cvd",484,"Mexico",7,"Central America",1,2,2,6
+2000,17.42836,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2000,8.541849,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2000,6.263179,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2001,17.28096,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2001,8.570261,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2001,6.01164,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2002,16.81811,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2002,8.2181,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2002,5.762516,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2003,16.21465,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2003,8.123527,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2003,5.319315,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2004,15.86753,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2004,8.17075,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2004,5.055998,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2005,14.86012,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2005,7.56626,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2005,4.682968,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2006,14.72754,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2006,7.49993,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2006,4.431838,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2007,14.51591,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2007,7.609112,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2007,4.370713,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2008,13.95913,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2008,7.153618,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2008,4.063063,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2009,13.5982,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2009,6.909882,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2009,3.948034,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2010,13.29749,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2010,7.000371,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2010,3.809165,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2011,13.40934,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2011,7.145491,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2011,3.729915,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2012,12.91457,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2012,6.920159,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2012,3.543451,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2013,12.48484,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2013,6.740893,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2013,3.285756,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2014,12.38378,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2014,6.362849,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2014,3.460846,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2015,12.37915,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2015,6.618836,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2015,3.322688,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2016,12.22076,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2016,6.442069,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2016,3.372527,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2017,12.48472,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2017,6.488833,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2017,3.449893,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2018,11.88892,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2018,6.144182,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2018,3.285711,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2019,11.72628,"allncd",554,"New Zealand",18,"Australia/New Zealand",1,2,0,17
+2019,6.028805,"cancer",554,"New Zealand",18,"Australia/New Zealand",1,2,1,17
+2019,3.248387,"cvd",554,"New Zealand",18,"Australia/New Zealand",1,2,2,17
+2000,16.55847,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2000,8.172523,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2000,5.408347,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2001,16.23662,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2001,8.068143,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2001,5.217449,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2002,16.19563,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2002,8.192947,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2002,5.0276,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2003,15.45606,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2003,7.839735,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2003,4.510803,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2004,14.74446,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2004,7.67835,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2004,4.281569,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2005,14.39243,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2005,7.598409,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2005,3.988511,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2006,14.09061,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2006,7.364336,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2006,3.786692,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2007,14.04208,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2007,7.453631,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2007,3.742998,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2008,13.82852,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2008,7.196967,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2008,3.644621,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2009,13.43466,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2009,7.038753,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2009,3.385508,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2010,13.39689,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2010,7.251036,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2010,3.253465,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2011,12.88064,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2011,6.903435,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2011,3.119104,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2012,12.77361,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2012,6.62804,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2012,3.143361,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2013,12.56368,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2013,6.758911,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2013,2.935181,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2014,11.91385,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2014,6.444612,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2014,2.652832,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2015,11.40372,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2015,6.068351,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2015,2.630616,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2016,11.52184,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2016,6.154991,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2016,2.422338,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2017,11.18691,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2017,5.935456,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2017,2.412582,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2018,10.91214,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2018,5.75526,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2018,2.320745,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2019,10.64538,"allncd",578,"Norway",15,"Northern Europe",1,2,0,14
+2019,5.578739,"cancer",578,"Norway",15,"Northern Europe",1,2,1,14
+2019,2.233779,"cvd",578,"Norway",15,"Northern Europe",1,2,2,14
+2000,27.29523,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2000,6.342487,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2000,13.72892,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2001,28.08938,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2001,6.354536,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2001,14.21548,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2002,28.70837,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2002,6.455367,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2002,14.55324,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2003,28.40758,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2003,6.211208,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2003,14.3215,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2004,28.34206,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2004,6.186161,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2004,14.48846,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2005,28.40714,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2005,6.135297,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2005,14.63116,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2006,29.21239,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2006,6.111011,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2006,14.86406,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2007,28.74773,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2007,5.914779,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2007,14.87889,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2008,28.67058,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2008,5.94462,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2008,14.82238,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2009,28.76085,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2009,5.871478,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2009,15.29206,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2010,28.13565,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2010,5.784393,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2010,15.15104,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2011,27.89391,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2011,5.718869,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2011,15.15399,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2012,28.66946,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2012,5.83938,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2012,15.24229,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2013,28.63182,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2013,5.813974,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2013,15.22422,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2014,27.8397,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2014,5.623818,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2014,14.45525,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2015,28.51721,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2015,5.781098,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2015,14.88814,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2016,28.51358,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2016,5.762131,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2016,14.79066,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2017,28.52651,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2017,5.741701,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2017,14.69995,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2018,28.50091,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2018,5.721172,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2018,14.57722,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2019,28.48032,"allncd",608,"Philippines",11,"South-Eastern Asia",1,2,0,15
+2019,5.698724,"cancer",608,"Philippines",11,"South-Eastern Asia",1,2,1,15
+2019,14.45332,"cvd",608,"Philippines",11,"South-Eastern Asia",1,2,2,15
+2000,28.81423,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2000,11.80548,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2000,14.2068,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2001,28.4478,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2001,11.66625,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2001,13.92941,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2002,27.78584,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2002,11.23786,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2002,13.37053,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2003,27.29118,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2003,11.20294,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2003,13.03031,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2004,26.45329,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2004,10.82411,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2004,12.55761,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2005,26.37179,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2005,10.91075,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2005,12.51606,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2006,25.75176,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2006,10.46346,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2006,12.29548,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2007,25.89092,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2007,10.5519,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2007,12.13757,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2008,24.92458,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2008,10.25773,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2008,11.34136,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2009,24.42232,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2009,10.18436,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2009,11.04266,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2010,23.79164,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2010,10.01359,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2010,10.57237,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2011,22.98744,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2011,10.03881,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2011,9.61041,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2012,22.51897,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2012,9.899913,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2012,8.75329,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2013,22.02724,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2013,10.07329,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2013,8.749348,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2014,21.5096,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2014,9.880649,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2014,8.185263,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2015,20.86114,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2015,9.742505,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2015,7.566704,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2016,20.2851,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2016,9.624026,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2016,7.093979,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2017,19.72018,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2017,9.500281,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2017,6.645505,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2018,19.17099,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2018,9.371638,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2018,6.221919,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2019,18.63233,"allncd",703,"Slovakia",14,"Eastern Europe",1,2,0,24
+2019,9.238591,"cancer",703,"Slovakia",14,"Eastern Europe",1,2,1,24
+2019,5.820178,"cvd",703,"Slovakia",14,"Eastern Europe",1,2,2,24
+2000,38.3532,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2000,13.23809,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2000,22.77163,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2001,37.68725,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2001,12.75864,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2001,22.49841,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2002,38.01868,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2002,12.59066,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2002,22.92897,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2003,38.15274,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2003,12.35727,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2003,23.22325,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2004,38.93279,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2004,12.34809,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2004,23.89463,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2005,39.92222,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2005,12.36846,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2005,24.79937,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2006,38.31161,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2006,11.84301,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2006,23.64426,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2007,38.59056,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2007,12.02678,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2007,23.69586,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2008,38.14887,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2008,12.06884,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2008,23.22801,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2009,34.95953,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2009,11.32755,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2009,20.95726,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2010,33.59863,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2010,11.1252,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2010,19.99963,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2011,32.03882,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2011,10.83485,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2011,18.78711,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2012,31.86159,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2012,10.94442,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2012,18.56063,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2013,30.94407,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2013,10.6815,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2013,17.94185,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2014,31.44818,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2014,10.8753,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2014,18.19245,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2015,29.47112,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2015,10.0638,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2015,17.22523,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2016,29.30421,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2016,10.06542,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2016,17.05244,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2017,28.34365,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2017,9.634859,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2017,16.44687,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2018,29.45329,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2018,9.969889,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2018,17.14479,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2019,28.90328,"allncd",804,"Ukraine",14,"Eastern Europe",1,2,0,25
+2019,9.744941,"cancer",804,"Ukraine",14,"Eastern Europe",1,2,1,25
+2019,16.76,"cvd",804,"Ukraine",14,"Eastern Europe",1,2,2,25
+2000,18.64736,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2000,8.587663,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2000,7.170615,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2001,18.48444,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2001,8.504792,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2001,6.843295,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2002,18.17942,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2002,8.440902,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2002,6.543104,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2003,17.8381,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2003,8.211568,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2003,6.224777,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2004,17.10316,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2004,8.06734,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2004,5.742544,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2005,16.73096,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2005,7.944631,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2005,5.41644,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2006,16.42924,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2006,7.913709,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2006,5.117602,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2007,16.18486,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2007,7.836244,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2007,4.8978,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2008,15.87193,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2008,7.685916,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2008,4.667477,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2009,15.25404,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2009,7.503907,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2009,4.365375,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2010,15.07283,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2010,7.343688,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2010,4.277844,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2011,14.53686,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2011,7.271572,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2011,3.84963,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2012,14.17925,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2012,7.1155,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2012,3.704149,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2013,14.10726,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2013,6.992569,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2013,3.666549,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2014,13.82691,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2014,6.851366,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2014,3.60693,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2015,13.9537,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2015,6.776325,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2015,3.654575,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2016,14.01108,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2016,6.745649,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2016,3.642659,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2017,13.35765,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2017,6.400802,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2017,3.454641,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2018,13.14377,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2018,6.240962,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2018,3.385161,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2019,12.92401,"allncd",826,"UK",15,"Northern Europe",1,2,0,18
+2019,6.082832,"cancer",826,"UK",15,"Northern Europe",1,2,1,18
+2019,3.312771,"cvd",826,"UK",15,"Northern Europe",1,2,2,18
+2000,20.87292,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2000,8.681966,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2000,7.855187,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2001,20.51778,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2001,8.503692,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2001,7.538471,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2002,20.27193,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2002,8.365274,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2002,7.409881,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2003,20.05404,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2003,8.204094,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2003,7.194606,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2004,19.41329,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2004,8.001521,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2004,6.812114,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2005,19.21128,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2005,7.831007,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2005,6.636497,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2006,18.85032,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2006,7.68879,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2006,6.405772,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2007,18.5504,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2007,7.581858,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2007,6.184012,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2008,18.50913,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2008,7.483044,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2008,6.085413,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2009,18.20954,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2009,7.357409,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2009,5.890587,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2010,17.90567,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2010,7.216019,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2010,5.708252,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2011,17.78224,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2011,7.060298,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2011,5.611738,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2012,17.73651,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2012,6.990353,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2012,5.563159,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2013,17.67706,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2013,6.808541,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2013,5.533934,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2014,17.68393,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2014,6.711586,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2014,5.503535,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2015,17.88493,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2015,6.628154,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2015,5.526394,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2016,18.10262,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2016,6.551165,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2016,5.671412,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2017,18.0189,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2017,6.34685,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2017,5.636588,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2018,18.03027,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2018,6.236293,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2018,5.590213,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2019,18.0888,"allncd",840,"USA",9,"Northern America",1,2,0,19
+2019,6.114628,"cancer",840,"USA",9,"Northern America",1,2,1,19
+2019,5.603157,"cvd",840,"USA",9,"Northern America",1,2,2,19
+2000,38.72433,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2000,6.790661,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2000,25.84193,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2001,37.88184,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2001,6.530277,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2001,25.37203,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2002,39.00362,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2002,6.602436,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2002,26.46097,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2003,38.42953,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2003,6.3718,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2003,26.19659,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2004,37.70721,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2004,6.089025,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2004,25.7636,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2005,39.42765,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2005,6.310659,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2005,27.16174,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2006,37.03236,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2006,5.946413,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2006,25.37813,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2007,35.94798,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2007,5.79606,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2007,24.57179,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2008,34.77063,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2008,5.631911,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2008,23.67016,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2009,32.96932,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2009,5.32508,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2009,22.29528,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2010,32.64019,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2010,5.360158,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2010,22.07119,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2011,32.25082,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2011,5.388372,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2011,21.75386,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2012,31.85695,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2012,5.368245,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2012,21.46439,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2013,31.32226,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2013,5.342877,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2013,21.06498,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2014,32.00465,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2014,5.533326,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2014,21.52902,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2015,30.31371,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2015,5.332459,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2015,20.11841,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2016,30.16504,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2016,5.407865,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2016,19.87629,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2017,29.76111,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2017,5.298069,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2017,19.57664,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2018,29.21606,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2018,5.183947,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2018,19.15287,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10
+2019,28.53666,"allncd",860,"Uzbekistan",12,"Southern Asia",1,2,0,10
+2019,5.074772,"cancer",860,"Uzbekistan",12,"Southern Asia",1,2,1,10
+2019,18.62653,"cvd",860,"Uzbekistan",12,"Southern Asia",1,2,2,10

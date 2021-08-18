@@ -24,7 +24,7 @@ function writeDownloadLink(){
 
 	function bubble_evo() // generate heatmap 
 	{	
-		var file_use = "data/ru_data_risk_trend_EURO.csv"; 
+		var file_use = "data/data_risk_trend_EURO.csv"; 
 
 		d3.csv(file_use,
 			
