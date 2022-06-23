@@ -224,9 +224,9 @@
 
 
 		var tick_list = new Object();  
-		tick_list.major = [0,5,10,15,20,25,30];
-		tick_list.minor = [2.5,7.5,12.5,17.5,22.5,27.5];
-		tick_list.value_top = 30; 
+		tick_list.major = [0,5,10,15,20];
+		tick_list.minor = [2.5,7.5,12.5,17.5];
+		tick_list.value_top = 20; 
 		tick_list.value_bottom = 0; 
 
 		
@@ -297,12 +297,12 @@
 			.attr("x2", graph_width+5)
 			.attr("y2", var_height);  
 			
-		graph_select.append("line") // add line for hdi separation
-			.style("stroke", "black")  
-			.attr("x1", xScale(11*(bar_space+1)))
-			.attr("y1", -20)  
-			.attr("x2",xScale(11*(bar_space+1)))
-			.attr("y2", var_height+100);  
+		// graph_select.append("line") // add line for hdi separation
+		// 	.style("stroke", "black")  
+		// 	.attr("x1", xScale(11*(bar_space+1)))
+		// 	.attr("y1", -20)  
+		// 	.attr("x2",xScale(11*(bar_space+1)))
+		// 	.attr("y2", var_height+100);  
 			
 		graph_select.append("text") // add x axis subtitle
 				.attr("class", "y_title")
@@ -315,13 +315,13 @@
 			.attr("class", "y_title")
 			.attr("text-anchor", "middle")
 			.attr("transform", "translate("+xScale(5.5*(bar_space+1))+"," +(var_height +150) + ")")
-			.text("Middle-income countries")
+			.text("Eastern Europe")
 			
-		graph_select.append("text") // add x axis subtitle
-			.attr("class", "y_title")
-			.attr("text-anchor", "middle")
-			.attr("transform", "translate("+xScale(16*(bar_space+1))+"," +(var_height +150) + ")")
-			.text("High-income countries")
+		// graph_select.append("text") // add x axis subtitle
+		// 	.attr("class", "y_title")
+		// 	.attr("text-anchor", "middle")
+		// 	.attr("transform", "translate("+xScale(16*(bar_space+1))+"," +(var_height +150) + ")")
+		// 	.text("High-income countries")
 	
 
 		
@@ -550,9 +550,9 @@
 			})
 			.tween("text", function(d) {
 				if(bool)
-		      		var i = d3.interpolate(  2000 , 2016 );
+		      		var i = d3.interpolate(  2000 , 2019 );
 		      	else
-		      		var i = d3.interpolate(  2016 , 2000 );
+		      		var i = d3.interpolate(  2019 , 2000 );
 		      	return function(t) {
 		        	d3.select(this).text( roundNumber(i(t), 1) );
 		      	};

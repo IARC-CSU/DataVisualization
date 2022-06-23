@@ -144,7 +144,9 @@ form {
 			opacity:1
 		}
 		
-	
+	.tick text {
+		font-size: 20px;
+	}
 
 	.yaxis text {
 		font-family: sans-serif;

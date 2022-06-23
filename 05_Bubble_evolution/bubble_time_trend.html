@@ -32,8 +32,8 @@
 	var ease_effect = "linear"
 	var transition_time = 1000
 	
-	var bar_space = 1.5	// Space between bar 
-	var nb_cancer = 20  // nb of cancer shows (here top 10)
+	var bar_space = 2.5	// Space between bar 
+	var nb_cancer = 10  // nb of cancer shows (here top 10)
 	var label_wrap = 10 // size max of a label on one line
 	
 	
@@ -92,7 +92,7 @@
 	
 	<div id="header" >
 		<div>
-			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2016</a></h1>
+			<h1><a href="#"> Change in risk of dying, 30-69 years old<br/>2000 to 2019</a></h1>
 			<div class="desc">
 				Non-communicable diseases
 			</div>
@@ -117,7 +117,7 @@
 		<br/><br/>
 		<label><input type="radio" id="radio_old"  name="time"  checked="checked" onChange="update(false)"> 2000</label>
 		<br/>
-		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2016</label>
+		<label><input type="radio" id="radio_new" name="time"   onChange="update(true)"> 2019</label>
 		<br/><br/>
 		<a href="#" id="download">Download</a>
 		</form>
