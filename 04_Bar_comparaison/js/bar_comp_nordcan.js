@@ -34,7 +34,7 @@
 				
 				// Keep canada, men 
 				var data_temp = data.filter(function(d){
-					return (d.country_code == 578 & d.sex == 1  )
+					return (d.country_code == 208 & d.sex == 1  )
 				});
 				
 				// I nest by cancer to have group (text, bar and line)
