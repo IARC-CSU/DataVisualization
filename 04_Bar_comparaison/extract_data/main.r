@@ -20,10 +20,36 @@ data_source <- paste0(DATA_FOLDER, "/nordcan/database_92/source")
 
 cases <- as.data.table(readRDS(paste0(API_FOLDER, "/table/nordcan_v92/number.rds")))
 reg <- fread(paste0(API_FOLDER, "/table/nordcan_v92/registry.csv"))
+cancer_dict <- as.data.table(read.csv(paste0(API_FOLDER,"/table/nordcan_v92/cancer.csv")))
 
 cases <- cases[id_code %in%  100:1000 & type == 0, ]
 cases <- melt(cases, measure = patterns("^age"), value.name = c("cases"),variable.name = c("age"))
 cases[, age:=as.numeric(gsub("age","",age))]
+
+#add 0 data for sex specific
+male_cancer <- cancer_dict[gender==1,]$cancer_code
+female_cancer <- cancer_dict[gender==2,]$cancer_code
+
+
+for (i_cancer in male_cancer)
+{
+	dt_temp <- unique(cases[, c("year", "type", "id_code", "age"), with=FALSE])
+	dt_temp[, cases:=0]
+	dt_temp[, sex:=2]
+	dt_temp[, cancer_code:=i_cancer]
+	cases <- rbind(cases, dt_temp)
+}
+
+for (i_cancer in female_cancer)
+{
+	dt_temp <- unique(cases[, c("year", "type", "id_code", "age"), with=FALSE])
+	dt_temp[, cases:=0]
+	dt_temp[, sex:=1]
+	dt_temp[, cancer_code:=i_cancer]
+	cases <- rbind(cases, dt_temp)
+}
+
+
 
 pop <- readRDS(paste0(API_FOLDER,"/table/nordcan_v92/population.rds"))
 pop <- melt(pop, measure = patterns("^age"), value.name = c("pop"),variable.name = c("age"))
@@ -62,11 +88,11 @@ dt_data[, year:=NULL]
 dt_data[, min_year:=NULL]
 dt_data[, max_year:=NULL]
 
-cancer_dict <- as.data.table(read.csv(paste0(API_FOLDER,"/table/nordcan_v92/cancer.csv")))
+
 cancer_dict <- cancer_dict[, c("cancer_code", "label"), with=FALSE]
 
 
-cancer_dict <- cancer_dict[!cancer_code %in% c(90,100,105,970,980,990 ), ]
+cancer_dict <- cancer_dict[!cancer_code %in% c(10,20,30,90,100,230,300,316,321,390,392,401,402,404,405,406,407,408,409,410,420, 430,453,454,455,456,970,980,990 ), ]
 
 dt_data <- merge(dt_data, cancer_dict, by=c("cancer_code"))
 
@@ -86,7 +112,9 @@ setnames(dt_data, "pop", "py")
 
 dt_data[, rank_value:=NULL]
 
-# add to already data for viz
+# add 0 data for sex specific
+
+
 
 
 fwrite(dt_data, "data/nordcan_92.csv", row.names=FALSE)

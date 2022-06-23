@@ -568,6 +568,8 @@
 				.attr("x1", function(d,i) {
 					if (bool_left_graph) {
 						var temp_id = "id_label1_" + d.values[v_key].values[0].cancer_label;
+						console.log(temp_id)
+						console.log(document.getElementById(temp_id))
 						var temp = document.getElementById(temp_id).getBBox().width;
 						console.log(d.values[v_key].values[0].cancer_label)
 						console.log(document.getElementById(temp_id).textContent)
