@@ -1,0 +1,280 @@
+country_label;city_label;lat;long;selection
+Benin;Cotonou;6.370293;2.391236;1
+Botswana;Gaborone;-24.628208;25.923147;1
+Congo;Brazzaville;-4.26336;15.242885;1
+Cote divoire;Abidjan;5.359952;-4.008256;1
+Ethiopia;Addis Ababa;8.980603;38.757761;1
+Reunion;reunion;-20.903941;55.467911;1
+The Gambia;Banjul;13.454876;-16.579032;1
+Ghana;Kumasi;7.946527;-1.023194;0
+Guinea;Conakry;9.641185;-13.578401;1
+Kenya;Eldoret;0.514277;35.26978;1
+Kenya;Nairobi;-1.292066;36.821946;1
+Malawi;Blantyre;-15.766671;35.016787;1
+Mali;Bamako;12.639232;-8.002889;1
+Mauritius;Port louis;-20.160891;57.501222;1
+Mozambique;Beira;-19.796382;34.884487;1
+Mozambique;Maputo;-25.891968;32.605135;0
+Namibia;Windhoek;-22.560881;17.065755;1
+Niger;Niamey;13.511596;2.125385;1
+Nigeria;Abuja;9.076479;7.398574;1
+Nigeria;Calabar;4.975716;8.341701;1
+Nigeria;Ibadan;7.377535;3.94704;1
+Seychelles;Victoria;-4.619143;55.451315;1
+South Africa;Eastern Cape Province;-32.29684;26.419389;1
+South Africa;Johannesburg ;-26.204103;28.047305;1
+Swaziland;Mbabane;-26.305448;31.136672;0
+Uganda;Gulu;2.772404;32.288073;0
+Uganda;Kampala;0.347596;32.58252;1
+Zambia;Lusaka;-15.387526;28.322817;0
+Zimbabwe;Bulawayo;-20.132507;28.626479;1
+Zimbabwe;Harare;-17.825166;31.03351;1
+;Setif;36.0999;5.26;
+;Gharbia;30.881;31.06;
+;Benghazi;32.07;20.04;
+;Blantyre;-15.471;35.021;
+;PROMEC;-32.2;28.09;
+;North;36.48;10.11;
+;Kampala;0.3133;32.5714;
+;Harare;-17.8227;31.0496;
+;Bahia Blanca;-38.4258;-62.17;
+;Cordoba;-31.243;-64.1102;
+;Mendoza;-32.53;-68.49;
+;Tierra del Fuego;-54.362;-67.638;
+;Aracaju;-10.55;-37.03;
+;Belo Horizonte;-19.4901;-43.5721;
+;Cuiaba;-15.3545;-56.0549;
+;Fortaleza;-3.7;-38.3234;
+;Goiania;-16.4;-49.15;
+;Sao Paulo;-23.3252;-46.3811;
+;Biobio Province;-37.23;-71.52;
+;Region of Antofagasta;-23.39;-70.24;
+;Valdivia;-39.483;-73.143;
+;Bucaramanga;7.0728;-73.0654;
+;Cali;3.2516;-76.312;
+;Manizales;5.06;-75.33;
+;Pasto;1.1229;-77.1648;
+;Villa Clara;22.4136;-79.9656;
+;Quito;-0.2295;-78.5243;
+;Cuenca;-2.5357;-79.0055;
+;Martinique (France);14.5997;-61.076;
+;Kingston and St Andrew;17.59;-76.48;
+;Alberta;53.3719;-113.2925;
+;British Columbia;54;-123;
+;Manitoba;55.4;-97.0818;
+;Northwest Territories;62.2632;-114.2351;
+;New Brunswick;45.5727;-66.384;
+;Nova Scotia;44.5116;-63.1157;
+;Prince Edward Island;46.1408;-63.0735;
+;Newfoundland and Labrador;47.343;-52.4226;
+;Yukon;65.4313;-135.0308;
+;Ontario;50.42;-86.3;
+;Quebec;50.3017;-73.3325;
+;Saskatchewan;54.3;-105.4053;
+;Alabama;33;-86;
+;Arizona;34;-112;
+;Arkansas;34.5;-92;
+;California;35.7;-119;
+;California; Los Angeles;34.013;
+;California; San Francisco;37.4645;
+;Colorado;39;-105;
+;Connecticut;41;-72.5;
+;Delaware;39;-75.35;
+;Florida;31;-83;
+;Georgia; Atlanta;33.7545;
+;Idaho;45.5;-115;
+;Illinois;39;-89;
+;Indiana;39;-86;
+;Iowa;42;-92.5;
+;Louisiana; New Orleans;29.58;
+;Maine;45;-68;
+;Massachusetts;42;-71;
+;Michigan; Detroit;42.1953;
+;Mississippi;33;-90;
+;Missouri;38;-92;
+;Montana;46.5;-110;
+;Nebraska;41.5;-100;
+;New Hampshire;44;-71;
+;New Jersey;40;-74;
+;New Mexico;34.5;-105;
+;New York;40.4248;-74.002;
+;North Carolina;35;-80;
+;Ohio;40;-82;
+;Oklahoma;35;-97;
+;Oregon;44;-120;
+;Pennsylvania;41;-77;
+;Rhode Island;41.5;-71.33;
+;South Carolina;33.5;-80.5;
+;South Dakota;44;-102;
+;Tennessee;35.5;-86.3;
+;Texas;30;-100;
+;Utah;40.7716;-111.8882;
+;Vermont;43;-72;
+;Virginia;38;-78;
+;Washington; Seattle;47.3636;
+;West Virginia;38.5;-79;
+;Wisconsin;44.5;-89.5;
+;Wyoming;43;-107.5;
+;Cixian County;36.2141;114.2225;
+;Haining County;30.32;120.41;
+;Hong Kong;22.1655;114.0943;
+;Jiashan County;30.51;120.54;
+;Jiaxing City;30.46;120.45;
+;Beijing;39.545;116.233;
+;Macao;22.1;113.33;
+;Harbin City;45.45;126.38;
+;Qidong County;31.75;121.3925;
+;Shanghai;31.1356;121.2809;
+;Yangcheng County;35.291;112.2453;
+;Yanting County;31.1328;105.2251;
+;Zhongshan City;22.31;113.22;
+;New Delhi;28.6353;77.225;
+;Bangalore;12.58;77.34;
+;Barshi; Paranda and Bhum;18.1403;
+;Bhopal;23.1651;77.2438;
+;Chennai;13.0524;80.1612;
+;Dindigul; Ambillikai;10.35;
+;Karunagappally;9.0316;76.3207;
+;Mizoram;23.36;92;
+;Mumbai;18.583;72.4933;
+;Poona;18.3113;73.5124;
+;Sikkim State;27.33;88.62;
+;Trivandrum;8.2915;76.5709;
+;Golestan Province;36.8393;54.4444;
+;Israel;31.7857;35.2007;
+;Aichi Prefecture;35.1048;136.5448;
+;Fukui Prefecture;35.59;136.11;
+;Hiroshima;34.2307;132.2719;
+;Miyagi Prefecture;38.21;140.58;
+;Nagasaki Prefecture;32.58;129.48;
+;Niigata Prefecture;37.37;138.52;
+;Osaka Prefecture;34.4111;135.3112;
+;Saga Prefecture;33.17;130.1;
+;Busan;35.1046;129.0432;
+;Daegu;35.52;128.36;
+;Daejeon;36.2104;127.2306;
+;Gwangju;35.1;126.55;
+;Incheon;37.29;126.38;
+;Jejudo;33.22;126.32;
+;Seoul;37.3359;126.5869;
+;Ulsan;35.33;129.19;
+;Penang;5.24;100.14;
+;Manila;14.579;120.9726;
+;Rizal;14.4;121.15;
+;Riyadh;24.38;46.43;
+;Bangkok;13.45;100.28;
+;Chiang Mai;18.4743;98.5955;
+;Chonburi;13.2144;100.59;
+;Khon Kaen;16.2641;102.5001;
+;Lampang;18.4146;99.4333;
+;Songkhla;7.1219;100.3549;
+;Antalya;36.54;30.41;
+;Edirne;41.4;27.5;
+;Izmir;38.422;27.129;
+;Trabzon;41;39.44;
+;Tyrol;47.16;11.23;
+;Vorarlberg;47.1437;9.5338;
+;Bas-Rhin;48.49;7.47;
+;Haut-Rhin;47.45;7.15;
+;Calvados;49.02;0.15;
+;Doubs;47.1;6.25;
+;Herault;43.21;3.13;
+;Isere;45.2;5.3;
+;Loire Atlantique;47.2;1.4;
+;Somme;49.53;2.25;
+;Manche;49.03;1.15;
+;Tarn;43.49;2.12;
+;Vendee;46.4;1.2536;
+;Brandenburg;52.5235;13.4115;
+;Bremen;53.0433;8.4827;
+;Free State Of Saxony;51.0137;13.2132;
+;Hamburg;53.3355;10.0005;
+;Mecklenburg-Western Pomerania;53.37;12.42;
+;Munich;48.08;11.34;
+;North Rhine-Westphalia;51.28;7.33;
+;Saarland;49.2259;7;
+;Schleswig-Holstein;54.2812;9.305;
+;Alto Adige;46.2729;11.1652;
+;Biella Province;45.34;8.3;
+;Brescia Province;45.3439;10.1304;
+;Catania and Messina;37.8;15.0525;
+;Catanzaro;38.54;16.36;
+;Ferrara Province;44.5042;11.3758;
+;Florence and Prato Provinces;43.47;11.15;
+;Friuli-Venezia Giulia;46.06;13.07;
+;Genova Province;44.2416;8.5557;
+;Latina;41.5;13;
+;Como Province;45.4843;9.524;
+;Lecco Province;45.51;9.24;
+;Varese Province;45.49;8.5;
+;Mantova;44.54;12.3;
+;Modena Province;44.39;10.56;
+;Naples;40.5042;14.53;
+;Nuoro;40.19;9.2;
+;Palerme;38.07;13.22;
+;Parma Province;44.48;10.2;
+;Ragusa Province;37;14.435;
+;Reggio Emilia Province;44.5667;10.55;
+;Romagna Region;44.45;11;
+;Salerno Province;40.4044;15;
+;Sassari Province;40.44;8.33;
+;Sondrio;46.1;9.52;
+;South Lombardy;45.19;9.3;
+;Syracuse Province;37.05;15.17;
+;Torino;45.04;7.42;
+;Trapani;38.01;13;
+;Trento;46.04;11.07;
+;Umbria Region;42.574;12.3002;
+;Veneto Region;45.3404;11.4837;
+;Eindhoven;51.26;5.28;
+;Cracow;50.0341;19.5618;
+;Kielce;50.5221;20.3755;
+;Lower Silesia;51.07;17.02;
+;Rzeszow;50.2;22;
+;Azores;37.4428;-25.4032;
+;St Petersburg;59.57;30.18;
+;Central Serbia;44.48;20.23;
+;Albacete;38.5944;-1.5121;
+;Asturias;43.2;-6;
+;Basque Country;42.5;-2.41;
+;Canary Islands;28.1;-15.4;
+;Ciudad Real;39;-4;
+;Cuenca;40.04;-2.09;
+;Girona;41.5904;2.4916;
+;Granada;37.1041;-3.3603;
+;La Rioja;42.15;-2.3;
+;Mallorca;39.37;2.59;
+;Murcia;37.591;-1.0749;
+;Navarra;42.49;-1.39;
+;Tarragona;41.1;1;
+;Basel;47.34;7.36;
+;Geneva;46.12;6.09;
+;Graubunden and Glarus;46.45;9.3;
+;Neuchatel;46.5951;6.5586;
+;St Gall-Appenzell;47.25;9.22;
+;Ticino;46.19;8.49;
+;Valais;46.4;7.36;
+;Vaud;46.37;6.33;
+;Zurich;47.22;8.33;
+;England;51.3;-0.7;
+;Thames;51.5002;-0.1262;
+;East of England Region;52.24;0.41;
+;North Western;54;-2.14;
+;Northern and Yorkshire;53.4759;-1.3257;
+;Oxford Region;51.4507;-1.1528;
+;South and Western Regions;51.2;-2.55;
+;Trent;53.2301;-1.2801;
+;West Midlands;52.47;-2.29;
+;Northern Ireland;54.45;-6.29;
+;Scotland;56.51;-4.16;
+;Wales;52;-4;
+;Australian Capital Territory;-35.1829;149.0728;
+;New South Wales;-32;147;
+;Northern Territory;-20;133;
+;Queensland;-23;143;
+;Tasmania;-42;147;
+;Victoria;-37;144;
+;South Australia;-30;135;
+;Western Australia;-26;121;
+;New Zealand;-42.2865;174;
+;Hawaii;21.1841;-157.4747;
