@@ -4,9 +4,10 @@
     var applicant           = true ; 
     var completed           = false ;
 
-    let graph_title         = 'Trainings : number of applicants (478)' ; 
+
+    let graph_title         = 'Number of applications (478)' ; 
     let key_str             = 'application' ; 
-    var gradients           = ['#ffffd4','#bdc9e1','#67a9cf','#0570b0'] ; 
+    var gradients           = ['#4ADEDE','#797EF6','#1AA7EC','#1E2F97'] ; 
     let gradients_labels    = ['<10','[10-50]','[50-100]','>100']
     let color_no_data       = '#f0f0f0' ;
     
@@ -28,10 +29,12 @@
 
     if ( document.location.hash == '#completed' ){
         completed = true ; 
-        graph_title = 'Trainings : number completed (78)' ; 
+        graph_title = 'Number of completions (78)' ; 
+        graph_title = 'IARC Participating States (PS) and Non-IARC PS completion' ; 
         key_str = 'completed' ;
         gradients = ['#fd8d3c','#e31a1c'] ; 
-        gradients_labels    = ['<=10','>10']
+        //gradients_labels    = ['<=10','>10']
+        gradients_labels    = ['Non-IARC PS','IARC Participating states (PS)']
     }
 
     var dataviz_conf = {
@@ -87,7 +90,7 @@
                 var dataset = [] ; 
                 var color = '#7d7d7d' ;
             
-                var data_cancers = [] , row_country , dataset_in = [] ;
+                var data_cancers = [] , row_country , dataset_in = [] , gradient ;
                 let num , pos ; 
 
                 trainings[key_str].forEach((a)=>{
@@ -116,13 +119,19 @@
                             else pos = 0 ;  
                         }
 
+                        gradient =  gradients[pos] ; 
+
+                        if ( completed == true ){
+                            gradient = gradients[ a.participating ]
+                        }
+
                         dataset_in.push({
                             label : a.country , 
                             globocan_id : row_country.globocan_id ,
                             iso : row_country ,
                             num : num , 
                             range : pos ,
-                            color : gradients[pos]
+                            color : gradient
                         })
                     }
                     // 

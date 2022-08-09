@@ -4,6 +4,8 @@ var CanMapConf = {} ;
 
 var Jammu = 'Jammu and Kashmir' ; 
 
+var show_circle         = false ;
+
 var CanMapGraph = function( object ){
 
   // default conf
@@ -1332,30 +1334,32 @@ function drawMap( world ) {
     }
     else
     {
-        group_cirlces
-            .enter().append("circle")
-            .attr("class","bubble")
-            .style('fill', '#cccccc' )
-            .style('fill-opacity', 0.7)
-            .style('stroke','#ffffff')
-            .style('stroke-width','.5px')
-            .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
-            .attr("r",(r)=>{
-                let radius = (r.value == 0 ) ? 0 : 8 ; 
-                return radius ; 
-            })
+        if ( show_circle == true ){
+            group_cirlces
+                .enter().append("circle")
+                .attr("class","bubble")
+                .style('fill', '#cccccc' )
+                .style('fill-opacity', 0.7)
+                .style('stroke','#ffffff')
+                .style('stroke-width','.5px')
+                .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
+                .attr("r",(r)=>{
+                    let radius = (r.value == 0 ) ? 0 : 8 ; 
+                    return radius ; 
+                })
 
-        group_cirlces
-            .enter().append("text")
-            .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
-            .attr('y',5)
-            .attr('text-anchor','middle')
-            .style('font-size','0.8em')
-            .text((t)=>{
-                let text = (t.value == 0 ) ? '' : t.value ; 
-                return text ; 
-            })   
-        ;
+            group_cirlces
+                .enter().append("text")
+                .attr("transform", function(d) { return "translate(" + CanGraphMapPath.centroid(d) + ")"; })
+                .attr('y',5)
+                .attr('text-anchor','middle')
+                .style('font-size','0.8em')
+                .text((t)=>{
+                    let text = (t.value == 0 ) ? '' : t.value ; 
+                    return text ; 
+                })   
+            ;
+        }
     }
 
 

@@ -296,71 +296,88 @@
 	"completed" : [
 	  {
 	    "country": "France",
-	    "completed": "52"
+	    "completed": "52",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Switzerland",
-	    "completed": "3"
+	    "completed": "3",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Sweden",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Belgium",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Germany",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Japan",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Netherlands",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Spain",
-	    "completed": "2"
+	    "completed": "2",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Brazil",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Australia",
-	    "completed": "6"
+	    "completed": "6",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "Ethiopia",
-	    "completed": "2"
+	    "completed": "2",
+	    "participating" : 0
 	  },
 	  {
 	    "country": "Botswana",
-	    "completed": "2"
+	    "completed": "2",
+	    "participating" : 0
 	  },
 	  {
 	    "country": "Uganda",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 0
 	  },
 	  {
 	    "country": "Singapore",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 0
 	  },
 	  {
 	    "country": "Nigeria",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 0
 	  },
 	  {
 	    "country": "India",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  },
 	  {
 	    "country": "South Korea",
-	    "completed": "1"
+	    "completed": "1",
+	    "participating" : 1
 	  }
 	]
 }
