@@ -92,7 +92,7 @@ dt_data[, max_year:=NULL]
 cancer_dict <- cancer_dict[, c("cancer_code", "label"), with=FALSE]
 
 
-cancer_dict <- cancer_dict[!cancer_code %in% c(10,20,30,90,100,230,300,316,321,390,392,401,402,404,405,406,407,408,409,410,420, 430,453,454,455,456,970,980,990 ), ]
+cancer_dict <- cancer_dict[!cancer_code %in% c(10,20,30,90,100,230,316,321,390,392,401,402,404,405,406,407,408,409,410,420, 430,453,454,455,456,970,980,990 ), ]
 
 dt_data <- merge(dt_data, cancer_dict, by=c("cancer_code"))
 
@@ -119,3 +119,5 @@ dt_data[, rank_value:=NULL]
 
 fwrite(dt_data, "data/nordcan_92.csv", row.names=FALSE)
 
+setorder(dt_data, "country_code", "sex", "volume", "rank")
+View(dt_data[country_code == 578,])
