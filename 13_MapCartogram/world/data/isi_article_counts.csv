@@ -1,0 +1,196 @@
+numcode;country;num_articles1990;num_articles1991;Norphans;Ndeath;Test
+4;Afghanistan;2;1;10454;6290;10
+8;Albania;3;18;169;697;10
+12;Algeria;23;217;8444;10393;10
+24;Angola;2;5;9075;5469;10
+32;Argentina;780;4642;6442;16020;10
+51;Armenia;5;43;229;1383;10
+36;Australia;2521;17268;1849;6865;10
+40;Austria;641;4680;509;3388;10
+31;Azerbaijan;9;31;862;3311;10
+44;Bahamas;1;0;52;154;10
+48;Bahrain;13;84;111;214;10
+50;Bangladesh;30;248;18313;34420;10
+52;Barbados;5;40;51;189;10
+112;Belarus;30;67;640;4585;10
+56;Belgium;989;7136;856;4451;10
+84;Belize;0;3;47;64;10
+204;Benin;6;28;2520;1868;10
+64;Bhutan;1;0;85;145;10
+68;Bolivia;1;36;2707;3054;10
+70;Bosnia and Herzegovina;1;2;251;1855;10
+72;Botswana;7;45;477;450;10
+76;Brazil;812;4481;21576;67413;10
+96;Brunei Darussalam;1;13;57;130;10
+100;Bulgaria;379;1723;617;3729;10
+854;Burkina Faso;3;46;6943;4341;10
+108;Burundi;4;17;4676;2672;10
+116;Cambodia;0;1;2878;4407;10
+120;Cameroon;18;144;11355;6489;10
+124;Canada;5496;38581;2572;14646;10
+132;Cape Verde;0;2;69;117;10
+140;Central African Republic;0;16;1230;913;10
+148;Chad;1;3;5168;2867;10
+152;Chile;491;1241;1513;5757;10
+156;China;1299;9801;106571;658630;10
+170;Colombia;33;199;5461;14991;10
+174;Comoros;2;1;295;205;10
+180;Congo, the Democratic Republic of the;20;134;712;647;10
+184;Cook Islands;0;1;22632;14086;10
+188;Costa Rica;63;144;418;1332;10
+384;Cote D'Ivoire;17;94;6414;4983;10
+191;Croatia;6;28;314;2221;10
+192;Cuba;87;235;794;5188;10
+196;Cyprus;1;27;69;371;10
+203;Czechia;1099;4833;604;4518;10
+208;Denmark;730;5696;0;0;10
+262;Djibouti;2;2;0;0;10
+212;Dominica;0;0;0;0;10
+214;Dominican Republic;5;25;0;0;10
+218;Ecuador;8;67;0;0;10
+818;Egypt;301;2088;0;0;10
+222;El Salvador;2;3;0;0;10
+226;Equatorial Guinea;0;2;0;0;10
+232;Eritrea;0;0;0;0;10
+233;Estonia;7;16;0;0;10
+231;Ethiopia;23;194;0;0;10
+238;Falkland Islands (Malvinas);0;0;0;0;10
+242;Fiji;4;34;0;0;10
+246;Finland;675;4819;0;0;10
+250;France;5669;38878;0;0;10
+254;French Guiana;1;17;0;0;10
+258;French Polynesia;6;31;0;0;10
+266;Gabon;7;47;0;0;10
+270;Gambia;23;170;0;0;10
+268;Georgia;7;35;0;0;10
+276;Germany;8303;52698;0;0;10
+288;Ghana;21;96;0;0;10
+292;Gibraltar;0;0;0;0;10
+300;Greece;275;2683;0;0;10
+304;Greenland;3;4;0;0;10
+308;Grenada;0;0;0;0;10
+320;Guatemala;13;81;0;0;10
+324;Guinea;3;6;0;0;10
+624;Guinea-Bissau;1;9;0;0;10
+328;Guyana;2;15;0;0;10
+332;Haiti;1;18;0;0;10
+336;Holy See (Vatican City State);1;4;0;0;10
+340;Honduras;6;17;0;0;10
+348;Hungary;865;3173;0;0;10
+352;Iceland;29;195;0;0;10
+356;India;2702;15883;0;0;10
+360;Indonesia;32;213;0;0;10
+364;Iran, Islamic Republic of;55;234;0;0;10
+368;Iraq;24;151;0;0;10
+372;Ireland;495;3454;0;0;10
+376;Israel;1012;7903;0;0;10
+380;Italy;3214;21589;0;0;10
+388;Jamaica;29;173;0;0;10
+392;Japan;5761;52146;0;0;10
+400;Jordan;33;243;0;0;10
+398;Kazakhstan;8;44;0;0;10
+404;Kenya;88;508;0;0;10
+296;Kiribati;1;0;0;0;10
+408;Korea, Democratic People's Republic of;1;2;0;0;10
+410;Korea, Republic of;384;2269;0;0;10
+414;Kuwait;60;308;0;0;10
+417;Kyrgyzstan;3;6;0;0;10
+418;Lao People's Democratic Republic;0;3;0;0;10
+428;Latvia;11;66;0;0;10
+422;Lebanon;9;94;0;0;10
+426;Lesotho;3;15;0;0;10
+430;Liberia;2;19;0;0;10
+434;Libyan Arab Jamahiriya;11;67;0;0;10
+438;Liechtenstein;9;10;0;0;10
+440;Lithuania;12;17;0;0;10
+442;Luxembourg;8;41;0;0;10
+807;Macedonia, the Former Yugoslav Republic of;0;2;0;0;10
+450;Madagascar;8;40;0;0;10
+454;Malawi;7;59;0;0;10
+458;Malaysia;67;421;0;0;10
+462;Maldives;0;1;0;0;10
+466;Mali;1;28;0;0;10
+470;Malta;0;21;0;0;10
+474;Martinique;3;7;0;0;10
+478;Mauritania;0;2;0;0;10
+480;Mauritius;5;11;0;0;10
+484;Mexico;326;2116;0;0;10
+583;Micronesia, Federated States of;0;0;0;0;10
+498;Moldova, Republic of;8;32;0;0;10
+492;Monaco;7;25;0;0;10
+496;Mongolia;4;58;0;0;10
+504;Morocco;44;371;0;0;10
+508;Mozambique;2;20;0;0;10
+516;Namibia;6;26;0;0;10
+520;Nauru;0;0;0;0;10
+524;Nepal;12;56;0;0;10
+528;Netherlands;1928;15531;0;0;10
+554;New Zealand;563;3465;0;0;10
+558;Nicaragua;3;19;0;0;10
+562;Niger;6;40;0;0;10
+566;Nigeria;222;1149;0;0;10
+570;Niue;0;0;0;0;10
+578;Norway;465;3697;0;0;10
+512;Oman;3;59;0;0;10
+586;Pakistan;91;507;0;0;10
+585;Palau;0;0;0;0;10
+591;Panama;17;72;0;0;10
+598;Papua New Guinea;28;109;0;0;10
+600;Paraguay;2;12;0;0;10
+604;Peru;33;172;0;0;10
+608;Philippines;36;269;0;0;10
+616;Poland;1220;6183;0;0;10
+620;Portugal;338;1069;0;0;10
+634;Qatar;2;62;0;0;10
+642;Romania;200;722;0;0;10
+643;Russian Federation;13983;40406;0;0;10
+646;Rwanda;0;20;0;0;10
+659;Saint Kitts and Nevis;0;0;0;0;10
+662;Saint Lucia;0;7;0;0;10
+670;Saint Vincent and the Grenadines;0;0;0;0;10
+882;Samoa;0;2;0;0;10
+674;San Marino;0;1;0;0;10
+678;Sao Tome and Principe;0;0;0;0;10
+682;Saudi Arabia;156;1301;0;0;10
+686;Senegal;0;4;0;0;10
+690;Seychelles;0;4;0;0;10
+694;Sierra Leone;5;23;0;0;10
+702;Singapore;114;992;0;0;10
+703;Slovakia;9;61;0;0;10
+705;Slovenia;3;20;0;0;10
+90;Solomon Islands;1;13;0;0;10
+706;Somalia;5;18;0;0;10
+710;South Africa;662;4187;0;0;10
+724;Spain;1843;12404;0;0;10
+144;Sri Lanka;19;140;0;0;10
+736;Sudan;19;120;0;0;10
+740;Suriname;0;2;0;0;10
+748;Swaziland;2;16;0;0;10
+752;Sweden;1347;11821;0;0;10
+756;Switzerland;1310;10253;0;0;10
+760;Syrian Arab Republic;9;64;0;0;10
+158;Taiwan, Province of China;325;3656;0;0;10
+762;Tajikistan;3;6;0;0;10
+834;Tanzania, United Republic of;25;162;0;0;10
+764;Thailand;91;553;0;0;10
+768;Togo;4;32;0;0;10
+776;Tonga;0;3;0;0;10
+780;Trinidad and Tobago;15;89;0;0;10
+788;Tunisia;37;322;0;0;10
+792;Turkey;155;1395;0;0;10
+795;Turkmenistan;0;5;0;0;10
+798;Tuvalu;0;2;0;0;10
+800;Uganda;12;55;0;0;10
+804;Ukraine;96;402;0;0;10
+826;United Kingdom;9527;74037;0;0;10
+840;United States;36584;325421;0;0;10
+858;Uruguay;17;112;0;0;10
+860;Uzbekistan;28;97;0;0;10
+548;Vanuatu;1;6;0;0;10
+862;Venezuela;103;587;0;0;10
+704;Viet Nam;25;134;0;0;10
+876;Wallis and Futuna;0;0;0;0;10
+732;Western Sahara;0;0;0;0;10
+887;Yemen;9;28;0;0;10
+894;Zambia;8;86;0;0;10
+716;Zimbabwe;39;228;0;0;10

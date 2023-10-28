@@ -1048,7 +1048,7 @@ function drawMap( world ) {
             }
 
         })
-        .attr('stroke', '#000000' )
+        .attr('stroke', '#f0f0f0' )
         .attr('stroke-width',0.4)
         .attr("id", function(d) { return "code_" + d.id ; }, true) // give each a unique id (check with graph global conf)
         .attr("d", CanGraphMapPath) // create them using the svg path generator defined above
@@ -1282,7 +1282,7 @@ function drawMap( world ) {
             else
                 return CanMapConf.chart.background_globe ; 
         })
-        .style('stroke','#000000')  
+        .style('stroke','transparent')  
         .style('stroke-dasharray',function(d){
             if ( d.properties.AREA == Jammu )
                 return 1 ; 

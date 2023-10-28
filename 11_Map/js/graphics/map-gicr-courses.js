@@ -31,7 +31,7 @@
             'scale' : scale , 
             'globe_translate' : map_translate , 
             'color_scale' : 'quantile' ,
-            'background_globe' : '#fff', 
+            'background_globe' : 'transparent', 
             'copyright' : false , 
             'default_color' : 'OrRd' , 
             //'fill_color' : '#0099cc' , 
@@ -58,7 +58,7 @@
                     'value' : json[j].number ,
                     'ISO_2_CODE' : json[j].ISO_2_CODE ,
                     'globocan_id' : undefined , 
-                    'color' : '#0099cc'
+                    'color' : '#f0f0f0' /* #0099cc */
                 }); 
             }
 
