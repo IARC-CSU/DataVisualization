@@ -1,5 +1,5 @@
 hdi_label,hdi_code,sex,rate1,rate2
-"Low HDI",984,0,"0.65","1.27"
-"Medium HDI",983,0,"2.33","3.83"
-"High HDI",982,0,"7.37","11.51"
-"Very High HDI",981,0,"8.94","11.82"
+"Low HDI",984,0,"0.5","1.1"
+"Medium HDI",983,0,"1.6","2.9"
+"High HDI",982,0,"4.0","7.0"
+"Very High HDI",981,0,"3.6","5.4"

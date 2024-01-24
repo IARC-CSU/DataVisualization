@@ -78,14 +78,14 @@
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2020")
+			.text("2022")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2040")
+			.text("2045")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
 
@@ -189,7 +189,7 @@
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
-				.text("Number of new cases (million)")
+				.text("Number of deaths (million)")
 
 		
 
