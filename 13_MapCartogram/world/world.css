@@ -1,0 +1,125 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    font-family: 'Open Sans', sans-serif;
+    background: #ccc ;
+    padding: 3px 10px ; 
+    border: solid 1px #ccc ;
+    cursor: pointer ;
+    border-radius: 4px ;
+}
+
+button:hover{
+    background: #fff ;
+}
+
+#container {
+    width: 1600px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-weight: 800 ; 
+}
+
+h2 {
+    font-size: 160%;
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+form, form > * {
+    margin: 0;
+}
+
+#map-container {
+    width: 1500px;
+    height: 720px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+#map {
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+}
+
+path#country-10{
+    display: none ; 
+}
+
+path.country {
+    stroke: #666;
+    stroke-width: .5;
+}
+
+path.country:hover {
+    stroke: #000;
+}
+
+form {
+    font-size: 120%;
+}
+
+select {
+    font-size: inherit;
+}
+
+div.filter ul{
+    padding-left: 0px ; 
+}
+
+div.filter ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px ; 
+}
+
+#placeholder {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    left: 0;
+    top: 0;
+}
+
+#theyear {
+    line-height: 0.4em;
+    border: 1px;
+    font-size: 4em;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+#about {
+    width: 100%;
+    font-size: .9em;
+    padding: 20px;
+}
+
+#credits {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 1em;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World scaled by number of maternal orphans</title>
+    <meta charset="utf-8">
+    <meta property="og:image" content="isi_articles_cartogram.png">
+    <script src="world/lib/jquery.min.js"></script>
+    <script src="lib/d3.v3.min.js"></script>
+    <script src="world/lib/colorbrewer.js"></script>
+    <script src="world/lib/topojson.js"></script>
+    <script src="world/cartogram.js"></script>
+    <link rel="stylesheet" href="/world/world.css"></link>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,500&family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="container">
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <h1>World map</h1>
+    <div id="map-container">
+        <div class="filter">
+            <ul>
+                <li><button onclick="reset()">Reset map</button>
+                <li><button onclick="update('Norphans')">No of maternal orphans</button>
+                <li><button onclick="update('Ndeath')">No of cancer deaths in women</button>
+                
+                <!--<li><button onclick="update('num_articles1990')">Articles 1990</button>
+                <li><button onclick="update('num_articles1991')">Articles 1991</button>
+                <li><button onclick="update('Test')">Column test</button>-->
+
+            </ul>
+        </div>
+        <svg id="map"></svg>
+    </div>
+    <form>
+        <p>
+            <!--<label>Scale by <select id="field"></select></label>-->
+            <!--<label>in <select id="year"></select></label>-->
+            <!--<span id="status"></span>-->
+        </p>
+    </form>
+    <div id="about">
+        <h2>About</h2>
+
+        <p> Dataset from Valerie McCormack (tbd) </p>
+        <p>
+            The code (including most of this page) was adapted from the example provided by
+            <a href="https://github.com/shawnbot/d3-cartogram/">shawnbot</a>.
+            You can see the source code over on <a href="https://github.com/jalperin/d3-cartogram">Juan's github</a>.
+        </p>
+
+        <p>
+            This map was produced using
+            <a href="http://d3js.org">d3.js</a> (careful about version d3 v3 - 10 years ago) and <a href="https://github.com/shawnbot/d3-cartogram/">cartogram.js</a>.
+            It was inspired by the out of date map over at <a href="hhttps://worldmapper.org/maps/gdp-2018/">worldmapper.org</a>.
+        </p>
+</div>
+<script>
+
+// hide the form if the browser doesn't do SVG,
+// (then just let everything else fail)
+if (!document.createElementNS) {
+    document.getElementsByTagName("form")[0].style.display = "none";
+}
+
+// field definitions from:
+// <http://www.census.gov/popest/data/national/totals/2011/files/NST-EST2011-alldata.pdf>
+var percent = (function() {
+        var fmt = d3.format(".2f");
+        return function(n) { return fmt(n) + "%"; };
+    })(),
+    years = [1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011],
+    fields = [
+        { name: "Number of Articles in ISI", id: "num_articles", key: "num_articles%d", years: years },
+        { name: "Number of orphans", id: "Norphans", key: "Norphans", years: undefined },
+        { name: "Number of deaths", id: "Ndeath", key: "Ndeath", years: undefined },
+    ],
+    fieldsById = d3.nest()
+        .key( (d) => d.id )
+        .rollup((d) => d[0] )
+        .map(fields),
+    field = fields[1],
+    csv_path = "world/data/orphans.csv" , 
+    // csv_path = "world/data/isi_article_counts.csv" , 
+    year = 1990 ;
+    
+
+    // console.info("colors",colors) ; 
+
+var body = d3.select("body"),
+    stat = d3.select("#status");
+
+var map = d3.select("#map"),
+    zoom = d3.behavior.zoom()
+        .translate([-50,0])
+        .scale(1.5)
+        .scaleExtent([1, 10.0])
+        .on("zoom", updateZoom),
+    layer = map.append("g")
+        .attr("id", "layer"),
+    g_circle = map.append("g")
+        .attr("id","circle"),
+    countries = layer.append("g")
+        .attr("id", "countries")
+        .selectAll("path");
+
+// map.call(zoom);
+updateZoom();
+
+function updateZoom() {
+    var scale = zoom.scale();
+    layer.attr("transform",
+        "translate(" + zoom.translate() + ") " +
+        "scale(" + [scale, scale] + ")");
+
+    g_circle.attr("transform",
+        "translate(" + zoom.translate() + ") " +
+        "scale(" + [scale, scale] + ")");
+}
+
+var proj = d3.geo.equirectangular(),
+    topology,
+    geometries,
+    rawData,
+    dataById = {},
+    carto = d3.cartogram()
+        .projection(proj)
+        .properties(function(d) {
+            if (d.id in dataById) {
+                return dataById[d.id];
+            } else {
+                var tmp = d3.keys(dataById[d3.keys(dataById)[0]]);
+                var ret = {"numcode": d.id};
+                tmp.forEach(function(i){ret[i] = 0});
+                return ret;
+            }
+        })
+        .value(function(d) {
+            return +d.properties[field];
+        });
+
+var segmentized = location.search === "?segmentized",
+    url = ["world","data", segmentized ? "world-segmentized.topojson" : "world-110m.json" ].join("/");
+
+d3.json(url, function(topo) {
+    topology = topo;
+    geometries = topology.objects.countries.geometries;
+    d3.dsv(';')( csv_path , (data) =>{
+        rawData = data;
+        dataById = d3.nest()
+            .key((d) => d.numcode )
+            .rollup((d) => d[0] )
+            .map(data);
+
+        // console.info("dataById",dataById) ; 
+        init();
+    });
+});
+
+function init() {
+    var features = carto.features(topology, geometries),
+        path = d3.geo.path().projection(proj);
+
+    let circles = features.map( d => {
+        d.centroid = path.centroid(d) ; //d3.geo.path().projection(d3.geo.centroid(d));
+        return d ; 
+    })
+
+    console.log("cirlces",circles); 
+    
+
+    countries = countries.data(features)
+        .enter()
+        .append("path")
+        .attr("class", "country")
+        .attr("id", ( d ) => 'country-'+d.id )
+        .attr("name", ( d ) => d.properties.country )
+        .attr("fill", "#fafafa")
+        .attr("d", path) 
+    ;
+
+    countries.append("title");
+
+    /*g_circle.selectAll(".centroid")
+        .data(circles)
+        .enter()
+        .append("circle")
+        .attr("id",d => { return `circle-${d.properties.country}` })
+        .attr("class", "centroid")
+        .attr("fill", "green")
+        .attr("r", 0)
+        .attr("cx", (d) => { return d.centroid[0] })
+        .attr("cy", (d) => { return d.centroid[1] })*/
+
+    //    parseHash();
+}
+
+function reset() 
+{
+    stat.text("");
+    var features = carto.features(topology, geometries), path = d3.geo.path().projection(proj);
+
+    countries.data(features)
+        .transition()
+        .duration(750)
+        .ease("linear")
+        .attr("fill", "#fafafa")
+        .attr("d", path);
+
+    countries.select("title")
+        .text(function(d) {
+            return d.properties.country;
+        });
+
+    $('h1').text("World map") ; 
+}
+
+function update( new_key ) {
+
+    colors = colorbrewer.YlGnBu[4].map( rgb => rgb );
+        
+    var start = Date.now();
+    //    body.classed("updating", true);
+
+    var key = field.key.replace("%d", year) ; 
+
+    if ( new_key != undefined ) key = new_key ; 
+
+
+    let title = "No key/title selected" ; 
+
+    switch( key ){
+        case "Ndeath" : 
+            title = "Number of cancer deaths in women" ; 
+            break ; 
+        case "Norphans" : 
+            title = "Number of maternal orphans due to cancer" ; 
+            break ; 
+    }
+
+    $('h1').text( title ) ; 
+
+        //key = field.key ,
+    var fmt = (typeof field.format === "function")
+                ? field.format
+                : d3.format(field.format || ","),
+        value = function(d) {
+            return +d.properties[key];
+        },
+        values = countries.data()
+            .map(value)
+            .filter(function(n) {
+                return !isNaN(n);
+            })
+            .sort(d3.ascending),
+        lo = 0 , //values[0],
+        hi = values[values.length - 1];
+
+    // console.info("limits",lo,hi,values) ; 
+
+    var color = d3.scale.linear()
+        .range(colors)
+        .domain(lo < 0
+                ? [lo, 0, hi]
+                : [lo, d3.mean(values), hi]);
+
+    // normalize the scale to positive numbers
+    var scale = d3.scale.linear()
+        .domain([lo, hi])
+        .range([1, 1000]);
+
+    // tell the cartogram to use the scaled values
+    carto.value(function(d) {
+        let scaled = scale(value(d));
+        // console.info("=>",d.properties.country,scaled)
+        return scaled ; 
+    });
+
+    // generate the new features, pre-projected
+    var features = carto(topology, geometries).features;
+
+    // update the data
+    countries.data(features)
+        .select("title")
+        .text((d) =>[d.properties.country, fmt( value(d))].join(": ") );
+
+    countries.transition()
+        .duration(750)
+        .ease("linear")
+        .attr("fill", (d) => color( value(d) ) )
+        .attr("d", carto.path );
+}
+
+</script>
+</body>
+</html>

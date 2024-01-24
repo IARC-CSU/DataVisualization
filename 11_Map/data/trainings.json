@@ -1,0 +1,383 @@
+{
+	"application" : [
+	  {
+	    "country": "Nigeria",
+	    "application": "107"
+	  },
+	  {
+	    "country": "Cameroon",
+	    "application": "52"
+	  },
+	  {
+	    "country": "Zambia",
+	    "application": "49"
+	  },
+	  {
+	    "country": "Australia",
+	    "application": "38"
+	  },
+	  {
+	    "country": "United States of America",
+	    "application": "17"
+	  },
+	  {
+	    "country": "India",
+	    "application": "15"
+	  },
+	  {
+	    "country": "Ghana",
+	    "application": "14"
+	  },
+	  {
+	    "country": "Botswana",
+	    "application": "13"
+	  },
+	  {
+	    "country": "United Kingdom",
+	    "application": "11"
+	  },
+	  {
+	    "country": "Uganda",
+	    "application": "10"
+	  },
+	  {
+	    "country": "Kenya",
+	    "application": "8"
+	  },
+	  {
+	    "country": "Ethiopia",
+	    "application": "6"
+	  },
+	  {
+	    "country": "Ireland",
+	    "application": "6"
+	  },
+	  {
+	    "country": "Japan",
+	    "application": "6"
+	  },
+	  {
+	    "country": "Armenia",
+	    "application": "5"
+	  },
+	  {
+	    "country": "Burundi",
+	    "application": "5"
+	  },
+	  {
+	    "country": "Egypt",
+	    "application": "5"
+	  },
+	  {
+	    "country": "Indonesia",
+	    "application": "5"
+	  },
+	  {
+	    "country": "Libya",
+	    "application": "5"
+	  },
+	  {
+	    "country": "Malaysia",
+	    "application": "4"
+	  },
+	  {
+	    "country": "Papua New Guinea",
+	    "application": "4"
+	  },
+	  {
+	    "country": "Switzerland",
+	    "application": "4"
+	  },
+	  {
+	    "country": "Austria",
+	    "application": "3"
+	  },
+	  {
+	    "country": "Colombia",
+	    "application": "3"
+	  },
+	  {
+	    "country": "The Netherlands",
+	    "application": "3"
+	  },
+	  {
+	    "country": "Philippines",
+	    "application": "3"
+	  },
+	  {
+	    "country": "Singapore",
+	    "application": "3"
+	  },
+	  {
+	    "country": "South Africa",
+	    "application": "3"
+	  },
+	  {
+	    "country": "Viet Nam",
+	    "application": "3"
+	  },
+	  {
+	    "country": "Belgium",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Brazil",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Canada",
+	    "application": "2"
+	  },
+	  {
+	    "country": "China",
+	    "application": "2"
+	  },
+	  {
+	    "country": "France",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Hungary",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Italy",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Pakistan",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Qatar",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Rwanda",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Spain",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Sri Lanka",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Sweden",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Tanzania",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Turkey",
+	    "application": "2"
+	  },
+	  {
+	    "country": "Argentina",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Barbados",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Chile",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Democratic Republic of the Congo",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Denmark",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Eritrea",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Germany",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Iraq",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Kazakhstan",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Kuwait",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Lebanon",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Lithuania",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Mexico",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Morocco",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Myanmar",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Namibia",
+	    "application": "1"
+	  },
+	  {
+	    "country": "New Zealand",
+	    "application": "1"
+	  },
+	  {
+	    "country": "West Bank and Gaza Strip",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Paraguay",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Portugal",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Romania",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Saudi Arabia",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Sierra Leone",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Republic of Korea",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Togo",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Tunisia",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Ukraine",
+	    "application": "1"
+	  },
+	  {
+	    "country": "United Arab Emirates",
+	    "application": "1"
+	  },
+	  {
+	    "country": "Uzbekistan",
+	    "application": "1"
+	  }
+	], 
+	"completed" : [
+	  {
+	    "country": "France",
+	    "completed": "52",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Switzerland",
+	    "completed": "3",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Sweden",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Belgium",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Germany",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Japan",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Netherlands",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Spain",
+	    "completed": "2",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Brazil",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Australia",
+	    "completed": "6",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "Ethiopia",
+	    "completed": "2",
+	    "participating" : 0
+	  },
+	  {
+	    "country": "Botswana",
+	    "completed": "2",
+	    "participating" : 0
+	  },
+	  {
+	    "country": "Uganda",
+	    "completed": "1",
+	    "participating" : 0
+	  },
+	  {
+	    "country": "Singapore",
+	    "completed": "1",
+	    "participating" : 0
+	  },
+	  {
+	    "country": "Nigeria",
+	    "completed": "1",
+	    "participating" : 0
+	  },
+	  {
+	    "country": "India",
+	    "completed": "1",
+	    "participating" : 1
+	  },
+	  {
+	    "country": "South Korea",
+	    "completed": "1",
+	    "participating" : 1
+	  }
+	]
+}
