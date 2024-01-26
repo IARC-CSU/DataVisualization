@@ -1744,7 +1744,7 @@
 				cancer_label : d.cancer_label,
 				country_label : d.country_label,
 				asr: +d.asr,
-				value: +d.smoothed,
+				value: +d.asr,
 				national: +d.national
 			};	
 		}		
