@@ -47,10 +47,10 @@ function color_rect(color_coding) { // function to show country by area
 
 function combo_country(thelist) {
 	if (sex_select == "Women") {
-		var file_use = "data/HDI_ASR_women.csv"; 
+		var file_use = "data/HDI_ASR_women_new.csv"; 
 	}	
 	else {
-		var file_use = "data/HDI_ASR_men.csv"; 
+		var file_use = "data/HDI_ASR_men_new.csv"; 
 	}
 
 	d3.csv(file_use,
@@ -112,14 +112,14 @@ function Heatmap_gen() { // generate heatmap
 	bool_cluster = false;
 		if (sex_select == "Women") {
 				
-			var file_use = "data/HDI_ASR_women.csv"; 
+			var file_use = "data/HDI_ASR_women_new.csv"; 
 			var nb_site = 30;  
 			
 		}
 				
 		else {
 
-			var file_use = "data/HDI_ASR_men.csv"; 
+			var file_use = "data/HDI_ASR_men_new.csv"; 
 			var nb_site = 27;
 	
 			
@@ -560,11 +560,11 @@ function select_hdi(hdi_group) { // show only 1 hdi category
 	if (!Flag_selected_country) { // do nothing if only one country select
 		
 		if (sex_select == "Women") {
-			var file_use = "data/HDI_ASR_women.csv"; 
+			var file_use = "data/HDI_ASR_women_new.csv"; 
 		}	
 		else {
 
-		var file_use = "data/HDI_ASR_men.csv";  
+		var file_use = "data/HDI_ASR_men_new.csv";  
 		}
 	
 		d3.csv(file_use,
