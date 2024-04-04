@@ -27,7 +27,7 @@ function color_rect(color_coding) { // function to show country by area
            .duration(1000)
 		   .attr("fill", function(d,i)  {
 					if (color_coding == "hdi") {
-						return color_hdi[d.hdi_group];}
+						return color_hdi[(d.hdi_group) ];}
 					else { return color_area[(d.area_code)-1];}
 					});
 					
@@ -47,22 +47,22 @@ function color_rect(color_coding) { // function to show country by area
 
 function combo_country(thelist) {
 	if (sex_select == "Women") {
-		var file_use = "data/HDI_ASR_women_new.csv"; 
+		var file_use = "data/HDI_ASR_women.csv"; 
 	}	
 	else {
-		var file_use = "data/HDI_ASR_men_new.csv"; 
+		var file_use = "data/HDI_ASR_men.csv"; 
 	}
 
 	d3.csv(file_use,
 		function(d) {
 			return {
 				cl_ord : +d.cl_ord,
-				cancer : d.cancer,
-				area : d.area,
+				cancer : d.cancer_label,
+				area : d.area_label,
 				area_code : +d.area_code,
-				label_country: d.label_country,
+				country_label: d.country_label,
 				asr: +d.asr,
-				worldrank: +d.worldrank,
+				worldrank: +d.CSU_RANK,
 				hdi_group: +d.hdi_group,
 				cancer_code: +d.cancer_code,
 				hdi_value: +d.hdi_value,
@@ -90,7 +90,7 @@ function populate_ComboCountry(data) {
 	
 	var country_list = {};
 	for (i=0;i<nb_country; i++ ) {
-		country_list[datatemp[i].label_country]=datatemp[i].country_code;
+		country_list[datatemp[i].country_label]=datatemp[i].country_code;
 	}
 	
 	country_text = Object.keys(country_list);
@@ -112,14 +112,14 @@ function Heatmap_gen() { // generate heatmap
 	bool_cluster = false;
 		if (sex_select == "Women") {
 				
-			var file_use = "data/HDI_ASR_women_new.csv"; 
+			var file_use = "data/HDI_ASR_women.csv"; 
 			var nb_site = 30;  
 			
 		}
 				
 		else {
 
-			var file_use = "data/HDI_ASR_men_new.csv"; 
+			var file_use = "data/HDI_ASR_men.csv"; 
 			var nb_site = 27;
 	
 			
@@ -132,12 +132,12 @@ function Heatmap_gen() { // generate heatmap
 			return {
 				
 				cl_ord : +d.cl_ord,
-				cancer : d.cancer,
-				area : d.area,
+				cancer : d.cancer_label,
+				area : d.area_label,
 				area_code : +d.area_code,
-				label_country: d.label_country,
+				country_label: d.country_label,
 				asr: +d.asr,
-				worldrank: +d.worldrank,
+				worldrank: +d.CSU_RANK,
 				hdi_group: +d.hdi_group,
 				cancer_code: +d.cancer_code,
 				hdi_value: +d.hdi_value,
@@ -299,13 +299,13 @@ function Heatmap_gen() { // generate heatmap
 			   .append("rect")
 			  .attr("class", function(d,i) { return "element" + " element" + d.hdi_group +" co_lab" + d.country_code+ " area" + d.area_code;})
 			  .classed("bordered", true)
-              .attr("x", function(d,i) { return xScale(nb_country+1-d.worldrank); })
+              .attr("x", function(d,i) { return xScale(d.worldrank); })
               .attr("y", 0)
 			  .attr("rx", 1)
               .attr("ry", 1)
               .attr("width", XgridSize)
               .attr("height", YgridSize)
-			  .attr("fill", function(d,i)  {return color_hdi[d.hdi_group];});
+			  .attr("fill", function(d,i)  {return color_hdi[(d.hdi_group)];});
 			  
 			heatMap.selectAll("rect")  // action with the mouse on the rectangle
 			  .on("mouseover", function(d) {
@@ -322,7 +322,7 @@ function Heatmap_gen() { // generate heatmap
 					.attr("width", 200)
 					.attr("height", 100)
 					.attr("opacity",0.8)
-					.attr("fill", color_hdi[d.hdi_group]);
+					.attr("fill", color_hdi[(d.hdi_group) ]);
 				svg.append("text")
 					.attr("id", "titletip")
 					.attr("x", xScale(nb_country+1) +100 )
@@ -342,7 +342,7 @@ function Heatmap_gen() { // generate heatmap
 					.attr("font-size", "12px")
 					.attr("font-weight", "bold")
 					.attr("fill", "black")
-					.text(d.label_country);
+					.text(d.country_label);
 				svg.append("text")
 					.attr("id", "asrtip")
 					.attr("x", xScale(nb_country+1) +100 )
@@ -397,31 +397,36 @@ function sortBars(bool) { // fonction to change batr orders
 		bool_cluster = bool;
 		if (sex_select == "Women") {
 				
-			var nb_site = 30;  
-			var cl_2 = 22 
-			var cl_1 = 16
+			var nb_site = 30;
+			var cl_1 = 18
+			var cl_2 = 24
+
 			
 		}
 				
 		else {
 		
 			var nb_site = 27;  
-			var cl_2 = 24; 
 			var cl_1 = 19; 
+			var cl_2 = 23; 
+
 		}
+
+
 		
  		d3.select(".heatmap").selectAll(".rect_stack")	
 				.transition()
 				.duration(transitionTime)
 				.attr("y", function(d,i) {
-					if (bool) {	
+					if (bool_cluster) {	
+
 						return rev_yScale2(d.x_cl);
 						}
 					else {return rev_yScale2(d.x);
 					}
 				})
 				.attr("fill", function(d,i) {
-					if (bool) {
+					if (bool_cluster) {
 						
 						if (d.cl_ord < cl_1) {return  "#2C7BB6";}
 						else if (d.cl_ord >=cl_1 & d.cl_ord < cl_2) {return  "#E66101";}
@@ -435,16 +440,20 @@ function sortBars(bool) { // fonction to change batr orders
            .duration(transitionTime)
 		   .attr("transform", function(d, i) { 
 			var cl_ord = d3.values(d)[1][1].cl_ord;
-			if (bool) {	
+			if (bool_cluster) {	
+
 					
 					if (cl_ord < cl_1) {cl_px = 0;}
 					else if (cl_ord >=cl_1 & cl_ord < cl_2) {cl_px = 8;}
 					else if (cl_ord >=cl_2) {cl_px = 16;}
+
 					
 					return "translate(0," +(yScale(cl_ord)+cl_px) + ")";
 				}
 				
-				else {return"translate(0," +yScale(i+1) + ")";};	
+				else {
+					return "translate(0," +yScale(i+1) + ")";
+				};	
            })
 
 		d3.select(".heatmap").selectAll(".column_label")		
@@ -457,7 +466,7 @@ function sortBars(bool) { // fonction to change batr orders
 				else {
 					var cl_ord = d.cl_ord
 				}
-				if (!bool) {
+				if (!bool_cluster) {
 				d3.select(this)
 						.classed("text-highlight_orange", false)
 						.classed("text-highlight_blue", false)
@@ -471,19 +480,20 @@ function sortBars(bool) { // fonction to change batr orders
 				else {
 					var cl_ord = d.cl_ord
 				}
-				if (bool) {
+				if (bool_cluster) {
 				d3.select(this)
 						.classed("text-highlight_orange", function(d,i) {return (cl_ord >= cl_1 & cl_ord < cl_2);})
 						.classed("text-highlight_blue", function(d,i) {return cl_ord <cl_1 ;})	
 						.classed("text-highlight_green", function(d,i) {return (cl_ord >= cl_2);})
 						}
 				});
+
 		d3.select(".heatmap").selectAll(".line_stack1")
 			.data(bar_stack)
 			.transition()
 			.duration(transitionTime)
 			.attr("y1", function(d,i) {
-				if (bool) {
+				if (bool_cluster) {
 					return rev_yScale2(d.x_cl)+(rev_yScale2(d.values)/2);
 				}
 				else {
@@ -491,7 +501,7 @@ function sortBars(bool) { // fonction to change batr orders
 				}
 				})
 				.attr("y2", function(d,i) {
-				if (bool) {
+				if (bool_cluster) {
 					
 					if (d.cl_ord < cl_1) {cl_px = 0;}
 					else if (d.cl_ord >=cl_1 & d.cl_ord < cl_2) {cl_px = 8;}
@@ -505,13 +515,14 @@ function sortBars(bool) { // fonction to change batr orders
 			})
 			.attr("stroke-width", 0.5)
 			.attr("stroke", "black");
+
 				
 				
 		d3.select(".heatmap").selectAll(".axis")		
            .transition()
            .duration(transitionTime)
 		   .attr("transform", function() {
-				if (!bool) {
+				if (!bool_cluster) {
 					return  ("translate(" + ((XgridSize/2))+ "," + (yScale(nb_site+1)) + ")");}
 				else {return  ("translate(" + (XgridSize/2)+ "," + (yScale(nb_site+1)+16) + ")");}
 				});
@@ -520,7 +531,7 @@ function sortBars(bool) { // fonction to change batr orders
            .transition()
            .duration(transitionTime)
 		   .attr("transform", function() {
-				if (!bool) {
+				if (!bool_cluster) {
 					return  ("translate(" + (XgridSize * nb_country) / 2 +  "," + (yScale(nb_site+1) + 35) + ")" );}
 				else {return  ("translate(" + (XgridSize * nb_country) / 2 +  "," + (yScale(nb_site+1) + 35 + 16) + ")" );}
 				});
@@ -560,11 +571,11 @@ function select_hdi(hdi_group) { // show only 1 hdi category
 	if (!Flag_selected_country) { // do nothing if only one country select
 		
 		if (sex_select == "Women") {
-			var file_use = "data/HDI_ASR_women_new.csv"; 
+			var file_use = "data/HDI_ASR_women.csv"; 
 		}	
 		else {
 
-		var file_use = "data/HDI_ASR_men_new.csv";  
+		var file_use = "data/HDI_ASR_men.csv";  
 		}
 	
 		d3.csv(file_use,
@@ -573,12 +584,12 @@ function select_hdi(hdi_group) { // show only 1 hdi category
 				return {
 		
 					cl_ord : +d.cl_ord,
-					cancer : d.cancer,
-					area : d.area,
+					cancer : d.cancer_label,
+					area : d.area_label,
 					area_code : +d.area_code,
-					label_country: d.label_country,
+					country_label: d.country_label,
 					asr: +d.asr,
-					worldrank: +d.worldrank,
+					worldrank: +d.CSU_RANK,
 					hdi_group: +d.hdi_group,
 					cancer_code: +d.cancer_code,
 					hdi_value: +d.hdi_value,
@@ -604,6 +615,7 @@ function select_hdi(hdi_group) { // show only 1 hdi category
 					.key(function(d) {return d.cancer;})
 					.sortKeys(d3.ascending)
 					.entries(datatemp)
+
 		
 				bar_stack = bar_stack_data(datatemp, data_cancer);
 	
@@ -641,7 +653,7 @@ function select_hdi(hdi_group) { // show only 1 hdi category
 				.style("display", "inline");
 		}
 		else {
-			d3.select("#chart").selectAll(".element:not(.element" + hdi_group +")")
+			d3.select("#chart").selectAll(".element:not(.element" + (hdi_group) +")")
 				.style("display", "none");
 		}
 		
@@ -663,6 +675,11 @@ function selected_country(data,country_code) { // function to show only one coun
 			else {
 			datatemp = data;
 			}
+
+
+			datatemp.sort(function(x, y){
+			   return d3.ascending(x.cancer, y.cancer);
+			})
 
 			var data_cancer=d3.nest()
 				.key(function(d) {return d.cancer;})
@@ -690,7 +707,10 @@ function selected_country(data,country_code) { // function to show only one coun
 				.data(datatemp)
 				.transition()
 				.duration(500)
-				.attr("x", function(d) {return xScale(nb_country+1 - d.worldrank) ;});
+				.attr("x", function(d) {
+					return xScale(d.worldrank) ;
+
+				});
 		
 				d3.select("#chart")
 				.transition()
@@ -705,7 +725,7 @@ function selected_country(data,country_code) { // function to show only one coun
 				d3.select("#chart")
 				.selectAll(".title")
 				.data(datatemp)
-				.text( function(d) {return sex_select + ", " + d.label_country;});
+				.text( function(d) {return sex_select + ", " + d.country_label;});
 				
 				}
 			
@@ -752,11 +772,16 @@ function selected_country(data,country_code) { // function to show only one coun
 function bar_stack_data(data, data_cancer) {
 		
 	var sumTotal = d3.sum(data, function(d) {return d.cases})
+		
 	
+
 	var sumOfCases = d3.nest()
 		.key(function(d) {return d.cancer;})
+		.sortKeys(d3.ascending)
 		.rollup(function(v) {return (d3.sum(v, function(d) {return d.cases;}))  ;})
 		.entries(data)
+
+
 
 	var temp_stack = [];
 	for (i=0; i<Object.keys(sumOfCases).length; i++ ) {
@@ -769,6 +794,7 @@ function bar_stack_data(data, data_cancer) {
 	temp_stack.sort(function(x, y){
 		return d3.ascending(x.cl_ord, y.cl_ord);
 	})
+
 	var cl_stack = [];
 	cl_stack.push({
 		cancer: temp_stack[0].cancer,
