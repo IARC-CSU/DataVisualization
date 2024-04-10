@@ -14,7 +14,7 @@
 				
 				rank : +d.rank,
 				cancer_label : d.cancer_label,
-				cancer: +d.cancer,
+				cancer: +d.cancer_code,
 				volume : +d.volume,
 				sex : +d.sex,
 				per1: d.per1,
@@ -82,7 +82,7 @@
 			volume = 1
 			v_key = 0 //volume key for the array or nest data
 		} else {
-			volume = 11
+			volume = 2
 			v_key = 1 
 		}
 		
@@ -254,6 +254,7 @@
 			})
 			.attr("stroke-width", 0.5)
 			.attr("stroke", function(d,i) { // add color to line 
+
 				var rank1 = d.values[0].values[0].rank
 				var rank2 = d.values[1].values[0].rank
 				var rank_diff = rank2-rank1;
@@ -448,7 +449,7 @@
 			var volume = 1;
 			var bar_graph_class = ".bar_graph1"; // to select by class
 		} else {
-			var volume = 11;
+			var volume = 2;
 			var bar_graph_class = ".bar_graph2";
 		}
 	
@@ -568,9 +569,9 @@
 					if (bool_left_graph) {
 						var temp_id = "id_label1_" + d.values[v_key].values[0].cancer_label;
 						var temp = document.getElementById(temp_id).getBBox().width;
-						console.log(d.values[v_key].values[0].cancer_label)
-						console.log(document.getElementById(temp_id).textContent)
-						console.log(temp)
+						// console.log(d.values[v_key].values[0].cancer_label)
+						// console.log(document.getElementById(temp_id).textContent)
+						// console.log(temp)
 						return xScale(d.values[0].values[0].asr)+temp+5;
 					} else {
 						return -line_separation;
@@ -915,7 +916,8 @@
 		var datatemp = data.filter(function(d){
 			return (d.volume == 1 & d.sex == 1 & d.rank == 1)
 		});
-		
+
+
 
 
 		var registry_list = {};
@@ -968,7 +970,7 @@
 					
 					rank : +d.rank,
 					cancer_label : d.cancer_label,
-					cancer: +d.cancer,
+					cancer: +d.cancer_code,
 					volume : +d.volume,
 					sex : +d.sex,
 					per1: d.per1,
@@ -1010,7 +1012,7 @@
 					
 					rank : +d.rank,
 					cancer_label : d.cancer_label,
-					cancer: +d.cancer,
+					cancer: +d.cancer_code,
 					volume : +d.volume,
 					sex : +d.sex,
 					per1: d.per1,

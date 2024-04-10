@@ -14,7 +14,7 @@
 				
 				rank : +d.rank,
 				cancer_label : d.cancer_label,
-				cancer: +d.cancer,
+				cancer: +d.cancer_code,
 				volume : +d.volume,
 				sex : +d.sex,
 				per1: d.per1,
@@ -82,7 +82,7 @@
 			volume = 1
 			v_key = 0 //volume key for the array or nest data
 		} else {
-			volume = 11
+			volume = 2
 			v_key = 1 
 		}
 		
@@ -835,7 +835,7 @@
 			var volume = 1;
 			var bar_graph_class = ".bar_graph1"; // to select by class
 		} else {
-			var volume = 11;
+			var volume = 2;
 			var bar_graph_class = ".bar_graph2";
 		}
 	
@@ -1466,7 +1466,7 @@
 					
 					rank : +d.rank,
 					cancer_label : d.cancer_label,
-					cancer: +d.cancer,
+					cancer: +d.cancer_code,
 					volume : +d.volume,
 					sex : +d.sex,
 					per1: d.per1,
@@ -1508,7 +1508,7 @@
 					
 					rank : +d.rank,
 					cancer_label : d.cancer_label,
-					cancer: +d.cancer,
+					cancer: +d.cancer_code,
 					volume : +d.volume,
 					sex : +d.sex,
 					per1: d.per1,
