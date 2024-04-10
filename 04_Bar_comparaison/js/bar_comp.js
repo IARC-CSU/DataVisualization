@@ -3,7 +3,7 @@
 	
     function bar_comp() // generate heatmap 
 	{ 	
-		var file_use = "data/CI5IvsCI5XI.csv"; 
+		var file_use = "data/CI5IvsCI5XII.csv"; 
 		
 	
 
@@ -959,7 +959,7 @@
 			var sex_select = 2;
 		}
 
-		var file_use = "data/CI5IvsCI5XI.csv"; 
+		var file_use = "data/CI5IvsCI5XII.csv"; 
 		var country_select = document.getElementById('countryList').value;
 
 			 d3.csv(file_use,
@@ -1002,7 +1002,7 @@
 				sex_select = 2;
 			}
 		
-		var file_use = "data/CI5IvsCI5XI.csv"; 
+		var file_use = "data/CI5IvsCI5XII.csv"; 
 
 			d3.csv(file_use,
 				function(d) {
