@@ -1,5 +1,5 @@
-hdi_label,hdi_code,sex,rate1,rate2
-"Low HDI",984,0,"0.5","1.1"
-"Medium HDI",983,0,"1.6","2.9"
-"High HDI",982,0,"4.0","7.0"
-"Very High HDI",981,0,"3.6","5.4"
+hdi_code,country_label,hdi_label,sex,rate1,rate2
+984,Low HDI country,Low HDI,0,0.5,1
+983,Medium HDI country,Medium HDI,0,1.6,2.6
+982,High HDI country,High HDI,0,4,6.4
+981,Very HDI country,Very High HDI,0,3.6,5.1
