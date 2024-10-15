@@ -398,8 +398,8 @@ function sortBars(bool) { // fonction to change batr orders
 		if (sex_select == "Women") {
 				
 			var nb_site = 30;
-			var cl_1 = 18
-			var cl_2 = 24
+			var cl_1 = 17
+			var cl_2 = 23
 
 			
 		}
@@ -407,8 +407,8 @@ function sortBars(bool) { // fonction to change batr orders
 		else {
 		
 			var nb_site = 27;  
-			var cl_1 = 19; 
-			var cl_2 = 23; 
+			var cl_1 = 20; 
+			var cl_2 = 26; 
 
 		}
 
