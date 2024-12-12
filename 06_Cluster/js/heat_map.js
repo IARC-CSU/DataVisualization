@@ -46,10 +46,12 @@ function color_rect(color_coding) { // function to show country by area
 	
 
 function combo_country(thelist) {
-	if (sex_select == "Women") {
+
+	if (sex_select == "Both") {
+		var file_use = file_base + "_both" + ".csv"; 
+	}	else if (sex_select == "Women") {
 		var file_use = file_base + "_women" + ".csv"; 
-	}	
-	else {
+	}	else {
 		var file_use = file_base + "_men" + ".csv"; 
 	}
 
@@ -111,14 +113,18 @@ function populate_ComboCountry(data) {
 
 function Heatmap_gen() { // generate heatmap  	
 	bool_cluster = false;
-		if (sex_select == "Women") {
+
+		if (sex_select == "Both") {
+				
+			var file_use = file_base + "_both" + ".csv"; 
+			var nb_site = 33;  
+			
+		} else if (sex_select == "Women") {
 				
 			var file_use = file_base + "_women" + ".csv"; 
 			var nb_site = 30;  
 			
-		}
-				
-		else {
+		} else {
 
 			var file_use = file_base + "_men" + ".csv"; 
 			var nb_site = 27;
@@ -396,19 +402,23 @@ function Heatmap_gen() { // generate heatmap
 function sortBars(bool) { // fonction to change batr orders
 		
 		bool_cluster = bool;
-		if (sex_select == "Women") {
+		if (sex_select == "Both") {
 				
-			var nb_site = 30;
+			var nb_site = 33;
 			var cl_1 = cluster_group[0][0]
 			var cl_2 = cluster_group[0][1]
 			
-		}
+		}  else if (sex_select == "Women") {
 				
-		else {
-		
-			var nb_site = 27;  
+			var nb_site = 30;
 			var cl_1 = cluster_group[1][0]
 			var cl_2 = cluster_group[1][1]
+			
+		} else {
+		
+			var nb_site = 27;  
+			var cl_1 = cluster_group[2][0]
+			var cl_2 = cluster_group[2][1]
 
 		}
 
@@ -570,14 +580,13 @@ function select_hdi(hdi_group) { // show only 1 hdi category
 
 	if (!Flag_selected_country) { // do nothing if only one country select
 		
-		if (sex_select == "Women") {
-
-			var file_use = file_base + "_women" + ".csv"; 
-		}	
-		else {
-
-			var file_use = file_base + "_men" + ".csv";  
-		}
+	if (sex_select == "Both") {
+		var file_use = file_base + "_both" + ".csv"; 
+	}	else if (sex_select == "Women") {
+		var file_use = file_base + "_women" + ".csv"; 
+	} else {
+		var file_use = file_base + "_men" + ".csv"; 
+	}
 	
 		d3.csv(file_use,
 	

@@ -16,7 +16,7 @@
 		// variable general
 
 		var file_base = "data/HDI_ASR_2002_absolute";
-		var cluster_group = [[17,23], [18,26]]
+		var cluster_group = [[19,25],[17,23], [18,26]]
 		
 		var nb_country = 185;
 				
@@ -77,8 +77,8 @@
 
 		var heatMap; // not sure it need to be initialize ?
 		var bool_cluster = false;
-		var sex_select = "Women";	
-		var nb_site_max = 30;  
+		var sex_select = "Both";	
+		var nb_site_max = 33;  
 		var transitionTime = 1500;
 		var label_padding = -3; // label of the cancer site distance from heatmaps
 		
@@ -147,7 +147,8 @@
 	
 	<form>
     <h4>Sex</h4>
-    <label><input type="radio" id="radio_sex_female" name="sex" checked="checked"  onChange="combo_sex('Women')"> Female</label>
+    <label><input type="radio" id="radio_sex_both" name="sex" checked="checked"  onChange="combo_sex('Both')"> Both sexes</label>
+    <label><input type="radio" id="radio_sex_female" name="sex" onChange="combo_sex('Women')"> Female</label>
     <label><input type="radio" id="radio_sex_male"  name="sex" onChange="combo_sex('Men')"> Male</label>
 	</form>
 	
