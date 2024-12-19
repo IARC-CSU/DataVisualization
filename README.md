@@ -1,6 +1,6 @@
 # IARC/CSU github Dataviz webpage
 
-Welcome to the CSU dataviz gallery, a webpage listing all graphics and datavisualization made by the [https://www.iarc.who.int/branches-csu](Cancer Surveillance Unit). 
+Welcome to the CSU dataviz gallery, a webpage listing all graphics and datavisualization made by the [Cancer Surveillance Unit][https://www.iarc.who.int/branches-csu]. 
 
 The repository is maintained by Mathieu Laversanne and Frédéric LAM.
 Github.io url is https://iarc-csu.github.io/DataVisualization. 
