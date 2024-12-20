@@ -1,19 +1,49 @@
 
+/**
+* Handle permalink
+* @param no param
+**/
+var manageUrl = function( param , value ){
 
+	// window.location.hash = '?sex='+param ;
+	let params = [] , query_string = [] ; // { sex : 0 } ; 
+	let sexes = ['Both','Men','Women']
+
+	switch( param ){
+		case 'sex' : 
+			params.push( { key : 'sex' , value : sexes.indexOf( value ) } ) ; 
+			break ; 
+	}
+
+	params.forEach( ( p ) => {
+		query_string.push( `${p.key}=${p.value}` ) ; 
+	})
+
+	
+	// console.info( "params" , params , sexes , value , sexes.indexOf( value ) ) ;
+	history.pushState( {} , '' , `heat_map_2.1.0.html?`+query_string.join('&') ) ;
+
+	console.info("=>",`heat_map_2.1.0.html?`+query_string.join('&'))
+} ;
+
+var getId = function( id ){
+	return document.getElementById( id ) ; 
+}
 
 function combo_sex(sex) {
 
    sex_select = sex;
    d3.selectAll("svg").remove();
-   // document.getElementById('radio_cluster_off').checked= true;
-   document.getElementById('radio_cluster_on').checked= false;
-   document.getElementById('radio_cluster_off').checked= true;
-   document.getElementById('radio_color_hdi').checked= true;
-   document.getElementById('radio_color_area').checked= false;
-   document.getElementById('countryList').selectedIndex = 0;
+   // getId('radio_cluster_off').checked= true;
+   getId('radio_cluster_on').checked= false;
+   getId('radio_cluster_off').checked= true;
+   getId('radio_color_hdi').checked= true;
+   getId('radio_color_area').checked= false;
+   getId('countryList').selectedIndex = 0;
    Flag_selected_country = false;
    Heatmap_gen();
    
+   manageUrl('sex',sex);
 }
 
 
@@ -99,7 +129,7 @@ function populate_ComboCountry(data) {
 	country_text = Object.keys(country_list);
 	country_text.sort();
 
-	var select  = document.getElementById("countryList")
+	var select  = getId("countryList")
 	
 	for (i=0; i < nb_country; i++ ) {
 		var el = document.createElement("option");
@@ -275,7 +305,7 @@ function Heatmap_gen() { // generate heatmap
 				.attr("x1", -200)
 				.attr("y1", function(d,i) {return YgridSize/2;})
 				.attr("x2", function(d,i) {
-						var temp = document.getElementById(d.key).getBBox().width;
+						var temp = getId(d.key).getBBox().width;
 						return (temp*-1)-10;
 				})
 				.attr("y2", function(d,i) {return YgridSize/2;})
@@ -757,7 +787,7 @@ function selected_country(data,country_code) { // function to show only one coun
 				.selectAll(".title")
 				.text(sex_select);
 				
-				document.getElementById('countryList').selectedIndex = 0;
+				getId('countryList').selectedIndex = 0;
 				
 			}
 			
