@@ -24,6 +24,10 @@
 	}
 
 	body {
+		font-family: "Afacad Flux", serif;
+	  	font-optical-sizing: auto;
+	  	font-weight: 200;
+	  	font-style: normal;
 		line-height: 1;
 	}
 
@@ -1409,7 +1413,7 @@
 	}
 
 	body {
-		background-color: #cccccc;
+		background-color: #fffff;
 		background-size: cover;
 		background-position: top center;
 	}
@@ -1429,9 +1433,6 @@
 
 	body, input, select, textarea {
 		color: rgba(0, 0, 0, 0.65);
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 13pt;
-		font-weight: 200;
 		line-height: 1.65;
 	}
 
@@ -1444,7 +1445,7 @@
 		}
 
 	a {
-		color: inherit;
+		color: #000 ;
 		text-decoration: none;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		-moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -1454,13 +1455,12 @@
 	}
 
 		a:hover {
-			color: #ffffff;
+			text-decoration: underline ;
 			border-bottom-color: transparent;
 		}
 
 	strong, b {
-		color: #ffffff;
-		font-weight: 200;
+		font-weight: 500;
 	}
 
 	em, i {
@@ -2395,6 +2395,7 @@
 			border-bottom: none;
 			display: block;
 			width: 100%;
+			padding:  10px ;
 			margin: 0 0 2em 0;
 			text-align: center;
 			border-radius: 4px;
@@ -2403,35 +2404,41 @@
 			cursor: pointer;
 			outline: 0;
 			overflow: hidden;
+			border: solid 1px #ccc ;
+			box-shadow: 0 4px 20px #0000001a
+		}
+
+		.thumbnails a:hover{
+			text-decoration: #fff ; 
 		}
 		
-			.thumbnails a h3 {
-				background: #676767!important;
-				margin-bottom: 0px!important;
-			}
+		.thumbnails a h3 {
+			background: #676767!important;
+			margin-bottom: 0px!important;
+		}
 
-			.thumbnails a img {
-				display: block;
-				width: 100%;
-				border-top-left-radius: 4px;
-				border-top-right-radius: 4px;
-				opacity: 1.0;
-				transition: opacity .55s ease-in-out;
-				-moz-transition: opacity .55s ease-in-out;
-				-webkit-transition: opacity .55s ease-in-out;
-			}
-			
-			.thumbnails a img:hover {
-				opacity: 0.0;
-				transition: opacity .55s ease-in-out;
-				-moz-transition: opacity .55s ease-in-out;
-				-webkit-transition: opacity .55s ease-in-out;
-			}​
-			
-			
-			.thumbnails a:hover {
-				background-color: rgba(255, 255, 255, 0.25);
-			}
+		.thumbnails a img {
+			display: block;
+			width: 100%;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			opacity: 1.0;
+			transition: opacity .55s ease-in-out;
+			-moz-transition: opacity .55s ease-in-out;
+			-webkit-transition: opacity .55s ease-in-out;
+		}
+		
+		.thumbnails a img:hover {
+			opacity: 0.0;
+			transition: opacity .55s ease-in-out;
+			-moz-transition: opacity .55s ease-in-out;
+			-webkit-transition: opacity .55s ease-in-out;
+		}​
+		
+		
+		.thumbnails a:hover {
+			background-color: rgba(255, 255, 255, 0.25);
+		}
 
 		.thumbnails > div {
 			display: -moz-flex;
@@ -2564,7 +2571,7 @@
 /* Wrapper */
 
 	#wrapper {
-		max-width: 68em;
+		max-width: 90em;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2em;

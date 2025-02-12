@@ -9,3 +9,8 @@ Please ask CSU team in case you want to contribute or have any enquiry.
 
 Each project below has it's own context, using plain html/javascript/css sometimes, VueJS other time, and of course d3js library most of the time. So the purpose of subfolders is to isolate each peace of interactive graphics. 
 
+## Errata
+
+This repository presents multiple advantes but also disavantages to be composed of many subfolders. Here is another repository where a more advanced VueJS(3) and d3JS(7) version cohabitate.
+
+https://github.com/fredericlam/CervicalCancer
