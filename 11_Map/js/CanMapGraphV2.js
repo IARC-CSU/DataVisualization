@@ -855,7 +855,7 @@ function drawMap( world ) {
         }) // give them a class for styling and access later
         // .attr('fill' , t1.url() )
         .attr("fill",(d)=>{ 
-            let color = '#f0f0f0' ; 
+            let color = '#ffffff' ; 
             
             if ( d.properties.UN_CODE == 0 )
             {
@@ -875,7 +875,7 @@ function drawMap( world ) {
             if ( d.values != undefined ) color = d.values.color ; 
             return color ;
         })
-        .attr('stroke', '#000000' )
+        .attr('stroke', CanMapConf.chart.stroke_color )
         .attr('stroke-width',0.4)
         .attr('title',function(d){ 
             return ( d.properties.CNTRY_TERR != '' ) ? d.properties.CNTRY_TERR : d.properties.NAME ; 
@@ -962,6 +962,7 @@ function drawMap( world ) {
                 if ( centroid[1] != NaN && centroid[1] != undefined ) return y = centroid[1] ;
             })
             .text((d)=>{
+                if ( d.values.hide_text != undefined && d.values.hide_text == true ) return '' ; 
                 return d.properties.CNTRY_TERR ;  + ' ('+d.properties.ISO_3_CODE+')';
             })
     }

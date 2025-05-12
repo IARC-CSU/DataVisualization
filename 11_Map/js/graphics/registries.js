@@ -295,9 +295,8 @@
                                 r.color_m = colors_membership[r.membership] ; 
                             }
                             
-                            r.year = getRndInteger(1975,2015) ;         
+                            r.year = getRndInteger(1975,2015) ;       
 
-                            // let globocan_i = countries_info.find()
                         }
                     return r ; 
                     }) 
@@ -307,10 +306,6 @@
                     return (g.geo != undefined) ; 
                 })
 
-                //console.info("to fix",cpt,finds) ; 
-                //console.info("registries",registries) ; 
-                //return ; 
-
                 dataviz_conf.data.src = dataset ; 
 
                 // return ; 
@@ -318,7 +313,8 @@
                 var oMap = new CanChart( dataviz_conf ).render() ;
 
                 // title                 
-                $('h1#graph_title').text( "International Association of Cancer Registries" );
+                // $('h1#graph_title').text( "International Association of Cancer Registries" );
+                $('h1#graph_title').text( "Prototype map exploration" );
 
                 if ( parameters.region != 0 )
                 {
@@ -389,7 +385,9 @@
                     $('ul.filters.filter1').append('<li>'+html+'</li>') ; 
                 })
 
-                
+                // bind continents bubbles
+
+                console.info(" => continents " , continents ) ; 
 
                 membership.forEach( (m,i) => {
                     let button = '<span class="btn" style="background-color:'+colors_membership[m.key]+'">&nbsp;</span>';
@@ -664,7 +662,9 @@
             $('span#department').hide();
         }
 
-        showGraphic('overview') ; 
+        // console.log("REGISTRY",d) ; 
+
+        showGraphic('overview',7600200) ; 
 
         setTimeout(() => {
             // Todo...
@@ -674,19 +674,22 @@
 
     }
 
-    var getGraphic = function( type ){
+    var getGraphic = function( type , population_id ){
 
-        let url_frame = '/tomorrow_v2/en/dataviz/trends?apc_custom=0&group_populations=0&print=1'  ; 
+
+        population_id = 7600200 ; 
+
+        let url_frame = `/iacr/en/dataviz/trends?populations=${population_id}&print=1`  ; 
         let id_span = '#row_trends' ; 
         switch( type )
         {
             case 'cohorts' : 
-                url_frame = '/tomorrow_v2/en/dataviz/trends?apc_custom=0&group_populations=0&types=0_1&populations=903&print=1'  ; 
+                url_frame = `/iacr/en/dataviz/cohorts?populations=${population_id}&print=1`  ; 
                 id_span = '#row_cohorts' ; 
                 break ; 
 
             case 'bars' : 
-                url_frame = '/tomorrow_v2/en/dataviz/bars?mode=population&apc_custom=0&print=1'  ;  
+                url_frame = `/iacr/en/dataviz/bars?mode=cancer&populations=${population_id}&print=1`  ;  
                 id_span = '#row_bars' ; 
                 break ; 
 
@@ -702,12 +705,12 @@
         return { 'frame' : url_frame  , 'span' : id_span } ; 
     }
 
-    var showGraphic = function( type ){
+    var showGraphic = function( type , population_id ){
 
         $('#loader_registry').show() ; 
         $('iframe#frame1').hide() ; 
 
-        let settings = getGraphic( type ) ; 
+        let settings = getGraphic( type , population_id ) ; 
         
         $('.viz_btn a.button')
             .addClass('on')
@@ -731,6 +734,9 @@
             
             // bind iframe
             let frame1 = dataviz_host + settings.frame ; 
+
+            console.info("frame",frame1) ; 
+
             $('iframe#frame1').attr('src', frame1 ) ; 
 
 

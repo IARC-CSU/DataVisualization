@@ -152,11 +152,19 @@ CanMapGraph.prototype = {
         CanMapWidth = ( CanMapConf.width != undefined ) ? CanMapConf.width : $( CanMapConf.container ).width() ,
             CanMapHeight = ( CanMapConf.height != undefined ) ? CanMapConf.height : 700 ;
 
+        // console.log("CanMapWidth / Math.PI ",CanMapWidth / Math.PI,CanMapWidth,Math.PI );
         CanGraphMapProjections = [
           { name: "Aitoff", projection: d3.geo.aitoff()},
           { name: "Globe", projection : d3.geo.orthographic().scale(CanMapConf.chart.globe_scale).translate([CanMapWidth/2,CanMapConf.chart.globe_translate.y]).rotate([0,0]).clipAngle(90 + 1e-6).precision(.3)  }, //.origin([-71.03,42.37])},
           { name: "Mercator", projection: d3.geo.mercator()},
-          { name: "Natural Earth", projection: d3.geo.naturalEarth().scale(CanMapConf.chart.scale).translate( (CanMapConf.chart.translate == null) ? [CanMapWidth/2,320] : CanMapConf.chart.translate )}
+          { name: "Natural Earth", projection: d3.geo.naturalEarth()
+            .scale( CanMapWidth / .25 )
+            .rotate([0, 0])
+            .center([0, 0])
+            .translate([CanMapWidth/2 - 5800, CanMapHeight/2 + 850])
+            /*.scale(CanMapConf.chart.scale)
+            .translate( (CanMapConf.chart.translate == null) ? [CanMapWidth/2,320] : CanMapConf.chart.translate )*/
+            }
         ];
 
         /*options.forEach(function(o) {
@@ -223,10 +231,13 @@ CanMapGraph.prototype = {
         }
         else
         {
+            let trans_ = 'translate(-253.5542010384911,-162.3642858713763)scale(1.6581724928395283)' ;
             CanMapGroup = CanMapSvg.append("g")
                 .attr("id","mapGroup")
                 .attr('class','mapGroup')
-                .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+                //.attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+                // translate(-253.5542010384911,-162.3642858713763)scale(1.6581724928395283)
+                .attr("transform",trans_);
             ;
         }
         
@@ -244,7 +255,7 @@ CanMapGraph.prototype = {
             .domain([ 0, 2000 ])
             .range([ 0, 15 ]);*/
         
-        /*CanGraphMapZoom = d3.behavior.zoom()
+        /* CanGraphMapZoom = d3.behavior.zoom()
             .on("zoom",function() {
                 CanMapGroup.attr("transform","translate("+d3.event.translate.join(",")+")scale("+d3.event.scale+")")
             });
@@ -269,45 +280,41 @@ CanMapGraph.prototype = {
     */ 
     preLoadMapData : function() {
 
-        let url_world_geojson = (  CanMapConf.chart.hd == false ) ? "data/world.geojson" : "data/world-who-out.geojson" ; 
+        let url_tamil_geojson = "./data/tamil_nadu.geojson" ; 
 
         // queue function loads all external data files asynchronously 
         queue()     
             // .defer(d3.json, "data/world-general.topojson" ) // our geometries
-            .defer(d3.json, url_world_geojson )
-            .defer(d3.csv, "data/countries.csv")  // our data specific
-            .defer(d3.csv, "data/regions.csv") 
-            .await(function( error , geometries , countries , regions ){ 
+            .defer(d3.json, url_tamil_geojson )
+            .defer(d3.csv, "./data/tamil-nadu.csv")  // our data specific
+            // .defer(d3.csv, "data/regions.csv") 
+            .await(function( error , geometries , dataset_src  ){ 
+
+                // console.info("geometries",geometries,dataset_src) ; 
 
                 CanGraphGeometries = geometries ; 
-                CanGraphCountries = countries ;
-                CanMapRegions = regions ; 
+                CanGraphCountries = [] ;
+                CanMapRegions = [] ; 
 
                 // call the "filtering" data function 
 
+                let materials = { 'geometries' : geometries , dataset : dataset_src  } ; 
+
+                CanMapConf.data.src = dataset_src ; 
+
                 jsonUrl = CanMapConf.data.url ;
                 loadMapFilterData( jsonUrl , ( CanMapConf.chart.colors == undefined ) ? CanMapConf.chart.default_color : CanMapConf.chart.colors , processData ) ; 
-                return { 'geometries' : geometries , 'countries' : countries } ; 
+                
+                
 
-                // prepare url to call
-                /*if ( CanMapConf.data.url != null )
-                {                    
-                    jsonUrl = CanMapConf.data.url ;
-                    // save cancers array 
-                    var g_cancers = [29] ; 
-                    var g_population = 5 ; 
-                    var query_string = 'population=' + g_population + '&cancers=' + g_cancers.join(',') + '&type=0&prevalence=0&sex=0&statistic=2&show_percent=0&sort=number&continents=0&bar=1&color=Blues'; 
-                  
-                    // rewrite query strings
-                    // canRewriteUrl(query_string) ; 
+                /* materials.geometries.features.map( m => {
+                    console.log("m",m.properties.NAME_2.toUpperCase())
+                    return m ; 
+                }) ;*/ 
 
-                    // build the final url to call
-                    jsonUrl += '?' + query_string + CanMapConf.data.query_string ; 
+                // console.log(materials)
 
-                    loadMapFilterData( jsonUrl , ( CanMapConf.chart.colors == undefined ) ? "Blues" : CanMapConf.chart.colors , processData ) ; 
-
-                    return { 'geometries' : geometries , 'countries' : countries } ; 
-                }*/
+                return materials ; 
 
             });   // once all files are loaded, call the processData function
     } , 
@@ -418,7 +425,7 @@ function zoomRegion( codeCountry , scale , obj , continent_id , area_id ){
         })*/
 
 
-    d3.selectAll('#mapRegistries,#groupContRegistries,#groupAreaRegistries')
+    d3.select('#mapRegistries')
         .transition()
         .duration(transition)
         .attr("transform", translate + "scale(" + k + ")translate(" + -x + "," + -y + ")")
@@ -463,12 +470,6 @@ function zoomRegion( codeCountry , scale , obj , continent_id , area_id ){
                 return '#000' ; 
             else
                 return ( d.properties.continent_id != undefined && parseFloat(d.properties.continent_id) == parseFloat( continent_id ) ) ? '#000' : '#fff' ; 
-        })
-
-    // same for areas circles
-    d3.selectAll('circle.area')
-        .style('opacity',(d)=>{
-            return ( d.continent != undefined && parseFloat(d.continent) == parseFloat( continent_id ) ) ? 1 : 0.1 ;
         })
 }
 
@@ -549,6 +550,8 @@ function setMapColor( key_color )
 
         if ( $.inArray( value , unique_values ) == -1 ) unique_values.push( value ) ; 
     }
+
+    // console.info("setMapColor",CanGraphCurrentKey,domain_values)
 
     //domain_values = domain_values.sort(function(a, b) { return b - a; });
     var range_colors = [] ; 
@@ -753,33 +756,21 @@ function flushTimers() {
 * @param (array) new dataset from user search
 * @return (array)
 */
-function grabValues( CanGraphGeometries,CanGraphCountries, dataset ){
-    
+function grabValues( CanGraphGeometries,CanGraphCountries ){
+        
+    let dataset = CanMapConf.data.src ; 
 
-    for( var geo in CanGraphGeometries.features )
-    {
-        let poly = CanGraphGeometries.features[geo] ;
+    // console.log("dataset or CanMapConf.data.src ",dataset) ; 
 
-        // if ( poly.properties.CNTRY_TERR == "China" ) console.info(poly) ; 
+    CanGraphGeometries.features.map( path => {
 
-        for ( var d in dataset.data )
-        {
-            if ( poly.properties.UN_CODE == dataset.data[d].globocan_id )
-            {
-                // console.info( "found",dataset.data[d] );
-                CanGraphGeometries.features[geo].values = dataset.data[d] ; 
-                break ; 
-            }
-        }
-
-        let region = CanMapRegions.find( c => c.country == poly.properties.UN_CODE )
-
-        if ( region != undefined ){
-            CanGraphGeometries.features[geo].properties.continent_id = region.continent ; 
-            CanGraphGeometries.features[geo].properties.area_id = region.area ;
-        }
-
-    } // end for - loop géometries
+        let data = dataset.find( d => d.district == "MADURAI" ) , 
+            row = dataset.find( d => d.district == path.properties.NAME_2.toUpperCase() ) 
+            ; 
+        // console.log("=>",path.properties.NAME_2.toUpperCase(),row)
+        path.values = row ; 
+        return path ; 
+    })
     
     return CanGraphGeometries ; 
 }
@@ -792,16 +783,19 @@ function grabValues( CanGraphGeometries,CanGraphCountries, dataset ){
 */ 
 function processData( predictions ) {
 
-    this.current_dataset = predictions ;
+    // this.current_dataset = predictions ;
+    
     // link data to geometries
-    grabValues(CanGraphGeometries,CanGraphCountries,predictions) ;
+    grabValues(CanGraphGeometries,predictions) ;
     
     // draw path
     drawMap(CanGraphGeometries);  // let's draw new data set
+    
     // update legends
-    if ( CanMapConf.chart.mode == 'heat') manageLegends(); 
+    // if ( CanMapConf.chart.mode == 'heat') 
+    manageLegends(); 
     // manage title of map
-    if ( CanMapConf.title != false)  manageMapTitle(predictions.title) ; 
+    // if ( CanMapConf.title != false)  manageMapTitle(predictions.title) ; 
     // auto spin globle
     // spinGlobe();
 
@@ -833,18 +827,19 @@ function processUpdateData( predictions ) {
         // CanGraphMapFeatures = d3.selectAll('.country').data( topojson.object(CanGraphGeometries, CanGraphGeometries.objects['general']).geometries ) ; 
 
         // transition color for feach path 
-        CanGraphMapFeatures.transition()  //select all the countries and prepare for a transition to new values
+        d3.selectAll('path.country')
+            .transition()  //select all the countries and prepare for a transition to new values
             .duration(750)  // give it a smooth time period for the transition
-            .attr("class", function(d){ 
-
-                var class_no_data = '' ; 
-
-                if ( d.properties.values.no_data == true ) class_no_data = 'no_data' ; 
-
-                return "country type"+CanMapCurrentType +' '+class_no_data ; 
-            })
-            .attr('fill',  t.url() ) 
+            .attr('fill', (d)=>{
+                let color = '#f0f0f0' ; 
+                // console.log("d",CanGraphCurrentKey,d.values);
+                if ( d.values != undefined ) color = CanGraphMapColor( parseFloat( d.values[CanGraphCurrentKey] ) ) ; 
+                return color ;
+            }) 
         ; 
+
+
+        // console.info("CanGraphMapFeatures",CanGraphMapFeatures) ;
     }
     else if ( CanMapConf.chart.mode == 'bubble')
     {   
@@ -869,7 +864,8 @@ function processUpdateData( predictions ) {
 
 
     // update legends
-    if ( CanMapConf.chart.mode == 'heat') manageLegends(); 
+    // if ( CanMapConf.chart.mode == 'heat') 
+    manageLegends(); 
     
     // update title
     if ( CanMapConf.title != false) manageMapTitle(predictions.title) ;
@@ -899,80 +895,29 @@ function drawMap( world ) {
         }) // give them a class for styling and access later
         // .attr('fill' , t1.url() )
         .attr("fill",(d)=>{ 
-            
-            let cont = continents_i.find( c => parseInt( d.properties.continent_id ) == c.id )
-
-            if ( cont != undefined ) {
-                // console.log("d",d.properties.SOVEREIGN,cont.color) ; 
-                return cont.color ; 
-            }
-
             let color = '#f0f0f0' ; 
-            
-            if ( d.properties.UN_CODE == 0 )
-            {
-                if ( d.properties.CNTRY_TERR == '' )
-                {
-                    if ( d.properties.NAME == 'Lakes' )
-                        return '#ffffff' ; 
-                    else 
-                        return '#7d7d7d' ; 
-                }
-                else
-                {
-                    // console.info( d.properties ) ; 
-                }
-            }
-
-            if ( d.values != undefined ) color = d.values.color ; 
+            if ( d.values != undefined ) color = CanGraphMapColor(parseFloat( d.values[CanGraphCurrentKey] ) ) ; 
             return color ;
         })
         .attr('stroke', '#000000' )
         .attr('stroke-width',0.4)
-        .attr('title',function(d){ 
-            return ( d.properties.CNTRY_TERR != '' ) ? d.properties.CNTRY_TERR : d.properties.NAME ; 
-        })
-        .attr("id", function(d) { return "code_" + d.properties.ISO_3_CODE ; }, true) // give each a unique id (check with graph global conf)
-        .attr("continent",c => c.properties.continent_id)
+        .attr('title',d => d.properties.NAME_2)
+        .attr("id", function(d) { return "code_" + d.properties.NAME_2 ; }, true) // give each a unique id (check with graph global conf)
         .on("mousemove",function(d){
 
-            if ( level == 2 ) return ; 
+            let value = '' ; 
 
-            let current_continent = parseInt( d3.select(this).attr('continent') ) ; 
-            let continent_o = continents_i.find( f => f.id == current_continent )
-            // d3.select(this).style('opacity',1) ; //...attr('fill','#817474')
+            if ( d.values == undefined) value = 'TBD'  ; 
+            else value = d.values[CanGraphCurrentKey]; 
 
-            d3.selectAll('path.country')
-                .attr('opacity',o=>{
-                    if ( current_continent == parseInt( o.properties.continent_id ) )
-                         return 1 ; 
-                    else
-                        return .3 ;
-                })
+            d3.select(this).attr('stroke','#000000')
 
             $('.canTooltip').show(); 
             $('.canTooltip').addClass('canToolTipCountry') ; 
 
-            let area_id = parseInt( d.properties.area_id )
-
-            let areas_list = areas.filter( a => a.continent == current_continent )
-            // console.info("d.properties",d.properties) ; 
-
-            // let html_str   = '<table><tr><td class="metric country">'+d.properties.CNTRY_TERR+'</td><td class="value"></td></tr></table>' ; 
-            /*let html_str  = `<h5 style="padding-top:5px;"><span class="radius_c" style="color:${continent_o.color}"></span>&nbsp;${continent_o.label}</h5>`;
-            html_str += `<table>` ;
-            // html_str += <tr><td class="metric country">${continent_label}</td><td class="value"></td></tr>`
-            html_str += `</table>` ;*/
-
-            //let html_str = '<div class="tooltip-line" style="border-color:'+continent_o.color+';"></div>' ; 
-            let html_str = '' ; 
-            
-            html_str += '<h5 style="text-align:center; font-weight:900;color:'+continent_o.color+';">'+ continent_o.label + ' ('+continent_o.nb_registries+')</h5>' ; 
-            html_str += '<table>' ; 
-            for( let a in areas_list )
-                html_str += `<tr><td class="metric"></td><td class="value">${areas_list[a].label}</td></tr>` ; 
-            // html_str += `<tr><td valign="top" class="metric">Department</td><td valign="top" class="value">${d.department}</td></tr>` ; 
-            html_str += '</table>' ; 
+            // console.log('d',d) ;
+            let html_str   = '<h4>'+d.properties.NAME_2+'</h4>' ;  
+            html_str += '<table><tr><td class="metric country">ASR</td><td class="value">'+value+'</td></tr></table>' ; 
 
             $('.canTooltip').html( html_str ) ;
 
@@ -992,15 +937,14 @@ function drawMap( world ) {
 
             d3.select('.canTooltip')
               .style('top',  (top_y-200)+  'px')
-              .style('left',  (top_x-100)+ 'px');
+              .style('left',  (top_x-50)+ 'px');
 
         })
         .on("mouseout",function(d){
-            if ( level == 2 ) return ; 
+            // if ( level == 2 ) return ; 
             $('.canTooltip').hide();
-            $('.canTooltip').removeClass('canToolTipCountry') ; 
-            // d3.select(this).attr('fill',  Default.color_no_data )
-            d3.selectAll('path.country').attr('opacity',1) ; 
+            // $('.canTooltip').removeClass('canToolTipCountry') ; 
+            // d3.selectAll('path.country').attr('fill','#ccc')
         })
         .attr("d", CanGraphMapPath) // create them using the svg path generator defined above
         .call(
@@ -1221,7 +1165,7 @@ function jumpToCountryGlobe( value ) {
 */ 
 function manageLegends()
 {
-    return ; 
+    // return ; 
     $('g.groupLegend').remove(); 
 
     if ( CanMapConf.chart.legend == true )

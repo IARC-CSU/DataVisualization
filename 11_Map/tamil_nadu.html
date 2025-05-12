@@ -1,0 +1,95 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tamil Nadu map </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/nv.d3.min.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/graphics/tamil.css">
+
+        <link rel="icon" type="image/png" href="favicon.ico" />
+
+
+        <link href='https://fonts.googleapis.com/css?family=Cabin:400,600,700,500' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="app">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title">
+                        {{ message }}
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-md-8">
+                    <div class="main wrapper clearfix" id="map-container">
+                        <select v-model="metric" v-on:change="setKey()">
+                            <option value="asr">Age standardized rate</option>
+                            <option value="cir">Crude Incidence Rate</option>
+                        </select>
+
+                    
+                    </div> <!-- #main -->
+                </div>
+
+                <div class="col-md-4">
+                
+                    <div class="filters">
+                        <ul class="list">
+                            <li></li>
+                        </ul>                        
+                    </div>
+
+                    <div class="databale">
+
+                        <table width="100%" class="dataset_table">
+                            <thead>
+                                <th>District</th><th>{{ metric }}</th>                              
+                            </thead>
+                            <tbody>
+                                <tr v-for="(row,i) in dataset" :class="'row_'+i">
+                                    <td>{{ row.district }}</td>
+                                    <td>{{ row[metric] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+        <script src="./js/jquery.min.js"></script>
+
+        <script src="./js/cangraph.min.js"></script>
+        <script src="./js/CanGraph.js"></script>
+        <script src="./js/MapTamulNadu.js"></script>
+        <script src="./js/textures.min.js"></script>
+
+        <script src="./js/graphics/tamil-nadu.js"></script>
+
+    </body>
+</html>

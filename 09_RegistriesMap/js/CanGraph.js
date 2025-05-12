@@ -35,7 +35,7 @@ var Default  = {
 	'title_font_size' : 14 , 
 	'color_palette' : 'default' , 
 	'color_no_data' : '#f0f0f0' ,  
-	'color_not_applicable' : '#7d7d7d' , 
+	'color_not_applicable' : '#f0f0f0' , 
 	'sort_cancers' : 'total', 
 	'dash_array_border' : 1 ,
 	'dash_border': 0.4 , 

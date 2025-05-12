@@ -6,6 +6,7 @@
 	#graph_title{
 		padding-fleft: 0;
 		margin-left: 0;
+		width: 100% ;
 	}	
 
 	div.overlay{
@@ -57,6 +58,7 @@
 		text-transform: uppercase;
 		font-weight: 800 ; 
 		transition: all 0.2s ease-in-out ;
+		text-shadow: 1px 1px black;
 	}
 
 	ul.filters li a:hover{
@@ -293,6 +295,13 @@
 	    height: 90px;
 	    width: 2px;
 	    position: absolute;
+	}
+
+	span.radius_c{
+		border-radius: 10px;
+		width: 10px;
+		height: 10px;
+		display: inline-block;
 	}
 
 	/* line 581, ../sass/_components.scss */

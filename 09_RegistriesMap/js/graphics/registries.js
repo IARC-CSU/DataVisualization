@@ -138,35 +138,40 @@
 
     var location_pop = 'World' ; 
 
+    var all_registries = [] ;
+
     type = parameters.type ; 
 
     var continents_i = [
-        { 'id':1, 'label': 'Africa' ,'color': '#1f77b4' , 'centroid' : 'CAF' , 'zoom' : 1.5 } ,
-        { 'id':2, 'label': 'America Latin' , 'color': '#ff7f0e' , 'centroid' : 'BRA' , 'zoom' : 1.7, 'real_label' : 'Latin America'} ,
-        { 'id':3, 'label': 'America North' , 'color': '#2ca02c' , 'centroid' : 'USA' , 'zoom' : 2.4, 'real_label' : 'North America'} ,
-        { 'id':4, 'label': 'Asia' , 'color': '#d62728' , 'centroid' : 'IND' , 'zoom' : 2} , 
-        { 'id':5, 'label': 'Europe' , 'color': '#9467bd' , 'centroid' : 'UKR' , 'zoom' : 2.5} , 
-        { 'id':6, 'label': 'Oceania' , 'color': '#17becf' , 'centroid' : 'AUS' , 'zoom' : 3} 
+        { 'id':1, 'label': 'Africa' ,'color': '#e30d23' , 'centroid' : 'CAF' , 'zoom' : 1.5 , 'nb_registries' : 5 } ,
+        { 'id':2, 'label': 'Latin America' , 'color': '#F6F33e' , 'centroid' : 'BRA' , 'zoom' : 1.7, 'real_label' : 'Latin America', 'nb_registries' : 5 } ,
+        { 'id':3, 'label': 'North America' , 'color': '#79253c' , 'centroid' : 'USA' , 'zoom' : 2.4, 'real_label' : 'North America', 'nb_registries' : 5 } ,
+        { 'id':4, 'label': 'Asia' , 'color': '#35ad24' , 'centroid' : 'IND' , 'zoom' : 2, 'nb_registries' : 5 } , 
+        { 'id':5, 'label': 'Europe' , 'color': '#216cE2' , 'centroid' : 'UKR' , 'zoom' : 2.5, 'nb_registries' : 5 } , 
+        { 'id':6, 'label': 'Oceania' , 'color': '#e312CF' , 'centroid' : 'AUS' , 'zoom' : 3 , 'nb_registries' : 5 } 
     ];
 
     var areas = [
         //{"id":188,"area":9,"label":"North America","continent":2,"centroid":"USA"},
-        {"id":189,"area":10,"label":"Eastern Asia","continent":4,"centroid":"CHN"},
-        {"id":190,"area":1,"label":"Eastern Africa","continent":1,"centroid":"RWA","zoom":3.2},
-        {"id":191,"area":2,"label":"Middle Africa","continent":1,"centroid":"GNQ","zoom":3.1},
-        {"id":192,"area":3,"label":"Northern Africa","continent":1,"centroid":"LBY"},
-        {"id":193,"area":4,"label":"Southern Africa","continent":1,"centroid":"BWA","zoom":5.5},
-        {"id":194,"area":5,"label":"Western Africa","continent":1,"centroid":"MLI","zoom":4},
-        {"id":195,"area":6,"label":"Caribbean","continent":2,"centroid":"DOM","zoom":5.5},
-        {"id":196,"area":7,"label":"Central America","continent":2,"centroid":"MEX"},
-        {"id":197,"area":11,"label":"South-Eastern Asia","continent":4,"centroid":"KHM","zoom":3.2},
-        {"id":198,"area":12,"label":"South-Central Asia","continent":4,"centroid":"IRN","zoom":2.9},
-        {"id":199,"area":13,"label":"Western Asia","continent":4,"centroid":"KWT","zoom":4.1},
-        {"id":200,"area":14,"label":"Central and Eastern Europe","continent":5,"centroid":"UKR","zoom":3.1},
-        {"id":201,"area":15,"label":"Northern Europe","continent":5,"centroid":"DNK","zoom":4.6},
-        {"id":202,"area":16,"label":"Southern Europe","continent":5,"centroid":"ITA","zoom":5},
-        {"id":203,"area":17,"label":"Western Europe","continent":5,"centroid":"FRA","zoom":7},
-        {"id":206,"area":8,"label":"South America","continent":2,"centroid":"BOL","zoom":2.1}
+        {"id":189,"area":10,"label":"Eastern Asia","continent":4,"centroid":"CHN" , 'color': '#d62728'},
+        {"id":190,"area":1,"label":"Eastern Africa","continent":1,"centroid":"RWA","zoom":3.2,'color': '#1f77b4'},
+        {"id":191,"area":2,"label":"Middle Africa","continent":1,"centroid":"GNQ","zoom":3.1,'color': '#1f77b4'},
+        {"id":192,"area":3,"label":"Northern Africa","continent":1,"centroid":"LBY",'color': '#1f77b4'},
+        {"id":193,"area":4,"label":"Southern Africa","continent":1,"centroid":"BWA","zoom":5.5,'color': '#1f77b4'},
+        {"id":194,"area":5,"label":"Western Africa","continent":1,"centroid":"MLI","zoom":4,'color': '#1f77b4'},
+        {"id":195,"area":6,"label":"Caribbean","continent":2,"centroid":"DOM","zoom":5.5, 'color': '#ff7f0e' },
+        {"id":196,"area":7,"label":"Central America","continent":2,"centroid":"MEX", 'color': '#ff7f0e' },
+        {"id":197,"area":11,"label":"South-Eastern Asia","continent":4,"centroid":"KHM","zoom":3.2 , 'color': '#d62728'},
+        {"id":198,"area":12,"label":"South-Central Asia","continent":4,"centroid":"TKM","zoom":2.9 , 'color': '#d62728'},
+        {"id":199,"area":13,"label":"Western Asia","continent":4,"centroid":"KWT","zoom":4.1 , 'color': '#d62728'},
+        {"id":200,"area":14,"label":"Central and Eastern Europe","continent":5,"centroid":"UKR","zoom":3.1, 'color': '#9467bd'},
+        {"id":201,"area":15,"label":"Northern Europe","continent":5,"centroid":"DNK","zoom":4.6, 'color': '#9467bd'},
+        {"id":202,"area":16,"label":"Southern Europe","continent":5,"centroid":"ITA","zoom":5, 'color': '#9467bd'},
+        {"id":203,"area":17,"label":"Western Europe","continent":5,"centroid":"FRA","zoom":7, 'color': '#9467bd'},
+        {"id":206,"area":8,"label":"South America","continent":2,"centroid":"BOL","zoom":2.1, 'color': '#ff7f0e'},
+        {"id":206,"area":9,"label":"North America","continent":2,"centroid":"USA","zoom":2 , 'color': '#2ca02c' },
+        {"id":206,"area":18,"label":"South Pacific Ocean","continent":2,"centroid":"AUS","zoom":2, 'color': '#17becf'},
+        {"id":206,"area":19,"label":"West Pacific","continent":2,"centroid":"NZL","zoom":2, 'color': '#17becf'}
     ] ; 
 
     var colors_membership = { 'N':'#150485','I':'#f1e189','V':'#c62a88','U':'#03c4a1','C': '#000000' };
@@ -307,9 +312,9 @@
                     return (g.geo != undefined) ; 
                 })
 
-                //console.info("to fix",cpt,finds) ; 
-                //console.info("registries",registries) ; 
-                //return ; 
+                all_registries = registries ; 
+
+            
 
                 dataviz_conf.data.src = dataset ; 
 
@@ -340,7 +345,9 @@
                 let groupRegistries = CanMapSvg.append('g')
                     .attr('id','mapRegistries')
                     .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
-                ; 
+                    .style('opacity',0)
+                ;
+
                                 
                 // bind bubble
                 groupRegistries
@@ -350,7 +357,7 @@
                     .append('circle')
                     .attr('class','reg')
                     .attr('id',(d)=>d.id)
-                    .attr("r", 0)
+                    .attr("r", 0) // 0 |
                     /*.attr("transform", (d)=>{
                         if ( d.geo != undefined )
                         {
@@ -372,7 +379,11 @@
                             if ( typeof(d.geo.lat) != NaN) return CanMapGraphProjection([d.geo.lng,d.geo.lat])[1] 
                         }
                     })
-                    .attr("fill",fillPath)
+                    //.attr("fill",fillPath)
+                    /*.attr("fill",d=>{
+                        console.info('d',d) ; 
+                        return d.color 
+                    })*/
                     .attr("stroke","#cccccc")
                     .on("mousemove",openOverlay)
                     .on("mouseout",closeOverlay)
@@ -380,7 +391,7 @@
                     .transition()
                     .duration(750)
                     //.delay((_, i)=>{ return i * 50; })
-                    .attr("r", 5)
+                    .attr("r", 5 ) // 10 
 
                 continents_i.forEach( c => {
                     let button = '<span class="btn" style="background-color:'+c.color+'">&nbsp;</span>';
@@ -434,6 +445,140 @@
                 autocomplete( document.getElementById("registry_name"), registries_autocomplete);
 
 
+                //console.info("to fix",cpt,finds) ;
+                let continent_circles = d3.nest()
+                    .key( d => d.continent)
+                    .entries( all_registries ) 
+                    .map( d => {
+                        let continent = continents_i.find( c => c.label == d.key )
+                        continent.nb_registries = d.values.length ; 
+                        // let focused = 
+                        return continent  ; 
+                    })
+                    
+                let groupCirclCont = CanMapSvg.append('g')
+                    .attr('id','groupContRegistries')
+                    .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+                    .style('opacity',0) ; 
+
+                /* console.info({
+                    "registries" : continent_circles , 
+                    CanGraphMapFeatures : CanGraphMapFeatures
+                }) ;*/  
+                //return ; 
+
+                let group_circles = groupCirclCont
+                    .selectAll('circle.cont')
+                    .data( continent_circles )
+                    .enter()
+                    .append('g')
+                    .attr('class','group_circles') ;
+
+                let radius = d3.scale.sqrt()
+                    .domain([ 0, 500 ])
+                    .range([ 0, 150 ])
+
+                group_circles.append('circle')
+                    .attr('class','cont')
+                    .attr('id',(d)=>`${d.id}`)
+                    .attr("r", r => radius( r.nb_registries ) )
+                    .attr("cx", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[0] 
+                    })
+                    .attr("cy", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[1] 
+                    })
+                    .attr('fill',c=>c.color)
+                
+                group_circles.append("text")
+                    .attr("x", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[0] 
+                    })
+                    .attr("y", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[1] 
+                    })
+                    .attr('dx',0)
+                    .attr('dy',5)
+                    .attr('fill','#fff')
+                    .attr('text-anchor','middle')
+                    .text( t => t.nb_registries )
+
+                
+
+                let areas_circles = d3.nest()
+                    .key( d => d.area)
+                    .entries( all_registries ) 
+                    .map( d => {
+                        let area_ = areas.find( c => c.area == parseFloat(d.key) )
+                        // console.log("area_",d.key,area_,d.values)
+                        if ( area_ != undefined )
+                        {
+                            area_.nb_registries = d.values.length ; 
+                            // let focused = 
+                            return area_  ; 
+                        }
+                        else
+                        {
+                            return undefined
+                        }
+                    })
+                    .filter( f => f != undefined )
+
+                let groupCircleAreas = CanMapSvg.append('g')
+                    .attr('id','groupAreaRegistries')
+                    .attr("transform", "translate("+CanMapConf.chart.globe_translate.x+","+CanMapConf.chart.globe_translate.y+")")
+                    .style('opacity',0)    
+                ; 
+
+                // console.info("areas_circles",areas_circles) ; 
+                let group_areas_circles = groupCircleAreas
+                    .selectAll('circle.area')
+                    .data( areas_circles )
+                    .enter()
+                    .append('g')
+                    .attr('class','group_circles') ;
+
+                group_areas_circles.append('circle')
+                    .attr('class','area')
+                    .attr('id',(d)=>`${d.id}`)
+                    .attr("r", 25 )
+                    .attr("cx", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[0] 
+                    })
+                    .attr("cy", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[1] 
+                    })
+                    .attr('fill',c=>c.color)
+
+                group_areas_circles.append("text")
+                    .attr("x", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[0] 
+                    })
+                    .attr("y", (d)=>{
+                        let focusedCountry = checkCountry( CanGraphMapFeatures , d.centroid )  ;
+                        let position = CanGraphMapPath.centroid( focusedCountry );
+                        return position[1] 
+                    })
+                    .attr('dx',0)
+                    .attr('dy',5)
+                    .attr('fill','#fff')
+                    .attr('text-anchor','middle')
+                    .text( a => a.nb_registries )
+
             }, 3000 ) ; 
 
             
@@ -472,6 +617,8 @@
 
     var zoomArea = function( codeCountry , scale , _this , area_id ){
 
+        console.info("zoomArea",codeCountry) ; 
+
         zoomRegistry( codeCountry , scale , _this , area_id ) ; 
 
         let cont = $(_this).attr('attr-cont') ;
@@ -480,7 +627,7 @@
         d3.selectAll('path.country')
             .attr('fill',(d)=>{
                 if( area_id == parseFloat(d.properties.area_id)) return continent.color ;  
-                return '#ccc' ; 
+                return Default.color_no_data  ; 
             })
 
         d3.selectAll('path.country')
@@ -495,6 +642,14 @@
                 return 'none' ; 
             })
 
+        d3.selectAll('circle.reg')
+            .attr('r',r => {
+                console.info(" circle => ",area_id,r.properties.area_id)
+            }) ; 
+
+
+        // zoom 
+
         level = 2 ; 
     }
 
@@ -503,7 +658,7 @@
         if ( area_id == undefined ){
             // remove existing li
             $('ul.areas li').css('left','-350px '); //remove() ; 
-            d3.selectAll('path.country').attr('fill','#ccc');
+            d3.selectAll('path.country').attr('fill',Default.color_no_data );
             d3.selectAll('path.country').attr('fill-opacity',1);
             d3.selectAll('text.country-txt').style('display','none');
         }
@@ -516,7 +671,7 @@
         if ( continent == undefined ) 
         {
             $('#registry_name').val(" ") ; 
-            //d3.selectAll('circle.reg').transition().duration(250).attr('r',3); 
+            d3.selectAll('circle.reg').transition().duration(250).attr('r',0); 
             level = 0 ; 
             return ; 
             
