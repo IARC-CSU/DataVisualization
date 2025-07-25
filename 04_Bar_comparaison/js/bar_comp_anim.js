@@ -3,7 +3,7 @@
 	
     function bar_comp() // generate heatmap 
 	{ 	
-		var file_use = "data/CI5IvsCI5XI.csv"; 
+		var file_use = "data/CI5IvsCI5XII.csv"; 
 		
 	
 
@@ -14,7 +14,7 @@
 				
 				rank : +d.rank,
 				cancer_label : d.cancer_label,
-				cancer: +d.cancer,
+				cancer: +d.cancer_code,
 				volume : +d.volume,
 				sex : +d.sex,
 				per1: d.per1,
@@ -82,7 +82,7 @@
 			volume = 1
 			v_key = 0 //volume key for the array or nest data
 		} else {
-			volume = 11
+			volume = 2
 			v_key = 1 
 		}
 		
@@ -835,7 +835,7 @@
 			var volume = 1;
 			var bar_graph_class = ".bar_graph1"; // to select by class
 		} else {
-			var volume = 11;
+			var volume = 2;
 			var bar_graph_class = ".bar_graph2";
 		}
 	
@@ -1457,7 +1457,7 @@
 			var sex_select = 2;
 		}
 
-		var file_use = "data/CI5IvsCI5XI.csv"; 
+		var file_use = "data/CI5IvsCI5XII.csv"; 
 		var country_select = document.getElementById('countryList').value;
 
 			 d3.csv(file_use,
@@ -1466,7 +1466,7 @@
 					
 					rank : +d.rank,
 					cancer_label : d.cancer_label,
-					cancer: +d.cancer,
+					cancer: +d.cancer_code,
 					volume : +d.volume,
 					sex : +d.sex,
 					per1: d.per1,
@@ -1500,7 +1500,7 @@
 				sex_select = 2;
 			}
 		
-		var file_use = "data/CI5IvsCI5XI.csv"; 
+		var file_use = "data/CI5IvsCI5XII.csv"; 
 
 			d3.csv(file_use,
 				function(d) {
@@ -1508,7 +1508,7 @@
 					
 					rank : +d.rank,
 					cancer_label : d.cancer_label,
-					cancer: +d.cancer,
+					cancer: +d.cancer_code,
 					volume : +d.volume,
 					sex : +d.sex,
 					per1: d.per1,

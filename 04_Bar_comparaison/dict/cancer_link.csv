@@ -1,0 +1,45 @@
+cancer_code_base,cancer_label_base,cancer_code_new,cancer_code
+6,Oesophagus,10,10
+7,Stomach,11,11
+8,Small intestine,12,12
+11,Liver,16,16
+12,Gallbladder etc.,17,17
+13,Pancreas,18,18
+14,Nose sinuses etc.,19,19
+15,Larynx,20,20
+16,Lung (incl. trachea and bronchus),21,21
+17,Bone,23,23
+18,Melanoma of skin,24,24
+20,Connective tissue,28,28
+21,Breast,29,29
+22,Cervix uteri,32,32
+23,Corpus uteri,33,33
+24,Ovary etc.,35,35
+25,Other female genital organs,36,36
+26,Penis,38,38
+27,Prostate,39,39
+28,Testis,40,40
+29,Kidney,42,42
+30,Bladder,45,45
+31,Eye,47,47
+32,"Brain, central nervous system",48,48
+33,Thyroid,49,49
+34,Other endocrine,51,51
+35,Hodgkin lymphoma,52,52
+36,Non-Hodgkin lymphoma,53,53
+37,Multiple myeloma,55,55
+38,Leukaemia,56,101
+38,Leukaemia,57,101
+38,Leukaemia,58,101
+51,"Lip, oral cavity and pharynx",1,102
+51,"Lip, oral cavity and pharynx",2,102
+51,"Lip, oral cavity and pharynx",3,102
+51,"Lip, oral cavity and pharynx",4,102
+51,"Lip, oral cavity and pharynx",5,102
+51,"Lip, oral cavity and pharynx",6,102
+51,"Lip, oral cavity and pharynx",7,102
+51,"Lip, oral cavity and pharynx",8,102
+51,"Lip, oral cavity and pharynx",9,102
+52,Colorectum,13,103
+52,Colorectum,14,103
+52,Colorectum,15,103

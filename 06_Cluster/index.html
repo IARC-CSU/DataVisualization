@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer and HDI (VueJS 3)</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/heat_map.css" type="text/css">
+
+
+    <!-- Include Vue.js 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="/d3/d3.v3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+    <style type="text/css">
+
+    body{
+        font-family: "Roboto", serif !important;
+        padding: 20px ;
+    }
+
+    h1{
+        font-size: 2em ; 
+    }
+    h2{
+        font-size: 1.2em ; 
+    }
+
+    </style>
+
+</head>
+<body>
+    <!-- Vue.js app will be mounted here -->
+    <div id="app">
+        <div class="row">
+            <h1>{{ title }}</h1>
+            <h2>{{ sub_title }}</h2>
+        </div>
+
+        <div class="row">
+                <div class="col">
+                    <h4>Sex</h4>
+                    <label><input type="radio" id="radio_sex_female" name="sex" checked="checked"  onChange="combo_sex('Women')"> Female</label>
+                    <label><input type="radio" id="radio_sex_male"  name="sex" onChange="combo_sex('Men')"> Male</label>
+                </div>
+                <div class="col">B</div>
+                <div class="col">C</div>
+                <div class="col">D</div>
+        </div>
+    </div>
+
+    <script>
+
+        // Initialize Vue instance
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    title : 'Cancer and HDI' , 
+                    sub_title : 'Profiling The Diversity Of Cancer According To Human Development',
+                    file_base: "/data/HDI_ASR_2002_absolute",
+                    cluster_group: [[19, 25], [17, 23], [18, 26]],
+                    nb_country: 185,
+                    margin: { top: 100, right: 200, bottom: 100, left: 300, top_page: 50, left_page: 400 },
+                    width: 1500 - 300 - 200,
+                    height: 800 - 100 - 100,
+                    XgridSize: Math.floor((1500 - 300 - 200) / 185),
+                    YgridSize: Math.floor((800 - 100 - 100) / 28),
+                    element_display: true,
+                    Flag_selected_country: false,
+                    hdi_label: ["Low HDI", "Medium HDI", "High HDI", "Very high HDI"],
+                    area_label: ["Africa", "Latin America & the Caribbean", "North America", "Asia", "Europe", "Oceania"],
+                    color_hdi: ["#E8EEFE", "#A9C3FF", "#2E75D1", "#00329F"],
+                    color_area: [
+                        "#D62702", "#D62702", "#D62702", "#D62702", "#D62702",
+                        "#AC0EAF", "#AC0EAF", "#AC0EAF",
+                        "#462E94", "#E4D901", "#E4D901", "#E4D901", "#E4D901",
+                        "#01ACE9", "#01ACE9", "#01ACE9", "#01ACE9",
+                        "#05AD18", "#05AD18", "#05AD18", "#05AD18"
+                    ],
+                    color_area_legend: ["#D62702", "#AC0EAF", "#462E94", "#E4D901", "#01ACE9", "#05AD18"],
+                    color_cancer: {
+                        "Bladder": "#278D29", "Brain, CNS": "#D5BED2", "Breast": "#FF68BC", 
+                        "Cervix uteri": "#FF7500", "Colorectum": "#FFD803", "Corpus uteri": "#9FE72D", 
+                        "Gallbladder": "#006158", "Hodgkin lymphoma": "#97d5b4", "Hypopharynx": "#6D8A6D", 
+                        "Kaposi sarcoma": "#FFC2CA", "Kidney": "#040186", "Larynx": "#aec80d", 
+                        "Leukaemia": "#FFFFA6", "Lip, oral cavity": "#AE563E", "Liver": "#F3A654", 
+                        "Lung": "#1E90FF", "Melanoma of skin": "#cd100a", "Mesothelioma": "#6D8A6D", 
+                        "Multiple myeloma": "#333333", "Nasopharynx": "#2A4950", "NHL": "#2231D0", 
+                        "Oesophagus": "#DC1341", "Oropharynx": "#00F5B6", "Ovary": "#8C07C2", 
+                        "Pancreas": "#940009", "Penis": "#E69C56", "Prostate": "#34A76E", 
+                        "Salivary glands": "#57A67A", "Stomach": "#4682B4", "Testis": "#3a1ad1", 
+                        "Thyroid": "#ADD9E4", "Vagina": "#FF713F", "Vulva": "#FF6C7D"
+                    },
+                    heatMap: null,
+                    bool_cluster: false,
+                    sex_select: "Both",
+                    nb_site_max: 33,
+                    transitionTime: 1500,
+                    label_padding: -3,
+                    xScale: d3.scale.linear().domain([1, 185]).range([0, (185 - 1) * Math.floor((1500 - 300 - 200) / 185)]) , 
+                    yScale: d3.scale.linear().domain([1, 33]).range([0, (33 - 1) * Math.floor((800 - 100 - 100) / 28)]) , 
+                    yScale2: d3.scale.linear().domain([0, 1]).range([(33) * Math.floor((800 - 100 - 100) / 28), 0])  ,  
+                }
+            },
+            mounted() {
+
+                this.Heatmap_gen();
+                document.addEventListener('keyup', this.doc_keyUp);
+            },
+            beforeDestroy() {
+                document.removeEventListener('keyup', this.doc_keyUp);
+            },
+            methods: {
+                rev_yScale2(v) {
+                  return this.yScale2(0) - this.yScale2(v);
+                },
+                Heatmap_gen() {
+                  // Add your heatmap generation code here
+                  // Example:
+                  // this.heatMap = d3.select('svg').append('g').attr('transform', `translate(${this.margin.left},${this.margin.top})`);
+                },
+                doc_keyUp(e) {
+                  if (e.keyCode == 83) {
+                    this.sortBars(true);
+                    document.getElementById('radio_cluster_on').checked = true;
+                    document.getElementById('radio_cluster_off').checked = false;
+                  }
+                },
+                sortBars(flag) {
+                  // Add your sortBars function code here
+                }
+            }
+        }).mount('#app');
+    
+    </script>
+
+</body>
+</html>

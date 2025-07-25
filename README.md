@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# IARC/CSU github Dataviz webpage
 
-You can use the [editor on GitHub](https://github.com/IARC-CSU/DataVisualization/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to the CSU dataviz gallery, a webpage listing all graphics and datavisualization made by the [Cancer Surveillance Unit][https://www.iarc.who.int/branches-csu]. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The repository is maintained by Mathieu Laversanne and Frédéric LAM.
+Github.io url is https://iarc-csu.github.io/DataVisualization. 
 
-### Markdown
+Please ask CSU team in case you want to contribute or have any enquiry. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Each project below has it's own context, using plain html/javascript/css sometimes, VueJS other time, and of course d3js library most of the time. So the purpose of subfolders is to isolate each peace of interactive graphics. 
 
-```markdown
-Syntax highlighted code block
+## Errata
 
-# Header 1
-## Header 2
-### Header 3
+This repository presents multiple advantes but also disavantages to be composed of many subfolders. Here is another repository where a more advanced VueJS(3) and d3JS(7) version cohabitate.
 
-- Bulleted
-- List
+https://github.com/fredericlam/CervicalCancer
 
-1. Numbered
-2. List
+### Windows way
 
-**Bold** and _Italic_ and `Code` text
+ws is [Node.js](https://www.npmjs.com/package/ws) package used to serve a simplpe folder.
 
-[Link](url) and ![Image](src)
+```
+ws -p 8092
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Python way
 
-### Jekyll Themes
+See official documentation into Python website: https://docs.python.org/3/library/http.server.html.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IARC-CSU/DataVisualization/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+python3 -m SimpleHTTPServer 8082  // (Python 2.7.10)
+```
+or
 
+<<<<<<< HEAD
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
@@ -41,3 +42,9 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```
 python3 -m http.server 8098
 ``
+=======
+```
+python3 -m http.server 8095
+python3 -m http.server 8095 --bind 10.50.1.111
+```
+>>>>>>> 887a485a4ec15cf1e5057c9ee7beba1afcd5cb13
