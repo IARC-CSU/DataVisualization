@@ -1,7 +1,7 @@
 	
 	var PROJECT 			= 'map' ; 
     
-    let key_year = "1990_2023" ; // 1966_1989 | 1990_2023
+    let key_year = "1966_1989" ; // 1966_1989 | 1990_2023
 
 	var dataviz_conf = {
         'type'      : 'map' , 
@@ -52,7 +52,18 @@
 
         d3.json("data/fellows.json", function( error , fellows_data ) {
 
-            console.log("fellows_data",fellows_data) ; 
+            let totals = [] ; 
+
+            fellows_data.map( f => {
+                totals.push( f["1966_1989"])  
+                totals.push( f["1990_2023"])  
+            })
+
+            console.log({
+                totals : totals , 
+                max : d3.max(totals), 
+                min : d3.min(totals)
+            })
 
     	    var dataset = [] ; 
             
@@ -61,7 +72,7 @@
                 dataset.push({
                     'label' : fellows_data[j].label , 
                     'value' : fellows_data[j][key_year] , 
-                    'globocan_id' :fellows_data[j].globocan_id , 
+                    'globocan_id' :fellows_data[j].globocan_id 
                 }); 
             }
 
