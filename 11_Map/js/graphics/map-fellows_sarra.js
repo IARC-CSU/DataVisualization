@@ -1,7 +1,20 @@
 	
 	var PROJECT 			= 'map' ; 
     
+    let uri     = window.location.search.substring(1); 
+    let params  = new URLSearchParams(uri);
+    let file    = "fellows.json"
+    let version = params.get('version') ;
+    // console.info("version",version) ; 
+
+    let colors = ['#d4b9da', '#c994c7', '#df65b0', '#dd1c77', '#980043'] ; 
+
     let key_year = "1966_1989" ; // 1966_1989 | 1990_2023
+    if ( parseInt( version ) == 2) key_year = "1990_2023" ; 
+    if ( parseInt( version ) == 3) {
+        key_year = "number" ; 
+        file = "fellows_iarc60.json"
+    }
 
 	var dataviz_conf = {
         'type'      : 'map' , 
@@ -15,9 +28,9 @@
             'src'    : [{ 'label' : 'Test' , 'value' : 10 },{ 'label' : 'Test' , 'value' : 10 }]
         },
         'chart' : {
-            'scale' : 320 , 
+            'scale' : 310 , 
             'key_data_value' : 'value' , 
-            'globe_translate' : { 'x' : -50 , 'y' : 200 } , 
+            'globe_translate' : { 'x' : -50 , 'y' : 150 } , 
             'legend_translate' : 
             { 
                 'x' : 1000 , 
@@ -45,12 +58,18 @@
 
     var colorHPV = '#e35d56';
     let color_paletter  = 'PuRd';
+    if ( parseInt( version ) == 3) color_paletter = 'YlGnBu'
 
     setTimeout(function(){
 
-        $('h1.title').text( " Geographical distribution of online learners who have registered to the IARC learning platform " + key_year.replace('_','-') ) ; 
+        let title = " Geographical distribution of online learners who have registered to the IARC learning platform " + key_year.replace('_','-') ; 
+        
+        if ( parseInt( version ) == 3)
+            title = "Geographical distribution of online learners who have registered to the IARC learning platform, from 2019 to 2025"
 
-        d3.json("data/fellows.json", function( error , fellows_data ) {
+        $('h1.title').text( title ) ; 
+
+        d3.json( 'data/' + file , function( error , fellows_data ) {
 
             let totals = [] ; 
 
@@ -59,11 +78,11 @@
                 totals.push( f["1990_2023"])  
             })
 
-            console.log({
+            /*console.log({
                 totals : totals , 
                 max : d3.max(totals), 
                 min : d3.min(totals)
-            })
+            })*/
 
     	    var dataset = [] ; 
             
@@ -71,13 +90,18 @@
             {
                 dataset.push({
                     'label' : fellows_data[j].label , 
+                    'ISO_3_CODE' : fellows_data[j].ISO , 
                     'value' : fellows_data[j][key_year] , 
                     'globocan_id' :fellows_data[j].globocan_id 
                 }); 
             }
 
-            dataviz_conf.data.src = dataset ; 
+            dataviz_conf.data.src = dataset.filter( d => d.value > 0 ) ; 
             dataviz_conf.chart.default_color = color_paletter ; 
+
+            CanMapGraphNbColors = 4 ;
+            if ( parseInt( version ) == 3) CanMapGraphNbColors = 8 ; 
+
 
             var oMap = new CanChart( dataviz_conf ).render() ;
 

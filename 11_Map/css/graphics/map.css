@@ -38,9 +38,9 @@
 
 	div#txt-footer-map{
 		position: absolute;
-	    bottom: 80px;
-	    width: 1260px;
-	    right: 150px;
+	    bottom: 50px;
+	    width: 900px;
+	    right: 650px;
 	    font-size: 0.8em;
 	    text-align: justify;
 	    line-height: 14px;

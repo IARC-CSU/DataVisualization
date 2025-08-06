@@ -1,0 +1,877 @@
+[
+  {
+    "ISO": "AFG",
+    "label": "Afghanistan",
+    "number": 6
+  },
+  {
+    "ISO": "ALB",
+    "label": "Albania",
+    "number": 15
+  },
+  {
+    "ISO": "DZA",
+    "label": "Algeria",
+    "number": 69
+  },
+  {
+    "ISO": "AGO",
+    "label": "Angola",
+    "number": 4
+  },
+  {
+    "ISO": "ATG",
+    "label": "Antigua and Barbuda",
+    "number": 6
+  },
+  {
+    "ISO": "ARG",
+    "label": "Argentina",
+    "number": 62
+  },
+  {
+    "ISO": "ARM",
+    "label": "Armenia",
+    "number": 9
+  },
+  {
+    "ISO": "AUS",
+    "label": "Australia",
+    "number": 69
+  },
+  {
+    "ISO": "AUT",
+    "label": "Austria",
+    "number": 21
+  },
+  {
+    "ISO": "AZE",
+    "label": "Azerbaijan",
+    "number": 3
+  },
+  {
+    "ISO": "BHR",
+    "label": "Bahrain",
+    "number": 4
+  },
+  {
+    "ISO": "BGD",
+    "label": "Bangladesh",
+    "number": 22
+  },
+  {
+    "ISO": "BRB",
+    "label": "Barbados",
+    "number": 2
+  },
+  {
+    "ISO": "BLR",
+    "label": "Belarus",
+    "number": 4
+  },
+  {
+    "ISO": "BEL",
+    "label": "Belgium",
+    "number": 97
+  },
+  {
+    "ISO": "BLZ",
+    "label": "Belize",
+    "number": 1
+  },
+  {
+    "ISO": "BEN",
+    "label": "Benin",
+    "number": 8
+  },
+  {
+    "ISO": "BTN",
+    "label": "Bhutan",
+    "number": 3
+  },
+  {
+    "ISO": "BOL",
+    "label": "Bolivia",
+    "number": 16
+  },
+  {
+    "ISO": "BIH",
+    "label": "Bosnia and Herzegovina",
+    "number": 11
+  },
+  {
+    "ISO": "BWA",
+    "label": "Botswana",
+    "number": 12
+  },
+  {
+    "ISO": "BRA",
+    "label": "Brazil",
+    "number": 192
+  },
+  {
+    "ISO": "BRN",
+    "label": "Brunei Darussalam",
+    "number": 7
+  },
+  {
+    "ISO": "BGR",
+    "label": "Bulgaria",
+    "number": 12
+  },
+  {
+    "ISO": "BFA",
+    "label": "Burkina Faso",
+    "number": 10
+  },
+  {
+    "ISO": "BDI",
+    "label": "Burundi",
+    "number": 5
+  },
+  {
+    "ISO": "CPV",
+    "label": "Cape Verde",
+    "number": 4
+  },
+  {
+    "ISO": "KHM",
+    "label": "Cambodia",
+    "number": 5
+  },
+  {
+    "ISO": "CMR",
+    "label": "Cameroon",
+    "number": 21
+  },
+  {
+    "ISO": "CAN",
+    "label": "Canada",
+    "number": 77
+  },
+  {
+    "ISO": "CAF",
+    "label": "Central African Republic",
+    "number": 2
+  },
+  {
+    "ISO": "TCD",
+    "label": "Chad",
+    "number": 5
+  },
+  {
+    "ISO": "CHL",
+    "label": "Chile",
+    "number": 43
+  },
+  {
+    "ISO": "CHN",
+    "label": "China",
+    "number": 111
+  },
+  {
+    "ISO": "COL",
+    "label": "Colombia",
+    "number": 136
+  },
+  {
+    "ISO": "COM",
+    "label": "Comoros",
+    "number": 4
+  },
+  {
+    "ISO": "COG",
+    "label": "Congo",
+    "number": 4
+  },
+  {
+    "ISO": "CRI",
+    "label": "Costa Rica",
+    "number": 17
+  },
+  {
+    "ISO": "CIV",
+    "label": "Côte d'Ivoire",
+    "number": 15
+  },
+  {
+    "ISO": "HRV",
+    "label": "Croatia",
+    "number": 12
+  },
+  {
+    "ISO": "CUB",
+    "label": "Cuba",
+    "number": 6
+  },
+  {
+    "ISO": "CYP",
+    "label": "Cyprus",
+    "number": 13
+  },
+  {
+    "ISO": "CZE",
+    "label": "Czech Republic",
+    "number": 6
+  },
+  {
+    "ISO": "DNK",
+    "label": "Denmark",
+    "number": 19
+  },
+  {
+    "ISO": "DMA",
+    "label": "Dominica",
+    "number": 4
+  },
+  {
+    "ISO": "DOM",
+    "label": "Dominican Republic",
+    "number": 9
+  },
+  {
+    "ISO": "ECU",
+    "label": "Ecuador",
+    "number": 1316
+  },
+  {
+    "ISO": "SLV",
+    "label": "El Salvador",
+    "number": ""
+  },
+  {
+    "ISO": "EGY",
+    "label": "Arab Republic of Egypt",
+    "number": 98
+  },
+  {
+    "ISO": "ERI",
+    "label": "Eritrea",
+    "number": 1
+  },
+  {
+    "ISO": "EST",
+    "label": "Estonia",
+    "number": 24
+  },
+  {
+    "ISO": "SWZ",
+    "label": "Eswatini",
+    "number": 8
+  },
+  {
+    "ISO": "ETH",
+    "label": "Ethiopia",
+    "number": 73
+  },
+  {
+    "ISO": "FJI",
+    "label": "Fiji",
+    "number": 8
+  },
+  {
+    "ISO": "FIN",
+    "label": "Finland",
+    "number": 20
+  },
+  {
+    "ISO": "FRA",
+    "label": "France",
+    "number": 289
+  },
+  {
+    "ISO": "GAB",
+    "label": "Gabon",
+    "number": 8
+  },
+  {
+    "ISO": "GEO",
+    "label": "Georgia",
+    "number": 23
+  },
+  {
+    "ISO": "DEU",
+    "label": "Germany",
+    "number": 137
+  },
+  {
+    "ISO": "GHA",
+    "label": "Ghana",
+    "number": 53
+  },
+  {
+    "ISO": "GRC",
+    "label": "Greece",
+    "number": 28
+  },
+  {
+    "ISO": "GRD",
+    "label": "Grenada",
+    "number": 5
+  },
+  {
+    "ISO": "GTM",
+    "label": "Guatemala",
+    "number": 15
+  },
+  {
+    "ISO": "GIN",
+    "label": "Guinea",
+    "number": 5
+  },
+  {
+    "ISO": "GUY",
+    "label": "Guyana",
+    "number": 6
+  },
+  {
+    "ISO": "HTI",
+    "label": "Haiti",
+    "number": 2
+  },
+  {
+    "ISO": "HND",
+    "label": "Honduras",
+    "number": 11
+  },
+  {
+    "ISO": "HKG",
+    "label": "Hong Kong, SAR",
+    "number": 9
+  },
+  {
+    "ISO": "HUN",
+    "label": "Hungary",
+    "number": 130
+  },
+  {
+    "ISO": "ISL",
+    "label": "Iceland",
+    "number": 3
+  },
+  {
+    "ISO": "IND",
+    "label": "India",
+    "number": 807
+  },
+  {
+    "ISO": "IDN",
+    "label": "Indonesia",
+    "number": 63
+  },
+  {
+    "ISO": "IRN",
+    "label": "Islamic Republic of Iran",
+    "number": 32
+  },
+  {
+    "ISO": "ISR",
+    "label": "Israel",
+    "number": 10
+  },
+  {
+    "ISO": "IRQ",
+    "label": "Iraq",
+    "number": 28
+  },
+  {
+    "ISO": "IRL",
+    "label": "Ireland",
+    "number": 136
+  },
+  {
+    "ISO": "ITA",
+    "label": "Italy",
+    "number": 109
+  },
+  {
+    "ISO": "JAM",
+    "label": "Jamaica",
+    "number": 7
+  },
+  {
+    "ISO": "JPN",
+    "label": "Japan",
+    "number": 22
+  },
+  {
+    "ISO": "JOR",
+    "label": "Jordan",
+    "number": 25
+  },
+  {
+    "ISO": "KAZ",
+    "label": "Kazakhstan",
+    "number": 13
+  },
+  {
+    "ISO": "KEN",
+    "label": "Kenya",
+    "number": 88
+  },
+  {
+    "ISO": "KWT",
+    "label": "Kuwait",
+    "number": 7
+  },
+  {
+    "ISO": "KGZ",
+    "label": "Kyrgyz Republic",
+    "number": 9
+  },
+  {
+    "ISO": "LAO",
+    "label": "Lao People's Democratic Republic",
+    "number": 1
+  },
+  {
+    "ISO": "LVA",
+    "label": "Latvia",
+    "number": 13
+  },
+  {
+    "ISO": "LBN",
+    "label": "Lebanon",
+    "number": 9
+  },
+  {
+    "ISO": "LSO",
+    "label": "Lesotho",
+    "number": 3
+  },
+  {
+    "ISO": "LBR",
+    "label": "Liberia",
+    "number": 6
+  },
+  {
+    "ISO": "LBY",
+    "label": "Libya",
+    "number": 15
+  },
+  {
+    "ISO": "LTU",
+    "label": "Lithuania",
+    "number": 10
+  },
+  {
+    "ISO": "LUX",
+    "label": "Luxembourg",
+    "number": 12
+  },
+  {
+    "ISO": "MAC",
+    "label": "Macau, SAR",
+    "number": 1
+  },
+  {
+    "ISO": "MDG",
+    "label": "Madagascar",
+    "number": 4
+  },
+  {
+    "ISO": "MWI",
+    "label": "Malawi",
+    "number": 14
+  },
+  {
+    "ISO": "MYS",
+    "label": "Malaysia",
+    "number": 36
+  },
+  {
+    "ISO": "MDV",
+    "label": "Maldives",
+    "number": 1
+  },
+  {
+    "ISO": "MLI",
+    "label": "Mali",
+    "number": 11
+  },
+  {
+    "ISO": "MLT",
+    "label": "Malta",
+    "number": 5
+  },
+  {
+    "ISO": "MRT",
+    "label": "Mauritania",
+    "number": 2
+  },
+  {
+    "ISO": "MEX",
+    "label": "Mexico",
+    "number": 98
+  },
+  {
+    "ISO": "MDA",
+    "label": "Moldova",
+    "number": 2
+  },
+  {
+    "ISO": "MNG",
+    "label": "Mongolia",
+    "number": 6
+  },
+  {
+    "ISO": "MNE",
+    "label": "Montenegro",
+    "number": 7
+  },
+  {
+    "ISO": "MAR",
+    "label": "Morocco",
+    "number": 46
+  },
+  {
+    "ISO": "MOZ",
+    "label": "Mozambique",
+    "number": 10
+  },
+  {
+    "ISO": "MMR",
+    "label": "Myanmar",
+    "number": 11
+  },
+  {
+    "ISO": "NAM",
+    "label": "Namibia",
+    "number": 11
+  },
+  {
+    "ISO": "NPL",
+    "label": "Nepal",
+    "number": 44
+  },
+  {
+    "ISO": "NLD",
+    "label": "Netherlands",
+    "number": 71
+  },
+  {
+    "ISO": "NZL",
+    "label": "New Zealand",
+    "number": 18
+  },
+  {
+    "ISO": "NIC",
+    "label": "Nicaragua",
+    "number": 5
+  },
+  {
+    "ISO": "NER",
+    "label": "Niger",
+    "number": 4
+  },
+  {
+    "ISO": "NGA",
+    "label": "Nigeria",
+    "number": 251
+  },
+  {
+    "ISO": "MKD",
+    "label": "North Macedonia",
+    "number": 2
+  },
+  {
+    "ISO": "NOR",
+    "label": "Norway",
+    "number": 23
+  },
+  {
+    "ISO": "OMN",
+    "label": "Oman",
+    "number": 10
+  },
+  {
+    "ISO": "PAK",
+    "label": "Pakistan",
+    "number": 112
+  },
+  {
+    "ISO": "PLW",
+    "label": "Palau",
+    "number": 1
+  },
+  {
+    "ISO": "PAN",
+    "label": "Panama",
+    "number": 10
+  },
+  {
+    "ISO": "PNG",
+    "label": "Papua New Guinea",
+    "number": 9
+  },
+  {
+    "ISO": "PRY",
+    "label": "Paraguay",
+    "number": 12
+  },
+  {
+    "ISO": "PER",
+    "label": "Peru",
+    "number": 83
+  },
+  {
+    "ISO": "PHL",
+    "label": "Philippines",
+    "number": 37
+  },
+  {
+    "ISO": "POL",
+    "label": "Poland",
+    "number": 57
+  },
+  {
+    "ISO": "PRT",
+    "label": "Portugal",
+    "number": 59
+  },
+  {
+    "ISO": "QAT",
+    "label": "Qatar",
+    "number": 18
+  },
+  {
+    "ISO": "KOR",
+    "label": "Republic of Korea",
+    "number": 16
+  },
+  {
+    "ISO": "YEM",
+    "label": "Republic of Yemen",
+    "number": 7
+  },
+  {
+    "ISO": "ROU",
+    "label": "Romania",
+    "number": 31
+  },
+  {
+    "ISO": "RUS",
+    "label": "Russian Federation",
+    "number": 42
+  },
+  {
+    "ISO": "RWA",
+    "label": "Rwanda",
+    "number": 25
+  },
+  {
+    "ISO": "KNA",
+    "label": "Saint Kitts and Nevis",
+    "number": 4
+  },
+  {
+    "ISO": "LCA",
+    "label": "Saint Lucia",
+    "number": 5
+  },
+  {
+    "ISO": "VCT",
+    "label": "Saint Vincent and the Grenadines",
+    "number": 6
+  },
+  {
+    "ISO": "SAU",
+    "label": "Saudi Arabia",
+    "number": 26
+  },
+  {
+    "ISO": "SEN",
+    "label": "Senegal",
+    "number": 15
+  },
+  {
+    "ISO": "SRB",
+    "label": "Serbia",
+    "number": 11
+  },
+  {
+    "ISO": "SYC",
+    "label": "Seychelles",
+    "number": 1
+  },
+  {
+    "ISO": "SLE",
+    "label": "Sierra Leone",
+    "number": 6
+  },
+  {
+    "ISO": "SGP",
+    "label": "Singapore",
+    "number": 16
+  },
+  {
+    "ISO": "SVK",
+    "label": "Slovak Republic",
+    "number": 18
+  },
+  {
+    "ISO": "SVN",
+    "label": "Slovenia",
+    "number": 6
+  },
+  {
+    "ISO": "SLB",
+    "label": "Solomon Islands",
+    "number": 1
+  },
+  {
+    "ISO": "SOM",
+    "label": "Somalia",
+    "number": 6
+  },
+  {
+    "ISO": "ZAF",
+    "label": "South Africa",
+    "number": 51
+  },
+  {
+    "ISO": "SSD",
+    "label": "South Sudan",
+    "number": 3
+  },
+  {
+    "ISO": "ESP",
+    "label": "Spain",
+    "number": 321
+  },
+  {
+    "ISO": "LKA",
+    "label": "Sri Lanka",
+    "number": 16
+  },
+  {
+    "ISO": "SDN",
+    "label": "Sudan",
+    "number": 37
+  },
+  {
+    "ISO": "SUR",
+    "label": "Suriname",
+    "number": 3
+  },
+  {
+    "ISO": "SWE",
+    "label": "Sweden",
+    "number": 71
+  },
+  {
+    "ISO": "CHE",
+    "label": "Switzerland",
+    "number": 87
+  },
+  {
+    "ISO": "SYR",
+    "label": "Syrian Arab Republic",
+    "number": 5
+  },
+  {
+    "ISO": "TWN",
+    "label": "Taiwan",
+    "number": 4
+  },
+  {
+    "ISO": "TJK",
+    "label": "Tajikistan",
+    "number": 2
+  },
+  {
+    "ISO": "TZA",
+    "label": "Tanzania",
+    "number": 37
+  },
+  {
+    "ISO": "THA",
+    "label": "Thailand",
+    "number": 19
+  },
+  {
+    "ISO": "TLS",
+    "label": "Timor-Leste",
+    "number": 1
+  },
+  {
+    "ISO": "TGO",
+    "label": "Togo",
+    "number": 6
+  },
+  {
+    "ISO": "TTO",
+    "label": "Trinidad and Tobago",
+    "number": 5
+  },
+  {
+    "ISO": "TUN",
+    "label": "Tunisia",
+    "number": 27
+  },
+  {
+    "ISO": "TUR",
+    "label": "Turkey",
+    "number": 31
+  },
+  {
+    "ISO": "TKM",
+    "label": "Turkmenistan",
+    "number": 2
+  },
+  {
+    "ISO": "UGA",
+    "label": "Uganda",
+    "number": 65
+  },
+  {
+    "ISO": "UKR",
+    "label": "Ukraine",
+    "number": 23
+  },
+  {
+    "ISO": "ARE",
+    "label": "United Arab Emirates",
+    "number": 18
+  },
+  {
+    "ISO": "GBR",
+    "label": "United Kingdom",
+    "number": 173
+  },
+  {
+    "ISO": "USA",
+    "label": "United States of America",
+    "number": 249
+  },
+  {
+    "ISO": "URY",
+    "label": "Uruguay",
+    "number": 15
+  },
+  {
+    "ISO": "UZB",
+    "label": "Uzbekistan",
+    "number": 46
+  },
+  {
+    "ISO": "VNM",
+    "label": "Vietnam",
+    "number": 35
+  },
+  {
+    "ISO": "PSE",
+    "label": "West Bank and Gaza",
+    "number": 2
+  },
+  {
+    "ISO": "ZMB",
+    "label": "Zambia",
+    "number": 27
+  },
+  {
+    "ISO": "ZWE",
+    "label": "Zimbabwe",
+    "number": 21
+  }
+]

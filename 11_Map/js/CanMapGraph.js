@@ -4,7 +4,7 @@ var CanMapConf = {} ;
 
 var Jammu = 'Jammu and Kashmir' ; 
 
-var show_circle         = false ;
+var show_circle         = true ;
 
 var CanMapGraph = function( object ){
 
@@ -575,6 +575,8 @@ function setMapColor( key_color )
 
     if ( range_colors == undefined ) return false ; 
 
+    domain_values.push(35) ; 
+
     var range_radius = CanMapConf.chart.range_radius ; 
     // console.info( " in CanMapGraph " , d3.max( domain_values) , d3.max( unique_values ) ) ; 
     CanGraphMaxValue = d3.max( domain_values) ; 
@@ -758,7 +760,7 @@ function grabValues( CanGraphGeometries,CanGraphCountries,predictions ){
     
     // if ( CanGraphCountries == undefined ) return ; 
 
-    // console.info( CanGraphGeometries.objects['general'].geometries , predictions.data ) ;
+    console.info( CanGraphGeometries.objects['general'].geometries , predictions.data , CanGraphCountries ) ;
 
     // first init to 0
     for (var index = 0; index < CanGraphCountries.length; index++ ) {
@@ -784,6 +786,7 @@ function grabValues( CanGraphGeometries,CanGraphCountries,predictions ){
                     if ( predictions.data[j].COUNTRY == CanGraphCountries[index].globocan_id 
                         ||  predictions.data[j].globocan_id == Math.abs(CanGraphCountries[index].globocan_id )
                         ||  predictions.data[j].ISO_2_CODE == CanGraphCountries[index].ISO_2_CODE
+                        ||  predictions.data[j].ISO_3_CODE == CanGraphCountries[index].ISO_3_CODE
                     ) {
 
                         CanGraphGeometries.objects['general'].geometries[geo].properties.country_data = predictions.data[j].country_data ; 
