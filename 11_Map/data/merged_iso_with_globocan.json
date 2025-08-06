@@ -1,0 +1,604 @@
+[
+  {
+    "ISO": "ALB",
+    "label": "ALBANIA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 8
+  },
+  {
+    "ISO": "DZA",
+    "label": "ALGERIA",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 12
+  },
+  {
+    "ISO": "ARG",
+    "label": "ARGENTINA",
+    "1966_1989": 5,
+    "1990_2023": 1,
+    "globocan_id": 32
+  },
+  {
+    "ISO": "ARM",
+    "label": "ARMENIA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 51
+  },
+  {
+    "ISO": "AUS",
+    "label": "AUSTRALIA",
+    "1966_1989": 12,
+    "1990_2023": 12,
+    "globocan_id": 36
+  },
+  {
+    "ISO": "AUT",
+    "label": "AUSTRIA",
+    "1966_1989": 3,
+    "1990_2023": 0,
+    "globocan_id": 40
+  },
+  {
+    "ISO": "BGD",
+    "label": "BANGLADESH",
+    "1966_1989": 1,
+    "1990_2023": 1,
+    "globocan_id": 50
+  },
+  {
+    "ISO": "BLR",
+    "label": "BELARUS",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 112
+  },
+  {
+    "ISO": "BEL",
+    "label": "BELGIUM",
+    "1966_1989": 9,
+    "1990_2023": 3,
+    "globocan_id": 56
+  },
+  {
+    "ISO": "BEN",
+    "label": "BENIN",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 204
+  },
+  {
+    "ISO": "BRA",
+    "label": "BRAZIL",
+    "1966_1989": 1,
+    "1990_2023": 14,
+    "globocan_id": 76
+  },
+  {
+    "ISO": "BGR",
+    "label": "BULGARIA",
+    "1966_1989": 10,
+    "1990_2023": 3,
+    "globocan_id": 100
+  },
+  {
+    "ISO": "BFA",
+    "label": "BURKINA FASO",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 854
+  },
+  {
+    "ISO": "CMR",
+    "label": "CAMEROON",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 120
+  },
+  {
+    "ISO": "CAN",
+    "label": "CANADA",
+    "1966_1989": 5,
+    "1990_2023": 5,
+    "globocan_id": 124
+  },
+  {
+    "ISO": "CHL",
+    "label": "CHILE",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 152
+  },
+  {
+    "ISO": "CHN",
+    "label": "CHINA",
+    "1966_1989": 11,
+    "1990_2023": 27,
+    "globocan_id": 160
+  },
+  {
+    "ISO": "COL",
+    "label": "COLOMBIA",
+    "1966_1989": 5,
+    "1990_2023": 5,
+    "globocan_id": 170
+  },
+  {
+    "ISO": "CZE",
+    "label": "CZECH REPUBLIC",
+    "1966_1989": 7,
+    "1990_2023": 2,
+    "globocan_id": 203
+  },
+  {
+    "ISO": "COD",
+    "label": "DEMOCRATIC REPUBLIC OF THE CONGO",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 180
+  },
+  {
+    "ISO": "DNK",
+    "label": "DENMARK",
+    "1966_1989": 2,
+    "1990_2023": 1,
+    "globocan_id": 208
+  },
+  {
+    "ISO": "EGY",
+    "label": "EGYPT",
+    "1966_1989": 3,
+    "1990_2023": 0,
+    "globocan_id": 818
+  },
+  {
+    "ISO": "EST",
+    "label": "ESTONIA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 233
+  },
+  {
+    "ISO": "ETH",
+    "label": "ETHIOPIA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 231
+  },
+  {
+    "ISO": "YUG",
+    "label": "EX YUGOSLAVIA",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": "undefined"
+  },
+  {
+    "ISO": "FIN",
+    "label": "FINLAND",
+    "1966_1989": 4,
+    "1990_2023": 6,
+    "globocan_id": 246
+  },
+  {
+    "ISO": "FRA",
+    "label": "FRANCE",
+    "1966_1989": 32,
+    "1990_2023": 28,
+    "globocan_id": 250
+  },
+  {
+    "ISO": "GEO",
+    "label": "GEORGIA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 268
+  },
+  {
+    "ISO": "DEU",
+    "label": "GERMANY",
+    "1966_1989": 13,
+    "1990_2023": 3,
+    "globocan_id": 276
+  },
+  {
+    "ISO": "GRC",
+    "label": "GREECE",
+    "1966_1989": 2,
+    "1990_2023": 1,
+    "globocan_id": 300
+  },
+  {
+    "ISO": "HKG",
+    "label": "HONG KONG",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": "undefined"
+  },
+  {
+    "ISO": "HUN",
+    "label": "HUNGARY",
+    "1966_1989": 6,
+    "1990_2023": 1,
+    "globocan_id": 348
+  },
+  {
+    "ISO": "ISL",
+    "label": "ICELAND",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 352
+  },
+  {
+    "ISO": "IND",
+    "label": "INDIA",
+    "1966_1989": 17,
+    "1990_2023": 18,
+    "globocan_id": 356
+  },
+  {
+    "ISO": "IDN",
+    "label": "INDONESIA",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 360
+  },
+  {
+    "ISO": "IRN",
+    "label": "IRAN (Islamic Republic of)",
+    "1966_1989": 1,
+    "1990_2023": 1,
+    "globocan_id": 364
+  },
+  {
+    "ISO": "ISR",
+    "label": "ISRAEL",
+    "1966_1989": 18,
+    "1990_2023": 9,
+    "globocan_id": 376
+  },
+  {
+    "ISO": "ITA",
+    "label": "ITALY",
+    "1966_1989": 26,
+    "1990_2023": 13,
+    "globocan_id": 380
+  },
+  {
+    "ISO": "CIV",
+    "label": "IVORY COAST",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 384
+  },
+  {
+    "ISO": "JPN",
+    "label": "JAPAN",
+    "1966_1989": 33,
+    "1990_2023": 14,
+    "globocan_id": 392
+  },
+  {
+    "ISO": "JOR",
+    "label": "JORDAN",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 400
+  },
+  {
+    "ISO": "KEN",
+    "label": "KENYA",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 404
+  },
+  {
+    "ISO": "KOR",
+    "label": "KOREA (Republic of)",
+    "1966_1989": 1,
+    "1990_2023": 3,
+    "globocan_id": 410
+  },
+  {
+    "ISO": "LBN",
+    "label": "LEBANON",
+    "1966_1989": 1,
+    "1990_2023": 4,
+    "globocan_id": 422
+  },
+  {
+    "ISO": "LTU",
+    "label": "LITHUANIA",
+    "1966_1989": 4,
+    "1990_2023": 0,
+    "globocan_id": 440
+  },
+  {
+    "ISO": "LUX",
+    "label": "LUXEMBOURG",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 442
+  },
+  {
+    "ISO": "MYS",
+    "label": "MALAYSIA",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 458
+  },
+  {
+    "ISO": "MEX",
+    "label": "MEXICO",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 484
+  },
+  {
+    "ISO": "MNG",
+    "label": "MONGOLIA",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 496
+  },
+  {
+    "ISO": "MAR",
+    "label": "MOROCCO",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 504
+  },
+  {
+    "ISO": "MMR",
+    "label": "MYANMAR",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 104
+  },
+  {
+    "ISO": "NPL",
+    "label": "NEPAL",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 524
+  },
+  {
+    "ISO": "NLD",
+    "label": "NETHERLANDS",
+    "1966_1989": 5,
+    "1990_2023": 4,
+    "globocan_id": 528
+  },
+  {
+    "ISO": "NZL",
+    "label": "NEW ZEALAND",
+    "1966_1989": 2,
+    "1990_2023": 1,
+    "globocan_id": 554
+  },
+  {
+    "ISO": "NGA",
+    "label": "NIGERIA",
+    "1966_1989": 4,
+    "1990_2023": 5,
+    "globocan_id": 566
+  },
+  {
+    "ISO": "NOR",
+    "label": "NORWAY",
+    "1966_1989": 2,
+    "1990_2023": 0,
+    "globocan_id": 578
+  },
+  {
+    "ISO": "PAK",
+    "label": "PAKISTAN",
+    "1966_1989": 1,
+    "1990_2023": 2,
+    "globocan_id": 586
+  },
+  {
+    "ISO": "PER",
+    "label": "PERU",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 604
+  },
+  {
+    "ISO": "POL",
+    "label": "POLAND",
+    "1966_1989": 12,
+    "1990_2023": 5,
+    "globocan_id": 616
+  },
+  {
+    "ISO": "PRT",
+    "label": "PORTUGAL",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 620
+  },
+  {
+    "ISO": "IRL",
+    "label": "REPUBLIC OF IRELAND",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 372
+  },
+  {
+    "ISO": "ROU",
+    "label": "ROMANIA",
+    "1966_1989": 3,
+    "1990_2023": 2,
+    "globocan_id": 642
+  },
+  {
+    "ISO": "RUS",
+    "label": "RUSSIAN FEDERATION",
+    "1966_1989": 19,
+    "1990_2023": 8,
+    "globocan_id": 643
+  },
+  {
+    "ISO": "RWA",
+    "label": "RWANDA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 646
+  },
+  {
+    "ISO": "SRP",
+    "label": "SERBIA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": "undefined"
+  },
+  {
+    "ISO": "SGP",
+    "label": "SINGAPORE",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 702
+  },
+  {
+    "ISO": "SVK",
+    "label": "SLOVAK REPUBLIC",
+    "1966_1989": 5,
+    "1990_2023": 1,
+    "globocan_id": 703
+  },
+  {
+    "ISO": "ZAF",
+    "label": "SOUTH AFRICA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 710
+  },
+  {
+    "ISO": "ESP",
+    "label": "SPAIN",
+    "1966_1989": 2,
+    "1990_2023": 7,
+    "globocan_id": 724
+  },
+  {
+    "ISO": "SDN",
+    "label": "SUDAN",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 729
+  },
+  {
+    "ISO": "SWE",
+    "label": "SWEDEN",
+    "1966_1989": 5,
+    "1990_2023": 8,
+    "globocan_id": 752
+  },
+  {
+    "ISO": "CHE",
+    "label": "SWITZERLAND",
+    "1966_1989": 4,
+    "1990_2023": 0,
+    "globocan_id": 756
+  },
+  {
+    "ISO": "SYR",
+    "label": "SYRIAN ARAB REPUBLIC",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 760
+  },
+  {
+    "ISO": "THA",
+    "label": "THAILAND",
+    "1966_1989": 1,
+    "1990_2023": 5,
+    "globocan_id": 764
+  },
+  {
+    "ISO": "TGO",
+    "label": "TOGO",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 768
+  },
+  {
+    "ISO": "TTO",
+    "label": "TRINIDAD AND TOBAGO",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 780
+  },
+  {
+    "ISO": "TUN",
+    "label": "TUNISIA",
+    "1966_1989": 1,
+    "1990_2023": 1,
+    "globocan_id": 788
+  },
+  {
+    "ISO": "TUR",
+    "label": "TURKEY",
+    "1966_1989": 1,
+    "1990_2023": 1,
+    "globocan_id": 792
+  },
+  {
+    "ISO": "UGA",
+    "label": "UGANDA",
+    "1966_1989": 1,
+    "1990_2023": 0,
+    "globocan_id": 800
+  },
+  {
+    "ISO": "GBR",
+    "label": "UK",
+    "1966_1989": 24,
+    "1990_2023": 1,
+    "globocan_id": 826
+  },
+  {
+    "ISO": "UKR",
+    "label": "UKRAINE",
+    "1966_1989": 4,
+    "1990_2023": 3,
+    "globocan_id": 804
+  },
+  {
+    "ISO": "GBR",
+    "label": "UNITED KINGDOM",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 826
+  },
+  {
+    "ISO": "USA",
+    "label": "USA",
+    "1966_1989": 23,
+    "1990_2023": 13,
+    "globocan_id": 840
+  },
+  {
+    "ISO": "VEN",
+    "label": "VENEZUELA",
+    "1966_1989": 0,
+    "1990_2023": 1,
+    "globocan_id": 862
+  },
+  {
+    "ISO": "VNM",
+    "label": "VIET NAM",
+    "1966_1989": 0,
+    "1990_2023": 2,
+    "globocan_id": 704
+  },
+  {
+    "ISO": "ZWE",
+    "label": "ZIMBABWE",
+    "1966_1989": 0,
+    "1990_2023": 3,
+    "globocan_id": 716
+  }
+]

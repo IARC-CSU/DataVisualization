@@ -1430,7 +1430,9 @@ function manageLegends()
     {
         var colorset = CanMapColorSet ;
 
-        console.info( colorset ) ; 
+        let width_map = ( $(CanMapConf.id).width() == null ) ? 1080 : $(CanMapConf.id).width() ; 
+
+        console.info( "manageLegends" , width_map, colorset ) ; 
         // console.info( "CanMapUniqueValues" , CanMapUniqueValues , "=" , CanMapUniqueValues.length , "colorset = " , colorset.length ); 
 
         if ( CanMapUniqueValues.length < colorset.length ) 
@@ -1452,7 +1454,7 @@ function manageLegends()
 
         var containerLegend = CanGraphGroupLegend.append('rect')
             .attr('class','containerLegend')
-            .attr("x", $(CanMapConf.id).width() - CanMapConf.chart.legend_translate.x - 15 ) 
+            .attr("x", width_map - CanMapConf.chart.legend_translate.x - 15 ) 
             .attr("y", 400 )
             .style('width', 140 )
             .style('height', 153 )
@@ -1472,7 +1474,7 @@ function manageLegends()
             CanGraphMaplegend
                 .append('rect')
                 .attr('class','rect_Legend')
-                .attr("x", $(CanMapConf.id).width() - CanMapConf.chart.legend_translate.x ) 
+                .attr("x", width_map - CanMapConf.chart.legend_translate.x ) 
                 .attr("y", function(d, i) {
                     return (i * 15) + 2 + CanMapConf.chart.legend_translate.y ; 
                     // return (i * 20) + (CanMapHeight - 200) ;
@@ -1498,7 +1500,7 @@ function manageLegends()
             CanGraphMaplegend
                 .append('text')
                 .attr('class','text_Legend')
-                .attr("x",  $(CanMapConf.id).width() - ( CanMapConf.chart.legend_translate.x - 35 ) )  // leave 5 pixel space after the <rect>
+                .attr("x",  width_map - ( CanMapConf.chart.legend_translate.x - 35 ) )  // leave 5 pixel space after the <rect>
                 .attr("y", function(d, i) {
                    return (i * 15) + CanMapConf.chart.legend_translate.y ; // + (CanMapHeight - 200);
                 })
@@ -1542,7 +1544,7 @@ function manageLegends()
         CanGraphGroupLegend
             .append('rect')
             .attr('class','rect_Legend')
-            .attr("x", $(CanMapConf.id).width() - CanMapConf.chart.legend_translate.x ) 
+            .attr("x", width_map - CanMapConf.chart.legend_translate.x ) 
             .attr("y",  CanMapConf.chart.legend_translate.y + ( CanMapGraphNbColors * last_values_y ) )
             .attr("width", 25 )
             .attr("height", 10 )
@@ -1553,7 +1555,7 @@ function manageLegends()
         CanGraphGroupLegend
             .append('rect')
             .attr('class','rect_Legend')
-            .attr("x", $(CanMapConf.id).width() - CanMapConf.chart.legend_translate.x ) 
+            .attr("x", width_map - CanMapConf.chart.legend_translate.x ) 
             .attr("y",  CanMapConf.chart.legend_translate.y + ( CanMapGraphNbColors * last_values_y ) + 15 )
             .attr("width", 25 )
             .attr("height", 10 )
@@ -1565,7 +1567,7 @@ function manageLegends()
         CanGraphGroupLegend
             .append('text')
             .attr('class','text_Legend')
-            .attr("x",  $(CanMapConf.id).width() - ( CanMapConf.chart.legend_translate.x - 35 ) )  // leave 5 pixel space after the <rect>
+            .attr("x",  width_map - ( CanMapConf.chart.legend_translate.x - 35 ) )  // leave 5 pixel space after the <rect>
             .attr("y", CanMapConf.chart.legend_translate.y + ( CanMapGraphNbColors * last_values_y ) - 2 )  // + (CanMapHeight - 200);})
             .style('font-size','12px')
             .attr("dy", "0.9em") // place text one line *below* the x,y point
@@ -1574,7 +1576,7 @@ function manageLegends()
         CanGraphGroupLegend
             .append('text')
             .attr('class','text_Legend')
-            .attr("x",  $(CanMapConf.id).width() - ( CanMapConf.chart.legend_translate.x - 35 ) )  // leave 5 pixel space after the <rect>
+            .attr("x",  width_map - ( CanMapConf.chart.legend_translate.x - 35 ) )  // leave 5 pixel space after the <rect>
             .attr("y", CanMapConf.chart.legend_translate.y + ( CanMapGraphNbColors * last_values_y ) + 13 )  // + (CanMapHeight - 200);})
             .style('font-size','12px')
             .attr("dy", "0.9em") // place text one line *below* the x,y point
