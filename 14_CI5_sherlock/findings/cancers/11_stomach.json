@@ -1,0 +1,109 @@
+{
+  "code": 11,
+  "label": "Stomach",
+  "short": "Stomach",
+  "icd10": "C16",
+  "slug": "stomach",
+  "quick_take": "Stomach cancer has been falling globally for 50 years — the story of a disease chased down by refrigeration, falling *H. pylori* prevalence and better food hygiene. CI5 captures the decline with textbook clarity, but also the hold-out belts in East Asia and inland China.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-nordic-collapse-is-near-total",
+          "title": "The Nordic collapse is near-total",
+          "text": "Iceland men 97.0 → 5.1 (−95 %), Finland 74.5 → 6.0 (−92 %), Norway 47.7 → 6.1 (−87 %), Denmark 40.6 → 7.1 (−83 %). Women in the same countries dropped 86–92 %. Together these constitute one of the most complete disappearances of a cancer burden ever recorded.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The Nordic collapse is near-total",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=520800099_524600099_535200099_557800099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "the-chinese-belt-matches-the-oesophagus-belt-same-counties",
+          "title": "The Chinese belt matches the oesophagus belt — same counties",
+          "text": "Yangcheng males 168.9 (vol X), Shexian 151.9 (vol XI), Yanting 144.6 (vol XI), Cixian 118.0 (vol XI). 14–19× the world median. Three of these counties also top the oesophagus list — same rural diet signal (pickled vegetables, nitrosamines) hitting both sites.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The Chinese belt matches the oesophagus belt — same counties",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=415600699_415601699_415601899_415603999&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-japanese-shows-the-migrant-inversion-classic",
+          "title": "Hawaii Japanese shows the migrant inversion classic",
+          "text": "Inverted-U: 61.2 (vol I, Japan-imported rates) → peak 66.1 (vol II) → 7.7 (vol XII). Their origin rates in Japan are still falling too, but the Hawaii curve falls *faster* — environment dominates genetics.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Hawaii Japanese shows the migrant inversion classic",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=439200099_684009921_684009999&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "ugandan-rise",
+          "title": "Ugandan rise",
+          "text": "Kyadondo men 2.43 → 6.06 ASR (n=13→100) and women 1.08 → 4.55 (n=3→95). Small absolute numbers, and for men the crude rate actually falls slightly while ASR rises — direction is real but part of the signal is age-structure change. Pop_warning Uganda vol VII. Worth checking subsite (cardia vs non-cardia).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Ugandan rise",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=180000299&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "None of these findings rely on a coding break.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "The Iceland/Finland baselines in vol I (1955–1965) may include some oesophageal cardia — but the magnitude is large enough that the story survives.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=524600099_535200099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "A \"global Nordic-collapse\" figure comparing Iceland / Finland / Norway / Denmark on a single chart would be striking.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=520800099_524600099_535200099_557800099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Why is the decline slower (or absent) in Chinese rural registries? Pickled-food penetration, *H. pylori* prevalence, refrigeration access — a geographic story waiting to be told.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "Uganda: is the rise driven by cardia adenocarcinoma (obesity / reflux signal) or non-cardia (*H. pylori*)?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

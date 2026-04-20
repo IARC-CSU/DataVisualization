@@ -1,0 +1,127 @@
+{
+  "code": 56,
+  "label": "Leukaemia",
+  "short": "Leukaemia",
+  "icd10": "C91-95",
+  "slug": "leukaemia",
+  "quick_take": "Leukaemia in CI5 has one massive outlier — **Zimbabwe Bulawayo African women, vol II, ASR 42.5** — which is 8× the world median and stands well above every registry. Alongside that, the dataset shows clear Kuwaiti paediatric signals and remarkable stability in age distributions across decades.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "zimbabwe-bulawayo-african-women-vol-ii-asr-42-52",
+          "title": "Zimbabwe Bulawayo African women vol II: ASR 42.52",
+          "text": "extraordinary for 1960s-era African data. Almost certainly HIV-associated *before* HIV was named (lymphoid leukaemia / lymphoma overlap), but the magnitude is striking regardless. Sits as the #1 outlier for the site.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Zimbabwe Bulawayo African women vol II: ASR 42.52",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=56&populations=171600170&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-men-the-by-now-familiar-u-shape",
+          "title": "India Trivandrum men: the by-now-familiar U-shape",
+          "text": "21.93 (vol VII) → 3.75 (vol VIII) → 5.46 (vol XII). Vol VII is real (it is the very highest Asian male leukaemia rate recorded); the dive to vol VIII is a scope change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum men: the by-now-familiar U-shape",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=56&populations=435600899&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "kuwait-non-kuwaitis-women-vol-ix-early-peak-at-age-band-1-0-",
+          "title": "Kuwait non-Kuwaitis women vol IX: early-peak at age band 1 (0–4), ASR at peak 38.7",
+          "text": "paediatric leukaemia signal elevated by the large migrant-worker demographics (young population skew).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Kuwait non-Kuwaitis women vol IX: early-peak at age band 1 (0–4), ASR at peak 38.7",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=56&populations=441400099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-india-tamil-nadu-korea-hong-kong-chine",
+          "title": "Bimodal age curves in India Tamil Nadu, Korea, Hong Kong, Chinese cities",
+          "text": "a clear paediatric peak (band 1–3) *and* an older-adult peak (band 14–17). This is the \"two leukaemias\" pattern (ALL in childhood + AML/CLL in late adulthood) showing up geographically wherever the registry is big enough to record both.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in India Tamil Nadu, Korea, Hong Kong, Chinese cities",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=56&populations=415603099_435604099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "us-ethnic-contrasts-5-or-less",
+          "title": "US ethnic contrasts 5× or less",
+          "text": "unusually small for a cancer site. Leukaemia is one of the more ethnically balanced cancers in CI5.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US ethnic contrasts 5× or less",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "france-calvados-men-u-shape-recovery",
+          "title": "France Calvados men: U-shape recovery",
+          "text": "4.31 → 3.27 → 13.29. Pronounced rise, U-shape with a significant rebound.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — France Calvados men: U-shape recovery",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=56&populations=525000299&sexes=1",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Leukaemia aggregates ALL + AML + CML + CLL — each with very different age patterns. Cross-registry comparison without sub-type split is limited.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Zimbabwe Bulawayo vol II (1963–67) is based on small absolute numbers; the ASR of 42 is credible but the magnitude should be stated with wide uncertainty.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The **Zimbabwe Bulawayo 1960s female leukaemia outlier** needs a historical retrospective — what was captured at Mpilo Hospital then, and is it really ALL/AML or a lymphoma-leukaemia misclassification?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "A CI5-wide \"two-peak fingerprint\" visualisation (paediatric + old-age) would show how well large registries can capture both sub-populations and how many smaller registries cannot.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "Kuwait non-Kuwaiti paediatric peak could be used to illustrate population-demography effects on crude age curves.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=56&populations=441400099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

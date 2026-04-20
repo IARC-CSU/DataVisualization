@@ -1,0 +1,100 @@
+{
+  "code": 12,
+  "label": "Small intestine",
+  "short": "Small intestine",
+  "icd10": "C17",
+  "slug": "small_intestine",
+  "quick_take": "A rare cancer (median ASR around 1) but one of the clearest *rising* trends in the dataset — virtually every high-income registry is going up, and the rise is especially steep in Black populations in the USA.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "almost-no-registry-is-falling",
+          "title": "Almost no registry is falling",
+          "text": "The \"biggest decreases\" panel is empty for both sexes — unusual in CI5.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Almost no registry is falling",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "us-black-populations-are-climbing-fast",
+          "title": "US Black populations are climbing fast",
+          "text": "Louisiana/New Orleans Black men 0.32 → 2.98 (+831 %, inverted-U shape peaking in vol XI); Connecticut Black men +855 %; Louisiana/New Orleans Black women 0.37 → 3.75 (+913 %). Minimum cell-counts are 1–2 cases in early volumes — the magnitudes of percent-change are exaggerated; statewide USA Black (SEER) shows a smaller but consistent rise.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US Black populations are climbing fast",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=12&populations=384000430_384000499_384000730_384000799_384002299&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "new-zealand-m-ori-women-have-tripled",
+          "title": "New Zealand Māori women have tripled",
+          "text": "0.28 (vol II) → 2.08 (vol XII), inverted-U peaking in vol X.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — New Zealand Māori women have tripled",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=12&populations=655400099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "ethnic-spread-inside-the-usa-is-13",
+          "title": "Ethnic spread inside the USA is 13×",
+          "text": "Black populations at the top, Native American and Korean immigrant populations at the bottom.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Ethnic spread inside the USA is 13×",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=12&populations=384000099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Small absolute numbers; any single-registry trend should be read with confidence intervals.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Coding drift between carcinoid and adenocarcinoma over the CI5 era is a known issue — some of the rise may reflect better counting of neuroendocrine tumours (especially in registries with strong pathology). Worth flagging explicitly in any writeup.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The US Black steep rise: obesity/diet, or better histological capture of carcinoids? Stratifying by morphology in SEER-quality registries would help.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "The universally male-heavy sex ratio in Europe deserves an explanation — Crohn's-related small-bowel adenocarcinoma? Note most specific registry claims (Poland Cracow 19:1 etc.) are based on single-digit female numerators.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

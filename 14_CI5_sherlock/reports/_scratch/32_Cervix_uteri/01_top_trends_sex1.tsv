@@ -1,0 +1,41 @@
+id_code	id_label	ethnic_code	sex	n_vol	first_vol	first_asr	last_vol	last_asr	min_asr	min_vol	max_asr	max_vol	pct_change	shape	abs_pct
+101200199	Algeria, Sétif	99	1	5	6	0	11	0	0	6	0	6		rising	
+171600270	Zimbabwe, Harare: African	70	1	6	7	0	12	0	0	7	0	7		rising	
+180000299	Uganda, Kyadondo County	99	1	7	1	0	12	0	0	1	0	1		rising	
+207600299	Brazil, Goiânia	99	1	7	6	0	12	0	0	6	0	6		rising	
+207600899	Brazil, Sao Paulo	99	1	5	3	0	10	0	0	3	0	3		rising	
+215200199	Chile, Valdivia	99	1	4	9	0	12	0	0	9	0	9		rising	
+217000199	Colombia, Cali	99	1	12	1	0	12	0	0	1	0	1		rising	
+218800099	Costa Rica	99	1	8	5	0	12	0	0	5	0	5		rising	
+221800199	Ecuador, Quito	99	1	7	6	0	12	0	0	6	0	6		rising	
+225009199	France, Martinique	99	1	7	5	0	12	0	0	5	0	5		rising	
+238800199	Jamaica, Kingston and St Andrew	99	1	6	1	0	11	0	0	1	0	1		rising	
+263000099	USA, Puerto Rico	99	1	11	1	0	12	0	0	1	0	1		rising	
+312400099	Canada	99	1	8	3	0	10	0	0	3	0	3		rising	
+312400199	Canada, Alberta	99	1	12	1	0	12	0	0	1	0	1		rising	
+312400299	Canada, British Columbia	99	1	10	3	0	12	0	0	3	0	3		rising	
+312400399	Canada, Manitoba	99	1	12	1	0	12	0	0	1	0	1		rising	
+312400499	Canada, Northwest Territories	99	1	7	5	0	11	0	0	5	0	5		rising	
+312400599	Canada, New Brunswick	99	1	10	1	0	12	0	0	1	0	1		rising	
+312400699	Canada, Nova Scotia	99	1	7	5	0	11	0	0	5	0	5		rising	
+312400799	Canada, Prince Edward Island	99	1	8	5	0	12	0	0	5	0	5		rising	
+312400899	Canada, Newfoundland and Labrador	99	1	12	1	0	12	0	0	1	0	1		rising	
+312400999	Canada, Yukon	99	1	6	6	0	12	0	0	6	0	6		rising	
+312401099	Canada, Ontario	99	1	9	3	0	12	0	0	3	0	3		rising	
+312401199	Canada, Quebec	99	1	9	2	0	12	0	0	2	0	2		rising	
+312401299	Canada, Saskatchewan	99	1	12	1	0	12	0	0	1	0	1		rising	
+384000210	USA, California, San Francisco Bay Area: White	10	1	7	3	0	12	0	0	3	0	3		rising	
+384000220	USA, California, San Francisco Bay Area: Chinese	20	1	6	3	0	11	0	0	3	0	3		rising	
+384000221	USA, California, San Francisco Bay Area: Japanese	21	1	5	4	0	11	0	0	4	0	4		rising	
+384000223	USA, California, San Francisco Bay Area: Filipino	23	1	4	5	0	11	0	0	5	0	5		rising	
+384000230	USA, California, San Francisco Bay Area: Black	30	1	10	3	0	12	0	0	3	0	3		rising	
+384000250	USA, California, San Francisco Bay Area: Hispanic White	50	1	6	7	0	12	0	0	7	0	7		rising	
+384000260	USA, California, San Francisco Bay Area: Non-Hispanic White	60	1	6	7	0	12	0	0	7	0	7		rising	
+384000299	USA, California, San Francisco Bay Area	99	1	6	7	0	12	0	0	7	0	7		rising	
+384000320	USA, California, Los Angeles County: Chinese	20	1	9	4	0	12	0	0	4	0	4		rising	
+384000321	USA, California, Los Angeles County: Japanese	21	1	7	4	0	10	0	0	4	0	4		rising	
+384000322	USA, California, Los Angeles County: Korean	22	1	8	5	0	12	0	0	5	0	5		rising	
+384000323	USA, California, Los Angeles County: Filipino	23	1	8	5	0	12	0	0	5	0	5		rising	
+384000330	USA, California, Los Angeles County: Black	30	1	9	4	0	12	0	0	4	0	4		rising	
+384000350	USA, California, Los Angeles County: Hispanic White	50	1	8	5	0	12	0	0	5	0	5		rising	
+384000360	USA, California, Los Angeles County: Non-Hispanic White	60	1	7	6	0	12	0	0	6	0	6		rising	

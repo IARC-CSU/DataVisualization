@@ -1,0 +1,127 @@
+{
+  "code": 52,
+  "label": "Hodgkin disease",
+  "short": "Hodgkin disease",
+  "icd10": "C81",
+  "slug": "hodgkin_disease",
+  "quick_take": "Hodgkin disease is the textbook \"bimodal age-curve\" cancer — a young-adult peak plus an older-adult peak — and CI5 captures both peaks cleanly in large US datasets. Incidence is fairly stable globally but several Mediterranean / Eastern European populations show an unusual rise, and Canadian NWT & Yukon women carry a persistent excess.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "canada-nwt-yukon-women-vol-iv-asr-8-0-4-the-world-median",
+          "title": "Canada NWT & Yukon women, vol IV: ASR 8.0, 4× the world median",
+          "text": "The top Hodgkin spatial outlier. Canadian Yukon men also flagged in vol VII at 7.95. Yukon numerators are single-digit in early volumes and carry pop_warning vol VII; treat the magnitude as indicative rather than precise.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Canada NWT & Yukon women, vol IV: ASR 8.0, 4× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=52&populations=312400999&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "us-nebraska-black-women-vol-xii-asr-5-79-3-5-median",
+          "title": "US Nebraska Black women vol XII: ASR 5.79, 3.5× median",
+          "text": "Based on 3→15 cases across vols X–XII; the ASR rise is direction-consistent with crude but the absolute numerator is small. Curious because the overall US Black rate is not especially elevated; worth checking the underlying subset.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US Nebraska Black women vol XII: ASR 5.79, 3.5× median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=52&populations=384004730_384004799&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "italian-provinces-ferrara-benevento-caserta-and-israel-jews-",
+          "title": "Italian provinces (Ferrara, Benevento, Caserta) and Israel Jews-born-in-Israel women",
+          "text": "sit at 5–6.5 ASR, 3× median. Italy's persistence of young-adult Hodgkin signals is well-documented.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Italian provinces (Ferrara, Benevento, Caserta) and Israel Jews-born-in-Israel women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=52&populations=437600090_437600099_538001299_538004499_538005299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "italy-latina-men-273-france-doubs-321",
+          "title": "Italy Latina men +273 %, France Doubs +321 %",
+          "text": "(both inverted-U). Real trends not artefacts.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Italy Latina men +273 %, France Doubs +321 %",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=52&populations=525000399_538000399&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-us-aggregate-data",
+          "title": "Bimodal age curves in US aggregate data",
+          "text": "peak at age bands 5 (20–24) and 16+ (75+) — the classic Hodgkin two-peak distribution, with a clear minimum at middle-age. CI5 visualises this fingerprint at scale (18–20 k cases).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in US aggregate data",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "early-peak-at-age-band-4-15-19-in-russia-st-petersburg-us-de",
+          "title": "Early-peak at age band 4 (15–19) in Russia St Petersburg, US Detroit, Quebec",
+          "text": "the \"young adult\" peak dominant over the older-adult peak.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Early-peak at age band 4 (15–19) in Russia St Petersburg, US Detroit, Quebec",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=52&populations=312401199_384000899&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Hodgkin vs non-Hodgkin classification has shifted across ICD revisions; some small changes at volume boundaries reflect that.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Pediatric Hodgkin classification changes around ICD-9/10 may affect young-age rates.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Canadian NWT Hodgkin excess is underreported — a brief Indigenous-health note could be written.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Italy's persistent young-adult Hodgkin signal is worth re-investigating in the context of EBV epidemiology and hygiene-hypothesis data.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "Bimodal age curves at vol-XII scale would make a compelling single figure.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

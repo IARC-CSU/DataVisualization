@@ -1,0 +1,136 @@
+{
+  "code": 24,
+  "label": "Melanoma of skin",
+  "short": "Melanoma of skin",
+  "icd10": "C43",
+  "slug": "melanoma_of_skin",
+  "quick_take": "Australia and New Zealand remain an order of magnitude above the rest of the world, and the gap isn't closing. The more subtle finding is the **Hawaii-White population** — in terms of melanoma they behave exactly like Queensland/NSW, not like US mainland whites. The ethnic-within-country ratios for this cancer are the largest of any site in the dataset.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "queensland-men-vol-xii-asr-68-3-38-the-world-median",
+          "title": "Queensland men vol XII: ASR 68.3, 38× the world median",
+          "text": "Queensland women 47.5 (33×). Tasmania women 35.3, Northern Territory non-Indigenous men 45.5. The Australian \"skin cancer state\" story is robust and intensifying.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Queensland men vol XII: ASR 68.3, 38× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=603600399_603600599_603600899&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-white-men-caught-up-to-queensland",
+          "title": "Hawaii-White men caught up to Queensland",
+          "text": "3.59 (vol I) → 55.3 (vol X) → 44.2 (vol XII), a 12-fold rise in 50 years; Hawaii-White women also reached 36.9 (vol X). Same latitude + same light-skin denominator = same outcome.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Hawaii-White men caught up to Queensland",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=603600399_684009999&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "huge-ethnic-within-country-ratios",
+          "title": "Huge ethnic-within-country ratios",
+          "text": "USA White vs Hispanic ratio 276× in vol XII (men 44.2 vs 0.16); White vs Korean 274× in vol IX; White vs Black women 208× in vol VII. These are the largest ethnic gradients in CI5 for any site.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Huge ethnic-within-country ratios",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=384000010_384000099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "european-catch-up-is-steep",
+          "title": "European catch-up is steep",
+          "text": "Malta men 0.6 → 8.6 (+1361 %); UK South West 1.5 → 16.0 (+995 %); Slovenia 1.6 → 17.1 (+950 %); France Somme 1.0 → 9.8 (+916 %). Women: Spain Zaragoza 0.3 → 4.2 (+1258 %); Switzerland Geneva 2.0 → 17.5 (+768 %).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — European catch-up is steep",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=525000699_547000099_570500099_572400799_575600299_582600699&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "iceland-s-late-female-peak",
+          "title": "Iceland's late female peak",
+          "text": "Women 2.09 (vol I) → 19.0 peak (vol IX) → 10.6 (vol XII), inverted-U. Israeli women born in Israel peaked at 29.7 in vol VII then dropped sharply to 14.6 — consistent with sun-smart + better-screening hypotheses.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Iceland's late female peak",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=437600099_535200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-show-up-in-cooler-regions",
+          "title": "Bimodal age curves show up in cooler regions",
+          "text": "(Belarus, Tyrol, UK South West). The second peak sits at age band 14–17 (mid-60s), the first at the 30–40s peak. This is a clinically-reported melanoma signature (two modes) and CI5 captures it at registry scale.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves show up in cooler regions",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=504000799_511200099_582600699&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "early-female-peak-in-uk-oxford-region-vol-iii-and-usa-hawaii",
+          "title": "Early female peak in UK Oxford Region vol III and USA Hawaii vol VII",
+          "text": "melanoma peaks at age band 8 (35–44), which is exceptionally young and fits the pre-screening era.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Early female peak in UK Oxford Region vol III and USA Hawaii vol VII",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=582600499_684009999&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Historical US White vs non-White ratios of 200× depend on small numerator counts in non-White sub-populations — the ratios are real but ranking them on ratio alone overweights rare denominators.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "A portion of the generalised rise reflects better biopsy/registry practices — direct comparison of vol I and vol XII should acknowledge that.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-hawaii-white-curve-matches-queensland-s-almost-exactly",
+          "title": "The Hawaii-White curve matches Queensland's almost exactly",
+          "text": "a single chart of Queensland men + Hawaii-White men across CI5 volumes would be a beautiful visual proof that latitude + skin type drive melanoma, not \"Australia as a special case\".",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The Hawaii-White curve matches Queensland's almost exactly",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=603600399_684009999&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The female inverted-U in Iceland, Israel and Switzerland (peaking vol IX–X, now falling) is consistent with public-health intervention effects and is underreported.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=437600099_535200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "The US vol-XII White-to-Hispanic ratio (276×) is likely the largest *ethnic gradient* still active for any cancer globally.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

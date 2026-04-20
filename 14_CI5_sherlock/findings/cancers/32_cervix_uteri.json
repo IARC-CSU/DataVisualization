@@ -1,0 +1,136 @@
+{
+  "code": 32,
+  "label": "Cervix uteri",
+  "short": "Cervix uteri",
+  "icd10": "C53",
+  "slug": "cervix_uteri",
+  "quick_take": "The cancer that launched this project. CI5 captures the full arc: the clean Pap-era decline in the West; the unmatched Sub-Saharan burden; the East-Asian reversal where urban-China coastal cities have gone from very low to markedly rising (and this is what Shanghai's U-shape looks like). The UK's bimodal / early-peak age curves are a less-discussed fingerprint of HPV that CI5 makes very clear.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-classic-u-shape-in-singapore-indian-women",
+          "title": "The classic U-shape in Singapore Indian women",
+          "text": "40.4 (vol III) → 3.7 (vol X) → 4.2 (vol XII). 89 % fall, now flat. Same U in New Brunswick (n=276→149), Hawaii Japanese (n=116→37), Hawaii Chinese (n=17→10), Geneva (n=112→58), Hawaii White (n=132→62). The shape is a cervical-cytology story: crashing rates then plateau. Singapore-Indian cases are small in early volumes (n=8–25); the U-shape in Hawaii-Chinese sits on single-digit counts in some vols — the combined signal across six populations makes the pattern robust even where individual subgroups are noisy.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The classic U-shape in Singapore Indian women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=312400599_470200040_470200099_575600299_684009910_684009920_684009921_684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "uganda-kyadondo-is-the-outlier-where-the-rate-kept-rising",
+          "title": "Uganda Kyadondo is the outlier where the rate kept rising",
+          "text": "24.8 (vol I) → 54.3 (vol X) → 48.0 (vol XII). Tripled and hasn't meaningfully retreated.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Uganda Kyadondo is the outlier where the rate kept rising",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=180000299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "sub-saharan-african-registries-are-still-the-world-s-top",
+          "title": "Sub-Saharan African registries are still the world's top",
+          "text": "Zimbabwe Harare African women 86.7 (vol X) and 75.0 (vol XII); Zimbabwe Bulawayo 89.9 (vol XII); Malawi Blantyre 76.3. All 10–13× the world median. South Africa Eastern Cape 60.8. These registries carry the world's cervix burden in 2020s data.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Sub-Saharan African registries are still the world's top",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=145400199_171000199_171600270_171600299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "inland-china-is-the-most-spectacular-rise",
+          "title": "Inland China is the most spectacular rise",
+          "text": "Jiashan County 1.18 (vol VIII) → 9.89 (vol XII), +738 %. Qidong 3.69 → 13.78 (U-shape). Harbin Nangang 3.03 → 11.24. Wuhan 3.87 → 11.03. Zhongshan 3.54 → 9.98. Beijing 2.30 → 6.15. All rising, and **none of them fit the global \"screening-driven fall\" narrative** — these are cities where screening is still being rolled out and the underlying HPV-infection cohort wave has yet to peak. This is the story that justifies the whole project and the HTML presentation.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Inland China is the most spectacular rise",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=415600199_415600299_415600799_415600999_415601499_415601599&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-populations-collapse-together",
+          "title": "Hawaii populations collapse together",
+          "text": "Hawaiian -92 %, Chinese -87 %, Japanese -88 %, Filipino -90 %, Pacific peoples -90 %. One of the cleanest \"big-cohort screening\" effects anywhere.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Hawaii populations collapse together",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "early-peak-in-uk-women-across-all-sub-registries-vol-xi-xii",
+          "title": "Early peak in UK women across all sub-registries, vol XI–XII",
+          "text": "Peak at age band 6 (25–34) in England, West Midlands, South West, East, South East — every large English registry. This is a striking early-age fingerprint that reflects the UK's earlier HPV-infection cohorts plus strong screening above 35 pushing the peak younger.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Early peak in UK women across all sub-registries, vol XI–XII",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=582600199_582600299_582600699_582601799&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-the-netherlands-and-denmark",
+          "title": "Bimodal age curves in the Netherlands and Denmark",
+          "text": "a second peak in the 70s. This \"screening-leaves-a-tail\" pattern is known but CI5 vol VIII–X shows it with large case counts.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in the Netherlands and Denmark",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=520800099&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Hawaii populations have a pop_warning from vol VII; the magnitude of the collapse is credible but the exact trajectory inside volumes VI–VII should not be over-parsed.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Rising inland-Chinese registries should be checked against HPV-prevalence surveys; a portion of the rise may be ascertainment as registries mature.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "a-shanghai-plus-inland-china-figure-showing-the-coastal-fall",
+          "title": "A Shanghai-plus-inland-China figure showing the coastal fall and inland rise",
+          "text": "is the core story the HTML hinted at. Add Wuhan and Harbin, and it becomes a paper.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — A Shanghai-plus-inland-China figure showing the coastal fall and inland rise",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=415600399_415600999_415601599&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Sub-Saharan plateau at 50–90 ASR is a policy story, not a surprise — but CI5's 60-year window shows how long the excess has been sustained.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "UK's age-peak compression to age band 6 is a clear HPV-era fingerprint that deserves a methods note.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "code": 42,
+  "label": "Kidney etc.",
+  "short": "Kidney etc.",
+  "icd10": "C64-66,C68",
+  "slug": "kidney_etc",
+  "quick_take": "Kidney cancer is almost universally rising — but the rise is split between *detection* (incidental CT findings of small renal masses) and *real burden* (obesity, hypertension, smoking cohorts). Indigenous populations and a Naples-sized cluster of Italian men are carrying the highest current rates.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "canada-nwt-yukon-women-vol-iv-asr-23-8-5-6-the-world-female-",
+          "title": "Canada NWT & Yukon women, vol IV: ASR 23.8 — 5.6× the world female median",
+          "text": "Alaska n=89→249, Montana n=218→409, Oklahoma n=893→1770. The Indigenous excess is unusually prominent for this site and spans generations. Yukon vol IV sits on single-digit counts + a pop_warning (vol VII); the Alaska / Montana / Oklahoma aggregate numerators carry the statistical weight. Coding_break: kidney definition shifted between ICD-7 and later volumes, so vol IV → XII contrasts inherit that caveat.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Canada NWT & Yukon women, vol IV: ASR 23.8 — 5.6× the world female median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=312400999_384005099_384006499_384006699&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "japanese-and-us-asian-catch-ups-huge",
+          "title": "Japanese and US-Asian catch-ups: huge",
+          "text": "Miyagi men 1.13 → 12.46 (+1003 %); Osaka men 2.92 → 11.76 (U-shape); LA Filipino men 1.11 → 9.98 (+799 %); Singapore Chinese men 1.32 → 10.44 (+691 %). Much of this is incidental CT detection; some is real.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japanese and US-Asian catch-ups: huge",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=439200299_439200499_470200020_470200099&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "shanghai-men-classic-u-shape",
+          "title": "Shanghai men: classic U-shape",
+          "text": "2.04 → 1.77 → 9.31. Characteristic urbanising-East-Asia pattern.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Shanghai men: classic U-shape",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=415600399&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "spain-tarragona-and-israel-arab-women-u-shape-recoveries",
+          "title": "Spain Tarragona and Israel-Arab women: U-shape recoveries",
+          "text": "1.54 → 1.32 → 4.82 and 1.26 → 0.79 → 3.40. Consistent with a late-arriving CT-detection wave.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Spain Tarragona and Israel-Arab women: U-shape recoveries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=437600099_572400199&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "morocco-casablanca-women-and-india-chennai-women-show-bimoda",
+          "title": "Morocco Casablanca women and India Chennai women show bimodal age curves",
+          "text": "with a secondary peak at age band 14 (65–69). The shapes are unusual for kidney cancer and deserve a sanity-check — could be Wilms-tumour vs renal-cell confusion in older volumes.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Morocco Casablanca women and India Chennai women show bimodal age curves",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=150400199_435600499&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "women-heavy-registries",
+          "title": "Women-heavy registries",
+          "text": "The Gambia 0.13 (M 0.14, F 1.04 — nearly 1:8 ratio, an exceptional inversion!), Barshi/Paranda 0.27, Northwest Territories + Yukon 0.36. Kidney cancer is usually 2:1 male:female; the Gambia's reversal is notable — but numerators are 3–6 cases per cell and NWT/Yukon numbers show ASR/crude divergence (population ageing). Treat as indicative, not quantitative.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Women-heavy registries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=127000099_312400499_312400999&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "ethnic-contrast-inside-usa-is-11-21-depending-on-volume",
+          "title": "Ethnic contrast inside USA is 11–21× depending on volume",
+          "text": "US White-to-Asian ratios were 21× in vol IV, around 10× in vol X — narrowing but still large.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Ethnic contrast inside USA is 11–21× depending on volume",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=384000099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "cancer-warning",
+          "title": "cancer_warning",
+          "text": "ICD-7 was used for the first three volumes, with some discrepancies versus later volumes. Don't read too much into the vol I–II → vol IV step.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — cancer_warning",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Incidental-imaging detection (late-1980s onward) accounts for a substantial part of the Western rise; corrected-for-stage analyses in national data would separate real from apparent.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "The Indigenous (Alaska, Canada NWT, Montana, Oklahoma) women's excess needs a focused review — the magnitude is striking and persistent.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=312400099_384005099_384006499_384006699&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "A \"kidney + bladder as a single urinary-tract story in urbanising East Asia\" paper with Shanghai, Miyagi, Osaka, Singapore, Seoul would land well.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=42&populations=415600399_439200299_439200499_441000399_470200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "The bimodal Moroccan and Indian kidney age-curves could reveal a coding issue with Wilms tumour at the adult boundary.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CI5 sherlock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="nav" id="nav"></aside>
+    <main id="main">
+      <header><h1>Loading…</h1></header>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+  <script>
+    window.CI5_APP.renderCancer();
+    window.addEventListener("hashchange", () => window.CI5_APP.renderCancer());
+  </script>
+</body>
+</html>

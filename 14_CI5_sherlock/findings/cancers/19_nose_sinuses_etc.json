@@ -1,0 +1,58 @@
+{
+  "code": 19,
+  "label": "Nose sinuses etc.",
+  "short": "Nose sinuses etc.",
+  "icd10": "C30-31",
+  "slug": "nose_sinuses_etc",
+  "quick_take": "Nose and paranasal-sinus cancer is the clearest \"vanishing occupational cancer\" in CI5 — almost every registry falls, often to near-zero. Absolute rates are low everywhere (<3 per 100 000), so almost every sub-national pattern reduces to small-number arithmetic; we have cut the original finding list back to those with enough cases to stand up.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "shanghai-men-fell-2-94-0-35-88",
+          "title": "Shanghai men fell 2.94 → 0.35 (−88 %)",
+          "text": "n=63→131. The urbanisation + workplace-ventilation story familiar from other aerodigestive sites — one of the few registry trends on this site large enough to be statistically solid.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Shanghai men fell 2.94 → 0.35 (−88 %)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=19&populations=415600399&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "the-generalised-decline-is-near-universal",
+          "title": "The generalised decline is near-universal",
+          "text": "Most \"biggest decrease\" rows are near-zeros; many vol-XII female rates in US-Japanese and US-Chinese subgroups are literally 0.00. This is the signature of a disease class (wood-dust, leather-dust, nickel) that has been regulated out of most workplaces.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The generalised decline is near-universal",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Numbers are small almost everywhere — many of the \"rises\" are from 0.05 to 0.5 per 100 000, so relative changes exaggerate. Italian provincial M:F ratios (Parma 63:1 etc.), Australian NT Indigenous rates, Iran Golestan female signals, Italy Sondrio +1000 % all sat on single-digit or zero-case cells and were cut from the headline findings on that basis.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "The ICD-10 C30–C31 range excludes nasopharynx (C11). Don't conflate with the Asian-Chinese EBV-driven NPC signal.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

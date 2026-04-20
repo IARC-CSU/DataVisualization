@@ -1,0 +1,100 @@
+{
+  "code": 51,
+  "label": "Other endocrine",
+  "short": "Other endocrine",
+  "icd10": "C74-75",
+  "slug": "other_endocrine",
+  "quick_take": "C74–75 covers adrenal + pituitary + pineal. Very rare. The striking finding is Sweden: Swedish women, vols III–VI, run ASRs of 3.5–6.6 per 100 000 — 8–20× the world median. No other registry comes close. Almost certainly a registration practice (probably neuroblastoma + adrenal cortical tumour capture) rather than biology.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "sweden-women-vol-vi-asr-6-56-20-the-world-median",
+          "title": "Sweden women, vol VI: ASR 6.56, 20× the world median",
+          "text": "Vol IV 6.25 (18×); vol V 5.60 (16×); vol III 3.56 (9×). Swedish men in the same era 2.86–3.83 (8×). By vol VII the Swedish rates settle closer to the rest of Europe — suggesting a coding/aggregation change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Sweden women, vol VI: ASR 6.56, 20× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=51&populations=575200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "italy-trieste-women-vol-vii-asr-3-13-8-median",
+          "title": "Italy Trieste women, vol VII: ASR 3.13, 8× median",
+          "text": "Another small pocket of historical excess.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Italy Trieste women, vol VII: ASR 3.13, 8× median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=51&populations=538006799&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "early-age-peak-at-age-band-1-0-4-in-virtually-every-large-us",
+          "title": "Early-age peak at age band 1 (0–4) in virtually every large US sample",
+          "text": "this is neuroblastoma showing up clearly in the data, even under the \"other endocrine\" aggregate.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Early-age peak at age band 1 (0–4) in virtually every large US sample",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-us-aggregate-data",
+          "title": "Bimodal age curves in US aggregate data",
+          "text": "the paediatric (neuroblastoma) peak + older adrenal peak visible in large enough samples.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in US aggregate data",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Sweden's elevated vol III–VI rates may reflect inclusion of neuroblastoma under C74 before reclassification — critical to verify before writing up.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=51&populations=575200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Rates everywhere else are low enough that single-case swings drive the rankings.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "sweden-s-1970s-c74-75-spike",
+          "title": "Sweden's 1970s C74/75 spike",
+          "text": "is worth investigating — was it a national screening / reporting initiative? Paediatric neuroblastoma in Sweden has been the subject of screening debates; this might be the incidence signature.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Sweden's 1970s C74/75 spike",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=51&populations=575200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Paediatric peak (band 1) + chromaffin tumour signatures would be clearer if the data were decomposed into C74 (adrenal) vs C75 (other endocrine); the aggregate makes some clean interpretations impossible.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "code": 13,
+  "label": "Colon",
+  "short": "Colon",
+  "icd10": "C18",
+  "slug": "colon",
+  "quick_take": "Colon cancer is rising steeply wherever diet is Westernising, and the biggest catch in CI5 is how fast. The \"Japan/Korea/Singapore catch-up\" is visible as clean inverted-U curves — they overshot Western rates and are now coming back down thanks to screening. Meanwhile many Gulf, African and Indian populations are rising from very low baselines.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "japan-s-inverted-u-is-perfect",
+          "title": "Japan's inverted-U is perfect",
+          "text": "Miyagi Prefecture men 5.45 → 37.90 (vol X) → 30.19; Hiroshima men 11.46 → 59.17 (vol VIII) → 31.44; women in Miyagi 5.95 → 24.02 → 22.0. Both the rise (diet westernisation) and the fall (screening + stabilisation) are in-frame.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japan's inverted-U is perfect",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=439200199_439200299&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "singapore-chinese-men-have-overtaken-western-rates",
+          "title": "Singapore Chinese men have overtaken Western rates",
+          "text": "2.86 (vol I) → 26.49 (vol IX) → 24.28 (vol XII). Women: 2.39 → 20.95 → 19.11. Clean inverted-U peaking around vol IX.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Singapore Chinese men have overtaken Western rates",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=470200020_470200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "kuwaiti-rise-from-near-zero-is-extraordinary",
+          "title": "Kuwaiti rise from near-zero is extraordinary",
+          "text": "Kuwaiti men 0.19 → 12.66 (+6500 %); women 0.76 → 11.73 (+1443 %). Even allowing for early under-ascertainment the magnitude dwarfs everything else.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Kuwaiti rise from near-zero is extraordinary",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "algeria-israel-arabs-mirror-the-gulf-pattern",
+          "title": "Algeria / Israel Arabs mirror the Gulf pattern",
+          "text": "Algeria Sétif men 0.73 (vol VI) → 5.48 (vol XI) in a U-shape; Israel Arabs men 5.46 → 19.86 (+264 %).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Algeria / Israel Arabs mirror the Gulf pattern",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=101200199_437600094_437600099&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "low-baseline-floor-consists-of-african-rural-indian-and-some",
+          "title": "Low-baseline \"floor\" consists of African, rural-Indian and some Chinese registries",
+          "text": "Uganda Kyadondo men 4.04, Langzhong 3.38, Mumbai 3.1 — around 0.2× the world median.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Low-baseline \"floor\" consists of African, rural-Indian and some Chinese registries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=180000299_415617899_435600399&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "sex-ratio-curiosity-in-india-chennai-2-5-1-male-and-barshi-3",
+          "title": "Sex-ratio curiosity in India Chennai (2.5:1 male) and Barshi (3.5:1 male)",
+          "text": "Most registries sit near 1.3:1 — the Indian male excess is not universal across India.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Sex-ratio curiosity in India Chennai (2.5:1 male) and Barshi (3.5:1 male)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=435600499&sexes=1",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "None of the main findings are tied to a coding break for this site.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Kuwait's earliest CI5 period (vol V–VI) is thought to have had moderate under-ascertainment; the +6500 % magnitude is likely overstated but the direction and final level are robust.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=441400099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Paper idea: \"The migrant-catch-up and turn-around of colon cancer in East Asian cities — evidence from CI5 I–XII\". Singapore, Hong Kong, Taipei, Osaka, Miyagi fit a single narrative.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=415603099_439200299_439200499_470200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Kuwait's story — from 0.2 to 12 in 40 years — is worth a standalone descriptive piece; the speed is newsworthy.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=441400099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+id_code	id_label	ethnic_code	CI5_volume	sex	peak_age_band	peak_rate	tot_cases	early_peak	bimodal
+171000199	South Africa, Eastern Cape	99	12	2	7	27.629618951516	113	TRUE	TRUE
+561601499	Poland, Katowice District	99	2	2	10	20.3883495145631	227	FALSE	TRUE
+439200299	Japan, Miyagi Prefecture	99	2	2	12	7.04225352112676	50	FALSE	TRUE
+415624299	China, Xiangfu District, Kaifeng City	99	12	2	14	36.5957792867889	195	FALSE	TRUE
+312400899	Canada, Newfoundland and Labrador	99	2	2	17	55.5555555555556	71	FALSE	TRUE

@@ -1,0 +1,3 @@
+id_code	id_label	ethnic_code	CI5_volume	sex	peak_age_band	peak_rate	tot_cases	early_peak	bimodal
+527600199	Germany, Eastern States	99	2	2	16	1.10229276895944	59	FALSE	TRUE
+470200020	Singapore: Chinese	20	1	2	7	4.19513364497183	68	TRUE	FALSE

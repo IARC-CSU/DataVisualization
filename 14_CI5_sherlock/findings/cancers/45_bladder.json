@@ -1,0 +1,154 @@
+{
+  "code": 45,
+  "label": "Bladder",
+  "short": "Bladder",
+  "icd10": "C67",
+  "slug": "bladder",
+  "quick_take": "Bladder is one of the most definition-sensitive sites — CI5 flags that non-invasive tumours may be included, and several of the registry-level outliers almost certainly reflect Ta/Tis inclusion rather than biology. Setting that aside, the real stories are: (1) the **Naples cluster** of extreme male rates in vol XII, (2) the **bilharzial** (Mozambique, Malawi, Zimbabwe) women signal, and (3) the rising tide in Algeria and Israel Arabs.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "zimbabwe-bulawayo-african-women-vol-ii-asr-34-14-8-3-the-wor",
+          "title": "Zimbabwe Bulawayo African women, vol II: ASR 34.14, 8.3× the world median",
+          "text": "A classic schistosomiasis signal. Based on 8 cases in vol II — magnitude credible at the order-of-magnitude level but not precisely. Mozambique Lourenço Marques women (13.53) also elevated. These are bilharzial squamous bladder cancers, not the urothelial cancer of smokers. Pop_warning Bulawayo vol XII + coding_break bladder inherit.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Zimbabwe Bulawayo African women, vol II: ASR 34.14, 8.3× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=171600170&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "southern-italian-naples-cluster-in-vol-xii",
+          "title": "Southern-Italian \"Naples cluster\" in vol XII",
+          "text": "Naples Centre 42.2, Naples North 41.6, Naples South 41.5, Caserta 39.7. All around 3.8× the world median, all clustered. Navarra (Spain) 39.2 matches. Either tobacco-cohort persistence or industrial exposure — worth a separate look.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Southern-Italian \"Naples cluster\" in vol XII",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=538001699_538004499_538005999_538006099_572400499&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "algeria-s-tif-women-inverted-u",
+          "title": "Algeria Sétif women, inverted-U",
+          "text": "0.07 → 2.50 (vol X) → 1.14 (n=2→24). Israel Arab women 0.22 → 3.18 (vol XI). Algeria baseline sits at 1–2 cases — the +1500 % headline is exaggerated by the tiny numerator; the direction is nevertheless one of the few rising female-bladder trajectories.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Algeria Sétif women, inverted-U",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=101200199_437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "japan-miyagi-and-osaka-men-u-shape-recovery",
+          "title": "Japan Miyagi and Osaka men: U-shape recovery",
+          "text": "6.12 → 5.48 → 15.61; 7.50 → 7.03 → 17.54. Either delayed tobacco-cohort signal or better endoscopic detection.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japan Miyagi and Osaka men: U-shape recovery",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=439200299_439200499&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-men-17-63-vol-vii-1-94-vol-viii-4-94-vol-xi",
+          "title": "India Trivandrum men: 17.63 (vol VII) → 1.94 (vol VIII) → 4.94 (vol XII)",
+          "text": "Same vol VII–VIII cliff as seen in multiple other sites in this registry — scope change, not biology.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum men: 17.63 (vol VII) → 1.94 (vol VIII) → 4.94 (vol XII)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=435600899&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "italy-ragusa-vol-v-m-f-ratio-24-1",
+          "title": "Italy Ragusa vol V: M:F ratio 24:1",
+          "text": ", Karunagappally 21:1, Hungary County Vas 18:1. Mediterranean male-smoking signatures.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Italy Ragusa vol V: M:F ratio 24:1",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=435600999_534800399_538006699&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "kidney-code-42-and-bladder-both-show-a-miyagi-osaka-la-filip",
+          "title": "Kidney (code 42) and bladder both show a Miyagi / Osaka / LA-Filipino cluster of U-shapes",
+          "text": "Might be worth treating these two sites as a coordinated \"urinary tract in urbanising East Asia\" pair.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Kidney (code 42) and bladder both show a Miyagi / Osaka / LA-Filipino cluster of U-shapes",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=439200299_439200499&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "usa-ethnic-contrast-persistent-at-14",
+          "title": "USA ethnic contrast persistent at 14×",
+          "text": "in vol X (White 8.25 vs other 0.58 women).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA ethnic contrast persistent at 14×",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=384000099&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "cancer-warning",
+          "title": "cancer_warning",
+          "text": "bladder may include non-invasive tumours. Any cross-registry level comparison must acknowledge this — registries with good urology services count Ta/Tis while others don't. The Italian Naples + Navarra cluster may partly reflect aggressive TURBT + Ta capture.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — cancer_warning",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=572400499&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding",
+          "title": "",
+          "text": "India Trivandrum vol VII–VIII is almost certainly a registry scope change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=435600899&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Zimbabwe Bulawayo vol II female rate is based on small numbers from a single 1960s volume — credible but cannot be tracked.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "naples-bladder-cluster-in-vol-xii",
+          "title": "Naples bladder cluster in vol XII",
+          "text": "deserves a standalone look: is it industrial (tanneries, dye), tobacco, or registration?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Naples bladder cluster in vol XII",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "schistosomiasis-bladder-cancer-geography",
+          "title": "Schistosomiasis bladder cancer geography",
+          "text": "Zimbabwe + Mozambique + Malawi in the 1960s–70s, paired with Egypt Gharbiah — though Egypt sits lower than expected in CI5, suggesting under-ascertainment.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Schistosomiasis bladder cancer geography",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=45&populations=181800299&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Algerian / Arab-Israeli women's rise is subtle but consistent.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

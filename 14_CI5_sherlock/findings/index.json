@@ -1,0 +1,543 @@
+{
+  "intro": "A curated digest of the most striking temporal or spatial patterns across all 34 cancer sites in CI5 volumes I–XII, ranked by how publishable they look and how much of the story is already well-known in the literature. Each entry cross-references the per-site report. This is the reading order; the per-site reports contain the exact registry / volume / ASR values that make each claim checkable.",
+  "sections": [
+    {
+      "heading": "A — Most publishable novel findings",
+      "intro": "These are findings that are either underreported in the literature or where CI5's 60-year window gives a uniquely compelling visual proof.",
+      "findings": [
+        {
+          "id": "the-inland-china-cervical-cancer-rise",
+          "title": "The inland-China cervical cancer rise",
+          "text": "Jiashan County women +738 %, Qidong +273 %, Harbin Nangang +271 %, Wuhan +185 %, Zhongshan +182 %, Beijing +167 %. All rising while coastal Shanghai and the rest of East Asia fall. This is the pattern that prompted the project; a focused figure showing the coastal-fall / inland-rise duality is the core story. See [Cervix uteri](cancer.html#code=32).",
+          "cancer_codes": [
+            32
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The inland-China cervical cancer rise",
+          "ci5_urls": [
+            {
+              "cancer_code": 32,
+              "cancer_label": "Cervix uteri",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=415600199_415600299_415600399_415600799_415600999_415601499_415601599&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "korea-s-thyroid-cancer-screening-bubble-caught-rising-and-fa",
+          "title": "Korea's thyroid-cancer screening bubble, caught rising and falling in one dataset",
+          "text": "Daegu women peaked at 119.7 per 100 000 in vol XI (2008–12), Gwangju 108.8, Daejeon 108.6, Seoul 93.8. All these fell back 20–30 % by vol XII as the screening policy was re-calibrated. The cleanest public-health-intervention fingerprint in CI5. China is 5–10 years behind on the same trajectory. See [Thyroid](cancer.html#code=49).",
+          "cancer_codes": [
+            49
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Korea's thyroid-cancer screening bubble, caught rising and falling in one dataset",
+          "ci5_urls": [
+            {
+              "cancer_code": 49,
+              "cancer_label": "Thyroid",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=49&populations=441000399_441000499_441000599_441001099&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-white-melanoma-matches-queensland-exactly",
+          "title": "Hawaii-White melanoma matches Queensland exactly",
+          "text": "Queensland men 68.3, Hawaii-White men 44.2 — the latter up from 3.6 in vol I (n=19), a 12-fold climb. Same latitude + same skin type = same outcome; a single-registry \"natural experiment\" that punctures the \"Australia is unique\" narrative. Pop_warning on Hawaii vol VII, but the magnitude of the climb is robust to it. See [Melanoma of skin](cancer.html#code=24).",
+          "cancer_codes": [
+            24
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Hawaii-White melanoma matches Queensland exactly",
+          "ci5_urls": [
+            {
+              "cancer_code": 24,
+              "cancer_label": "Melanoma of skin",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=24&populations=603600399_684009999&sexes=1"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "the-zimbabwe-harare-hiv-associated-eye-cancer-inverted-u",
+          "title": "The Zimbabwe Harare HIV-associated eye cancer inverted-U",
+          "text": "African women 0.42 (vol VII, n=8) → 5.76 (vol XI, n≈43) → 2.89 (vol XII, n=82) — rise tracks the HIV epidemic, partial fall tracks ART rollout. Same pattern for Harare NHL men (n=55→347, much larger numerator). The eye-cancer numerator is small in vol VII; the NHL curve carries the statistical weight. An extraordinarily clean ART-impact visual. See [Eye](cancer.html#code=47), [Non-Hodgkin lymphoma](cancer.html#code=53).",
+          "cancer_codes": [
+            47,
+            53
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The Zimbabwe Harare HIV-associated eye cancer inverted-U",
+          "ci5_urls": [
+            {
+              "cancer_code": 47,
+              "cancer_label": "Eye",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=47&populations=171600299&sexes=0"
+            },
+            {
+              "cancer_code": 53,
+              "cancer_label": "Non-Hodgkin lymphoma",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=171600299&sexes=0"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "the-nordic-stomach-cancer-collapse",
+          "title": "The Nordic stomach-cancer collapse",
+          "text": "Iceland men 97.0 → 5.1 (−95 %); Finland 74.5 → 6.0 (−92 %); Norway 47.7 → 6.1 (−87 %); Denmark 40.6 → 7.1 (−83 %). One of the most complete cancer-burden disappearances ever recorded, and it would make a gorgeous four-line chart. See [Stomach](cancer.html#code=11).",
+          "cancer_codes": [
+            11
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The Nordic stomach-cancer collapse",
+          "ci5_urls": [
+            {
+              "cancer_code": 11,
+              "cancer_label": "Stomach",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=520800099_524600099_535200099_557800099&sexes=1"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "israel-s-gallbladder-cancer-collapse",
+          "title": "Israel's gallbladder-cancer collapse",
+          "text": "Israel women 11.4 → 1.6 (ASR), a 86 % fall on 307→524 cases. The Chilean comparator at 25–27 refers to Chile-Valdivia (id 215200199) rather than all of Chile. Two figures on one page — \"high plateau\" vs \"disappearing excess\" — tells an interesting pair of stories the literature has not unified. Pop_warning on Israel vol V; the collapse is large enough to survive it. See [Gallbladder etc.](cancer.html#code=17).",
+          "cancer_codes": [
+            17
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Israel's gallbladder-cancer collapse",
+          "ci5_urls": [
+            {
+              "cancer_code": 17,
+              "cancer_label": "Gallbladder etc.",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=215200099_437600099&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "pacific-peoples-endometrial-cancer-now-leads-the-world",
+          "title": "Pacific-peoples' endometrial cancer now leads the world",
+          "text": "NZ Pacific-peoples women vol XII ASR 52.5 — above every US subgroup. Obesity + parity story, but nobody is publishing on it. See [Corpus uteri](cancer.html#code=33).",
+          "cancer_codes": [
+            33
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Pacific-peoples' endometrial cancer now leads the world",
+          "ci5_urls": [
+            {
+              "cancer_code": 33,
+              "cancer_label": "Corpus uteri",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=655400029_655400099&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-japanese-breast-cancer-has-a-uniquely-late-age-peak",
+          "title": "Hawaii-Japanese breast cancer has a uniquely late age peak",
+          "text": "Peak at band 17 (75–79), ASR 147 in vol II. Most populations peak 10 years younger. Hawaii-Japanese vol I n=90, building to 1473 by vol XII. Pop_warning on Hawaii vol VII (the collapse-magnitude is credible but don't over-parse vol VI–VII). A quiet but publishable age-curve story. See [Female breast](cancer.html#code=29).",
+          "cancer_codes": [
+            29
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Hawaii-Japanese breast cancer has a uniquely late age peak",
+          "ci5_urls": [
+            {
+              "cancer_code": 29,
+              "cancer_label": "Female breast",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=684009999&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "singapore-indian-women-s-u-shape-three-site-combo",
+          "title": "Singapore Indian women's \"U-shape three-site combo\"",
+          "text": "Lip/oral 37.5 → 4.7 → 5.5; cervix 40.4 → 3.7 → 4.2; oesophagus 7.6 → 8.6 → 0.5. Three aerodigestive cancers tracking roughly the same curve in the same ethnic sub-population across 40 years. Suggests a single behavioural / cultural driver (betel chewing / tobacco). Ethnic-Indian case counts are small in early volumes (n=5–25 per site per vol); directions are robust but exact magnitudes are noisy. See [Lip, oral cavity](cancer.html#code=1), [Cervix uteri](cancer.html#code=32), [Oesophagus](cancer.html#code=10).",
+          "cancer_codes": [
+            1,
+            32,
+            10
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Singapore Indian women's \"U-shape three-site combo\"",
+          "ci5_urls": [
+            {
+              "cancer_code": 1,
+              "cancer_label": "Lip, oral cavity",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=470200040_470200099&sexes=2"
+            },
+            {
+              "cancer_code": 32,
+              "cancer_label": "Cervix uteri",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=32&populations=470200040_470200099&sexes=2"
+            },
+            {
+              "cancer_code": 10,
+              "cancer_label": "Oesophagus",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=470200040_470200099&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "the-african-prostate-cancer-rise-is-not-a-screening-artefact",
+          "title": "The African prostate-cancer rise is not a screening artefact",
+          "text": "Uganda Kyadondo 5.74 → 53.0 (ASR, +823 %) on 16→594 cases; crude 2.22→9.37 (+323 %) — both rising. Pop_warning vol VII acknowledged. Rising in regions without widespread PSA. Genuine burden increase; very different story from the PSA-driven Western wave. See [Prostate](cancer.html#code=39).",
+          "cancer_codes": [
+            39
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The African prostate-cancer rise is not a screening artefact",
+          "ci5_urls": [
+            {
+              "cancer_code": 39,
+              "cancer_label": "Prostate",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=39&populations=180000299&sexes=1"
+            }
+          ],
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "B — Strong known stories with a fresh angle",
+      "intro": "Findings that have been written about, but where CI5's registry-level granularity sharpens the picture.",
+      "findings": [
+        {
+          "id": "the-persistent-us-black-prostate-excess",
+          "title": "The persistent US Black × prostate excess",
+          "text": "Detroit Black men 202.0 in vol VIII; ratio to US Native-American men 9–14× and barely narrowing. See [Prostate](cancer.html#code=39).",
+          "cancer_codes": [
+            39
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The persistent US Black × prostate excess",
+          "ci5_urls": [
+            {
+              "cancer_code": 39,
+              "cancer_label": "Prostate",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=39&populations=384000830_384000899&sexes=1"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "the-persistent-us-black-multiple-myeloma-excess",
+          "title": "The persistent US Black × multiple-myeloma excess",
+          "text": "SF Bay Black 11.64 in vol III, Nebraska Black women 12.19 in vol XII. Ratio still 12–17× in vol X. See [Multiple myeloma](cancer.html#code=55).",
+          "cancer_codes": [
+            55
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The persistent US Black × multiple-myeloma excess",
+          "ci5_urls": [
+            {
+              "cancer_code": 55,
+              "cancer_label": "Multiple myeloma",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=55&populations=384004730_384004799&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "chinese-oesophagus-stomach-belts-cixian-yangcheng-yanting-sh",
+          "title": "Chinese oesophagus / stomach belts (Cixian, Yangcheng, Yanting, Shexian)",
+          "text": "Up to 97× median for Cixian women (oesophagus, n=1536) and 19× for Yangcheng men (stomach, n=1416). The double-burden geography tells a single pickled-vegetables / nitrosamines story. Crude rates have risen further in some of these counties even as ASR falls — the populations are ageing rapidly and part of the crude rise is that, not biology. See [Oesophagus](cancer.html#code=10), [Stomach](cancer.html#code=11).",
+          "cancer_codes": [
+            10,
+            11
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Chinese oesophagus / stomach belts (Cixian, Yangcheng, Yanting, Shexian)",
+          "ci5_urls": [
+            {
+              "cancer_code": 10,
+              "cancer_label": "Oesophagus",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600699_415601699_415601899_415603999&sexes=0"
+            },
+            {
+              "cancer_code": 11,
+              "cancer_label": "Stomach",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=415600699_415601699_415601899_415603999&sexes=0"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "chile-valdivia-gallbladder-testis-outlier",
+          "title": "Chile Valdivia gallbladder + testis outlier",
+          "text": "Two cancers, same registry at the top — unusual and worth exploring. See [Gallbladder etc.](cancer.html#code=17), [Testis](cancer.html#code=40).",
+          "cancer_codes": [
+            17,
+            40
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Chile Valdivia gallbladder + testis outlier",
+          "ci5_urls": [
+            {
+              "cancer_code": 17,
+              "cancer_label": "Gallbladder etc.",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=215200199&sexes=0"
+            },
+            {
+              "cancer_code": 40,
+              "cancer_label": "Testis",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=40&populations=215200199&sexes=1"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "the-japanese-u-shape-across-five-sites",
+          "title": "The Japanese \"U-shape across five sites\"",
+          "text": "Miyagi / Osaka breast, colon, pancreas, corpus, other-female-genital all show the same low → lower → climb curve. One \"Japan's cancer transition\" figure could cover all of them. See [Female breast](cancer.html#code=29), [Colon](cancer.html#code=13), [Pancreas](cancer.html#code=18), [Corpus uteri](cancer.html#code=33), [Other female genital](cancer.html#code=36).",
+          "cancer_codes": [
+            29,
+            13,
+            18,
+            33,
+            36
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — The Japanese \"U-shape across five sites\"",
+          "ci5_urls": [
+            {
+              "cancer_code": 29,
+              "cancer_label": "Female breast",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=439200299_439200499&sexes=2"
+            },
+            {
+              "cancer_code": 13,
+              "cancer_label": "Colon",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=13&populations=439200299_439200499&sexes=2"
+            },
+            {
+              "cancer_code": 18,
+              "cancer_label": "Pancreas",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=439200299_439200499&sexes=2"
+            },
+            {
+              "cancer_code": 33,
+              "cancer_label": "Corpus uteri",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=439200299_439200499&sexes=2"
+            },
+            {
+              "cancer_code": 36,
+              "cancer_label": "Other female genital",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=439200299_439200499&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "australian-northern-territory-indigenous-larynx-and-sinus-si",
+          "title": "Australian Northern Territory Indigenous larynx and sinus signals",
+          "text": "Indigenous women laryngeal ASR 5.20 (11× median) in vol XII, based on 7 cases — small but the direction matches the broader Indigenous tobacco + kava + HPV story. Nose/sinus numbers are too small (0–3 cases) to anchor a separate claim. See [Larynx](cancer.html#code=20).",
+          "cancer_codes": [
+            19,
+            20
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — Australian Northern Territory Indigenous larynx and sinus signals",
+          "ci5_urls": [
+            {
+              "cancer_code": 19,
+              "cancer_label": "Nose sinuses etc.",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=19&populations=603600862_603600899&sexes=2"
+            },
+            {
+              "cancer_code": 20,
+              "cancer_label": "Larynx",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=603600862_603600899&sexes=2"
+            }
+          ],
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "C — Data-quality flags worth raising separately",
+      "intro": "These findings are almost certainly coding/scope artefacts — but CI5 captures them so clearly that writing them up as a methodology note (for registry-quality practitioners) would be helpful.",
+      "findings": [
+        {
+          "id": "india-trivandrum-vol-vii-viii-cliff-appears-in-at-least-six-",
+          "title": "India Trivandrum vol VII → VIII cliff appears in at least six sites",
+          "text": "(pancreas, rectum, leukaemia, bladder, corpus, NHL). Strong signature of a scope change between the two volumes. A methodology note \"what happens when registry scope changes\" could use this.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — India Trivandrum vol VII → VIII cliff appears in at least six sites",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "france-s-u-shaped-pancreas-trends",
+          "title": "France's U-shaped pancreas trends",
+          "text": "(Isère, Tarn, Doubs, Hérault). Coordinated coding correction masquerading as a biological dip.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — France's U-shaped pancreas trends",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "qatar-french-polynesia-brunei-libya-and-brazil-several-regis",
+          "title": "Qatar, French Polynesia, Brunei, Libya and Brazil (several registries) all have elevated \"Uterus NOS\" rates",
+          "text": "a registry coding-quality flag.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — Qatar, French Polynesia, Brunei, Libya and Brazil (several registries) all have elevated \"Uterus NOS\" rates",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "brain-and-cns-vol-vi-vii-step",
+          "title": "Brain-and-CNS vol VI → VII step",
+          "text": "triggered by the vol-VII reclassification of benign tumours; look out for any trend claim that straddles that boundary.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — Brain-and-CNS vol VI → VII step",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "finnish-swedish-other-endocrine-1970s-spike",
+          "title": "Finnish / Swedish \"other endocrine\" 1970s spike",
+          "text": "almost certainly neuroblastoma being captured under C74/75 and later moved.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — Finnish / Swedish \"other endocrine\" 1970s spike",
+          "ci5_urls": [],
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "D — Registry / age-curve fingerprints worth a methods piece",
+      "intro": "",
+      "findings": [
+        {
+          "id": "uk-cervix-age-peak-at-band-6-25-34",
+          "title": "UK cervix age peak at band 6 (25–34)",
+          "text": "across all English regions — HPV-era signature.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — UK cervix age peak at band 6 (25–34)",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "malawi-blantyre-paediatric-burkitt-peak-at-age-band-2-5-9",
+          "title": "Malawi Blantyre paediatric Burkitt peak at age band 2 (5–9)",
+          "text": ", ASR 42.4 for NHL men vol X.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — Malawi Blantyre paediatric Burkitt peak at age band 2 (5–9)",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "usa-aggregate-bimodal-age-curves-for-hodgkin-and-leukaemia",
+          "title": "USA aggregate bimodal age curves for Hodgkin and leukaemia",
+          "text": "at ≥ 18 000-case scale — a textbook visualisation of the \"two peaks\" pattern.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — USA aggregate bimodal age curves for Hodgkin and leukaemia",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "israeli-sephardic-women-childhood-brain-peak-at-age-band-1",
+          "title": "Israeli Sephardic women childhood-brain peak at age band 1",
+          "text": "possibly tied to post-WW2 tinea-capitis radiation cohorts.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — Israeli Sephardic women childhood-brain peak at age band 1",
+          "ci5_urls": [],
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "What's *not* in here",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "All-sites aggregates (codes 62/63) were excluded by design.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — ",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Prostate and thyroid screening effects are covered per-site; no extra cross-site piece added.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "CI5 chart — ",
+          "ci5_urls": [],
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Lung cancer's well-known story is already public; the detailed points are in [Lung](cancer.html#code=21).",
+          "cancer_codes": [
+            21
+          ],
+          "image_url": "",
+          "image_alt": "CI5 chart — ",
+          "ci5_urls": [
+            {
+              "cancer_code": 21,
+              "cancer_label": "Lung",
+              "sex": 0,
+              "url": ""
+            }
+          ],
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Suggested reading order",
+      "intro": "If you only have fifteen minutes: **cervix (32)**, **thyroid (49)**, **melanoma (24)**, **stomach (11)**, and this README.\n\nIf you want a working list of \"could be a paper\": items A.1–A.10 above, plus the Italian sinonasal cluster (B) and the Alpine testis belt (B).\n\nIf you're screening for data problems: Section C.",
+      "findings": []
+    }
+  ]
+}

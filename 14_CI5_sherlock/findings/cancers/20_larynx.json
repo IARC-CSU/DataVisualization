@@ -1,0 +1,136 @@
+{
+  "code": 20,
+  "label": "Larynx",
+  "short": "Larynx",
+  "icd10": "C32",
+  "slug": "larynx",
+  "quick_take": "Larynx is probably the single clearest \"smoking plus alcohol\" site in CI5, and its trajectory over 60 years tells the global tobacco-control story registry by registry. Two surprises: the Australian Indigenous female rate leads the world, and US Black men still sit 20–30× above US Native-American men.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "australia-northern-territory-indigenous-women-in-vol-xii-asr",
+          "title": "Australia Northern Territory Indigenous women in vol XII: ASR 5.20, 11× world median",
+          "text": "Based on 7 cases in vol XII — the magnitude is uncertain but the direction (female larynx cancer >10× above rest-of-world) is striking. Likely smoking + kava + possibly HPV synergy.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Australia Northern Territory Indigenous women in vol XII: ASR 5.20, 11× world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=603600862_603600899&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "tobacco-era-collapses-are-dramatic-in-ex-high-prevalence-reg",
+          "title": "Tobacco-era collapses are dramatic in ex-high-prevalence regions",
+          "text": "Finland men 83.3 (vol I) — well, in larynx the cleanest one is India Mumbai men 18.2 → 3.7 (−79 %), India Poona 17.4 → 3.5 (−80 %), Hong Kong 15.1 → 2.9 (−81 %).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Tobacco-era collapses are dramatic in ex-high-prevalence regions",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=415603099_435600399_435600699_524600099&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-shows-the-biggest-male-u-shape-in-the-site",
+          "title": "India Trivandrum shows the biggest male U-shape in the site",
+          "text": "78 (vol VII) → 9 (vol VIII) → 18 (vol XII). As with pancreas / rectum in the same registry, the vol VII → VIII step is likely a scope change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum shows the biggest male U-shape in the site",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=435600899&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "us-ethnic-contrasts-are-enormous-and-persistent",
+          "title": "US ethnic contrasts are enormous — and persistent",
+          "text": "US male Black-to-Native-American ratio was 30× in vol VIII (17.3 vs 0.6); still 22× in vol XII (8.4 vs 0.4). This is among the largest persistent ethnic gradients in CI5.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US ethnic contrasts are enormous — and persistent",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "spain-zaragoza-men-in-vol-vii-asr-17-1-vs-women-0-09-a-190-1",
+          "title": "Spain Zaragoza men in vol VII: ASR 17.1 vs women 0.09 — a 190:1 M:F ratio",
+          "text": "Hungary Szabolcs-Szatmár 137:1; Spain Cuenca 111:1. These are among the highest male-to-female ratios ever recorded for any cancer site — a window into pre-1990 Mediterranean male-only smoking cultures. Female numerators are single-digit (≤5 cases in some cells); the ratios are arithmetic on those tiny denominators and should be read as a qualitative flag, not a quantitative estimate.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Spain Zaragoza men in vol VII: ASR 17.1 vs women 0.09 — a 190:1 M:F ratio",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=221800299_572400799_572401399&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "rising-women-in-spain-norway-algeria",
+          "title": "Rising women in Spain, Norway, Algeria",
+          "text": "(+350 to +530 %) — the late female smoking cohort catching up.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Rising women in Spain, Norway, Algeria",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=557800099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "qidong-men-0-13-1-84-1315",
+          "title": "Qidong men 0.13 → 1.84 (+1315 %)",
+          "text": "as with oral cavity and liver, this rural Chinese registry is catching up to urban levels.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Qidong men 0.13 → 1.84 (+1315 %)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=415600299&sexes=1",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "No formal coding warning for larynx, but glottic/supraglottic split is inconsistent across registries — only rates should be compared.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Sex-ratio outliers in Spain / Hungary with female ASR < 0.1 are small-number sensitive; the 190:1 in Zaragoza is based on fewer than 5 female cases.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=20&populations=572400799&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Australian-Indigenous female excess deserves its own note — larynx cancer in women at this level is highly unusual globally.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "The US Black-to-Native-American ratio has been published on before, but CI5's >60-year window shows that the gap has barely closed. A historical retrospective would land.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "A \"steepest Mediterranean male decline\" companion piece (France, Spain, Italy) would complement the Nordic-stomach collapse piece.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

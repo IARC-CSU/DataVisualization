@@ -1,0 +1,118 @@
+{
+  "code": 37,
+  "label": "Placenta",
+  "short": "Placenta",
+  "icd10": "C58",
+  "slug": "placenta",
+  "quick_take": "Placental / gestational trophoblastic tumours are rare in the West (ASR typically < 0.1) but CI5 shows a surprisingly strong Asian / Indigenous / Sub-Saharan signal that echoes older clinical literature on molar-pregnancy incidence. Almost all countries show decline; the outliers are geography *and* ethnic sub-populations.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "usa-new-mexico-american-indian-women-vol-iii-asr-8-71-35-the",
+          "title": "USA New Mexico American-Indian women, vol III: ASR 8.71, 35× the world median",
+          "text": "This is by far the top spatial outlier for the site — a historic finding and one that has not been revisited much in recent decades. Worth re-checking with subsequent SEER Native American subgroups.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA New Mexico American-Indian women, vol III: ASR 8.71, 35× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=37&populations=384000999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "vietnam-hanoi-women-vol-vii-1-85-and-vol-viii-2-22-20-median",
+          "title": "Vietnam Hanoi women, vol VII (1.85) and vol VIII (2.22): 20× median",
+          "text": "The Southeast-Asian gestational-trophoblastic-disease belt is visible in CI5 with strong numbers.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Vietnam Hanoi women, vol VII (1.85) and vol VIII (2.22): 20× median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=37&populations=470400199&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "argentina-chaco-1-61-india-poona-2-68-nigeria-ibadan-3-08",
+          "title": "Argentina Chaco (1.61), India Poona (2.68), Nigeria Ibadan (3.08)",
+          "text": "all consistent with the historical geography of molar pregnancy.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Argentina Chaco (1.61), India Poona (2.68), Nigeria Ibadan (3.08)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=37&populations=156600199_203201199_435600699&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "early-age-peak-at-age-band-4-5-15-24-yr",
+          "title": "Early-age peak at age band 4–5 (15–24 yr)",
+          "text": "in virtually every large registry — exactly where gestational trophoblastic disease is biologically expected.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Early-age peak at age band 4–5 (15–24 yr)",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "no-signals-in-men-which-is-as-it-should-be",
+          "title": "No signals in men, which is as it should be",
+          "text": "**No signals in men, which is as it should be.**",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — No signals in men, which is as it should be",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Very small case counts for almost every registry-volume cell; the magnitude of \"top outlier\" entries here is sensitive to one or two cases.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Gestational trophoblastic tumours have coding variability across ICD-8/9/10 — some may hide under C79 (metastatic) historically.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Most of the late-volume zero rates reflect genuine rarity plus small registries; do not over-interpret \"collapse\".",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "The Vietnam Hanoi + Argentina Chaco + Indian-subcontinent cluster maps the historical geography of hydatidiform mole well — a coherent descriptive piece could revive attention to the topic.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=37&populations=203201199_470400199&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "The US Native-American 1970s signal (New Mexico vol III) is interesting because of its extreme magnitude; a quick cross-check with the contemporary Native-American-specific SEER subset would reveal whether it persists.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=37&populations=384000999&sexes=2",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

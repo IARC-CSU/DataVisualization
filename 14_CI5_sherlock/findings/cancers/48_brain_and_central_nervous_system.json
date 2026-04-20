@@ -1,0 +1,136 @@
+{
+  "code": 48,
+  "label": "Brain and central nervous system",
+  "short": "Brain, Nervous system",
+  "icd10": "C70-72",
+  "slug": "brain_and_central_nervous_system",
+  "quick_take": "The most important caveat to anything about brain cancer in CI5 is that registries before vol VII may have included benign tumours. Many \"rises\" in vol V–VI then \"falls\" in vol VII are almost certainly reclassification artefacts. Setting that aside, the *real* findings concern Israel, Indian registries, and a persistent East-African drop after vol X.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "israel-jews-born-in-africa-asia-women-vol-v-asr-16-58-4-1-th",
+          "title": "Israel Jews born in Africa / Asia women, vol V: ASR 16.58, 4.1× the world median",
+          "text": "Israel Jews born in Israel women also 16.05 in vol III. These are historical highs and consistent with reports of radiation-for-tinea-capitis treatment in North African immigrant cohorts (1940s–50s childhood exposure showing up decades later).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel Jews born in Africa / Asia women, vol V: ASR 16.58, 4.1× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=437600090_437600091_437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "inverted-u-in-israel-jewish-women",
+          "title": "Inverted-U in Israel Jewish women",
+          "text": "peaks vol III (16.05) and falls to 4.04 by vol VIII — 71 % down as the exposed cohorts pass.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Inverted-U in Israel Jewish women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=437600090_437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-men-u-shape-11-62-2-44-2-85",
+          "title": "India Trivandrum men: U-shape 11.62 → 2.44 → 2.85",
+          "text": "Another registry where vol VII → VIII is a scope change, not biology.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum men: U-shape 11.62 → 2.44 → 2.85",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=435600899&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "multiple-registries-show-a-vol-vi-peak-and-decline-pattern",
+          "title": "Multiple registries show a \"vol VI-peak and decline\" pattern",
+          "text": "USA LA Japanese men 3.06 → peak → 6.71 back to 6.71; USA NM American Indian men peaked 8.35 in vol III. Many of these sit near the benign-tumour coding boundary.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Multiple registries show a \"vol VI-peak and decline\" pattern",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=384000099&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "rising-african-rates-algeria-s-tif-931-women-1375-men-uganda",
+          "title": "Rising African rates: Algeria Sétif +931 % women, +1375 % men; Uganda Kyadondo +583 % women",
+          "text": "From tiny baselines but upward, consistent with improving imaging access. Baselines are 1–8 cases per volume (SMALL_N) and pop_warning Uganda vol VII; % changes are inflated by the small denominators. Direction is consistent, magnitudes are not precise.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Rising African rates: Algeria Sétif +931 % women, +1375 % men; Uganda Kyadondo +583 % women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=101200199_180000299&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-large-us-belarus-and-croatia-samples",
+          "title": "Bimodal age curves in large US, Belarus and Croatia samples",
+          "text": "childhood peak (band 1–4) + elderly peak (band 14+).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in large US, Belarus and Croatia samples",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=511200099_519100099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "peak-age-1-in-israel-jews-born-in-africa-asia-women",
+          "title": "Peak-age 1 in Israel Jews-born-in-Africa/Asia women",
+          "text": "a childhood-tumour signal, possibly medulloblastoma-driven.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Peak-age 1 in Israel Jews-born-in-Africa/Asia women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=437600090_437600099&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "cancer-warning",
+          "title": "cancer_warning",
+          "text": "brain and CNS may include benign tumours before vol VII. This is the single biggest interpretation hazard in the dataset — any \"vol VI → vol VII drop\" must be caveated.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — cancer_warning",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Many registries changed imaging practice (CT, MRI) and coding at different times; cross-registry levels are not robust.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "India Trivandrum vol VII → VIII step is registry-scope change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=435600899&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "israel-jews-from-africa-asia-women",
+          "title": "Israel Jews-from-Africa/Asia women",
+          "text": "a cohort paper on the declining brain-tumour burden from post-WW2 tinea-capitis irradiation. The numbers are big enough to support it.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel Jews-from-Africa/Asia women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=48&populations=437600090_437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "A systematic vol-VI-to-VII comparison across registries would reveal which countries cleaned up benign tumour coding — a methods-heavy but useful IARC internal paper.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

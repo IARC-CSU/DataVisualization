@@ -1,0 +1,154 @@
+{
+  "code": 53,
+  "label": "Non-Hodgkin lymphoma",
+  "short": "Non-Hodgkin lymphoma",
+  "icd10": "C82-85,C96",
+  "slug": "non_hodgkin_lymphoma",
+  "quick_take": "NHL is the clearest case in CI5 of an almost-universal post-war rise, driven by a combination of AIDS-related lymphoma (visible as the Zimbabwe Harare African inverted-U), HCV-related lymphomagenesis, pathology-coding changes from ICD-9 to ICD-10, and genuine incidence increase. Israel Jews-born-in-Israel women and India Trivandrum carry historical highs.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "zimbabwe-harare-african-men-inverted-u-4-36-16-07-vol-xi-13-",
+          "title": "Zimbabwe Harare African men, inverted-U: 4.36 → 16.07 (vol XI) → 13.74",
+          "text": "The rise phase tracks the AIDS epidemic; the partial retreat tracks ART rollout. Visually parallels the Harare eye-cancer curve — same mechanism.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Zimbabwe Harare African men, inverted-U: 4.36 → 16.07 (vol XI) → 13.74",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=171600270_171600299&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "israel-jews-born-in-israel-women-vol-vii-21-04-3-3-median",
+          "title": "Israel Jews-born-in-Israel women vol VII: 21.04, 3.3× median",
+          "text": "One of the highest early NHL rates globally, well before the AIDS era.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel Jews-born-in-Israel women vol VII: 21.04, 3.3× median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=437600090_437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-women-vol-vii-19-14",
+          "title": "India Trivandrum women vol VII: 19.14",
+          "text": "Again paired with the vol VII → VIII scope change common to this registry — treat with caution but the vol-VII level is credible.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum women vol VII: 19.14",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=435600899&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "nordic-catch-ups-finland-women-354-iceland-women-356-canada-",
+          "title": "Nordic catch-ups: Finland women +354 %, Iceland women +356 %, Canada Newfoundland men +421 %",
+          "text": "Most Western registries show 3–6× rises across the CI5 window.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Nordic catch-ups: Finland women +354 %, Iceland women +356 %, Canada Newfoundland men +421 %",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=312400099_524600099_535200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-african-registries",
+          "title": "Bimodal age curves in African registries",
+          "text": "Nigeria Ibadan and Malawi Blantyre show an unusual double peak, with Malawi men having a peak at age band 2 (5–9). This is the Burkitt-lymphoma age distribution — NHL in sub-Saharan Africa includes a paediatric tail that the Western datasets don't have.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in African registries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=145400199_156600199&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "malawi-blantyre-men-vol-x-asr-42-4-at-age-band-2",
+          "title": "Malawi Blantyre men vol X, ASR 42.4 at age band 2",
+          "text": "a paediatric Burkitt-lymphoma signal that hit a peak matched almost nowhere else in CI5.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Malawi Blantyre men vol X, ASR 42.4 at age band 2",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=145400199&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "israel-jews-born-in-africa-asia-men-age-band-1-peak-at-40-7",
+          "title": "Israel Jews-born-in-Africa/Asia men, age-band-1 peak at 40.7",
+          "text": "probably a subset of cases in the paediatric range, consistent with early-onset EBV-related NHL in that cohort.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel Jews-born-in-Africa/Asia men, age-band-1 peak at 40.7",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=437600090_437600099&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "us-black-to-other-ethnic-nhl-ratios-5-8",
+          "title": "US Black-to-other-ethnic NHL ratios 5–8×",
+          "text": "across volumes. Persistent, not narrowing.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US Black-to-other-ethnic NHL ratios 5–8×",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "malta-men-464-singapore-chinese-men-626-canadian-new-brunswi",
+          "title": "Malta men +464 %; Singapore Chinese men +626 %; Canadian New Brunswick men +422 %",
+          "text": "Western and Asian catches visible across volumes.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Malta men +464 %; Singapore Chinese men +626 %; Canadian New Brunswick men +422 %",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=312400599_470200020_470200099_547000099&sexes=1",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "NHL coding changed substantially between ICD-9 and ICD-10 (C82–85 + C96 captures most but not all lymphoid neoplasms); apparent vol VII–VIII rises may be partly classification.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Some HIV-related NHL cases may have been captured under other lymphoid sites historically.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-zimbabwe-harare-inverted-u-is-the-clearest-hiv-aids-canc",
+          "title": "The Zimbabwe Harare inverted-U is the clearest HIV/AIDS-cancer-epidemic fingerprint in CI5",
+          "text": "Paired with Kaposi data (not included) it would tell a complete ART-impact story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The Zimbabwe Harare inverted-U is the clearest HIV/AIDS-cancer-epidemic fingerprint in CI5",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=171600299&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Malawi / Nigeria / Ugandan paediatric Burkitt peaks merit a descriptive update — CI5 XII numbers from Malawi are substantial.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "The Israel-Jews-Israel vol-VII NHL peak is high enough to deserve its own look, likely tied to MALT / gastric lymphoma from H pylori (Israel has high H pylori prevalence historically).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=437600099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

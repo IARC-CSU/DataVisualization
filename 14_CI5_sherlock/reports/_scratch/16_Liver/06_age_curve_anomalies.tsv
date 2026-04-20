@@ -1,0 +1,4 @@
+id_code	id_label	ethnic_code	CI5_volume	sex	peak_age_band	peak_rate	tot_cases	early_peak	bimodal
+437600096	Israel: Jews born in Africa or Asia	96	5	1	1	40.7331975560082	66	TRUE	TRUE
+150800399	Mozambique,  Lourenco Marques	99	1	2	8	81.4814814814815	61	TRUE	TRUE
+150800399	Mozambique,  Lourenco Marques	99	1	1	8	264	262	TRUE	FALSE

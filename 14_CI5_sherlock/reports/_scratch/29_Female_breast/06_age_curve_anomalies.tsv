@@ -1,0 +1,4 @@
+id_code	id_label	ethnic_code	CI5_volume	sex	peak_age_band	peak_rate	tot_cases	early_peak	bimodal
+435600999	India, Karunagappally	99	7	2	12	66.2934590453742	54	FALSE	TRUE
+684009921	USA, Hawaii: Japanese	21	1	2	17	147.058823529412	90	FALSE	TRUE
+684009921	USA, Hawaii: Japanese	21	2	2	17	119.047619047619	124	FALSE	TRUE

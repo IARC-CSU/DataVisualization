@@ -1,0 +1,100 @@
+{
+  "code": 47,
+  "label": "Eye",
+  "short": "Eye",
+  "icd10": "C69",
+  "slug": "eye",
+  "quick_take": "Eye cancer is almost entirely uveal melanoma in the West and retinoblastoma in the Global South. The striking CI5 finding is the East-African signal — Malawi Blantyre, Zimbabwe Harare, Bulawayo — where eye-cancer ASRs are 10–20× the world median, almost certainly driven by HIV-related ocular surface squamous neoplasia (OSSN), not melanoma.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "malawi-blantyre-women-vol-x-asr-9-81-20-the-world-median",
+          "title": "Malawi Blantyre women, vol X: ASR 9.81, 20× the world median",
+          "text": "By far the top spatial outlier. Malawi men vol X 7.43 (13×); Zimbabwe Harare women vol XI 5.76 (13×); Zimbabwe Bulawayo men vol XII 5.20 (13×). This is the OSSN (HIV-associated ocular surface squamous neoplasia) epidemic, visible in CI5.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Malawi Blantyre women, vol X: ASR 9.81, 20× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=47&populations=145400199_171600299&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "zimbabwe-harare-african-women-inverted-u",
+          "title": "Zimbabwe Harare African women inverted-U",
+          "text": "0.42 (vol VII) → 5.76 (vol XI) → 2.89 (vol XII). The rise phase matches the HIV epidemic, the fall matches ART roll-out. Astonishingly clean.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Zimbabwe Harare African women inverted-U",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=47&populations=171600270_171600299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-most-large-us-female-populations",
+          "title": "Bimodal age curves in most large US female populations",
+          "text": "peak in older ages but a secondary bump in middle age. This is the mix of retinoblastoma (early band) and uveal melanoma (older) + OSSN, though OSSN dominates the adult low-age signal.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in most large US female populations",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "japanese-korean-women-early-age-peak-at-band-1-0-4",
+          "title": "Japanese / Korean women: early-age peak at band 1 (0–4)",
+          "text": "Retinoblastoma-dominant population distribution. India Tamil Nadu and USA Black women also have a band-1 peak, consistent with retinoblastoma.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japanese / Korean women: early-age peak at band 1 (0–4)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=47&populations=384000030_384000099_435604099&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Very small numbers for most registries. The African numbers are robust because they are large relative to the small Western denominators.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Eye cancer aggregates retinoblastoma, uveal melanoma, OSSN, orbital lymphoma — without histology split, cross-registry comparison is perilous.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-hiv-ossn-signal-in-malawi-zimbabwe-is-the-most-publishab",
+          "title": "The HIV-OSSN signal in Malawi / Zimbabwe is the most publishable finding on this site",
+          "text": "Paired with HIV prevalence / ART timelines, the inverted-U in Harare African women could be a compact visual proof of ART impact on this cancer.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The HIV-OSSN signal in Malawi / Zimbabwe is the most publishable finding on this site",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=47&populations=171600270_171600299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The adult band-1 peak in Japanese / Korean women should be decomposed into retinoblastoma age breakdown — a clean paper on \"retinoblastoma age distribution over the CI5 era\" could come out of this.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

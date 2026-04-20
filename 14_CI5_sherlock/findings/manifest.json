@@ -1,0 +1,256 @@
+{
+  "cancers": [
+    {
+      "code": 1,
+      "label": "Lip, oral cavity",
+      "short": "Lip, oral cavity",
+      "icd10": "C00-C14",
+      "file": "01_lip_oral_cavity.json"
+    },
+    {
+      "code": 10,
+      "label": "Oesophagus",
+      "short": "Oesophagus",
+      "icd10": "C15",
+      "file": "10_oesophagus.json"
+    },
+    {
+      "code": 11,
+      "label": "Stomach",
+      "short": "Stomach",
+      "icd10": "C16",
+      "file": "11_stomach.json"
+    },
+    {
+      "code": 12,
+      "label": "Small intestine",
+      "short": "Small intestine",
+      "icd10": "C17",
+      "file": "12_small_intestine.json"
+    },
+    {
+      "code": 13,
+      "label": "Colon",
+      "short": "Colon",
+      "icd10": "C18",
+      "file": "13_colon.json"
+    },
+    {
+      "code": 14,
+      "label": "Rectum",
+      "short": "Rectum",
+      "icd10": "C19-21",
+      "file": "14_rectum.json"
+    },
+    {
+      "code": 16,
+      "label": "Liver",
+      "short": "Liver",
+      "icd10": "C22",
+      "file": "16_liver.json"
+    },
+    {
+      "code": 17,
+      "label": "Gallbladder etc.",
+      "short": "Gallbladder etc.",
+      "icd10": "C23-24",
+      "file": "17_gallbladder_etc.json"
+    },
+    {
+      "code": 18,
+      "label": "Pancreas",
+      "short": "Pancreas",
+      "icd10": "C25",
+      "file": "18_pancreas.json"
+    },
+    {
+      "code": 19,
+      "label": "Nose sinuses etc.",
+      "short": "Nose sinuses etc.",
+      "icd10": "C30-31",
+      "file": "19_nose_sinuses_etc.json"
+    },
+    {
+      "code": 20,
+      "label": "Larynx",
+      "short": "Larynx",
+      "icd10": "C32",
+      "file": "20_larynx.json"
+    },
+    {
+      "code": 21,
+      "label": "Lung",
+      "short": "Lung",
+      "icd10": "C33-34",
+      "file": "21_lung.json"
+    },
+    {
+      "code": 23,
+      "label": "Bone",
+      "short": "Bone",
+      "icd10": "C40-41",
+      "file": "23_bone.json"
+    },
+    {
+      "code": 24,
+      "label": "Melanoma of skin",
+      "short": "Melanoma of skin",
+      "icd10": "C43",
+      "file": "24_melanoma_of_skin.json"
+    },
+    {
+      "code": 29,
+      "label": "Female breast",
+      "short": "Female breast",
+      "icd10": "C50",
+      "file": "29_female_breast.json"
+    },
+    {
+      "code": 32,
+      "label": "Cervix uteri",
+      "short": "Cervix uteri",
+      "icd10": "C53",
+      "file": "32_cervix_uteri.json"
+    },
+    {
+      "code": 33,
+      "label": "Corpus uteri",
+      "short": "Corpus uteri",
+      "icd10": "C54",
+      "file": "33_corpus_uteri.json"
+    },
+    {
+      "code": 34,
+      "label": "Uterus, NOS",
+      "short": "Uterus, NOS",
+      "icd10": "C55",
+      "file": "34_uterus_nos.json"
+    },
+    {
+      "code": 36,
+      "label": "Other female genital",
+      "short": "Other female genital",
+      "icd10": "C51-52, C56-57",
+      "file": "36_other_female_genital.json"
+    },
+    {
+      "code": 37,
+      "label": "Placenta",
+      "short": "Placenta",
+      "icd10": "C58",
+      "file": "37_placenta.json"
+    },
+    {
+      "code": 38,
+      "label": "Penis",
+      "short": "Penis",
+      "icd10": "C60",
+      "file": "38_penis.json"
+    },
+    {
+      "code": 39,
+      "label": "Prostate",
+      "short": "Prostate",
+      "icd10": "C61",
+      "file": "39_prostate.json"
+    },
+    {
+      "code": 40,
+      "label": "Testis",
+      "short": "Testis",
+      "icd10": "C62",
+      "file": "40_testis.json"
+    },
+    {
+      "code": 41,
+      "label": "Other male genital",
+      "short": "Other male genital",
+      "icd10": "C63",
+      "file": "41_other_male_genital.json"
+    },
+    {
+      "code": 42,
+      "label": "Kidney etc.",
+      "short": "Kidney etc.",
+      "icd10": "C64-66,C68",
+      "file": "42_kidney_etc.json"
+    },
+    {
+      "code": 45,
+      "label": "Bladder",
+      "short": "Bladder",
+      "icd10": "C67",
+      "file": "45_bladder.json"
+    },
+    {
+      "code": 47,
+      "label": "Eye",
+      "short": "Eye",
+      "icd10": "C69",
+      "file": "47_eye.json"
+    },
+    {
+      "code": 48,
+      "label": "Brain and central nervous system",
+      "short": "Brain, Nervous system",
+      "icd10": "C70-72",
+      "file": "48_brain_and_central_nervous_system.json"
+    },
+    {
+      "code": 49,
+      "label": "Thyroid",
+      "short": "Thyroid",
+      "icd10": "C73",
+      "file": "49_thyroid.json"
+    },
+    {
+      "code": 51,
+      "label": "Other endocrine",
+      "short": "Other endocrine",
+      "icd10": "C74-75",
+      "file": "51_other_endocrine.json"
+    },
+    {
+      "code": 52,
+      "label": "Hodgkin disease",
+      "short": "Hodgkin disease",
+      "icd10": "C81",
+      "file": "52_hodgkin_disease.json"
+    },
+    {
+      "code": 53,
+      "label": "Non-Hodgkin lymphoma",
+      "short": "Non-Hodgkin lymphoma",
+      "icd10": "C82-85,C96",
+      "file": "53_non_hodgkin_lymphoma.json"
+    },
+    {
+      "code": 55,
+      "label": "Multiple myeloma",
+      "short": "Multiple myeloma",
+      "icd10": "C88+90",
+      "file": "55_multiple_myeloma.json"
+    },
+    {
+      "code": 56,
+      "label": "Leukaemia",
+      "short": "Leukaemia",
+      "icd10": "C91-95",
+      "file": "56_leukaemia.json"
+    }
+  ],
+  "vol_periods": {
+    "1": "1953-1965",
+    "2": "1963-1967",
+    "3": "1968-1972",
+    "4": "1973-1977",
+    "5": "1978-1982",
+    "6": "1983-1987",
+    "7": "1988-1992",
+    "8": "1993-1997",
+    "9": "1998-2002",
+    "10": "2003-2007",
+    "11": "2008-2012",
+    "12": "2013-2017"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "code": 29,
+  "label": "Female breast",
+  "short": "Female breast",
+  "icd10": "C50",
+  "slug": "female_breast",
+  "quick_take": "Breast cancer rose everywhere and in volume XII still rises almost everywhere — the cleanest universally-rising cancer of the twelve volumes. The most striking individual findings are the U-shapes in Japanese and Hawaii-Japanese women (where the fall around vol II–III was real, not artefact) and the world-record absolute rate in US-LA-County Filipino women (100.0).",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-biggest-absolute-rate-in-the-whole-breast-dataset-la-cou",
+          "title": "The biggest absolute rate in the whole breast dataset: LA-County Filipina women, vol X, ASR 100.0",
+          "text": "Still 83.2 in vol XII after some decline. This beats every US White and US Black subgroup.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The biggest absolute rate in the whole breast dataset: LA-County Filipina women, vol X, ASR 100.0",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "clean-u-shape-in-japan-and-migrant-japanese-women",
+          "title": "Clean U-shape in Japan and migrant Japanese women",
+          "text": "Miyagi Prefecture 15.3 (vol I) → 12.8 (vol II) → 74.6 (vol XII); Nagasaki 26.3 → 20.3 (vol V) → 56.4. Hawaii Filipina 25.0 (vol II) → 24.7 (vol III) → 85.9 (vol XII). All \"U\" because the first volume under-ascertained then the catch-up was steep.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Clean U-shape in Japan and migrant Japanese women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=439200299_439200399_684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "singapore-chinese-785-and-algeria-s-tif-772",
+          "title": "Singapore Chinese +785 % and Algeria Sétif +772 %",
+          "text": "the catch-up is not limited to East-Asian migrants.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Singapore Chinese +785 % and Algeria Sétif +772 %",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=101200199_470200020_470200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "extreme-bimodal-age-curves-in-hawaii-japanese-women",
+          "title": "Extreme bimodal age curves in Hawaii Japanese women",
+          "text": "Peak shifts to age band 17 (75–79) rather than the usual 13–14 (60–69). In vol II the peak was 147 per 100 000 at 75–79. This is highly unusual — most populations have a late-60s peak or earlier. Hawaii Japanese women have a *later* peak than anyone else.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Extreme bimodal age curves in Hawaii Japanese women",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=684009921_684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "india-karunagappally-women-early-peak-at-age-12-55-59",
+          "title": "India Karunagappally women: early peak at age 12 (55–59)",
+          "text": "Notable because most breast-cancer peaks sit 10 years older; the premenopausal / perimenopausal hump in South Asian women has been described before but CI5 shows it here clearly with a large case count.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Karunagappally women: early peak at age 12 (55–59)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=435600999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "us-ethnic-contrast-in-vol-v-6-7-spread",
+          "title": "US ethnic contrast in vol V: 6.7× spread",
+          "text": "(White 93.9 vs Korean 14.1). By vol XII the gap has closed to roughly 2.5× — but Filipina women *overshot* the US White rate to reach the top of the distribution. That inversion deserves its own note.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US ethnic contrast in vol V: 6.7× spread",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "uganda-kyadondo-11-39-vol-i-32-93-vol-x-32-0-vol-xii",
+          "title": "Uganda Kyadondo: 11.39 (vol I) → 32.93 (vol X) → 32.0 (vol XII)",
+          "text": "Breast cancer in East Africa tripled in 60 years — the African epidemic story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Uganda Kyadondo: 11.39 (vol I) → 32.93 (vol X) → 32.0 (vol XII)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=180000299&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Breast screening roll-outs in different decades mean that a rising curve during vol VIII–X often captures a prevalence pool being worked through, not pure underlying incidence.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Hawaii Japanese late-peak numbers are small-N at band 17; sanity-check with larger aggregated data before making a story of it.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=684009921_684009999&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-la-county-filipina-rate-100-0-is-the-highest-breast-canc",
+          "title": "The LA-County Filipina rate (100.0) is the highest breast-cancer ASR in CI5",
+          "text": "it beats every US White registry. Worth asking: acculturation effect, reproductive patterns, or registry differences?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The LA-County Filipina rate (100.0) is the highest breast-cancer ASR in CI5",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Japanese / migrant-Japanese U-shape: compare Miyagi with Hawaii Japanese across volumes to show the genetics-vs-environment separation.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=439200299_684009921_684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "African rise: Uganda Kyadondo, Algeria Sétif, Israel Arabs all share the same trajectory (+500 % to +770 %). A coordinated \"breast cancer goes continental\" piece writes itself.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=29&populations=101200199_180000299_437600094_437600099&sexes=2",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

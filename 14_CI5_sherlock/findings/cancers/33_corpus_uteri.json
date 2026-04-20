@@ -1,0 +1,127 @@
+{
+  "code": 33,
+  "label": "Corpus uteri",
+  "short": "Corpus uteri",
+  "icd10": "C54",
+  "slug": "corpus_uteri",
+  "quick_take": "Endometrial cancer is rising almost everywhere, consistent with the obesity-cohort story — but the more surprising finding is that **the New Zealand Pacific-peoples** female ASR has overtaken every US subgroup at 52 per 100 000, making Pacific women the world's highest endometrial-cancer population in CI5 XII. The Japanese catch-up is also extreme.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "new-zealand-pacific-peoples-women-vol-xii-asr-52-5",
+          "title": "New Zealand Pacific-peoples women, vol XII: ASR 52.5",
+          "text": "Vol XI was 50.8. That's 4.5× the world median and the single largest endometrial-cancer rate in CI5 XII — above every US subgroup. Closely tied to BMI trends in Pacific populations.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — New Zealand Pacific-peoples women, vol XII: ASR 52.5",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=655400099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "japan-s-catch-up-is-the-steepest-u-shape-in-the-dataset",
+          "title": "Japan's catch-up is the steepest U-shape in the dataset",
+          "text": "Osaka women 1.08 → 12.59 (+1066 %); Miyagi 2.33 → 12.97 (+457 %, U). Newfoundland women 0.70 → 20.39 (+2813 %) — the highest % increase, reflecting very low vol-I ascertainment plus genuine rise.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japan's catch-up is the steepest U-shape in the dataset",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=439200299_439200499&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "asian-migrant-populations-in-the-usa-still-lead-the-historic",
+          "title": "Asian migrant populations in the USA still lead the historical charts",
+          "text": "LA-County Filipina women reached 21.6 in vol X (3× white US women at that point); SF-Bay Japanese women have been among top registries in every volume since vol III.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Asian migrant populations in the USA still lead the historical charts",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=384000099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "singapore-women-went-from-near-zero-to-middling-rates-in-all",
+          "title": "Singapore women went from near-zero to middling rates in all three ethnicities",
+          "text": "(Chinese 4.17 → 17.07; Malay 4.76 → 17.49; Indian 3.41 → 17.52). U-shapes — genuine rise after a vol-IV dip that looks like a scope change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Singapore women went from near-zero to middling rates in all three ethnicities",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=470200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "us-white-vs-asian-pi-ratios-in-vol-iv-were-13-by-vol-xii-onl",
+          "title": "US White vs \"Asian/PI\" ratios in vol IV were 13×; by vol XII only ~3–5×",
+          "text": "One of the clearer cases of ethnic narrowing in the dataset.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US White vs \"Asian/PI\" ratios in vol IV were 13×; by vol XII only ~3–5×",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "china-qidong-0-45-vol-vi-4-38-vol-xii-873",
+          "title": "China Qidong: 0.45 (vol VI) → 4.38 (vol XII), +873 %",
+          "text": "n=14→252. Small vol VI baseline inflates the % change; the final level of 4.38 is modest but the direction is consistent with the same rural-catching-up-to-urban pattern we see for pancreas, colon, and breast.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — China Qidong: 0.45 (vol VI) → 4.38 (vol XII), +873 %",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=415600299&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Early-volume corpus-vs-cervix coding was sometimes blurred; some of the vol-I → II rise in Singapore reflects improving specification rather than pure biology.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=470200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Western-Europe registries had a known corpus-coding reclassification in the 1990s — small step-changes around vol VIII should be eyed carefully.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "pacific-peoples-endometrial-story",
+          "title": "Pacific-peoples endometrial story",
+          "text": "the world's top rate, yet barely discussed in global cancer literature. A focused note would land well in a journal with Pacific readership.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Pacific-peoples endometrial story",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Japan's U-shape matches the breast, colon, and pancreas U-shapes in the same registries — could be bundled into a single \"Japanese cancer transition\" figure.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=439200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "USA SF Alameda White women: ASR 47.1 in vol IV is one of the highest *early* rates for endometrial cancer; a historical note on post-war HRT + oestrogen-only era?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=33&populations=384010010&sexes=2",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

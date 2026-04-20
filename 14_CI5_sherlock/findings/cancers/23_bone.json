@@ -1,0 +1,82 @@
+{
+  "code": 23,
+  "label": "Bone",
+  "short": "Bone",
+  "icd10": "C40-41",
+  "slug": "bone",
+  "quick_take": "Bone cancer has small absolute rates (median around 1) and the signal-to-noise is poor. Most registry-level outliers sit on single-digit case counts. The few findings kept here are either built on large aggregate case counts (USA SEER/NPCR) or are flagged as provisional.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "israel-jews-born-in-africa-asia-women-vol-v-asr-6-49-8-8-the",
+          "title": "Israel Jews born in Africa / Asia women vol V: ASR 6.49, 8.8× the world median",
+          "text": "The top spatial outlier for this site by a wide margin. Israel aggregate n=38→255 cases, ASR ~1 throughout; the 6.49 reading refers to a narrower Sephardic subset in a single early volume and may not be fully auditable from the current CI5 2.0 plot. Pop_warning Israel vol V. Keep as a historical curiosity worth checking against the original vol V tables.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel Jews born in Africa / Asia women vol V: ASR 6.49",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=23&populations=437600090_437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "usa-aggregate-seer-npcr-male-age-curves-are-bimodal",
+          "title": "USA aggregate (SEER + NPCR) male age curves are bimodal",
+          "text": "With the peak at age band 18 (85+). The low-age (adolescent) hump is visible but small relative to the chondrosarcoma/osteosarcoma-in-older-adults bulk. The USA bimodal pattern across vol X–XII may reflect how chondrosarcomas of the pelvis are being counted — large N (>6000 cases per vol) makes this easily visualisable.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA aggregate (SEER + NPCR) male age curves are bimodal",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=23&populations=384008099&sexes=1",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Small numerators almost everywhere; rank bone findings by number of cases, not percentage change. Claims about Hawaii-Chinese men (n=0–9), Italian Ferrara/Sassari/Barletta M:F ratios (n=5–8), Karunagappally women U-shape (n=1→12), Xiangfu single-volume 5.88, and the USA-Black vs USA-other 10× historical gap all failed the ≥20-case threshold and were cut from the headline list.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "The interpretation of \"bone cancer\" in CI5 mixes osteosarcoma, chondrosarcoma, Ewing, and (historically, in some registries) multiple myeloma — sub-type splits would be needed for a real writeup.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The bimodal US age curves are likely a registration artefact, not a biological signal.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Consider running all sarcoma-containing sites together (bone + soft-tissue under \"other\") to separate real geographic signal from coding drift.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

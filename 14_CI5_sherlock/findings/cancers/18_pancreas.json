@@ -1,0 +1,109 @@
+{
+  "code": 18,
+  "label": "Pancreas",
+  "short": "Pancreas",
+  "icd10": "C25",
+  "slug": "pancreas",
+  "quick_take": "Pancreas is generally a rising-everywhere cancer, but the CI5 data reveal *how* the rise came about — almost all of the French registries (Isère, Tarn, Doubs, Hérault) show a perfect U-shape, suggesting a coding correction in the late 1980s rather than a real dip. The biggest *real* story is the East-Asian catch-up in Singapore Chinese, both sexes.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "singapore-chinese-the-cleanest-inverted-catch-up",
+          "title": "Singapore Chinese: the cleanest inverted-catch-up",
+          "text": "Women 0.27 (vol I) → 5.51 (vol XII), a 20-fold rise. Men 0.68 → 7.33 (+978 %). Almost monotonic — not clearly peaking yet.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Singapore Chinese: the cleanest inverted-catch-up",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=470200020_470200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "french-registries-share-a-u-shape-across-sexes",
+          "title": "French registries share a U-shape across sexes",
+          "text": "Isère men 3.87 → 3.23 (bottom vol VI) → 10.28 (vol XII); Tarn men 3.70 → 3.36 → 9.35; Doubs women 3.85 → 1.85 → 7.71. The uniform shape suggests a vol V/VI under-coding issue that was later corrected — not a real biological dip. Flag for any trend-writeup.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — French registries share a U-shape across sexes",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=525000399_525000599_525000799&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-men-12-89-vol-vii-1-69-vol-viii-2-81-vol-xi",
+          "title": "India Trivandrum men: 12.89 (vol VII) → 1.69 (vol VIII) → 2.81 (vol XII)",
+          "text": "A single-volume cliff of the kind that almost always means a scope or denominator change in the registry.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum men: 12.89 (vol VII) → 1.69 (vol VIII) → 2.81 (vol XII)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=435600899&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-native-hawaiian-women-vol-ii-asr-18-7-3-4-the-world-m",
+          "title": "Hawaii native Hawaiian women (vol II): ASR 18.7, 3.4× the world median",
+          "text": "This is the top clean outlier (non-US-ethnic) for the site and deserves its own quick look — indigenous-Pacific pancreatic cancer is poorly described. Based on a single vol II reading in the native-Hawaiian subset; the aggregate Hawaii trend (n=41→600) shows ASR roughly flat while crude triples, i.e. much of the Hawaii-overall movement is population ageing.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Hawaii native Hawaiian women (vol II): ASR 18.7, 3.4× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "biggest-rises-after-singapore-chinese-come-from-kuwaitis-ban",
+          "title": "Biggest rises after Singapore Chinese come from Kuwaitis, Bangalore, and Chennai",
+          "text": "a real convergence of Gulf and Indian urban rates toward OECD levels. Bangalore / Chennai baselines are very small (3–10 cases in early volumes); the direction is robust but the exact magnitudes are noisy.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Biggest rises after Singapore Chinese come from Kuwaitis, Bangalore, and Chennai",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=435600299_435600499_470200020_470200099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "No formal cancer_warning, but pancreas has had long-running diagnostic difficulty — a large share of cases historically registered as pancreas were actually peri-ampullary; the U-shape in French registries likely reflects this.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Trivandrum vol VII → VIII looks like a registry-level recoding, not biology.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=435600899&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "A paper focused *just* on the East-Asian pancreas rise (Singapore, Chinese-American, Japan) would land well — the 20-fold climb in Singapore Chinese women is the single most under-reported magnitude in the dataset for this site.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=18&populations=439200099_470200020_470200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Reverse-engineering the French U-shape would be a nice methods vignette on how coding reviews show up in CI5 trajectories.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

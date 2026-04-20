@@ -1,0 +1,109 @@
+{
+  "code": 34,
+  "label": "Uterus, NOS",
+  "short": "Uterus, NOS",
+  "icd10": "C55",
+  "slug": "uterus_nos",
+  "quick_take": "\"Uterus NOS\" is the residual category — cases where the registry couldn't assign cervix vs corpus. In most volumes it's noise. But the ranking of outliers here is *informative*: high ASR = weak registry specification. The cancer itself should keep falling as coding quality improves globally, and for the most part it does.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "qatar-qataris-only-women-vol-xi-asr-10-4-21-the-world-median",
+          "title": "Qatar (Qataris only) women, vol XI: ASR 10.4, 21× the world median",
+          "text": "The single biggest outlier. This is not a biological story — it's a registry coding habit: cases are being left as uterus-NOS rather than split cervix vs corpus.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Qatar (Qataris only) women, vol XI: ASR 10.4, 21× the world median",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "other-coding-driven-outliers",
+          "title": "Other coding-driven outliers",
+          "text": "Brazil Porto Alegre (9.0, vol VII), French Polynesia (8.3, vol VII), Libya Benghazi (8.3, vol X), Brazil Cuiaba (7.3, vol IX), Brunei Darussalam (6.5, vol XI). Treat any \"unusual uterine cancer\" paper on these countries with deep scepticism — it's usually an NOS artefact.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Other coding-driven outliers",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=34&populations=143400199_207600499_207601099_409600099_562000499_625009899&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "china-yanting-and-yucheng-have-elevated-nos-rates-7",
+          "title": "China Yanting and Yucheng have elevated NOS rates (7+)",
+          "text": "Unusual for Chinese registries, which tend to be well-specified — worth checking whether the rise is in incidence or in data-quality drift.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — China Yanting and Yucheng have elevated NOS rates (7+)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=34&populations=415601899_415626499&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "almost-universal-decline-in-high-income-registries",
+          "title": "Almost universal decline in high-income registries",
+          "text": "Several (Canada NWT, Canada Yukon, Hungary, Iceland) reach 0.00 by vol XII. Good news for data quality.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Almost universal decline in high-income registries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=34&populations=312400999_535200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "a-handful-of-registries-are-rising",
+          "title": "A handful of registries are rising",
+          "text": "* — Switzerland Zurich +1033 %, USA New Mexico +644 %, China Beijing +458 %, Thailand Songkhla +622 %. Worth asking each registry whether this is a real increase or a coding drift in the other direction.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — A handful of registries are rising",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=34&populations=384000999_415600199_476400499_575600699&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Rates and ratios here are dominated by coding practice, not biology. Do NOT publish findings on \"uterus NOS cancer\" without reading the registry's coding manual.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Many registries with high NOS counts *may* also have depressed cervix or corpus counts — always check with cervix (code 32) and corpus (code 33) side by side.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "A \"registry data-quality snapshot\" paper using NOS fractions as a quality flag would be useful IARC-internal work. Qatar, French Polynesia, Brunei, Libya, Brazil (several sites) stand out.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=34&populations=625009899&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "The rising Swiss and New Mexican NOS rates should be investigated — they're small but unusual because these registries are normally high-quality.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

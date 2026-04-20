@@ -1,0 +1,127 @@
+{
+  "code": 17,
+  "label": "Gallbladder etc.",
+  "short": "Gallbladder etc.",
+  "icd10": "C23-24",
+  "slug": "gallbladder_etc",
+  "quick_take": "Gallbladder cancer is a classic \"female excess + geographic belt\" story. Chile is the global hotspot and stays that way. The unusual finding is the steep *decline* in Israel (both Jews and non-Jews) — a fall that almost nobody has written about.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "chile-remains-the-world-capital",
+          "title": "Chile remains the world capital",
+          "text": "Valdivia women 27.3 (vol IX), 25.1 (X), 18.9 (XI); Bío Bío 24.6 (X). All 10–15× the world median. Reassuringly stable and well documented.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Chile remains the world capital",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=215200199_215200299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "israel-s-collapse-is-the-biggest-underreported-finding-here",
+          "title": "Israel's collapse is the biggest underreported finding here",
+          "text": "Jewish women went 11.5 (vol II) → 1.4 (vol XI) — 87 % down. The whole-Israel line followed at 11.4 → 1.6. European-origin Israeli-Jewish women peaked at 22.8 in vol III and fell 86 % to 2.0 by vol VIII. This is on the same order as the Chilean excess — but falling.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel's collapse is the biggest underreported finding here",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=437600099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "usa-new-mexico-american-indian-women-asr-31-4-vol-iv",
+          "title": "USA New Mexico American-Indian women: ASR 31.4 (vol IV)",
+          "text": "Third-highest global outlier, 9.4× median. An underappreciated population-specific hotspot — but the vol IV figure is based on a small Native-subpopulation numerator and predates the recoverable volume window for most cross-registry plots; pop_warning NM vol VIII.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA New Mexico American-Indian women: ASR 31.4 (vol IV)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=384000999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "algeria-s-tif-severe-female-to-male-skew",
+          "title": "Algeria Sétif: severe female-to-male skew",
+          "text": "Women 3.94 vs men 0.74 (vol VI) → 9.99 vs 2.09 (vol IX), a 5:1 female:male ratio. Global vol-VI median is close to 1:1 the other way. Shared by a handful of North-African / Caribbean registries. Both sexes show ASR rising while crude falling — population ageing is part of the story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Algeria Sétif: severe female-to-male skew",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=101200199&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "rising-tide-in-east-and-south-asia",
+          "title": "Rising tide in East and South Asia",
+          "text": "India Chennai men 0.15 → 1.82 (n=1→222); China Qidong women 0.44 → 2.71 (n=12→224); Singapore Chinese women 0.45 → 2.04 (n=14→312). Baselines are very small (≤14 cases in early volumes), percent changes are inflated; absolute final levels are modest but the direction is consistent across the region.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Rising tide in East and South Asia",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=415600299_435600499_470200020_470200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-absent-peaks-sit-in-the-usual-70-window",
+          "title": "Bimodal age curves absent; peaks sit in the usual 70+ window",
+          "text": "**Bimodal age curves absent; peaks sit in the usual 70+ window.**",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves absent; peaks sit in the usual 70+ window",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "ICD reorganisation around gallbladder / extrahepatic bile duct / ampulla has moved codes between sites across ICD-8/9/10. Some of the Israel fall is likely to be real, but some may reflect reallocation of ampullary tumours to C24 → C17 boundaries; worth verifying against registry-level notes.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=437600099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Chilean registries have had strong secular ascertainment improvements — level is credible, trend should be stated cautiously.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "why-is-gallbladder-cancer-falling-so-fast-in-israel",
+          "title": "Why is gallbladder cancer falling so fast in Israel?",
+          "text": "Classic risk factors (gallstones, obesity, parity, Mexican-Native/Mapuche genetics) don't obviously explain it. Early cholecystectomy rates plus change in obstetric exposures is one hypothesis.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Why is gallbladder cancer falling so fast in Israel?",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=437600099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Pairing Chile's level with Israel's fall would make a striking \"high plateau vs disappearing excess\" story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=215200099_437600099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "North African female excess merits an investigation into radiographic-contrast history and obstetric factors.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

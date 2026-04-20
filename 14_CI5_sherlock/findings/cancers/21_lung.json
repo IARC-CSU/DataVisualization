@@ -1,0 +1,127 @@
+{
+  "code": 21,
+  "label": "Lung",
+  "short": "Lung",
+  "icd10": "C33-34",
+  "slug": "lung",
+  "quick_take": "The lung-cancer trajectory in CI5 reads like the history of the cigarette itself. Men peaked and turned down almost everywhere between vol V–VIII (1980s–90s). Women are still rising *everywhere* except a handful of early-quit leaders (USA, Canada anglophone, UK). The biggest absolute outlier remains the Canadian/New-Zealand Indigenous women, not East Asia.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "women-peak-almost-nowhere-yet",
+          "title": "Women peak (almost) nowhere yet",
+          "text": "The \"biggest female decreases\" panel is empty. Canada Saskatchewan, Quebec, New Brunswick, Norway and others show female ASR multiplying 7–9× since vol I. Female lung cancer is the single most universally-rising indicator in the dataset.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Women peak (almost) nowhere yet",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=21&populations=312400599_312401199_312401299_557800099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "canadian-nunavut-women-vol-xi-asr-97-5",
+          "title": "Canadian Nunavut women, vol XI: ASR 97.5",
+          "text": "4.8× the world median, based on 41 cases in a single volume. New Zealand women 229→5549 cases (NZ-aggregate ASR 6.98→24.81, +255 %) confirm the broader Indigenous-heavy-country pattern. Canadian NWT women 72 (vol VIII). The Indigenous female lung-cancer burden is higher than almost any male burden anywhere today.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Canadian Nunavut women, vol XI: ASR 97.5",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=21&populations=312401399_655400099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "the-male-finland-inverted-u-is-textbook",
+          "title": "The male Finland inverted-U is textbook",
+          "text": "83.3 (vol I) → 100.8 peak (vol III) → 28.9 (vol XII), a 65 % fall from peak. USA White San Francisco men peaked at 86.8 (vol IV) and fell to 22.5 (vol XII), a 72 % fall from peak. The US Georgia Atlanta White men peaked at 92 and fell to 32.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The male Finland inverted-U is textbook",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=21&populations=384000510_384000599_384005699_524600099&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "polish-regions-have-the-world-s-highest-never-declined-male-",
+          "title": "Polish regions have the world's highest never-declined male levels",
+          "text": "Warsaw City men 94 (vol IV), Cracow 101 (vol IV), Warsaw Rural 65 (vol VI), peaks in the mid-1970s. Decline has been slower than in most other European registries.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Polish regions have the world's highest never-declined male levels",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=21&populations=561600199_561600599_561600699&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "us-black-vs-native-male-ratio-12-in-vol-iv-and-still-11-in-v",
+          "title": "US Black-vs-Native male ratio 12× in vol IV and still 11× in vol XII",
+          "text": "Among women, Black-vs-Native ratio peaked at 14× in vol V. Much more persistent than comparable gradients for tobacco-related cancers.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — US Black-vs-Native male ratio 12× in vol IV and still 11× in vol XII",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "extreme-male-female-ratios-still-exist-in-muslim-majority-re",
+          "title": "Extreme male:female ratios still exist in Muslim-majority registries",
+          "text": "Turkey Edirne 15.5:1, Belarus 14:1, Mali 19:1, Tunisia Centre 21:1. These are the *least*-converged male:female ratios for lung cancer left in the world.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Extreme male:female ratios still exist in Muslim-majority registries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=21&populations=479200799_511200099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "cancer-warning-flags-this-site",
+          "title": "cancer_warning flags this site",
+          "text": "ICD-7 was used for vols I–III, with some definitional discrepancies with later volumes. Don't place too much weight on the exact vol I–II levels — directionally they are fine but the magnitude should not be over-parsed. All lung findings above that span this break (notably Finland vol I, Canadian Saskatchewan vol I) inherit this caveat.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — cancer_warning flags this site",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding",
+          "title": "",
+          "text": "US bimodal \"age-curves\" in the scratch output reflect population-scale registries where ascertainment slightly differs — probably not a biological bimodality.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "A single figure showing \"women reaching men's historical peak\" across 6 northern registries would be striking and publishable.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Indigenous (Nunavut / NWT / Māori / Alaska Native) female lung-cancer excess is in need of a dedicated review piece.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=21&populations=312401399_384005099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Polish men have declined slowest in Europe — a focused analysis against smoking-prevalence and tobacco-control policy timing would inform ongoing debate.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

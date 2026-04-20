@@ -1,0 +1,64 @@
+{
+  "code": 41,
+  "label": "Other male genital",
+  "short": "Other male genital",
+  "icd10": "C63",
+  "slug": "other_male_genital",
+  "quick_take": "C63 is a residual category (scrotum, spermatic cord, other). Very small numbers globally — there is no credible trend or level story, only coding-practice signals. Useful mainly as a data-quality flag.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "everywhere-else-is-near-zero",
+          "title": "Everywhere is near-zero",
+          "text": "Most registries fall to 0.00 by vol XII. The \"biggest decreases\" panel is dominated by registries with 0.27 → 0 transitions — more an artefact of rounding than a trend. Previously reported outliers (USA LA-Korean vol V 3.33; France Hérault, Korea Ulsan, Japan Saga rising +400 to +800 %) all sit on 1–15 cases per registry-volume and do not support a primary finding.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Everywhere is near-zero",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Aggregate category with very small counts. Do NOT publish findings on \"other male genital cancer\" without descending to actual morphology codes.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Historically, some C63 cases were coded under \"unspecified urogenital\" depending on registry — trend interpretation is essentially meaningless.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "None as a primary story. Useful mainly as a *data-quality* flag — registries with persistently high C63 rates may have coding issues in prostate / testis / penis.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

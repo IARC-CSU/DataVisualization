@@ -1,0 +1,136 @@
+{
+  "code": 10,
+  "label": "Oesophagus",
+  "short": "Oesophagus",
+  "icd10": "C15",
+  "slug": "oesophagus",
+  "quick_take": "The world's extreme oesophagus-cancer belt shows up *loud*: three Chinese counties (Cixian, Yangcheng, Yanting) run female ASRs of 60–120 in a world where the median is around 1. At the same time several historical hotspots (Shanghai, Puerto Rico, Singapore Indian) have largely disappeared.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "cixian-county-hebei-is-in-a-class-of-its-own",
+          "title": "Cixian County, Hebei is in a class of its own",
+          "text": "Female ASR 123 in vol VIII, 108 in vol X, 102 in vol XI — 97×, 93× and 88× the world female median respectively. No other cancer-registry combination in the dataset gets close to ~100× the median.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Cixian County, Hebei is in a class of its own",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600699&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "the-chinese-oesophagus-belt-is-visible-across-registries",
+          "title": "The Chinese oesophagus belt is visible across registries",
+          "text": "Yangcheng County 85.5 (vol X), Yanting 69.4 (vol XI), Linzhou 61.9 (vol XI), Yanting 58.2 (vol XII). All among the top 10 spatial outliers in CI5.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The Chinese oesophagus belt is visible across registries",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600899_415601899_415603999&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "puerto-rico-s-collapse-is-one-of-the-cleanest-declines-in-th",
+          "title": "Puerto Rico's collapse is one of the cleanest declines in the dataset",
+          "text": "Female ASR 10.45 (vol I) → 0.50 (vol XII), a 95 % fall; men 23.6 → 3.7, 84 % down. Virtually no inflection — a monotonic historical disappearance.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Puerto Rico's collapse is one of the cleanest declines in the dataset",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=263000099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "shanghai-men-once-35-5-now-4-9",
+          "title": "Shanghai men: once 35.5, now 4.9",
+          "text": "A −86 % fall from vol IV to vol XII. Women in Shanghai followed the same path (11.3 → 1.1, −90 %). This is the urbanisation mirror of the inland-China hotspots above.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Shanghai men: once 35.5, now 4.9",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600399&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "singapore-indian-women-collapsed-through-an-inverted-u-then-",
+          "title": "Singapore Indian women collapsed through an inverted-U then down",
+          "text": "7.55 (vol III) → 8.63 (vol IV) → 0.45 (vol XII). 94 % down. Same Singapore-Indian slide also shows up in oral cavity and in cervix — the subgroup's whole upper-aerodigestive burden is rolling off. Case counts in the Indian subgroup are very small (5–8 per volume); Singapore-overall (n=150→96) confirms the direction.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Singapore Indian women collapsed through an inverted-U then down",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=470200040_470200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "uganda-kyadondo-women-asr-1-16-12-98-vol-i-xii",
+          "title": "Uganda Kyadondo women: ASR 1.16 → 12.98 (vol I → XII)",
+          "text": "A 10-fold rise that earns an \"erratic\" tag because it jumps around. Worth checking against the vol-VII population warning before reading it as a real rise.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Uganda Kyadondo women: ASR 1.16 → 12.98 (vol I → XII)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=180000299&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "None of the main findings ride on a coding break.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Uganda Kyadondo vol VII has a pop_warning; treat the magnitude of the Ugandan female rise with caution.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=180000299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "The Chinese county registries (Cixian, Yangcheng, Yanting, Linzhou) are special-purpose cancer registries — their denominators are smaller rural populations and ASR is legitimate, but interpret as \"pockets of exposure\", not national rates.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600699_415600899_415601899_415603999&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Map Shanghai's 50-year descent alongside Cixian's persistence: a single country showing the full range. Squamous vs adeno split would strengthen the story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600399_415600699&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "Puerto Rico's 95 % female fall deserves its own short paper — what changed, and when did the knee occur?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=263000099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-6",
+          "title": "",
+          "text": "Is the Ugandan rise real? If yes, it would contradict the general Sub-Saharan pattern and might reflect alcohol and very-hot-beverage exposure.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

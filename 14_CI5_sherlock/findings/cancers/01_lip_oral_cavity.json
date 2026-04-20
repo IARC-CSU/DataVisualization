@@ -1,0 +1,118 @@
+{
+  "code": 1,
+  "label": "Lip, oral cavity",
+  "short": "Lip, oral cavity",
+  "icd10": "C00-C14",
+  "slug": "lip_oral_cavity",
+  "quick_take": "Two very different stories sit under the same label. The \"classic\" Western lip cancer — high in agricultural outdoor populations (Canada, Malta, Italy) — is collapsing, while intra-oral cancer in South Asia and East China is either exploding or simply running at astonishing rates.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "singapore-indian-women-follow-a-perfect-u-shape",
+          "title": "Singapore Indian women follow a perfect U-shape",
+          "text": "Vol III → X: 37.5 → 4.7 per 100 000, then rebound to 5.5 in vol XII. Same cohort, same registry, 85 % fall and partial recovery — exactly the kind of pattern the Shanghai cervix plot highlighted. The ASR in vol III (37.5) is 8.8× the global female median — tied for top spatial outlier in the dataset. Ethnic-Indian case counts are small (min 12 in a volume); crude rate is roughly flat, so the fall is genuine decline plus substantial age-structure change in the subgroup.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Singapore Indian women follow a perfect U-shape",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=415600399_470200040_470200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "canadian-lip-cancer-disappearing",
+          "title": "Canadian lip cancer disappearing",
+          "text": "Newfoundland men fell 38.3 → 11.8 (−69 %), Saskatchewan 36.7 → 9.3 (−75 %), New Brunswick 34.7 → 11.3 (−68 %), all through a characteristic U (high-high-drop-bottom-small rebound). Plausibly fewer outdoor fishermen/farmers + UV protection — the lip vermilion component.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Canadian lip cancer disappearing",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=312400599_312401299&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "inland-china-intra-oral-emergence",
+          "title": "Inland-China intra-oral emergence",
+          "text": "Jiashan County females ASR +93 % (n=26→71), Qidong +70 %, Harbin flat-to-down, Wuhan +5 % since vol VIII. Shanghai men's ASR fell 38 % but the crude rose 46 %, i.e. Shanghai's population aged rapidly — some of the cross-city comparison is population structure rather than biology.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Inland-China intra-oral emergence",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=415600299_415600399_415600799_415600999_415601599&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "india-pakistan-dominate-absolute-levels",
+          "title": "India & Pakistan dominate absolute levels",
+          "text": "Kamrup Urban (Assam) males 59.5, Meghalaya 52.3, Pakistan South Karachi women 23.8 — all 5–6× the world median. Betel quid / gutkha belt.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India & Pakistan dominate absolute levels",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=435601599_435602499_458600199&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "usa-ethnic-gaps-are-enormous",
+          "title": "USA ethnic gaps are enormous",
+          "text": "In vol IV–V the US male top-to-bottom ratio across ethnicities was 27×; US vol V women had a 21× spread. The highest male subgroup was SF-Bay Black (ethnic 30), the lowest was Hispanic (42).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA ethnic gaps are enormous",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=384000099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "bimodal-age-curves-in-algeria-and-jiashan",
+          "title": "Bimodal age curves in Algeria and Jiashan",
+          "text": "the female curve has a visible low-age hump before the usual 60+ peak, which is unusual for oral cancer.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Bimodal age curves in Algeria and Jiashan",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=415600799&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "None of the main findings ride on coding breaks for this site.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Uganda Kyadondo's +1548 % male change must be read with the vol-VII pop_warning — likely reflects population-denominator change.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=180000299&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "US ethnic subgroup spreads before vol VI should be read cautiously (small subgroup pops, early vol).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-6",
+          "title": "",
+          "text": "Document the Newfoundland/Saskatchewan/Malta lip collapse as a coherent Western-lip-vermilion story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=1&populations=312401299_547000099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

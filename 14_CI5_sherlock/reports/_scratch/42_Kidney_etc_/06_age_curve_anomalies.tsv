@@ -1,0 +1,3 @@
+id_code	id_label	ethnic_code	CI5_volume	sex	peak_age_band	peak_rate	tot_cases	early_peak	bimodal
+150400199	Morocco, Casablanca	99	12	2	14	3.86441900607143	102	FALSE	TRUE
+435600499	India, Chennai	99	8	2	14	3.34094325964697	54	FALSE	TRUE

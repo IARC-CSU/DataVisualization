@@ -1,0 +1,82 @@
+{
+  "code": 38,
+  "label": "Penis",
+  "short": "Penis",
+  "icd10": "C60",
+  "slug": "penis",
+  "quick_take": "Penile cancer is a developing-country, low-circumcision cancer that has been falling almost everywhere — but *not* in Switzerland and parts of Eastern Europe, where it is creeping up. Brazil Recife, Jamaica Kingston, and Uganda are the persistent global hotspots.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "brazil-recife-men-vol-iii-asr-9-54-and-vol-v-7-94",
+          "title": "Brazil Recife men, vol III: ASR 9.54 and vol V: 7.94",
+          "text": "roughly 10–11× the world median. One of the most striking historical South American rates.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Brazil Recife men, vol III: ASR 9.54 and vol V: 7.94",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=38&populations=207601599&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "uganda-gulu-and-zimbabwe-bulawayo-african-men-sit-above-5-in",
+          "title": "Uganda Gulu and Zimbabwe Bulawayo African men sit above 5 in vol XII",
+          "text": "African penile cancer remains ~10× world median (Zimbabwe Bulawayo African n=56 over the full period; Uganda Gulu single-volume n=21). Pop_warning for Bulawayo vol XII. Level is credible; Latin American registries have largely converged to global levels.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Uganda Gulu and Zimbabwe Bulawayo African men sit above 5 in vol XII",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=38&populations=171600170_180000399&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "china-shanghai-and-hong-kong-men-clean-u-shapes",
+          "title": "China Shanghai and Hong Kong men: clean U-shapes",
+          "text": "Shanghai 1.58 → 0 → 0.31, Hong Kong 1.95 → 0 → 0.37. Intermediate volumes have near-zero cases for these registries; the U is directionally suggestive but the bottom of the U is at the limit of what CI5 can resolve for this rare cancer. Improving hygiene / early circumcision increase during urban transition is the usual hypothesis.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — China Shanghai and Hong Kong men: clean U-shapes",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=38&populations=415600399_415603099&sexes=1",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Small counts everywhere — treat all % changes cautiously.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "CI5's penis code (C60) includes both invasive SCC and in-situ; some of the Swiss rise may reflect better capture of Tis.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Revisit Brazil Recife's 1970s–80s readings with an ethnographic lens: still one of the highest per-capita historical rates for any penile cancer population.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=38&populations=207601599&sexes=1",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "code": 55,
+  "label": "Multiple myeloma",
+  "short": "Multiple myeloma",
+  "icd10": "C88+90",
+  "slug": "multiple_myeloma",
+  "quick_take": "Multiple myeloma has the largest persistent US Black excess of any haematological cancer — Black ASR sits at 2–4× the US White rate across every volume from III to XII. The signal is stable, not narrowing. Elsewhere the story is a universal low-level rise, largely driven by better serum-electrophoresis diagnosis.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "usa-san-francisco-bay-black-men-vol-iii-asr-11-64-5-the-worl",
+          "title": "USA San Francisco Bay Black men, vol III: ASR 11.64, 5× the world median",
+          "text": "Nebraska Black women vol XII 12.19 (4.3×). New Zealand Māori men vol II 8.82. Multiple myeloma's Black-population excess shows up as early as vol III and is still at the top of US-male rankings in vol XII.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA San Francisco Bay Black men, vol III: ASR 11.64, 5× the world median",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=55&populations=384000230_384000299_384004730_384004799_655400099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "usa-ethnic-contrast-inside-the-same-country-reaches-26-in-vo",
+          "title": "USA ethnic contrast inside the same country reaches 26× in vol III",
+          "text": "(SF Bay Black 11.64 vs Hispanic 0.44) — narrower but still 12–17× in vol X.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — USA ethnic contrast inside the same country reaches 26× in vol III",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=55&populations=384000099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "new-zealand-pacific-peoples-women-inverted-u-2-10-8-90-vol-x",
+          "title": "New Zealand Pacific peoples women: inverted-U 2.10 → 8.90 (vol XI) → 8.34",
+          "text": "Pacific subgroup n=2→60 cases (SMALL_N baseline) + pop_warning NZ Pacific vol X. The inverted-U shape is directionally sound but the exact peak height should be treated cautiously. A Pacific-peoples myeloma excess that has not received much attention.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — New Zealand Pacific peoples women: inverted-U 2.10 → 8.90 (vol XI) → 8.34",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=55&populations=655400029_655400099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "the-universal-rise-is-the-cleanest-haematological-trend-in-c",
+          "title": "The \"universal rise\" is the cleanest haematological trend in CI5",
+          "text": "Virtually no registry shows a decline; most are up 2–6×. Extreme %-changes (Miyagi women +3125 %, Algeria Sétif men +1356 %) are driven by baselines of 1–4 cases; absolute final ASRs (2–5 per 100 000) are modest. The *direction* is universal and robust, but headline percentages should be reported with their baseline case counts.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The \"universal rise\" is the cleanest haematological trend in CI5",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=55&populations=101200199_217000199_439200299_470200020_470200099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "uganda-kyadondo-men-0-66-2-72-u-shape",
+          "title": "Uganda Kyadondo men 0.66 → 2.72, U-shape",
+          "text": "African rise visible on top of the universal one.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Uganda Kyadondo men 0.66 → 2.72, U-shape",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=55&populations=180000299&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "no-cancer-warning-no-bimodal-or-early-peak-anomalies",
+          "title": "No cancer_warning, no bimodal or early-peak anomalies",
+          "text": "myeloma's age distribution is a clean unimodal older-adult peak everywhere.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — No cancer_warning, no bimodal or early-peak anomalies",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Much of the universal rise reflects better serum electrophoresis and bone-marrow biopsy rates over time. Some is real.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Small numbers in early volumes for non-US registries exaggerate % changes.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "the-persistent-us-black-myeloma-excess-is-arguably-the-most-",
+          "title": "The persistent US Black × myeloma excess is arguably the most important persistent racial disparity in haematology, and CI5 XII shows it still at 12–15× — worth a focused paper",
+          "text": "**The persistent US Black × myeloma excess is arguably the most important persistent racial disparity in haematology, and CI5 XII shows it still at 12–15× — worth a focused paper.**",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The persistent US Black × myeloma excess is arguably the most important persistent racial disparity in haematology, and CI5 XII shows it still at 12–15× — worth a focused paper",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "the-pacific-peoples-hawaiian-nz-m-ori-nz-pacific-myeloma-exc",
+          "title": "The Pacific-peoples (Hawaiian, NZ Māori, NZ Pacific) myeloma excess",
+          "text": "is under-described and could be packaged as a coherent indigenous-Pacific story.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — The Pacific-peoples (Hawaiian, NZ Māori, NZ Pacific) myeloma excess",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Decompose the worldwide rise into a \"diagnostic access\" component (pre-vol-VIII) and a \"real rise\" component (post-vol-VIII) by fitting piecewise trends.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

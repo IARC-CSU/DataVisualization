@@ -1,0 +1,593 @@
+id_code	id_label	ethnic_code	sex	n_vol	first_vol	first_asr	last_vol	last_asr	min_asr	min_vol	max_asr	max_vol	pct_change	shape	abs_pct
+101200199	Algeria, Sétif	99	1	5	6	0	11	0	0	6	0	6		rising	
+171600270	Zimbabwe, Harare: African	70	1	6	7	0	12	0	0	7	0	7		rising	
+180000299	Uganda, Kyadondo County	99	1	7	1	0	12	0	0	1	0	1		rising	
+207600299	Brazil, Goiânia	99	1	7	6	0	12	0	0	6	0	6		rising	
+207600899	Brazil, Sao Paulo	99	1	5	3	0	10	0	0	3	0	3		rising	
+215200199	Chile, Valdivia	99	1	4	9	0	12	0	0	9	0	9		rising	
+217000199	Colombia, Cali	99	1	12	1	0	12	0	0	1	0	1		rising	
+218800099	Costa Rica	99	1	8	5	0	12	0	0	5	0	5		rising	
+221800199	Ecuador, Quito	99	1	7	6	0	12	0	0	6	0	6		rising	
+225009199	France, Martinique	99	1	7	5	0	12	0	0	5	0	5		rising	
+238800199	Jamaica, Kingston and St Andrew	99	1	6	1	0	11	0	0	1	0	1		rising	
+263000099	USA, Puerto Rico	99	1	11	1	0	12	0	0	1	0	1		rising	
+312400099	Canada	99	1	8	3	0	10	0	0	3	0	3		rising	
+312400199	Canada, Alberta	99	1	12	1	0	12	0	0	1	0	1		rising	
+312400299	Canada, British Columbia	99	1	10	3	0	12	0	0	3	0	3		rising	
+312400399	Canada, Manitoba	99	1	12	1	0	12	0	0	1	0	1		rising	
+312400499	Canada, Northwest Territories	99	1	7	5	0	11	0	0	5	0	5		rising	
+312400599	Canada, New Brunswick	99	1	10	1	0	12	0	0	1	0	1		rising	
+312400699	Canada, Nova Scotia	99	1	7	5	0	11	0	0	5	0	5		rising	
+312400799	Canada, Prince Edward Island	99	1	8	5	0	12	0	0	5	0	5		rising	
+312400899	Canada, Newfoundland and Labrador	99	1	12	1	0	12	0	0	1	0	1		rising	
+312400999	Canada, Yukon	99	1	6	6	0	12	0	0	6	0	6		rising	
+312401099	Canada, Ontario	99	1	9	3	0	12	0	0	3	0	3		rising	
+312401199	Canada, Quebec	99	1	9	2	0	12	0	0	2	0	2		rising	
+312401299	Canada, Saskatchewan	99	1	12	1	0	12	0	0	1	0	1		rising	
+384000210	USA, California, San Francisco Bay Area: White	10	1	7	3	0	12	0	0	3	0	3		rising	
+384000220	USA, California, San Francisco Bay Area: Chinese	20	1	6	3	0	11	0	0	3	0	3		rising	
+384000221	USA, California, San Francisco Bay Area: Japanese	21	1	5	4	0	11	0	0	4	0	4		rising	
+384000223	USA, California, San Francisco Bay Area: Filipino	23	1	4	5	0	11	0	0	5	0	5		rising	
+384000230	USA, California, San Francisco Bay Area: Black	30	1	10	3	0	12	0	0	3	0	3		rising	
+384000250	USA, California, San Francisco Bay Area: Hispanic White	50	1	6	7	0	12	0	0	7	0	7		rising	
+384000260	USA, California, San Francisco Bay Area: Non-Hispanic White	60	1	6	7	0	12	0	0	7	0	7		rising	
+384000299	USA, California, San Francisco Bay Area	99	1	6	7	0	12	0	0	7	0	7		rising	
+384000320	USA, California, Los Angeles County: Chinese	20	1	9	4	0	12	0	0	4	0	4		rising	
+384000321	USA, California, Los Angeles County: Japanese	21	1	7	4	0	10	0	0	4	0	4		rising	
+384000322	USA, California, Los Angeles County: Korean	22	1	8	5	0	12	0	0	5	0	5		rising	
+384000323	USA, California, Los Angeles County: Filipino	23	1	8	5	0	12	0	0	5	0	5		rising	
+384000330	USA, California, Los Angeles County: Black	30	1	9	4	0	12	0	0	4	0	4		rising	
+384000350	USA, California, Los Angeles County: Hispanic White	50	1	8	5	0	12	0	0	5	0	5		rising	
+384000360	USA, California, Los Angeles County: Non-Hispanic White	60	1	7	6	0	12	0	0	6	0	6		rising	
+384000399	USA, California, Los Angeles County	99	1	6	7	0	12	0	0	7	0	7		rising	
+384000410	USA, Connecticut: White	10	1	8	5	0	12	0	0	5	0	5		rising	
+384000430	USA, Connecticut: Black	30	1	8	5	0	12	0	0	5	0	5		rising	
+384000499	USA, Connecticut	99	1	10	1	0	12	0	0	1	0	1		rising	
+384000510	USA, Georgia, Atlanta: White	10	1	9	4	0	12	0	0	4	0	4		rising	
+384000530	USA, Georgia, Atlanta: Black	30	1	9	4	0	12	0	0	4	0	4		rising	
+384000599	USA, Georgia, Atlanta	99	1	6	7	0	12	0	0	7	0	7		rising	
+384000699	USA, Iowa	99	1	10	3	0	12	0	0	3	0	3		rising	
+384000710	USA, Louisiana, New Orleans: White	10	1	9	4	0	12	0	0	4	0	4		rising	
+384000730	USA, Louisiana, New Orleans: Black	30	1	9	4	0	12	0	0	4	0	4		rising	
+384000799	USA, Louisiana, New Orleans	99	1	5	7	0	12	0	0	7	0	7		rising	
+384000810	USA, Michigan, Detroit: White	10	1	10	3	0	12	0	0	3	0	3		rising	
+384000830	USA, Michigan, Detroit: Black	30	1	10	3	0	12	0	0	3	0	3		rising	
+384000899	USA, Michigan, Detroit	99	1	6	7	0	12	0	0	7	0	7		rising	
+384000942	USA, New Mexico: American Indian	42	1	7	3	0	12	0	0	3	0	3		rising	
+384000950	USA, New Mexico: Hispanic White	50	1	7	5	0	12	0	0	5	0	5		rising	
+384000960	USA, New Mexico: Non-Hispanic White	60	1	6	7	0	12	0	0	7	0	7		rising	
+384000999	USA, New Mexico	99	1	7	6	0	12	0	0	6	0	6		rising	
+384001299	USA, Utah	99	1	10	3	0	12	0	0	3	0	3		rising	
+384001399	USA, Washington, Seattle	99	1	9	4	0	12	0	0	4	0	4		rising	
+384001510	USA, New Jersey: White	10	1	5	8	0	12	0	0	8	0	8		rising	
+384001530	USA, New Jersey: Black	30	1	5	8	0	12	0	0	8	0	8		rising	
+384001599	USA, New Jersey	99	1	7	5	0	12	0	0	5	0	5		rising	
+384001610	USA, New York State: White	10	1	5	8	0	12	0	0	8	0	8		rising	
+384001630	USA, New York State: Black	30	1	5	8	0	12	0	0	8	0	8		rising	
+384001699	USA, New York State	99	1	5	8	0	12	0	0	8	0	8		rising	
+384001999	USA, Kentucky	99	1	4	9	0	12	0	0	9	0	9		rising	
+384002010	USA, SEER (9 registries): White	10	1	7	6	0	12	0	0	6	0	6		rising	
+384002030	USA, SEER (9 registries): Black	30	1	7	6	0	12	0	0	6	0	6		rising	
+384002099	USA, SEER (9 registries)	99	1	6	7	0	12	0	0	7	0	7		rising	
+384002210	USA, Louisiana: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384002230	USA, Louisiana: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384002299	USA, Louisiana	99	1	4	9	0	12	0	0	9	0	9		rising	
+384002429	USA, SEER (18 registries): Asian and Pacific Islander	29	1	4	9	0	12	0	0	9	0	9		rising	
+384002430	USA, SEER (18 registries): Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384002450	USA, SEER (18 registries): Hispanic White	50	1	4	9	0	12	0	0	9	0	9		rising	
+384002460	USA, SEER (18 registries): Non-Hispanic White	60	1	4	9	0	12	0	0	9	0	9		rising	
+384002499	USA, SEER (18 registries)	99	1	4	9	0	12	0	0	9	0	9		rising	
+384002530	USA, California: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384002599	USA, California	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005099	USA, Alaska	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005110	USA, Alabama: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384005130	USA, Alabama: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384005199	USA, Alabama	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005299	USA, Arizona	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005399	USA, Colorado	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005510	USA, Florida: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384005530	USA, Florida: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384005599	USA, Florida	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005610	USA, Georgia: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384005630	USA, Georgia: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384005699	USA, Georgia	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005799	USA, Idaho	99	1	4	9	0	12	0	0	9	0	9		rising	
+384005999	USA, Indiana	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006099	USA, Massachusetts	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006199	USA, Maine	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006210	USA, Michigan: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384006230	USA, Michigan: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384006299	USA, Michigan	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006310	USA, Missouri: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384006330	USA, Missouri: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384006399	USA, Missouri	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006499	USA, Montana	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006510	USA, Ohio: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384006530	USA, Ohio: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384006599	USA, Ohio	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006699	USA, Oklahoma	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006799	USA, Oregon	99	1	4	9	0	12	0	0	9	0	9		rising	
+384006999	USA, Rhode Island	99	1	4	9	0	12	0	0	9	0	9		rising	
+384007010	USA, South Carolina: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384007030	USA, South Carolina: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384007099	USA, South Carolina	99	1	4	9	0	12	0	0	9	0	9		rising	
+384007110	USA, Texas: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384007130	USA, Texas: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384007199	USA, Texas	99	1	4	9	0	12	0	0	9	0	9		rising	
+384007299	USA, Vermont	99	1	4	9	0	12	0	0	9	0	9		rising	
+384007399	USA, Washington State	99	1	4	9	0	12	0	0	9	0	9		rising	
+384007499	USA, West Virginia	99	1	4	9	0	12	0	0	9	0	9		rising	
+384008010	USA, NPCR: White	10	1	4	9	0	12	0	0	9	0	9		rising	
+384008030	USA, NPCR: Black	30	1	4	9	0	12	0	0	9	0	9		rising	
+384008099	USA, NPCR	99	1	4	9	0	12	0	0	9	0	9		rising	
+384010010	Usa, California, Alameda County: White	10	1	5	2	0	6	0	0	2	0	2		rising	
+384010030	Usa, California, Alameda County: Black	30	1	5	2	0	6	0	0	2	0	2		rising	
+384010499	Usa, New York State (Less New York City)	99	1	5	1	0	6	0	0	1	0	1		rising	
+404800046	Bahrain: Bahrainis	46	1	4	9	0	12	0	0	9	0	9		rising	
+415600199	China, Beijing City	99	1	4	8	0	12	0	0	8	0	8		rising	
+415600299	China, Qidong City	99	1	6	6	0	12	0	0	6	0	6		rising	
+415600399	China, Shanghai City	99	1	9	4	0	12	0	0	4	0	4		rising	
+415600499	China, Tianjin	99	1	4	5	0	8	0	0	5	0	5		rising	
+415600699	China, Cixian County	99	1	4	8	0	12	0	0	8	0	8		rising	
+415600799	China, Jiashan County	99	1	5	8	0	12	0	0	8	0	8		rising	
+415600999	China, Wuhan City	99	1	4	8	0	12	0	0	8	0	8		rising	
+415601499	China, Zhongshan City	99	1	4	9	0	12	0	0	9	0	9		rising	
+415601599	China, Nangang District, Harbin City	99	1	4	9	0	12	0	0	9	0	9		rising	
+415603099	China, Hong Kong	99	1	8	4	0	11	0	0	4	0	4		rising	
+435600299	India, Bangalore	99	1	7	5	0	12	0	0	5	0	5		rising	
+435600399	India, Mumbai	99	1	11	2	0	12	0	0	2	0	2		rising	
+435600499	India, Chennai	99	1	8	5	0	12	0	0	5	0	5		rising	
+435600699	India, Poona	99	1	7	4	0	12	0	0	4	0	4		rising	
+435600799	India, Barshi, Paranda, and Bhum	99	1	4	7	0	12	0	0	7	0	7		rising	
+435600899	India, Trivandrum	99	1	6	7	0	12	0	0	7	0	7		rising	
+435600999	India, Karunagappally	99	1	4	7	0	10	0	0	7	0	7		rising	
+435601099	India, New Delhi	99	1	4	8	0	12	0	0	8	0	8		rising	
+437600090	Israel: Jews	90	1	11	2	0	12	0	0	2	0	2		rising	
+437600091	Israel: Jews born in Israel	91	1	7	2	0	8	0	0	2	0	2		rising	
+437600094	Israel: Arabs	94	1	11	2	0	12	0	0	2	0	2		rising	
+437600096	Israel: Jews born in Africa or Asia	96	1	7	2	0	8	0	0	2	0	2		rising	
+437600097	Israel: Jews born in Europe or America	97	1	6	2	0	8	0	0	2	0	2		rising	
+437600099	Israel	99	1	11	1	0	12	0	0	1	0	1		rising	
+439200199	Japan, Hiroshima Prefecture	99	1	8	5	0	12	0	0	5	0	5		rising	
+439200299	Japan, Miyagi Prefecture	99	1	12	1	0	12	0	0	1	0	1		rising	
+439200399	Japan, Nagasaki Prefecture	99	1	8	4	0	11	0	0	4	0	4		rising	
+439200499	Japan, Osaka Prefecture	99	1	10	3	0	12	0	0	3	0	3		rising	
+439200599	Japan, Saga Prefecture	99	1	4	6	0	10	0	0	6	0	6		rising	
+439200699	Japan, Yamagata Prefecture	99	1	5	6	0	11	0	0	6	0	6		rising	
+439201099	Japan, Aichi Prefecture	99	1	4	9	0	12	0	0	9	0	9		rising	
+441000099	Republic of Korea	99	1	4	9	0	12	0	0	9	0	9		rising	
+441000299	Republic of Korea, Busan	99	1	5	8	0	12	0	0	8	0	8		rising	
+441000399	Republic of Korea, Seoul	99	1	5	8	0	12	0	0	8	0	8		rising	
+441000499	Republic of Korea, Daegu	99	1	5	8	0	12	0	0	8	0	8		rising	
+441000599	Republic of Korea, Daejeon	99	1	4	9	0	12	0	0	9	0	9		rising	
+441000899	Republic of Korea, Ulsan	99	1	4	9	0	12	0	0	9	0	9		rising	
+441000999	Republic of Korea, Jeju	99	1	4	9	0	12	0	0	9	0	9		rising	
+441001099	Republic of Korea, Gwangju	99	1	4	9	0	12	0	0	9	0	9		rising	
+441001199	Republic of Korea, Incheon	99	1	4	9	0	12	0	0	9	0	9		rising	
+441400025	Kuwait: Kuwaitis	25	1	8	5	0	12	0	0	5	0	5		rising	
+441400026	Kuwait: Non-Kuwaitis	26	1	8	5	0	12	0	0	5	0	5		rising	
+441400099	Kuwait	99	1	6	5	0	12	0	0	5	0	5		rising	
+460800299	Philippines, Manila	99	1	7	6	0	12	0	0	6	0	6		rising	
+460800399	Philippines, Rizal	99	1	5	5	0	11	0	0	5	0	5		rising	
+470200020	Singapore: Chinese	20	1	10	1	0	12	0	0	1	0	1		rising	
+470200027	Singapore: Malay	27	1	9	3	0	12	0	0	3	0	3		rising	
+470200040	Singapore: Indian	40	1	9	3	0	12	0	0	3	0	3		rising	
+470200099	Singapore	99	1	5	7	0	12	0	0	7	0	7		rising	
+476400199	Thailand, Chiang Mai	99	1	7	6	0	12	0	0	6	0	6		rising	
+476400299	Thailand, Khon Kaen	99	1	6	6	0	12	0	0	6	0	6		rising	
+476400399	Thailand, Bangkok	99	1	4	8	0	12	0	0	8	0	8		rising	
+476400499	Thailand, Songkhla	99	1	5	8	0	12	0	0	8	0	8		rising	
+476400599	Thailand, Lampang	99	1	5	8	0	12	0	0	8	0	8		rising	
+479200199	Turkey, Izmir	99	1	4	9	0	12	0	0	9	0	9		rising	
+479200299	Turkey, Antalya	99	1	4	9	0	12	0	0	9	0	9		rising	
+504000099	Austria	99	1	4	9	0	12	0	0	9	0	9		rising	
+504000799	Austria, Tyrol	99	1	6	7	0	12	0	0	7	0	7		rising	
+504000899	Austria, Vorarlberg	99	1	5	8	0	12	0	0	8	0	8		rising	
+511200099	Belarus	99	1	7	6	0	12	0	0	6	0	6		rising	
+519100099	Croatia	99	1	6	7	0	12	0	0	7	0	7		rising	
+519600099	Cyprus	99	1	4	9	0	12	0	0	9	0	9		rising	
+520300099	Czech Republic	99	1	7	6	0	12	0	0	6	0	6		rising	
+520800099	Denmark	99	1	12	1	0	12	0	0	1	0	1		rising	
+523300099	Estonia	99	1	7	6	0	12	0	0	6	0	6		rising	
+524600099	Finland	99	1	11	1	0	12	0	0	1	0	1		rising	
+525000199	France, Bas-Rhin	99	1	9	4	0	12	0	0	4	0	4		rising	
+525000299	France, Calvados	99	1	8	5	0	12	0	0	5	0	5		rising	
+525000399	France, Doubs	99	1	9	4	0	12	0	0	4	0	4		rising	
+525000499	France, Haut-Rhin	99	1	6	7	0	12	0	0	7	0	7		rising	
+525000599	France, Isère	99	1	8	5	0	12	0	0	5	0	5		rising	
+525000699	France, Somme	99	1	7	6	0	12	0	0	6	0	6		rising	
+525000799	France, Tarn	99	1	7	6	0	12	0	0	6	0	6		rising	
+525000899	France, Hérault	99	1	6	7	0	12	0	0	7	0	7		rising	
+525001499	France, Loire-Atlantique	99	1	4	9	0	12	0	0	9	0	9		rising	
+525001699	France, Manche	99	1	5	8	0	12	0	0	8	0	8		rising	
+525001799	France, Vendée	99	1	4	9	0	12	0	0	9	0	9		rising	
+527600199	Germany, Eastern States	99	1	6	2	0	7	0	0	2	0	2		rising	
+527600299	Germany, Hamburg	99	1	7	3	0	12	0	0	3	0	3		rising	
+527601199	Germany, North Rhine-Westphalia	99	1	4	9	0	12	0	0	9	0	9		rising	
+527603099	Germany, Saarland	99	1	10	3	0	12	0	0	3	0	3		rising	
+534800299	Hungary, County Szabolcs-Szatmar	99	1	5	2	0	6	0	0	2	0	2		rising	
+534800399	Hungary, County Vas	99	1	5	2	0	6	0	0	2	0	2		rising	
+535200099	Iceland	99	1	10	1	0	12	0	0	1	0	1		rising	
+537200099	Ireland	99	1	5	8	0	12	0	0	8	0	8		rising	
+538000199	Italy, Tuscany	99	1	7	6	0	12	0	0	6	0	6		rising	
+538000399	Italy, Latina	99	1	4	6	0	11	0	0	6	0	6		rising	
+538000499	Italy, Varese	99	1	9	4	0	12	0	0	4	0	4		rising	
+538000599	Italy, Parma	99	1	7	5	0	11	0	0	5	0	5		rising	
+538000799	Italy, Romagna	99	1	6	6	0	11	0	0	6	0	6		rising	
+538000899	Italy, Turin	99	1	7	6	0	12	0	0	6	0	6		rising	
+538001099	Italy, Modena	99	1	5	7	0	11	0	0	7	0	7		rising	
+538001299	Italy, Ferrara	99	1	5	7	0	11	0	0	7	0	7		rising	
+538001399	Italy, Veneto	99	1	6	7	0	12	0	0	7	0	7		rising	
+538001499	Italy, Umbria	99	1	5	8	0	12	0	0	8	0	8		rising	
+538001599	Italy, Sassari	99	1	5	8	0	12	0	0	8	0	8		rising	
+538001699	Italy, Naples South	99	1	4	9	0	12	0	0	9	0	9		rising	
+538001799	Italy, Biella	99	1	4	8	0	11	0	0	8	0	8		rising	
+538002299	Italy, Genova	99	1	6	6	0	12	0	0	6	0	6		rising	
+538002699	Italy, Milan	99	1	4	9	0	12	0	0	9	0	9		rising	
+538002899	Italy, Sondrio	99	1	4	9	0	12	0	0	9	0	9		rising	
+538002999	Italy, Syracuse	99	1	4	9	0	12	0	0	9	0	9		rising	
+538006699	Italy, Ragusa	99	1	6	5	0	10	0	0	5	0	5		rising	
+542800099	Latvia	99	1	7	6	0	12	0	0	6	0	6		rising	
+544000099	Lithuania	99	1	5	8	0	12	0	0	8	0	8		rising	
+547000099	Malta	99	1	7	3	0	12	0	0	3	0	3		rising	
+552800099	The Netherlands	99	1	6	7	0	12	0	0	7	0	7		rising	
+552800199	The Netherlands, Eindhoven	99	1	6	5	0	10	0	0	5	0	5		rising	
+552800299	The Netherlands, Maastricht	99	1	4	6	0	9	0	0	6	0	6		rising	
+557800099	Norway	99	1	12	1	0	12	0	0	1	0	1		rising	
+561600199	Poland, Cracow	99	1	9	2	0	10	0	0	2	0	2		rising	
+561600299	Poland, Lower Silesia	99	1	5	6	0	11	0	0	6	0	6		rising	
+561600599	Poland, Warsaw City	99	1	8	2	0	9	0	0	2	0	2		rising	
+561600699	Poland, Warsaw Rural	99	1	4	2	0	6	0	0	2	0	2		rising	
+561600799	Poland, Kielce	99	1	6	7	0	12	0	0	7	0	7		rising	
+564300199	Russian Federation, Saint Petersburg	99	1	4	6	0	10	0	0	6	0	6		rising	
+570300099	Slovakia	99	1	8	4	0	11	0	0	4	0	4		rising	
+570500099	Slovenia	99	1	12	1	0	12	0	0	1	0	1		rising	
+572400199	Spain, Tarragona	99	1	8	5	0	12	0	0	5	0	5		rising	
+572400299	Spain, Granada	99	1	7	6	0	12	0	0	6	0	6		rising	
+572400399	Spain, Murcia	99	1	7	6	0	12	0	0	6	0	6		rising	
+572400499	Spain, Navarra	99	1	9	4	0	12	0	0	4	0	4		rising	
+572400599	Spain, Asturias	99	1	6	7	0	12	0	0	7	0	7		rising	
+572400699	Spain, Basque Country	99	1	6	6	0	12	0	0	6	0	6		rising	
+572400799	Spain, Zaragoza	99	1	7	3	0	9	0	0	3	0	3		rising	
+572400899	Spain, Mallorca	99	1	4	7	0	11	0	0	7	0	7		rising	
+572400999	Spain, Albacete	99	1	5	7	0	11	0	0	7	0	7		rising	
+572401099	Spain, Girona	99	1	5	8	0	12	0	0	8	0	8		rising	
+572401199	Spain, Canary Islands	99	1	5	8	0	12	0	0	8	0	8		rising	
+572401399	Spain, Cuenca	99	1	4	8	0	11	0	0	8	0	8		rising	
+575200099	Sweden	99	1	11	1	0	12	0	0	1	0	1		rising	
+575600199	Switzerland, Basel	99	1	6	5	0	12	0	0	5	0	5		rising	
+575600299	Switzerland, Geneva	99	1	10	3	0	12	0	0	3	0	3		rising	
+575600399	Switzerland, Neuchâtel	99	1	8	4	0	11	0	0	4	0	4		rising	
+575600499	Switzerland, East	99	1	7	6	0	12	0	0	6	0	6		rising	
+575600599	Switzerland, Vaud	99	1	9	4	0	12	0	0	4	0	4		rising	
+575600699	Switzerland, Zurich	99	1	6	5	0	11	0	0	5	0	5		rising	
+575600899	Switzerland, Valais	99	1	6	7	0	12	0	0	7	0	7		rising	
+575601099	Switzerland, Ticino	99	1	5	8	0	12	0	0	8	0	8		rising	
+575601199	Switzerland, Graubünden and Glarus	99	1	5	8	0	12	0	0	8	0	8		rising	
+582600199	UK, England	99	1	4	8	0	12	0	0	8	0	8		rising	
+582600299	UK, England, West Midlands	99	1	11	1	0	11	0	0	1	0	1		rising	
+582600399	UK, England, North West	99	1	8	4	0	11	0	0	4	0	4		rising	
+582600499	UK, England, Oxford Region	99	1	9	2	0	10	0	0	2	0	2		rising	
+582600599	UK, England, South Thames	99	1	5	4	0	8	0	0	4	0	4		rising	
+582600699	UK, England, South West	99	1	7	1	0	11	0	0	1	0	1		rising	
+582600799	UK, England, East Midlands	99	1	9	2	0	11	0	0	2	0	2		rising	
+582600899	UK, England, Merseyside and Cheshire	99	1	9	1	0	9	0	0	1	0	1		rising	
+582601199	UK, England, East	99	1	5	7	0	11	0	0	7	0	7		rising	
+582601599	UK, England, London	99	1	6	1	0	11	0	0	1	0	1		rising	
+582602099	UK, Scotland	99	1	10	2	0	12	0	0	2	0	2		rising	
+582603099	UK, Northern Ireland	99	1	5	8	0	12	0	0	8	0	8		rising	
+582606999	UK, Scotland, West	99	1	4	4	0	7	0	0	4	0	4		rising	
+603600199	Australian Capital Territory	99	1	6	5	0	11	0	0	5	0	5		rising	
+603600299	Australia, NSW/ACT	99	1	9	4	0	12	0	0	4	0	4		rising	
+603600399	Australia, Queensland	99	1	6	5	0	12	0	0	5	0	5		rising	
+603600499	Australia, South Australia	99	1	9	4	0	12	0	0	4	0	4		rising	
+603600599	Australia, Tasmania	99	1	8	5	0	12	0	0	5	0	5		rising	
+603600699	Australia, Victoria	99	1	8	5	0	12	0	0	5	0	5		rising	
+603600799	Australia, Western Australia	99	1	8	5	0	12	0	0	5	0	5		rising	
+603600899	Australia, Northern Territory	99	1	5	8	0	12	0	0	8	0	8		rising	
+655400028	New Zealand: Maori	28	1	9	2	0	12	0	0	2	0	2		rising	
+655400029	New Zealand: Pacific peoples	29	1	4	5	0	12	0	0	5	0	5		rising	
+655400036	New Zealand: Non-Maori	36	1	6	2	0	7	0	0	2	0	2		rising	
+655400099	New Zealand	99	1	10	1	0	12	0	0	1	0	1		rising	
+684009910	USA, Hawaii: White	10	1	12	1	0	12	0	0	1	0	1		rising	
+684009920	USA, Hawaii: Chinese	20	1	11	2	0	12	0	0	2	0	2		rising	
+684009921	USA, Hawaii: Japanese	21	1	12	1	0	12	0	0	1	0	1		rising	
+684009923	USA, Hawaii: Filipino	23	1	11	2	0	12	0	0	2	0	2		rising	
+684009945	USA, Hawaii: Hawaiian	45	1	12	1	0	12	0	0	1	0	1		rising	
+684009999	USA, Hawaii	99	1	7	1	0	12	0	0	1	0	1		rising	
+525000599	France, Isère	99	2	8	5	0.06	12	0.43	0.03	6	0.43	12	616.666666666667	U	616.666666666667
+552800199	The Netherlands, Eindhoven	99	2	6	5	0.04	10	0.15	0	7	0.15	10	275	U	275
+384005799	USA, Idaho	99	2	4	9	0.06	12	0.19	0.03	10	0.19	12	216.666666666667	U	216.666666666667
+527601199	Germany, North Rhine-Westphalia	99	2	4	9	0.01	12	0.03	0	10	0.03	11	200	U	200
+527600299	Germany, Hamburg	99	2	7	3	0.06	12	0.14	0	5	0.17	11	133.333333333333	U	133.333333333333
+415600399	China, Shanghai City	99	2	9	4	1.22	12	0.02	0.01	11	1.22	4	-98.3606557377049	U	98.3606557377049
+441400026	Kuwait: Non-Kuwaitis	26	2	8	5	0.56	12	0.02	0	10	0.56	5	-96.4285714285714	U	96.4285714285714
+439200399	Japan, Nagasaki Prefecture	99	2	8	4	1.46	11	0.06	0.05	9	1.46	4	-95.8904109589041	U	95.8904109589041
+384000942	USA, New Mexico: American Indian	42	2	7	3	8.71	12	0.47	0	5	8.71	3	-94.6039035591274	U	94.6039035591274
+575600499	Switzerland, East	99	2	7	6	0.52	12	0.04	0	8	0.52	6	-92.3076923076923	U	92.3076923076923
+384000260	USA, California, San Francisco Bay Area: Non-Hispanic White	60	2	6	7	0.18	12	0.03	0	10	0.18	7	-83.3333333333333	U	83.3333333333333
+415600299	China, Qidong City	99	2	6	6	0.35	12	0.06	0.02	10	0.43	7	-82.8571428571429	U	82.8571428571429
+312401099	Canada, Ontario	99	2	9	3	0.27	12	0.06	0.03	7	0.27	3	-77.7777777777778	U	77.7777777777778
+470200099	Singapore	99	2	5	7	0.09	12	0.16	0.04	9	0.16	12	77.7777777777778	U	77.7777777777778
+470200027	Singapore: Malay	27	2	9	3	1.16	12	0.28	0.08	8	1.16	3	-75.8620689655172	U	75.8620689655172
+572401199	Spain, Canary Islands	99	2	5	8	0.08	12	0.02	0	9	0.08	8	-75	U	75
+384001299	USA, Utah	99	2	10	3	0.35	12	0.09	0.08	8	0.46	4	-74.2857142857143	U	74.2857142857143
+218800099	Costa Rica	99	2	8	5	0.3	12	0.08	0.02	9	0.3	5	-73.3333333333333	U	73.3333333333333
+542800099	Latvia	99	2	7	6	0.3	12	0.08	0	11	0.31	9	-73.3333333333333	U	73.3333333333333
+384000210	USA, California, San Francisco Bay Area: White	10	2	7	3	0.27	12	0.08	0.06	10	0.27	3	-70.3703703703704	U	70.3703703703704
+525000199	France, Bas-Rhin	99	2	9	4	0.16	12	0.05	0	7	0.16	4	-68.75	U	68.75
+439200499	Japan, Osaka Prefecture	99	2	10	3	0.25	12	0.08	0.02	10	0.38	4	-68	U	68
+312400099	Canada	99	2	8	3	0.18	10	0.06	0.04	7	0.18	3	-66.6666666666667	U	66.6666666666667
+523300099	Estonia	99	2	7	6	0.34	12	0.12	0.06	10	0.34	6	-64.7058823529412	U	64.7058823529412
+564300199	Russian Federation, Saint Petersburg	99	2	4	6	0.14	10	0.05	0.04	8	0.14	6	-64.2857142857143	U	64.2857142857143
+384000330	USA, California, Los Angeles County: Black	30	2	9	4	0.22	12	0.08	0.06	7	0.23	6	-63.6363636363637	U	63.6363636363637
+582600399	UK, England, North West	99	2	8	4	0.11	11	0.04	0.02	7	0.11	4	-63.6363636363637	U	63.6363636363637
+435600299	India, Bangalore	99	2	7	5	0.16	12	0.06	0.01	10	0.19	6	-62.5	U	62.5
+441000999	Republic of Korea, Jeju	99	2	4	9	0.5	12	0.19	0.16	11	0.6	10	-62	U	62
+384000510	USA, Georgia, Atlanta: White	10	2	9	4	0.05	12	0.02	0	6	0.14	11	-60	U	60
+384007010	USA, South Carolina: White	10	2	4	9	0.1	12	0.04	0.02	11	0.13	10	-60	U	60
+525000499	France, Haut-Rhin	99	2	6	7	0.22	12	0.09	0	11	0.22	7	-59.0909090909091	U	59.0909090909091
+538000599	Italy, Parma	99	2	7	5	0.19	11	0.08	0	8	0.22	6	-57.8947368421053	U	57.8947368421053
+384000710	USA, Louisiana, New Orleans: White	10	2	9	4	0.14	12	0.06	0.04	5	0.23	9	-57.1428571428572	U	57.1428571428572
+384001399	USA, Washington, Seattle	99	2	9	4	0.16	12	0.07	0.06	9	0.33	6	-56.25	U	56.25
+441000399	Republic of Korea, Seoul	99	2	5	8	0.34	12	0.15	0.13	11	0.34	8	-55.8823529411765	U	55.8823529411765
+439200199	Japan, Hiroshima Prefecture	99	2	8	5	0.18	12	0.08	0.02	9	0.18	5	-55.5555555555556	U	55.5555555555556
+384000250	USA, California, San Francisco Bay Area: Hispanic White	50	2	6	7	0.11	12	0.17	0.09	9	0.19	10	54.5454545454546	U	54.5454545454546
+384000830	USA, Michigan, Detroit: Black	30	2	10	3	0.41	12	0.19	0.07	11	0.46	9	-53.6585365853659	U	53.6585365853659
+603600899	Australia, Northern Territory	99	2	5	8	0.28	12	0.14	0	11	0.28	8	-50	U	50
+384000430	USA, Connecticut: Black	30	2	8	5	0.16	12	0.24	0	8	0.24	9	50	U	50
+479200199	Turkey, Izmir	99	2	4	9	0.04	12	0.06	0.03	10	0.06	12	50	U	50
+582603099	UK, Northern Ireland	99	2	5	8	0.02	12	0.03	0	9	0.08	10	50	U	50
+441001199	Republic of Korea, Incheon	99	2	4	9	0.27	12	0.14	0.11	10	0.27	9	-48.1481481481482	U	48.1481481481482
+384002030	USA, SEER (9 registries): Black	30	2	7	6	0.23	12	0.12	0.06	11	0.24	9	-47.8260869565218	U	47.8260869565218
+384001530	USA, New Jersey: Black	30	2	5	8	0.38	12	0.2	0.15	11	0.44	9	-47.3684210526316	U	47.3684210526316
+384007099	USA, South Carolina	99	2	4	9	0.11	12	0.06	0.03	11	0.11	9	-45.4545454545455	U	45.4545454545455
+312400299	Canada, British Columbia	99	2	10	3	0.07	12	0.04	0	8	0.15	4	-42.8571428571429	U	42.8571428571429
+603600299	Australia, NSW/ACT	99	2	9	4	0.17	12	0.1	0.05	8	0.19	5	-41.1764705882353	U	41.1764705882353
+384005099	USA, Alaska	99	2	4	9	0.17	12	0.24	0	10	0.24	12	41.1764705882353	U	41.1764705882353
+435601099	India, New Delhi	99	2	4	8	0.2	12	0.12	0.07	10	0.2	8	-40	U	40
+525001799	France, Vendée	99	2	4	9	0.2	12	0.12	0.06	11	0.2	9	-40	U	40
+384000530	USA, Georgia, Atlanta: Black	30	2	9	4	0.15	12	0.09	0	5	0.15	4	-40	U	40
+384000730	USA, Louisiana, New Orleans: Black	30	2	9	4	0.29	12	0.18	0	5	0.29	4	-37.9310344827586	U	37.9310344827586
+384000323	USA, California, Los Angeles County: Filipino	23	2	8	5	0.17	12	0.11	0	6	0.25	9	-35.2941176470588	U	35.2941176470588
+511200099	Belarus	99	2	7	6	0.17	12	0.11	0.07	9	0.17	6	-35.2941176470588	U	35.2941176470588
+538001399	Italy, Veneto	99	2	6	7	0.03	12	0.04	0	9	0.14	11	33.3333333333333	U	33.3333333333333
+415600199	China, Beijing City	99	2	4	8	0.09	12	0.06	0.05	11	0.15	10	-33.3333333333333	U	33.3333333333333
+384005130	USA, Alabama: Black	30	2	4	9	0.26	12	0.18	0.11	11	0.26	9	-30.7692307692308	U	30.7692307692308
+384005299	USA, Arizona	99	2	4	9	0.1	12	0.07	0.03	11	0.1	9	-30	U	30
+384005510	USA, Florida: White	10	2	4	9	0.11	12	0.08	0.07	10	0.11	9	-27.2727272727273	U	27.2727272727273
+384000799	USA, Louisiana, New Orleans	99	2	5	7	0.15	12	0.11	0.05	8	0.15	7	-26.6666666666667	U	26.6666666666667
+384006099	USA, Massachusetts	99	2	4	9	0.08	12	0.06	0.03	11	0.08	9	-25	U	25
+384000999	USA, New Mexico	99	2	7	6	0.13	12	0.1	0.03	8	0.13	6	-23.0769230769231	U	23.0769230769231
+384006330	USA, Missouri: Black	30	2	4	9	0.13	12	0.1	0.05	11	0.13	9	-23.0769230769231	U	23.0769230769231
+384007030	USA, South Carolina: Black	30	2	4	9	0.13	12	0.1	0.05	10	0.13	9	-23.0769230769231	U	23.0769230769231
+525000299	France, Calvados	99	2	8	5	0.13	12	0.16	0	8	0.16	12	23.0769230769231	U	23.0769230769231
+476400399	Thailand, Bangkok	99	2	4	8	0.18	12	0.14	0.06	10	0.18	8	-22.2222222222222	U	22.2222222222222
+603600699	Australia, Victoria	99	2	8	5	0.09	12	0.07	0.04	8	0.09	5	-22.2222222222222	U	22.2222222222222
+384001510	USA, New Jersey: White	10	2	5	8	0.1	12	0.12	0.07	10	0.12	9	20	U	20
+384001599	USA, New Jersey	99	2	7	5	0.16	12	0.13	0.11	11	0.22	6	-18.75	U	18.75
+171600270	Zimbabwe, Harare: African	70	2	6	7	0.8	12	0.66	0.32	8	0.94	10	-17.5	U	17.5
+384006699	USA, Oklahoma	99	2	4	9	0.06	12	0.07	0.02	11	0.07	10	16.6666666666667	U	16.6666666666667
+476400599	Thailand, Lampang	99	2	5	8	0.27	12	0.31	0.03	11	0.31	12	14.8148148148148	U	14.8148148148148
+384000699	USA, Iowa	99	2	10	3	0.09	12	0.1	0.03	11	0.12	10	11.1111111111111	U	11.1111111111111
+538001499	Italy, Umbria	99	2	5	8	0.09	12	0.1	0	10	0.15	9	11.1111111111111	U	11.1111111111111
+384000360	USA, California, Los Angeles County: Non-Hispanic White	60	2	7	6	0.11	12	0.1	0.03	7	0.11	6	-9.09090909090909	U	9.09090909090909
+476400299	Thailand, Khon Kaen	99	2	6	6	0.24	12	0.26	0.2	11	0.57	8	8.33333333333334	U	8.33333333333334
+415600799	China, Jiashan County	99	2	5	8	0.38	12	0.4	0	9	0.58	11	5.26315789473685	U	5.26315789473685
+655400029	New Zealand: Pacific peoples	29	2	4	5	0.4	12	0.39	0.12	10	0.4	5	-2.5	U	2.5
+312400699	Canada, Nova Scotia	99	2	7	5	0.04	11	0.04	0	7	0.12	6	0	U	0
+384005399	USA, Colorado	99	2	4	9	0.08	12	0.08	0.06	11	0.11	10	0	U	0
+384006510	USA, Ohio: White	10	2	4	9	0.06	12	0.06	0.03	10	0.06	9	0	U	0
+415600999	China, Wuhan City	99	2	4	8	0.11	12	0.11	0.06	11	0.14	10	0	U	0
+525001699	France, Manche	99	2	5	8	0.13	12	0.13	0	10	0.13	8	0	U	0
+552800099	The Netherlands	99	2	6	7	0.09	12	0.09	0.05	8	0.11	11	0	U	0
+384000410	USA, Connecticut: White	10	2	8	5	0.01	12	0.09	0.01	5	0.09	12	800	erratic	800
+101200199	Algeria, Sétif	99	2	5	6	0.03	11	0	0	7	0.03	6	-100	erratic	100
+435600899	India, Trivandrum	99	2	6	7	0.27	12	0	0	9	0.27	7	-100	erratic	100
+572400799	Spain, Zaragoza	99	2	7	3	0.12	9	0	0	4	0.12	3	-100	erratic	100
+441400099	Kuwait	99	2	6	5	0.48	12	0.01	0.01	10	0.48	5	-97.9166666666667	erratic	97.9166666666667
+435600499	India, Chennai	99	2	8	5	0.45	12	0.03	0.03	9	0.45	5	-93.3333333333333	erratic	93.3333333333333
+476400199	Thailand, Chiang Mai	99	2	7	6	0.65	12	0.06	0.06	12	0.65	6	-90.7692307692308	erratic	90.7692307692308
+460800299	Philippines, Manila	99	2	7	6	0.82	12	0.09	0.09	12	0.82	6	-89.0243902439025	erratic	89.0243902439025
+439200699	Japan, Yamagata Prefecture	99	2	5	6	0.22	11	0.04	0.04	11	0.22	6	-81.8181818181818	erratic	81.8181818181818
+582600599	UK, England, South Thames	99	2	5	4	0.09	8	0.02	0.02	5	0.09	4	-77.7777777777778	erratic	77.7777777777778
+384000810	USA, Michigan, Detroit: White	10	2	10	3	0.22	12	0.05	0.05	7	0.22	3	-77.2727272727273	erratic	77.2727272727273
+384007499	USA, West Virginia	99	2	4	9	0.08	12	0.02	0.02	12	0.08	9	-75	erratic	75
+570300099	Slovakia	99	2	8	4	0.18	11	0.05	0.05	9	0.18	4	-72.2222222222222	erratic	72.2222222222222
+439200599	Japan, Saga Prefecture	99	2	4	6	0.2	10	0.06	0.06	10	0.2	6	-70	erratic	70
+384002210	USA, Louisiana: White	10	2	4	9	0.08	12	0.03	0.03	12	0.08	9	-62.5	erratic	62.5
+384005630	USA, Georgia: Black	30	2	4	9	0.24	12	0.1	0.1	10	0.24	9	-58.3333333333333	erratic	58.3333333333333
+384002010	USA, SEER (9 registries): White	10	2	7	6	0.12	12	0.06	0.06	12	0.12	6	-50	erratic	50
+384005699	USA, Georgia	99	2	4	9	0.13	12	0.07	0.07	12	0.13	9	-46.1538461538462	erratic	46.1538461538462
+384002430	USA, SEER (18 registries): Black	30	2	4	9	0.2	12	0.11	0.11	12	0.2	9	-45	erratic	45
+384005599	USA, Florida	99	2	4	9	0.14	12	0.08	0.08	12	0.14	9	-42.8571428571429	erratic	42.8571428571429
+384006399	USA, Missouri	99	2	4	9	0.05	12	0.07	0.05	9	0.07	10	40	erratic	40
+384008030	USA, NPCR: Black	30	2	4	9	0.18	12	0.11	0.11	12	0.18	9	-38.8888888888889	erratic	38.8888888888889
+384002460	USA, SEER (18 registries): Non-Hispanic White	60	2	4	9	0.06	12	0.05	0.05	12	0.07	11	-16.6666666666667	erratic	16.6666666666667
+384006599	USA, Ohio	99	2	4	9	0.07	12	0.07	0.05	11	0.07	9	0	erratic	0
+312401199	Canada, Quebec	99	2	9	2	0	12	0.25	0	2	0.25	12		erratic	
+384000499	USA, Connecticut	99	2	10	1	0	12	0.12	0	1	0.12	3		erratic	
+572400399	Spain, Murcia	99	2	7	6	0	12	0.19	0	6	0.19	12		erratic	
+572401099	Spain, Girona	99	2	5	8	0	12	0.08	0	8	0.08	12		erratic	
+575601099	Switzerland, Ticino	99	2	5	8	0	12	0.12	0	8	0.12	12		erratic	
+582601599	UK, England, London	99	2	6	1	0	11	0.07	0	1	0.07	3		erratic	
+655400036	New Zealand: Non-Maori	36	2	6	2	0	7	0.43	0	2	0.43	7		erratic	
+312400999	Canada, Yukon	99	2	6	6	0.07	12	0	0	7	0.07	6	-100	falling	100
+384000221	USA, California, San Francisco Bay Area: Japanese	21	2	5	4	0.73	11	0	0	7	0.73	4	-100	falling	100
+435600699	India, Poona	99	2	7	4	2.68	12	0	0	12	2.68	4	-100	falling	100
+525000799	France, Tarn	99	2	7	6	0.2	12	0	0	7	0.2	6	-100	falling	100
+572400599	Spain, Asturias	99	2	6	7	0.09	12	0	0	8	0.09	7	-100	falling	100
+603600599	Australia, Tasmania	99	2	8	5	0.16	12	0	0	6	0.16	5	-100	falling	100
+415601499	China, Zhongshan City	99	2	4	9	0.16	12	0.02	0.02	12	0.16	9	-87.5	falling	87.5
+460800399	Philippines, Rizal	99	2	5	5	0.7	11	0.09	0.09	11	0.7	5	-87.1428571428571	falling	87.1428571428571
+384006230	USA, Michigan: Black	30	2	4	9	0.47	12	0.1	0.1	12	0.47	9	-78.7234042553192	falling	78.7234042553192
+441001099	Republic of Korea, Gwangju	99	2	4	9	0.16	12	0.04	0.04	12	0.16	9	-75	falling	75
+525001499	France, Loire-Atlantique	99	2	4	9	0.11	12	0.04	0.04	12	0.11	9	-63.6363636363637	falling	63.6363636363637
+441000099	Republic of Korea	99	2	4	9	0.24	12	0.12	0.12	12	0.24	9	-50	falling	50
+384005199	USA, Alabama	99	2	4	9	0.11	12	0.06	0.06	12	0.11	9	-45.4545454545455	falling	45.4545454545455
+538000399	Italy, Latina	99	2	4	6	0.16	11	0.09	0.09	7	0.16	6	-43.75	falling	43.75
+384006299	USA, Michigan	99	2	4	9	0.14	12	0.08	0.08	11	0.14	9	-42.8571428571429	falling	42.8571428571429
+384002429	USA, SEER (18 registries): Asian and Pacific Islander	29	2	4	9	0.14	12	0.09	0.09	12	0.14	9	-35.7142857142857	falling	35.7142857142857
+384007130	USA, Texas: Black	30	2	4	9	0.09	12	0.06	0.06	12	0.09	9	-33.3333333333333	falling	33.3333333333333
+384006210	USA, Michigan: White	10	2	4	9	0.08	12	0.06	0.06	12	0.08	9	-25	falling	25
+384002450	USA, SEER (18 registries): Hispanic White	50	2	4	9	0.15	12	0.12	0.12	11	0.15	9	-20	flat	20
+384002599	USA, California	99	2	4	9	0.09	12	0.08	0.08	11	0.1	10	-11.1111111111111	flat	11.1111111111111
+384005999	USA, Indiana	99	2	4	9	0.09	12	0.08	0.08	12	0.1	10	-11.1111111111111	flat	11.1111111111111
+384008099	USA, NPCR	99	2	4	9	0.09	12	0.08	0.08	12	0.09	9	-11.1111111111111	flat	11.1111111111111
+384002499	USA, SEER (18 registries)	99	2	4	9	0.1	12	0.09	0.09	12	0.1	9	-10	flat	10
+384002099	USA, SEER (9 registries)	99	2	6	7	0.09	12	0.09	0.09	7	0.11	9	0	flat	0
+384008010	USA, NPCR: White	10	2	4	9	0.07	12	0.07	0.07	9	0.08	10	0	flat	0
+537200099	Ireland	99	2	5	8	0.01	12	0.05	0.01	8	0.1	11	400	inverted-U	400
+384007110	USA, Texas: White	10	2	4	9	0.04	12	0.09	0.04	9	0.11	11	125	inverted-U	125
+312400499	Canada, Northwest Territories	99	2	7	5	0.51	11	0	0	9	1.52	6	-100	inverted-U	100
+384000230	USA, California, San Francisco Bay Area: Black	30	2	10	3	0.35	12	0	0	11	0.51	6	-100	inverted-U	100
+384001999	USA, Kentucky	99	2	4	9	0.04	12	0.08	0.04	9	0.12	11	100	inverted-U	100
+441400025	Kuwait: Kuwaitis	25	2	8	5	0.32	12	0	0	12	0.7	7	-100	inverted-U	100
+470200040	Singapore: Indian	40	2	9	3	0.4	12	0	0	7	0.46	4	-100	inverted-U	100
+525000399	France, Doubs	99	2	9	4	0.38	12	0	0	9	0.4	7	-100	inverted-U	100
+538000199	Italy, Tuscany	99	2	7	6	0.03	12	0.06	0.03	6	0.2	9	100	inverted-U	100
+538000899	Italy, Turin	99	2	7	6	0.04	12	0	0	8	0.09	10	-100	inverted-U	100
+572400499	Spain, Navarra	99	2	9	4	0.19	12	0	0	8	0.22	7	-100	inverted-U	100
+415603099	China, Hong Kong	99	2	8	4	0.35	11	0.02	0.02	11	0.4	5	-94.2857142857143	inverted-U	94.2857142857143
+519100099	Croatia	99	2	6	7	0.08	12	0.01	0.01	12	0.15	8	-87.5	inverted-U	87.5
+476400499	Thailand, Songkhla	99	2	5	8	0.25	12	0.04	0.04	12	0.41	9	-84	inverted-U	84
+207600899	Brazil, Sao Paulo	99	2	5	3	0.36	10	0.06	0.06	10	0.44	5	-83.3333333333333	inverted-U	83.3333333333333
+561600299	Poland, Lower Silesia	99	2	5	6	0.1	11	0.02	0.02	11	0.16	7	-80	inverted-U	80
+384007199	USA, Texas	99	2	4	9	0.05	12	0.09	0.05	9	0.11	11	80	inverted-U	80
+384005110	USA, Alabama: White	10	2	4	9	0.04	12	0.01	0.01	12	0.09	11	-75	inverted-U	75
+441000299	Republic of Korea, Busan	99	2	5	8	0.21	12	0.06	0.06	12	0.28	9	-71.4285714285714	inverted-U	71.4285714285714
+544000099	Lithuania	99	2	5	8	0.1	12	0.03	0.03	12	0.13	11	-70	inverted-U	70
+384000899	USA, Michigan, Detroit	99	2	6	7	0.06	12	0.1	0.06	7	0.18	9	66.6666666666667	inverted-U	66.6666666666667
+384005530	USA, Florida: Black	30	2	4	9	0.23	12	0.09	0.09	12	0.25	10	-60.8695652173913	inverted-U	60.8695652173913
+384007399	USA, Washington State	99	2	4	9	0.05	12	0.08	0.05	9	0.1	10	60	inverted-U	60
+221800199	Ecuador, Quito	99	2	7	6	0.14	12	0.22	0.14	6	0.5	8	57.1428571428571	inverted-U	57.1428571428571
+441000499	Republic of Korea, Daegu	99	2	5	8	0.07	12	0.11	0.07	8	0.14	10	57.1428571428571	inverted-U	57.1428571428571
+384002299	USA, Louisiana	99	2	4	9	0.09	12	0.04	0.04	12	0.12	10	-55.5555555555556	inverted-U	55.5555555555556
+384002230	USA, Louisiana: Black	30	2	4	9	0.11	12	0.05	0.05	12	0.21	10	-54.5454545454545	inverted-U	54.5454545454545
+441000899	Republic of Korea, Ulsan	99	2	4	9	0.17	12	0.08	0.08	12	0.21	11	-52.9411764705882	inverted-U	52.9411764705882
+441000599	Republic of Korea, Daejeon	99	2	4	9	0.2	12	0.1	0.1	12	0.23	11	-50	inverted-U	50
+520300099	Czech Republic	99	2	7	6	0.12	12	0.06	0.06	9	0.14	7	-50	inverted-U	50
+384006310	USA, Missouri: White	10	2	4	9	0.04	12	0.06	0.04	9	0.07	10	50	inverted-U	50
+384000299	USA, California, San Francisco Bay Area	99	2	6	7	0.14	12	0.08	0.08	10	0.15	8	-42.8571428571429	inverted-U	42.8571428571429
+439201099	Japan, Aichi Prefecture	99	2	4	9	0.08	12	0.05	0.05	12	0.09	10	-37.5	inverted-U	37.5
+384000350	USA, California, Los Angeles County: Hispanic White	50	2	8	5	0.14	12	0.09	0.09	12	0.22	8	-35.7142857142857	inverted-U	35.7142857142857
+384000599	USA, Georgia, Atlanta	99	2	6	7	0.09	12	0.06	0.06	10	0.12	8	-33.3333333333333	inverted-U	33.3333333333333
+384001699	USA, New York State	99	2	5	8	0.12	12	0.08	0.08	12	0.13	10	-33.3333333333333	inverted-U	33.3333333333333
+404800046	Bahrain: Bahrainis	46	2	4	9	0.16	12	0.11	0.11	12	0.47	10	-31.25	inverted-U	31.25
+384002530	USA, California: Black	30	2	4	9	0.1	12	0.07	0.07	12	0.12	11	-30	inverted-U	30
+415600499	China, Tianjin	99	2	4	5	0.47	8	0.33	0.33	8	0.73	6	-29.7872340425532	inverted-U	29.7872340425532
+384000399	USA, California, Los Angeles County	99	2	6	7	0.07	12	0.09	0.07	7	0.14	8	28.5714285714286	inverted-U	28.5714285714286
+384001630	USA, New York State: Black	30	2	5	8	0.19	12	0.14	0.14	12	0.26	10	-26.3157894736842	inverted-U	26.3157894736842
+384006530	USA, Ohio: Black	30	2	4	9	0.13	12	0.11	0.11	12	0.18	10	-15.3846153846154	inverted-U	15.3846153846154
+384001610	USA, New York State: White	10	2	5	8	0.07	12	0.06	0.06	11	0.09	10	-14.2857142857143	inverted-U	14.2857142857143
+384005610	USA, Georgia: White	10	2	4	9	0.06	12	0.06	0.06	9	0.09	10	0	inverted-U	0
+538002699	Italy, Milan	99	2	4	9	0.03	12	0.03	0.03	9	0.13	11	0	inverted-U	0
+582601199	UK, England, East	99	2	5	7	0.02	11	0.02	0.02	7	0.06	9	0	inverted-U	0
+180000299	Uganda, Kyadondo County	99	2	7	1	0	12	0.71	0	1	1.02	10		inverted-U	
+207600299	Brazil, Goiânia	99	2	7	6	0	12	0	0	6	0.13	9		inverted-U	
+215200199	Chile, Valdivia	99	2	4	9	0	12	0	0	9	0.09	11		inverted-U	
+217000199	Colombia, Cali	99	2	12	1	0	12	0.03	0	1	0.33	3		inverted-U	
+225009199	France, Martinique	99	2	7	5	0	12	0	0	5	0.23	10		inverted-U	
+238800199	Jamaica, Kingston and St Andrew	99	2	6	1	0	11	0.17	0	1	0.55	4		inverted-U	
+263000099	USA, Puerto Rico	99	2	11	1	0	12	0.1	0	1	0.11	3		inverted-U	
+312400199	Canada, Alberta	99	2	12	1	0	12	0.05	0	1	0.24	3		inverted-U	
+312400399	Canada, Manitoba	99	2	12	1	0	12	0.14	0	1	0.17	3		inverted-U	
+312400599	Canada, New Brunswick	99	2	10	1	0	12	0.05	0	1	0.2	9		inverted-U	
+312400799	Canada, Prince Edward Island	99	2	8	5	0	12	0	0	5	0.35	8		inverted-U	
+312400899	Canada, Newfoundland and Labrador	99	2	12	1	0	12	0.08	0	1	0.14	4		inverted-U	
+312401299	Canada, Saskatchewan	99	2	12	1	0	12	0.03	0	1	0.35	4		inverted-U	
+384000220	USA, California, San Francisco Bay Area: Chinese	20	2	6	3	0	11	0.26	0	3	0.37	4		inverted-U	
+384000223	USA, California, San Francisco Bay Area: Filipino	23	2	4	5	0	11	0.11	0	5	0.22	7		inverted-U	
+384000320	USA, California, Los Angeles County: Chinese	20	2	9	4	0	12	0.06	0	4	0.14	6		inverted-U	
+384000322	USA, California, Los Angeles County: Korean	22	2	8	5	0	12	0	0	5	0.13	10		inverted-U	
+384000950	USA, New Mexico: Hispanic White	50	2	7	5	0	12	0.08	0	5	0.23	9		inverted-U	
+384000960	USA, New Mexico: Non-Hispanic White	60	2	6	7	0	12	0	0	7	0.07	11		inverted-U	
+384006199	USA, Maine	99	2	4	9	0	12	0.08	0	9	0.13	10		inverted-U	
+384006499	USA, Montana	99	2	4	9	0	12	0.04	0	9	0.2	10		inverted-U	
+384006799	USA, Oregon	99	2	4	9	0	12	0.02	0	9	0.09	10		inverted-U	
+384007299	USA, Vermont	99	2	4	9	0	12	0	0	9	0.08	10		inverted-U	
+384010010	Usa, California, Alameda County: White	10	2	5	2	0	6	0.08	0	2	0.11	3		inverted-U	
+384010030	Usa, California, Alameda County: Black	30	2	5	2	0	6	0.45	0	2	0.57	4		inverted-U	
+384010499	Usa, New York State (Less New York City)	99	2	5	1	0	6	0.08	0	1	0.19	3		inverted-U	
+415600699	China, Cixian County	99	2	4	8	0	12	0.05	0	8	0.27	10		inverted-U	
+415601599	China, Nangang District, Harbin City	99	2	4	9	0	12	0	0	9	0.12	10		inverted-U	
+435600399	India, Mumbai	99	2	11	2	0	12	0.05	0	2	0.29	3		inverted-U	
+435600999	India, Karunagappally	99	2	4	7	0	10	0	0	7	0.11	8		inverted-U	
+437600090	Israel: Jews	90	2	11	2	0	12	0.1	0	2	0.41	4		inverted-U	
+437600091	Israel: Jews born in Israel	91	2	7	2	0	8	0.08	0	2	0.68	3		inverted-U	
+437600094	Israel: Arabs	94	2	11	2	0	12	0.02	0	2	0.46	3		inverted-U	
+437600096	Israel: Jews born in Africa or Asia	96	2	7	2	0	8	0	0	2	0.37	3		inverted-U	
+437600097	Israel: Jews born in Europe or America	97	2	6	2	0	8	0.06	0	2	0.46	3		inverted-U	
+437600099	Israel	99	2	11	1	0	12	0.08	0	1	0.4	3		inverted-U	
+439200299	Japan, Miyagi Prefecture	99	2	12	1	0	12	0.09	0	1	0.63	3		inverted-U	
+470200020	Singapore: Chinese	20	2	10	1	0	12	0.16	0	1	0.97	3		inverted-U	
+504000799	Austria, Tyrol	99	2	6	7	0	12	0.09	0	7	0.11	8		inverted-U	
+519600099	Cyprus	99	2	4	9	0	12	0	0	9	0.05	10		inverted-U	
+520800099	Denmark	99	2	12	1	0	12	0	0	1	0.14	3		inverted-U	
+524600099	Finland	99	2	11	1	0	12	0.04	0	1	0.15	5		inverted-U	
+525000699	France, Somme	99	2	7	6	0	12	0.06	0	6	0.09	10		inverted-U	
+525000899	France, Hérault	99	2	6	7	0	12	0.03	0	7	0.12	8		inverted-U	
+527600199	Germany, Eastern States	99	2	6	2	0	7	0.07	0	2	0.17	4		inverted-U	
+527603099	Germany, Saarland	99	2	10	3	0	12	0.11	0	3	0.2	7		inverted-U	
+534800299	Hungary, County Szabolcs-Szatmar	99	2	5	2	0	6	0	0	2	0.64	3		inverted-U	
+534800399	Hungary, County Vas	99	2	5	2	0	6	0	0	2	0.27	3		inverted-U	
+535200099	Iceland	99	2	10	1	0	12	0	0	1	0.08	5		inverted-U	
+538000499	Italy, Varese	99	2	9	4	0	12	0	0	4	0.15	5		inverted-U	
+538000799	Italy, Romagna	99	2	6	6	0	11	0.03	0	6	0.09	9		inverted-U	
+538001299	Italy, Ferrara	99	2	5	7	0	11	0	0	7	0.18	9		inverted-U	
+538001699	Italy, Naples South	99	2	4	9	0	12	0.03	0	9	0.14	11		inverted-U	
+538002299	Italy, Genova	99	2	6	6	0	12	0.08	0	6	0.09	8		inverted-U	
+538002899	Italy, Sondrio	99	2	4	9	0	12	0.11	0	9	0.18	10		inverted-U	
+547000099	Malta	99	2	7	3	0	12	0	0	3	0.11	9		inverted-U	
+557800099	Norway	99	2	12	1	0	12	0.07	0	1	0.27	3		inverted-U	
+561600199	Poland, Cracow	99	2	9	2	0	10	0.06	0	2	0.24	6		inverted-U	
+561600599	Poland, Warsaw City	99	2	8	2	0	9	0.07	0	2	0.4	7		inverted-U	
+561600799	Poland, Kielce	99	2	6	7	0	12	0	0	7	0.06	10		inverted-U	
+570500099	Slovenia	99	2	12	1	0	12	0.07	0	1	0.16	3		inverted-U	
+572400199	Spain, Tarragona	99	2	8	5	0	12	0	0	5	0.24	9		inverted-U	
+572400299	Spain, Granada	99	2	7	6	0	12	0	0	6	0.12	11		inverted-U	
+572400699	Spain, Basque Country	99	2	6	6	0	12	0.06	0	6	0.07	10		inverted-U	
+575200099	Sweden	99	2	11	1	0	12	0.06	0	1	0.15	4		inverted-U	
+575600299	Switzerland, Geneva	99	2	10	3	0	12	0.13	0	3	0.32	7		inverted-U	
+575600399	Switzerland, Neuchâtel	99	2	8	4	0	11	0	0	4	0.26	7		inverted-U	
+575600599	Switzerland, Vaud	99	2	9	4	0	12	0.06	0	4	0.25	11		inverted-U	
+575600699	Switzerland, Zurich	99	2	6	5	0	11	0.02	0	5	0.14	8		inverted-U	
+575600899	Switzerland, Valais	99	2	6	7	0	12	0	0	7	0.16	11		inverted-U	
+575601199	Switzerland, Graubünden and Glarus	99	2	5	8	0	12	0.15	0	8	0.22	11		inverted-U	
+582600299	UK, England, West Midlands	99	2	11	1	0	11	0.03	0	1	0.15	5		inverted-U	
+582600499	UK, England, Oxford Region	99	2	9	2	0	10	0.08	0	2	0.16	4		inverted-U	
+582600699	UK, England, South West	99	2	7	1	0	11	0.04	0	1	0.09	3		inverted-U	
+582600799	UK, England, East Midlands	99	2	9	2	0	11	0.06	0	2	0.13	4		inverted-U	
+582600899	UK, England, Merseyside and Cheshire	99	2	9	1	0	9	0.02	0	1	0.14	5		inverted-U	
+582602099	UK, Scotland	99	2	10	2	0	12	0.08	0	2	0.24	4		inverted-U	
+582606999	UK, Scotland, West	99	2	4	4	0	7	0.04	0	4	0.06	5		inverted-U	
+603600199	Australian Capital Territory	99	2	6	5	0	11	0.09	0	5	0.31	9		inverted-U	
+603600399	Australia, Queensland	99	2	6	5	0	12	0.06	0	5	0.16	10		inverted-U	
+603600499	Australia, South Australia	99	2	9	4	0	12	0.04	0	4	0.22	6		inverted-U	
+603600799	Australia, Western Australia	99	2	8	5	0	12	0.04	0	5	0.05	11		inverted-U	
+655400028	New Zealand: Maori	28	2	9	2	0	12	0.05	0	2	0.45	3		inverted-U	
+655400099	New Zealand	99	2	10	1	0	12	0.06	0	1	0.41	7		inverted-U	
+684009910	USA, Hawaii: White	10	2	12	1	0	12	0.14	0	1	0.52	4		inverted-U	
+684009920	USA, Hawaii: Chinese	20	2	11	2	0	12	0	0	2	0.38	9		inverted-U	
+684009921	USA, Hawaii: Japanese	21	2	12	1	0	12	0	0	1	0.6	11		inverted-U	
+684009923	USA, Hawaii: Filipino	23	2	11	2	0	12	0.12	0	2	1.01	6		inverted-U	
+684009945	USA, Hawaii: Hawaiian	45	2	12	1	0	12	0.1	0	1	0.3	10		inverted-U	
+684009999	USA, Hawaii	99	2	7	1	0	12	0.15	0	1	0.41	11		inverted-U	
+384006999	USA, Rhode Island	99	2	4	9	0.04	12	0.12	0.04	9	0.12	12	200	rising	200
+582600199	UK, England	99	2	4	8	0.03	12	0.07	0.03	8	0.07	12	133.333333333333	rising	133.333333333333
+504000099	Austria	99	2	4	9	0.02	12	0.03	0.02	9	0.03	10	50	rising	50
+384000321	USA, California, Los Angeles County: Japanese	21	2	7	4	0	10	0	0	4	0	4		rising	
+435600799	India, Barshi, Paranda, and Bhum	99	2	4	7	0	12	0	0	7	0	7		rising	
+479200299	Turkey, Antalya	99	2	4	9	0	12	0.11	0	9	0.11	12		rising	
+504000899	Austria, Vorarlberg	99	2	5	8	0	12	0	0	8	0	8		rising	
+538001099	Italy, Modena	99	2	5	7	0	11	0	0	7	0	7		rising	
+538001599	Italy, Sassari	99	2	5	8	0	12	0	0	8	0	8		rising	
+538001799	Italy, Biella	99	2	4	8	0	11	0.12	0	8	0.12	11		rising	
+538002999	Italy, Syracuse	99	2	4	9	0	12	0	0	9	0	9		rising	
+538006699	Italy, Ragusa	99	2	6	5	0	10	0.17	0	5	0.17	10		rising	
+552800299	The Netherlands, Maastricht	99	2	4	6	0	9	0.07	0	6	0.07	9		rising	
+561600699	Poland, Warsaw Rural	99	2	4	2	0	6	0.15	0	2	0.15	4		rising	
+572400899	Spain, Mallorca	99	2	4	7	0	11	0.06	0	7	0.06	11		rising	
+572400999	Spain, Albacete	99	2	5	7	0	11	0.32	0	7	0.32	11		rising	
+572401399	Spain, Cuenca	99	2	4	8	0	11	0	0	8	0	8		rising	
+575600199	Switzerland, Basel	99	2	6	5	0	12	0.08	0	5	0.08	12		rising	

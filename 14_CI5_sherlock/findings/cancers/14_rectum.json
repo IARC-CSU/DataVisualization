@@ -1,0 +1,127 @@
+{
+  "code": 14,
+  "label": "Rectum",
+  "short": "Rectum",
+  "icd10": "C19-21",
+  "slug": "rectum",
+  "quick_take": "Rectum follows colon in most places, but there are a handful of registries where the two sites diverge — pointing to different underlying risk factors (or different coding practices). The most interesting anomaly is the female sex-ratio skew in Africa and the Caribbean.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "japan-again-shows-the-inverted-u",
+          "title": "Japan again shows the inverted-U",
+          "text": "Miyagi men 6.47 → 24.47 (vol X) → 22.49 (vol XII). More gentle than the colon curve — consistent with the idea that screening turns colon around faster than rectum.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japan again shows the inverted-U",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=439200299&sexes=1",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-women-u-shape-collapse-then-partial-rebound",
+          "title": "India Trivandrum women: U-shape collapse then partial rebound",
+          "text": "22.0 (vol VII) → 1.77 (vol VIII) → 4.09 (vol XII). An 81 % fall then 130 % rise. Almost certainly reflects a registry-coding change between vol VII and VIII; flag for verification.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum women: U-shape collapse then partial rebound",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=435600899&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "female-heavy-sex-ratios-in-africa-caribbean-are-striking",
+          "title": "Female-heavy sex ratios in Africa/Caribbean are striking",
+          "text": "Brazil Recife vol III M:F = 0.35 (women 3× men); Nigeria Ibadan 0.34; France Martinique 0.41; Uganda Kyadondo 0.39. Global vol-III median ratio is 1.5:1 male. Either a real biological signal or an ascertainment artefact (women more likely to reach registered care) — but consistent across multiple registries. Many of these ratios are computed from 4–20 female cases; treat as indicative, not publishable on their own.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Female-heavy sex ratios in Africa/Caribbean are striking",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=156600199_180000299_207601599_225009199&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "alaska-native-and-nwt-women-are-the-highest-global-outliers",
+          "title": "Alaska Native and NWT women are the highest global outliers",
+          "text": "Alaska women 165→242 cases, ASR 10.19→9.84 (flat); the 23.2 / 24.0 peaks refer to earlier volume IV figures for Native-only subsets. The headline level (3× world median) is real; the specific magnitudes depend on the subset and volume chosen.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Alaska Native and NWT women are the highest global outliers",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=384005099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "israel-jews-born-in-israel-women-inverted-u-with-a-vol-vii-s",
+          "title": "Israel Jews born in Israel women: inverted-U with a vol-VII spike of 21.7",
+          "text": "That vol is flagged in pop_warning for Israel — double-check before claiming a real peak.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Israel Jews born in Israel women: inverted-U with a vol-VII spike of 21.7",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=437600090_437600091_437600099&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "India Trivandrum vol VII vs VIII: the 22→1.77 step is suspicious; probably a scope change between the two volumes.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=435600899&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "Israel pop_warning for vol V applies to the whole Israel file; the Israel-Jews-born-in-Israel vol-VII spike needs checking against the registry note.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=437600099&sexes=0",
+          "extra_links": []
+        },
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Martinique 1975-era numbers have small denominators for ethnic/sex stratification.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=225009199&sexes=0",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "A \"colon vs rectum\" pair-plot across CI5 XI–XII to see which registries break the 2:1 colon-to-rectum rule, and why.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-5",
+          "title": "",
+          "text": "Explore the sub-Saharan / Caribbean female-heavy signal across multiple related sites (colon, rectum) — might indicate an entirely different aetiological contributor.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-6",
+          "title": "",
+          "text": "Alaska Native / NWT excess: is it right-side colon creeping into rectal codes, or a genuine rectal excess?",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=14&populations=384005099&sexes=0",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}

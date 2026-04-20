@@ -1,0 +1,109 @@
+{
+  "code": 36,
+  "label": "Other female genital",
+  "short": "Other female genital",
+  "icd10": "C51-52, C56-57",
+  "slug": "other_female_genital",
+  "quick_take": "This aggregate includes vulva, vagina, and ovary. Most of the signal is ovarian. The really striking finding is the set of **U-shapes in East Asian women** — Japan Miyagi, Qidong, Hawaii Chinese, Trivandrum, Singapore Indian — all showing a dip at vol II–IX then a pronounced climb. Inland China rising fast (Jiashan, Qidong); Hawaii and LA Chinese women falling from historical highs.",
+  "sections": [
+    {
+      "heading": "What catches the eye",
+      "intro": "",
+      "findings": [
+        {
+          "id": "japan-miyagi-women-u-shape",
+          "title": "Japan Miyagi women, U-shape",
+          "text": "2.46 (vol I) → 2.17 (vol II) → 10.75 (vol XII). Biggest %-change at +337 %. The fall-then-rise is consistent with under-ascertainment + genuine reversal, not coding artefact (other Japanese cancers show the same shape).",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Japan Miyagi women, U-shape",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=439200299&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "hawaii-chinese-la-chinese-women-deep-u-shape",
+          "title": "Hawaii Chinese / LA Chinese women: deep U-shape",
+          "text": "Hawaii Chinese peaked 16.18 (vol II) → 4.04 (vol XI) → 7.27 (vol XII). LA Chinese 13.64 (vol IV) → 6.82 (vol XII). 50 % fall with a weak rebound.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Hawaii Chinese / LA Chinese women: deep U-shape",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=684009920_684009999&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "india-trivandrum-19-50-vol-vii-5-10-vol-viii-7-95-vol-xii",
+          "title": "India Trivandrum: 19.50 (vol VII) → 5.10 (vol VIII) → 7.95 (vol XII)",
+          "text": "As with other sites in this registry, the vol VII → VIII cliff is likely a scope change, not biology.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — India Trivandrum: 19.50 (vol VII) → 5.10 (vol VIII) → 7.95 (vol XII)",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=435600899&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "inland-china-rising",
+          "title": "Inland China rising",
+          "text": "Qidong 1.64 → 5.09 (+210 %), Jiashan 2.58 → 6.83 (+165 %). Worth looking separately at ovary vs vulva within this group.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Inland China rising",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=415600299_415600799&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "poland-cracow-inverted-u-peaking-vol-ix-at-16-44",
+          "title": "Poland Cracow inverted-U peaking vol IX at 16.44",
+          "text": "consistent with other Polish cancer peaks in the 1990s and the subsequent slower decline.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — Poland Cracow inverted-U peaking vol IX at 16.44",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=561600199&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Caveats",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding",
+          "title": "",
+          "text": "Aggregate site — the sub-components (ovary vs vulva vs vagina) have very different risk profiles. Any finding here must be re-investigated at the sub-site level to be publishable.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        },
+        {
+          "id": "finding-2",
+          "title": "",
+          "text": "India Trivandrum vol VII–VIII step is almost certainly a registry coding issue.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=435600899&sexes=2",
+          "extra_links": []
+        }
+      ]
+    },
+    {
+      "heading": "Worth a deeper look",
+      "intro": "",
+      "findings": [
+        {
+          "id": "finding-3",
+          "title": "",
+          "text": "Japan's U-shape for this aggregate mirrors breast, colon, corpus — this \"Japanese cancer transition\" across five female sites is a coherent story that deserves one chart.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=36&populations=439200099&sexes=2",
+          "extra_links": []
+        },
+        {
+          "id": "finding-4",
+          "title": "",
+          "text": "Decompose the outliers into ovary / vulva / vagina using the sub-site version (C56 / C51-52 / C57) — the Pacific-peoples and inland-China signals likely differ.",
+          "image_url": "",
+          "image_alt": "CI5 trend chart — ",
+          "ci5_url": "",
+          "extra_links": []
+        }
+      ]
+    }
+  ]
+}
