@@ -490,6 +490,150 @@
       ]
     },
     {
+      "heading": "E — CI5 × GLOBOCAN 2024 cross-links (paper hooks)",
+      "intro": "CI5 ends in 2017 and carries only incidence at registry level. GLOBOCAN 2024 (pre-release) adds the two dimensions CI5 is blind to — **national totals in 2024** and **mortality** — and can turn several CI5 patterns into a joint pitch. Only the cross-links that actually change the story are listed here; for most CI5 findings GLOBOCAN 2024 would just repeat a country average and add nothing. Pre-release caveat: the GLOBOCAN 2024 numbers below are from the pre-release tables under `C:/Data/Globocan2024/`; final estimates may shift.",
+      "findings": [
+        {
+          "id": "g24-african-prostate-mortality-proves-the-ci5-rise",
+          "title": "African prostate: GLOBOCAN 2024 mortality proves the CI5 rise is not a PSA artefact",
+          "text": "CI5 showed Uganda Kyadondo prostate ASR climbing from 5.7 to 53.0 and argued this could not be a PSA-screening effect because the health systems do not run PSA. GLOBOCAN 2024 closes the argument with mortality: **Zimbabwe men prostate ASR 113.5 (incidence) / 71.4 (mortality), MIR 0.63**; Uganda 36.3 / 22.4, MIR 0.62; DR Congo 34.6 / 21.4, MIR 0.62; Ethiopia 12.3 / 7.6, MIR 0.62. For comparison **USA MIR 0.10, France 0.11** — a 6× lethality gap. PSA-driven incidence does not kill at this ratio. The CI5 rise is being converted into deaths at a rate only a late-stage, under-treated disease produces. See [Prostate](cancer.html#code=39).",
+          "cancer_codes": [
+            39
+          ],
+          "image_url": "",
+          "image_alt": "GLOBOCAN 2024 + CI5 — African prostate mortality gap",
+          "ci5_urls": [
+            {
+              "cancer_code": 39,
+              "cancer_label": "Prostate",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=39&populations=180000299&sexes=1"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "g24-korea-thyroid-bubble-landing-and-china-catching-up",
+          "title": "Korea's thyroid bubble seven years on — and China catching up",
+          "text": "CI5 caught Daegu / Gwangju / Seoul women peaking at 90–120 per 100 000 in vol XI and falling 20–30 % by vol XII. GLOBOCAN 2024 extends the trajectory: Korea women national **ASR 48.71 in 2024 — still #2 in the world** — but only **~48 deaths estimated against 17 263 new cases**, an MIR so close to zero it is essentially a screening-defined disease. The predicted catch-up is also visible: **China women ASR 45.33 with 419 502 cases — ≈44 % of the world's thyroid incidence in 2024**. The CI5 arc (rise → peak → re-calibration) becomes a two-country arc with China 5–10 years behind at 25× the absolute volume. See [Thyroid](cancer.html#code=49).",
+          "cancer_codes": [
+            49
+          ],
+          "image_url": "",
+          "image_alt": "GLOBOCAN 2024 + CI5 — Korea thyroid post-bubble and China catch-up",
+          "ci5_urls": [
+            {
+              "cancer_code": 49,
+              "cancer_label": "Thyroid",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=49&populations=441000399_441000499_441000599_441001099&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "g24-nordic-stomach-collapse-essentially-complete",
+          "title": "The Nordic stomach collapse is now essentially complete",
+          "text": "CI5 showed Iceland men falling from 97.0 to 5.1 ASR across volumes I–XII (−95 %). GLOBOCAN 2024 shows the endpoint: **Iceland men ≈12 new cases per year, ASR 2.95**, Norway 4.70, Finland 5.72, Denmark 7.10 — all below the world male average of 12.4. For scale, **Mongolia men sit at ASR 51.1 in 2024** — roughly where Iceland was in CI5 vol I. A one-panel figure lining up Iceland-1953, Iceland-2024 and Mongolia-2024 makes the point that the entire Nordic disappearance corresponds to the distance between a high-burden country today and its own post-burden future. See [Stomach](cancer.html#code=11).",
+          "cancer_codes": [
+            11
+          ],
+          "image_url": "",
+          "image_alt": "GLOBOCAN 2024 + CI5 — Nordic stomach collapse completion",
+          "ci5_urls": [
+            {
+              "cancer_code": 11,
+              "cancer_label": "Stomach",
+              "sex": 1,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=520800099_524600099_535200099_557800099&sexes=1"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "g24-china-oesophagus-stomach-belts-scaled-up",
+          "title": "China's oesophagus / stomach belts now drive the global 2024 burden",
+          "text": "CI5 identified small high-burden counties (Cixian, Yangcheng, Yanting, Shexian) with oesophagus rates up to 97× median and stomach up to 19× median, and attributed them to a pickled-vegetables / nitrosamines behavioural pattern. GLOBOCAN 2024 scales the story to the continent: **China 2024 oesophagus ≈ 200 541 cases / ASR 6.97 — 40.6 % of the world total**; **China stomach ≈ 341 966 cases / ASR 12.29 — 34.9 % of the world total**. The CI5 belts are no longer a regional curiosity; they are the demographic core of a world-leading burden that GLOBOCAN 2024 now quantifies at country level. See [Oesophagus](cancer.html#code=10), [Stomach](cancer.html#code=11).",
+          "cancer_codes": [
+            10,
+            11
+          ],
+          "image_url": "",
+          "image_alt": "GLOBOCAN 2024 + CI5 — China oesophagus/stomach global share",
+          "ci5_urls": [
+            {
+              "cancer_code": 10,
+              "cancer_label": "Oesophagus",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=10&populations=415600699_415601699_415601899_415603999&sexes=0"
+            },
+            {
+              "cancer_code": 11,
+              "cancer_label": "Stomach",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=11&populations=415600699_415601699_415601899_415603999&sexes=0"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "g24-chile-gallbladder-still-world-first-israel-gone",
+          "title": "Chile gallbladder still world #1 in 2024, Israel's collapse confirmed",
+          "text": "The CI5 pair-story (Chile-Valdivia plateau vs Israel collapsing 86 %) holds and sharpens in GLOBOCAN 2024: **Chile women rank #1 globally at ASR 7.55, 1 382 cases, MIR 0.53** — still the world's most lethal gallbladder burden per case. **Israel women at ASR 0.45, 38 cases** — below the world female average, with mortality (0.21) roughly half that; the CI5 collapse has carried through to a disease that is now statistically rare. The \"high plateau vs disappearing excess\" figure proposed for the CI5 paper is now directly testable on 2024 national estimates, not just on two registries. See [Gallbladder etc.](cancer.html#code=17).",
+          "cancer_codes": [
+            17
+          ],
+          "image_url": "",
+          "image_alt": "GLOBOCAN 2024 + CI5 — Chile vs Israel gallbladder 2024",
+          "ci5_urls": [
+            {
+              "cancer_code": 17,
+              "cancer_label": "Gallbladder etc.",
+              "sex": 2,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=17&populations=215200099_437600099&sexes=2"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "g24-zimbabwe-nhl-art-era-mortality-gap",
+          "title": "Zimbabwe NHL — the ART-era mortality gap is still visible in 2024",
+          "text": "CI5 Harare showed the HIV-associated NHL curve rising through vols VII–XI and partly falling in vol XII as ART scaled up. GLOBOCAN 2024 reveals what the fall did not fix: **Zimbabwe NHL ASR 8.01 incidence / 4.44 mortality, MIR 0.55** against **USA MIR 0.21**. Even after the CI5 inflection, an NHL diagnosis in Zimbabwe in 2024 is ~2.6× more likely to kill than in a high-income setting. The eye-cancer / NHL inverted-U becomes a richer story when the 2024 survival deficit is shown as the outstanding problem beyond the ART-driven incidence drop. See [Non-Hodgkin lymphoma](cancer.html#code=53), [Eye](cancer.html#code=47).",
+          "cancer_codes": [
+            47,
+            53
+          ],
+          "image_url": "",
+          "image_alt": "GLOBOCAN 2024 + CI5 — Zimbabwe NHL mortality gap",
+          "ci5_urls": [
+            {
+              "cancer_code": 53,
+              "cancer_label": "Non-Hodgkin lymphoma",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=53&populations=171600299&sexes=0"
+            },
+            {
+              "cancer_code": 47,
+              "cancer_label": "Eye",
+              "sex": 0,
+              "url": "https://www.the-iacr.net/en/ci5-2.0/dataviz/all/trends_volumes?mode=population&multiple_populations=1&cancers=47&populations=171600299&sexes=0"
+            }
+          ],
+          "extra_links": []
+        },
+        {
+          "id": "g24-not-extended",
+          "title": "Findings where GLOBOCAN 2024 adds nothing",
+          "text": "Sub-population stories — Hawaii-White / Hawaii-Japanese, NZ Pacific-peoples, Singapore Indian women, US Black vs Native-American, NT Indigenous — are invisible to GLOBOCAN 2024, which is country-level. Age-curve findings (UK cervix 25–34 peak, Malawi Burkitt 5–9 peak, Israeli Sephardic childhood brain) are also not helped: GLOBOCAN age tables exist but the peaks are visible in CI5 already. These remain CI5-only findings.",
+          "cancer_codes": [],
+          "image_url": "",
+          "image_alt": "",
+          "ci5_urls": [],
+          "extra_links": []
+        }
+      ]
+    },
+    {
       "heading": "What's *not* in here",
       "intro": "",
       "findings": [
@@ -536,7 +680,7 @@
     },
     {
       "heading": "Suggested reading order",
-      "intro": "If you only have fifteen minutes: **cervix (32)**, **thyroid (49)**, **melanoma (24)**, **stomach (11)**, and this README.\n\nIf you want a working list of \"could be a paper\": items A.1–A.10 above, plus the Italian sinonasal cluster (B) and the Alpine testis belt (B).\n\nIf you're screening for data problems: Section C.",
+      "intro": "If you only have fifteen minutes: **cervix (32)**, **thyroid (49)**, **melanoma (24)**, **stomach (11)**, and this README.\n\nIf you want a working list of \"could be a paper\": items A.1–A.10 above, plus the Italian sinonasal cluster (B) and the Alpine testis belt (B).\n\nIf you're screening for data problems: Section C.\n\nIf the paper is meant to co-advertise **GLOBOCAN 2024**: start from Section E — prostate Africa, Korea/China thyroid, Nordic stomach, China oesophagus/stomach, Chile/Israel gallbladder, Zimbabwe NHL are the six CI5 findings that the 2024 release materially sharpens.",
       "findings": []
     }
   ]
