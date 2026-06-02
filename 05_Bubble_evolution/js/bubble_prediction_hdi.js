@@ -78,14 +78,14 @@
 			.attr("class","text_legend1")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2022")
+			.text("2024")
 			.attr("dy", "0.25em")
 			
 		graph_select.append("text")
 			.attr("class","text_legend2")
 			.attr("text-anchor", "left")
 			.attr("x", 25)
-			.text("2045")
+			.text("2050")
 			.style("opacity",0)
 			.attr("dy", "0.25em")
 
@@ -189,7 +189,7 @@
 				.attr("class", "y_title")
 				.attr("text-anchor", "middle")
 				.attr("transform", "translate(-60," +var_height/2 + ") rotate(-90)")
-				.text("Number of deaths (million)")
+				.text("Number of new cases (million)")
 
 		
 
@@ -288,7 +288,7 @@
 		nodes.append("text")
 			.attr("class","text1")
 			.attr("text-anchor", "middle")
-			.text(function(d,i) {return d.rate1})
+			.text(function(d,i) {return d.rate1.toFixed(1)})
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
 			.attr("dy", "0.25em")
 			.attr("fill", function(d,i) {return color_cancer[d.cancer_label];});    // set the line colour
@@ -297,7 +297,7 @@
 		    .attr("class","text2")
 			.attr("text-anchor", "middle")
 			.attr("transform", function(d, i) {return "translate(0," + (yScale(d.rate1)) + ")";}) 
-			.text(function(d,i) {return d.rate1})
+			.text(function(d,i) {return d.rate1.toFixed(1)})
 			.attr("dy", "0.25em")
 			.attr("fill", "#000000");    // set the line colour
 			
@@ -420,7 +420,7 @@
 		      	else
 		      		var i = d3.interpolate(  d.rate2 , d.rate1 );
 		      	return function(t) {
-		        	d3.select(this).text( roundNumber(i(t)) );
+		        	d3.select(this).text( roundNumber(i(t)).toFixed(1) );
 		      	};
 		    })
 			/*.text(function(d,i) {
@@ -534,8 +534,17 @@
 	}
 
 	function roundNumber( value ){
-		var val =  Math.round( value * 10) / 10 ; 
-		return val ; 
+		var val =  Math.round( value * 10) / 10 ;
+		return val ;
+	}
+
+	function toggle_iarc_theme() {
+		var checked = document.getElementById('check_iarc').checked;
+		if (checked) {
+			document.body.className = (document.body.className + ' iarc-theme').trim();
+		} else {
+			document.body.className = document.body.className.replace(/\biarc-theme\b/g, '').trim();
+		}
 	}
 			
 	function update_scale() {

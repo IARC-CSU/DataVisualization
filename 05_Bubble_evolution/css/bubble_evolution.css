@@ -153,9 +153,44 @@ form {
 			stroke: #b7b7b7;
 			opacity:1;
 		}
-		
-	
 
-	
+
+	/* IARC dark theme */
+	body.iarc-theme {
+		background-color: #2b3256;
+		color: #ffffff;
+	}
+
+	body.iarc-theme #header,
+	body.iarc-theme #header div h1 a {
+		background: transparent;
+		color: #ffffff !important;
+	}
+
+	body.iarc-theme #chart svg text:not(.text1) {
+		fill: #ffffff !important;
+	}
+
+	body.iarc-theme #chart svg line:not(.line_link) {
+		stroke: #ffffff !important;
+	}
+
+	body.iarc-theme .yaxis path,
+	body.iarc-theme .yaxis line,
+	body.iarc-theme .yaxis_minor path,
+	body.iarc-theme .yaxis_minor line {
+		stroke: #ffffff !important;
+	}
+
+	body.iarc-theme .circle_legend1,
+	body.iarc-theme .circle_legend2 {
+		stroke: #d27f64 !important;
+	}
+
+	body.iarc-theme .circle_legend2 {
+		fill: #d27f64 !important;
+	}
+
+
 
 	
