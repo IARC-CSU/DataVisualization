@@ -17,7 +17,7 @@
 
 		var file_base = "data/HDI_ASR";
 		
-		var nb_country = 185;
+		var nb_country = 186;
 				
 		var margin = { top: 100, right: 200, bottom: 100, left: 300, top_page: 50, left_page: 400 },
 			width = 1500 - margin.left - margin.right,
@@ -146,7 +146,8 @@
 	
 	<form>
     <h4>Sex</h4>
-    <label><input type="radio" id="radio_sex_female" name="sex" checked="checked"  onChange="combo_sex('Women')"> Female</label>
+	<label><input type="radio" id="radio_sex_both" name="sex" checked="checked"  onChange="combo_sex('both')"> Both</label>
+	<label><input type="radio" id="radio_sex_female" name="sex"  onChange="combo_sex('Women')"> Female</label>
     <label><input type="radio" id="radio_sex_male"  name="sex" onChange="combo_sex('Men')"> Male</label>
 	</form>
 	
